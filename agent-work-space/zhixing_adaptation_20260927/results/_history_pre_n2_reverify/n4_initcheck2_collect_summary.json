@@ -1,0 +1,44 @@
+{
+  "node": "N4",
+  "tag": "n4_initcheck2",
+  "suite": "libero_object",
+  "task_id": 0,
+  "task_language": "pick up the alphabet soup and place it in the basket",
+  "want": 2,
+  "attempts": [
+    {
+      "seed": 1,
+      "success": false,
+      "frames": 435,
+      "path": "raw/failure/n4_initcheck2_libero_object_t0_s1_0001.npz",
+      "lifted_mm": 49.119102179576615,
+      "success_predicate": false,
+      "geometric_in_basket": false,
+      "close_steps": 10
+    },
+    {
+      "seed": 2,
+      "success": true,
+      "frames": 424,
+      "path": "raw/success/n4_initcheck2_libero_object_t0_s2_0002.npz",
+      "lifted_mm": 49.16752934758056,
+      "success_predicate": true,
+      "geometric_in_basket": true,
+      "close_steps": 11
+    },
+    {
+      "seed": 3,
+      "success": false,
+      "frames": 436,
+      "path": "raw/failure/n4_initcheck2_libero_object_t0_s3_0003.npz",
+      "lifted_mm": 49.603274259284944,
+      "success_predicate": false,
+      "geometric_in_basket": false,
+      "close_steps": 10
+    }
+  ],
+  "n_success": 1,
+  "success_rate": 0.3333333333333333,
+  "wall_seconds": 58.1,
+  "verdict": "NOT_ENOUGH"
+}

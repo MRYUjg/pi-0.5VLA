@@ -1,0 +1,4 @@
+# [server-local] 构建隔离环境用的约束：setuptools>=76 起不再支持 Python 3.8，
+# 会在 sdist 构建时因 PEP585 语法报 "'type' object is not subscriptable"。
+setuptools<76
+wheel<0.46

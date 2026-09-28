@@ -1,0 +1,80 @@
+﻿<mujoco model="crt_ctag2f90">
+  <compiler angle="radian"/>
+
+  <asset>
+    <mesh name="base_link" content_type="model/stl" file="../meshes/base_link.STL"/>
+    <mesh name="Left_1_Link" content_type="model/stl" file="../meshes/Left_1_Link.STL"/>
+    <mesh name="Left_in_Link" content_type="model/stl" file="../meshes/Left_in_Link.STL"/>
+    <mesh name="Left_up_Link" content_type="model/stl" file="../meshes/Left_up_Link.STL"/>
+    <mesh name="Left_Pad_Link" content_type="model/stl" file="../meshes/Left_Pad_Link.STL"/>
+    <mesh name="Left_2_Link" content_type="model/stl" file="../meshes/Left_2_Link.STL"/>
+    <mesh name="Right_2_Link" content_type="model/stl" file="../meshes/Right_2_Link.STL"/>
+    <mesh name="Right_1_Link" content_type="model/stl" file="../meshes/Right_1_Link.STL"/>
+    <mesh name="Right_in_Link" content_type="model/stl" file="../meshes/Right_in_Link.STL"/>
+    <mesh name="Right_up_Link" content_type="model/stl" file="../meshes/Right_up_Link.STL"/>
+    <mesh name="Right_Pad_Link" content_type="model/stl" file="../meshes/Right_Pad_Link.STL"/>
+  </asset>
+
+  <actuator>
+    <position ctrllimited="true" ctrlrange="0 1" joint="Left_1_Joint" kp="1" name="gripper_actuator"/>
+  </actuator>
+
+  <equality>
+    <joint joint1="Left_1_Joint" joint2="Left_in_Joint" polycoef="0 -0.2 0 0 0"/>
+    <joint joint1="Left_1_Joint" joint2="Left_up_Joint" polycoef="0 1 0 0 0"/>
+    <joint joint1="Left_1_Joint" joint2="Left_2_Joint" polycoef="0 1 0 0 0"/>
+    <joint joint1="Left_1_Joint" joint2="Right_1_Joint" polycoef="0 1 0 0 0"/>
+    <joint joint1="Right_1_Joint" joint2="Right_in_Joint" polycoef="0 0.2 0 0 0"/>
+    <joint joint1="Right_1_Joint" joint2="Right_up_Joint" polycoef="0 -1 0 0 0"/>
+    <joint joint1="Right_1_Joint" joint2="Right_2_Joint" polycoef="0 -1 0 0 0"/>
+  </equality>
+
+  <worldbody>
+    <body name="base_link" pos="0 0 0">
+      <inertial pos="4.70472456312954E-05 0.0530718722977775 2.79114966746296E-05" mass="0.341125691217397" diaginertia="0.000408936535578843 0.000189574747561623 0.000450553489757044"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="base_link"/>
+      <body name="Left_1_Link" pos="-0.03014 0 0.09215" quat="0 0 0.707107 0.707107">
+        <inertial pos="-0.00216023 0.0229756 0" quat="0.70633 0.70633 0.0331325 0.0331325" mass="0.00525185" diaginertia="1.30932e-06 1.24592e-06 1.48811e-07"/>
+        <joint name="Left_1_Joint" axis="0 0 1" range="0 1"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="Left_1_Link"/>
+        <body name="Left_in_Link" pos="-0.00224664 0.0238946 0">
+          <inertial pos="-0.00517226 -0.0141688 2.28176e-11" quat="0.696015 0.696015 -0.124752 -0.124752" mass="0.00383709" diaginertia="5.40962e-07 5.23973e-07 7.2566e-08"/>
+          <joint name="Left_in_Joint" axis="0 0 -1" range="-0.2 0"/>
+          <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="Left_in_Link"/>
+        </body>
+        <body name="Left_up_Link" pos="-0.00514855 0.0547585 0">
+          <inertial pos="-0.016703 0.00785172 0.0254192" quat="0.970813 0.162607 -0.142616 0.103645" mass="0.0112134" diaginertia="7.30148e-06 5.9177e-06 1.68744e-06"/>
+          <joint name="Left_up_Joint" axis="0 0 1" range="0 1"/>
+          <geom type="mesh" rgba="1 1 1 1" mesh="Left_up_Link"/>
+          <geom pos="-0.0240102 0.0412441 0" type="mesh" rgba="1 1 1 1" mesh="Left_Pad_Link"/>
+        </body>
+      </body>
+      <body name="Left_2_Link" pos="-0.016 0 0.109" quat="0 0 0.707107 0.707107">
+        <inertial pos="-0.00246967 0.0262385 0" quat="0.706328 0.706328 0.0331679 0.0331679" mass="0.00632171" diaginertia="1.34726e-06 1.25943e-06 1.80914e-07"/>
+        <joint name="Left_2_Joint" axis="0 0 -1" range="0 1"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="Left_2_Link"/>
+      </body>
+      <body name="Right_2_Link" pos="0.016 0 0.109" quat="0.707107 0.707107 0 0">
+        <inertial pos="-0.00246967 0.0262385 0" quat="0.706328 0.706328 0.0331679 0.0331679" mass="0.00632171" diaginertia="1.34726e-06 1.25943e-06 1.80914e-07"/>
+        <joint name="Right_2_Joint" axis="0 0 1" range="-1 0"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="Right_2_Link"/>
+      </body>
+      <body name="Right_1_Link" pos="0.03014 0 0.09215" quat="0.707105 0.707108 0 0">
+        <inertial pos="-0.00216023 0.0229756 0" quat="0.70633 0.70633 0.0331325 0.0331325" mass="0.00525185" diaginertia="1.30932e-06 1.24592e-06 1.48811e-07"/>
+        <joint name="Right_1_Joint" axis="0 0 1" range="0 1"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="Right_1_Link"/>
+        <body name="Right_in_Link" pos="-0.00224664 0.0238946 0">
+          <inertial pos="-0.00517226 -0.0141688 2.28176e-11" quat="0.696015 0.696015 -0.124752 -0.124752" mass="0.00383709" diaginertia="5.40962e-07 5.23973e-07 7.2566e-08"/>
+          <joint name="Right_in_Joint" axis="0 0 1" range="0 0.2"/>
+          <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="Right_in_Link"/>
+        </body>
+        <body name="Right_up_Link" pos="-0.00514855 0.0547585 0">
+          <inertial pos="-0.016703 0.00785172 0.0254192" quat="0.970813 0.162607 -0.142616 0.103645" mass="0.0112134" diaginertia="7.30148e-06 5.9177e-06 1.68744e-06"/>
+          <joint name="Right_up_Joint" axis="0 0 1" range="-1 0"/>
+          <geom type="mesh" rgba="1 1 1 1" mesh="Right_up_Link"/>
+          <geom pos="-0.0240102 0.0412441 0" type="mesh" rgba="1 1 1 1" mesh="Right_Pad_Link"/>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

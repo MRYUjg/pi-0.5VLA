@@ -1,0 +1,54 @@
+# Run with:
+#   export SERVER_ARGS="--env LIBERO"
+#   docker compose -f examples/eco65_sim/compose.yml up
+#
+# Uses pre-built images (openpi_server + libero). No rebuild needed.
+services:
+  eco65_runtime:
+    image: libero
+    depends_on:
+      - openpi_server
+    init: true
+    tty: true
+    network_mode: host
+    privileged: true
+    volumes:
+      - $PWD:/app
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+    environment:
+      - DISPLAY=$DISPLAY
+      - MUJOCO_GL=${MUJOCO_GL:-egl}
+      - MUJOCO_EGL_DEVICE_ID=0
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - PYOPENGL_PLATFORM=egl
+    command:
+      /bin/bash -c "source /.venv/bin/activate && python examples/eco65_sim/main.py"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  openpi_server:
+    image: openpi_server
+    init: true
+    tty: true
+    network_mode: host
+    volumes:
+      - $PWD:/app
+      - ${OPENPI_DATA_HOME:-~/.cache/openpi}:/openpi_assets
+    environment:
+      - SERVER_ARGS
+      - OPENPI_DATA_HOME=/openpi_assets
+      - IS_DOCKER=true
+      - http_proxy=http://127.0.0.1:7891
+      - https_proxy=http://127.0.0.1:7891
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

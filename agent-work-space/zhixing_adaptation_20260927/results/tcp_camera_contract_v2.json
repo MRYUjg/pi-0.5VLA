@@ -1,0 +1,1133 @@
+{
+  "node": "N2",
+  "date": "2026-09-28",
+  "generated_at_utc": "2026-09-28T05:06:27.789652+00:00",
+  "supersedes": "results/tcp_camera_contract.json",
+  "status": "current",
+  "scope": "当前生产资产（ZhiXing eef=0.20254、R1 夹爪分派 init_qpos、极性修正、ZHIXING_GRIPPER_SPEED 部署值 0.01、OSC_POSE output_max）下的 TCP / 相机 / 开合状态 / 初始位姿重测。所有数字为 2026-09-28 在容器内实测，未从旧契约复制任何数值。",
+  "approach_axis_convention": "+z（grip_site 局部系，指向工作空间/桌面下方）",
+  "definitions": {
+    "grip_site": "robosuite/OSC 使用的 eef site（本资产中位于 gripper0_eef body 原点）；策略动作即作用于此点",
+    "grasp_point": "两指垫碰撞 geom 内侧面中点；在 joint equality / connect 约束收敛的构型下测量",
+    "measurement_protocol": "libero_spatial task_id=0 init_idx=0 seed=7，256x256；三配置同场景同物体初态；开/闭态见 primary_mode",
+    "state_conventions": {
+      "reset": "env.reset() 后、任何步进之前的构型（夹爪处于 init_qpos 自洽装配）",
+      "open": "执行器全开端点（ZhiXing ctrl=0.0 → Left_1=0；Panda ctrl=0.04）",
+      "closed": "执行器近闭端点（ZhiXing ctrl=-0.91 → Left_1=-0.91；Panda ctrl=0.0）"
+    }
+  },
+  "asset_bindings": {
+    "repo_root_in_container": "/app",
+    "repo_root_on_host": "/mnt/data/vla-policy/openpi",
+    "fingerprint_manifest": {
+      "path": "agent-work-space/zhixing_adaptation_20260927/manifests/source_fingerprint_current_candidate.json",
+      "generated_at": "2026-09-28T04:53:14",
+      "purpose": "N0（返工）当前候选版指纹：ECO65 + ZhiXing 在 R1–R6 修复后的完整资产/代码/环境快照"
+    },
+    "files": {
+      "robosuite/models/assets/grippers/zhixing_gripper.xml": {
+        "sha256": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+        "bytes": 6823,
+        "matches_fingerprint_manifest": true,
+        "recomputed_by": "hashlib.sha256 (make_tcp_contract_v2.py, container)",
+        "fingerprint_manifest_sha256": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+        "in_fingerprint_manifest": true
+      },
+      "robosuite/models/robots/manipulators/eco65_robot.py": {
+        "sha256": "8a890af262233d808139bdabc8e9e107039c83b2f4b8601d67ef68922099d6c2",
+        "bytes": 4232,
+        "matches_fingerprint_manifest": true,
+        "recomputed_by": "hashlib.sha256 (make_tcp_contract_v2.py, container)",
+        "fingerprint_manifest_sha256": "8a890af262233d808139bdabc8e9e107039c83b2f4b8601d67ef68922099d6c2",
+        "in_fingerprint_manifest": true
+      },
+      "third_party/libero/libero/libero/envs/robots/mounted_eco65.py": {
+        "sha256": "7e14d05383a64710c7b9128db1639b452114d975f887a95dd58a9b52c0f36d1e",
+        "bytes": 1738,
+        "matches_fingerprint_manifest": true,
+        "recomputed_by": "hashlib.sha256 (make_tcp_contract_v2.py, container)",
+        "fingerprint_manifest_sha256": "7e14d05383a64710c7b9128db1639b452114d975f887a95dd58a9b52c0f36d1e",
+        "in_fingerprint_manifest": true
+      },
+      "robosuite/models/assets/robots/ECO65-B/robot.xml": {
+        "sha256": "80f8626433a5e46025c4a797c01082182fb425482187f1482bae38a6b96a0bc9",
+        "bytes": 6185,
+        "matches_fingerprint_manifest": true,
+        "recomputed_by": "hashlib.sha256 (make_tcp_contract_v2.py, container)",
+        "fingerprint_manifest_sha256": "80f8626433a5e46025c4a797c01082182fb425482187f1482bae38a6b96a0bc9",
+        "in_fingerprint_manifest": true
+      },
+      "robosuite/controllers/config/osc_pose.json": {
+        "sha256": "07f3a8b41d3eecc8a36700a85bd8207ee3fbc36eb73f6a2248340c96770d1e45",
+        "bytes": 466,
+        "matches_fingerprint_manifest": true,
+        "recomputed_by": "hashlib.sha256 (make_tcp_contract_v2.py, container)",
+        "fingerprint_manifest_sha256": "07f3a8b41d3eecc8a36700a85bd8207ee3fbc36eb73f6a2248340c96770d1e45",
+        "in_fingerprint_manifest": true
+      },
+      "robosuite/models/grippers/zhixing_gripper.py": {
+        "sha256": "91765fc70477d005128961a469d7564acd053fa21e2e9414c630d29608a428b2",
+        "bytes": 4151,
+        "matches_fingerprint_manifest": true,
+        "recomputed_by": "hashlib.sha256 (make_tcp_contract_v2.py, container)",
+        "fingerprint_manifest_sha256": "91765fc70477d005128961a469d7564acd053fa21e2e9414c630d29608a428b2",
+        "in_fingerprint_manifest": true
+      },
+      "robosuite/robots/single_arm.py": {
+        "sha256": "20ae474712326e051b272737b12cd2d9dbe547888228ac6e82a73995ae0bae1d",
+        "bytes": 20790,
+        "matches_fingerprint_manifest": true,
+        "recomputed_by": "hashlib.sha256 (make_tcp_contract_v2.py, container)",
+        "fingerprint_manifest_sha256": "20ae474712326e051b272737b12cd2d9dbe547888228ac6e82a73995ae0bae1d",
+        "in_fingerprint_manifest": true
+      },
+      "agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": {
+        "sha256": "80d2f59dd41efda120c8bd4bdc4e99b3e3e3b1f1b04fddf664d32d2cf3a35e9c",
+        "bytes": 44840,
+        "matches_fingerprint_manifest": true,
+        "recomputed_by": "hashlib.sha256 (make_tcp_contract_v2.py, container)",
+        "fingerprint_manifest_sha256": "80d2f59dd41efda120c8bd4bdc4e99b3e3e3b1f1b04fddf664d32d2cf3a35e9c",
+        "in_fingerprint_manifest": true
+      },
+      "robosuite/controllers/config/robots/default_eco65.json": {
+        "sha256": "796e66a9318b199676fd1602c5ecfa4372c296c5898776cabf3f9f50c53d48d8",
+        "bytes": 911,
+        "matches_fingerprint_manifest": null,
+        "recomputed_by": "hashlib.sha256 (make_tcp_contract_v2.py, container)",
+        "fingerprint_manifest_sha256": null,
+        "in_fingerprint_manifest": false
+      },
+      "robosuite/models/assets/grippers/panda_gripper.xml": {
+        "sha256": "d9d68123909d6910488310d0fae4e358ed4ac831c6d0957f3e30893a5412baac",
+        "bytes": 4600,
+        "matches_fingerprint_manifest": null,
+        "recomputed_by": "hashlib.sha256 (make_tcp_contract_v2.py, container)",
+        "fingerprint_manifest_sha256": null,
+        "in_fingerprint_manifest": false
+      }
+    }
+  },
+  "tcp": {
+    "eef_body": {
+      "declared_pos_in_right_gripper_m": [
+        0.0,
+        0.0,
+        0.20254
+      ],
+      "declared_install_length_m": 0.20254,
+      "measured_pos_in_right_gripper_m": [
+        -1.1786203778197077e-20,
+        -9.27896845999437e-18,
+        0.20254000000000005
+      ],
+      "eef_body_name_in_model": "gripper0_eef",
+      "parent_body_name_in_model": "gripper0_right_gripper",
+      "history": "旧契约时代为 pos=\"0 0 0.12\"（安装长度 0.120 m）；当前为 0.20254 m。",
+      "cross_check_flange_offset_mm": {
+        "eco65_zhixing_right_gripper_behind_gripsite": 202.54000354018004,
+        "panda_panda_right_gripper_behind_gripsite": 122.94578156662975,
+        "source": "results/n2v2_20260928/tcp_camera_audit.json comparison.vs_reference[*].gripper_lowest_below_gripsite_mm / tcp_geometry_sites.json bodies[*].local_mm（本轮重测）"
+      }
+    },
+    "grasp_point_definition": "两指垫碰撞 geom 内侧面（沿两垫质心连线 ±u 方向最前 5 mm 薄层顶点）中点在 grip_site 局部系下的位置；正值 = 比声明的 grip_site 更深入工作空间（+z）。",
+    "grasp_point_offset_along_approach_mm": {
+      "convention": "+z（grip_site 局部系，指向工作空间/桌面下方）",
+      "primary_mode": "constraint_consistent_assembly（约束自洽装配；joint equality 残差 0，connect 残差 1.75e-7 m，且与臂位姿无关）",
+      "eco65_zhixing": {
+        "reset": -0.06502850943618307,
+        "open": -17.515993562587543,
+        "closed": -0.06502850943618307
+      },
+      "eco65_panda": {
+        "reset": -3.600000000000017,
+        "open": -3.600000000000015,
+        "closed": -3.600000000000017
+      },
+      "panda_panda": {
+        "reset": -3.6000000000001298,
+        "open": -3.6000000000001298,
+        "closed": -3.6000000000001298
+      },
+      "cross_checks": {
+        "driven_step_input": {
+          "eco65_zhixing": {
+            "reset": -0.06502850943618307,
+            "open": -17.416919593287634,
+            "closed": -47.77636529774218
+          },
+          "eco65_panda": {
+            "reset": -3.600000000000017,
+            "open": -3.5999999999999575,
+            "closed": -3.6000000000000085
+          },
+          "panda_panda": {
+            "reset": -3.6000000000001298,
+            "open": -3.600000000000109,
+            "closed": -3.6000000000003087
+          },
+          "note": "执行器 ctrl 阶跃到端点后 mj_step 800 步（与历史 probe_pad_face.py 同口径）。ZhiXing 的 closed 在此口径下**不收敛**，见 actuator_path_findings。"
+        },
+        "driven_ramp_input": {
+          "eco65_zhixing": {
+            "reset": -0.06502850943618307,
+            "open": -17.40348581028908,
+            "closed": 0.06442793213423814
+          },
+          "eco65_panda": {
+            "reset": -3.600000000000017,
+            "open": -3.6000000000002066,
+            "closed": -3.5999999999998176
+          },
+          "panda_panda": {
+            "reset": -3.6000000000001298,
+            "open": -3.5999999999999224,
+            "closed": -3.6000000000003087
+          },
+          "note": "ctrl 按 100 步斜坡到达端点再保持（对应部署时 format_action 在 speed=0.01 下的累积路径）。"
+        },
+        "probe_pad_face_driven": {
+          "eco65_zhixing": {
+            "reset": -0.06502850943618307,
+            "open": -17.4186760923141,
+            "closed": -47.77665966893757
+          },
+          "eco65_panda": {
+            "reset": -3.600000000000017,
+            "open": -3.5999999999999575,
+            "closed": -3.6000000000000085
+          },
+          "panda_panda": {
+            "reset": -3.6000000000001298,
+            "open": -3.600000000000109,
+            "closed": -3.6000000000003087
+          }
+        }
+      },
+      "zhixing_vs_panda_reference_delta_mm": {
+        "definition": "ZhiXing 夹持点 − PandaGripper(Panda) 夹持点（同状态）",
+        "reset": 3.534971490563947,
+        "open": -13.915993562587413,
+        "closed": 3.534971490563947
+      },
+      "jaw_travel_over_stroke_mm": 17.45096505315136,
+      "legacy_closest_pair_metric_mm": {
+        "reset": -16.51376277241551,
+        "open": 1.7730691037266508,
+        "closed": -16.51376277241551
+      }
+    },
+    "jaw_opening_range": {
+      "definition": "两指垫碰撞 geom 顶点质心间距（工程开口口径）",
+      "eco65_zhixing_assembly": {
+        "reset": 0.004284632808899358,
+        "open": 0.09444232580831993,
+        "closed": 0.004284632808899358
+      },
+      "eco65_panda_assembly": {
+        "reset": 0.04866599999999997,
+        "open": 0.08699999999999995,
+        "closed": 0.007
+      },
+      "panda_panda_assembly": {
+        "reset": 0.04866599999999989,
+        "open": 0.08699999999999979,
+        "closed": 0.006999999999999991
+      },
+      "eco65_zhixing_ramped": {
+        "reset": 0.004284632808899358,
+        "open": 0.09444083908340004,
+        "closed": 0.00491502982947189
+      },
+      "eco65_zhixing_pad_face_separation_mm": {
+        "reset": 0.574710200653849,
+        "open": 89.90927502432514,
+        "closed": 0.574710200653849
+      },
+      "panda_panda_pad_face_separation_mm": {
+        "reset": 40.665999999999904,
+        "open": 78.99999999999979,
+        "closed": 0.9999999999999983
+      },
+      "eco65_zhixing_closest_pair_clearance_m": {
+        "reset": 0.0001798780430976463,
+        "open": 0.08969994912842282,
+        "closed": 0.0001798780430976463
+      },
+      "eco65_zhixing_left_1_joint_qpos_assembly": {
+        "reset": -0.91,
+        "open": 0.0,
+        "closed": -0.91
+      },
+      "deployment_measured_open_stroke_span_m": 0.08944990120483906,
+      "range_m": {
+        "eco65_zhixing_pad_center_min_closed": 0.004284632808899358,
+        "eco65_zhixing_pad_center_max_open": 0.09444232580831993,
+        "eco65_zhixing_span": 0.09015769299942057,
+        "panda_panda_pad_center_min_closed": 0.006999999999999991,
+        "panda_panda_pad_center_max_open": 0.08699999999999979
+      },
+      "v1_compatible_keys": {
+        "closed_pad_clearance_m": 0.0001798780430976463,
+        "open_pad_clearance_m": 0.08969994912842282,
+        "note": "与旧契约 zhixing.jaw_opening_range 同键名、同口径（最近点对净开口）。"
+      }
+    },
+    "pad_face_normal_angle_deg": {
+      "eco65_zhixing": {
+        "reset": 3.2158504959731724,
+        "open": 3.097944968860405,
+        "closed": 3.2158504959731724
+      },
+      "panda_panda": {
+        "reset": 0.0,
+        "open": 0.0,
+        "closed": 0.0
+      },
+      "note": "ZhiXing 为二连平行连杆：全行程内两面近似平行。"
+    },
+    "gripper_extent_along_approach_mm": {
+      "eco65_zhixing_plus_z": {
+        "reset": 19.906208367078726,
+        "open": 2.475017007439424,
+        "closed": 19.906208367078726
+      },
+      "eco65_zhixing_minus_z": {
+        "reset": -202.54000354018004,
+        "open": -202.54000354018004,
+        "closed": -202.54000354018004
+      },
+      "panda_panda_plus_z": {
+        "reset": 9.299880525714778,
+        "open": 9.299880525714821,
+        "closed": 9.299880525714821
+      }
+    },
+    "constraint_residuals": {
+      "definition": "joint equality 最大位置残差（rad）+ 两条 connect site 距离最大残差（m）",
+      "eco65_zhixing_assembly": {
+        "reset": {
+          "n_joint_eq": 5,
+          "n_connect": 2,
+          "joint_eq_max": 0.0,
+          "connect_max_m": 1.7537402256312936e-07
+        },
+        "open": {
+          "n_joint_eq": 5,
+          "n_connect": 2,
+          "joint_eq_max": 0.0,
+          "connect_max_m": 1.7537402256313188e-07
+        },
+        "closed": {
+          "n_joint_eq": 5,
+          "n_connect": 2,
+          "joint_eq_max": 0.0,
+          "connect_max_m": 1.7537402256312936e-07
+        }
+      },
+      "eco65_zhixing_driven_step": {
+        "reset": {
+          "n_joint_eq": 5,
+          "n_connect": 2,
+          "joint_eq_max": 0.0,
+          "connect_max_m": 1.7537402256312936e-07
+        },
+        "open": {
+          "n_joint_eq": 5,
+          "n_connect": 2,
+          "joint_eq_max": 0.0032384428739535933,
+          "connect_max_m": 7.435487041181345e-05
+        },
+        "closed": {
+          "n_joint_eq": 5,
+          "n_connect": 2,
+          "joint_eq_max": 1.4309398613082593,
+          "connect_max_m": 0.01806222151268397
+        }
+      },
+      "eco65_zhixing_driven_ramp": {
+        "reset": {
+          "n_joint_eq": 5,
+          "n_connect": 2,
+          "joint_eq_max": 0.0,
+          "connect_max_m": 1.7537402256312936e-07
+        },
+        "open": {
+          "n_joint_eq": 5,
+          "n_connect": 2,
+          "joint_eq_max": 0.003238307503650139,
+          "connect_max_m": 7.437415941108751e-05
+        },
+        "closed": {
+          "n_joint_eq": 5,
+          "n_connect": 2,
+          "joint_eq_max": 0.004592623339068624,
+          "connect_max_m": 9.595925996438084e-05
+        }
+      },
+      "eco65_zhixing_probe_pad_face": {
+        "reset": {
+          "joint_eq_max": 0.0,
+          "connect_max_m": 1.7537402256312936e-07
+        },
+        "open": {
+          "joint_eq_max": 0.003239769780593174,
+          "connect_max_m": 7.433997785864302e-05
+        },
+        "closed": {
+          "joint_eq_max": 1.43093064119459,
+          "connect_max_m": 0.018061575515195476
+        }
+      },
+      "panda_note": "PandaGripper 无 joint equality / connect 约束，残差为 null。"
+    },
+    "site_cross_check_local_mm": {
+      "Left_Support_tip": [
+        11.270357470103944,
+        -0.0003039691674088667,
+        -26.743808640848645
+      ],
+      "Right_Support_tip": [
+        -11.270357472742955,
+        0.00044260053065045925,
+        -26.74380864087586
+      ],
+      "eef_body_offset": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "state_convergence": {
+      "tolerance": {
+        "joint_eq_max_rad": 0.01,
+        "connect_max_m": 0.0005
+      },
+      "eco65_zhixing_assembly": {
+        "reset": {
+          "joint_eq_max_rad": 0.0,
+          "connect_max_m": 1.7537402256312936e-07,
+          "joint_eq_ok": true,
+          "connect_ok": true,
+          "converged": true
+        },
+        "open": {
+          "joint_eq_max_rad": 0.0,
+          "connect_max_m": 1.7537402256313188e-07,
+          "joint_eq_ok": true,
+          "connect_ok": true,
+          "converged": true
+        },
+        "closed": {
+          "joint_eq_max_rad": 0.0,
+          "connect_max_m": 1.7537402256312936e-07,
+          "joint_eq_ok": true,
+          "connect_ok": true,
+          "converged": true
+        }
+      },
+      "eco65_zhixing_driven_step": {
+        "reset": {
+          "joint_eq_max_rad": 0.0,
+          "connect_max_m": 1.7537402256312936e-07,
+          "joint_eq_ok": true,
+          "connect_ok": true,
+          "converged": true
+        },
+        "open": {
+          "joint_eq_max_rad": 0.0032384428739535933,
+          "connect_max_m": 7.435487041181345e-05,
+          "joint_eq_ok": true,
+          "connect_ok": true,
+          "converged": true
+        },
+        "closed": {
+          "joint_eq_max_rad": 1.4309398613082593,
+          "connect_max_m": 0.01806222151268397,
+          "joint_eq_ok": false,
+          "connect_ok": false,
+          "converged": false
+        }
+      },
+      "eco65_zhixing_driven_ramp": {
+        "reset": {
+          "joint_eq_max_rad": 0.0,
+          "connect_max_m": 1.7537402256312936e-07,
+          "joint_eq_ok": true,
+          "connect_ok": true,
+          "converged": true
+        },
+        "open": {
+          "joint_eq_max_rad": 0.003238307503650139,
+          "connect_max_m": 7.437415941108751e-05,
+          "joint_eq_ok": true,
+          "connect_ok": true,
+          "converged": true
+        },
+        "closed": {
+          "joint_eq_max_rad": 0.004592623339068624,
+          "connect_max_m": 9.595925996438084e-05,
+          "joint_eq_ok": true,
+          "connect_ok": true,
+          "converged": true
+        }
+      },
+      "panda_panda_driven_step": {
+        "reset": {
+          "joint_eq_max_rad": null,
+          "connect_max_m": null,
+          "joint_eq_ok": true,
+          "connect_ok": true,
+          "converged": true
+        },
+        "open": {
+          "joint_eq_max_rad": null,
+          "connect_max_m": null,
+          "joint_eq_ok": true,
+          "connect_ok": true,
+          "converged": true
+        },
+        "closed": {
+          "joint_eq_max_rad": null,
+          "connect_max_m": null,
+          "joint_eq_ok": true,
+          "connect_ok": true,
+          "converged": true
+        }
+      },
+      "probe_internal_stricter_tolerance": {
+        "reset": {
+          "driven_step_input_converged": true,
+          "driven_ramp_input_converged": true,
+          "tolerance": {
+            "joint_eq_max": 0.001,
+            "connect_max_m": 0.0005
+          },
+          "assembly_minus_driven_grasp_along_mm": 0.0,
+          "assembly_minus_ramped_grasp_along_mm": 0.0,
+          "driven_pad_face_separation_mm": 0.574710200653849,
+          "ramped_pad_face_separation_mm": 0.574710200653849,
+          "assembly_pad_face_separation_mm": 0.574710200653849
+        },
+        "open": {
+          "driven_step_input_converged": false,
+          "driven_ramp_input_converged": false,
+          "tolerance": {
+            "joint_eq_max": 0.001,
+            "connect_max_m": 0.0005
+          },
+          "assembly_minus_driven_grasp_along_mm": -0.09907396929990853,
+          "assembly_minus_ramped_grasp_along_mm": -0.11250775229846255,
+          "driven_pad_face_separation_mm": 89.94036235554577,
+          "ramped_pad_face_separation_mm": 89.91682479658628,
+          "assembly_pad_face_separation_mm": 89.90927502432514
+        },
+        "closed": {
+          "driven_step_input_converged": false,
+          "driven_ramp_input_converged": false,
+          "tolerance": {
+            "joint_eq_max": 0.001,
+            "connect_max_m": 0.0005
+          },
+          "assembly_minus_driven_grasp_along_mm": 47.711336788306,
+          "assembly_minus_ramped_grasp_along_mm": -0.12945644157042122,
+          "driven_pad_face_separation_mm": 22.68584582071176,
+          "ramped_pad_face_separation_mm": 0.6347350231817939,
+          "assembly_pad_face_separation_mm": 0.574710200653849
+        }
+      }
+    }
+  },
+  "initial_pose": {
+    "definition": "reset 后、任何步进之前的 6 个臂关节角（robot0_joint_1..6）",
+    "dispatch_source": "robosuite/models/robots/manipulators/eco65_robot.py ECO65_INIT_QPOS_BY_GRIPPER（R1 修复：按实际挂载夹爪分派）；robosuite/robots/single_arm.py 在 add_gripper() 后重新解析。",
+    "landed_init_qpos_eco65_zhixing_measured": [
+      -0.12639,
+      -0.222035,
+      -0.841572,
+      -0.563545,
+      1.563635,
+      -1.697476
+    ],
+    "landed_init_qpos_eco65_zhixing_source_table": [
+      -0.12639,
+      -0.222035,
+      -0.841572,
+      -0.563545,
+      1.563635,
+      -1.697476
+    ],
+    "landed_init_qpos_source_table_max_abs_delta_rad": 0.0,
+    "landed_init_qpos_from_solve_zhixing_init_pose": [
+      -0.12638991527273963,
+      -0.22204862624991836,
+      -0.8415898117256837,
+      -0.5635496206021375,
+      1.563635004872269,
+      -1.6974759962767998
+    ],
+    "landed_init_qpos_two_measurements_note": "settled probe 在 env.reset() 后**未步进**即读取，与源码表逐位一致；solve_zhixing_init_pose.py 在锁定臂关节步进 800 步后读取，因而有 ≤1.8e-5 rad 的一步积分残差 —— 不是 init_qpos 噪声（robosuite initialization_noise 未生效于该路径）。",
+    "landed_init_qpos_eco65_panda_measured": [
+      -0.128227,
+      -0.080175,
+      -1.482052,
+      -0.064915,
+      1.563529,
+      -1.699308
+    ],
+    "landed_init_qpos_panda_panda_measured": [
+      0.0,
+      -0.161037389,
+      0.0,
+      -2.44459747,
+      0.0,
+      2.2267522,
+      0.7853981633974483
+    ],
+    "grip_site_world_pos_eco65_zhixing_reset": [
+      -0.20827930903915964,
+      6.0995706096460735e-05,
+      1.1768782478943907
+    ],
+    "grip_site_world_pos_eco65_panda_reset": [
+      -0.2084657296230764,
+      4.834551500964935e-07,
+      1.1732798407393845
+    ],
+    "grip_site_world_pos_panda_panda_reset": [
+      -0.2084646605658239,
+      0.0,
+      1.1732794757296405
+    ],
+    "panda_reference_grip_site_pos": [
+      -0.2084646605658239,
+      0.0,
+      1.1732794757296405
+    ],
+    "residual_vs_panda_reference": {
+      "definition": "基准 = Panda 在其 grip_site 参考位姿下的**夹持点**位置",
+      "grasp_point_mm": 0.11728732426173345,
+      "grip_site_mm_from_solve_zhixing_init_pose": 3.593148132220933,
+      "grip_site_mm_recomputed_from_settled_probe": 3.604058373331281
+    },
+    "eco65_panda_grip_site_vs_panda_reference_mm": 0.0012287572601956968,
+    "zhixing_grasp_offset_local_m_at_reset": [
+      3.003419974031168e-06,
+      1.810590012344652e-05,
+      -6.502850943618307e-05
+    ],
+    "panda_reference_grasp_offset_local_m": [
+      5.924268143190887e-21,
+      -9.952936348076902e-20,
+      -0.0036000000000001296
+    ],
+    "candidate_ik_solution": {
+      "init_qpos": [
+        -0.12619207742401736,
+        -0.22220877689603646,
+        -0.8410559756331613,
+        -0.5638885861444096,
+        1.5636462128816229,
+        -1.6972791742712394
+      ],
+      "grasp_point_residual_mm": 0.0005667674594480894,
+      "rot_residual_deg": 6.653963292597734e-06,
+      "limit_margin_min_rad": 1.542353787118377,
+      "gate_pass": true,
+      "landed": true,
+      "note": "R1 之后该解已实际落地为 ECO65_INIT_QPOS_BY_GRIPPER['ZhixingGripper']（与 landed_init_qpos_source_table 一致）。"
+    }
+  },
+  "camera": {
+    "camera": "robot0_eye_in_hand（定义于 robosuite/models/assets/robots/ECO65-B/robot.xml，挂在 right_hand 上 pos=\"0.05 0 0\" quat=\"0 0.707108 0.707108 0\" fovy=75；渲染 256x256）",
+    "T_cam2grip_definition": "inv(T_cam_world) @ T_grip_site_world（reset 位姿，4x4 行主序）",
+    "T_cam2grip": {
+      "eco65_zhixing": [
+        [
+          -0.9999999999999999,
+          1.2221924766122928e-17,
+          -1.0683547019711322e-20,
+          3.903127820947816e-18
+        ],
+        [
+          -1.2129555871066038e-17,
+          1.0,
+          -1.7096843048167094e-17,
+          -0.05000000000000002
+        ],
+        [
+          -6.896488960469226e-19,
+          1.1479447954584297e-17,
+          -0.9999999999999998,
+          -0.20253999999999994
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "eco65_panda": [
+        [
+          -1.0,
+          -2.285480344476513e-17,
+          -3.442269895599447e-21,
+          2.1955093992831465e-18
+        ],
+        [
+          -3.243686224209837e-17,
+          1.0,
+          4.162042418150424e-18,
+          -0.05000000000000002
+        ],
+        [
+          -1.8482806480608537e-18,
+          8.94366690881955e-19,
+          -0.9999999999999999,
+          -0.09699999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "panda_panda": [
+        [
+          -1.0,
+          -4.8314714472502295e-18,
+          -5.286552350525739e-21,
+          4.1470733097570545e-18
+        ],
+        [
+          -5.0519039404146426e-17,
+          1.0000000000000002,
+          -3.0008134011680905e-18,
+          -0.04999999999999999
+        ],
+        [
+          -2.8709372071858846e-18,
+          -2.825045272631109e-18,
+          -1.0,
+          -0.09699999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "T_cam2grip_invariant_across_jaw_states": true,
+    "delta_zhixing_vs_pandagripper": {
+      "trans_mm": 105.53999999999996,
+      "rot_deg": 0.0,
+      "delta_vector_mm": [
+        -2.439454888092385e-19,
+        -2.7755575615628914e-17,
+        -0.10553999999999997
+      ],
+      "per_state_trans_mm": {
+        "reset": 105.53999999999996,
+        "open": 105.53999999999996,
+        "closed": 105.53999999999996
+      }
+    },
+    "delta_eco65_panda_vs_panda_panda_trans_mm": 2.782410069439008e-14,
+    "dist_cam_to_gripsite_mm": {
+      "eco65_zhixing": 208.62035279425643,
+      "eco65_panda": 109.1283647820309,
+      "panda_panda": 109.12836478203077
+    },
+    "wrist_gripper_pixel_fraction": {
+      "reset": {
+        "eco65_zhixing": 0.25054931640625,
+        "eco65_panda": 0.18487548828125,
+        "panda_panda": 0.1848602294921875,
+        "ratio_zhixing_over_pandagripper": 1.3553446141147338,
+        "ratio_zhixing_over_ecopanda": 1.3552327500825354,
+        "eco65_zhixing_bottom40": 0.6227245145631068,
+        "panda_panda_bottom40": 0.4594584344660194,
+        "audit_pipeline_qpos_write_crosscheck": {
+          "eco65_zhixing": 0.25054931640625,
+          "panda_panda": 0.1848602294921875
+        }
+      },
+      "open": {
+        "eco65_zhixing": 0.2743377685546875,
+        "eco65_panda": 0.1884002685546875,
+        "panda_panda": 0.188385009765625,
+        "ratio_zhixing_over_pandagripper": 1.4562611372104326,
+        "ratio_zhixing_over_ecopanda": 1.4561431926783834,
+        "eco65_zhixing_bottom40": 0.6818492111650486,
+        "panda_panda_bottom40": 0.46821905339805825,
+        "audit_pipeline_qpos_write_crosscheck": {
+          "eco65_zhixing": 0.2743377685546875,
+          "panda_panda": 0.188385009765625
+        }
+      },
+      "closed": {
+        "eco65_zhixing": 0.25054931640625,
+        "eco65_panda": 0.1797637939453125,
+        "panda_panda": 0.1797637939453125,
+        "ratio_zhixing_over_pandagripper": 1.3937696290637467,
+        "ratio_zhixing_over_ecopanda": 1.3937696290637467,
+        "eco65_zhixing_bottom40": 0.6227245145631068,
+        "panda_panda_bottom40": 0.4467915655339806,
+        "audit_pipeline_qpos_write_crosscheck": {
+          "eco65_zhixing": 0.25054931640625,
+          "panda_panda": 0.1797637939453125
+        }
+      }
+    },
+    "cam_to_grasp_mm": {
+      "reset": {
+        "eco65_zhixing": 208.55288016936237,
+        "panda_panda": 105.94130450395619
+      },
+      "open": {
+        "eco65_zhixing": 191.65600215818918,
+        "panda_panda": 105.94130450395619
+      },
+      "closed": {
+        "eco65_zhixing": 208.55288016936237,
+        "panda_panda": 105.94130450395619
+      }
+    }
+  },
+  "controller": {
+    "type_class_measured": "OperationalSpaceController",
+    "config_type": "OSC_POSE",
+    "resolved_source_config": "robosuite/controllers/config/robots/default_eco65.json（ECO65.default_controller_config = \"default_eco65\"）",
+    "resolved_source_config_sha256": "796e66a9318b199676fd1602c5ecfa4372c296c5898776cabf3f9f50c53d48d8",
+    "equivalent_preset_config": "robosuite/controllers/config/osc_pose.json",
+    "equivalent_preset_config_sha256": "07f3a8b41d3eecc8a36700a85bd8207ee3fbc36eb73f6a2248340c96770d1e45",
+    "output_max": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "output_max_in_resolved_config": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "output_min_in_resolved_config": [
+      -0.05,
+      -0.05,
+      -0.05,
+      -0.5,
+      -0.5,
+      -0.5
+    ],
+    "input_min": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "input_max": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "kp": 150,
+    "damping_ratio": 1,
+    "input_type": "delta",
+    "input_ref_frame": "base",
+    "control_timestep": 0.05,
+    "action_convention": "7 维 OSC_POSE 归一化动作 ∈[-1,1]：前 3 维平移（满量程 output_max[0:3] m），后 3 维旋转（满量程 output_max[3:6] rad），第 7 维夹爪（-1 开 / +1 合）。"
+  },
+  "gripper": {
+    "zhixing": {
+      "class": "robosuite.models.grippers.zhixing_gripper.ZhixingGripper",
+      "joint_names": [
+        "gripper0_Left_1_Joint",
+        "gripper0_Left_Support_Joint",
+        "gripper0_Left_2_Joint",
+        "gripper0_Right_2_Joint",
+        "gripper0_Right_1_Joint",
+        "gripper0_Right_Support_Joint"
+      ],
+      "joint_count": 6,
+      "dof": 1,
+      "actuator": "单 position 执行器 gripper0_gripper（joint=Left_1_Joint，ctrlrange=[-0.91, 0]，kp=100，forcerange=[-2, 2] N·m）",
+      "polarity": {
+        "convention": "-1 = open, +1 = close",
+        "implementation": "ZhixingGripper.format_action 对累积量取负：current_action = clip(current_action - speed*sign(action), -1, 1)。",
+        "measured_end_to_end": {
+          "path": "真实 env.step（OSC_POSE + format_action，ZHIXING_GRIPPER_SPEED=0.01）",
+          "sequence": "reset → 250 步 action=-1 → 250 步 action=+1 → 250 步 action=-1",
+          "verdict": {
+            "minus1_opens": true,
+            "plus1_closes_from_open": true,
+            "minus1_reopens": true,
+            "convention": "-1 = open, +1 = close",
+            "open_stroke_span_m": 0.08944990120483906
+          },
+          "phases": [
+            {
+              "action": -1.0,
+              "opening_after_m": 0.09441306469389497,
+              "gripper_current_action": [
+                1.0
+              ],
+              "gripper_ctrl": 0.0
+            },
+            {
+              "action": 1.0,
+              "opening_after_m": 0.004963163489055915,
+              "gripper_current_action": [
+                -1.0
+              ],
+              "gripper_ctrl": -0.91
+            },
+            {
+              "action": -1.0,
+              "opening_after_m": 0.09441306792065249,
+              "gripper_current_action": [
+                1.0
+              ],
+              "gripper_ctrl": 0.0
+            }
+          ],
+          "opening_at_reset_m": 0.004284632808899358
+        }
+      },
+      "speed": {
+        "asset_default_measured": 0.2,
+        "deployed_value": 0.01,
+        "deployed_mechanism": "环境变量 ZHIXING_GRIPPER_SPEED=0.01；scripts/n4_collect.py 的 --gripper-speed 默认 0.01 并写入该环境变量（run_n4_collect.sh 不覆盖）。",
+        "measured_with_env_0p01": 0.01
+      }
+    },
+    "panda": {
+      "class": "robosuite.models.grippers.panda_gripper.PandaGripper",
+      "joint_names": [
+        "gripper0_finger_joint1",
+        "gripper0_finger_joint2"
+      ],
+      "joint_count": 2,
+      "dof": 1,
+      "speed": 0.01
+    }
+  },
+  "actuator_path_findings": {
+    "step_input_close_jams_but_deployed_ramp_is_fine": {
+      "observation": "对 ZhiXing 执行器把 ctrl 从当前值**阶跃**到闭合端点 -0.91 后 mj_step，四连杆不收敛：Left_1 冲到 -1.35 rad（越出 [-0.91,0]），joint equality 残差 ~1.43 rad，connect 残差 ~18 mm，出现 1 个自接触。",
+      "not_arm_pose_dependent": "在 R1 之前的旧臂位姿、当前 ZhiXing 臂位姿、Panda 分派臂位姿下结果逐位相同（见 n2v2_close_diag.json），因此与初始位姿无关。",
+      "deployed_path_ok": "按部署路径（format_action 在 speed=0.01 下 100 步斜坡到端点）闭合可以收敛：pad 面间距 0.638 mm，connect 残差 9.6e-5 m；端到端 env.step 开→合→开三步序列也全部通过（极性 verdict）。",
+      "implication": "历史 probe_pad_face.py 的 closed 口径（阶跃）在当前资产下**不可用**；契约的 closed 值取约束自洽装配，并用部署斜坡口径交叉验证。",
+      "artifact": "results/n2v2_20260928/n2v2_close_diag.json"
+    },
+    "assembly_is_arm_pose_invariant": {
+      "observation": "自洽装配在 Left_1=0 / -0.5 / -0.91 三点的 connect 残差均为 1.75e-7 m，且在三种臂位姿下逐位相同 → 夹爪几何只由装配决定。",
+      "artifact": "results/n2v2_20260928/n2v2_close_diag.json"
+    }
+  },
+  "validation_checks": {
+    "asset_hashes_match_fingerprint_manifest": {
+      "robosuite/models/assets/grippers/zhixing_gripper.xml": true,
+      "robosuite/models/robots/manipulators/eco65_robot.py": true,
+      "third_party/libero/libero/libero/envs/robots/mounted_eco65.py": true,
+      "robosuite/models/assets/robots/ECO65-B/robot.xml": true,
+      "robosuite/controllers/config/osc_pose.json": true,
+      "robosuite/models/grippers/zhixing_gripper.py": true,
+      "robosuite/robots/single_arm.py": true,
+      "agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": true,
+      "robosuite/controllers/config/robots/default_eco65.json": null,
+      "robosuite/models/assets/grippers/panda_gripper.xml": null
+    },
+    "eef_declared_is_0p20254": true,
+    "eef_measured_matches_declared_1um": true,
+    "landed_init_qpos_matches_source_table_1e-6_rad": true,
+    "eco65_panda_init_qpos_is_panda_solution": true,
+    "controller_output_max_is_expected": true,
+    "gripper_speed_default_0p2_and_env_0p01": true,
+    "polarity_end_to_end_minus1_open_plus1_close": true,
+    "T_cam2grip_invariant_across_jaw_states": true,
+    "zhixing_assembly_residual_within_1um": true,
+    "ecopanda_equals_pandapanda_T_cam2grip_below_1e-6_mm": true,
+    "zhixing_reset_grip_site_vs_panda_reset_mm": 3.604058373331281
+  },
+  "diff_vs_superseded_contract": [
+    {
+      "item": "zhixing.grasp_point_offset_along_approach_mm.closed",
+      "superseded_value": 82.5441429950913,
+      "current_value": -0.06502850943618307,
+      "explanation": "eef 由 0.120 前移到 0.20254 后，闭合位夹持点已基本落在声明的 grip_site 上。"
+    },
+    {
+      "item": "zhixing.grasp_point_offset_along_approach_mm.open",
+      "superseded_value": 65.1088113022891,
+      "current_value": -17.515993562587543,
+      "explanation": "同上；全开位夹持点现在位于 grip_site 之后 ~17.5 mm。"
+    },
+    {
+      "item": "camera_contract.T_cam2grip_trans_delta_zhixing_vs_panda_mm",
+      "superseded_value": 23.000000000000355,
+      "current_value": 105.53999999999996,
+      "explanation": "eef 安装长度差由 23.0 mm 变为 105.54 mm（=0.20254−0.097）。"
+    },
+    {
+      "item": "camera_contract.pandagripper_alignment_still_holds",
+      "superseded_value": false,
+      "current_value": false,
+      "explanation": "仍然不成立（ZhiXing 与 PandaGripper 的 T_cam2grip 平移差 105.54 mm）。"
+    },
+    {
+      "item": "initial_pose.landed_init_qpos",
+      "superseded_value": [
+        -0.12822699637501933,
+        -0.08018875108093924,
+        -1.4820718667163302,
+        -0.06491839613575459,
+        1.5635290046770178,
+        -1.6993079970320994
+      ],
+      "current_value": [
+        -0.12639,
+        -0.222035,
+        -0.841572,
+        -0.563545,
+        1.563635,
+        -1.697476
+      ],
+      "explanation": "旧值是被覆盖掉的 Panda 解；当前 ZhiXing 解已按夹爪分派。"
+    },
+    {
+      "item": "initial_pose.candidate_landed",
+      "superseded_value": false,
+      "current_value": true,
+      "explanation": "候选解已在 R1 落地。"
+    },
+    {
+      "item": "initial_pose.candidate_grasp_point_residual_mm",
+      "superseded_value": 0.0007481106115606786,
+      "current_value": 0.0005667674594480894,
+      "explanation": "重解后残差仍在 0.5 mm 判据内。"
+    },
+    {
+      "item": "zhixing.grab_point_vs_panda_reference",
+      "superseded_value": 109.1560648206867,
+      "current_value": 0.11728732426173345,
+      "explanation": "初始位姿对齐后，落地构型的夹持点与 Panda 基准之差由 109.16 mm 降到 0.12 mm。"
+    },
+    {
+      "item": "zhixing.flange_offset_mm",
+      "superseded_value": 120.00000354018034,
+      "current_value": 202.54,
+      "explanation": "eef 前移使 right_gripper 法兰面相对 grip_site 的距离由 120.0 mm 变为 202.54 mm。"
+    }
+  ],
+  "provenance": {
+    "asset_bindings.files": {
+      "script": "make_tcp_contract_v2.py (hashlib)",
+      "artifact": "results/tcp_camera_contract_v2.json",
+      "key": "asset_bindings.files[*].sha256"
+    },
+    "tcp.eef_body.declared_pos_in_right_gripper_m": {
+      "script": "re 解析 robosuite/models/assets/grippers/zhixing_gripper.xml",
+      "artifact": "robosuite/models/assets/grippers/zhixing_gripper.xml",
+      "key": "<body name=\"eef\" pos>"
+    },
+    "tcp.grasp_point_offset_along_approach_mm / jaw_opening_range / pad_face_normal_angle_deg / gripper_extent_along_approach_mm / constraint_residuals": {
+      "script": "n2v2_settled_probe.py",
+      "artifact": "results/n2v2_20260928/n2v2_settled_probe.json",
+      "key": "configs[tag].geometry|geometry_driven|geometry_ramped.<state>.*"
+    },
+    "tcp.grasp_point_offset_along_approach_mm.cross_checks.probe_pad_face_driven": {
+      "script": "probe_pad_face.py（经 n2v2_run_redirected.py 重定向输出，未改源码；CONFIGS 扩为 3 个）",
+      "artifact": "results/n2v2_20260928/pad_face_geometry.json",
+      "key": "<tag>.states.<state>.pinch_approach_mm"
+    },
+    "tcp.site_cross_check_local_mm": {
+      "script": "probe_tcp_geometry.py（经 n2v2_run_redirected.py 重定向输出）",
+      "artifact": "results/n2v2_20260928/tcp_geometry_sites.json",
+      "key": "eco65_zhixing.sites/bodies[*].local_mm"
+    },
+    "tcp.state_convergence": {
+      "script": "make_tcp_contract_v2.py 基于 n2v2_settled_probe.py 的原始残差重算",
+      "artifact": "results/n2v2_20260928/n2v2_settled_probe.json",
+      "key": "configs[*].geometry*.constraint_residuals"
+    },
+    "initial_pose.*": {
+      "script": "solve_zhixing_init_pose.py（经 n2v2_run_redirected.py 重定向输出）",
+      "artifact": "results/n2v2_20260928/zhixing_init_pose.json",
+      "key": "reference / current_landed / candidate"
+    },
+    "initial_pose.landed_init_qpos_*_measured / grip_site_world_pos_*_reset": {
+      "script": "n2v2_settled_probe.py",
+      "artifact": "results/n2v2_20260928/n2v2_settled_probe.json",
+      "key": "configs[*].landed_init_qpos / geometry.reset.grip_site_world_pos"
+    },
+    "camera.*": {
+      "script": "n2v2_settled_probe.py",
+      "artifact": "results/n2v2_20260928/n2v2_settled_probe.json",
+      "key": "configs[*].camera / views.wrist_<state> / geometry.<state>.T_cam2grip"
+    },
+    "camera.wrist_gripper_pixel_fraction.*.audit_pipeline_qpos_write_crosscheck": {
+      "script": "audit_tcp_camera.py --out <新目录>（源码未改）",
+      "artifact": "results/n2v2_20260928/tcp_camera_audit.json",
+      "key": "configs[*].views.wrist_<state>.gripper_pixel_fraction"
+    },
+    "controller.*": {
+      "script": "n2v2_settled_probe.py（读 env.env.robots[0].controller）",
+      "artifact": "results/n2v2_20260928/n2v2_settled_probe.json",
+      "key": "configs[tag=eco65_zhixing].controller"
+    },
+    "gripper.zhixing.joint_names/joint_count/dof, gripper.panda.*": {
+      "script": "n2v2_settled_probe.py",
+      "artifact": "results/n2v2_20260928/n2v2_settled_probe.json",
+      "key": "configs[*].gripper_*"
+    },
+    "gripper.zhixing.polarity.measured_end_to_end": {
+      "script": "n2v2_settled_probe.py::polarity_probe",
+      "artifact": "results/n2v2_20260928/n2v2_settled_probe.json",
+      "key": "polarity.*"
+    },
+    "gripper.zhixing.speed.deployed_value": {
+      "script": "源码常量（scripts/n4_collect.py argparse default）",
+      "artifact": "scripts/n4_collect.py",
+      "key": "--gripper-speed default=0.01 → os.environ['ZHIXING_GRIPPER_SPEED']"
+    }
+  },
+  "not_reproduced": {
+    "tcp.grasp_point_offset_along_approach_mm.cross_checks.driven_step_input.eco65_zhixing.closed": {
+      "value": null,
+      "blocked_reason": "阶跃驱动（ctrl 直接置 -0.91 + mj_step 800 步）在当前资产下**不收敛**：Left_1 冲到 -1.35278949269183 rad（越出关节范围 [-0.91, 0]），joint equality 残差 1.4309398613082593 rad，connect 残差 0.01806222151268397 m，读得的“夹持点偏移” -47.77636529774218 mm 是卡死构型，**不是有效闭合位**。该口径下 closed 无有效测量值；请使用 primary_mode（自洽装配）或 driven_ramp_input。"
+    }
+  },
+  "raw_artifacts": {
+    "dir": "results/n2v2_20260928/",
+    "files": [
+      "n2v2_close_diag.json",
+      "n2v2_settled_probe.json",
+      "pad_face_geometry.json",
+      "tcp_camera_audit.json",
+      "tcp_geometry_sites.json",
+      "zhixing_init_pose.json"
+    ],
+    "logs": [
+      "audit.log",
+      "init_pose.log",
+      "pad_face.log",
+      "settled.log",
+      "tcp_geometry.log"
+    ],
+    "history_snapshot": "results/_history_pre_n2_reverify/（测量前对 results/*.json|*.csv|*.md|*.txt 的逐字节副本，共 63 个文件；本轮未覆盖任何历史文件）"
+  }
+}

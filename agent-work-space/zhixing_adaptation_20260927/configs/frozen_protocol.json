@@ -1,0 +1,57 @@
+{
+  "note": "N0 冻结参数：后续任何偏离都必须新建版本，不得就地修改本文件所描述的口径",
+  "suite": "libero_object",
+  "task_id": 0,
+  "collect": {
+    "control_hz": 20,
+    "control_timestep_s": 0.05,
+    "image_res": 256,
+    "eval_resize": 224,
+    "image_flip": "180 ([::-1,::-1])，与 examples/libero/main.py 一致",
+    "gripper_speed": 0.01,
+    "gripper_speed_asset_default": 0.2,
+    "teacher_gain_pos_m": 0.02,
+    "teacher_gain_rot_rad": 0.05,
+    "prep_hold_steps": 45,
+    "action_space": "OSC_POSE 7 维，归一化 [-1,1]",
+    "controller_output_max": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "max_frames": 900
+  },
+  "state_contract": {
+    "dims": 8,
+    "layout": [
+      "grip_site_x",
+      "grip_site_y",
+      "grip_site_z",
+      "axisangle_x",
+      "axisangle_y",
+      "axisangle_z",
+      "Left_1_Joint",
+      "Right_1_Joint"
+    ],
+    "gripper_joint_selection": "按 joint name 后缀定位主动关节（禁止硬编码索引）"
+  },
+  "gripper": {
+    "name": "ZhixingGripper",
+    "dof": 1,
+    "joint_count": 6,
+    "polarity": "-1 = 张开，+1 = 闭合（已在 format_action 中翻转以对齐约定）",
+    "tcp_eef_pos_m": 0.20254
+  },
+  "replay_tolerances": {
+    "arm_free_space_rad": 0.01,
+    "gripper_free_space_rad": 0.01,
+    "render_vs_stored_255": 3.0,
+    "obs_state_median_m": 0.0001
+  },
+  "generated_at": "2026-09-28T05:56:52",
+  "fingerprint_file": "agent-work-space/zhixing_adaptation_20260927/manifests/source_fingerprint_current_candidate.json",
+  "fingerprint_sha256_of_itself_omitted": true
+}

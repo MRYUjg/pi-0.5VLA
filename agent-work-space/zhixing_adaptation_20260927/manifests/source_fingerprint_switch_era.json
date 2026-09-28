@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-09-27T09:17:13",
+  "purpose": "N0 基线冻结：ECO65+PandaGripper 9/10 可用版本的源码/环境指纹",
+  "repo": "/mnt/data/vla-policy/openpi",
+  "vcs": "本仓库不是 git 仓库，无 commit 可引；回退依赖 *.bak",
+  "sources": {
+    "robot_xml": {
+      "path": "robosuite/models/assets/robots/ECO65-B/robot.xml",
+      "sha256": "80f8626433a5e46025c4a797c01082182fb425482187f1482bae38a6b96a0bc9",
+      "bytes": 6185
+    },
+    "zhixing_gripper_py": {
+      "path": "robosuite/models/grippers/zhixing_gripper.py",
+      "sha256": "9eaca09cbbfd3459024169e7ed0d9c6c4baff7b66aca52a2ffd73c48726b73ac",
+      "bytes": 2893
+    },
+    "panda_gripper_py": {
+      "path": "robosuite/models/grippers/panda_gripper.py",
+      "sha256": "a3760a8fc4599fa6f79914304b82466f3c1bda1a945943ca693bb57f00dc59eb",
+      "bytes": 1817
+    },
+    "eco65_robot_py": {
+      "path": "robosuite/models/robots/manipulators/eco65_robot.py",
+      "sha256": "4ac890d5359cdb3bdd336b538692b864cb0eba28883b5ed3ddb1e47cee823302",
+      "bytes": 1452
+    },
+    "mounted_eco65_py": {
+      "path": "third_party/libero/libero/libero/envs/robots/mounted_eco65.py",
+      "sha256": "a9048a371eb2dd8c8caed5df677e3e20113a99dce754e4faca062198f5da8188",
+      "bytes": 1566
+    },
+    "libero_main_py": {
+      "path": "examples/libero/main.py",
+      "sha256": "587f27a4ce7f60f328f8d47d2dbc154038983fe4f771e7c97ef3327f24bd4e31",
+      "bytes": 12297
+    },
+    "eval_matrix_py": {
+      "path": "agent-work-space/scripts/eval_matrix.py",
+      "sha256": "11ff1a5950d515c86cf3a03042698e3d28e798b9ad837d231677ea1227b1b0e7",
+      "bytes": 10457
+    },
+    "serve_policy_py": {
+      "path": "scripts/serve_policy.py",
+      "sha256": "6eebd13b3eed06676b5c3c002da28e6c6c6982aaef6bf890d882887922d6373a",
+      "bytes": 3809
+    },
+    "training_config_py": {
+      "path": "src/openpi/training/config.py",
+      "sha256": "4da3eae53266a4b706038ef1f8b63e5b6692031c79523074ab4b68bc9cacaad4",
+      "bytes": 46818
+    }
+  },
+  "backups": {
+    "robosuite/models/assets/robots/ECO65-B/robot.xml.pre_contact_fix.bak": {
+      "sha256": "e5f8dd517eda0985e4af211cc87870da342529144b6a811531c3cc6520ef9fef",
+      "bytes": 5696,
+      "present": true
+    },
+    "robosuite/models/robots/manipulators/eco65_robot.py.pre_init_align.bak": {
+      "sha256": "3fa6f7f8936b3c7869612f273cb446fe832b7a5c2f998a1cfcdda99850b9badf",
+      "bytes": 1479,
+      "present": true
+    },
+    "third_party/libero/libero/libero/envs/robots/mounted_eco65.py.pre_init_align.bak": {
+      "sha256": "0a612be54996148d91eab50eb2e5379f7be923b45672f69e5b5341d351e82143",
+      "bytes": 1588,
+      "present": true
+    },
+    "examples/libero/main.py.pre_gripper_entry.bak": {
+      "sha256": "20bbee248e7bd21ffcb3f5842321f0e5314ba8225c2f41f115d6d3edaddafb68",
+      "bytes": 10444,
+      "present": true
+    },
+    "agent-work-space/scripts/eval_matrix.py.pre_gripper_entry.bak": {
+      "sha256": "62c6646bfc6a56f21fcb9c17925c30078288a21cf838e0bf48d5bc9766e768b8",
+      "bytes": 9533,
+      "present": true
+    }
+  },
+  "default_gripper_actual": {
+    "eco65_robot_py": "\"ZhixingGripper\"",
+    "mounted_eco65_py": "\"ZhixingGripper\""
+  },
+  "init_qpos_actual": {
+    "eco65_robot_py": "np.array([-0.128227, -0.080175, -1.482052, -0.064915, 1.563529, -1.699308])",
+    "mounted_eco65_py": "np.array([-0.128227, -0.080175, -1.482052, -0.064915, 1.563529, -1.699308])"
+  },
+  "docker_images": [
+    "libero:latest 1ac69906b0b8 9.41GB",
+    "openpi_server:latest 25e0767fe2d7 12.7GB",
+    "ghcr.io/astral-sh/uv:0.12.15 e4f45baff29f 55.2MB",
+    "ghcr.io/astral-sh/uv:0.5.1 98106d9f479c 31.8MB",
+    "nvidia/cuda:12.2.2-cudnn8-runtime-ubuntu22.04 3a3173a161de 3.29GB"
+  ],
+  "gpu": {
+    "raw": [
+      "NVIDIA GeForce RTX 4090, 49140 MiB, 36932 MiB, 11713 MiB, 0 %"
+    ],
+    "compute_apps": [
+      "7046, /.venv/bin/python, 36908 MiB"
+    ]
+  },
+  "policy_server": {
+    "process": [
+      "6988       42:03 /sbin/docker-init -- /opt/nvidia/nvidia_entrypoint.sh /bin/sh -c /bin/bash -c \"uv run scripts/serve_policy.py $SERVER_ARGS\"",
+      "   7020       42:03 /bin/sh -c /bin/bash -c \"uv run scripts/serve_policy.py $SERVER_ARGS\"",
+      "   7043       42:03 uv run scripts/serve_policy.py --env LIBERO",
+      "   7046       42:02 /.venv/bin/python scripts/serve_policy.py --env LIBERO"
+    ]
+  },
+  "container_versions": {
+    "ok": false,
+    "stdout": [
+      "==========",
+      "== CUDA ==",
+      "==========",
+      "",
+      "CUDA Version 12.2.2",
+      "",
+      "Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+      "",
+      "This container image and its contents are governed by the NVIDIA Deep Learning Container License.",
+      "By pulling and using the container, you accept the terms and conditions of this license:",
+      "https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license",
+      "",
+      "A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience."
+    ],
+    "stderr": "time=\"2026-09-27T09:17:13Z\" level=warning msg=\"The \\\"DISPLAY\\\" variable is not set. Defaulting to a blank string.\"\n[robosuite WARNING] No private macro file found! (macros.py:53)\n[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)\n[robosuite WARNING] To setup, run: python /app/robosuite/scripts/setup_macros.py (macros.py:55)\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nNameError: name 'python' is not defined"
+  }
+}

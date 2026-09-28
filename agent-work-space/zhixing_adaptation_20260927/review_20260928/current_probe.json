@@ -1,0 +1,262 @@
+{
+  "poses": {
+    "Panda_PandaGripper": {
+      "pos": [
+        -0.2084646605658239,
+        0.0,
+        1.1732794757296405
+      ],
+      "R": [
+        [
+          -0.0004918296871690936,
+          0.9983867450712572,
+          -0.056777331476359764
+        ],
+        [
+          0.9999998786606131,
+          0.0004926243561613802,
+          0.0
+        ],
+        [
+          2.7969896363104485e-05,
+          -0.05677732458703325,
+          -0.9983868662149061
+        ]
+      ],
+      "init_qpos": [
+        0.0,
+        -0.161037389,
+        0.0,
+        -2.44459747,
+        0.0,
+        2.2267522,
+        0.7853981633974483
+      ],
+      "controller_output_max": [
+        0.05,
+        0.05,
+        0.05,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "ECO65_PandaGripper": {
+      "pos": [
+        -0.20228703305520868,
+        6.1001504866173445e-05,
+        1.2822479979583066
+      ],
+      "R": [
+        [
+          -0.0004910513196781496,
+          0.9983867473834763,
+          -0.056777297554964676
+        ],
+        [
+          0.9999998790459091,
+          0.0004918416054793696,
+          -5.4943810050278596e-08
+        ],
+        [
+          2.7870582012409773e-05,
+          -0.056777290714498475,
+          -0.9983868681439839
+        ]
+      ],
+      "init_qpos": [
+        -0.12639,
+        -0.222035,
+        -0.841572,
+        -0.563545,
+        1.563635,
+        -1.697476
+      ],
+      "controller_output_max": [
+        0.05,
+        0.05,
+        0.05,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "old_qpos_grip_pos": [
+        -0.2084657296230764,
+        4.834551500964935e-07,
+        1.1732798407393845
+      ],
+      "old_qpos_grip_R": [
+        [
+          -0.0004890653085268031,
+          0.9983865485051591,
+          -0.056780811715576945
+        ],
+        [
+          0.9999998800786827,
+          0.0004897325144792248,
+          -2.1643765212506216e-06
+        ],
+        [
+          2.5646525290922567e-05,
+          -0.05678080596486868,
+          -0.9983866682885123
+        ]
+      ]
+    },
+    "ECO65_ZhixingGripper": {
+      "pos": [
+        -0.20827930903915964,
+        6.0995706096460735e-05,
+        1.1768782478943907
+      ],
+      "R": [
+        [
+          -0.0004910513196781496,
+          0.9983867473834763,
+          -0.056777297554964676
+        ],
+        [
+          0.9999998790459091,
+          0.0004918416054793696,
+          -5.4943810050278596e-08
+        ],
+        [
+          2.7870582012409773e-05,
+          -0.056777290714498475,
+          -0.9983868681439839
+        ]
+      ],
+      "init_qpos": [
+        -0.12639,
+        -0.222035,
+        -0.841572,
+        -0.563545,
+        1.563635,
+        -1.697476
+      ],
+      "controller_output_max": [
+        0.05,
+        0.05,
+        0.05,
+        0.5,
+        0.5,
+        0.5
+      ]
+    }
+  },
+  "eco_panda_current_offset_mm": 109.14350937890347,
+  "eco_panda_previous_offset_mm": 0.0012287572601956968,
+  "eco_panda_orientation_delta_deg": 4.500079186676001e-05,
+  "gripper_joint_names": [
+    "gripper0_Left_1_Joint",
+    "gripper0_Left_Support_Joint",
+    "gripper0_Left_2_Joint",
+    "gripper0_Right_2_Joint",
+    "gripper0_Right_1_Joint",
+    "gripper0_Right_Support_Joint"
+  ],
+  "gripper_qpos_indices": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "selected_names_1_5": [
+    "gripper0_Left_Support_Joint",
+    "gripper0_Right_Support_Joint"
+  ],
+  "default_gripper_speed": 0.2,
+  "control_timestep": 0.05,
+  "controller_output_max": [
+    0.05,
+    0.05,
+    0.05,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "episodes": [
+    {
+      "file": "n4_libero_object_t0_s2_0002.npz",
+      "frames": 452,
+      "stored_state_tail_vs_declared_max_abs_rad": 0.8052281949875173,
+      "state_tail_equals_support_joints": true,
+      "metadata_scales": [
+        0.02,
+        0.05
+      ],
+      "metadata_speed": 0.01,
+      "first_obs_vs_direct_grip_mm": 0.08727776946258234,
+      "last_pre_action_native_success": false,
+      "has_full_xml": false,
+      "has_ctrl": false,
+      "has_gripper_current_action": false
+    },
+    {
+      "file": "n4_libero_object_t0_s3_0003.npz",
+      "frames": 447,
+      "stored_state_tail_vs_declared_max_abs_rad": 0.751109183031271,
+      "state_tail_equals_support_joints": true,
+      "metadata_scales": [
+        0.02,
+        0.05
+      ],
+      "metadata_speed": 0.01,
+      "first_obs_vs_direct_grip_mm": 0.033070345917453635,
+      "last_pre_action_native_success": false,
+      "has_full_xml": false,
+      "has_ctrl": false,
+      "has_gripper_current_action": false
+    },
+    {
+      "file": "n4_libero_object_t0_s4_0004.npz",
+      "frames": 453,
+      "stored_state_tail_vs_declared_max_abs_rad": 0.7651297840047718,
+      "state_tail_equals_support_joints": true,
+      "metadata_scales": [
+        0.02,
+        0.05
+      ],
+      "metadata_speed": 0.01,
+      "first_obs_vs_direct_grip_mm": 0.04372359528529949,
+      "last_pre_action_native_success": false,
+      "has_full_xml": false,
+      "has_ctrl": false,
+      "has_gripper_current_action": false
+    },
+    {
+      "file": "n4_libero_object_t0_s5_0005.npz",
+      "frames": 451,
+      "stored_state_tail_vs_declared_max_abs_rad": 0.8178329414014576,
+      "state_tail_equals_support_joints": true,
+      "metadata_scales": [
+        0.02,
+        0.05
+      ],
+      "metadata_speed": 0.01,
+      "first_obs_vs_direct_grip_mm": 0.027410048867980312,
+      "last_pre_action_native_success": false,
+      "has_full_xml": false,
+      "has_ctrl": false,
+      "has_gripper_current_action": false
+    },
+    {
+      "file": "n4_libero_object_t0_s6_0006.npz",
+      "frames": 459,
+      "stored_state_tail_vs_declared_max_abs_rad": 0.7488985417223403,
+      "state_tail_equals_support_joints": true,
+      "metadata_scales": [
+        0.02,
+        0.05
+      ],
+      "metadata_speed": 0.01,
+      "first_obs_vs_direct_grip_mm": 0.02750139282477974,
+      "last_pre_action_native_success": false,
+      "has_full_xml": false,
+      "has_ctrl": false,
+      "has_gripper_current_action": false
+    }
+  ]
+}

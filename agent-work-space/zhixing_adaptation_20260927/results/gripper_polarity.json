@@ -1,0 +1,376 @@
+{
+  "meta": {
+    "generated_at": "2026-09-27T09:09:17",
+    "seed": 7
+  },
+  "zhixing_path_a_ctrl_sweep": {
+    "actuator_ids": [
+      6
+    ],
+    "ctrlrange": [
+      -0.91,
+      0.0
+    ],
+    "rows": [
+      {
+        "ctrl": -0.91,
+        "jaw_m": 0.029702082643333894,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.4709309197036389,
+          -0.08615250952291181,
+          -0.5571382745523857,
+          0.7121258862477082,
+          0.6051122779463225,
+          0.02099760585665511
+        ]
+      },
+      {
+        "ctrl": -0.8341666666666667,
+        "jaw_m": 0.03856400213907031,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.4290833507003031,
+          -0.046519952862524055,
+          -0.5114070578719534,
+          0.6563248745940876,
+          0.560825226011984,
+          0.048969071047523724
+        ]
+      },
+      {
+        "ctrl": -0.7583333333333333,
+        "jaw_m": 0.05178298027548691,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.3782089841423105,
+          -0.02595028312570638,
+          -0.45551106240649075,
+          0.5850409186459857,
+          0.4999605782043254,
+          0.058235260783907575
+        ]
+      },
+      {
+        "ctrl": -0.6825,
+        "jaw_m": 0.06692736629954008,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.34765548924904,
+          0.00578709016487822,
+          -0.41914273481826175,
+          0.523998942770517,
+          0.44815190673508226,
+          0.07720792441911377
+        ]
+      },
+      {
+        "ctrl": -0.6066666666666667,
+        "jaw_m": 0.07820071299735648,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.3618724965175981,
+          0.07738610047852579,
+          -0.427017629214615,
+          0.5040481889233521,
+          0.43620786149585117,
+          0.13368505817564766
+        ]
+      },
+      {
+        "ctrl": -0.5308333333333334,
+        "jaw_m": 0.08360970622686466,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.42139842924186194,
+          0.1922393538108434,
+          -0.47941877746146044,
+          0.5307956629088082,
+          0.46974545638724297,
+          0.23308667574393427
+        ]
+      },
+      {
+        "ctrl": -0.455,
+        "jaw_m": 0.08467997818297276,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.4894979587279315,
+          0.31673171758028784,
+          -0.5392991890117663,
+          0.5540597845527948,
+          0.5008509330369022,
+          0.3387720764705392
+        ]
+      },
+      {
+        "ctrl": -0.37916666666666665,
+        "jaw_m": 0.08472685034073764,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.5089832393927602,
+          0.3923344963659636,
+          -0.5490757942891284,
+          0.5373357311463023,
+          0.4925277821573206,
+          0.39896575354594077
+        ]
+      },
+      {
+        "ctrl": -0.30333333333333334,
+        "jaw_m": 0.08594993818521597,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.4743082129719697,
+          0.404947965778886,
+          -0.5033794786733486,
+          0.4823709148619926,
+          0.44727817818056814,
+          0.4050016074889479
+        ]
+      },
+      {
+        "ctrl": -0.22750000000000004,
+        "jaw_m": 0.09092557065505943,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.3848506320882416,
+          0.3402087114354665,
+          -0.4034020823473765,
+          0.3706362496655894,
+          0.3465492801510033,
+          0.3461118330146918
+        ]
+      },
+      {
+        "ctrl": -0.15166666666666673,
+        "jaw_m": 0.09779041619841866,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.2684249111563849,
+          0.24590241894918424,
+          -0.28027777628271044,
+          0.2529133343959807,
+          0.2404607842172573,
+          0.2573780058250954
+        ]
+      },
+      {
+        "ctrl": -0.07583333333333331,
+        "jaw_m": 0.10546742454025408,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -0.13703053164670145,
+          0.12439438938072228,
+          -0.1408691632025077,
+          0.12367074727436433,
+          0.1189432479503036,
+          0.14237642360372255
+        ]
+      },
+      {
+        "ctrl": 0.0,
+        "jaw_m": 0.11299711434179793,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+        "gripper_qpos": [
+          -9.600050011552725e-05,
+          -0.007020287180454179,
+          -0.0010923314719653847,
+          -0.005971618834155675,
+          -0.006153090149186448,
+          0.004025245197928552
+        ]
+      }
+    ]
+  },
+  "zhixing_path_b_action": {
+    "cmd_-1": {
+      "cmd": -1.0,
+      "applied_ctrl": [
+        -0.91
+      ],
+      "jaw_m": 0.022806828186446103,
+      "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+      "gripper_qpos": [
+        -0.9098960567133799,
+        0.9141939157061876,
+        -0.9087194125626956,
+        0.9068945788116319,
+        0.9081860766860399,
+        0.91342430353655
+      ],
+      "current_action": [
+        -1.0
+      ]
+    },
+    "cmd_+1": {
+      "cmd": 1.0,
+      "applied_ctrl": [
+        0.0
+      ],
+      "jaw_m": 0.1125818959767366,
+      "jaw_how": "site:Left_Support_tip<->Right_Support_tip",
+      "gripper_qpos": [
+        -0.0010898237897100649,
+        0.004915389777176411,
+        -0.002070960525584192,
+        0.004943132781727823,
+        0.004903503764587332,
+        0.005560539690162773
+      ],
+      "current_action": [
+        1.0
+      ]
+    }
+  },
+  "zhixing_path_b_sweep": {
+    "speed": "0.01",
+    "rows": [
+      {
+        "cmd": -1.0,
+        "n_steps": 0,
+        "current_action": 0.0,
+        "ctrl": [
+          0.0
+        ],
+        "jaw_m": 0.08777458328650416,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip"
+      },
+      {
+        "cmd": -1.0,
+        "n_steps": 1,
+        "current_action": -0.25000000000000006,
+        "ctrl": [
+          -0.5687500000000001
+        ],
+        "jaw_m": 0.0837519550324536,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip"
+      },
+      {
+        "cmd": -1.0,
+        "n_steps": 2,
+        "current_action": -0.5000000000000002,
+        "ctrl": [
+          -0.6825000000000001
+        ],
+        "jaw_m": 0.07492693285070577,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip"
+      },
+      {
+        "cmd": -1.0,
+        "n_steps": 3,
+        "current_action": -0.7500000000000004,
+        "ctrl": [
+          -0.7962500000000002
+        ],
+        "jaw_m": 0.02525235685484214,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip"
+      },
+      {
+        "cmd": -1.0,
+        "n_steps": 4,
+        "current_action": -1.0,
+        "ctrl": [
+          -0.91
+        ],
+        "jaw_m": 0.004541247483133596,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip"
+      },
+      {
+        "cmd": 1.0,
+        "n_steps": 0,
+        "current_action": 0.0,
+        "ctrl": [
+          0.0
+        ],
+        "jaw_m": 0.08777458328650416,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip"
+      },
+      {
+        "cmd": 1.0,
+        "n_steps": 1,
+        "current_action": 0.25000000000000006,
+        "ctrl": [
+          -0.34125
+        ],
+        "jaw_m": 0.10175497958154713,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip"
+      },
+      {
+        "cmd": 1.0,
+        "n_steps": 2,
+        "current_action": 0.5000000000000002,
+        "ctrl": [
+          -0.2274999999999999
+        ],
+        "jaw_m": 0.11649714593991317,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip"
+      },
+      {
+        "cmd": 1.0,
+        "n_steps": 3,
+        "current_action": 0.7500000000000004,
+        "ctrl": [
+          -0.1137499999999998
+        ],
+        "jaw_m": 0.08060004767496755,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip"
+      },
+      {
+        "cmd": 1.0,
+        "n_steps": 4,
+        "current_action": 1.0,
+        "ctrl": [
+          0.0
+        ],
+        "jaw_m": 0.10926032599329702,
+        "jaw_how": "site:Left_Support_tip<->Right_Support_tip"
+      }
+    ]
+  },
+  "panda_path_b_action": {
+    "cmd_-1": {
+      "cmd": -1.0,
+      "applied_ctrl": [
+        0.04,
+        -0.04
+      ],
+      "jaw_m": 0.07936436430540583,
+      "jaw_how": "prismatic:q1-q2",
+      "gripper_qpos": [
+        0.039682209817338686,
+        -0.03968215448806715
+      ],
+      "current_action": [
+        1.0,
+        -1.0
+      ]
+    },
+    "cmd_+1": {
+      "cmd": 1.0,
+      "applied_ctrl": [
+        0.0,
+        0.0
+      ],
+      "jaw_m": 0.0009995512111640509,
+      "jaw_how": "prismatic:q1-q2",
+      "gripper_qpos": [
+        0.0004998032720365065,
+        -0.0004997479391275443
+      ],
+      "current_action": [
+        -1.0,
+        1.0
+      ]
+    }
+  },
+  "verdict": {
+    "zhixing_action_minus1_jaw_m": 0.022806828186446103,
+    "zhixing_action_plus1_jaw_m": 0.1125818959767366,
+    "panda_action_minus1_jaw_m": 0.07936436430540583,
+    "panda_action_plus1_jaw_m": 0.0009995512111640509,
+    "zhixing_plus1_opens": true,
+    "panda_plus1_closes": true,
+    "zhixing_polarity_inverted_vs_panda": true
+  }
+}

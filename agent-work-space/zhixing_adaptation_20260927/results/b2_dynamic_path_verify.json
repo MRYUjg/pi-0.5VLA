@@ -1,0 +1,292 @@
+{
+  "node": "B2",
+  "runtime": {
+    "freeze_version": "b2-1",
+    "gripper_speed": 0.01,
+    "gripper_speed_from_env": "0.01",
+    "extra_joint_pd_profile": "legacy",
+    "extra_joint_pd_kp_override": null,
+    "assets_sha16": {
+      "zhixing_gripper_xml": "c0692e58374b1513",
+      "zhixing_gripper_py": "91765fc70477d005",
+      "eco65_robot_xml": "80f8626433a5e460",
+      "eco65_robot_py": "8a890af262233d80",
+      "mounted_eco65_py": "7e14d05383a64710",
+      "on_the_ground_eco65_py": "5c29b649e5f333ba",
+      "robot_model_py": "940e0cbe81d2f0ad",
+      "single_arm_py": "ebae3ebfd552da71",
+      "n4_collect_py": "162a386b50dafb12",
+      "n4_audit_py": "69c4ad87b7329bed"
+    }
+  },
+  "cases": [
+    {
+      "case": "open_close_open",
+      "open": {
+        "jaw_mm": 85.87880508979963,
+        "q": [
+          -0.03285458852887245,
+          0.03293574150244098,
+          -0.03287926330893151,
+          0.037944097310658766,
+          0.03746461119160861,
+          0.037452606097088316
+        ],
+        "out_of_range": 0,
+        "n_limited_joints": 1,
+        "joint_eq_max_rad": 0.005089508781786316,
+        "connect_max_m": 3.1465554310396253e-05,
+        "n_joint_eq": 5
+      },
+      "closed": {
+        "jaw_mm": 0.5447106512424316,
+        "q": [
+          -0.9097405464486675,
+          0.9106746823924698,
+          -0.9094343589999921,
+          0.9044361375486628,
+          0.9055738916244723,
+          0.9093910427404767
+        ],
+        "out_of_range": 0,
+        "n_limited_joints": 1,
+        "joint_eq_max_rad": 0.00530440890000472,
+        "connect_max_m": 4.8272416423461694e-05,
+        "n_joint_eq": 5
+      },
+      "reopened": {
+        "jaw_mm": 89.81563083207904,
+        "q": [
+          -0.0016473722609677845,
+          0.0017536513996089663,
+          -0.0016524576865497914,
+          0.005499929381445711,
+          0.005496019959698384,
+          0.005715016709249469
+        ],
+        "out_of_range": 0,
+        "n_limited_joints": 1,
+        "joint_eq_max_rad": 0.004067644448281685,
+        "connect_max_m": 3.5068087177714753e-06,
+        "n_joint_eq": 5
+      },
+      "close_steps": 12,
+      "open_steps": 12,
+      "penetration_object_mm": 0.0,
+      "penetration_padpad_mm": 0.11882518889100359
+    },
+    {
+      "case": "half_reverse",
+      "mid": {
+        "jaw_mm": 24.836008127463597,
+        "q": [
+          -0.6856159031109511,
+          0.6857822162240399,
+          -0.6855786887193174,
+          0.6864382272257759,
+          0.6866997828938911,
+          0.6878663657628222
+        ],
+        "out_of_range": 0,
+        "n_limited_joints": 1,
+        "joint_eq_max_rad": 0.0022504626518711213,
+        "connect_max_m": 1.888482790857118e-05,
+        "n_joint_eq": 5
+      },
+      "after_reverse": {
+        "jaw_mm": 89.65732628677517,
+        "q": [
+          -0.00032323695322653847,
+          0.0004271511666962,
+          -0.00032854013026148844,
+          0.004360157188198271,
+          0.004358121354596785,
+          0.00451684612797618
+        ],
+        "out_of_range": 0,
+        "n_limited_joints": 1,
+        "joint_eq_max_rad": 0.004193609174749641,
+        "connect_max_m": 4.219484041767506e-06,
+        "n_joint_eq": 5
+      },
+      "reverse_steps": 12,
+      "penetration_object_mm": 0.0,
+      "penetration_padpad_mm": 0.0
+    },
+    {
+      "case": "reset_then_close",
+      "closed": {
+        "jaw_mm": 0.5610409011101233,
+        "q": [
+          -0.909776222078566,
+          0.910205901030933,
+          -0.9096348759602998,
+          0.9038732861309875,
+          0.9057400334942215,
+          0.9118277234147394
+        ],
+        "out_of_range": 0,
+        "n_limited_joints": 1,
+        "joint_eq_max_rad": 0.005902935947578514,
+        "connect_max_m": 7.731276503951081e-05,
+        "n_joint_eq": 5
+      },
+      "steps": 12,
+      "penetration_object_mm": 0.0,
+      "penetration_padpad_mm": 6.636543646057103
+    },
+    {
+      "case": "loaded_close",
+      "skipped": null,
+      "pad_midpoint": [
+        -0.14808964673420047,
+        -0.00015377685426153087,
+        0.2776905558095647
+      ],
+      "obj_body": "alphabet_soup_1_main",
+      "obj_z_placed": 0.2776905558095647,
+      "obj_z_after": 0.27676467511415687,
+      "closed": {
+        "jaw_mm": 20.936130504799117,
+        "q": [
+          -0.9418684908799645,
+          1.1287539473956787,
+          -0.8782790592909638,
+          0.8244857595351857,
+          0.9692683471954103,
+          1.3843785149428196
+        ],
+        "out_of_range": 1,
+        "n_limited_joints": 1,
+        "joint_eq_max_rad": 0.4425100240628551,
+        "connect_max_m": 0.0036939675411274335,
+        "n_joint_eq": 5
+      },
+      "steps": 60,
+      "penetration_object_mm": 17.361295112942116,
+      "penetration_padpad_mm": 0.0
+    },
+    {
+      "case": "arm_poses",
+      "poses": [
+        {
+          "pose": 0,
+          "arm_qpos": [
+            0.0,
+            -0.3,
+            -1.6,
+            0.3,
+            1.5,
+            -1.5
+          ],
+          "closed": {
+            "jaw_mm": 0.5542173772537318,
+            "q": [
+              -0.9087996136587261,
+              0.9098933586092702,
+              -0.9084414827115372,
+              0.903859278057459,
+              0.9047212342807225,
+              0.907673931838543
+            ],
+            "out_of_range": 0,
+            "n_limited_joints": 1,
+            "joint_eq_max_rad": 0.004940335601267054,
+            "connect_max_m": 3.790419269477076e-05,
+            "n_joint_eq": 5
+          },
+          "steps": [
+            12,
+            12
+          ],
+          "penetration_object_mm": 0.0,
+          "penetration_padpad_mm": 1.169813349476047
+        },
+        {
+          "pose": 1,
+          "arm_qpos": [
+            0.2,
+            -0.19999999999999998,
+            -1.4000000000000001,
+            0.19999999999999998,
+            1.6,
+            -1.3
+          ],
+          "closed": {
+            "jaw_mm": 0.5361226221702639,
+            "q": [
+              -0.9094024299753564,
+              0.9102479505809721,
+              -0.9091252714349638,
+              0.9040773425940346,
+              0.9053255847171391,
+              0.9094845451030843
+            ],
+            "out_of_range": 0,
+            "n_limited_joints": 1,
+            "joint_eq_max_rad": 0.005325087381321758,
+            "connect_max_m": 5.3027509815258374e-05,
+            "n_joint_eq": 5
+          },
+          "steps": [
+            12,
+            12
+          ],
+          "penetration_object_mm": 0.0,
+          "penetration_padpad_mm": 0.09146585491501313
+        },
+        {
+          "pose": 2,
+          "arm_qpos": [
+            -0.2,
+            -0.4,
+            -1.8,
+            0.4,
+            1.4,
+            -1.7
+          ],
+          "closed": {
+            "jaw_mm": 0.5348221736176522,
+            "q": [
+              -0.9093792524358931,
+              0.9103266080632848,
+              -0.9090693259048511,
+              0.9041529563200207,
+              0.9052372649385035,
+              0.9088809942114883
+            ],
+            "out_of_range": 0,
+            "n_limited_joints": 1,
+            "joint_eq_max_rad": 0.005226296115872442,
+            "connect_max_m": 4.652754385145624e-05,
+            "n_joint_eq": 5
+          },
+          "steps": [
+            12,
+            12
+          ],
+          "penetration_object_mm": 0.0,
+          "penetration_padpad_mm": 0.705718976245374
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "gripper_speed_matches_freeze": true,
+    "open_close_open_returns_to_open": true,
+    "half_reverse_returns_to_open": true,
+    "reset_then_close_reaches_closed": true,
+    "closed_state_is_stable": true,
+    "no_joint_out_of_range": true,
+    "joint_eq_residuals_ok": true,
+    "connect_residuals_ok": true,
+    "penetration_object_within_limit": false,
+    "no_timeout": true,
+    "all_arm_poses_behave_identically": true,
+    "loaded_object_not_dropped": true,
+    "loaded_penetration_object_within_limit": false
+  },
+  "penetration_object_max_mm": 17.361295112942116,
+  "penetration_padpad_max_mm": 6.636543646057103,
+  "verdict": "FAIL"
+}

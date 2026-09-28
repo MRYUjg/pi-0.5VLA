@@ -1,0 +1,51 @@
+{
+  "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "measurements": [
+    {
+      "label": "open",
+      "ctrl": 0.0,
+      "grip_site_world": [
+        -0.2097747223212958,
+        8.307199302346735e-07,
+        1.1503054486484972
+      ],
+      "pad_face_midpoint_world": [
+        -0.2134591405750662,
+        9.068076069538786e-05,
+        1.0852348633320055
+      ],
+      "face_midpoint_in_gripsite_local_mm": [
+        0.08968772640851921,
+        0.018609454822132374,
+        65.17480873872427
+      ],
+      "approach_offset_mm": 65.17480873872427,
+      "inner_face_separation_mm": 89.89708259118797,
+      "reference_GRASP_OFFSET_CLOSED_mm": 82.54,
+      "reference_GRASP_OFFSET_OPEN_mm": 65.11
+    },
+    {
+      "label": "closed",
+      "ctrl": -0.91,
+      "grip_site_world": [
+        -0.2097779258035533,
+        1.246296139819646e-06,
+        1.150293403690696
+      ],
+      "pad_face_midpoint_world": [
+        -0.2144279742417366,
+        -5.9392794618839576e-05,
+        1.0677778333190275
+      ],
+      "face_midpoint_in_gripsite_local_mm": [
+        -0.06124814995106679,
+        0.048648399860826835,
+        82.64647520212743
+      ],
+      "approach_offset_mm": 82.64647520212743,
+      "inner_face_separation_mm": 3.3054698244842307,
+      "reference_GRASP_OFFSET_CLOSED_mm": 82.54,
+      "reference_GRASP_OFFSET_OPEN_mm": 65.11
+    }
+  ]
+}

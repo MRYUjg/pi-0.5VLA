@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<mujoco model="ECO65-B">
+  <compiler angle="radian"/>
+  <actuator>
+    <motor ctrllimited="true" ctrlrange="-60.0 60.0" joint="joint_1" name="torq_j1"/>
+    <motor ctrllimited="true" ctrlrange="-60.0 60.0" joint="joint_2" name="torq_j2"/>
+    <motor ctrllimited="true" ctrlrange="-30.0 30.0" joint="joint_3" name="torq_j3"/>
+    <motor ctrllimited="true" ctrlrange="-10.0 10.0" joint="joint_4" name="torq_j4"/>
+    <motor ctrllimited="true" ctrlrange="-10.0 10.0" joint="joint_5" name="torq_j5"/>
+    <motor ctrllimited="true" ctrlrange="-10.0 10.0" joint="joint_6" name="torq_j6"/>
+  </actuator>
+
+  <asset>
+    <mesh name="base_link" content_type="model/stl" file="meshes/base_link.STL"/>
+    <mesh name="link_1" content_type="model/stl" file="meshes/link_1.STL"/>
+    <mesh name="link_2" content_type="model/stl" file="meshes/link_2.STL"/>
+    <mesh name="link_3" content_type="model/stl" file="meshes/link_3.STL"/>
+    <mesh name="link_4" content_type="model/stl" file="meshes/link_4.STL"/>
+    <mesh name="link_5" content_type="model/stl" file="meshes/link_5.STL"/>
+    <mesh name="link_6" content_type="model/stl" file="meshes/link_6.STL"/>
+  </asset>
+
+  <worldbody>
+    <body name="base" pos="0 0 0" quat="0 0 0 1">
+      <!-- robot view -->
+      <camera mode="fixed" name="robotview" pos="1.0 0 0.4" quat="0.653 0.271 0.271 0.653"/>
+      <geom type="sphere" size="0.01" pos="1.0 0 0.4" rgba="1 0 0 0.5" contype="0" conaffinity="0" group="1"/>
+      <inertial diaginertia="0.05 0.05 0.05" mass="0.5" pos="0 0 0"/>
+      <site name="right_center" pos="0 0 0" size="0.01" rgba="1 0.3 0.3 1" group="2"/>
+      <!-- mount attached here -->
+      <geom type="mesh" rgba="1 1 1 1" mesh="base_link" contype="0" conaffinity="0" group="1"/>
+      <geom type="mesh" group="0" mesh="base_link" name="base_link_collision"/>
+    
+      <body name="link_1" pos="0 0 0.1625">
+        <inertial pos="-0.01105 2.736e-05 -0.03347" quat="0.334328 0.614071 0.629289 0.339318" mass="1.507" diaginertia="0.00310148 0.00277418 0.00161034"/>
+        <joint name="joint_1" pos="0 0 0" axis="0 0 1" limited="true" range="-3.106 3.106" damping="0.1"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="link_1" contype="0" conaffinity="0" group="1"/>
+        <geom type="mesh" group="0" mesh="link_1" name="link_1_collision"/>
+        <body name="link_2" pos="-0.086 0 0" quat="0.499998 -0.500002 -0.5 -0.5">
+          <inertial pos="0.05818 -1.163e-05 -0.05236" quat="-0.0229779 0.739545 -0.0249887 0.672251" mass="2.0227" diaginertia="0.0173635 0.0173112 0.00213628"/>
+          <joint name="joint_2" pos="0 0 0" axis="0 0 1" limited="true" range="-3.106 2.356" damping="0.1"/>
+          <geom type="mesh" rgba="1 1 1 1" mesh="link_2" contype="0" conaffinity="0" group="1"/>
+          <geom type="mesh" group="0" mesh="link_2" name="link_2_collision"/>
+          <body name="link_3" pos="0.26 0 0">
+            <inertial pos="0.092768 -9.3866e-05 0.00181" quat="0.517744 0.481067 0.476046 0.52335" mass="1.8858" diaginertia="0.0224832 0.0220354 0.00177385"/>
+            <joint name="joint_3" pos="0 0 0" axis="0 0 1" limited="true" range="-2.792 2.53" damping="0.1"/>
+            <geom type="mesh" rgba="1 1 1 1" mesh="link_3" contype="0" conaffinity="0" group="1"/>
+            <geom type="mesh" group="0" mesh="link_3" name="link_3_collision"/>
+            <body name="link_4" pos="0.24 0 -0.05888" quat="0.707105 0 0 0.707108">
+              <inertial pos="-4.028e-05 -0.03496 0.0038015" quat="0.499483 0.501045 -0.498955 0.500515" mass="0.57" diaginertia="0.000661995 0.000661995 0.000661995"/>
+              <joint name="joint_4" pos="0 0 0" axis="0 0 1" limited="true" range="-3.106 3.106" damping="0.1"/>
+              <geom type="mesh" rgba="1 1 1 1" mesh="link_4" contype="0" conaffinity="0" group="1"/>
+              <geom type="mesh" group="0" mesh="link_4" name="link_4_collision"/>
+              <body name="link_5" pos="0 -0.11 0" quat="0.707105 0.707108 0 0">
+                <inertial pos="-3.97e-05 0.022647 -0.007365" quat="0.521958 0.852819 0.0130273 -0.00945686" mass="0.641" diaginertia="0.000623402 0.000615338 0.000335442"/>
+                <joint name="joint_5" pos="0 0 0" axis="0 0 1" limited="true" range="-3.106 3.106" damping="0.1"/>
+                <geom type="mesh" rgba="1 1 1 1" mesh="link_5" contype="0" conaffinity="0" group="1"/>
+                <geom type="mesh" group="0" mesh="link_5" name="link_5_collision"/>
+                <body name="link_6" pos="0 0.0795 0" quat="0.707105 -0.707108 0 0">
+                  <inertial pos="0.0004478 -0.0002134 -0.0103358" quat="0.614952 0.353463 -0.612793 0.3484" mass="0.0857" diaginertia="5.14607e-05 3.4523e-05 2.87098e-05"/>
+                  <joint name="joint_6" pos="0 0 0" axis="0 0 1" limited="true" range="-6.28 6.28" damping="0.1"/>
+                  <geom type="mesh" rgba="1 1 1 1" mesh="link_6" contype="0" conaffinity="0" group="1"/>
+                  <geom type="mesh" group="0" mesh="link_6" name="link_6_collision"/>
+                  <body name="right_hand" pos="0 0 -0.02" quat="1 0 0 0">
+                      <inertial pos="0 0 0" mass="0.5" diaginertia="0.05 0.05 0.05" />
+                      <!-- This camera points out from the eef. -->
+                      <geom type="sphere" size="0.01" rgba="1 0 0 0.5" contype="0" conaffinity="0" group="1"/>
+                      <camera mode="fixed" name="eye_in_hand" pos="0.05 0 0" quat="0 0.707108 0.707108 0" fovy="75"/>
+                      <!-- to add gripper -->
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <contact>
+    <!-- [contact-fix 2026-09-27] 基座固定在世界上(weldid=0)，MuJoCo 默认的父子免碰撞规则不适用；
+         基座与第一连杆碰撞体初始穿透 ~12.17mm，求解器持续施加接触约束，
+         导致 OSC 末端跟踪出现严重方向性误差(y +20mm 指令只走 ~3.4mm)。
+         见 agent-work-space/controller_validation_20260927/ECO65基座自碰撞_问题解决记录.md -->
+    <exclude body1="base" body2="link_1"/>
+  </contact>
+</mujoco>

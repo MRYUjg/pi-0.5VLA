@@ -1,0 +1,124 @@
+{
+  "node": "N2",
+  "date": "2026-09-27",
+  "approach_axis_convention": "+z（grip_site 局部系，指向工作空间/桌面下方）",
+  "definitions": {
+    "grip_site": "robosuite/OSC 使用的 eef site；策略动作即作用于此点",
+    "grasp_point": "两指垫碰撞 geom **内侧面中点**；在四连杆约束收敛的构型下测量",
+    "beyond_gripsite_mm": "沿接近轴相对 grip_site 的前伸量，正值=更深入工作空间"
+  },
+  "panda_reference": {
+    "config": "Panda + PandaGripper",
+    "grip_site_world_pos": [
+      -0.2084646605658239,
+      0.0,
+      1.1732794757296405
+    ],
+    "grasp_point_offset_along_approach_mm": {
+      "open": -3.5999999999999575,
+      "closed": -3.6000000000000085,
+      "note": "PandaGripper 为平动指，夹持点位置与开合无关（实测恒定）"
+    },
+    "pad_face_normal_angle_deg": 0.0,
+    "fingertip_deepest_vertex_mm": 9.299880525714778,
+    "flange_offset_mm": 122.94578156662975,
+    "clip": "+9.3 mm（全开/闭合不变；手指为平动指）"
+  },
+  "zhixing": {
+    "config": "ECO65 + ZhiXing",
+    "grip_site_world_pos_current_init": [
+      -0.20977168829253467,
+      4.336744901077293e-07,
+      1.1503169473687487
+    ],
+    "grasp_point_offset_along_approach_mm": {
+      "reset_near_closed": 82.47497149056262,
+      "open": 65.1088113022891,
+      "closed": 82.5441429950913,
+      "travel_over_stroke_mm": 17.435331692802208,
+      "note": "二连平行连杆：两面保持平行，但夹持点随闭合并沿接近轴前移约 17.4 mm"
+    },
+    "pad_face_normal_angle_deg": {
+      "reset": 3.2158504959731724,
+      "open": 2.92188280016609,
+      "closed": 2.714673268516266,
+      "note": "≈3°，确认两指垫在整个行程内保持平行（平行连杆特征）"
+    },
+    "face_separation_mm": {
+      "reset": 0.5747102006534369,
+      "open": 89.95894499031854,
+      "closed": 0.5157845759547749
+    },
+    "constraint_residuals": {
+      "reset_eq": 0.0,
+      "reset_connect_m": 1.7537402257396275e-07,
+      "open_connect_m": 6.998235756244459e-05,
+      "closed_connect_m": 5.248678024199785e-05
+    },
+    "legacy_closest_pair_metric_mm": {
+      "reset": 66.02623722758483,
+      "note": "作废口径：平行面下最近点对退化，会跳到角点，低估约 16 mm"
+    },
+    "fingertip_deepest_vertex_mm": {
+      "reset_near_closed": 102.44620836707881,
+      "open": 85.01501700743952
+    },
+    "flange_offset_mm": 120.00000354018034,
+    "jaw_opening_range": {
+      "closed_pad_clearance_m": 0.00017987804309762664,
+      "open_pad_clearance_m": 0.08969994912842277
+    },
+    "site_cross_check_mm": {
+      "Left_Support_tip": [
+        11.270357470103928,
+        -0.00030396916738360813,
+        55.796191359151464
+      ],
+      "Right_Support_tip": [
+        -11.270357472742939,
+        0.0004426005306380418,
+        55.79619135912433
+      ],
+      "eef_body_offset": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "clip": "夹持区位于声明 grip_site **前方 +82.5 mm（闭合）～ +65.1 mm（全开）**；指尖最深 +102 mm。推荐把 grip_site 定义在闭合位夹持点，即 eef 前移至 0.20254 m"
+  },
+  "mismatch": {
+    "grasp_point_vs_panda_reference_mm": 109.1560648206867,
+    "declared_grip_site_vs_reference_mm": 23.011904178917007,
+    "fingertip_reach_difference_mm": 93.14632784136404
+  },
+  "camera_contract": {
+    "camera": "robot0_eye_in_hand (fovy=75, 256x256)",
+    "T_cam2grip_trans_delta_zhixing_vs_panda_mm": 23.000000000000355,
+    "T_cam2grip_rot_delta_deg": 0.0,
+    "pandagripper_alignment_still_holds": false,
+    "note": "ECO65+PandaGripper 与 Panda+PandaGripper 的 T_cam2grip 逐位相同（差 2e-13 mm），故 PandaGripper 的结论对 Panda 路径成立；但装上 ZhiXing 后平移差 23.000 mm，**该结论不成立**（23 mm = 0.120 m − 0.097 m，即两者 eef 安装长度之差）。"
+  },
+  "initial_pose": {
+    "landed_init_qpos": [
+      -0.12822699637501933,
+      -0.08018875108093924,
+      -1.4820718667163302,
+      -0.06491839613575459,
+      1.5635290046770178,
+      -1.6993079970320994
+    ],
+    "candidate_init_qpos": [
+      -0.12638970632378232,
+      -0.2220352422010259,
+      -0.8415717096143336,
+      -0.5635449217545908,
+      1.5636350768115954,
+      -1.6974764913239968
+    ],
+    "candidate_grasp_point_residual_mm": 0.0007481106115606786,
+    "candidate_rot_residual_deg": 9.708544736296656e-06,
+    "candidate_limit_margin_min_rad": 1.5423649231884045,
+    "candidate_landed": false
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "node": "N3",
+  "tag": "final_B",
+  "object": "akita_black_bowl_1",
+  "strategy": "rim",
+  "trials_requested": 10,
+  "place_xy": [
+    -0.2,
+    0.1
+  ],
+  "parts": {
+    "plan": {
+      "object_z_range": [
+        0.97159,
+        1.0221319285234878
+      ],
+      "table_z": 0.97159,
+      "n_vertices": 320,
+      "opening_budget_mm": 83.96,
+      "best": null,
+      "scan": [
+        [
+          1.0221,
+          107.2,
+          30.6,
+          false
+        ],
+        [
+          1.0201,
+          107.2,
+          28.6,
+          false
+        ],
+        [
+          1.0181,
+          107.2,
+          26.6,
+          false
+        ],
+        [
+          1.0161,
+          107.2,
+          24.6,
+          false
+        ],
+        [
+          0.9921,
+          89.1,
+          0.6,
+          false
+        ],
+        [
+          0.9901,
+          90.5,
+          -1.4,
+          false
+        ],
+        [
+          0.9881,
+          90.5,
+          -3.4,
+          false
+        ],
+        [
+          0.9861,
+          90.5,
+          -5.4,
+          false
+        ],
+        [
+          0.9841,
+          90.5,
+          -7.4,
+          false
+        ],
+        [
+          0.9821,
+          90.5,
+          -9.4,
+          false
+        ],
+        [
+          0.9801,
+          90.5,
+          -11.4,
+          false
+        ],
+        [
+          0.9781,
+          50.8,
+          -13.4,
+          false
+        ],
+        [
+          0.9761,
+          50.8,
+          -15.4,
+          false
+        ],
+        [
+          0.9741,
+          50.8,
+          -17.4,
+          false
+        ],
+        [
+          0.9721,
+          50.8,
+          -19.4,
+          false
+        ]
+      ]
+    },
+    "B": {
+      "rows": [
+        {
+          "dir": "+x",
+          "commanded_mm": 20.0,
+          "achieved_mm": 20.906478596661728,
+          "err_mm": 1.737483123795166,
+          "steps": 14,
+          "nan": false
+        },
+        {
+          "dir": "-x",
+          "commanded_mm": 20.0,
+          "achieved_mm": 20.35810280015235,
+          "err_mm": 1.8509940707292964,
+          "steps": 6,
+          "nan": false
+        },
+        {
+          "dir": "+y",
+          "commanded_mm": 20.0,
+          "achieved_mm": 20.015160907299684,
+          "err_mm": 0.10489273721329873,
+          "steps": 8,
+          "nan": false
+        },
+        {
+          "dir": "-y",
+          "commanded_mm": 20.0,
+          "achieved_mm": 19.9135864727133,
+          "err_mm": 0.1845456378993424,
+          "steps": 8,
+          "nan": false
+        },
+        {
+          "dir": "+z",
+          "commanded_mm": 20.0,
+          "achieved_mm": 18.672150315452033,
+          "err_mm": 1.806942504123319,
+          "steps": 6,
+          "nan": false
+        },
+        {
+          "dir": "-z",
+          "commanded_mm": 20.0,
+          "achieved_mm": 19.08212668879739,
+          "err_mm": 1.030503136864679,
+          "steps": 7,
+          "nan": false
+        }
+      ],
+      "max_err_mm": 1.8509940707292964,
+      "pass": true
+    }
+  }
+}

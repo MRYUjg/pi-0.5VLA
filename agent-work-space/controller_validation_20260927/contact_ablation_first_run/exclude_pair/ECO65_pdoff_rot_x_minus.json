@@ -1,0 +1,95 @@
+{
+  "robot": "ECO65",
+  "extra_pd": false,
+  "case": "rot_x_minus",
+  "seed": 7,
+  "exclude_base_link1": true,
+  "duration_s": 3.0,
+  "gripper": "PandaGripper",
+  "controller": "OperationalSpaceController",
+  "reset_qpos_sha256": "e6fc4ffd7ca9f32967b3f2d023a3b30da6683d63c1234571443a2d8409948bc9",
+  "initial_eef_pos": [
+    -0.16465731961309132,
+    0.04780794438665539,
+    1.086045288786559
+  ],
+  "start_eef_pos": [
+    -0.16465731936140168,
+    0.04780794078919881,
+    1.0860452890947885
+  ],
+  "warmup_drift_mm": 3.6193986970691444e-06,
+  "start_eef_rotmat": [
+    [
+      0.06864678526131085,
+      0.997215760711305,
+      -0.029126370564509233
+    ],
+    [
+      0.9949965421399076,
+      -0.07055996839607381,
+      -0.07073310391586375
+    ],
+    [
+      -0.07259132181545395,
+      -0.024125037801393995,
+      -0.997069948673696
+    ]
+  ],
+  "final_eef_pos": [
+    -0.16485768542065005,
+    0.047926528247713276,
+    1.0856540913297028
+  ],
+  "tail_position_error_mm": 0.45815800024670084,
+  "tail_rotation_error_deg": 0.08954881093669817,
+  "max_position_error_mm": 2.324811300977548,
+  "final_offset_from_start_mm": [
+    -0.2003660592483636,
+    0.11858745851446584,
+    -0.3911977650856713
+  ],
+  "final_rotation_from_start_deg": 5.760561476291674,
+  "screen_pass": true,
+  "torque_saturation_fraction_per_joint": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.008,
+    0.0
+  ],
+  "peak_preclip_torque_limit_ratio": [
+    0.11441470835295327,
+    0.2087234344152699,
+    0.29794091510493625,
+    0.22862363943942254,
+    1.7528800159883484,
+    0.08996139793347133
+  ],
+  "joint_limit_util_min": [
+    0.4999999991951022,
+    0.5121725975696308,
+    0.22397594782415578,
+    0.5482936252128435,
+    0.7254331823826732,
+    0.3805732483841321
+  ],
+  "joint_limit_util_max": [
+    0.5053103099972809,
+    0.5137312340633798,
+    0.22462869914247258,
+    0.5485943428201863,
+    0.741468125051643,
+    0.3835344715574655
+  ],
+  "jacobian_sigma_min_mixed_units": 0.13913416766350026,
+  "max_extra_pd_torque_nm": 0.0,
+  "physics_samples": 1500,
+  "torque_instrumentation_verified": true,
+  "robot_contact_pair_counts": {},
+  "peak_contact_normal_force_n": {},
+  "min_contact_distance_m": {},
+  "control_freq": 20,
+  "physics_dt": 0.002
+}

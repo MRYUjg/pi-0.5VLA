@@ -1,0 +1,325 @@
+{
+  "node": "N3-redo",
+  "tag": "CAPSTALL",
+  "method": "standard_solid_block",
+  "injection": "monkeypatch TableArena + MujocoXML.merge (no asset change)",
+  "opening_mm": 89.96,
+  "threshold_per_width": 9,
+  "hold_steps": 40,
+  "lift_m": 0.05,
+  "results": [
+    {
+      "width_mm": 50.0,
+      "n_success": 0,
+      "n_total": 5,
+      "success_rate": 0.0,
+      "pass": false,
+      "trials": [
+        {
+          "trial": 1,
+          "size_mm": [
+            30.0,
+            25.0,
+            35.0
+          ],
+          "block_lo": [
+            -0.25,
+            0.075,
+            0.8997844891595659
+          ],
+          "block_hi": [
+            -0.19,
+            0.125,
+            0.9697844891595659
+          ],
+          "on_table": true,
+          "z_g": 0.9347844891595659,
+          "pin": [
+            -0.22,
+            0.1,
+            0.9347844891595659
+          ],
+          "ik_res_mm": {
+            "pre": 0.009278600681151083,
+            "grasp": 0.009934510953661916
+          },
+          "actuator": {
+            "aid": 6,
+            "forcelimited": 1,
+            "forcerange": [
+              -1.33,
+              1.33
+            ],
+            "peak_abs_actuator_force": 1.33,
+            "final_actuator_force": -1.33,
+            "close_steps_used": 3650,
+            "left_1_qpos_after_close": -0.6092767245277144
+          },
+          "jaw_close_mm": 47.53283410372814,
+          "obj_shift_on_close_mm": 11.194050658703334,
+          "contact_close": {
+            "n_contacts": 2,
+            "min_dist_mm": -3.651583971384319,
+            "max_force_N": 13.3310604330898
+          },
+          "max_qvel": 0.04022798434373598,
+          "ik_res_up_mm": 0.000653854722681588,
+          "dz_lift_mm": 3.6999906897565715,
+          "dz_hold_mm": 3.4019721824734006,
+          "contact_hold": {
+            "n_contacts": 2,
+            "min_dist_mm": -3.602704314864647,
+            "max_force_N": 13.377779665583942
+          },
+          "dz_end_mm": -1.0074108214297439e-07,
+          "success": false,
+          "reason": "no_hold"
+        },
+        {
+          "trial": 2,
+          "size_mm": [
+            30.0,
+            25.0,
+            35.0
+          ],
+          "block_lo": [
+            -0.25,
+            0.075,
+            0.8997844891595659
+          ],
+          "block_hi": [
+            -0.19,
+            0.125,
+            0.9697844891595659
+          ],
+          "on_table": true,
+          "z_g": 0.9347844891595659,
+          "pin": [
+            -0.22,
+            0.1,
+            0.9347844891595659
+          ],
+          "ik_res_mm": {
+            "pre": 0.009278600749808678,
+            "grasp": 0.005564922846849195
+          },
+          "actuator": {
+            "aid": 6,
+            "forcelimited": 1,
+            "forcerange": [
+              -1.33,
+              1.33
+            ],
+            "peak_abs_actuator_force": 1.33,
+            "final_actuator_force": -1.33,
+            "close_steps_used": 400,
+            "left_1_qpos_after_close": -0.6078347818180632
+          },
+          "jaw_close_mm": 47.29467990667501,
+          "obj_shift_on_close_mm": 2.902909978198992,
+          "contact_close": {
+            "n_contacts": 2,
+            "min_dist_mm": -3.6113427118351393,
+            "max_force_N": 13.196472366905319
+          },
+          "max_qvel": 0.013640380204813136,
+          "ik_res_up_mm": 0.005305202916193696,
+          "dz_lift_mm": -0.8581188845953047,
+          "dz_hold_mm": -1.0113827542651554,
+          "contact_hold": {
+            "n_contacts": 2,
+            "min_dist_mm": -4.465082226837743,
+            "max_force_N": 16.366770978674055
+          },
+          "dz_end_mm": -2.9733993045510942e-08,
+          "success": false,
+          "reason": "no_hold"
+        },
+        {
+          "trial": 3,
+          "size_mm": [
+            30.0,
+            25.0,
+            35.0
+          ],
+          "block_lo": [
+            -0.25,
+            0.075,
+            0.8997844891595659
+          ],
+          "block_hi": [
+            -0.19,
+            0.125,
+            0.9697844891595659
+          ],
+          "on_table": true,
+          "z_g": 0.9347844891595659,
+          "pin": [
+            -0.22,
+            0.1,
+            0.9347844891595659
+          ],
+          "ik_res_mm": {
+            "pre": 0.009278600682375246,
+            "grasp": 0.021023931321525996
+          },
+          "actuator": {
+            "aid": 6,
+            "forcelimited": 1,
+            "forcerange": [
+              -1.33,
+              1.33
+            ],
+            "peak_abs_actuator_force": 1.33,
+            "final_actuator_force": -1.33,
+            "close_steps_used": 1050,
+            "left_1_qpos_after_close": -0.6104626886181181
+          },
+          "jaw_close_mm": 47.455924124575645,
+          "obj_shift_on_close_mm": 3.924998489915491,
+          "contact_close": {
+            "n_contacts": 2,
+            "min_dist_mm": -3.5943680761139563,
+            "max_force_N": 13.451420178941888
+          },
+          "max_qvel": 0.4831080120337318,
+          "ik_res_up_mm": 0.004851417391362489,
+          "dz_lift_mm": -0.3586144530850488,
+          "dz_hold_mm": -0.9237806371186208,
+          "contact_hold": {
+            "n_contacts": 2,
+            "min_dist_mm": -4.5212045604147795,
+            "max_force_N": 18.583039025968446
+          },
+          "dz_end_mm": -8.556710895391006e-09,
+          "success": false,
+          "reason": "no_hold"
+        },
+        {
+          "trial": 4,
+          "size_mm": [
+            30.0,
+            25.0,
+            35.0
+          ],
+          "block_lo": [
+            -0.25,
+            0.075,
+            0.8997844891595659
+          ],
+          "block_hi": [
+            -0.19,
+            0.125,
+            0.9697844891595659
+          ],
+          "on_table": true,
+          "z_g": 0.9347844891595659,
+          "pin": [
+            -0.22,
+            0.1,
+            0.9347844891595659
+          ],
+          "ik_res_mm": {
+            "pre": 0.009278600708574128,
+            "grasp": 0.010936803038136171
+          },
+          "actuator": {
+            "aid": 6,
+            "forcelimited": 1,
+            "forcerange": [
+              -1.33,
+              1.33
+            ],
+            "peak_abs_actuator_force": 1.33,
+            "final_actuator_force": -1.33,
+            "close_steps_used": 1750,
+            "left_1_qpos_after_close": -0.6049226337534408
+          },
+          "jaw_close_mm": 47.23787639371328,
+          "obj_shift_on_close_mm": 4.678952406022749,
+          "contact_close": {
+            "n_contacts": 2,
+            "min_dist_mm": -3.625996326251798,
+            "max_force_N": 13.240465232866693
+          },
+          "max_qvel": 0.013031652802846745,
+          "ik_res_up_mm": 0.0022722334321687017,
+          "dz_lift_mm": 0.0787938848245684,
+          "dz_hold_mm": 0.004891056791245241,
+          "contact_hold": {
+            "n_contacts": 2,
+            "min_dist_mm": -4.008028255581214,
+            "max_force_N": 15.15766227031057
+          },
+          "dz_end_mm": -7.123746037507317e-08,
+          "success": false,
+          "reason": "no_hold"
+        },
+        {
+          "trial": 5,
+          "size_mm": [
+            30.0,
+            25.0,
+            35.0
+          ],
+          "block_lo": [
+            -0.25,
+            0.075,
+            0.8997844891595659
+          ],
+          "block_hi": [
+            -0.19,
+            0.125,
+            0.9697844891595659
+          ],
+          "on_table": true,
+          "z_g": 0.9347844891595659,
+          "pin": [
+            -0.22,
+            0.1,
+            0.9347844891595659
+          ],
+          "ik_res_mm": {
+            "pre": 0.009278600685809057,
+            "grasp": 0.017666661251927552
+          },
+          "actuator": {
+            "aid": 6,
+            "forcelimited": 1,
+            "forcerange": [
+              -1.33,
+              1.33
+            ],
+            "peak_abs_actuator_force": 1.33,
+            "final_actuator_force": -1.33,
+            "close_steps_used": 1600,
+            "left_1_qpos_after_close": -0.605251785000851
+          },
+          "jaw_close_mm": 47.25456726807681,
+          "obj_shift_on_close_mm": 3.4275675217175823,
+          "contact_close": {
+            "n_contacts": 2,
+            "min_dist_mm": -3.6466648755267026,
+            "max_force_N": 13.30010647992693
+          },
+          "max_qvel": 0.017836483385524175,
+          "ik_res_up_mm": 0.004560926314398643,
+          "dz_lift_mm": -0.20541147043484642,
+          "dz_hold_mm": -0.5571875226304535,
+          "contact_hold": {
+            "n_contacts": 2,
+            "min_dist_mm": -5.0447676677606,
+            "max_force_N": 19.902202146106408
+          },
+          "dz_end_mm": -7.694034298566521e-08,
+          "success": false,
+          "reason": "no_hold"
+        }
+      ]
+    }
+  ],
+  "best_width_mm": 50.0,
+  "best_success": "0/5",
+  "any_width_pass": false,
+  "verdict": "NOT_PASSED"
+}

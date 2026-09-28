@@ -1,0 +1,59 @@
+# Run with:
+#   export SERVER_ARGS="--env LIBERO policy:checkpoint --policy.config pi05_libero --policy.dir ./checkpoints/pi05_libero"
+#   export CLIENT_ARGS="--task-suite-name libero_spatial"
+#   docker compose -f examples/eco65_libero/compose.yml up
+
+services:
+  eco65_runtime:
+    image: libero
+    depends_on:
+      - openpi_server
+    init: true
+    tty: true
+    network_mode: host
+    privileged: true
+    volumes:
+      - $PWD:/app
+      - ../../data:/data
+      - ../../my-robot:/app/my-robot:ro
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+    environment:
+      - CLIENT_ARGS
+      - DISPLAY=$DISPLAY
+      - MUJOCO_GL=$${MUJOCO_GL:-egl}
+      - MUJOCO_EGL_DEVICE_ID=0
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - PYOPENGL_PLATFORM=egl
+    command: >
+      /bin/bash -c "source /.venv/bin/activate &&
+      python examples/eco65_libero/main.py $$CLIENT_ARGS"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  openpi_server:
+    image: openpi_server
+    build:
+      context: ../..
+      dockerfile: scripts/docker/serve_policy.Dockerfile
+    init: true
+    tty: true
+    network_mode: host
+    volumes:
+      - $PWD:/app
+      - $${OPENPI_DATA_HOME:-~/.cache/openpi}:/openpi_assets
+    environment:
+      - SERVER_ARGS
+      - OPENPI_DATA_HOME=/openpi_assets
+      - IS_DOCKER=true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

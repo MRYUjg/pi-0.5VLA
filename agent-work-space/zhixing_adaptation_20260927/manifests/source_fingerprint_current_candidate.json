@@ -1,0 +1,264 @@
+{
+  "generated_at": "2026-09-28T05:56:52",
+  "purpose": "N0（返工）当前候选版指纹：ECO65 + ZhiXing 在 R1–R6 修复后的完整资产/代码/环境快照",
+  "supersedes_note": "历史 source_fingerprint.json / _pre_switch / _switch_era 作为历史证据保留，本文件是**当前候选版**，不代表仍是同一个基线",
+  "repo": "/mnt/data/vla-policy/openpi",
+  "vcs": "本仓库不是 git 仓库，无 commit 可引；回退依赖 *.bak 与本指纹",
+  "sources": {
+    "robot_xml": {
+      "path": "robosuite/models/assets/robots/ECO65-B/robot.xml",
+      "sha256": "80f8626433a5e46025c4a797c01082182fb425482187f1482bae38a6b96a0bc9",
+      "bytes": 6185
+    },
+    "zhixing_gripper_xml": {
+      "path": "robosuite/models/assets/grippers/zhixing_gripper.xml",
+      "sha256": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+      "bytes": 6823
+    },
+    "zhixing_gripper_py": {
+      "path": "robosuite/models/grippers/zhixing_gripper.py",
+      "sha256": "91765fc70477d005128961a469d7564acd053fa21e2e9414c630d29608a428b2",
+      "bytes": 4151
+    },
+    "panda_gripper_py": {
+      "path": "robosuite/models/grippers/panda_gripper.py",
+      "sha256": "a3760a8fc4599fa6f79914304b82466f3c1bda1a945943ca693bb57f00dc59eb",
+      "bytes": 1817
+    },
+    "eco65_robot_py": {
+      "path": "robosuite/models/robots/manipulators/eco65_robot.py",
+      "sha256": "8a890af262233d808139bdabc8e9e107039c83b2f4b8601d67ef68922099d6c2",
+      "bytes": 4232
+    },
+    "mounted_eco65_py": {
+      "path": "third_party/libero/libero/libero/envs/robots/mounted_eco65.py",
+      "sha256": "7e14d05383a64710c7b9128db1639b452114d975f887a95dd58a9b52c0f36d1e",
+      "bytes": 1738
+    },
+    "on_the_ground_eco65_py": {
+      "path": "third_party/libero/libero/libero/envs/robots/on_the_ground_eco65.py",
+      "sha256": "328096fd9425c30c3ed09ede2d13feb36ccab4e186fd293092a10359681e70c0",
+      "bytes": 2970
+    },
+    "libero_robots_init_py": {
+      "path": "third_party/libero/libero/libero/envs/robots/__init__.py",
+      "sha256": "bde447f580d08213c6021d138b82cfd812a6ce7964d5aa7ef9a7a4bb8e1da72d",
+      "bytes": 487
+    },
+    "robosuite_robot_py": {
+      "path": "robosuite/robots/robot.py",
+      "sha256": "8d26702cd683d5e018cf70661b2daa7abf74a670733246c821c0ff1cae4569c3",
+      "bytes": 16089
+    },
+    "robosuite_single_arm_py": {
+      "path": "robosuite/robots/single_arm.py",
+      "sha256": "20ae474712326e051b272737b12cd2d9dbe547888228ac6e82a73995ae0bae1d",
+      "bytes": 20790
+    },
+    "osc_pose_json": {
+      "path": "robosuite/controllers/config/osc_pose.json",
+      "sha256": "07f3a8b41d3eecc8a36700a85bd8207ee3fbc36eb73f6a2248340c96770d1e45",
+      "bytes": 466
+    },
+    "libero_main_py": {
+      "path": "examples/libero/main.py",
+      "sha256": "587f27a4ce7f60f328f8d47d2dbc154038983fe4f771e7c97ef3327f24bd4e31",
+      "bytes": 12297
+    },
+    "eval_matrix_py": {
+      "path": "agent-work-space/scripts/eval_matrix.py",
+      "sha256": "11ff1a5950d515c86cf3a03042698e3d28e798b9ad837d231677ea1227b1b0e7",
+      "bytes": 10457
+    },
+    "serve_policy_py": {
+      "path": "scripts/serve_policy.py",
+      "sha256": "6eebd13b3eed06676b5c3c002da28e6c6c6982aaef6bf890d882887922d6373a",
+      "bytes": 3809
+    },
+    "training_config_py": {
+      "path": "src/openpi/training/config.py",
+      "sha256": "4da3eae53266a4b706038ef1f8b63e5b6692031c79523074ab4b68bc9cacaad4",
+      "bytes": 46818
+    },
+    "n4_collect_py": {
+      "path": "agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py",
+      "sha256": "231aefdbe357ca6e619652410f9b49b213c4130798e324e8f2d9cf9343fe67c8",
+      "bytes": 49303
+    },
+    "n4_audit_py": {
+      "path": "agent-work-space/zhixing_adaptation_20260927/scripts/n4_audit.py",
+      "sha256": "0d32bc8bc0f7d5fe2abee6aa9c440c25f17b220d4038811334c5cb1769a987a1",
+      "bytes": 28819
+    },
+    "run_n4_collect_sh": {
+      "path": "agent-work-space/zhixing_adaptation_20260927/scripts/run_n4_collect.sh",
+      "sha256": "79228291b8ef73a97309a4117ecb73d3f0af1c06161da2cccb1fac813e5be093",
+      "bytes": 1948
+    },
+    "clean_n4_data_sh": {
+      "path": "agent-work-space/zhixing_adaptation_20260927/scripts/clean_n4_data.sh",
+      "sha256": "a17b352cf4ef528cabfb6b735d0911c0a3ddb9db3f1dd40bdfd79e94b1cca049",
+      "bytes": 1720
+    },
+    "verify_r1_gripper_init_py": {
+      "path": "agent-work-space/zhixing_adaptation_20260927/scripts/verify_r1_gripper_init.py",
+      "sha256": "056248c34cb0f50165fff827e48fee739c4ec85603c35d68d0655902f371e0a5",
+      "bytes": 9162
+    },
+    "dep_probe_sh": {
+      "path": "agent-work-space/zhixing_adaptation_20260927/scripts/dep_probe.sh",
+      "sha256": "eb7f0601dc8f2e1c8a6adbbbd58578f55041f8edb94ad6ea02d8007efc85292a",
+      "bytes": 831
+    },
+    "make_tcp_contract_v2_py": {
+      "path": "agent-work-space/zhixing_adaptation_20260927/scripts/make_tcp_contract_v2.py",
+      "sha256": "3c74f6b4b0a8f39174e402b9518292ee964e3cba14566bd9dcc69cf57bd196e1",
+      "bytes": 42870
+    },
+    "n2v2_settled_probe_py": {
+      "path": "agent-work-space/zhixing_adaptation_20260927/scripts/n2v2_settled_probe.py",
+      "sha256": "20f0e0c112dd4d6d0ecc1a0069e12c245ca9bb225e98a3f0e056471cf4aad422",
+      "bytes": 33088
+    },
+    "n3_osc_full_chain_py": {
+      "path": "agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py",
+      "sha256": "f3951030e3607bc3ecb9cdb3f582ba677f522bfb46ef6d783ecf84a7d83ec52d",
+      "bytes": 71683
+    },
+    "make_acceptance_protocol_py": {
+      "path": "agent-work-space/zhixing_adaptation_20260927/scripts/make_acceptance_protocol.py",
+      "sha256": "7798b58531e04bd626ac05244120c77c224a8b9b7a21db5842dfb08f40f9cca9",
+      "bytes": 11906
+    }
+  },
+  "backups": {
+    "robosuite/models/assets/robots/ECO65-B/robot.xml.pre_contact_fix.bak": {
+      "sha256": "e5f8dd517eda0985e4af211cc87870da342529144b6a811531c3cc6520ef9fef",
+      "bytes": 5696,
+      "present": true
+    },
+    "robosuite/models/robots/manipulators/eco65_robot.py.pre_init_align.bak": {
+      "sha256": "3fa6f7f8936b3c7869612f273cb446fe832b7a5c2f998a1cfcdda99850b9badf",
+      "bytes": 1479,
+      "present": true
+    },
+    "third_party/libero/libero/libero/envs/robots/mounted_eco65.py.pre_init_align.bak": {
+      "sha256": "0a612be54996148d91eab50eb2e5379f7be923b45672f69e5b5341d351e82143",
+      "bytes": 1588,
+      "present": true
+    },
+    "examples/libero/main.py.pre_gripper_entry.bak": {
+      "sha256": "20bbee248e7bd21ffcb3f5842321f0e5314ba8225c2f41f115d6d3edaddafb68",
+      "bytes": 10444,
+      "present": true
+    },
+    "agent-work-space/scripts/eval_matrix.py.pre_gripper_entry.bak": {
+      "sha256": "62c6646bfc6a56f21fcb9c17925c30078288a21cf838e0bf48d5bc9766e768b8",
+      "bytes": 9533,
+      "present": true
+    },
+    "robosuite/models/grippers/zhixing_gripper.py.pre_polarity_switch.bak": {
+      "sha256": "606d7e637422ef54a02f36f6d7618458f0e94a34d1757f38fedfd633b571ab1a",
+      "bytes": 2028,
+      "present": true
+    },
+    "robosuite/models/grippers/zhixing_gripper.py.pre_fix_landing.bak": {
+      "sha256": "9eaca09cbbfd3459024169e7ed0d9c6c4baff7b66aca52a2ffd73c48726b73ac",
+      "bytes": 2893,
+      "present": true
+    },
+    "docs/ECO65_ZhiXing_项目说明.md.pre_n1_correction.bak": {
+      "sha256": "a4aeaec03db7a97ba795089c1621d7eb816b53e2f9e82b200b2f05c0005cc7c1",
+      "bytes": 36906,
+      "present": true
+    },
+    "robosuite/models/robots/manipulators/eco65_robot.py.pre_r1_gripper_qpos.bak": {
+      "sha256": "86825ee345c004e13e78ee06f21312041b4ea0df19d0778205f1e4cf8482ca1f",
+      "bytes": 1448,
+      "present": true
+    },
+    "third_party/libero/libero/libero/envs/robots/mounted_eco65.py.pre_r1_gripper_qpos.bak": {
+      "sha256": "3c828ad6d6cb4fec8bed950cca699c6e84d349a48b087d2f102b4a7e60e83b12",
+      "bytes": 1565,
+      "present": true
+    },
+    "robosuite/robots/robot.py.pre_r1_gripper_qpos.bak": {
+      "sha256": "7a3a98eb75b4e7cb1b822a918d0c693d441356279a8e796cfc02eb1fd5963f23",
+      "bytes": 15820,
+      "present": true
+    },
+    "robosuite/robots/single_arm.py.pre_r1_gripper_qpos.bak": {
+      "sha256": "21c9c457148b3984764c5a664361c64f5486340f7f0384f4ff18ff100965219a",
+      "bytes": 20248,
+      "present": true
+    },
+    "agent-work-space/zhixing_adaptation_20260927/scripts/run_n4_collect.sh.pre_r5_guard.bak": {
+      "sha256": "363627c680d19b04d5c276d411921ebef20f559fe379a897d08a93dc5435e9b7",
+      "bytes": 665,
+      "present": true
+    }
+  },
+  "default_gripper_actual": {
+    "eco65_robot_py": "\"ZhixingGripper\"",
+    "mounted_eco65_py": "\"ZhixingGripper\""
+  },
+  "init_qpos_actual": {
+    "eco65_robot_py": "eco65_init_qpos_for_model(self)",
+    "mounted_eco65_py": "eco65_init_qpos_for_model(self)"
+  },
+  "docker_images": [
+    "libero:latest 1ac69906b0b8 9.41GB",
+    "openpi_server:latest 25e0767fe2d7 12.7GB",
+    "ghcr.io/astral-sh/uv:0.12.15 e4f45baff29f 55.2MB",
+    "ghcr.io/astral-sh/uv:0.5.1 98106d9f479c 31.8MB",
+    "nvidia/cuda:12.2.2-cudnn8-runtime-ubuntu22.04 3a3173a161de 3.29GB"
+  ],
+  "gpu": {
+    "raw": [
+      "NVIDIA A800-SXM4-40GB, 40960 MiB, 11 MiB, 40502 MiB, 0 %"
+    ],
+    "compute_apps": []
+  },
+  "policy_server": {
+    "process": []
+  },
+  "container_versions": {
+    "ok": true,
+    "parsed": {
+      "python": "3.8.20",
+      "executable": "/.venv/bin/python",
+      "numpy": "1.22.4",
+      "mujoco": "3.2.3",
+      "robosuite": "1.4.1",
+      "torch": "1.11.0+cu113",
+      "jax": "IMPORT_FAIL: ModuleNotFoundError",
+      "libero": "unknown"
+    },
+    "stderr": ""
+  },
+  "recovery_set_complete": true,
+  "missing_backups": [],
+  "reviewed_revisions_not_restorable": {
+    "agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": {
+      "reviewed_sha256": "ec54546a729dbac0853a2ba778895eb2576e9f542cc1e2aa150744832290b594",
+      "reviewed_bytes": 34705,
+      "changed_by": [
+        "R2 首帧观测",
+        "R4 state 关节名",
+        "R6 动作尺度元数据",
+        "R3 夹爪累积状态落盘"
+      ],
+      "rollback_note": "无字节备份；回退需按上述四项反向修改，或从本文件之前的任何完整仓库副本恢复。当前版本已通过 n4_audit 全项契约检查。"
+    },
+    "agent-work-space/zhixing_adaptation_20260927/scripts/n4_audit.py": {
+      "reviewed_sha256": "3f4d7ed7a26078a6e4083536ab98a22894c66fc068e22ada085970968b5080fe",
+      "reviewed_bytes": 14489,
+      "changed_by": [
+        "R3 回放严格恢复与硬判据",
+        "配对判别力自检"
+      ],
+      "rollback_note": "同上。"
+    }
+  },
+  "recovery_set_caveat": "生产资产（robot.xml / 夹爪 XML / 两个机器人类 / robosuite 基类 / 采集入口）均有逐字节 .bak 可回退；两个分析脚本（n4_collect.py / n4_audit.py）只能按审核时点的 sha256 识别，无法逐字节还原 —— 见 reviewed_revisions_not_restorable。"
+}

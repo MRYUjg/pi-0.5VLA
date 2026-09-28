@@ -1,0 +1,74 @@
+{
+  "node": "N4",
+  "tag": "n4",
+  "suite": "libero_object",
+  "task_id": 0,
+  "task_language": "pick up the alphabet soup and place it in the basket",
+  "want": 5,
+  "attempts": [
+    {
+      "seed": 1,
+      "success": false,
+      "frames": 600,
+      "path": "raw/failure/n4_libero_object_t0_s1_0001.npz",
+      "lifted_mm": 48.709194532846155,
+      "success_predicate": false,
+      "geometric_in_basket": false,
+      "close_steps": 10
+    },
+    {
+      "seed": 2,
+      "success": true,
+      "frames": 452,
+      "path": "raw/success/n4_libero_object_t0_s2_0002.npz",
+      "lifted_mm": 48.53429778049729,
+      "success_predicate": true,
+      "geometric_in_basket": true,
+      "close_steps": 10
+    },
+    {
+      "seed": 3,
+      "success": true,
+      "frames": 447,
+      "path": "raw/success/n4_libero_object_t0_s3_0003.npz",
+      "lifted_mm": 49.01436650224411,
+      "success_predicate": true,
+      "geometric_in_basket": true,
+      "close_steps": 10
+    },
+    {
+      "seed": 4,
+      "success": true,
+      "frames": 453,
+      "path": "raw/success/n4_libero_object_t0_s4_0004.npz",
+      "lifted_mm": 50.44425281345567,
+      "success_predicate": true,
+      "geometric_in_basket": true,
+      "close_steps": 10
+    },
+    {
+      "seed": 5,
+      "success": true,
+      "frames": 451,
+      "path": "raw/success/n4_libero_object_t0_s5_0005.npz",
+      "lifted_mm": 49.63144059139712,
+      "success_predicate": true,
+      "geometric_in_basket": true,
+      "close_steps": 10
+    },
+    {
+      "seed": 6,
+      "success": true,
+      "frames": 459,
+      "path": "raw/success/n4_libero_object_t0_s6_0006.npz",
+      "lifted_mm": 49.895739553317625,
+      "success_predicate": true,
+      "geometric_in_basket": true,
+      "close_steps": 11
+    }
+  ],
+  "n_success": 5,
+  "success_rate": 0.8333333333333334,
+  "wall_seconds": 136.1,
+  "verdict": "PASS"
+}

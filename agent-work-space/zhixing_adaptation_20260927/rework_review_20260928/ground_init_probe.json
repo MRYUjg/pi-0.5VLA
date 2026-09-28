@@ -1,0 +1,66 @@
+{
+  "poses": [
+    {
+      "robot": "Panda",
+      "gripper": "PandaGripper",
+      "robot_class": "OnTheGroundPanda",
+      "q_init": [
+        0.0,
+        -0.161037389,
+        0.0,
+        -2.44459747,
+        0.0,
+        2.2267522,
+        0.7853981633974483
+      ],
+      "grip_pos": [
+        -0.14846466056582386,
+        0.0,
+        0.26127947572964033
+      ],
+      "controller_type": "OSC_POSE",
+      "default_gripper_speed": 0.01
+    },
+    {
+      "robot": "ECO65",
+      "gripper": "PandaGripper",
+      "robot_class": "OnTheGroundECO65",
+      "q_init": [
+        -0.12639,
+        -0.222035,
+        -0.841572,
+        -0.563545,
+        1.563635,
+        -1.697476
+      ],
+      "grip_pos": [
+        -0.1422870330552086,
+        6.1001504866173445e-05,
+        0.3702479979583068
+      ],
+      "controller_type": "OSC_POSE",
+      "default_gripper_speed": 0.01
+    },
+    {
+      "robot": "ECO65",
+      "gripper": "ZhixingGripper",
+      "robot_class": "OnTheGroundECO65",
+      "q_init": [
+        -0.12639,
+        -0.222035,
+        -0.841572,
+        -0.563545,
+        1.563635,
+        -1.697476
+      ],
+      "grip_pos": [
+        -0.14827930903915956,
+        6.0995706096460735e-05,
+        0.26487824789439074
+      ],
+      "controller_type": "OSC_POSE",
+      "default_gripper_speed": 0.2
+    }
+  ],
+  "eco_panda_vs_reference_mm": 109.14350937890393
+}

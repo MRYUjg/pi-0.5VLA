@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-09-27T07:32:16Z",
+  "control_source_sha256": "8d8af1b7d792ca8fef49daece200263f4622e516e53867f5652ff297bff42f24",
+  "seed": 7,
+  "cases": [
+    "hold",
+    "pos_x_plus",
+    "pos_x_minus",
+    "pos_y_plus",
+    "pos_y_minus",
+    "pos_z_plus",
+    "pos_z_minus",
+    "rot_x_plus",
+    "rot_x_minus",
+    "rot_y_plus",
+    "rot_y_minus",
+    "rot_z_plus",
+    "rot_z_minus",
+    "native_x",
+    "native_y",
+    "native_z"
+  ],
+  "robots": [
+    "ECO65",
+    "Panda"
+  ],
+  "threshold_note": "2 mm / 2 deg tail mean is a screening criterion, not a hardware specification or task success metric."
+}

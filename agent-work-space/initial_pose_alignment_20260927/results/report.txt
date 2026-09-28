@@ -1,0 +1,35 @@
+time="2026-09-27T07:50:18Z" level=warning msg="The \"DISPLAY\" variable is not set. Defaulting to a blank string."
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.2.2
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /app/robosuite/scripts/setup_macros.py (macros.py:55)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /app/third_party/libero/libero/datasets does not exist!
+/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+[Warning]: datasets path /app/third_party/libero/libero/datasets does not exist!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /app/third_party/libero/libero/datasets does not exist!
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /app/third_party/libero/libero/datasets does not exist!
+==========================================================================
+初始 grip_site 位姿差异: 位置 0.001 mm  姿态 0.0003 deg
+（对齐前记录值: 位置 108.694 mm  姿态 6.0071 deg）
+相机↔夹持点(T_cam2grip) 差异: 平移 0.000 mm, 旋转 0.0000 deg
+腕部画面平均像素差: 3.63/255 (1.4%)
+（对齐前记录值: 24.30/255）
+==========================================================================
