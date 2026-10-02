@@ -91,9 +91,15 @@ class ZhixingGripper(ZhixingGripperBase):
 
     @property
     def speed(self):
-        # [server-local] 可通过环境变量覆盖，用于夹爪开合速度消融实验；默认 0.2 = 原实现。
-        # 参照：PandaGripper/RethinkGripper 的 speed 均为 0.01。
-        return float(os.environ.get("ZHIXING_GRIPPER_SPEED", "0.2"))
+        # [server-local] 可通过环境变量覆盖，用于夹爪开合速度消融实验。
+        #
+        # 2026-09-30 变更：默认值由 0.2 改为 **0.01**（部署值）。
+        # 理由（实测，见 agent-work-space/outputs/ZhiXing夹爪控制问题清单_20260930.md）：
+        #   speed=0.2 时闭合只需 5 个控制步（0.25 s），指垫会**拨飞/扎穿**物体——
+        #   同一 30 mm 试块、同一链路：0.2 → 指垫穿透 17–23 mm、抬升 0、0/15 全败；
+        #   0.01 → 抬升 74 mm。0.01 亦与 PandaGripper/RethinkGripper 的 speed 一致。
+        # 环境变量 ZHIXING_GRIPPER_SPEED 仍然优先，消融实验照旧可覆盖。
+        return float(os.environ.get("ZHIXING_GRIPPER_SPEED", "0.01"))
 
     @property
     def dof(self):

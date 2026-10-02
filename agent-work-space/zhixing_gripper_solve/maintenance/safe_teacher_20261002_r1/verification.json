@@ -1,0 +1,34 @@
+{
+  "source_archive_and_current_sources": "PASS",
+  "final_run_sources": "15/15 match",
+  "upstream_verify_exit_code": 0,
+  "summary": {
+    "teacher": "safe_teacher_r8",
+    "regression_successes": 5,
+    "regression_attempts": 5,
+    "new_validation_successes": 10,
+    "new_validation_attempts": 10,
+    "all_normal_exits": 15,
+    "all_physics_samples": 220900,
+    "min_horizontal_clearance_mm": 34.453974534192746,
+    "max_basket_shift_mm": 0.03583623657206256,
+    "safe_height_m_range": [
+      0.2686065016027496,
+      0.27050684269330894
+    ],
+    "tilt_degrees": [
+      25
+    ],
+    "max_robot_basket_force_N": 0.0,
+    "max_payload_basket_force_before_release_N": 0.0,
+    "max_gripper_external_force_N": 0.0,
+    "max_arrival_error_mm": {
+      "approach": 2.0757085404822186,
+      "descend": 6.9959671447574125,
+      "lift": 1.9926287090768058,
+      "clearance_lift": 3.8676792427284052,
+      "transport": 6.178275017578704,
+      "place": 7.766355747361298
+    }
+  }
+}

@@ -1,0 +1,623 @@
+{
+  "version": "safe_teacher_r4",
+  "generated_utc": "2026-10-02T05:24:39.094471",
+  "gripper": "ZhixingGripper",
+  "seed": 47103,
+  "mode": "chain",
+  "force_N": 0.0,
+  "calibration": {
+    "known_mass_kg": 1,
+    "weight_N": 9.81,
+    "normal_force_N": 9.809999999999999,
+    "ncon": 4,
+    "pass": true
+  },
+  "rendering": false,
+  "training_data": false,
+  "teacher": "safe_teacher_r4 geometry-aware staged candidate; no controller/asset changes",
+  "physics_timestep_s": 0.002,
+  "control_timestep_s": 0.05,
+  "finger_contact_geoms": [
+    [
+      "gripper0_left_fingerpad_col"
+    ],
+    [
+      "gripper0_right_fingerpad_col"
+    ]
+  ],
+  "object_mass_kg": 0.0882,
+  "mujoco_version": "3.2.6",
+  "runtime": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "numpy": "1.24.4",
+    "mujoco_library": "/app/agent-work-space/zhixing_gripper_solve/runtime/py310_mj326/lib/python3.10/site-packages/mujoco/__init__.py",
+    "numba_disable_jit": null
+  },
+  "arm_qpos_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "arm_actuator_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "joint_names": [
+    "robot0_joint_1",
+    "robot0_joint_2",
+    "robot0_joint_3",
+    "robot0_joint_4",
+    "robot0_joint_5",
+    "robot0_joint_6",
+    "gripper0_Left_1_Joint",
+    "gripper0_Left_Support_Joint",
+    "gripper0_Left_2_Joint",
+    "gripper0_Right_2_Joint",
+    "gripper0_Right_1_Joint",
+    "gripper0_Right_Support_Joint",
+    "alphabet_soup_1_joint0",
+    "basket_1_joint0",
+    "salad_dressing_1_joint0",
+    "cream_cheese_1_joint0",
+    "milk_1_joint0",
+    "tomato_sauce_1_joint0",
+    "butter_1_joint0"
+  ],
+  "joint_qposadr": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    19,
+    26,
+    33,
+    40,
+    47,
+    54
+  ],
+  "joint_range": [
+    [
+      -3.106,
+      3.106
+    ],
+    [
+      -3.106,
+      2.356
+    ],
+    [
+      -2.792,
+      2.53
+    ],
+    [
+      -3.106,
+      3.106
+    ],
+    [
+      -3.106,
+      3.106
+    ],
+    [
+      -6.28,
+      6.28
+    ],
+    [
+      -0.91,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "joint_limited": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "actuator_names": [
+    "robot0_torq_j1",
+    "robot0_torq_j2",
+    "robot0_torq_j3",
+    "robot0_torq_j4",
+    "robot0_torq_j5",
+    "robot0_torq_j6",
+    "gripper0_gripper"
+  ],
+  "actuator_ctrlrange": [
+    [
+      -60.0,
+      60.0
+    ],
+    [
+      -60.0,
+      60.0
+    ],
+    [
+      -30.0,
+      30.0
+    ],
+    [
+      -10.0,
+      10.0
+    ],
+    [
+      -10.0,
+      10.0
+    ],
+    [
+      -10.0,
+      10.0
+    ],
+    [
+      -0.91,
+      0.0
+    ]
+  ],
+  "actuator_forcerange": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.0,
+      2.0
+    ]
+  ],
+  "physics_warning_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "sources": {
+    "/app/agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+    "/app/agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+    "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+    "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+    "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+    "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+    "/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r4.py": "d33e2c7db5aa43d92462abcf27d3fddd9d426e6324b89cca670b2a3f37c1d8b7"
+  },
+  "wall_seconds": 25.095959901809692,
+  "result": {
+    "trial": 1,
+    "trial_label": "diagnostic_r1",
+    "seed": 47103,
+    "block_extent_mm": {
+      "x_depth": 60.0,
+      "y_width_along_closing_axis": 30,
+      "z_height": 70.0
+    },
+    "object_init_sample": {
+      "region": "floor_target_object_region",
+      "xy": [
+        -0.12632,
+        -0.22477
+      ],
+      "yaw_rad": 3.140222,
+      "region_ranges": [
+        -0.145,
+        -0.265,
+        -0.095,
+        -0.215
+      ],
+      "yaw_forced_rad": -3.142964,
+      "yaw_before_forced_rad": -1.755848
+    },
+    "open_budget_mm": 89.60030223059753,
+    "grasp_pinch_target": [
+      -0.12632,
+      -0.22477,
+      0.06589224457978385
+    ],
+    "grasp_z": 0.06589224457978385,
+    "grasp_section_width_mm": 30.1,
+    "grasp_fingertip_clear_mm": 46.1,
+    "grasp_plan_scan": [
+      [
+        0.0699,
+        30.1,
+        50.1,
+        true
+      ],
+      [
+        0.0679,
+        30.1,
+        48.1,
+        true
+      ],
+      [
+        0.0659,
+        30.1,
+        46.1,
+        true
+      ],
+      [
+        0.0059,
+        0.1,
+        -13.9,
+        false
+      ],
+      [
+        0.0039,
+        30.1,
+        -15.9,
+        false
+      ],
+      [
+        0.0019,
+        30.1,
+        -17.9,
+        false
+      ],
+      [
+        -0.0001,
+        30.1,
+        -19.9,
+        false
+      ]
+    ],
+    "contact_hook_installed": true,
+    "phases": [],
+    "gates": {
+      "lift_ge_30mm": false,
+      "hold_ge_25mm_40steps": false,
+      "place_release_stable": false,
+      "native_libero_predicate": false,
+      "no_teleport": true,
+      "penetration_within_soft_limit": true,
+      "approach_converged": true,
+      "descend_converged": false
+    },
+    "notes": [
+      "exception: PathRejected: descend did not converge"
+    ],
+    "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py\", line 562, in run_trial\n    ok, k = ep.servo_limited(pin, R_ref, GRIP_OPEN, \"descend\", args.descend_max_steps,\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py\", line 212, in servo\n    return original(ep,target,R_target,grip_cmd,phase,max_steps,*pa,**kw)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r4.py\", line 172, in servo\n    if not ok:raise PathRejected(phase+' did not converge')\nPathRejected: descend did not converge\n",
+    "success": false,
+    "failed_gates": [
+      "lift_ge_30mm",
+      "hold_ge_25mm_40steps",
+      "place_release_stable",
+      "native_libero_predicate",
+      "descend_converged"
+    ],
+    "transport_converged": false,
+    "place_converged": false,
+    "servo_no_timeout_n4": false,
+    "success_n4_style": false,
+    "penetration_peak_pad_mm": 0.0,
+    "penetration_peak_object_any_mm": 0.1077554202162101,
+    "penetration_per_phase_mm": {
+      "approach": {
+        "pad_peak_mm": 0.0,
+        "any_peak_mm": 0.1077554202162101,
+        "samples": 2050
+      },
+      "descend": {
+        "pad_peak_mm": 0.0,
+        "any_peak_mm": 0.1077554202162101,
+        "samples": 5100
+      }
+    },
+    "n_samples": 7150,
+    "max_step_disp_m": 0.0037898309299875784,
+    "n_frames": 286,
+    "phase_end": {
+      "approach": [
+        true,
+        82
+      ],
+      "approach_residual_m": 0.003916162938498902
+    },
+    "wall_seconds": 17.8,
+    "native_success_at_end": false,
+    "phase_trace": {
+      "approach": {
+        "n_frames": 82,
+        "joint_margin_min_rad": 1.5423620331536307,
+        "joint_margin_min_per_joint": [
+          2.5648225549969483,
+          2.578719246746519,
+          1.6869345088389027,
+          2.5417057336964715,
+          1.5423620331536307,
+          4.168845158640821
+        ],
+        "joint_at_limit_within_0p02rad": 0,
+        "grip_site_start": [
+          -0.1482091523699697,
+          4.332886158646391e-05,
+          0.26496490455341004
+        ],
+        "grip_site_end": [
+          -0.12426447538111654,
+          -0.2258134527893159,
+          0.14905805521507226
+        ],
+        "grip_site_travel_m": 0.2549882960007067,
+        "grip_site_last20_move_m": 0.058299734976629866,
+        "target": [
+          -0.12632,
+          -0.22477,
+          0.14589224457978384
+        ],
+        "err_end_m": 0.003916162938498902,
+        "err_end_horizontal_m": 0.0023052061040972137,
+        "err_end_vertical_m": -0.003165810635288424,
+        "err_min_m": 0.003916162938498902
+      }
+    }
+  },
+  "phases": {
+    "approach": {
+      "steps": 82,
+      "bilateral_fraction_mean": 0.0,
+      "normal_force_mean_N": [
+        0.0,
+        0.0
+      ],
+      "object_contact_resultant_mean_N": [
+        -1.659243230502238e-19,
+        -1.0723412487408335e-18,
+        0.8652420000000002
+      ],
+      "object_force_balance_mean_N": [
+        -1.659243230502238e-19,
+        -1.0723412487408335e-18,
+        -2.071513692288402e-16
+      ],
+      "other_contact_force_peak_N": 0.8652420000000003,
+      "actuator_force_mean": [
+        0.08977352109353195
+      ],
+      "penetration_peak_mm": [
+        0.0,
+        0.0
+      ],
+      "object_displacement_mm": 0.0,
+      "object_in_grip_change_mm": 255.66014555760307,
+      "object_in_grip_max_change_mm": 255.66014555760307,
+      "object_z_min_m": 0.03489224457978382,
+      "object_start": [
+        -0.12632,
+        -0.22477,
+        0.03489224457978382
+      ],
+      "object_end": [
+        -0.12632,
+        -0.22477,
+        0.03489224457978382
+      ],
+      "grip_start": [
+        -0.1482091523699697,
+        4.332886158646391e-05,
+        0.26496490455341004
+      ],
+      "grip_end": [
+        -0.12465950849944503,
+        -0.22671231821608423,
+        0.14862968390550738
+      ],
+      "gripper_qpos_end": [
+        -0.0009247784761493256,
+        0.004470883008744407,
+        -0.001916123115586382,
+        0.0046095315611714704,
+        0.004503199739371178,
+        0.0058104500313378065
+      ],
+      "contacts": {
+        "floor": {
+          "force_peak_N": 0.21631050000000254,
+          "penetration_peak_mm": 0.1077554202162101,
+          "active_samples": 8200
+        }
+      }
+    },
+    "descend": {
+      "steps": 204,
+      "bilateral_fraction_mean": 0.0,
+      "normal_force_mean_N": [
+        0.0,
+        0.0
+      ],
+      "object_contact_resultant_mean_N": [
+        2.1361079535576132e-20,
+        4.9988237312008006e-20,
+        0.8652419999999971
+      ],
+      "object_force_balance_mean_N": [
+        2.1361079535576132e-20,
+        4.9988237312008006e-20,
+        -2.1224851941363288e-16
+      ],
+      "other_contact_force_peak_N": 0.8652420000000003,
+      "actuator_force_mean": [
+        0.08965780933089966
+      ],
+      "penetration_peak_mm": [
+        0.0,
+        0.0
+      ],
+      "object_displacement_mm": 0.0,
+      "object_in_grip_change_mm": 78.52694646969691,
+      "object_in_grip_max_change_mm": 78.52694646969691,
+      "object_z_min_m": 0.03489224457978382,
+      "object_start": [
+        -0.12632,
+        -0.22477,
+        0.03489224457978382
+      ],
+      "object_end": [
+        -0.12632,
+        -0.22477,
+        0.03489224457978382
+      ],
+      "grip_start": [
+        -0.12465950849944503,
+        -0.22671231821608423,
+        0.14862968390550738
+      ],
+      "grip_end": [
+        -0.12231462728357054,
+        -0.2256213431276013,
+        0.06997029917734832
+      ],
+      "gripper_qpos_end": [
+        -0.0008946333863781798,
+        0.004638357046989318,
+        -0.0018313173468235226,
+        0.004739436675287365,
+        0.004656891932217273,
+        0.005459450525295915
+      ],
+      "contacts": {
+        "floor": {
+          "force_peak_N": 0.2163105000000026,
+          "penetration_peak_mm": 0.1077554202162101,
+          "active_samples": 20400
+        }
+      }
+    }
+  },
+  "safe_path": {
+    "stage_arrivals": {
+      "approach": {
+        "ok": true,
+        "target": [
+          -0.12632,
+          -0.22477,
+          0.14589224457978384
+        ],
+        "actual": [
+          -0.12465950849944503,
+          -0.22671231821608423,
+          0.14862968390550738
+        ],
+        "error": [
+          0.0037447838573094762,
+          0.0033065136790531315
+        ]
+      },
+      "descend": {
+        "ok": false,
+        "target": [
+          -0.12632,
+          -0.22477,
+          0.06589224457978385
+        ],
+        "actual": [
+          -0.12231462728357054,
+          -0.2256213431276013,
+          0.06997029917734832
+        ],
+        "error": [
+          0.00577912839614661,
+          0.0468233694638872
+        ]
+      }
+    }
+  },
+  "safe_teacher_success": false,
+  "guard_failures": []
+}

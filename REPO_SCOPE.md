@@ -1,41 +1,32 @@
-# 仓库范围说明（第一版）
+# ECO65 + ZhiXing 项目存档（2026-10-02，r1）
 
-本仓库为 **ECO65 + ZhiXing 夹爪适配**工作的第一版快照，取自服务器
-`/mnt/data/vla-policy/openpi` 的当前状态（2026-09-28）。
+本次在上一版 `ba8ca5f` 上追加服务器 `/mnt/data/vla-policy/openpi` 的当前快照，保留 Git 历史。上次说明作为[历史文件](publication/20261002_r1/REPO_SCOPE_previous_ba8ca5f.md)保存，不能用其阶段状态判断当前进展。
 
-## 包含
+## 当前入口与结论
 
-- `agent-work-space/` —— 全部分节点文档、脚本、结果 JSON、审核与复验记录
-  （`任务方案.md`、`N0-N4_节点审核记录`、`N0-N4_返工复核与优化建议`、
-   `措施A/B/C2/C3_执行记录` 等）
-- `robosuite/`、`third_party/libero/`、`examples/`、`scripts/`、`src/`、`my-robot/` —— 代码树
-- **改动过的资产**（用 `git add -f` 强制加入，因为它们位于被 `.gitignore` 排除的 `assets/` 下）：
-  - `robosuite/models/assets/robots/ECO65-B/`（含 `robot.xml`：基座↔link_1 自碰撞排除）
-  - `robosuite/models/assets/grippers/zhixing_gripper.xml`（eef 前移至 0.20254）
-  - `robosuite/models/assets/grippers/zhixing_gripper.urdf`
-  - `robosuite/models/assets/grippers/meshes/zhixing_gripper/`
+- [ZhiXing夹爪完善工作总结](agent-work-space/zhixing_gripper_solve/ZhiXing夹爪完善工作总结_20261002_r1.md)：初始表现、根因、完善工作、验证效果及未解决问题。
+- [当前脚本与文件索引](agent-work-space/zhixing_gripper_solve/真实碗罐_版本与文件索引_20261002_r2.md)。
+- [独立测试预注册方案](agent-work-space/zhixing_gripper_solve/真实碗罐_实施与验收方案_20261002_r7.md)与[审计结果](agent-work-space/zhixing_gripper_solve/evidence/real_objects_validation_audit_20261002_r3/verification.json)。
 
-## 未包含（体积原因）
+仿真中已获得完整抓取、保持、搬运及稳定投放成功样本。r20教师的独立新种子测试为罐 **10/10**、碗 **8/10**；两类分别至少9/10的阶段要求**未通过**。碗剩余两例分别为初始化穿插后弹出桌面和闭合前接近未到位。证据审计通过不代表任务验收通过。
 
-| 项 | 体积 | 原因 |
-|---|---|---|
-| `agent-work-space/**/raw/` | 4.3 GB | 采集数据（`*.npz`），单个文件最大 133 MB，超 GitHub 100 MB 硬限 |
-| `agent-work-space/**/audit_stage/` | 475 MB | raw 的硬链接暂存 |
-| `agent-work-space/eval/` | 48 MB | 评测视频（`*.mp4`） |
-| `libreo_raw_data/` | 143 MB | 第三方数据集（含 113 MB tfrecord） |
-| `ECO_data/` | 136 MB | 数据集压缩包 |
-| `robosuite.zip` | 187 MB | 压缩包 |
-| `4.28-openpi仿真复现.pptx` | 1 MB | 演示文稿 |
-| `robosuite/models/assets/`（其余） | ~590 MB | 上游网格库，可由上游仓库重建 |
-| `third_party/libero/**/assets/` | 416 MB | 上游 LIBERO 场景资源，可由上游仓库重建 |
+本阶段为纯CPU脚本教师验证，使用已授权的隔离 `eco65_no_extra_pd` 配置；生产默认控制配置未因此切换。尚未完成十个Spatial任务各20次的整体验收、RGB训练数据放行、π0.5微调或实机验证。
 
-> 因此**从本仓库直接 clone 不能独立运行**：需要补回上游 openpi / LIBERO 的网格资源。
-> 如需把数据也纳入版本管理，建议用 Git LFS 另建数据仓库，不要混在代码仓库里。
+## 本次包含
 
-## 已知状态（截至第一版）
+按服务器文件逐一校验SHA256，共纳入2412个来源文件：代码、配置、文档、实验结果摘要、审核记录、图表及冻结清单。成功与失败记录均按相同规则筛选，未按成功率删除失败。
 
-- 措施 A/B/C 已执行；**N4 数据全部标记为「待验收 / 诊断证据」，不得进入训练集**。
-- 措施 C 全矩阵在单一冻结版本（`eco65_no_extra_pd` + speed 0.01）下 **PASS**。
-- 教师仍因 transport/place 目标点不可达而超时，**措施 D 未开始**。
-- 详见 `agent-work-space/zhixing_adaptation_20260927/措施C3_带载运输定因_执行记录_20260928.md`
-  及 `N0-N4_返工复核与优化建议_20260928.md`。
+保留ECO65-B机器人资产、ZhiXing夹爪XML/URDF及网格。上游其余资产沿用第一版排除范围。服务器已清理的旧路径从当前Git版本移除，但上一提交及历史仍可查阅。
+
+- [来源文件SHA256与排除清单](publication/20261002_r1/server_manifest.json)
+- [移出当前版本的旧路径](publication/20261002_r1/previous_paths_removed.json)
+
+项目来源文件按服务器原字节保存；仅根目录 `.gitignore` 附加本存档排除规则。`publication/20261002_r1/` 和本说明为新增存档元数据，不属于机器人实验冻结版本。
+
+## 未包含与恢复边界
+
+本仓库是代码、文档与结果摘要存档，**不是完整可运行环境或原始证据备份**。逐物理步JSONL、environment.xml、NPZ/HDF5等原始数据、视频、运行环境、模型权重、压缩包和大部分上游仿真资产未上传；仍在服务器或已有证据归档中保存。密钥、密码交接文件及本地工具缓存不上传。
+
+排除清单列出遍历到的文件及原因；整目录排除项只记录规则，不能把清单理解为服务器全部文件清单。`runtime` 排除规则针对安装环境，openpi-client的同名源码目录已显式保留。
+
+因此直接clone不能独立运行，文档中指向原始JSONL、环境XML或压缩包的链接可能没有仓库内目标。复现实验须补齐对应版本的上游资产、依赖和原始证据，再按实验原有清单核验；本次上传只做文件一致性与发布范围校验，没有重跑仿真，也没有新增验收结果。

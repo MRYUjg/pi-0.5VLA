@@ -1,0 +1,31 @@
+{
+  "candidate": "real_object_teacher_r20",
+  "profile": "eco65_no_extra_pd",
+  "created_utc": "2026-10-02T12:23:58.329779+00:00",
+  "fresh_seeds": [
+    52100,
+    52101,
+    52102,
+    52103,
+    52104,
+    52105,
+    52106,
+    52107,
+    52108,
+    52109
+  ],
+  "batches_not_previously_run": true,
+  "prerequisite_regression": "4/4; audited",
+  "files": {
+    "agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+    "agent-work-space/zhixing_gripper_solve/scripts/run_real_control_ab_r7.py": "aa9bcb5259f315573b02f194892357cfc1f38d6f881f7ee420bd3b07563ad211",
+    "agent-work-space/zhixing_gripper_solve/scripts/verify_real_object_r6.py": "b5d47e3f69e6c5ee0617ed1d2daa9e2b0d34dce0d26afa713b5b4333fdb7e42a",
+    "agent-work-space/zhixing_gripper_solve/scripts/summarize_real_object_r3.py": "03b302aeeb810e8ea8c46e4e4c130ed61b71ca84f853f72b66d8d8b26579780f",
+    "agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+    "agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+    "agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+    "agent-work-space/zhixing_gripper_solve/\u771f\u5b9e\u7897\u7f50_\u5b9e\u65bd\u4e0e\u9a8c\u6536\u65b9\u6848_20261002_r7.md": "cf46520deec31c1e38efbc3f31b6f5f6702c07631e69a3f2cb65de9d56c2dba1",
+    "robosuite/models/robots/robot_model.py": "940e0cbe81d2f0ad42d921be38805e4f0154a09e5e9e8f9deb1c6ddf1e90af5b",
+    "robosuite/robots/single_arm.py": "ebae3ebfd552da71e5337a3991bb6889ead148426cde2904f39550dc4afa0442"
+  }
+}

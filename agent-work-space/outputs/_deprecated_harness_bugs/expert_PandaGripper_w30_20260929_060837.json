@@ -1,0 +1,649 @@
+{
+  "node": "EXPERT-ECO65-PANDA",
+  "generated_at": "2026-09-29T06:08:47",
+  "host_note": "纯 CPU 服务器；不使用 VLA 推理，脚本专家 + 7 维 OSC",
+  "robot": "ECO65",
+  "gripper": "PandaGripper",
+  "gripper_actual": {
+    "class": "PandaGripper",
+    "dof": 1,
+    "joints": [
+      "gripper0_finger_joint1",
+      "gripper0_finger_joint2"
+    ],
+    "n_actuators": 2,
+    "speed": 0.01
+  },
+  "suite": "libero_object",
+  "task_id": 0,
+  "block": {
+    "width_mm": 30.0,
+    "depth_mm": 60.0,
+    "height_mm": 70.0,
+    "density": 700.0,
+    "requested_width_mm": 30.0,
+    "grasp_margin_mm": 4.0
+  },
+  "transport_criterion_n4_style": {
+    "max_steps": 220,
+    "tol_m": 0.008
+  },
+  "penetration_soft_limit_mm": 2.0,
+  "assets": {
+    "n4_collect_sha16": "37b24549adad7c2a",
+    "n3_osc_full_chain_sha16": "c0d99a46c56258f8",
+    "n3_grasp_test_sha16": "f2094b6bb6716fc9"
+  },
+  "controller": {
+    "controller_type": "OperationalSpaceController",
+    "controller_output_max": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "controller_input_min": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "controller_input_max": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "control_timestep": 0.05,
+    "action_contract": "7 维 OSC_POSE 归一化动作 ∈[-1,1]：前 3 维平移，满量程 = output_max[0:3] = [0.05, 0.05, 0.05] m；后 3 维旋转，满量程 = output_max[3:6] = [0.5, 0.5, 0.5] rad；第 7 维夹爪 -1 开 / +1 合。"
+  },
+  "state_gripper": {
+    "indices": [
+      0,
+      1
+    ],
+    "names": [
+      "gripper0_finger_joint1",
+      "gripper0_finger_joint2"
+    ],
+    "resolution": "prismatic_fingers",
+    "note": "N4 原实现按 Left_1_Joint/Right_1_Joint 写死名字，PandaGripper 上会直接抛错；本脚本按关节名/平动指解析。"
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "trial_label": "PandaGripper_w30_t1",
+      "seed": 44000,
+      "block_extent_mm": {
+        "x_depth": 60.0,
+        "y_width_along_closing_axis": 30.0,
+        "z_height": 70.0
+      },
+      "object_init_sample": {
+        "region": "floor_target_object_region",
+        "xy": [
+          -0.11561,
+          -0.24027
+        ],
+        "yaw_rad": 0.000489,
+        "region_ranges": [
+          -0.145,
+          -0.265,
+          -0.095,
+          -0.215
+        ],
+        "yaw_forced_rad": 0.000489,
+        "yaw_before_forced_rad": -2.524179
+      },
+      "open_budget_mm": 78.98087458512185,
+      "grasp_pinch_target": [
+        -0.11561,
+        -0.24027000000000004,
+        0.06589224457978379
+      ],
+      "grasp_z": 0.06589224457978379,
+      "grasp_section_width_mm": 30.0,
+      "grasp_fingertip_clear_mm": 46.1,
+      "grasp_plan_scan": [
+        [
+          0.0699,
+          30.0,
+          50.1,
+          true
+        ],
+        [
+          0.0679,
+          30.0,
+          48.1,
+          true
+        ],
+        [
+          0.0659,
+          30.0,
+          46.1,
+          true
+        ],
+        [
+          0.0059,
+          30.0,
+          -13.9,
+          false
+        ],
+        [
+          0.0039,
+          30.0,
+          -15.9,
+          false
+        ],
+        [
+          0.0019,
+          30.0,
+          -17.9,
+          false
+        ],
+        [
+          -0.0001,
+          30.0,
+          -19.9,
+          false
+        ]
+      ],
+      "contact_hook_installed": true,
+      "phases": [],
+      "gates": {
+        "lift_ge_30mm": true,
+        "hold_ge_25mm_40steps": true,
+        "place_release_stable": true,
+        "native_libero_predicate": true,
+        "no_teleport": true,
+        "penetration_within_soft_limit": true,
+        "approach_converged": true,
+        "descend_converged": true
+      },
+      "notes": [],
+      "success": true,
+      "failed_gates": [],
+      "transport_converged": false,
+      "place_converged": false,
+      "servo_no_timeout_n4": false,
+      "success_n4_style": false,
+      "penetration_peak_pad_mm": 0.9025274299573081,
+      "penetration_peak_object_any_mm": 1.9712884964234993,
+      "penetration_per_phase_mm": {
+        "approach": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.10775542021621703,
+          "samples": 2175
+        },
+        "descend": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.10775542021621703,
+          "samples": 1300
+        },
+        "close": {
+          "pad_peak_mm": 0.9025274299573081,
+          "any_peak_mm": 0.9025274299573081,
+          "samples": 1675
+        },
+        "lift": {
+          "pad_peak_mm": 0.7785920728587198,
+          "any_peak_mm": 0.7785920728587198,
+          "samples": 650
+        },
+        "hold": {
+          "pad_peak_mm": 0.6738962153426917,
+          "any_peak_mm": 0.6738962153426917,
+          "samples": 1000
+        },
+        "transport": {
+          "pad_peak_mm": 0.8876922218976362,
+          "any_peak_mm": 0.8876922218976362,
+          "samples": 5150
+        },
+        "place": {
+          "pad_peak_mm": 0.6667223550806354,
+          "any_peak_mm": 0.6667223550806354,
+          "samples": 900
+        },
+        "release": {
+          "pad_peak_mm": 0.6677106295649193,
+          "any_peak_mm": 1.9712884964234993,
+          "samples": 1500
+        },
+        "post_release_window": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.023924753690431066,
+          "samples": 500
+        }
+      },
+      "n_samples": 14850,
+      "max_step_disp_m": 0.006343450882498995,
+      "n_frames": 594,
+      "phase_end": {
+        "approach": [
+          true,
+          87
+        ],
+        "approach_residual_m": 0.0038397674856215265,
+        "descend": [
+          true,
+          52
+        ],
+        "descend_converged_pos": true,
+        "descend_residual_m": 0.006964869652075421,
+        "descend_pad_mid_z": 0.07494880714135524,
+        "descend_block_top_z": 0.0698922445797838,
+        "descend_pad_below_block_top_mm": -5.056562561571443,
+        "close_steps": 67,
+        "jaw_after_close_mm": 28.699534334447232,
+        "grip_q_after_close": [
+          0.015045,
+          -0.014655
+        ],
+        "obj_shift_on_close_mm": 0.2942911599757241,
+        "close_penetration_peak_mm": 0.9025274299573081,
+        "lift_servo": [
+          true,
+          26
+        ],
+        "lift_residual_m": 0.001929001023280472,
+        "lift_mm": 77.89393816359802,
+        "hold_steps_used": 40,
+        "hold_min_mm": 78.1695792788942,
+        "hold_max_mm": 79.85548109842058,
+        "hold_end_mm": 78.19118488234604,
+        "hold_penetration_peak_mm": 0.6738962153426917,
+        "place_point": [
+          0.0015003039618955785,
+          0.27164886318712034,
+          0.17144845137544748
+        ],
+        "basket_inner_size_mm": [
+          157.33796365323144,
+          169.51924133156447,
+          141.4631848203737
+        ],
+        "transport": [
+          false,
+          206
+        ],
+        "transport_residual_m": 0.07320334389960469,
+        "transport_target": [
+          0.0015003039618955785,
+          0.27164886318712034,
+          0.2614484513754475
+        ],
+        "transport_grip_site": [
+          -0.01260230730365313,
+          0.25862472209802095,
+          0.1906851913076075
+        ],
+        "transport_err_world_m": [
+          0.014102611265548709,
+          0.013024141089099384,
+          0.07076326006783998
+        ],
+        "transport_err_horizontal_m": 0.01919666365845764,
+        "sep_after_transport_mm": 28.734823352901458,
+        "object_lost_after_transport": false,
+        "place": [
+          false,
+          36
+        ],
+        "place_residual_m": 0.01304505550311432,
+        "place_grip_site": [
+          -0.0011468058169773962,
+          0.2693740286134776,
+          0.15884953252770573
+        ],
+        "settle_steps": 0,
+        "post_release_window_steps": 20,
+        "post_release_inside_all": true,
+        "post_release_drift_mm": 5.80935861629272e-07,
+        "post_release_center": [
+          0.006322843560897656,
+          0.2698178897601508,
+          0.051928166730641254
+        ],
+        "post_release_penetration_peak_mm": 0.0
+      },
+      "wall_seconds": 107.4,
+      "native_success_at_end": true
+    },
+    {
+      "trial": 2,
+      "trial_label": "PandaGripper_w30_t2",
+      "seed": 44001,
+      "block_extent_mm": {
+        "x_depth": 60.0,
+        "y_width_along_closing_axis": 30.0,
+        "z_height": 70.0
+      },
+      "object_init_sample": {
+        "region": "floor_target_object_region",
+        "xy": [
+          -0.10391,
+          -0.23702
+        ],
+        "yaw_rad": 0.000489,
+        "region_ranges": [
+          -0.145,
+          -0.265,
+          -0.095,
+          -0.215
+        ],
+        "yaw_forced_rad": 0.000489,
+        "yaw_before_forced_rad": -0.401136
+      },
+      "open_budget_mm": 78.98087458512185,
+      "grasp_pinch_target": [
+        -0.10390266402036968,
+        -0.23702,
+        0.0638922445797838
+      ],
+      "grasp_z": 0.0638922445797838,
+      "grasp_section_width_mm": 30.0,
+      "grasp_fingertip_clear_mm": 44.1,
+      "grasp_plan_scan": [
+        [
+          0.0699,
+          30.0,
+          50.1,
+          true
+        ],
+        [
+          0.0679,
+          30.0,
+          48.1,
+          true
+        ],
+        [
+          0.0659,
+          30.0,
+          46.1,
+          true
+        ],
+        [
+          0.0639,
+          30.0,
+          44.1,
+          true
+        ],
+        [
+          0.0059,
+          30.0,
+          -13.9,
+          false
+        ],
+        [
+          0.0039,
+          30.0,
+          -15.9,
+          false
+        ],
+        [
+          0.0019,
+          30.0,
+          -17.9,
+          false
+        ],
+        [
+          -0.0001,
+          30.0,
+          -19.9,
+          false
+        ]
+      ],
+      "contact_hook_installed": true,
+      "phases": [],
+      "gates": {
+        "lift_ge_30mm": true,
+        "hold_ge_25mm_40steps": true,
+        "place_release_stable": true,
+        "native_libero_predicate": true,
+        "no_teleport": true,
+        "penetration_within_soft_limit": true,
+        "approach_converged": true,
+        "descend_converged": true
+      },
+      "notes": [],
+      "success": true,
+      "failed_gates": [],
+      "transport_converged": false,
+      "place_converged": false,
+      "servo_no_timeout_n4": false,
+      "success_n4_style": false,
+      "penetration_peak_pad_mm": 0.8904748346830965,
+      "penetration_peak_object_any_mm": 1.947457741280136,
+      "penetration_per_phase_mm": {
+        "approach": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 2175
+        },
+        "descend": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 1225
+        },
+        "close": {
+          "pad_peak_mm": 0.8824844893606792,
+          "any_peak_mm": 0.8824844893606792,
+          "samples": 1675
+        },
+        "lift": {
+          "pad_peak_mm": 0.766189899747153,
+          "any_peak_mm": 0.766189899747153,
+          "samples": 650
+        },
+        "hold": {
+          "pad_peak_mm": 0.6757302432560536,
+          "any_peak_mm": 0.6757302432560536,
+          "samples": 1000
+        },
+        "transport": {
+          "pad_peak_mm": 0.7020037943653857,
+          "any_peak_mm": 0.7040755669968844,
+          "samples": 5150
+        },
+        "place": {
+          "pad_peak_mm": 0.8904748346830965,
+          "any_peak_mm": 0.8904748346830965,
+          "samples": 875
+        },
+        "release": {
+          "pad_peak_mm": 0.6461824809166873,
+          "any_peak_mm": 1.947457741280136,
+          "samples": 1500
+        },
+        "post_release_window": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.023924877279035694,
+          "samples": 500
+        }
+      },
+      "n_samples": 14750,
+      "max_step_disp_m": 0.006346900211291277,
+      "n_frames": 590,
+      "phase_end": {
+        "approach": [
+          true,
+          87
+        ],
+        "approach_residual_m": 0.0024273353464896587,
+        "descend": [
+          true,
+          49
+        ],
+        "descend_converged_pos": true,
+        "descend_residual_m": 0.007260034159605212,
+        "descend_pad_mid_z": 0.07320100712701841,
+        "descend_block_top_z": 0.0698922445797838,
+        "descend_pad_below_block_top_mm": -3.3087625472346116,
+        "close_steps": 67,
+        "jaw_after_close_mm": 28.71137918840626,
+        "grip_q_after_close": [
+          0.015077,
+          -0.014636
+        ],
+        "obj_shift_on_close_mm": 0.25240892551292204,
+        "close_penetration_peak_mm": 0.8824844893606792,
+        "lift_servo": [
+          true,
+          26
+        ],
+        "lift_residual_m": 0.003665044606520438,
+        "lift_mm": 76.7288849238541,
+        "hold_steps_used": 40,
+        "hold_min_mm": 78.18617671877884,
+        "hold_max_mm": 79.81243239264896,
+        "hold_end_mm": 78.18617671877884,
+        "hold_penetration_peak_mm": 0.6757302432560536,
+        "place_point": [
+          0.008623271810785253,
+          0.272849613264078,
+          0.17144845137544748
+        ],
+        "basket_inner_size_mm": [
+          157.33796365323144,
+          169.51924133156447,
+          141.4631848203737
+        ],
+        "transport": [
+          false,
+          206
+        ],
+        "transport_residual_m": 0.07691549186046451,
+        "transport_target": [
+          0.008623271810785253,
+          0.272849613264078,
+          0.2614484513754475
+        ],
+        "transport_grip_site": [
+          -0.006296253000649475,
+          0.2589778530536542,
+          0.18713429377930463
+        ],
+        "transport_err_world_m": [
+          0.014919524811434728,
+          0.0138717602104238,
+          0.07431415759614285
+        ],
+        "transport_err_horizontal_m": 0.02037198939560183,
+        "sep_after_transport_mm": 28.612145402690363,
+        "object_lost_after_transport": false,
+        "place": [
+          false,
+          35
+        ],
+        "place_residual_m": 0.015950480336998786,
+        "place_grip_site": [
+          0.005422937467028682,
+          0.27007219832188817,
+          0.15599980355641535
+        ],
+        "settle_steps": 0,
+        "post_release_window_steps": 20,
+        "post_release_inside_all": true,
+        "post_release_drift_mm": 6.695998238040927e-07,
+        "post_release_center": [
+          0.013684469208865017,
+          0.2698326967204803,
+          0.05192814531498352
+        ],
+        "post_release_penetration_peak_mm": 0.0
+      },
+      "wall_seconds": 106.5,
+      "native_success_at_end": true
+    },
+    {
+      "trial": 3,
+      "trial_label": "PandaGripper_w30_t3",
+      "seed": 44002,
+      "success": false,
+      "reason": "invalid_grasp_plan_section_too_thin",
+      "open_budget_mm": 78.98087458512185,
+      "planned_section_width_mm": 0.03,
+      "block_width_mm": 30.0,
+      "plan_scan": [
+        [
+          0.0699,
+          30.0,
+          50.1,
+          true
+        ],
+        [
+          0.0679,
+          30.0,
+          48.1,
+          true
+        ],
+        [
+          0.0659,
+          30.0,
+          46.1,
+          true
+        ],
+        [
+          0.0639,
+          0.0,
+          44.1,
+          true
+        ],
+        [
+          0.0059,
+          30.0,
+          -13.9,
+          false
+        ],
+        [
+          0.0039,
+          30.0,
+          -15.9,
+          false
+        ],
+        [
+          0.0019,
+          30.0,
+          -17.9,
+          false
+        ],
+        [
+          -0.0001,
+          30.0,
+          -19.9,
+          false
+        ]
+      ],
+      "wall_seconds": 19.6
+    }
+  ],
+  "summary": {
+    "n_total": 3,
+    "n_success_n3_gates": 2,
+    "success_rate_n3_gates": 0.6666666666666666,
+    "n_success_n4_style": 0,
+    "success_rate_n4_style": 0.0,
+    "n_transport_converged": 0,
+    "transport_residual_m": [
+      0.07320334389960469,
+      0.07691549186046451,
+      null
+    ],
+    "penetration_peak_pad_mm": [
+      0.9025274299573081,
+      0.8904748346830965,
+      null
+    ],
+    "failed_gate_counts": {
+      "invalid_grasp_plan_section_too_thin": 1
+    }
+  },
+  "verdict": "NOT_PASS"
+}

@@ -1,0 +1,1806 @@
+{
+  "version": "safe_teacher_r6",
+  "generated_utc": "2026-10-02T05:27:26.280781",
+  "gripper": "ZhixingGripper",
+  "seed": 47100,
+  "mode": "chain",
+  "force_N": 0.0,
+  "calibration": {
+    "known_mass_kg": 1,
+    "weight_N": 9.81,
+    "normal_force_N": 9.809999999999999,
+    "ncon": 4,
+    "pass": true
+  },
+  "rendering": false,
+  "training_data": false,
+  "teacher": "safe_teacher_r6 geometry-aware staged candidate; no controller/asset changes",
+  "physics_timestep_s": 0.002,
+  "control_timestep_s": 0.05,
+  "finger_contact_geoms": [
+    [
+      "gripper0_left_fingerpad_col"
+    ],
+    [
+      "gripper0_right_fingerpad_col"
+    ]
+  ],
+  "object_mass_kg": 0.0882,
+  "mujoco_version": "3.2.6",
+  "runtime": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "numpy": "1.24.4",
+    "mujoco_library": "/app/agent-work-space/zhixing_gripper_solve/runtime/py310_mj326/lib/python3.10/site-packages/mujoco/__init__.py",
+    "numba_disable_jit": null
+  },
+  "arm_qpos_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "arm_actuator_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "joint_names": [
+    "robot0_joint_1",
+    "robot0_joint_2",
+    "robot0_joint_3",
+    "robot0_joint_4",
+    "robot0_joint_5",
+    "robot0_joint_6",
+    "gripper0_Left_1_Joint",
+    "gripper0_Left_Support_Joint",
+    "gripper0_Left_2_Joint",
+    "gripper0_Right_2_Joint",
+    "gripper0_Right_1_Joint",
+    "gripper0_Right_Support_Joint",
+    "alphabet_soup_1_joint0",
+    "basket_1_joint0",
+    "salad_dressing_1_joint0",
+    "cream_cheese_1_joint0",
+    "milk_1_joint0",
+    "tomato_sauce_1_joint0",
+    "butter_1_joint0"
+  ],
+  "joint_qposadr": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    19,
+    26,
+    33,
+    40,
+    47,
+    54
+  ],
+  "joint_range": [
+    [
+      -3.106,
+      3.106
+    ],
+    [
+      -3.106,
+      2.356
+    ],
+    [
+      -2.792,
+      2.53
+    ],
+    [
+      -3.106,
+      3.106
+    ],
+    [
+      -3.106,
+      3.106
+    ],
+    [
+      -6.28,
+      6.28
+    ],
+    [
+      -0.91,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "joint_limited": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "actuator_names": [
+    "robot0_torq_j1",
+    "robot0_torq_j2",
+    "robot0_torq_j3",
+    "robot0_torq_j4",
+    "robot0_torq_j5",
+    "robot0_torq_j6",
+    "gripper0_gripper"
+  ],
+  "actuator_ctrlrange": [
+    [
+      -60.0,
+      60.0
+    ],
+    [
+      -60.0,
+      60.0
+    ],
+    [
+      -30.0,
+      30.0
+    ],
+    [
+      -10.0,
+      10.0
+    ],
+    [
+      -10.0,
+      10.0
+    ],
+    [
+      -10.0,
+      10.0
+    ],
+    [
+      -0.91,
+      0.0
+    ]
+  ],
+  "actuator_forcerange": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -2.0,
+      2.0
+    ]
+  ],
+  "physics_warning_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "sources": {
+    "/app/agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+    "/app/agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+    "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+    "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+    "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+    "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+    "/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r6.py": "1a89863d0e852d17c85dfd400d28317eed1549d2a9bc8200a86fb631da03fc06"
+  },
+  "wall_seconds": 42.54465985298157,
+  "result": {
+    "trial": 1,
+    "trial_label": "diagnostic_r1",
+    "seed": 47100,
+    "block_extent_mm": {
+      "x_depth": 60.0,
+      "y_width_along_closing_axis": 30,
+      "z_height": 70.0
+    },
+    "object_init_sample": {
+      "region": "floor_target_object_region",
+      "xy": [
+        -0.1292,
+        -0.25953
+      ],
+      "yaw_rad": 3.140222,
+      "region_ranges": [
+        -0.145,
+        -0.265,
+        -0.095,
+        -0.215
+      ],
+      "yaw_forced_rad": -3.142964,
+      "yaw_before_forced_rad": 0.037255
+    },
+    "open_budget_mm": 89.60030244909204,
+    "grasp_pinch_target": [
+      -0.1292,
+      -0.2595299999999999,
+      0.06589224457978385
+    ],
+    "grasp_z": 0.06589224457978385,
+    "grasp_section_width_mm": 30.1,
+    "grasp_fingertip_clear_mm": 46.1,
+    "grasp_plan_scan": [
+      [
+        0.0699,
+        30.1,
+        50.1,
+        true
+      ],
+      [
+        0.0679,
+        30.1,
+        48.1,
+        true
+      ],
+      [
+        0.0659,
+        30.1,
+        46.1,
+        true
+      ],
+      [
+        0.0059,
+        0.1,
+        -13.9,
+        false
+      ],
+      [
+        0.0039,
+        30.1,
+        -15.9,
+        false
+      ],
+      [
+        0.0019,
+        30.1,
+        -17.9,
+        false
+      ],
+      [
+        -0.0001,
+        30.1,
+        -19.9,
+        false
+      ]
+    ],
+    "contact_hook_installed": true,
+    "phases": [],
+    "gates": {
+      "lift_ge_30mm": true,
+      "hold_ge_25mm_40steps": true,
+      "place_release_stable": true,
+      "native_libero_predicate": true,
+      "no_teleport": true,
+      "penetration_within_soft_limit": true,
+      "approach_converged": true,
+      "descend_converged": true
+    },
+    "notes": [],
+    "success": true,
+    "failed_gates": [],
+    "transport_converged": true,
+    "place_converged": true,
+    "servo_no_timeout_n4": true,
+    "success_n4_style": true,
+    "penetration_peak_pad_mm": 1.3969185192681444,
+    "penetration_peak_object_any_mm": 2.7431388777319627,
+    "penetration_per_phase_mm": {
+      "approach": {
+        "pad_peak_mm": 0.0,
+        "any_peak_mm": 0.1077554202162101,
+        "samples": 2375
+      },
+      "descend": {
+        "pad_peak_mm": 0.0,
+        "any_peak_mm": 0.1077554202162101,
+        "samples": 5050
+      },
+      "close": {
+        "pad_peak_mm": 1.3969185192681444,
+        "any_peak_mm": 2.7431388777319627,
+        "samples": 1675
+      },
+      "lift": {
+        "pad_peak_mm": 0.7446455054286096,
+        "any_peak_mm": 0.7446455054286096,
+        "samples": 550
+      },
+      "hold": {
+        "pad_peak_mm": 0.7021266786683943,
+        "any_peak_mm": 0.7021266786683943,
+        "samples": 1000
+      },
+      "clearance_lift": {
+        "pad_peak_mm": 0.7021411452356757,
+        "any_peak_mm": 0.7021411452356757,
+        "samples": 1700
+      },
+      "transport": {
+        "pad_peak_mm": 1.1783768473780427,
+        "any_peak_mm": 1.1783768473780427,
+        "samples": 4550
+      },
+      "place": {
+        "pad_peak_mm": 0.5559748725029456,
+        "any_peak_mm": 0.5559748725029456,
+        "samples": 525
+      },
+      "release": {
+        "pad_peak_mm": 0.542229704366462,
+        "any_peak_mm": 2.5070042629516744,
+        "samples": 1500
+      },
+      "post_release_window": {
+        "pad_peak_mm": 0.0,
+        "any_peak_mm": 0.023925494129242025,
+        "samples": 500
+      }
+    },
+    "n_samples": 19425,
+    "max_step_disp_m": 0.00450876395235412,
+    "n_frames": 777,
+    "phase_end": {
+      "approach": [
+        true,
+        95
+      ],
+      "approach_residual_m": 0.003143987936172559,
+      "descend": [
+        true,
+        202
+      ],
+      "descend_converged_pos": true,
+      "descend_residual_m": 0.007959146522366786,
+      "descend_pad_mid_z": 0.10069649236725037,
+      "descend_block_top_z": 0.06989224457978385,
+      "descend_pad_below_block_top_mm": -30.804247787466515,
+      "close_steps": 67,
+      "jaw_after_close_mm": 19.168943236603578,
+      "grip_q_after_close": [
+        -0.896796,
+        1.065979,
+        -0.847563,
+        0.719321,
+        0.77497,
+        1.034004
+      ],
+      "obj_shift_on_close_mm": 3.5237102087575796,
+      "close_penetration_peak_mm": 1.3969185192681444,
+      "lift_servo": [
+        true,
+        22
+      ],
+      "lift_residual_m": 0.0021990304141578224,
+      "lift_mm": 68.70118620882029,
+      "hold_steps_used": 40,
+      "hold_min_mm": 69.56466579197158,
+      "hold_max_mm": 72.05245164433197,
+      "hold_end_mm": 69.56466579197158,
+      "hold_penetration_peak_mm": 0.7021266786683943,
+      "place_point": [
+        0.011122472659670174,
+        0.2616724368666548,
+        0.17144845137544748
+      ],
+      "basket_inner_size_mm": [
+        157.3379636532315,
+        169.5192413315645,
+        141.4631848203737
+      ],
+      "transport": [
+        true,
+        182
+      ],
+      "transport_residual_m": 0.006401866966405452,
+      "transport_target": [
+        0.011122472659670174,
+        0.2616724368666548,
+        0.2614484513754475
+      ],
+      "transport_grip_site": [
+        -0.0024797747860716285,
+        0.24922465055445522,
+        0.2691860908614765
+      ],
+      "transport_err_world_m": [
+        0.013602247445741802,
+        0.012447786312199588,
+        -0.007737639486029013
+      ],
+      "transport_err_horizontal_m": 0.018438235263966363,
+      "sep_after_transport_mm": 16.780948845141626,
+      "object_lost_after_transport": false,
+      "place": [
+        true,
+        21
+      ],
+      "place_residual_m": 0.007974572146167218,
+      "place_grip_site": [
+        -0.0002102576290342606,
+        0.25252465860030127,
+        0.2563495563637061
+      ],
+      "settle_steps": 0,
+      "post_release_window_steps": 20,
+      "post_release_inside_all": true,
+      "post_release_drift_mm": 1.6362766036923877e-06,
+      "post_release_center": [
+        0.027619246768958314,
+        0.27129397914534376,
+        0.0519276617219649
+      ],
+      "post_release_penetration_peak_mm": 0.0
+    },
+    "wall_seconds": 34.6,
+    "native_success_at_end": true,
+    "phase_trace": {
+      "approach": {
+        "n_frames": 95,
+        "joint_margin_min_rad": 1.5423622175046399,
+        "joint_margin_min_per_joint": [
+          2.512190810546092,
+          2.5787543894560363,
+          1.751194695238854,
+          2.5416680846729007,
+          1.5423622175046399,
+          4.1168437236196205
+        ],
+        "joint_at_limit_within_0p02rad": 0,
+        "grip_site_start": [
+          -0.1482054544983378,
+          4.3041384457244865e-05,
+          0.264969201807888
+        ],
+        "grip_site_end": [
+          -0.12737856130044228,
+          -0.25808143609887707,
+          0.14800617074474698
+        ],
+        "grip_site_travel_m": 0.28415199452370243,
+        "grip_site_last20_move_m": 0.05610635828437001,
+        "target": [
+          -0.1292,
+          -0.2595299999999999,
+          0.14589224457978384
+        ],
+        "err_end_m": 0.003143987936172559,
+        "err_end_horizontal_m": 0.002327225023903535,
+        "err_end_vertical_m": -0.0021139261649631425,
+        "err_min_m": 0.003143987936172559
+      },
+      "descend": {
+        "n_frames": 202,
+        "joint_margin_min_rad": 1.4956285036987622,
+        "joint_margin_min_per_joint": [
+          2.5069201317983794,
+          2.5985485537194597,
+          1.4956285036987622,
+          2.939868928258746,
+          1.5659637460880786,
+          4.111104643745822
+        ],
+        "joint_at_limit_within_0p02rad": 0,
+        "grip_site_start": [
+          -0.12797980434254752,
+          -0.25970790663127497,
+          0.1475446052320884
+        ],
+        "grip_site_end": [
+          -0.12486769483686291,
+          -0.2605054642444508,
+          0.07249736493037223
+        ],
+        "grip_site_travel_m": 0.07511597433718901,
+        "grip_site_last20_move_m": 0.0021255011387653574,
+        "target": [
+          -0.1292,
+          -0.2595299999999999,
+          0.06589224457978385
+        ],
+        "err_end_m": 0.007959146522366786,
+        "err_end_horizontal_m": 0.00444076553296236,
+        "err_end_vertical_m": -0.006605120350588384,
+        "err_min_m": 0.007959146522366786
+      },
+      "lift": {
+        "n_frames": 22,
+        "joint_margin_min_rad": 1.5141096822173257,
+        "joint_margin_min_per_joint": [
+          2.510139269014291,
+          2.616413229503139,
+          1.5141096822173257,
+          2.9618959014968165,
+          1.566871803782908,
+          4.114644252916038
+        ],
+        "joint_at_limit_within_0p02rad": 0,
+        "grip_site_start": [
+          -0.12470936955925224,
+          -0.26059583055921465,
+          0.07774699671860669
+        ],
+        "grip_site_end": [
+          -0.12923758585752526,
+          -0.2582453242176368,
+          0.14410788749671025
+        ],
+        "grip_site_travel_m": 0.066556723535411,
+        "grip_site_last20_move_m": 0.0608412757862746,
+        "target": [
+          -0.1292,
+          -0.2595299999999999,
+          0.14589224457978384
+        ],
+        "err_end_m": 0.0021990304141578224,
+        "err_end_horizontal_m": 0.0012852254909066474,
+        "err_end_vertical_m": 0.00178435708307359,
+        "err_min_m": 0.0021990304141578224
+      },
+      "transport": {
+        "n_frames": 182,
+        "joint_margin_min_rad": 1.1767580028809155,
+        "joint_margin_min_per_joint": [
+          2.33195817316666,
+          2.5696889987443075,
+          1.914916282019909,
+          2.8085822491008403,
+          1.1767580028809155,
+          3.9531956479866324
+        ],
+        "joint_at_limit_within_0p02rad": 0,
+        "grip_site_start": [
+          -0.1253800757045797,
+          -0.2579424218548331,
+          0.27363078434901117
+        ],
+        "grip_site_end": [
+          -0.002429097823392845,
+          0.24742834703097522,
+          0.2693239540489204
+        ],
+        "grip_site_travel_m": 0.5201298931934282,
+        "grip_site_last20_move_m": 0.038286034800222454,
+        "target": [
+          0.011122472659670174,
+          0.2616724368666548,
+          0.2614484513754475
+        ],
+        "err_end_m": 0.021179298859126918,
+        "err_end_horizontal_m": 0.01966059912119505,
+        "err_end_vertical_m": -0.007875502673472923,
+        "err_min_m": 0.021179298859126918
+      },
+      "place": {
+        "n_frames": 21,
+        "joint_margin_min_rad": 1.4636199004662733,
+        "joint_margin_min_per_joint": [
+          2.8249342343522192,
+          2.548196034224727,
+          2.078061255273945,
+          3.046526723595265,
+          1.4636199004662733,
+          4.991211756103619
+        ],
+        "joint_at_limit_within_0p02rad": 0,
+        "grip_site_start": [
+          -0.0024797747860716285,
+          0.24922465055445522,
+          0.2691860908614765
+        ],
+        "grip_site_end": [
+          -0.00021107302803467787,
+          0.25252413898457127,
+          0.2570026877987873
+        ],
+        "grip_site_travel_m": 0.012824544504789767,
+        "grip_site_last20_move_m": 0.010869414857814058,
+        "target": [
+          0.011122472659670174,
+          0.2616724368666548,
+          0.17144845137544748
+        ],
+        "err_end_m": 0.08678518296331095,
+        "err_end_horizontal_m": 0.014565047613881237,
+        "err_end_vertical_m": -0.08555423642333984,
+        "err_min_m": 0.08678518296331095
+      }
+    }
+  },
+  "phases": {
+    "approach": {
+      "steps": 95,
+      "bilateral_fraction_mean": 0.0,
+      "normal_force_mean_N": [
+        0.0,
+        0.0
+      ],
+      "object_contact_resultant_mean_N": [
+        7.484241497332679e-20,
+        3.092419822228084e-19,
+        0.8652419999999994
+      ],
+      "object_force_balance_mean_N": [
+        7.484241497332679e-20,
+        3.092419822228084e-19,
+        -2.13864014217267e-16
+      ],
+      "other_contact_force_peak_N": 0.8652420000000003,
+      "actuator_force_mean": [
+        0.08976999351242182
+      ],
+      "penetration_peak_mm": [
+        0.0,
+        0.0
+      ],
+      "object_displacement_mm": 0.0,
+      "object_in_grip_change_mm": 285.63086649495074,
+      "object_in_grip_max_change_mm": 285.63086649495074,
+      "object_z_min_m": 0.03489224457978382,
+      "object_start": [
+        -0.1292,
+        -0.25953,
+        0.03489224457978382
+      ],
+      "object_end": [
+        -0.1292,
+        -0.25953,
+        0.03489224457978382
+      ],
+      "grip_start": [
+        -0.1482054544983378,
+        4.3041384457244865e-05,
+        0.264969201807888
+      ],
+      "grip_end": [
+        -0.12797980434254752,
+        -0.25970790663127497,
+        0.1475446052320884
+      ],
+      "gripper_qpos_end": [
+        -0.0009095471804694557,
+        0.004417775584071591,
+        -0.0018918897626477938,
+        0.004534595893258785,
+        0.0044267745527318825,
+        0.005738607962299929
+      ],
+      "contacts": {
+        "floor": {
+          "force_peak_N": 0.21631050000000268,
+          "penetration_peak_mm": 0.1077554202162101,
+          "active_samples": 9500
+        }
+      }
+    },
+    "descend": {
+      "steps": 202,
+      "bilateral_fraction_mean": 0.0,
+      "normal_force_mean_N": [
+        0.0,
+        0.0
+      ],
+      "object_contact_resultant_mean_N": [
+        -1.03138704411865e-20,
+        -9.455266425385456e-20,
+        0.8652419999999971
+      ],
+      "object_force_balance_mean_N": [
+        -1.03138704411865e-20,
+        -9.455266425385456e-20,
+        -2.1709806669650338e-16
+      ],
+      "other_contact_force_peak_N": 0.8652420000000003,
+      "actuator_force_mean": [
+        0.08978287038645932
+      ],
+      "penetration_peak_mm": [
+        0.0,
+        0.0
+      ],
+      "object_displacement_mm": 0.0,
+      "object_in_grip_change_mm": 75.19710157068539,
+      "object_in_grip_max_change_mm": 75.19710157068539,
+      "object_z_min_m": 0.03489224457978382,
+      "object_start": [
+        -0.1292,
+        -0.25953,
+        0.03489224457978382
+      ],
+      "object_end": [
+        -0.1292,
+        -0.25953,
+        0.03489224457978382
+      ],
+      "grip_start": [
+        -0.12797980434254752,
+        -0.25970790663127497,
+        0.1475446052320884
+      ],
+      "grip_end": [
+        -0.1248657599666258,
+        -0.2605073659473405,
+        0.07239678720177878
+      ],
+      "gripper_qpos_end": [
+        -0.0008975970137394224,
+        0.004654347351327231,
+        -0.0018374674267732627,
+        0.004756018285982311,
+        0.004673153186074257,
+        0.005479244847013929
+      ],
+      "contacts": {
+        "floor": {
+          "force_peak_N": 0.21631050000000268,
+          "penetration_peak_mm": 0.1077554202162101,
+          "active_samples": 20200
+        }
+      }
+    },
+    "close": {
+      "steps": 67,
+      "bilateral_fraction_mean": 0.915223880597015,
+      "normal_force_mean_N": [
+        11.839154896053278,
+        11.582361977957481
+      ],
+      "object_contact_resultant_mean_N": [
+        5.648969533450756e-07,
+        1.755178525127261e-07,
+        0.8652419506792396
+      ],
+      "object_force_balance_mean_N": [
+        5.648969533450756e-07,
+        1.755178525127261e-07,
+        -4.932076030336865e-08
+      ],
+      "other_contact_force_peak_N": 28.6586556815382,
+      "actuator_force_mean": [
+        -1.2303111694855295
+      ],
+      "penetration_peak_mm": [
+        1.3928959194208395,
+        1.3969185192681444
+      ],
+      "object_displacement_mm": 3.523710208757578,
+      "object_in_grip_change_mm": 5.636356035170856,
+      "object_in_grip_max_change_mm": 5.636356035170856,
+      "object_z_min_m": 0.033508429510387606,
+      "object_start": [
+        -0.1292,
+        -0.25953,
+        0.03489224457978382
+      ],
+      "object_end": [
+        -0.12919633931246804,
+        -0.2629599518913811,
+        0.03569967894707334
+      ],
+      "grip_start": [
+        -0.1248657599666258,
+        -0.2605073659473405,
+        0.07239678720177878
+      ],
+      "grip_end": [
+        -0.12470936955925224,
+        -0.26059583055921465,
+        0.07774699671860669
+      ],
+      "gripper_qpos_end": [
+        -0.8967959693015228,
+        1.0659787961305693,
+        -0.8475627813288443,
+        0.7193205539192181,
+        0.7749704347896897,
+        1.034004381185379
+      ],
+      "contacts": {
+        "floor": {
+          "force_peak_N": 12.834459951720332,
+          "penetration_peak_mm": 2.7431388777319627,
+          "active_samples": 3710
+        },
+        "gripper0_left_fingerpad_col": {
+          "force_peak_N": 23.907871353917077,
+          "penetration_peak_mm": 1.3928959194208395,
+          "active_samples": 1540
+        },
+        "gripper0_right_fingerpad_col": {
+          "force_peak_N": 17.34287285024889,
+          "penetration_peak_mm": 1.3969185192681444,
+          "active_samples": 1533
+        }
+      }
+    },
+    "lift": {
+      "steps": 22,
+      "bilateral_fraction_mean": 1.0,
+      "normal_force_mean_N": [
+        12.027149664103053,
+        11.266449586017535
+      ],
+      "object_contact_resultant_mean_N": [
+        3.545231233069533e-05,
+        -0.00010823039892578074,
+        0.8676183401266848
+      ],
+      "object_force_balance_mean_N": [
+        3.545231233069533e-05,
+        -0.00010823039892578074,
+        0.002376340126685003
+      ],
+      "other_contact_force_peak_N": 0.595875452404719,
+      "actuator_force_mean": [
+        -1.2660000801547249
+      ],
+      "penetration_peak_mm": [
+        0.7264816724246341,
+        0.7446455054286096
+      ],
+      "object_displacement_mm": 68.0873121035268,
+      "object_in_grip_change_mm": 0.906819393006422,
+      "object_in_grip_max_change_mm": 0.9068193930064221,
+      "object_z_min_m": 0.03795650494933811,
+      "object_start": [
+        -0.12919633931246804,
+        -0.2629599518913811,
+        0.03569967894707334
+      ],
+      "object_end": [
+        -0.13342965248591762,
+        -0.26006174728521486,
+        0.10359343078860411
+      ],
+      "grip_start": [
+        -0.12470936955925224,
+        -0.26059583055921465,
+        0.07774699671860669
+      ],
+      "grip_end": [
+        -0.12931017241153214,
+        -0.25838662349883224,
+        0.14614590292435184
+      ],
+      "gripper_qpos_end": [
+        -0.8974681424144388,
+        1.0617243351567167,
+        -0.849663306888023,
+        0.7212394907789921,
+        0.7786753040756291,
+        1.0421124972714748
+      ],
+      "contacts": {
+        "floor": {
+          "force_peak_N": 0.4843290719552154,
+          "penetration_peak_mm": 0.6932846102821882,
+          "active_samples": 3
+        },
+        "gripper0_left_fingerpad_col": {
+          "force_peak_N": 12.394251373268645,
+          "penetration_peak_mm": 0.7264816724246341,
+          "active_samples": 550
+        },
+        "gripper0_right_fingerpad_col": {
+          "force_peak_N": 11.906567324037756,
+          "penetration_peak_mm": 0.7446455054286096,
+          "active_samples": 550
+        }
+      }
+    },
+    "hold": {
+      "steps": 40,
+      "bilateral_fraction_mean": 1.0,
+      "normal_force_mean_N": [
+        11.724629536087113,
+        10.877150097355843
+      ],
+      "object_contact_resultant_mean_N": [
+        -1.61706700090706e-05,
+        4.646675855315509e-05,
+        0.8639667856213433
+      ],
+      "object_force_balance_mean_N": [
+        -1.61706700090706e-05,
+        4.646675855315509e-05,
+        -0.0012752143786566056
+      ],
+      "other_contact_force_peak_N": 0.0,
+      "actuator_force_mean": [
+        -1.227914176443288
+      ],
+      "penetration_peak_mm": [
+        0.7021266786683943,
+        0.6539627332747228
+      ],
+      "object_displacement_mm": 2.4152849824660634,
+      "object_in_grip_change_mm": 1.743065184901172,
+      "object_in_grip_max_change_mm": 1.743065184901172,
+      "object_z_min_m": 0.1044569103717554,
+      "object_start": [
+        -0.13342965248591762,
+        -0.26006174728521486,
+        0.10359343078860411
+      ],
+      "object_end": [
+        -0.13139814020718915,
+        -0.25908146037956814,
+        0.1044569103717554
+      ],
+      "grip_start": [
+        -0.12931017241153214,
+        -0.25838662349883224,
+        0.14614590292435184
+      ],
+      "grip_end": [
+        -0.1273612883936856,
+        -0.25897193114753897,
+        0.14778695080832902
+      ],
+      "gripper_qpos_end": [
+        -0.8979628482021275,
+        1.061848717670202,
+        -0.8502606682609583,
+        0.7268206175898418,
+        0.7831555254877048,
+        1.0401930929652075
+      ],
+      "contacts": {
+        "gripper0_left_fingerpad_col": {
+          "force_peak_N": 11.956014028755728,
+          "penetration_peak_mm": 0.7021266786683943,
+          "active_samples": 1000
+        },
+        "gripper0_right_fingerpad_col": {
+          "force_peak_N": 11.63050642367121,
+          "penetration_peak_mm": 0.6539627332747228,
+          "active_samples": 1000
+        }
+      }
+    },
+    "clearance_lift": {
+      "steps": 68,
+      "bilateral_fraction_mean": 1.0,
+      "normal_force_mean_N": [
+        10.654109013322017,
+        10.56827837759163
+      ],
+      "object_contact_resultant_mean_N": [
+        4.602035476736104e-05,
+        4.465977432639747e-05,
+        0.8652356051312475
+      ],
+      "object_force_balance_mean_N": [
+        4.602035476736104e-05,
+        4.465977432639747e-05,
+        -6.394868752584013e-06
+      ],
+      "other_contact_force_peak_N": 0.0,
+      "actuator_force_mean": [
+        -1.1526344362860554
+      ],
+      "penetration_peak_mm": [
+        0.7021411452356757,
+        0.6290571580628478
+      ],
+      "object_displacement_mm": 128.37533380411003,
+      "object_in_grip_change_mm": 1.7810955344781811,
+      "object_in_grip_max_change_mm": 1.7810955344781811,
+      "object_z_min_m": 0.10594978546484285,
+      "object_start": [
+        -0.13139814020718915,
+        -0.25908146037956814,
+        0.1044569103717554
+      ],
+      "object_end": [
+        -0.11259364807111713,
+        -0.24978562035727875,
+        0.2311068403484478
+      ],
+      "grip_start": [
+        -0.1273612883936856,
+        -0.25897193114753897,
+        0.14778695080832902
+      ],
+      "grip_end": [
+        -0.1253800757045797,
+        -0.2579424218548331,
+        0.27363078434901117
+      ],
+      "gripper_qpos_end": [
+        -0.8988701595102013,
+        1.0695355385163807,
+        -0.8492440848461943,
+        0.7350916491546424,
+        0.7889649538237852,
+        1.0338871649850099
+      ],
+      "contacts": {
+        "gripper0_left_fingerpad_col": {
+          "force_peak_N": 11.616933981613798,
+          "penetration_peak_mm": 0.7021411452356757,
+          "active_samples": 1700
+        },
+        "gripper0_right_fingerpad_col": {
+          "force_peak_N": 11.512362585532042,
+          "penetration_peak_mm": 0.6290571580628478,
+          "active_samples": 1700
+        }
+      }
+    },
+    "transport": {
+      "steps": 182,
+      "bilateral_fraction_mean": 1.0,
+      "normal_force_mean_N": [
+        9.778673658104847,
+        9.792365127675113
+      ],
+      "object_contact_resultant_mean_N": [
+        -1.6139621381206983e-05,
+        0.00035720344303926364,
+        0.8652243827280406
+      ],
+      "object_force_balance_mean_N": [
+        -1.6139621381206983e-05,
+        0.00035720344303926364,
+        -1.761727195934423e-05
+      ],
+      "other_contact_force_peak_N": 0.0,
+      "actuator_force_mean": [
+        -1.062593423085802
+      ],
+      "penetration_peak_mm": [
+        1.1783768473780427,
+        0.6138702804811337
+      ],
+      "object_displacement_mm": 523.4230873790975,
+      "object_in_grip_change_mm": 4.4137678778979526,
+      "object_in_grip_max_change_mm": 4.4137678778979526,
+      "object_z_min_m": 0.22324780108543543,
+      "object_start": [
+        -0.11259364807111713,
+        -0.24978562035727875,
+        0.2311068403484478
+      ],
+      "object_end": [
+        0.013608873465316343,
+        0.2581345381924433,
+        0.22324780108543543
+      ],
+      "grip_start": [
+        -0.1253800757045797,
+        -0.2579424218548331,
+        0.27363078434901117
+      ],
+      "grip_end": [
+        -0.0024797747860716285,
+        0.24922465055445522,
+        0.2691860908614765
+      ],
+      "gripper_qpos_end": [
+        -0.8998673004115768,
+        1.063208111803569,
+        -0.8523830272172636,
+        0.7462266154536652,
+        0.7981655742860699,
+        1.031311270566337
+      ],
+      "contacts": {
+        "gripper0_left_fingerpad_col": {
+          "force_peak_N": 10.765387002633945,
+          "penetration_peak_mm": 1.1783768473780427,
+          "active_samples": 4550
+        },
+        "gripper0_right_fingerpad_col": {
+          "force_peak_N": 11.029838753402897,
+          "penetration_peak_mm": 0.6138702804811337,
+          "active_samples": 4550
+        }
+      }
+    },
+    "place": {
+      "steps": 21,
+      "bilateral_fraction_mean": 1.0,
+      "normal_force_mean_N": [
+        9.166570999215585,
+        9.282046883611649
+      ],
+      "object_contact_resultant_mean_N": [
+        6.86358432596486e-05,
+        -0.002897565460416827,
+        0.8643724742213391
+      ],
+      "object_force_balance_mean_N": [
+        6.86358432596486e-05,
+        -0.002897565460416827,
+        -0.0008695257786609142
+      ],
+      "other_contact_force_peak_N": 0.0,
+      "actuator_force_mean": [
+        -1.000047065135114
+      ],
+      "penetration_peak_mm": [
+        0.5559748725029456,
+        0.5477226989424284
+      ],
+      "object_displacement_mm": 13.8688965702858,
+      "object_in_grip_change_mm": 0.40027716122200196,
+      "object_in_grip_max_change_mm": 0.40027716122200196,
+      "object_z_min_m": 0.20995456540717244,
+      "object_start": [
+        0.013608873465316343,
+        0.2581345381924433,
+        0.22324780108543543
+      ],
+      "object_end": [
+        0.015813116240786438,
+        0.2614174471260309,
+        0.20995456540717244
+      ],
+      "grip_start": [
+        -0.0024797747860716285,
+        0.24922465055445522,
+        0.2691860908614765
+      ],
+      "grip_end": [
+        -0.0002102576290342606,
+        0.25252465860030127,
+        0.2563495563637061
+      ],
+      "gripper_qpos_end": [
+        -0.9000526983461671,
+        1.0631482608664298,
+        -0.8526376936050362,
+        0.747348511768197,
+        0.7990792244765305,
+        1.0310462818536195
+      ],
+      "contacts": {
+        "gripper0_left_fingerpad_col": {
+          "force_peak_N": 9.679952367729337,
+          "penetration_peak_mm": 0.5559748725029456,
+          "active_samples": 525
+        },
+        "gripper0_right_fingerpad_col": {
+          "force_peak_N": 9.43351706150749,
+          "penetration_peak_mm": 0.5477226989424284,
+          "active_samples": 525
+        }
+      }
+    },
+    "release": {
+      "steps": 60,
+      "bilateral_fraction_mean": 0.030000000000000002,
+      "normal_force_mean_N": [
+        0.08040693654041095,
+        0.09020963199269308
+      ],
+      "object_contact_resultant_mean_N": [
+        7.630805549602927e-06,
+        5.6027100310467285e-06,
+        0.8655464567116902
+      ],
+      "object_force_balance_mean_N": [
+        7.630805549602927e-06,
+        5.6027100310467285e-06,
+        0.0003044567116894159
+      ],
+      "other_contact_force_peak_N": 25.616774417673337,
+      "actuator_force_mean": [
+        0.06859769515407092
+      ],
+      "penetration_peak_mm": [
+        0.5359996326926881,
+        0.542229704366462
+      ],
+      "object_displacement_mm": 158.77478654068287,
+      "object_in_grip_change_mm": 154.01180194133397,
+      "object_in_grip_max_change_mm": 154.9874713641344,
+      "object_z_min_m": 0.05166279120809126,
+      "object_start": [
+        0.015813116240786438,
+        0.2614174471260309,
+        0.20995456540717244
+      ],
+      "object_end": [
+        0.02761924515659009,
+        0.2712939785396061,
+        0.05192766172207365
+      ],
+      "grip_start": [
+        -0.0002102576290342606,
+        0.25252465860030127,
+        0.2563495563637061
+      ],
+      "grip_end": [
+        -0.000905040153216366,
+        0.25233445045866515,
+        0.2514756018353672
+      ],
+      "gripper_qpos_end": [
+        -0.0008354990075617751,
+        0.003082268935429998,
+        -0.0018837308894263337,
+        0.0033002261034566693,
+        0.0031194996110603434,
+        0.006087164250803045
+      ],
+      "contacts": {
+        "gripper0_left_fingerpad_col": {
+          "force_peak_N": 7.287115146834129,
+          "penetration_peak_mm": 0.5359996326926881,
+          "active_samples": 45
+        },
+        "gripper0_right_fingerpad_col": {
+          "force_peak_N": 7.518805949389591,
+          "penetration_peak_mm": 0.542229704366462,
+          "active_samples": 47
+        },
+        "basket_1_g1": {
+          "force_peak_N": 25.616774417673337,
+          "penetration_peak_mm": 2.5070042629516744,
+          "active_samples": 5262
+        }
+      }
+    },
+    "post_release_window": {
+      "steps": 20,
+      "bilateral_fraction_mean": 0.0,
+      "normal_force_mean_N": [
+        0.0,
+        0.0
+      ],
+      "object_contact_resultant_mean_N": [
+        8.224116402944052e-13,
+        3.089612298846471e-13,
+        0.8652420000000001
+      ],
+      "object_force_balance_mean_N": [
+        8.224116402944052e-13,
+        3.089612298846471e-13,
+        -7.771561172376095e-17
+      ],
+      "other_contact_force_peak_N": 0.8652419995834444,
+      "actuator_force_mean": [
+        0.083482023341474
+      ],
+      "penetration_peak_mm": [
+        0.0,
+        0.0
+      ],
+      "object_displacement_mm": 1.7223964249395168e-06,
+      "object_in_grip_change_mm": 0.006394287881897529,
+      "object_in_grip_max_change_mm": 0.006394287881897529,
+      "object_z_min_m": 0.0519276617219649,
+      "object_start": [
+        0.02761924515659009,
+        0.2712939785396061,
+        0.05192766172207365
+      ],
+      "object_end": [
+        0.027619246768958314,
+        0.27129397914534376,
+        0.0519276617219649
+      ],
+      "grip_start": [
+        -0.000905040153216366,
+        0.25233445045866515,
+        0.2514756018353672
+      ],
+      "grip_end": [
+        -0.0009056971495623595,
+        0.2523325268439802,
+        0.2514816674342148
+      ],
+      "gripper_qpos_end": [
+        -0.0008348055229130216,
+        0.003081550406624059,
+        -0.001883049956295737,
+        0.0032996001529737203,
+        0.0031188789733217243,
+        0.006086477998326106
+      ],
+      "contacts": {
+        "basket_1_g1": {
+          "force_peak_N": 0.21632303760527039,
+          "penetration_peak_mm": 0.023925494129242025,
+          "active_samples": 2000
+        }
+      }
+    }
+  },
+  "safe_path": {
+    "stage_arrivals": {
+      "approach": {
+        "ok": true,
+        "target": [
+          -0.1292,
+          -0.2595299999999999,
+          0.14589224457978384
+        ],
+        "actual": [
+          -0.12797980434254752,
+          -0.25970790663127497,
+          0.1475446052320884
+        ],
+        "error": [
+          0.002061752637248684,
+          0.0019535472642137302
+        ]
+      },
+      "descend": {
+        "ok": true,
+        "target": [
+          -0.1292,
+          -0.2595299999999999,
+          0.06589224457978385
+        ],
+        "actual": [
+          -0.1248657599666258,
+          -0.2605073659473405,
+          0.07239678720177878
+        ],
+        "error": [
+          0.007877179417994313,
+          0.00488788489747981
+        ]
+      },
+      "lift": {
+        "ok": true,
+        "target": [
+          -0.1292,
+          -0.2595299999999999,
+          0.14589224457978384
+        ],
+        "actual": [
+          -0.12931017241153214,
+          -0.25838662349883224,
+          0.14614590292435184
+        ],
+        "error": [
+          0.0011763461818079996,
+          0.0012515422847373164
+        ]
+      },
+      "place": {
+        "ok": true,
+        "target": [
+          -0.001663954973792403,
+          0.25351563536910043,
+          0.2492245215698113
+        ],
+        "actual": [
+          -0.0002102576290342606,
+          0.25252465860030127,
+          0.2563495563637061
+        ],
+        "error": [
+          0.00733903207110228,
+          0.003703830124848352
+        ]
+      }
+    },
+    "measured_loaded_geometry": {
+      "tcp": [
+        -0.1273612883936856,
+        -0.25897193114753897,
+        0.14778695080832902
+      ],
+      "R": [
+        [
+          0.0006332474257097299,
+          0.998260210170442,
+          -0.05895889914307676
+        ],
+        [
+          0.9999996890956976,
+          -0.0006044409550807949,
+          0.0005064184442007819
+        ],
+        [
+          0.0004699002092335078,
+          -0.058959201500677454,
+          -0.9982602825677261
+        ]
+      ],
+      "tcp_in_mount": [
+        2.4162347616134482e-17,
+        1.3363302643744854e-17,
+        0.20254000000000014
+      ],
+      "tcp_rotation_in_mount": [
+        [
+          1.0000000000000007,
+          -2.3898163042617726e-17,
+          6.837601147319236e-19
+        ],
+        [
+          -2.3898163042617726e-17,
+          1.0000000000000007,
+          -6.494304943996853e-18
+        ],
+        [
+          6.837601147319236e-19,
+          -6.494304943996853e-18,
+          1.0000000000000007
+        ]
+      ],
+      "object": [
+        [
+          -0.16165539423135444,
+          -0.2797191070418618,
+          0.06731198947458786
+        ],
+        [
+          -0.10114088618302387,
+          -0.23844381371727444,
+          0.14160183126892295
+        ]
+      ],
+      "gripper_outer": [
+        [
+          -0.1548128130973243,
+          -0.29655605641824645,
+          0.1231148994521549
+        ],
+        [
+          -0.07798499363301506,
+          -0.22155607377350717,
+          0.35217599831094126
+        ]
+      ],
+      "gripper_collision": [
+        [
+          -0.1400190314310378,
+          -0.2963627934265952,
+          0.1231148994521549
+        ],
+        [
+          -0.11484164133279405,
+          -0.22795288693941912,
+          0.1964776835205376
+        ]
+      ],
+      "basket": [
+        [
+          -0.06754650916694557,
+          0.17691281620087254,
+          -1.4733444926223749e-05
+        ],
+        [
+          0.08979145448628592,
+          0.34643205753243705,
+          0.14144845137544748
+        ]
+      ],
+      "basket_pos": [
+        0.011265086579385806,
+        0.26035328270250435,
+        -0.004582345326536154
+      ],
+      "geom_names": [
+        "gripper0_g0_vis",
+        "gripper0_g1_vis",
+        "gripper0_g2_vis",
+        "gripper0_left_fingerpad_col",
+        "gripper0_g3_vis",
+        "gripper0_g4_vis",
+        "gripper0_g5_vis",
+        "gripper0_g6_vis",
+        "gripper0_right_fingerpad_col"
+      ],
+      "basket_geoms": [
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "gripper_geoms": [
+        26,
+        31
+      ],
+      "object_geoms": [
+        32
+      ]
+    },
+    "margin_m": 0.04,
+    "vertical_target": [
+      -0.1273612883936856,
+      -0.25897193114753897,
+      0.27115244461870286
+    ],
+    "horizontal_target": [
+      -0.001663954973792403,
+      0.25351563536910043,
+      0.27115244461870286
+    ],
+    "release_target": [
+      -0.001663954973792403,
+      0.25351563536910043,
+      0.2492245215698113
+    ],
+    "carry_rotation": [
+      [
+        -0.03436484037502425,
+        0.9413798886183968,
+        0.33559344905825333
+      ],
+      [
+        0.9854956882747155,
+        -0.02391754328630943,
+        0.16800654604834028
+      ],
+      [
+        0.16618455445060074,
+        0.33649941519705934,
+        -0.9269038987047649
+      ]
+    ],
+    "ik_candidates": [
+      {
+        "tilt_deg": 0,
+        "up": [
+          -0.1273612883936856,
+          -0.25897193114753897,
+          0.2620072579110226
+        ],
+        "across": [
+          0.015064478663798035,
+          0.2618056110541191,
+          0.2620072579110226
+        ],
+        "place": [
+          0.015064478663798035,
+          0.2618056110541191,
+          0.23700725791102262
+        ],
+        "checks": [
+          {
+            "position_error_m": 0.008151705259737027,
+            "rotation_error_rad": 0.0020811487583044805,
+            "pass": false
+          }
+        ]
+      },
+      {
+        "tilt_deg": 15,
+        "up": [
+          -0.1273612883936856,
+          -0.25897193114753897,
+          0.2694778080924027
+        ],
+        "across": [
+          0.004637936785405566,
+          0.2573411399481276,
+          0.2694778080924027
+        ],
+        "place": [
+          0.004637936785405566,
+          0.2573411399481276,
+          0.24447780809240272
+        ],
+        "checks": [
+          {
+            "position_error_m": 0.0005058510161509449,
+            "rotation_error_rad": 0.00041050305644189727,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0007768303059379214,
+            "rotation_error_rad": 5.580253509719059e-05,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0007508884407204503,
+            "rotation_error_rad": 3.724683037626355e-05,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0007373057385370915,
+            "rotation_error_rad": 4.3144322869286176e-05,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0007438561022301,
+            "rotation_error_rad": 6.095789612113387e-05,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0007976428235136995,
+            "rotation_error_rad": 9.465481769062005e-05,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0005264607045297783,
+            "rotation_error_rad": 0.0001125829518933847,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0020316207949137646,
+            "rotation_error_rad": 0.000572507128296159,
+            "pass": false
+          }
+        ]
+      },
+      {
+        "tilt_deg": 25,
+        "up": [
+          -0.1273612883936856,
+          -0.25897193114753897,
+          0.27115244461870286
+        ],
+        "across": [
+          -0.0020893245642977197,
+          0.2544606389854408,
+          0.27115244461870286
+        ],
+        "place": [
+          -0.0020893245642977197,
+          0.2544606389854408,
+          0.2461524446187029
+        ],
+        "checks": [
+          {
+            "position_error_m": 0.0005140773626279115,
+            "rotation_error_rad": 0.0018584353617790844,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0007736433632051025,
+            "rotation_error_rad": 4.786393598643172e-05,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0007614452913690959,
+            "rotation_error_rad": 5.928821790558099e-05,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0007453837600892956,
+            "rotation_error_rad": 6.962284138084021e-05,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.000734572828610575,
+            "rotation_error_rad": 7.909355390976718e-05,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0007343240570277117,
+            "rotation_error_rad": 8.705697647061841e-05,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0007586871853979534,
+            "rotation_error_rad": 9.851417606688846e-05,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0008478148943328937,
+            "rotation_error_rad": 0.00012743940090118798,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0006161704479958443,
+            "rotation_error_rad": 0.00013692514419400077,
+            "pass": true
+          },
+          {
+            "position_error_m": 0.0009875891132868832,
+            "rotation_error_rad": 0.00016328460459187705,
+            "pass": true
+          }
+        ]
+      }
+    ],
+    "tilt_deg": 25,
+    "vertical_reached": true,
+    "vertical_error": [
+      0.00332299652725044,
+      0.028390968425002303
+    ],
+    "horizontal_reached": true,
+    "horizontal_error": [
+      0.006401866966405452,
+      0.0018449955404410353
+    ],
+    "place_started": true,
+    "place_reached": true
+  },
+  "safe_teacher_success": true,
+  "guard_failures": []
+}

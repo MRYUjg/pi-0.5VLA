@@ -1,0 +1,815 @@
+{
+  "node": "ZHIXING-APERTURE-METRIC",
+  "generated_at": "2026-09-30T13:45:47",
+  "note": "只读：未修改任何代码/参数",
+  "ngeom_total": 110,
+  "geom_inventory": [
+    {
+      "id": 23,
+      "geom": "gripper0_g0_vis",
+      "body": "gripper0_base_link",
+      "type": 7,
+      "contype": 0,
+      "conaffinity": 0,
+      "size": [
+        0.03756879145398206,
+        0.03779077002033695,
+        0.07090696160952392
+      ],
+      "pos_world": [
+        -0.1398637677745041,
+        -0.0002862224988483214,
+        0.41101757404507294
+      ],
+      "is_collision": false
+    },
+    {
+      "id": 24,
+      "geom": "gripper0_g1_vis",
+      "body": "gripper0_left_1_link",
+      "type": 7,
+      "contype": 0,
+      "conaffinity": 0,
+      "size": [
+        0.0050058114483946285,
+        0.009003869242518026,
+        0.03260737599436144
+      ],
+      "pos_world": [
+        -0.1442566415821562,
+        0.027846213118071957,
+        0.3358623651308051
+      ],
+      "is_collision": false
+    },
+    {
+      "id": 25,
+      "geom": "gripper0_g2_vis",
+      "body": "gripper0_left_support_link",
+      "type": 7,
+      "contype": 0,
+      "conaffinity": 0,
+      "size": [
+        0.011432129174832216,
+        0.011500739368896406,
+        0.04113592886385258
+      ],
+      "pos_world": [
+        -0.14762115297494066,
+        0.008962886022642311,
+        0.27593093678558817
+      ],
+      "is_collision": false
+    },
+    {
+      "id": 26,
+      "geom": "gripper0_left_fingerpad_col",
+      "body": "gripper0_left_support_link",
+      "type": 7,
+      "contype": 1,
+      "conaffinity": 1,
+      "size": [
+        0.011432129174832216,
+        0.011500739368896406,
+        0.04113592886385258
+      ],
+      "pos_world": [
+        -0.14762115297494066,
+        0.008962886022642311,
+        0.27593093678558817
+      ],
+      "is_collision": true
+    },
+    {
+      "id": 27,
+      "geom": "gripper0_g3_vis",
+      "body": "gripper0_left_2_link",
+      "type": 7,
+      "contype": 0,
+      "conaffinity": 0,
+      "size": [
+        0.005005811453485711,
+        0.009003869245852135,
+        0.032607375994503335
+      ],
+      "pos_world": [
+        -0.1452063950892251,
+        0.013705213905928302,
+        0.31903915228721463
+      ],
+      "is_collision": false
+    },
+    {
+      "id": 28,
+      "geom": "gripper0_g4_vis",
+      "body": "gripper0_right_2_link",
+      "type": 7,
+      "contype": 0,
+      "conaffinity": 0,
+      "size": [
+        0.0050058114483946285,
+        0.009003869242518026,
+        0.03260737599436144
+      ],
+      "pos_world": [
+        -0.1451920951027169,
+        -0.013583216524062804,
+        0.31903834056000335
+      ],
+      "is_collision": false
+    },
+    {
+      "id": 29,
+      "geom": "gripper0_g5_vis",
+      "body": "gripper0_right_1_link",
+      "type": 7,
+      "contype": 0,
+      "conaffinity": 0,
+      "size": [
+        0.0050058114483946285,
+        0.009003869242518026,
+        0.03260737599436144
+      ],
+      "pos_world": [
+        -0.14422845368220402,
+        -0.02772421388784786,
+        0.33586076517032787
+      ],
+      "is_collision": false
+    },
+    {
+      "id": 30,
+      "geom": "gripper0_g6_vis",
+      "body": "gripper0_right_support_link",
+      "type": 7,
+      "contype": 0,
+      "conaffinity": 0,
+      "size": [
+        0.011432129150821823,
+        0.011500739344427958,
+        0.04113592886401175
+      ],
+      "pos_world": [
+        -0.14764556180783045,
+        -0.008840876375006926,
+        0.275932326069829
+      ],
+      "is_collision": false
+    },
+    {
+      "id": 31,
+      "geom": "gripper0_right_fingerpad_col",
+      "body": "gripper0_right_support_link",
+      "type": 7,
+      "contype": 1,
+      "conaffinity": 1,
+      "size": [
+        0.011432129150821823,
+        0.011500739344427958,
+        0.04113592886401175
+      ],
+      "pos_world": [
+        -0.14764556180783045,
+        -0.008840876375006926,
+        0.275932326069829
+      ],
+      "is_collision": true
+    }
+  ],
+  "reset": {
+    "tag": "reset",
+    "Left_1": -0.91,
+    "gripper_qpos": [
+      -0.91,
+      0.91,
+      -0.91,
+      0.91,
+      0.91,
+      0.91
+    ],
+    "aperture_all_finger_collision_mm": 0.1799,
+    "closest_pair_all": {
+      "a": "gripper0_left_fingerpad_col",
+      "b": "gripper0_right_fingerpad_col",
+      "point_a": [
+        -0.1466507905165267,
+        -2.730507998656255e-05,
+        0.2813332152367792
+      ],
+      "point_b": [
+        -0.1466247928945379,
+        0.00014998627506071505,
+        0.28131746692051796
+      ],
+      "n_pts_a": 6778,
+      "n_pts_b": 6801
+    },
+    "aperture_tip_boxes_mm": null,
+    "closest_pair_tip_boxes": null,
+    "n_left_collision_geoms": 1,
+    "n_right_collision_geoms": 1,
+    "n_tip_boxes_left": 0,
+    "n_tip_boxes_right": 0,
+    "geoms_named_pad": [
+      "gripper0_left_fingerpad_col",
+      "gripper0_right_fingerpad_col"
+    ],
+    "all_gripper_geoms": [
+      {
+        "id": 23,
+        "geom": "gripper0_g0_vis",
+        "body": "gripper0_base_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.03756879145398206,
+          0.03779077002033695,
+          0.07090696160952392
+        ],
+        "pos_world": [
+          -0.1398637677745041,
+          -0.0002862224988483214,
+          0.41101757404507294
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 24,
+        "geom": "gripper0_g1_vis",
+        "body": "gripper0_left_1_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.0050058114483946285,
+          0.009003869242518026,
+          0.03260737599436144
+        ],
+        "pos_world": [
+          -0.1442566415821562,
+          0.027846213118071957,
+          0.3358623651308051
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 25,
+        "geom": "gripper0_g2_vis",
+        "body": "gripper0_left_support_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.011432129174832216,
+          0.011500739368896406,
+          0.04113592886385258
+        ],
+        "pos_world": [
+          -0.14762115297494066,
+          0.008962886022642311,
+          0.27593093678558817
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 26,
+        "geom": "gripper0_left_fingerpad_col",
+        "body": "gripper0_left_support_link",
+        "type": 7,
+        "contype": 1,
+        "conaffinity": 1,
+        "size": [
+          0.011432129174832216,
+          0.011500739368896406,
+          0.04113592886385258
+        ],
+        "pos_world": [
+          -0.14762115297494066,
+          0.008962886022642311,
+          0.27593093678558817
+        ],
+        "is_collision": true
+      },
+      {
+        "id": 27,
+        "geom": "gripper0_g3_vis",
+        "body": "gripper0_left_2_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.005005811453485711,
+          0.009003869245852135,
+          0.032607375994503335
+        ],
+        "pos_world": [
+          -0.1452063950892251,
+          0.013705213905928302,
+          0.31903915228721463
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 28,
+        "geom": "gripper0_g4_vis",
+        "body": "gripper0_right_2_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.0050058114483946285,
+          0.009003869242518026,
+          0.03260737599436144
+        ],
+        "pos_world": [
+          -0.1451920951027169,
+          -0.013583216524062804,
+          0.31903834056000335
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 29,
+        "geom": "gripper0_g5_vis",
+        "body": "gripper0_right_1_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.0050058114483946285,
+          0.009003869242518026,
+          0.03260737599436144
+        ],
+        "pos_world": [
+          -0.14422845368220402,
+          -0.02772421388784786,
+          0.33586076517032787
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 30,
+        "geom": "gripper0_g6_vis",
+        "body": "gripper0_right_support_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.011432129150821823,
+          0.011500739344427958,
+          0.04113592886401175
+        ],
+        "pos_world": [
+          -0.14764556180783045,
+          -0.008840876375006926,
+          0.275932326069829
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 31,
+        "geom": "gripper0_right_fingerpad_col",
+        "body": "gripper0_right_support_link",
+        "type": 7,
+        "contype": 1,
+        "conaffinity": 1,
+        "size": [
+          0.011432129150821823,
+          0.011500739344427958,
+          0.04113592886401175
+        ],
+        "pos_world": [
+          -0.14764556180783045,
+          -0.008840876375006926,
+          0.275932326069829
+        ],
+        "is_collision": true
+      }
+    ]
+  },
+  "open_cmd_-1": {
+    "tag": "open_cmd_-1",
+    "Left_1": -0.000898037711458626,
+    "gripper_qpos": [
+      -0.000898,
+      0.001003,
+      -0.000903,
+      0.004861,
+      0.00486,
+      0.005043
+    ],
+    "aperture_all_finger_collision_mm": 89.4914,
+    "closest_pair_all": {
+      "a": "gripper0_left_fingerpad_col",
+      "b": "gripper0_right_fingerpad_col",
+      "point_a": [
+        -0.15760491051863057,
+        0.04483610166154055,
+        0.30494730534675524
+      ],
+      "point_b": [
+        -0.15766961006793112,
+        -0.04465512137335994,
+        0.304789645712753
+      ],
+      "n_pts_a": 6778,
+      "n_pts_b": 6801
+    },
+    "aperture_tip_boxes_mm": null,
+    "closest_pair_tip_boxes": null,
+    "n_left_collision_geoms": 1,
+    "n_right_collision_geoms": 1,
+    "n_tip_boxes_left": 0,
+    "n_tip_boxes_right": 0,
+    "geoms_named_pad": [
+      "gripper0_left_fingerpad_col",
+      "gripper0_right_fingerpad_col"
+    ],
+    "all_gripper_geoms": [
+      {
+        "id": 23,
+        "geom": "gripper0_g0_vis",
+        "body": "gripper0_base_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.03756879145398206,
+          0.03779077002033695,
+          0.07090696160952392
+        ],
+        "pos_world": [
+          -0.14069959410722246,
+          -0.00032439376203640806,
+          0.4135586157159884
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 24,
+        "geom": "gripper0_g1_vis",
+        "body": "gripper0_left_1_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.0050058114483946285,
+          0.009003869242518026,
+          0.03260737599436144
+        ],
+        "pos_world": [
+          -0.14460832759495865,
+          0.050248030085502014,
+          0.34705330348654473
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 25,
+        "geom": "gripper0_g2_vis",
+        "body": "gripper0_left_support_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.011432129174832216,
+          0.011500739368896406,
+          0.04113592886385258
+        ],
+        "pos_world": [
+          -0.14748616791228925,
+          0.053982572976862084,
+          0.29583781028399986
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 26,
+        "geom": "gripper0_left_fingerpad_col",
+        "body": "gripper0_left_support_link",
+        "type": 7,
+        "contype": 1,
+        "conaffinity": 1,
+        "size": [
+          0.011432129174832216,
+          0.011500739368896406,
+          0.04113592886385258
+        ],
+        "pos_world": [
+          -0.14748616791228925,
+          0.053982572976862084,
+          0.29583781028399986
+        ],
+        "is_collision": true
+      },
+      {
+        "id": 27,
+        "geom": "gripper0_g3_vis",
+        "body": "gripper0_left_2_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.005005811453485711,
+          0.009003869245852135,
+          0.032607375994503335
+        ],
+        "pos_world": [
+          -0.14555756186766802,
+          0.036106846063255926,
+          0.330230032373283
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 28,
+        "geom": "gripper0_g4_vis",
+        "body": "gripper0_right_2_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.0050058114483946285,
+          0.009003869242518026,
+          0.03260737599436144
+        ],
+        "pos_world": [
+          -0.14552677401193634,
+          -0.03598818367652755,
+          0.330149195335485
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 29,
+        "geom": "gripper0_g5_vis",
+        "body": "gripper0_right_1_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.0050058114483946285,
+          0.009003869242518026,
+          0.03260737599436144
+        ],
+        "pos_world": [
+          -0.1445639607042693,
+          -0.05012911228149032,
+          0.3469717632555702
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 30,
+        "geom": "gripper0_g6_vis",
+        "body": "gripper0_right_support_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.011432129150821823,
+          0.011500739344427958,
+          0.04113592886401175
+        ],
+        "pos_world": [
+          -0.14747715264886366,
+          -0.053792177841735817,
+          0.2956768609140706
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 31,
+        "geom": "gripper0_right_fingerpad_col",
+        "body": "gripper0_right_support_link",
+        "type": 7,
+        "contype": 1,
+        "conaffinity": 1,
+        "size": [
+          0.011432129150821823,
+          0.011500739344427958,
+          0.04113592886401175
+        ],
+        "pos_world": [
+          -0.14747715264886366,
+          -0.053792177841735817,
+          0.2956768609140706
+        ],
+        "is_collision": true
+      }
+    ]
+  },
+  "close_cmd_+1": {
+    "tag": "close_cmd_+1",
+    "Left_1": -0.9092225369113963,
+    "gripper_qpos": [
+      -0.909223,
+      0.90956,
+      -0.909112,
+      0.903313,
+      0.905274,
+      0.911651
+    ],
+    "aperture_all_finger_collision_mm": 0.0346,
+    "closest_pair_all": {
+      "a": "gripper0_left_fingerpad_col",
+      "b": "gripper0_right_fingerpad_col",
+      "point_a": [
+        -0.1363870244636859,
+        -0.00012017458307458928,
+        0.2845569300753219
+      ],
+      "point_b": [
+        -0.1364208215920154,
+        -0.0001272617687762892,
+        0.28455449588443144
+      ],
+      "n_pts_a": 6778,
+      "n_pts_b": 6801
+    },
+    "aperture_tip_boxes_mm": null,
+    "closest_pair_tip_boxes": null,
+    "n_left_collision_geoms": 1,
+    "n_right_collision_geoms": 1,
+    "n_tip_boxes_left": 0,
+    "n_tip_boxes_right": 0,
+    "geoms_named_pad": [
+      "gripper0_left_fingerpad_col",
+      "gripper0_right_fingerpad_col"
+    ],
+    "all_gripper_geoms": [
+      {
+        "id": 23,
+        "geom": "gripper0_g0_vis",
+        "body": "gripper0_base_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.03756879145398206,
+          0.03779077002033695,
+          0.07090696160952392
+        ],
+        "pos_world": [
+          -0.14057593482449313,
+          -0.00027868402819235477,
+          0.4122753051114251
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 24,
+        "geom": "gripper0_g1_vis",
+        "body": "gripper0_left_1_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.0050058114483946285,
+          0.009003869242518026,
+          0.03260737599436144
+        ],
+        "pos_world": [
+          -0.14496637577525662,
+          0.02787101917053628,
+          0.3371184263515587
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 25,
+        "geom": "gripper0_g2_vis",
+        "body": "gripper0_left_support_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.011432129174832216,
+          0.011500739368896406,
+          0.04113592886385258
+        ],
+        "pos_world": [
+          -0.14832955986780041,
+          0.00901617577241937,
+          0.2771798161065527
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 26,
+        "geom": "gripper0_left_fingerpad_col",
+        "body": "gripper0_left_support_link",
+        "type": 7,
+        "contype": 1,
+        "conaffinity": 1,
+        "size": [
+          0.011432129174832216,
+          0.011500739368896406,
+          0.04113592886385258
+        ],
+        "pos_world": [
+          -0.14832955986780041,
+          0.00901617577241937,
+          0.2771798161065527
+        ],
+        "is_collision": true
+      },
+      {
+        "id": 27,
+        "geom": "gripper0_g3_vis",
+        "body": "gripper0_left_2_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.005005811453485711,
+          0.009003869245852135,
+          0.032607375994503335
+        ],
+        "pos_world": [
+          -0.14591571335315262,
+          0.013733058072920544,
+          0.32029494438660044
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 28,
+        "geom": "gripper0_g4_vis",
+        "body": "gripper0_right_2_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.0050058114483946285,
+          0.009003869242518026,
+          0.03260737599436144
+        ],
+        "pos_world": [
+          -0.14590223960981258,
+          -0.013754827425265872,
+          0.32028108217733264
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 29,
+        "geom": "gripper0_g5_vis",
+        "body": "gripper0_right_1_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.0050058114483946285,
+          0.009003869242518026,
+          0.03260737599436144
+        ],
+        "pos_world": [
+          -0.14493899497395746,
+          -0.02784224007291658,
+          0.3371078757970572
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 30,
+        "geom": "gripper0_g6_vis",
+        "body": "gripper0_right_support_link",
+        "type": 7,
+        "contype": 0,
+        "conaffinity": 0,
+        "size": [
+          0.011432129150821823,
+          0.011500739344427958,
+          0.04113592886401175
+        ],
+        "pos_world": [
+          -0.14836049540011834,
+          -0.009293289325586509,
+          0.2770641683706791
+        ],
+        "is_collision": false
+      },
+      {
+        "id": 31,
+        "geom": "gripper0_right_fingerpad_col",
+        "body": "gripper0_right_support_link",
+        "type": 7,
+        "contype": 1,
+        "conaffinity": 1,
+        "size": [
+          0.011432129150821823,
+          0.011500739344427958,
+          0.04113592886401175
+        ],
+        "pos_world": [
+          -0.14836049540011834,
+          -0.009293289325586509,
+          0.2770641683706791
+        ],
+        "is_collision": true
+      }
+    ]
+  }
+}

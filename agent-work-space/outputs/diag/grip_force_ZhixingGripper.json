@@ -1,0 +1,98 @@
+{
+  "node": "ZHIXING-GRIP-FORCE",
+  "gripper": "ZhixingGripper",
+  "robot": "ECO65",
+  "generated_at": "2026-09-30T14:02:05",
+  "note": "只读：未修改任何代码/参数",
+  "gripper_info": {
+    "class": "ZhixingGripper",
+    "speed": 0.01,
+    "joints": [
+      "gripper0_Left_1_Joint",
+      "gripper0_Left_Support_Joint",
+      "gripper0_Left_2_Joint",
+      "gripper0_Right_2_Joint",
+      "gripper0_Right_1_Joint",
+      "gripper0_Right_Support_Joint"
+    ],
+    "dof": 1
+  },
+  "aperture_reset_mm": 0.17987804309764144,
+  "open_aperture_mm_at_full_open": 89.49138235087207,
+  "D2_grip_force": {
+    "object": "alphabet_soup_1_main",
+    "block_width_mm": 30.0,
+    "closing_axis": [
+      -1.5543433462325576e-05,
+      -0.9999999998792009,
+      0.0
+    ],
+    "grip_site": [
+      -0.1491572169240179,
+      1.716437682807128e-05,
+      0.2675156981293967
+    ],
+    "object_center_at_reset": [
+      -0.11768438980101872,
+      -0.2399988250082556,
+      0.03489224457978379
+    ],
+    "object_center_offset_to_grip_site_mm": [
+      31.472827122999174,
+      -240.01598938508369,
+      -232.6234535496129
+    ],
+    "object_mass_kg": 0.0882,
+    "after_close": {
+      "current_action": [
+        -1.0
+      ],
+      "Left_1": -0.90953488374,
+      "gripper_qpos": [
+        -0.909535,
+        0.90988,
+        -0.909421,
+        0.903589,
+        0.905553,
+        0.911942
+      ],
+      "aperture_mm": 0.023,
+      "ctrl": [
+        -0.91
+      ],
+      "nc_actuator_force": [
+        0.0039492295224069565,
+        15.255172090259943,
+        11.863047847300889,
+        3.2251247942245866,
+        -0.01939597411671679,
+        -0.002075955868278698,
+        -0.029650513021820757
+      ],
+      "qfrc_actuator": [
+        -0.0297,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ncon": 30
+    },
+    "object_center_after_close": [
+      -0.11768438980101872,
+      -0.2399988250082556,
+      0.0348922445797838
+    ],
+    "pulls": [
+      {
+        "force_N": 1.0,
+        "slip_mm": 7559.149153925134,
+        "aperture_mm": 0.027,
+        "Left_1": -0.9097852745541734
+      }
+    ],
+    "pull_out_force_N": 1.0,
+    "static_friction_coeff_est": 1.156
+  }
+}

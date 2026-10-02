@@ -1,0 +1,93 @@
+{
+  "version": "run_real_object_r10",
+  "teacher": "real_object_teacher_r10",
+  "teacher_sha256": "b3c8809a6ee4881f1779d8a2f9852060ddc8a2163e3954b02ef0c1dbd4ded24d",
+  "jobs": [
+    {
+      "case": "bowl",
+      "seed": 51100
+    },
+    {
+      "case": "bowl",
+      "seed": 51101
+    },
+    {
+      "case": "bowl",
+      "seed": 51102
+    },
+    {
+      "case": "bowl",
+      "seed": 51103
+    },
+    {
+      "case": "bowl",
+      "seed": 51104
+    },
+    {
+      "case": "bowl",
+      "seed": 51105
+    },
+    {
+      "case": "bowl",
+      "seed": 51106
+    },
+    {
+      "case": "bowl",
+      "seed": 51107
+    },
+    {
+      "case": "bowl",
+      "seed": 51108
+    },
+    {
+      "case": "bowl",
+      "seed": 51109
+    },
+    {
+      "case": "can",
+      "seed": 51100
+    },
+    {
+      "case": "can",
+      "seed": 51101
+    },
+    {
+      "case": "can",
+      "seed": 51102
+    },
+    {
+      "case": "can",
+      "seed": 51103
+    },
+    {
+      "case": "can",
+      "seed": 51104
+    },
+    {
+      "case": "can",
+      "seed": 51105
+    },
+    {
+      "case": "can",
+      "seed": 51106
+    },
+    {
+      "case": "can",
+      "seed": 51107
+    },
+    {
+      "case": "can",
+      "seed": 51108
+    },
+    {
+      "case": "can",
+      "seed": 51109
+    }
+  ],
+  "workers": 2,
+  "task": "native LIBERO Object task0 can / Spatial task0 bowl; no substitution",
+  "purpose": "scripted safe-path validation; no training dataset, no formal Spatial acceptance",
+  "runtime": "Python3.10 / MuJoCo3.2.6 CPU headless",
+  "upstream_assets_controller_and_gates_changed": false,
+  "acceptance": "native predicates plus real_object_teacher gates; see preregistered protocol"
+}

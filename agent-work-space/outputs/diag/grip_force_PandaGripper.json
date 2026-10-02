@@ -1,0 +1,88 @@
+{
+  "node": "ZHIXING-GRIP-FORCE",
+  "gripper": "PandaGripper",
+  "robot": "ECO65",
+  "generated_at": "2026-09-30T14:04:18",
+  "note": "只读：未修改任何代码/参数",
+  "gripper_info": {
+    "class": "PandaGripper",
+    "speed": 0.01,
+    "joints": [
+      "gripper0_finger_joint1",
+      "gripper0_finger_joint2"
+    ],
+    "dof": 1
+  },
+  "aperture_reset_mm": 40.66599999999998,
+  "open_aperture_mm_at_full_open": 78.99486280266865,
+  "D2_grip_force": {
+    "object": "alphabet_soup_1_main",
+    "block_width_mm": 30.0,
+    "closing_axis": [
+      -0.0004890653090881872,
+      0.9999998804075546,
+      0.0
+    ],
+    "grip_site": [
+      -0.14846572962312035,
+      4.834559866669808e-07,
+      0.26127984073935284
+    ],
+    "object_center_at_reset": [
+      -0.11768438980101872,
+      -0.2399988250082556,
+      0.0348922445797838
+    ],
+    "object_center_offset_to_grip_site_mm": [
+      30.78133982210163,
+      -239.99930846424226,
+      -226.38759615956906
+    ],
+    "object_mass_kg": 0.0882,
+    "after_close": {
+      "current_action": [
+        -1.0,
+        1.0
+      ],
+      "Left_1": null,
+      "gripper_qpos": [
+        0.0005,
+        -0.0005
+      ],
+      "aperture_mm": 0.0,
+      "ctrl": [
+        0.0
+      ],
+      "nc_actuator_force": [
+        -3.4338303197568306e-11,
+        10.067168336575362,
+        9.116012477685155,
+        1.94564241298546,
+        -0.010535763409309567,
+        -1.0193218982931268e-05,
+        -0.49987809921765614,
+        0.49982274888594014
+      ],
+      "qfrc_actuator": [
+        -0.4999,
+        0.4998
+      ],
+      "ncon": 33
+    },
+    "object_center_after_close": [
+      -0.11768438980101872,
+      -0.2399988250082556,
+      0.03489224457978379
+    ],
+    "pulls": [
+      {
+        "force_N": 1.0,
+        "slip_mm": 7101.89953426422,
+        "aperture_mm": 0.0,
+        "Left_1": null
+      }
+    ],
+    "pull_out_force_N": 1.0,
+    "static_friction_coeff_est": 1.156
+  }
+}

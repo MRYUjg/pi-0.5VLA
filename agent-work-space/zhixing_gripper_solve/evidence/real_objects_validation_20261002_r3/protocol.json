@@ -1,0 +1,117 @@
+{
+  "version": "run_real_control_ab_r7",
+  "teacher": "real_object_teacher_r20",
+  "teacher_sha256": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+  "jobs": [
+    {
+      "case": "can",
+      "seed": 52100,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "can",
+      "seed": 52101,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "can",
+      "seed": 52102,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "can",
+      "seed": 52103,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "can",
+      "seed": 52104,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "can",
+      "seed": 52105,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "can",
+      "seed": 52106,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "can",
+      "seed": 52107,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "can",
+      "seed": 52108,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "can",
+      "seed": 52109,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "bowl",
+      "seed": 52100,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "bowl",
+      "seed": 52101,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "bowl",
+      "seed": 52102,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "bowl",
+      "seed": 52103,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "bowl",
+      "seed": 52104,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "bowl",
+      "seed": 52105,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "bowl",
+      "seed": 52106,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "bowl",
+      "seed": 52107,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "bowl",
+      "seed": 52108,
+      "profile": "eco65_no_extra_pd"
+    },
+    {
+      "case": "bowl",
+      "seed": 52109,
+      "profile": "eco65_no_extra_pd"
+    }
+  ],
+  "workers": 2,
+  "task": "native LIBERO Object task0 can / Spatial task0 bowl; no substitution",
+  "purpose": "scripted safe-path validation; no training dataset, no formal Spatial acceptance",
+  "runtime": "Python3.10 / MuJoCo3.2.6 CPU headless",
+  "upstream_sources_changed": false,
+  "runtime_profile_experiment": [
+    "eco65_no_extra_pd"
+  ],
+  "authorization_required": "Explicit user approval required before running eco65_no_extra_pd under AGENTS.md rule 4",
+  "acceptance": "native predicates plus real_object_teacher gates; see preregistered protocol"
+}

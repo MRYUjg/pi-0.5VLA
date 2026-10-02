@@ -1,0 +1,80 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "name": "hollow walls preserve cavity",
+      "pass": true,
+      "intervals": [
+        [
+          -0.042,
+          -0.038,
+          [
+            0
+          ]
+        ],
+        [
+          0.038,
+          0.042,
+          [
+            1
+          ]
+        ]
+      ],
+      "expected": [
+        [
+          -0.042,
+          -0.038
+        ],
+        [
+          0.038,
+          0.042
+        ]
+      ]
+    },
+    {
+      "name": "rotated thin vertex-free slice",
+      "pass": true,
+      "intervals": [
+        [
+          -0.014142135623730949,
+          0.014142135623730949,
+          [
+            0
+          ]
+        ]
+      ],
+      "expected": [
+        [
+          -0.014142135623730952,
+          0.014142135623730952
+        ]
+      ]
+    },
+    {
+      "name": "overlap forms one occupied interval",
+      "pass": true,
+      "intervals": [
+        [
+          -0.02,
+          0.05,
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "expected": [
+        [
+          -0.02,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "ray misses elevated object",
+      "pass": true,
+      "intervals": [],
+      "expected": []
+    }
+  ]
+}

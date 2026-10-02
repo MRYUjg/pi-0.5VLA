@@ -1,0 +1,455 @@
+{
+  "node": "EXPERT-ECO65-PANDA",
+  "generated_at": "2026-09-29T06:03:40",
+  "host_note": "纯 CPU 服务器；不使用 VLA 推理，脚本专家 + 7 维 OSC",
+  "robot": "ECO65",
+  "gripper": "ZhixingGripper",
+  "gripper_actual": {
+    "class": "ZhixingGripper",
+    "dof": 1,
+    "joints": [
+      "gripper0_Left_1_Joint",
+      "gripper0_Left_Support_Joint",
+      "gripper0_Left_2_Joint",
+      "gripper0_Right_2_Joint",
+      "gripper0_Right_1_Joint",
+      "gripper0_Right_Support_Joint"
+    ],
+    "n_actuators": 1,
+    "speed": 0.2
+  },
+  "suite": "libero_object",
+  "task_id": 0,
+  "block": {
+    "width_mm": 13.803779184015472,
+    "depth_mm": 60.0,
+    "height_mm": 70.0,
+    "density": 700.0,
+    "requested_width_mm": 30.0,
+    "grasp_margin_mm": 4.0
+  },
+  "transport_criterion_n4_style": {
+    "max_steps": 220,
+    "tol_m": 0.008
+  },
+  "penetration_soft_limit_mm": 2.0,
+  "assets": {
+    "n4_collect_sha16": "37b24549adad7c2a",
+    "n3_osc_full_chain_sha16": "c0d99a46c56258f8",
+    "n3_grasp_test_sha16": "f2094b6bb6716fc9"
+  },
+  "controller": {
+    "controller_type": "OperationalSpaceController",
+    "controller_output_max": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "controller_input_min": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "controller_input_max": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "control_timestep": 0.05,
+    "action_contract": "7 维 OSC_POSE 归一化动作 ∈[-1,1]：前 3 维平移，满量程 = output_max[0:3] = [0.05, 0.05, 0.05] m；后 3 维旋转，满量程 = output_max[3:6] = [0.5, 0.5, 0.5] rad；第 7 维夹爪 -1 开 / +1 合。"
+  },
+  "state_gripper": {
+    "indices": [
+      0,
+      4
+    ],
+    "names": [
+      "gripper0_Left_1_Joint",
+      "gripper0_Right_1_Joint"
+    ],
+    "resolution": "zhixing_named",
+    "note": "N4 原实现按 Left_1_Joint/Right_1_Joint 写死名字，PandaGripper 上会直接抛错；本脚本按关节名/平动指解析。"
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "trial_label": "ZhixingGripper_w14_t1",
+      "seed": 44000,
+      "block_extent_mm": {
+        "x_depth": 60.0,
+        "y_width_along_closing_axis": 13.803779184015472,
+        "z_height": 70.0
+      },
+      "object_init_sample": {
+        "region": "floor_target_object_region",
+        "xy": [
+          -0.11561,
+          -0.24027
+        ],
+        "yaw_rad": 3.140222,
+        "region_ranges": [
+          -0.145,
+          -0.265,
+          -0.095,
+          -0.215
+        ],
+        "yaw_forced_rad": -3.142964,
+        "yaw_before_forced_rad": -2.524179
+      },
+      "open_budget_mm": 107.77487621437477,
+      "grasp_pinch_target": [
+        -0.11561000000000002,
+        -0.24026999999999998,
+        0.06589224457978382
+      ],
+      "grasp_z": 0.06589224457978382,
+      "grasp_section_width_mm": 13.9,
+      "grasp_fingertip_clear_mm": 46.1,
+      "grasp_plan_scan": [
+        [
+          0.0699,
+          13.9,
+          50.1,
+          true
+        ],
+        [
+          0.0679,
+          13.9,
+          48.1,
+          true
+        ],
+        [
+          0.0659,
+          13.9,
+          46.1,
+          true
+        ],
+        [
+          0.0059,
+          13.9,
+          -13.9,
+          false
+        ],
+        [
+          0.0039,
+          13.9,
+          -15.9,
+          false
+        ],
+        [
+          0.0019,
+          13.9,
+          -17.9,
+          false
+        ],
+        [
+          -0.0001,
+          13.9,
+          -19.9,
+          false
+        ]
+      ],
+      "contact_hook_installed": true,
+      "phases": [],
+      "gates": {
+        "lift_ge_30mm": false,
+        "hold_ge_25mm_40steps": false,
+        "place_release_stable": false,
+        "native_libero_predicate": false,
+        "no_teleport": true,
+        "penetration_within_soft_limit": false,
+        "approach_converged": true,
+        "descend_converged": true
+      },
+      "notes": [
+        "搬运段物体已脱落（高度回落），跳过下潜投放"
+      ],
+      "success": false,
+      "failed_gates": [
+        "lift_ge_30mm",
+        "hold_ge_25mm_40steps",
+        "place_release_stable",
+        "native_libero_predicate",
+        "penetration_within_soft_limit"
+      ],
+      "transport_converged": false,
+      "place_converged": false,
+      "servo_no_timeout_n4": false,
+      "success_n4_style": false,
+      "penetration_peak_pad_mm": 17.334312735803994,
+      "penetration_peak_object_any_mm": 18.80936321978851,
+      "penetration_per_phase_mm": {
+        "approach": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 2200
+        },
+        "descend": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 3400
+        },
+        "close": {
+          "pad_peak_mm": 17.334312735803994,
+          "any_peak_mm": 18.80936321978851,
+          "samples": 17500
+        },
+        "lift": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.10775542021622658,
+          "samples": 575
+        },
+        "hold": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.10775542021622658,
+          "samples": 1000
+        },
+        "transport": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.10775542021622658,
+          "samples": 5500
+        }
+      },
+      "n_samples": 30175,
+      "max_step_disp_m": 0.010923806563014764,
+      "n_frames": 1207,
+      "phase_end": {
+        "approach": [
+          true,
+          88
+        ],
+        "approach_residual_m": 0.003111596532257303,
+        "descend": [
+          true,
+          136
+        ],
+        "descend_converged_pos": true,
+        "descend_residual_m": 0.007985362197346482,
+        "descend_pad_mid_z": 0.10078399374994298,
+        "descend_block_top_z": 0.06989224457978382,
+        "descend_pad_below_block_top_mm": -30.891749170159162,
+        "close_steps": 700,
+        "jaw_after_close_mm": 18.33515279455221,
+        "grip_q_after_close": [
+          -0.909075,
+          0.909416,
+          -0.908963,
+          0.903147,
+          0.905107,
+          0.911482
+        ],
+        "obj_shift_on_close_mm": 49.501569155940004,
+        "close_penetration_peak_mm": 17.334312735803994,
+        "lift_servo": [
+          true,
+          23
+        ],
+        "lift_residual_m": 0.002617601246369925,
+        "lift_mm": -28.098110407992237,
+        "hold_steps_used": 40,
+        "hold_min_mm": -28.098110407992237,
+        "hold_max_mm": -28.098110407992237,
+        "hold_end_mm": -28.098110407992237,
+        "hold_penetration_peak_mm": 0.0,
+        "place_point": [
+          0.0015003039618955785,
+          0.27164886318712034,
+          0.17144845137544745
+        ],
+        "basket_inner_size_mm": [
+          157.33796365323144,
+          169.51924133156447,
+          141.46318482037367
+        ],
+        "transport": [
+          false,
+          220
+        ],
+        "transport_residual_m": 0.07686655728056979,
+        "transport_target": [
+          0.0015003039618955785,
+          0.27164886318712034,
+          0.2614484513754475
+        ],
+        "transport_grip_site": [
+          -0.021818152455922602,
+          0.2502190936857289,
+          0.1913979827729357
+        ],
+        "transport_err_world_m": [
+          0.02331845641781818,
+          0.021429769501391416,
+          0.07005046860251177
+        ],
+        "transport_err_horizontal_m": 0.03166994522559917,
+        "sep_after_transport_mm": 18.34169674502565,
+        "object_lost_after_transport": true,
+        "place": [
+          false,
+          0
+        ],
+        "place_residual_m": null
+      },
+      "wall_seconds": 237.5,
+      "native_success_at_end": false
+    },
+    {
+      "trial": 2,
+      "trial_label": "ZhixingGripper_w14_t2",
+      "seed": 44001,
+      "success": false,
+      "reason": "invalid_grasp_plan_section_too_thin",
+      "open_budget_mm": 107.77487621438875,
+      "planned_section_width_mm": 0.08,
+      "block_width_mm": 13.803779184015472,
+      "plan_scan": [
+        [
+          0.0699,
+          13.9,
+          50.1,
+          true
+        ],
+        [
+          0.0679,
+          13.9,
+          48.1,
+          true
+        ],
+        [
+          0.0659,
+          13.9,
+          46.1,
+          true
+        ],
+        [
+          0.0639,
+          0.1,
+          44.1,
+          true
+        ],
+        [
+          0.0059,
+          13.9,
+          -13.9,
+          false
+        ],
+        [
+          0.0039,
+          13.9,
+          -15.9,
+          false
+        ],
+        [
+          0.0019,
+          13.9,
+          -17.9,
+          false
+        ],
+        [
+          -0.0001,
+          13.9,
+          -19.9,
+          false
+        ]
+      ],
+      "wall_seconds": 24.2
+    },
+    {
+      "trial": 3,
+      "trial_label": "ZhixingGripper_w14_t3",
+      "seed": 44002,
+      "success": false,
+      "reason": "invalid_grasp_plan_section_too_thin",
+      "open_budget_mm": 107.7748762144476,
+      "planned_section_width_mm": 0.08,
+      "block_width_mm": 13.803779184015472,
+      "plan_scan": [
+        [
+          0.0699,
+          13.9,
+          50.1,
+          true
+        ],
+        [
+          0.0679,
+          13.9,
+          48.1,
+          true
+        ],
+        [
+          0.0659,
+          13.9,
+          46.1,
+          true
+        ],
+        [
+          0.0639,
+          0.1,
+          44.1,
+          true
+        ],
+        [
+          0.0059,
+          13.9,
+          -13.9,
+          false
+        ],
+        [
+          0.0039,
+          13.9,
+          -15.9,
+          false
+        ],
+        [
+          0.0019,
+          13.9,
+          -17.9,
+          false
+        ],
+        [
+          -0.0001,
+          13.9,
+          -19.9,
+          false
+        ]
+      ],
+      "wall_seconds": 24.5
+    }
+  ],
+  "summary": {
+    "n_total": 3,
+    "n_success_n3_gates": 0,
+    "success_rate_n3_gates": 0.0,
+    "n_success_n4_style": 0,
+    "success_rate_n4_style": 0.0,
+    "n_transport_converged": 0,
+    "transport_residual_m": [
+      0.07686655728056979,
+      null,
+      null
+    ],
+    "penetration_peak_pad_mm": [
+      17.334312735803994,
+      null,
+      null
+    ],
+    "failed_gate_counts": {
+      "lift_ge_30mm": 1,
+      "hold_ge_25mm_40steps": 1,
+      "place_release_stable": 1,
+      "native_libero_predicate": 1,
+      "penetration_within_soft_limit": 1,
+      "invalid_grasp_plan_section_too_thin": 2
+    }
+  },
+  "verdict": "NOT_PASS"
+}

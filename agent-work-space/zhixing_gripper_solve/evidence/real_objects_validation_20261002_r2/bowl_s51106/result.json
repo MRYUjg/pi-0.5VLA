@@ -1,0 +1,336 @@
+{
+  "version": "real_object_teacher_r10",
+  "case": "bowl",
+  "suite": "libero_spatial",
+  "task_name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+  "seed": 51106,
+  "object_name": "akita_black_bowl_1",
+  "recipient": "plate_1",
+  "original_assets": true,
+  "object_substitution": false,
+  "initial_qpos": [
+    -0.12641316059495067,
+    -0.22254442948519826,
+    -0.8405778710684724,
+    -0.5641064224384896,
+    1.5636387799150968,
+    -1.6975022081926294,
+    -0.0008979809552131441,
+    0.004669066613566893,
+    -0.0018361099382088787,
+    0.004769293987783115,
+    0.004687568016152064,
+    0.005469212455209056,
+    -0.15819708559202195,
+    0.2504941786941117,
+    0.9243873175898133,
+    0.8034798869562685,
+    0.2466985052114578,
+    0.34258451312841454,
+    0.4197567988106211,
+    -0.19258726208419638,
+    0.32712312948431954,
+    0.898403589198959,
+    0.7288222252741041,
+    -7.231454826701439e-05,
+    3.4573737025936195e-05,
+    0.6847029702884055,
+    0.06754112325260672,
+    0.02228498759556785,
+    0.9093709548372153,
+    0.7071067811865476,
+    5.558863664053973e-17,
+    5.566490176566364e-17,
+    0.7071067811865477,
+    -0.2033486096481682,
+    0.19729362726526678,
+    0.8993408438272779,
+    0.7071904797061663,
+    6.62433285679402e-06,
+    8.007255119968663e-06,
+    0.7070230726821907,
+    0.10883911888867713,
+    0.19541385632510022,
+    0.9024998346667837,
+    0.42384328222547263,
+    -2.9129358521868154e-05,
+    2.2777150030014058e-06,
+    0.905735541567533,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_geometry": {
+    "tcp": [
+      -0.20822748252411583,
+      4.49415123252061e-05,
+      1.1769434205085614
+    ],
+    "R": [
+      [
+        -0.0004938417823807265,
+        0.9983824486811669,
+        -0.05685281246949682
+      ],
+      [
+        0.9999998771435424,
+        0.00049547722816738,
+        1.467027888736594e-05
+      ],
+      [
+        4.281582289431332e-05,
+        -0.05685279823996499,
+        -0.9983825707107932
+      ]
+    ],
+    "tcp_in_mount": [
+      -3.2242868087378147e-19,
+      -1.1680170356414524e-17,
+      0.20254000000000014
+    ],
+    "tcp_rotation_in_mount": [
+      [
+        1.0000000000000007,
+        -2.7182033579469534e-17,
+        -1.623081212260482e-18
+      ],
+      [
+        -2.7182033579469534e-17,
+        1.0000000000000007,
+        6.11716609525315e-18
+      ],
+      [
+        -1.623081212260482e-18,
+        6.11716609525315e-18,
+        1.0000000000000009
+      ]
+    ],
+    "object": [
+      [
+        -0.17657620003391078,
+        0.19161854599132666,
+        0.8999251958996153
+      ],
+      [
+        -0.0839861640091053,
+        0.29850632247900744,
+        0.9986638355886571
+      ]
+    ],
+    "gripper_outer": [
+      [
+        -0.23604020496821965,
+        -0.07528400785305382,
+        1.174062085224601
+      ],
+      [
+        -0.1592731706209023,
+        0.07551436962431363,
+        1.381277031127599
+      ]
+    ],
+    "gripper_collision": [
+      [
+        -0.21956591721581795,
+        -0.07528220135031075,
+        1.174062085224601
+      ],
+      [
+        -0.19462669042275363,
+        0.07551233202670299,
+        1.243040370475028
+      ]
+    ],
+    "basket": [
+      [
+        0.03916001813972308,
+        0.12591332176909897,
+        0.8999843134421133
+      ],
+      [
+        0.1779892129183255,
+        0.26358499347471004,
+        0.9189367959039688
+      ]
+    ],
+    "basket_pos": [
+      0.10883911888867713,
+      0.19541385632510022,
+      0.9024998346667837
+    ],
+    "geom_names": [
+      "gripper0_g0_vis",
+      "gripper0_g1_vis",
+      "gripper0_g2_vis",
+      "gripper0_left_fingerpad_col",
+      "gripper0_g3_vis",
+      "gripper0_g4_vis",
+      "gripper0_g5_vis",
+      "gripper0_g6_vis",
+      "gripper0_right_fingerpad_col"
+    ],
+    "basket_geoms": [
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163
+    ],
+    "gripper_geoms": [
+      32,
+      37
+    ],
+    "object_geoms": [
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83
+    ]
+  },
+  "initial_state_sha256": "a32f59ac96448a4f475ea7098169fbd5c303c1c070c7613f47dfba000a7efbef",
+  "success": false,
+  "gates": {
+    "initial_goal_false": true,
+    "all_stages_complete": false,
+    "lift_30mm": false,
+    "hold_40steps": false,
+    "bilateral_hold": false,
+    "unsupported_hold": false,
+    "penetration_2mm": false,
+    "max_step_disp_20mm": true,
+    "native_success_window": false,
+    "post_drift_5mm": false,
+    "target_support_contact": false,
+    "no_physics_warnings": true
+  },
+  "failure": {
+    "stage": "planning",
+    "type": "PathRejected",
+    "reason": "no feasible native-object grasp",
+    "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r10.py\", line 124, in main\n    plan=plan_grasp(env,a.case);pin,R=plan['pin'],plan['R'];print('GRASP',a.case,plan['strategy'],pin,'tilt',plan['tilt_deg'],'width',plan['material_width_m'],flush=True)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r10.py\", line 75, in plan_grasp\n    if not feasible:S.PLAN['grasp_candidates']=candidates;raise S.PathRejected('no feasible native-object grasp')\nsafe_teacher_r8.PathRejected: no feasible native-object grasp\n"
+  },
+  "plan": {
+    "grasp_candidates": []
+  },
+  "phases": {},
+  "calibration": {
+    "known_mass_kg": 1,
+    "weight_N": 9.81,
+    "normal_force_N": 9.809999999999999,
+    "ncon": 4,
+    "pass": true
+  },
+  "object_mass_kg": null,
+  "mujoco_version": "3.2.6",
+  "sources": {
+    "/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r10.py": "b3c8809a6ee4881f1779d8a2f9852060ddc8a2163e3954b02ef0c1dbd4ded24d",
+    "/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+    "/app/agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+    "/app/agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+    "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+    "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+    "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+    "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+    "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+    "/app/third_party/libero/libero/libero/assets/stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml": "18c1074cfa09baea739bb75928f9bd2bd80e22ac18655f6a27f005dbf77ccfda"
+  },
+  "physics_warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "control_contract": {
+    "controller_type": "OperationalSpaceController",
+    "controller_output_max": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "controller_input_min": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "controller_input_max": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "control_timestep": 0.05,
+    "action_contract": "7 维 OSC_POSE 归一化动作 ∈[-1,1]：前 3 维平移，满量程 = output_max[0:3] = [0.05, 0.05, 0.05] m；后 3 维旋转，满量程 = output_max[3:6] = [0.5, 0.5, 0.5] rad；第 7 维夹爪 -1 开 / +1 合。"
+  },
+  "max_step_disp_m": 0.0,
+  "wall_seconds": 19.852733850479126,
+  "teacher_residual_correction": {
+    "gain_per_step": 0.05,
+    "axis_cap_m": 0.025,
+    "activation_position_m": 0.05,
+    "activation_rotation_rad": 0.1,
+    "bowl_rotation_increment_floor_rad": {
+      "carry_and_release": 0.12,
+      "grasp_lift_hold": 0.08
+    },
+    "bowl_translation_increment_floor_m": {
+      "clearance_lift_transport_place": 0.03,
+      "other": 0.02
+    }
+  },
+  "guard_failures": [],
+  "scope": "native can/bowl task diagnostics; CPU no rendering or training data"
+}

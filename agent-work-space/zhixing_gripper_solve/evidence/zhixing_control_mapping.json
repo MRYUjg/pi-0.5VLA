@@ -1,0 +1,817 @@
+{
+ "node": "ZHIXING-MAP-REPEAT",
+ "generated_at": "2026-10-01T13:07:32",
+ "gripper_speed_env": "0.01",
+ "note": "只读：未修改任何文件",
+ "speed_effective": 0.01,
+ "A_command_map": [
+  {
+   "current_action": 1.0,
+   "ctrl": 0.0,
+   "Left_1": -0.0009,
+   "gripper_qpos": [
+    -0.0009,
+    0.001,
+    -0.0009,
+    0.0049,
+    0.0049,
+    0.005
+   ],
+   "aperture_mm": 89.4914,
+   "min_clearance_mm": 89.4914,
+   "cmd": -1.0,
+   "aperture_before_mm": 89.4914
+  },
+  {
+   "current_action": 1.0,
+   "ctrl": 0.0,
+   "Left_1": -0.0009,
+   "gripper_qpos": [
+    -0.0009,
+    0.001,
+    -0.0009,
+    0.0049,
+    0.0049,
+    0.005
+   ],
+   "aperture_mm": 89.4914,
+   "min_clearance_mm": 89.4914,
+   "cmd": -0.5,
+   "aperture_before_mm": 89.4914
+  },
+  {
+   "current_action": 1.0,
+   "ctrl": 0.0,
+   "Left_1": -0.0009,
+   "gripper_qpos": [
+    -0.0009,
+    0.001,
+    -0.0009,
+    0.0049,
+    0.0049,
+    0.005
+   ],
+   "aperture_mm": 89.4914,
+   "min_clearance_mm": 89.4914,
+   "cmd": 0.0,
+   "aperture_before_mm": 89.4914
+  },
+  {
+   "current_action": -1.0,
+   "ctrl": -0.91,
+   "Left_1": -0.9098,
+   "gripper_qpos": [
+    -0.9098,
+    0.9102,
+    -0.9097,
+    0.9038,
+    0.9058,
+    0.9122
+   ],
+   "aperture_mm": 0.0242,
+   "min_clearance_mm": 0.0242,
+   "cmd": 0.1,
+   "aperture_before_mm": 89.4914
+  },
+  {
+   "current_action": -1.0,
+   "ctrl": -0.91,
+   "Left_1": -0.9098,
+   "gripper_qpos": [
+    -0.9098,
+    0.9102,
+    -0.9097,
+    0.9038,
+    0.9058,
+    0.9122
+   ],
+   "aperture_mm": 0.0242,
+   "min_clearance_mm": 0.0242,
+   "cmd": 0.2,
+   "aperture_before_mm": 89.4914
+  },
+  {
+   "current_action": -1.0,
+   "ctrl": -0.91,
+   "Left_1": -0.9098,
+   "gripper_qpos": [
+    -0.9098,
+    0.9102,
+    -0.9097,
+    0.9038,
+    0.9058,
+    0.9122
+   ],
+   "aperture_mm": 0.0242,
+   "min_clearance_mm": 0.0242,
+   "cmd": 0.3,
+   "aperture_before_mm": 89.4914
+  },
+  {
+   "current_action": -1.0,
+   "ctrl": -0.91,
+   "Left_1": -0.9098,
+   "gripper_qpos": [
+    -0.9098,
+    0.9102,
+    -0.9097,
+    0.9038,
+    0.9058,
+    0.9122
+   ],
+   "aperture_mm": 0.0242,
+   "min_clearance_mm": 0.0242,
+   "cmd": 0.5,
+   "aperture_before_mm": 89.4914
+  },
+  {
+   "current_action": -1.0,
+   "ctrl": -0.91,
+   "Left_1": -0.9098,
+   "gripper_qpos": [
+    -0.9098,
+    0.9102,
+    -0.9097,
+    0.9038,
+    0.9058,
+    0.9122
+   ],
+   "aperture_mm": 0.0242,
+   "min_clearance_mm": 0.0242,
+   "cmd": 1.0,
+   "aperture_before_mm": 89.4914
+  }
+ ],
+ "B_dynamic": {
+  "close_traj": [
+   {
+    "current_action": -0.25,
+    "ctrl": -0.5688,
+    "Left_1": -0.7281,
+    "gripper_qpos": [
+     -0.7281,
+     0.7286,
+     -0.7281,
+     0.6994,
+     0.6978,
+     0.706
+    ],
+    "aperture_mm": 31.7361,
+    "min_clearance_mm": 31.7361,
+    "i": 0
+   },
+   {
+    "current_action": -0.5,
+    "ctrl": -0.6825,
+    "Left_1": -0.4894,
+    "gripper_qpos": [
+     -0.4894,
+     0.4887,
+     -0.4899,
+     0.4789,
+     0.4749,
+     0.4746
+    ],
+    "aperture_mm": 52.1653,
+    "min_clearance_mm": 52.1653,
+    "i": 1
+   },
+   {
+    "current_action": -0.75,
+    "ctrl": -0.7963,
+    "Left_1": -0.7061,
+    "gripper_qpos": [
+     -0.7061,
+     0.7046,
+     -0.7068,
+     0.6876,
+     0.6859,
+     0.6922
+    ],
+    "aperture_mm": 30.0209,
+    "min_clearance_mm": 30.0209,
+    "i": 2
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9098,
+    "gripper_qpos": [
+     -0.9098,
+     0.9101,
+     -0.9097,
+     0.9038,
+     0.9058,
+     0.9122
+    ],
+    "aperture_mm": 0.0269,
+    "min_clearance_mm": 0.0269,
+    "i": 20
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9092,
+    "gripper_qpos": [
+     -0.9092,
+     0.9096,
+     -0.9091,
+     0.9033,
+     0.9053,
+     0.9117
+    ],
+    "aperture_mm": 0.0346,
+    "min_clearance_mm": 0.0346,
+    "i": 40
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9098,
+    "gripper_qpos": [
+     -0.9098,
+     0.9102,
+     -0.9097,
+     0.9038,
+     0.9058,
+     0.9122
+    ],
+    "aperture_mm": 0.0242,
+    "min_clearance_mm": 0.0242,
+    "i": 60
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9091,
+    "gripper_qpos": [
+     -0.9091,
+     0.9095,
+     -0.909,
+     0.9032,
+     0.9052,
+     0.9116
+    ],
+    "aperture_mm": 0.0351,
+    "min_clearance_mm": 0.0351,
+    "i": 80
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9097,
+    "gripper_qpos": [
+     -0.9097,
+     0.9101,
+     -0.9096,
+     0.9037,
+     0.9057,
+     0.9121
+    ],
+    "aperture_mm": 0.0249,
+    "min_clearance_mm": 0.0249,
+    "i": 100
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9091,
+    "gripper_qpos": [
+     -0.9091,
+     0.9094,
+     -0.909,
+     0.9031,
+     0.9051,
+     0.9115
+    ],
+    "aperture_mm": 0.037,
+    "min_clearance_mm": 0.037,
+    "i": 120
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9095,
+    "gripper_qpos": [
+     -0.9095,
+     0.9099,
+     -0.9094,
+     0.9036,
+     0.9056,
+     0.9119
+    ],
+    "aperture_mm": 0.0232,
+    "min_clearance_mm": 0.0232,
+    "i": 140
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9096,
+    "gripper_qpos": [
+     -0.9096,
+     0.9099,
+     -0.9094,
+     0.9036,
+     0.9056,
+     0.912
+    ],
+    "aperture_mm": 0.0397,
+    "min_clearance_mm": 0.0397,
+    "i": 160
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9094,
+    "gripper_qpos": [
+     -0.9094,
+     0.9097,
+     -0.9093,
+     0.9034,
+     0.9054,
+     0.9118
+    ],
+    "aperture_mm": 0.0278,
+    "min_clearance_mm": 0.0278,
+    "i": 180
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9098,
+    "gripper_qpos": [
+     -0.9098,
+     0.9101,
+     -0.9097,
+     0.9038,
+     0.9058,
+     0.9122
+    ],
+    "aperture_mm": 0.0269,
+    "min_clearance_mm": 0.0269,
+    "i": 200
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9092,
+    "gripper_qpos": [
+     -0.9092,
+     0.9096,
+     -0.9091,
+     0.9033,
+     0.9053,
+     0.9117
+    ],
+    "aperture_mm": 0.0346,
+    "min_clearance_mm": 0.0346,
+    "i": 220
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9098,
+    "gripper_qpos": [
+     -0.9098,
+     0.9102,
+     -0.9097,
+     0.9038,
+     0.9058,
+     0.9122
+    ],
+    "aperture_mm": 0.0242,
+    "min_clearance_mm": 0.0242,
+    "i": 240
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9091,
+    "gripper_qpos": [
+     -0.9091,
+     0.9095,
+     -0.909,
+     0.9032,
+     0.9052,
+     0.9116
+    ],
+    "aperture_mm": 0.0351,
+    "min_clearance_mm": 0.0351,
+    "i": 260
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9097,
+    "gripper_qpos": [
+     -0.9097,
+     0.9101,
+     -0.9096,
+     0.9037,
+     0.9057,
+     0.9121
+    ],
+    "aperture_mm": 0.0249,
+    "min_clearance_mm": 0.0249,
+    "i": 280
+   },
+   {
+    "current_action": -1.0,
+    "ctrl": -0.91,
+    "Left_1": -0.9091,
+    "gripper_qpos": [
+     -0.9091,
+     0.9094,
+     -0.909,
+     0.9031,
+     0.9051,
+     0.9115
+    ],
+    "aperture_mm": 0.037,
+    "min_clearance_mm": 0.037,
+    "i": 300
+   }
+  ],
+  "open_traj": [
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 0
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 1
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 2
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 20
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 40
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 60
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 80
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 100
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 120
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 140
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 160
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 180
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 200
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 220
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 240
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 260
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 280
+   },
+   {
+    "current_action": 1.0,
+    "ctrl": 0.0,
+    "Left_1": -0.0009,
+    "gripper_qpos": [
+     -0.0009,
+     0.001,
+     -0.0009,
+     0.0049,
+     0.0049,
+     0.005
+    ],
+    "aperture_mm": 89.4914,
+    "min_clearance_mm": 89.4914,
+    "i": 300
+   }
+  ],
+  "closed_aperture_mm": 0.037,
+  "open_aperture_mm": 89.4914
+ },
+ "C_repeatability": {
+  "from_reset": {
+   "n": 10,
+   "open_mm": {
+    "mean": 89.4914,
+    "std": 0.0,
+    "min": 89.4914,
+    "max": 89.4914,
+    "range": 0.0
+   },
+   "closed_mm": {
+    "mean": 0.0242,
+    "std": 0.0,
+    "min": 0.0242,
+    "max": 0.0242,
+    "range": 0.0
+   },
+   "closed_min_clearance_mean_mm": 0.0242,
+   "pass_n3_criterion": true,
+   "raw_open_mm": [
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914
+   ],
+   "raw_closed_mm": [
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242
+   ]
+  },
+  "from_full_open": {
+   "n": 10,
+   "open_mm": {
+    "mean": 89.4914,
+    "std": 0.0,
+    "min": 89.4914,
+    "max": 89.4914,
+    "range": 0.0
+   },
+   "closed_mm": {
+    "mean": 0.0242,
+    "std": 0.0,
+    "min": 0.0242,
+    "max": 0.0242,
+    "range": 0.0
+   },
+   "closed_min_clearance_mean_mm": 0.0242,
+   "pass_n3_criterion": true,
+   "raw_open_mm": [
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914,
+    89.4914
+   ],
+   "raw_closed_mm": [
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242,
+    0.0242
+   ]
+  }
+ }
+}

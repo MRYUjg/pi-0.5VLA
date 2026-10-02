@@ -1,0 +1,38 @@
+{
+  "version": "compare_real_control_ab_r1",
+  "pairs": [
+    {
+      "case": "can",
+      "seed": 49100,
+      "initial_state_matched": true,
+      "same_source_fingerprints": true,
+      "same_control_contract": true,
+      "expected_profile_values": true,
+      "baseline_success": true,
+      "candidate_success": true,
+      "baseline_failure": null,
+      "candidate_failure": null,
+      "baseline_profile": {
+        "initialization_profile": "legacy",
+        "profile_applied_after_quiet_reset": true,
+        "extra_joint_pd_profile": "legacy",
+        "extra_joint_pd_kp": 3.0,
+        "controller_eef_name": "gripper0_grip_site"
+      },
+      "candidate_profile": {
+        "initialization_profile": "legacy",
+        "profile_applied_after_quiet_reset": true,
+        "extra_joint_pd_profile": "eco65_no_extra_pd",
+        "extra_joint_pd_kp": 0.0,
+        "controller_eef_name": "gripper0_grip_site"
+      }
+    }
+  ],
+  "numeric_audit_pass": true,
+  "comparison_valid": true,
+  "baseline_success": 1,
+  "candidate_success": 1,
+  "total_pairs": 1,
+  "scope": "Paired evidence for these cases only; not proof that PD explains every failure or changes production defaults.",
+  "eligible_for_fresh_validation": true
+}

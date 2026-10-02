@@ -1,0 +1,502 @@
+{
+  "meta": {
+    "generated_at": "2026-09-30T14:52:32",
+    "robot": "ECO65",
+    "gripper": "ZhixingGripper",
+    "suite": "libero_spatial",
+    "task_id": 0,
+    "seed": 7,
+    "steps_per_phase": 60,
+    "MUJOCO_GL": "osmesa",
+    "task_language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+    "control_freq_hz": 20.0
+  },
+  "checks": {
+    "robot_object_recreated_on_reset": true,
+    "cmd_minus1_opens": true,
+    "cmd_plus1_closes": true,
+    "sign_convention_ok": true,
+    "no_nan_inf": true,
+    "max_connect_residual_m": 9.084246926311279e-05
+  },
+  "errors": [],
+  "structure": {
+    "gripper_class": "ZhixingGripper",
+    "gripper_dof": 1,
+    "n_gripper_joints": 6,
+    "gripper_joints_attr": [
+      "gripper0_Left_1_Joint",
+      "gripper0_Left_Support_Joint",
+      "gripper0_Left_2_Joint",
+      "gripper0_Right_2_Joint",
+      "gripper0_Right_1_Joint",
+      "gripper0_Right_Support_Joint"
+    ],
+    "declared_init_qpos": [
+      -0.91,
+      0.91,
+      -0.91,
+      0.91,
+      0.91,
+      0.91
+    ],
+    "declared_init_qpos_len": 6,
+    "current_action_len": 1,
+    "actuators": [
+      {
+        "name": "gripper0_gripper",
+        "ctrlrange": [
+          -0.91,
+          0.0
+        ],
+        "gear": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "joint_ranges": {
+      "Left_1_Joint": {
+        "qpos_adr": 6,
+        "range": [
+          -0.91,
+          0.0
+        ]
+      },
+      "Left_Support_Joint": {
+        "qpos_adr": 7,
+        "range": [
+          0.0,
+          0.0
+        ]
+      },
+      "Left_2_Joint": {
+        "qpos_adr": 8,
+        "range": [
+          0.0,
+          0.0
+        ]
+      },
+      "Right_2_Joint": {
+        "qpos_adr": 9,
+        "range": [
+          0.0,
+          0.0
+        ]
+      },
+      "Right_1_Joint": {
+        "qpos_adr": 10,
+        "range": [
+          0.0,
+          0.0
+        ]
+      },
+      "Right_Support_Joint": {
+        "qpos_adr": 11,
+        "range": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "sim_qpos_len": 51
+  },
+  "reset_declared": {
+    "tag": "declared_broadcast",
+    "gripper_qpos": [
+      -0.91,
+      0.91,
+      -0.91,
+      0.91,
+      0.91,
+      0.91
+    ],
+    "qpos_by_name": {
+      "Left_1_Joint": -0.91,
+      "Left_Support_Joint": 0.91,
+      "Left_2_Joint": -0.91,
+      "Right_2_Joint": 0.91,
+      "Right_1_Joint": 0.91,
+      "Right_Support_Joint": 0.91
+    },
+    "joint_eq_residuals": [
+      {
+        "eq": "eq_Left_2",
+        "joint1": "Left_2_Joint",
+        "joint2": "Left_1_Joint",
+        "predicted": -0.91,
+        "actual": -0.91,
+        "residual_rad": 0.0
+      },
+      {
+        "eq": "eq_Right_1",
+        "joint1": "Right_1_Joint",
+        "joint2": "Left_1_Joint",
+        "predicted": 0.91,
+        "actual": 0.91,
+        "residual_rad": 0.0
+      },
+      {
+        "eq": "eq_Right_2",
+        "joint1": "Right_2_Joint",
+        "joint2": "Left_1_Joint",
+        "predicted": 0.91,
+        "actual": 0.91,
+        "residual_rad": 0.0
+      },
+      {
+        "eq": "eq_Left_Support",
+        "joint1": "Left_Support_Joint",
+        "joint2": "Left_1_Joint",
+        "predicted": 0.91,
+        "actual": 0.91,
+        "residual_rad": 0.0
+      },
+      {
+        "eq": "eq_Right_Support",
+        "joint1": "Right_Support_Joint",
+        "joint2": "Left_1_Joint",
+        "predicted": 0.91,
+        "actual": 0.91,
+        "residual_rad": 0.0
+      }
+    ],
+    "connect_residuals": [
+      {
+        "eq": "conn_left",
+        "site1": "Left_Support_tip",
+        "site2": "Left_2_connect",
+        "distance_m": 7.14885240239133e-08
+      },
+      {
+        "eq": "conn_right",
+        "site1": "Right_Support_tip",
+        "site2": "Right_2_connect",
+        "distance_m": 1.7537402256312936e-07
+      }
+    ],
+    "tip_separation_m": 0.022540714955210435,
+    "has_nan": false
+  },
+  "motion": {
+    "start_separation_m": 0.022540714955210435,
+    "full_open_separation_m": 0.11258278441506135,
+    "full_closed_separation_m": 0.022928730876425087,
+    "opening_range_m": 0.08965405353863626,
+    "state_full_open": {
+      "tag": "full_open",
+      "gripper_qpos": [
+        -0.0008903356781797556,
+        0.004707223376822248,
+        -0.001874787813812486,
+        0.0047641168522145685,
+        0.004725401966587478,
+        0.005362218282607375
+      ],
+      "qpos_by_name": {
+        "Left_1_Joint": -0.0008903356781797556,
+        "Left_Support_Joint": 0.004707223376822248,
+        "Left_2_Joint": -0.001874787813812486,
+        "Right_2_Joint": 0.0047641168522145685,
+        "Right_1_Joint": 0.004725401966587478,
+        "Right_Support_Joint": 0.005362218282607375
+      },
+      "joint_eq_residuals": [
+        {
+          "eq": "eq_Left_2",
+          "joint1": "Left_2_Joint",
+          "joint2": "Left_1_Joint",
+          "predicted": -0.0008903356781797556,
+          "actual": -0.001874787813812486,
+          "residual_rad": -0.0009844521356327306
+        },
+        {
+          "eq": "eq_Right_1",
+          "joint1": "Right_1_Joint",
+          "joint2": "Left_1_Joint",
+          "predicted": 0.0008903356781797556,
+          "actual": 0.004725401966587478,
+          "residual_rad": 0.0038350662884077224
+        },
+        {
+          "eq": "eq_Right_2",
+          "joint1": "Right_2_Joint",
+          "joint2": "Left_1_Joint",
+          "predicted": 0.0008903356781797556,
+          "actual": 0.0047641168522145685,
+          "residual_rad": 0.003873781174034813
+        },
+        {
+          "eq": "eq_Left_Support",
+          "joint1": "Left_Support_Joint",
+          "joint2": "Left_1_Joint",
+          "predicted": 0.0008903356781797556,
+          "actual": 0.004707223376822248,
+          "residual_rad": 0.003816887698642492
+        },
+        {
+          "eq": "eq_Right_Support",
+          "joint1": "Right_Support_Joint",
+          "joint2": "Left_1_Joint",
+          "predicted": 0.0008903356781797556,
+          "actual": 0.005362218282607375,
+          "residual_rad": 0.00447188260442762
+        }
+      ],
+      "connect_residuals": [
+        {
+          "eq": "conn_left",
+          "site1": "Left_Support_tip",
+          "site2": "Left_2_connect",
+          "distance_m": 0.00010224337923901076
+        },
+        {
+          "eq": "conn_right",
+          "site1": "Right_Support_tip",
+          "site2": "Right_2_connect",
+          "distance_m": 1.428368138790238e-05
+        }
+      ],
+      "tip_separation_m": 0.11258278441506135,
+      "has_nan": false
+    },
+    "state_full_closed": {
+      "tag": "full_closed",
+      "gripper_qpos": [
+        -0.909735409956494,
+        0.915433360706669,
+        -0.9082149219214278,
+        0.9054522576139614,
+        0.9069839662582209,
+        0.9136109801477572
+      ],
+      "qpos_by_name": {
+        "Left_1_Joint": -0.909735409956494,
+        "Left_Support_Joint": 0.915433360706669,
+        "Left_2_Joint": -0.9082149219214278,
+        "Right_2_Joint": 0.9054522576139614,
+        "Right_1_Joint": 0.9069839662582209,
+        "Right_Support_Joint": 0.9136109801477572
+      },
+      "joint_eq_residuals": [
+        {
+          "eq": "eq_Left_2",
+          "joint1": "Left_2_Joint",
+          "joint2": "Left_1_Joint",
+          "predicted": -0.909735409956494,
+          "actual": -0.9082149219214278,
+          "residual_rad": 0.0015204880350662142
+        },
+        {
+          "eq": "eq_Right_1",
+          "joint1": "Right_1_Joint",
+          "joint2": "Left_1_Joint",
+          "predicted": 0.909735409956494,
+          "actual": 0.9069839662582209,
+          "residual_rad": -0.0027514436982731816
+        },
+        {
+          "eq": "eq_Right_2",
+          "joint1": "Right_2_Joint",
+          "joint2": "Left_1_Joint",
+          "predicted": 0.909735409956494,
+          "actual": 0.9054522576139614,
+          "residual_rad": -0.004283152342532626
+        },
+        {
+          "eq": "eq_Left_Support",
+          "joint1": "Left_Support_Joint",
+          "joint2": "Left_1_Joint",
+          "predicted": 0.909735409956494,
+          "actual": 0.915433360706669,
+          "residual_rad": 0.005697950750174985
+        },
+        {
+          "eq": "eq_Right_Support",
+          "joint1": "Right_Support_Joint",
+          "joint2": "Left_1_Joint",
+          "predicted": 0.909735409956494,
+          "actual": 0.9136109801477572,
+          "residual_rad": 0.003875570191263167
+        }
+      ],
+      "connect_residuals": [
+        {
+          "eq": "conn_left",
+          "site1": "Left_Support_tip",
+          "site2": "Left_2_connect",
+          "distance_m": 7.432648587478404e-05
+        },
+        {
+          "eq": "conn_right",
+          "site1": "Right_Support_tip",
+          "site2": "Right_2_connect",
+          "distance_m": 9.084246926311279e-05
+        }
+      ],
+      "tip_separation_m": 0.022928730876425087,
+      "has_nan": false
+    },
+    "fingerpad_penetration": {
+      "max_penetration_m": -5.127345124447086e-07,
+      "n_fingerpad_contacts": 1,
+      "raw": [
+        {
+          "geom1": "gripper0_left_fingerpad_col",
+          "geom2": "gripper0_right_fingerpad_col",
+          "dist": -5.127345124447086e-07
+        }
+      ]
+    }
+  },
+  "timing": {
+    "control_freq_hz": 20.0,
+    "default_speed": "0.2",
+    "steps_to_full_close": 8,
+    "seconds_to_full_close": 0.4
+  },
+  "speed_ablation": [
+    {
+      "speed": 0.2,
+      "full_open_separation_m": 0.11258297143514114,
+      "full_closed_separation_m": 0.039090370215921974,
+      "steps_to_full_close": 2,
+      "close_traj_sep": [
+        0.04784364702161131,
+        0.039488237027163704,
+        0.03942864516618211,
+        0.03942135381791638,
+        0.0394172301772269,
+        0.039412754254147614,
+        0.039407767319730065,
+        0.039402462735031216,
+        0.03939698553244425,
+        0.03939141430297884,
+        0.03938579140015898,
+        0.03938013553538218,
+        0.03937445558575678,
+        0.03936875612046467,
+        0.03936303935346746,
+        0.039357608412750565,
+        0.03935185742686921,
+        0.039346092261396425,
+        0.039340312093468104,
+        0.0393345167568692,
+        0.039328706262017725,
+        0.039322880645076656,
+        0.03931703994608929,
+        0.03931118420588723,
+        0.0393053134655773,
+        0.039299427766408004,
+        0.03929352714972828,
+        0.039287611656965794,
+        0.039281681329626804,
+        0.03927573620929711,
+        0.0392697763376497,
+        0.03926380175644852,
+        0.03925781250755808,
+        0.039251808632948755,
+        0.039245790174700104,
+        0.039239757175009216,
+        0.03923370967619133,
+        0.03922764772068723,
+        0.03922157135106216,
+        0.03921548061001318,
+        0.03920937554036848,
+        0.03920325618508898,
+        0.039197122587272384,
+        0.03919097478995392,
+        0.039184812825450534,
+        0.03917834149128916,
+        0.039172151971833664,
+        0.03916594884455229,
+        0.039159730594356935,
+        0.03915349761858284,
+        0.039147250028496845,
+        0.039140987875875215,
+        0.03913471119774252,
+        0.03912842002581793,
+        0.0391221143894737,
+        0.039115794316959,
+        0.03910945983597153,
+        0.03910311097394001,
+        0.03909674775816844,
+        0.039090370215921974
+      ],
+      "seconds_to_full_close": 0.1
+    },
+    {
+      "speed": 0.01,
+      "full_open_separation_m": 0.11258276648619715,
+      "full_closed_separation_m": 0.02292873085157969,
+      "steps_to_full_close": 8,
+      "close_traj_sep": [
+        0.1039134844664057,
+        0.09332710818217613,
+        0.08324796616325868,
+        0.07147500904201805,
+        0.05984981984741218,
+        0.047525778786392664,
+        0.0352153786664116,
+        0.022734151167469175,
+        0.02296443061437228,
+        0.022929080387840663,
+        0.022928719901247795,
+        0.02292861342298439,
+        0.02292859745128631,
+        0.022928597588944166,
+        0.0229286002999724,
+        0.02292860340348847,
+        0.022928606557306188,
+        0.02292860970789052,
+        0.022928612846881836,
+        0.02292861597300876,
+        0.022928619086114998,
+        0.02292862218622,
+        0.022928625273370935,
+        0.02292862834761901,
+        0.02292863140901612,
+        0.022928634457613978,
+        0.022928637493464205,
+        0.0229286405166181,
+        0.02292864352712688,
+        0.022928646525041556,
+        0.022928649510412943,
+        0.02292865248329166,
+        0.02292865544372812,
+        0.022928658391772577,
+        0.02292866132747515,
+        0.022928664250885564,
+        0.022928667162053714,
+        0.022928670061028958,
+        0.02292867294786064,
+        0.022928675822597958,
+        0.022928678685289798,
+        0.022928681535984943,
+        0.022928684374731927,
+        0.0229286872015793,
+        0.022928690016575163,
+        0.02292869281976757,
+        0.02292869561120446,
+        0.02292869839093341,
+        0.02292870115900203,
+        0.022928703915457545,
+        0.022928706660347194,
+        0.022928709393717887,
+        0.022928712115616368,
+        0.02292871482608941,
+        0.022928717525183332,
+        0.022928720212944377,
+        0.02292872288941876,
+        0.022928725554652283,
+        0.022928728208690755,
+        0.02292873085157969
+      ],
+      "seconds_to_full_close": 0.4
+    }
+  ]
+}

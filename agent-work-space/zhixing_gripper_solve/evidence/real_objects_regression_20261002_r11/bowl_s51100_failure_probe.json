@@ -1,0 +1,105 @@
+{
+  "mode": "offline reconstructed mj_forward; not a live force trace",
+  "contacts": [
+    {
+      "pair": [
+        "akita_black_bowl_1_g21",
+        "gripper0_left_fingerpad_col"
+      ],
+      "normal_N": 1.2121284714995424,
+      "distance": -2.312661681529237e-05
+    },
+    {
+      "pair": [
+        "akita_black_bowl_1_g22",
+        "gripper0_left_fingerpad_col"
+      ],
+      "normal_N": 2.4283328801708044,
+      "distance": -4.596928975300354e-05
+    },
+    {
+      "pair": [
+        "akita_black_bowl_1_g21",
+        "gripper0_right_fingerpad_col"
+      ],
+      "normal_N": 3.209068591526972,
+      "distance": -6.0275737399796066e-05
+    },
+    {
+      "pair": [
+        "akita_black_bowl_1_g22",
+        "gripper0_right_fingerpad_col"
+      ],
+      "normal_N": 0.3976937764816381,
+      "distance": -7.601289374766459e-06
+    }
+  ],
+  "joints": [
+    {
+      "joint": "robot0_joint_1",
+      "position": 0.16086396013913087,
+      "range": [
+        -3.106,
+        3.106
+      ],
+      "bias_Nm": -3.9331772682137715e-10,
+      "constraint_Nm": 0.08772291554529635,
+      "actuator_Nm": -0.08770938417520653
+    },
+    {
+      "joint": "robot0_joint_2",
+      "position": -0.9507203045167141,
+      "range": [
+        -3.106,
+        2.356
+      ],
+      "bias_Nm": 25.172335772348994,
+      "constraint_Nm": 0.06984239968195974,
+      "actuator_Nm": 25.10292940124212
+    },
+    {
+      "joint": "robot0_joint_3",
+      "position": -0.37635885881091297,
+      "range": [
+        -2.792,
+        2.53
+      ],
+      "bias_Nm": 12.97098792110721,
+      "constraint_Nm": -0.024160952074742427,
+      "actuator_Nm": 12.995230723111737
+    },
+    {
+      "joint": "robot0_joint_4",
+      "position": -0.29136623277695234,
+      "range": [
+        -3.106,
+        3.106
+      ],
+      "bias_Nm": 3.217942072506375,
+      "constraint_Nm": -0.08184697627900364,
+      "actuator_Nm": 3.2998081616833703
+    },
+    {
+      "joint": "robot0_joint_5",
+      "position": 1.5808637779948824,
+      "range": [
+        -3.106,
+        3.106
+      ],
+      "bias_Nm": 0.025865328920511743,
+      "constraint_Nm": -0.008965513309515227,
+      "actuator_Nm": 0.0348333791381728
+    },
+    {
+      "joint": "robot0_joint_6",
+      "position": -1.4113096163613137,
+      "range": [
+        -6.28,
+        6.28
+      ],
+      "bias_Nm": 0.00010626028794619158,
+      "constraint_Nm": 0.023214666610426562,
+      "actuator_Nm": -0.023110050614923765
+    }
+  ]
+}

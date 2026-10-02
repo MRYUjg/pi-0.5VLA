@@ -1,0 +1,73 @@
+{
+  "version": "run_safe_teacher_r9",
+  "teacher": "safe_teacher_r8",
+  "teacher_sha256": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+  "jobs": [
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 48200,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 48201,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 48202,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 48203,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 48204,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 48205,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 48206,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 48207,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 48208,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 48209,
+      "force": 0
+    }
+  ],
+  "workers": 2,
+  "task": "libero_object task0 with 60x30x70 mm diagnostic block",
+  "purpose": "scripted safe-path validation; no training dataset, no formal Spatial acceptance",
+  "runtime": "Python3.10 / MuJoCo3.2.6 CPU headless",
+  "upstream_assets_controller_and_gates_changed": false,
+  "acceptance": "safe_teacher_success plus independent verify_safe_teacher_r2.py"
+}

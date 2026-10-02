@@ -1,0 +1,115 @@
+{
+  "version": "compare_real_control_ab_r1",
+  "pairs": [
+    {
+      "case": "bowl",
+      "seed": 49100,
+      "initial_state_matched": true,
+      "same_source_fingerprints": true,
+      "same_control_contract": true,
+      "expected_profile_values": true,
+      "baseline_success": false,
+      "candidate_success": false,
+      "baseline_failure": {
+        "stage": "lift",
+        "type": "PathRejected",
+        "reason": "lift did not converge at actual post-action state",
+        "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r15.py\", line 167, in main\n    stage='lift';lift=pin+[0,0,.08];ep.servo_limited(lift,R,1,stage,260,tol=.004)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 242, in servo\n    arrived(ep,target,R,phase,ok,float(kw.get('tol',.004)))\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 197, in arrived\n    if not valid:raise PathRejected(phase+' did not converge at actual post-action state')\nsafe_teacher_r8.PathRejected: lift did not converge at actual post-action state\n"
+      },
+      "candidate_failure": {
+        "stage": "place",
+        "type": "PathRejected",
+        "reason": "robot or carried payload contacted basket before release",
+        "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r15.py\", line 173, in main\n    stage='place';ep.servo_limited(S.TARGET,R,1,stage,160,tol=.008)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 241, in servo\n    ok,k=orig_servo(ep,target,R,grip,phase,max_steps,*args,**kw)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r15.py\", line 135, in residual_servo\n    p,Ra=residual_action(ep,target,R,grip,phase,max_step_pos,max_step_rot)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r15.py\", line 128, in residual_action\n    ep.act(np.r_[ap,ar,grip],phase)\n  File \"/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py\", line 442, in act\n    fr = super().act(action, self.phase)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 68, in act\n    raise PathRejected('robot or carried payload contacted basket before release')\nsafe_teacher_r8.PathRejected: robot or carried payload contacted basket before release\n"
+      },
+      "baseline_profile": {
+        "initialization_profile": "legacy",
+        "profile_applied_after_quiet_reset": true,
+        "extra_joint_pd_profile": "legacy",
+        "extra_joint_pd_kp": 3.0,
+        "controller_eef_name": "gripper0_grip_site"
+      },
+      "candidate_profile": {
+        "initialization_profile": "legacy",
+        "profile_applied_after_quiet_reset": true,
+        "extra_joint_pd_profile": "eco65_no_extra_pd",
+        "extra_joint_pd_kp": 0.0,
+        "controller_eef_name": "gripper0_grip_site"
+      }
+    },
+    {
+      "case": "bowl",
+      "seed": 51100,
+      "initial_state_matched": true,
+      "same_source_fingerprints": true,
+      "same_control_contract": true,
+      "expected_profile_values": true,
+      "baseline_success": false,
+      "candidate_success": false,
+      "baseline_failure": {
+        "stage": "lift",
+        "type": "PathRejected",
+        "reason": "lift did not converge at actual post-action state",
+        "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r15.py\", line 167, in main\n    stage='lift';lift=pin+[0,0,.08];ep.servo_limited(lift,R,1,stage,260,tol=.004)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 242, in servo\n    arrived(ep,target,R,phase,ok,float(kw.get('tol',.004)))\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 197, in arrived\n    if not valid:raise PathRejected(phase+' did not converge at actual post-action state')\nsafe_teacher_r8.PathRejected: lift did not converge at actual post-action state\n"
+      },
+      "candidate_failure": {
+        "stage": "release",
+        "type": "PathRejected",
+        "reason": "gripper contacted non-target environment",
+        "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r15.py\", line 174, in main\n    stage='release';ep.track(S.TARGET,R,-1,stage,60)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 250, in track\n    return orig_track(ep,target,R,grip,phase,steps,*args,**kw)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r15.py\", line 142, in residual_track\n    residual_action(ep,target,R,grip,phase)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r15.py\", line 128, in residual_action\n    ep.act(np.r_[ap,ar,grip],phase)\n  File \"/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py\", line 442, in act\n    fr = super().act(action, self.phase)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 60, in act\n    raise PathRejected('gripper contacted non-target environment')\nsafe_teacher_r8.PathRejected: gripper contacted non-target environment\n"
+      },
+      "baseline_profile": {
+        "initialization_profile": "legacy",
+        "profile_applied_after_quiet_reset": true,
+        "extra_joint_pd_profile": "legacy",
+        "extra_joint_pd_kp": 3.0,
+        "controller_eef_name": "gripper0_grip_site"
+      },
+      "candidate_profile": {
+        "initialization_profile": "legacy",
+        "profile_applied_after_quiet_reset": true,
+        "extra_joint_pd_profile": "eco65_no_extra_pd",
+        "extra_joint_pd_kp": 0.0,
+        "controller_eef_name": "gripper0_grip_site"
+      }
+    },
+    {
+      "case": "bowl",
+      "seed": 51106,
+      "initial_state_matched": true,
+      "same_source_fingerprints": true,
+      "same_control_contract": true,
+      "expected_profile_values": true,
+      "baseline_success": false,
+      "candidate_success": true,
+      "baseline_failure": {
+        "stage": "transport",
+        "type": "PathRejected",
+        "reason": "clearance_lift did not converge at actual post-action state",
+        "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r15.py\", line 172, in main\n    stage='transport';ep.servo_limited(np.zeros(3),R,1,stage,220,tol=.008)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 218, in servo\n    PLAN['vertical_reached']=arrived(ep,up,Rc,'clearance_lift',ok,.008)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 197, in arrived\n    if not valid:raise PathRejected(phase+' did not converge at actual post-action state')\nsafe_teacher_r8.PathRejected: clearance_lift did not converge at actual post-action state\n"
+      },
+      "candidate_failure": null,
+      "baseline_profile": {
+        "initialization_profile": "legacy",
+        "profile_applied_after_quiet_reset": true,
+        "extra_joint_pd_profile": "legacy",
+        "extra_joint_pd_kp": 3.0,
+        "controller_eef_name": "gripper0_grip_site"
+      },
+      "candidate_profile": {
+        "initialization_profile": "legacy",
+        "profile_applied_after_quiet_reset": true,
+        "extra_joint_pd_profile": "eco65_no_extra_pd",
+        "extra_joint_pd_kp": 0.0,
+        "controller_eef_name": "gripper0_grip_site"
+      }
+    }
+  ],
+  "numeric_audit_pass": true,
+  "comparison_valid": true,
+  "baseline_success": 0,
+  "candidate_success": 1,
+  "total_pairs": 3,
+  "scope": "Paired evidence for these cases only; not proof that PD explains every failure or changes production defaults.",
+  "eligible_for_fresh_validation": false
+}

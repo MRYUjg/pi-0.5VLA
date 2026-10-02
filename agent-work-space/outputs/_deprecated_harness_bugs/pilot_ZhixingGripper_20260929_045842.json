@@ -1,0 +1,194 @@
+{
+  "node": "EXPERT-ECO65-PANDA",
+  "generated_at": "2026-09-29T04:58:51",
+  "host_note": "纯 CPU 服务器；不使用 VLA 推理，脚本专家 + 7 维 OSC",
+  "robot": "ECO65",
+  "gripper": "ZhixingGripper",
+  "gripper_actual": {
+    "class": "ZhixingGripper",
+    "dof": 1,
+    "joints": [
+      "gripper0_Left_1_Joint",
+      "gripper0_Left_Support_Joint",
+      "gripper0_Left_2_Joint",
+      "gripper0_Right_2_Joint",
+      "gripper0_Right_1_Joint",
+      "gripper0_Right_Support_Joint"
+    ],
+    "n_actuators": 1,
+    "speed": 0.2
+  },
+  "suite": "libero_object",
+  "task_id": 0,
+  "block": {
+    "width_mm": 13.803779184015472,
+    "depth_mm": 60.0,
+    "height_mm": 70.0,
+    "density": 700.0,
+    "requested_width_mm": 50.0,
+    "grasp_margin_mm": 4.0
+  },
+  "transport_criterion_n4_style": {
+    "max_steps": 220,
+    "tol_m": 0.008
+  },
+  "penetration_soft_limit_mm": 2.0,
+  "assets": {
+    "n4_collect_sha16": "37b24549adad7c2a",
+    "n3_osc_full_chain_sha16": "c0d99a46c56258f8",
+    "n3_grasp_test_sha16": "f2094b6bb6716fc9"
+  },
+  "controller": {
+    "controller_type": "OperationalSpaceController",
+    "controller_output_max": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "controller_input_min": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "controller_input_max": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "control_timestep": 0.05,
+    "action_contract": "7 维 OSC_POSE 归一化动作 ∈[-1,1]：前 3 维平移，满量程 = output_max[0:3] = [0.05, 0.05, 0.05] m；后 3 维旋转，满量程 = output_max[3:6] = [0.5, 0.5, 0.5] rad；第 7 维夹爪 -1 开 / +1 合。"
+  },
+  "pilot": {
+    "gripper": {
+      "class": "ZhixingGripper",
+      "dof": 1,
+      "joints": [
+        "gripper0_Left_1_Joint",
+        "gripper0_Left_Support_Joint",
+        "gripper0_Left_2_Joint",
+        "gripper0_Right_2_Joint",
+        "gripper0_Right_1_Joint",
+        "gripper0_Right_Support_Joint"
+      ],
+      "n_actuators": 1,
+      "speed": 0.2
+    },
+    "pad_geoms": {
+      "representative": {
+        "left": "gripper0_left_fingerpad_col",
+        "right": "gripper0_right_fingerpad_col"
+      },
+      "left_all": [
+        "gripper0_left_fingerpad_col"
+      ],
+      "right_all": [
+        "gripper0_right_fingerpad_col"
+      ],
+      "pad_left": [
+        "gripper0_left_fingerpad_col"
+      ],
+      "pad_right": [
+        "gripper0_right_fingerpad_col"
+      ],
+      "n_left_geoms": 1,
+      "n_right_geoms": 1
+    },
+    "n3_pad_geoms_after_patch": {
+      "left": 26,
+      "right": 31,
+      "left_all": [
+        26
+      ],
+      "right_all": [
+        31
+      ]
+    },
+    "closing_axis_world": [
+      -0.0013709916704661123,
+      -0.999999060190478,
+      0.0
+    ],
+    "grip_site_world": [
+      -0.14827930903915956,
+      6.0995706096460735e-05,
+      0.26487824789439074
+    ],
+    "empty_load_sequence": [
+      {
+        "cmd": -1.0,
+        "phase": "open1",
+        "jaw_gap_mm": 107.77487621444675,
+        "grip_q": [
+          -0.000898,
+          0.001003,
+          -0.000903,
+          0.004861,
+          0.00486,
+          0.005042
+        ],
+        "ncon": 29
+      },
+      {
+        "cmd": 1.0,
+        "phase": "close",
+        "jaw_gap_mm": 52.708843142649464,
+        "grip_q": [
+          -1.225233,
+          1.236622,
+          -1.220879,
+          1.815612,
+          1.631716,
+          1.148477
+        ],
+        "ncon": 30
+      },
+      {
+        "cmd": -1.0,
+        "phase": "open2",
+        "jaw_gap_mm": 53.18318731112186,
+        "grip_q": [
+          -1.190712,
+          1.19439,
+          -1.18932,
+          1.836028,
+          1.636845,
+          1.114901
+        ],
+        "ncon": 30
+      }
+    ],
+    "checks": {
+      "cmd_minus1_opens": true,
+      "cmd_plus1_closes": true,
+      "sign_convention_ok": true,
+      "reopen_ok": false,
+      "stroke_mm": 55.066033071797285
+    },
+    "repeatability": {
+      "n": 10,
+      "open_mm": {
+        "mean": 107.77487621441574,
+        "std": 2.4080400871005812e-11,
+        "min": 107.77487621435553,
+        "max": 107.7748762144489
+      },
+      "closed_mm": {
+        "mean": 52.70884318789647,
+        "std": 1.0333436674734018e-07,
+        "min": 52.70884308501761,
+        "max": 52.70884330233164
+      },
+      "pass": true,
+      "wall_seconds": 474.2
+    }
+  }
+}

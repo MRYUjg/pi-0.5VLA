@@ -710,9 +710,9 @@ def main():
             "files": sorted(p.name for p in RAW.glob("*.*")) if RAW.exists() else [],
             "logs": sorted(p.name for p in (RAW / "logs").glob("*.log"))
             if (RAW / "logs").exists() else [],
-            "history_snapshot": "results/_history_pre_n2_reverify/"
-                                "（测量前对 results/*.json|*.csv|*.md|*.txt 的逐字节副本，"
-                                "共 63 个文件；本轮未覆盖任何历史文件）",
+            "history_snapshot": None,
+            "history_snapshot_retirement": "Historical duplicate results removed during cleanup_20260929; "
+                                           "see maintenance/cleanup_20260929/deletion_plan.json",
         },
     }
 

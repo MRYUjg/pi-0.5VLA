@@ -1,0 +1,71 @@
+{
+  "jobs": [
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47200,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47201,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47202,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47203,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47204,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47205,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47206,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47207,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47208,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47209,
+      "force": 0
+    }
+  ],
+  "note": "Diagnostic only. No official acceptance gates altered; each load is an independent grasp.",
+  "force_duration_s": 2,
+  "relative_slip_limit_mm": 5,
+  "bilateral_fraction_min": 0.95,
+  "baseline_relative_slip_limit_mm": 2,
+  "baseline_lift_min_mm": 30,
+  "workers": 2
+}

@@ -1,0 +1,17 @@
+{
+  "version": "run_real_object_r2",
+  "teacher": "real_object_teacher_r2",
+  "teacher_sha256": "106c76096d73cce63398e7497c836247169fd5d900a45cc6b561253192e1ec7f",
+  "jobs": [
+    {
+      "case": "bowl",
+      "seed": 49100
+    }
+  ],
+  "workers": 1,
+  "task": "native LIBERO Object task0 can / Spatial task0 bowl; no substitution",
+  "purpose": "scripted safe-path validation; no training dataset, no formal Spatial acceptance",
+  "runtime": "Python3.10 / MuJoCo3.2.6 CPU headless",
+  "upstream_assets_controller_and_gates_changed": false,
+  "acceptance": "native predicates plus real_object_teacher gates; see preregistered protocol"
+}

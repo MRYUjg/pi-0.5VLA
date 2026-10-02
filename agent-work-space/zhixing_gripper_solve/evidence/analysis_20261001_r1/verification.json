@@ -1,0 +1,27 @@
+{
+  "verdict": "PASS",
+  "scope": "Measurement integrity and process validity only; no task/adaptation acceptance",
+  "counts": {
+    "runs": 14,
+    "chain": 6,
+    "pull": 8,
+    "valid_preloads": 8,
+    "planner_rejections": 2,
+    "physics_samples": 156250
+  },
+  "max_hold_force_balance_error_N": 0.002102253047779492,
+  "checks": [
+    "14 real exit codes zero",
+    "all runtime/source hashes match",
+    "all calibrations 9.81 N",
+    "no MuJoCo warnings",
+    "25 physics samples per control step",
+    "raw contact aggregates reproduce JSON",
+    "all recorded state finite",
+    "8 valid actual load preconditions",
+    "Panda full finger geometry coverage",
+    "world +X equal force direction",
+    "2 s force window",
+    "no upper-level frozen source edits"
+  ]
+}

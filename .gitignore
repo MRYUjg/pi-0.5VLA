@@ -167,26 +167,32 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# ===== 本项目（ECO65 + ZhiXing 适配）补充排除 =====
-# 采集数据与训练大文件：不进版本库
+# Publication snapshot: datasets, evidence streams and installed environments stay outside Git.
 *.npz
+*.jsonl
 *.mp4
 *.avi
-raw/
-audit_stage/
-agent-work-space/**/raw/
-agent-work-space/**/audit_stage/
-libreo_raw_data/
-ECO_data/
-# 压缩包与演示文稿
 *.zip
 *.pptx
 *.tar
 *.tar.gz
 *.tgz
-# 本机杂项
-__pycache__/
-*.pyc
+*.hdf5
+*.h5
+*.tfrecord
+*.safetensors
+*.pt
+*.pth
 *.bak
 .DS_Store
-*.log
+MUJOCO_LOG.TXT
+environment.xml
+raw/
+audit_stage/
+agent-work-space/**/runtime/
+agent-work-space/eval/
+libreo_raw_data/
+ECO_data/
+.publish/
+CODEX_*.md
+AGENTS.md

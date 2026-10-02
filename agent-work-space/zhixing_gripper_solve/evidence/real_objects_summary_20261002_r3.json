@@ -1,0 +1,176 @@
+{
+  "version": "summarize_real_object_r3",
+  "audit": "/mnt/data/vla-policy/openpi/agent-work-space/zhixing_gripper_solve/evidence/real_objects_validation_audit_20261002_r3/verification.json",
+  "audit_sha256": "5757e01159c4e182f58a6142b70d69914ab88f6750d80c3757e586fa3aca8d89",
+  "evidence_pass": true,
+  "task_scope_pass": false,
+  "cases": {
+    "can": {
+      "success": 10,
+      "total": 10,
+      "acceptance": true,
+      "unique_initial_states": 10,
+      "unique_target_bboxes_at_1um": 1,
+      "target_center_range_m": [
+        [
+          -0.11896929775382892,
+          -0.24346118474194017,
+          0.0380901428159229
+        ],
+        [
+          -0.11896929775382889,
+          -0.2434611847419401,
+          0.03809014281592294
+        ]
+      ],
+      "target_bbox_size_range_mm": [
+        [
+          62.90850795300739,
+          62.5261492825403,
+          76.22212230364913
+        ],
+        [
+          62.908507953007465,
+          62.52614928254041,
+          76.2221223036492
+        ]
+      ],
+      "mass_kg": [
+        0.025851445888000014
+      ],
+      "metrics_successes_only": {
+        "bilateral_hold": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "penetration_peak_mm": {
+          "min": 0.30767443316941334,
+          "max": 0.3079654919693283
+        },
+        "max_step_disp_mm": {
+          "min": 7.038331742034148,
+          "max": 7.038393292363307
+        },
+        "recipient_shift_mm": {
+          "min": 0.004804495926680348,
+          "max": 0.08563515983196743
+        },
+        "min_horizontal_clearance_mm": {
+          "min": 35.74349427521092,
+          "max": 37.37166023746377
+        },
+        "hold_relative_slip_mm": {
+          "min": 0.36991101507036683,
+          "max": 0.3699136140481144
+        },
+        "post_drift_mm": {
+          "min": 5.247887130937893e-09,
+          "max": 6.828670791846281e-09
+        }
+      },
+      "failure_stages": {},
+      "force_mean_range_N": [
+        [
+          19.86108296196605,
+          19.082758562293634
+        ],
+        [
+          19.861189449337648,
+          19.082809411950024
+        ]
+      ],
+      "max_hold_force_balance_norm_N": 0.0006590377168755486,
+      "max_unsupported_hold_contact_N": 0.0,
+      "unsafe_contact_samples": 0,
+      "robot_nontarget_contacts": 0
+    },
+    "bowl": {
+      "success": 8,
+      "total": 10,
+      "acceptance": false,
+      "unique_initial_states": 10,
+      "unique_target_bboxes_at_1um": 10,
+      "target_center_range_m": [
+        [
+          -1.0356409014228278,
+          0.19006151379420855,
+          0.02526824126804416
+        ],
+        [
+          -0.04021931908527601,
+          0.969194577332308,
+          0.926119757082834
+        ]
+      ],
+      "target_bbox_size_range_mm": [
+        [
+          106.97707349243198,
+          107.0841488646368,
+          50.54389011586953
+        ],
+        [
+          107.30378563598062,
+          107.28169338887797,
+          52.34324110800637
+        ]
+      ],
+      "mass_kg": [
+        0.005591296580799999
+      ],
+      "metrics_successes_only": {
+        "bilateral_hold": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "penetration_peak_mm": {
+          "min": 0.3234158104197606,
+          "max": 0.49992373280485464
+        },
+        "max_step_disp_mm": {
+          "min": 9.373441902905169,
+          "max": 10.600665842135543
+        },
+        "recipient_shift_mm": {
+          "min": 0.008557546656648554,
+          "max": 2.5039095670051474
+        },
+        "min_horizontal_clearance_mm": {
+          "min": 23.527748008261185,
+          "max": 38.55529140578406
+        },
+        "hold_relative_slip_mm": {
+          "min": 0.8549660490767422,
+          "max": 1.839788569344397
+        },
+        "post_drift_mm": {
+          "min": 0.00013963778068438497,
+          "max": 0.0002013034709746093
+        }
+      },
+      "failure_stages": {
+        "planning": 1,
+        "approach": 1
+      },
+      "force_mean_range_N": [
+        [
+          3.9442066150067796,
+          4.0614517797923835
+        ],
+        [
+          4.610846928767941,
+          4.926066546894036
+        ]
+      ],
+      "max_hold_force_balance_norm_N": 3.465033187389388e-05,
+      "max_unsupported_hold_contact_N": 0.0,
+      "unsafe_contact_samples": 0,
+      "robot_nontarget_contacts": 0
+    }
+  },
+  "total_physics_samples": 325025,
+  "limits": [
+    "Two native tasks only; not the 10x20 Spatial final acceptance",
+    "Scripted teacher, not pi0.5 or training dataset",
+    "Original simulated masses and collision models; no real hardware validation"
+  ]
+}

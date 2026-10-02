@@ -1,0 +1,86 @@
+{
+  "version": "verify_real_object_r3",
+  "batch": "agent-work-space/zhixing_gripper_solve/evidence/real_objects_20261002_r9",
+  "pass": true,
+  "complete": true,
+  "summary": {
+    "bowl": {
+      "success": 1,
+      "total": 1,
+      "unique_initial_states": 1,
+      "unique_target_bboxes": 1
+    }
+  },
+  "records": [
+    {
+      "case": "bowl",
+      "seed": 49100,
+      "success": true,
+      "failure": null,
+      "audit_pass": true,
+      "errors": [],
+      "gates": {
+        "initial_goal_false": true,
+        "all_stages_complete": true,
+        "lift_30mm": true,
+        "hold_40steps": true,
+        "bilateral_hold": true,
+        "unsupported_hold": true,
+        "penetration_2mm": true,
+        "max_step_disp_20mm": true,
+        "native_success_window": true,
+        "post_drift_5mm": true,
+        "target_support_contact": true,
+        "no_physics_warnings": true,
+        "hold_height": true
+      },
+      "initial_state_sha256": "17bee3a341307caf0e2249d466681154c155aa8c619e55c98c2118a27ff08565",
+      "initial_object_bbox": [
+        [
+          -0.09693224799487783,
+          0.13237090489794326,
+          0.8999925920851882
+        ],
+        [
+          0.010135911067545035,
+          0.23958669311355224,
+          0.950538685786546
+        ]
+      ],
+      "mass_kg": 0.005591296580799999,
+      "physics_samples": 14975,
+      "bilateral_hold": 1.0,
+      "hold_force_mean_N": [
+        4.6317476700021,
+        4.936596483631905
+      ],
+      "hold_force_balance_mean_N": [
+        2.2933368415964995e-06,
+        -1.5435202379282532e-06,
+        -9.16036882520066e-06
+      ],
+      "hold_other_force_peak_N": 0.0,
+      "penetration_peak_mm": 0.5371605519108701,
+      "max_step_disp_mm": 9.297575872401469,
+      "recipient_shift_mm": 0.011087308154723393,
+      "min_horizontal_clearance_mm": 46.35657555767558,
+      "unsafe_contact_samples": 0,
+      "robot_nontarget_contacts": 0,
+      "hold_relative_slip_mm": 1.8419665377709624,
+      "post_drift_mm": 0.00018534224522085633,
+      "sources": {
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r9.py": "48f64691abbd1ad8ccb70f4aa92a6a9e551cd33feb7cd04202ac1e9f3ee728ab",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+        "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+        "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+        "/app/third_party/libero/libero/libero/assets/stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml": "18c1074cfa09baea739bb75928f9bd2bd80e22ac18655f6a27f005dbf77ccfda"
+      }
+    }
+  ],
+  "limitation": "Native task predicates use recorded engine output; numeric gates recomputed independently from per-physics-step data. Audit PASS is evidence consistency, not task acceptance."
+}

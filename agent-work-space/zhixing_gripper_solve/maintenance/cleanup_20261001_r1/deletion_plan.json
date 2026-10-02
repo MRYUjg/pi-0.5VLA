@@ -1,0 +1,78 @@
+{
+  "authorization": "用户允许删除旧的错误、容易误导的结果与结论文件",
+  "scope": "agent-work-space/zhixing_gripper_solve",
+  "files": [
+    {
+      "path": "ZhiXing夹爪_现状与问题清单.md",
+      "bytes": 11754,
+      "sha256": "0508d0437ebe7434e994105395d9d1eccb22b544b08ed21412eab616e3e1254f",
+      "reason": "将空载输出外推成带载无力；全程峰值误标闭合峰值；任务对照口径有误。由本轮新报告替代。"
+    },
+    {
+      "path": "ZhiXing夹爪_技术档案.md",
+      "bytes": 6630,
+      "sha256": "0c3dac839ce50541b36dc572116156545e6737f4a42707bc76c5142fa33350ef",
+      "reason": "混淆物理子步与控制步，并把力限直接认定夹不紧根因。由新技术快照替代。"
+    },
+    {
+      "path": "solutions/备选方案空间.md",
+      "bytes": 4976,
+      "sha256": "b0ce8dd42b80f69695c853115454245055240774a608903c5b8196e176e107c5",
+      "reason": "重复性 FAIL 已失效；先验端点无力和力下限方案依据不足。由新证据驱动的后续项替代。"
+    },
+    {
+      "path": "evidence/证据索引.md",
+      "bytes": 4548,
+      "sha256": "33495c9624cb32c5c900d9b66aab1373efba1dbdcd32d724f1f9e1d620e63433",
+      "reason": "含死链接、误标峰值阶段；由新索引替代。"
+    },
+    {
+      "path": "evidence/_history_首版问题清单_20260930.md",
+      "bytes": 9606,
+      "sha256": "76e5831bd93af9859c8f7e9767926e5823ed080bcd1d3d0c4ded362e6cbac107",
+      "reason": "已证实错误的空载重复性 FAIL 以及旧开口口径。"
+    },
+    {
+      "path": "evidence/grip_force_ZhixingGripper.json",
+      "bytes": 2213,
+      "sha256": "ca881be0d58fefd17e819b7ef528c5895784385e8537848526606c003e9147aa",
+      "reason": "物体未处于指间，无效抗扰试验。"
+    },
+    {
+      "path": "evidence/grip_force_PandaGripper.json",
+      "bytes": 1956,
+      "sha256": "6975f7a6d3b5e4d28f84bd3e1a14c0b2760f83970b76bc69abbf5310b4341165",
+      "reason": "物体未处于指间，无效抗扰试验。"
+    },
+    {
+      "path": "evidence/zhixing_close_limit.json",
+      "bytes": 7364,
+      "sha256": "f04a092fab49afdad1f0236527ac8b9aa973d76498060079f8e09b665d27c107",
+      "reason": "强制 ctrl 探针有 stale reset 对象与归一化/ctrl 混用缺陷；旧中心距误作净距。"
+    },
+    {
+      "path": "evidence/comparison.md",
+      "bytes": 1440,
+      "sha256": "f8956a915925ca754c3b1a2250d9c941638aee1ed8eb2f9b75665a65ed796f0d",
+      "reason": "混入已作废空载 FAIL，并混合 N3/N4 口径；保留原始专家 JSON 供历史追溯。"
+    },
+    {
+      "path": "evidence/comparison.csv",
+      "bytes": 1050,
+      "sha256": "42731e092912aa3c9a20941d95f01a87a793b7b3a7902332a7dee7a91f2f9878",
+      "reason": "同 comparison.md。"
+    },
+    {
+      "path": "scripts/zhixing_close_limit.py",
+      "bytes": 7523,
+      "sha256": "f55a552e8683e6c9b060fddde7a94507ca0e9a393225080aa0bd591236faa1ba",
+      "reason": "强制 ctrl 操作对象与归一化映射错误，不再允许作为诊断入口。"
+    },
+    {
+      "path": "scripts/zhixing_grip_force.py",
+      "bytes": 10089,
+      "sha256": "db54b4cb0a30b8a85885279ac21cc6470cc2d65885683a969a7e4321b5626eca",
+      "reason": "未真正执行物体夹持；会产出虚假 pull_out_force 和摩擦系数。"
+    }
+  ]
+}

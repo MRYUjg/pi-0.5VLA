@@ -1,0 +1,91 @@
+{
+  "node": "VERIFY-ZHIXING-SPEED-DEFAULT",
+  "label": "asset_default",
+  "generated_at": "2026-09-30T14:40:53",
+  "env_var_ZHIXING_GRIPPER_SPEED": null,
+  "note": "只读验证：未修改任何文件；走真实 env.step 路径",
+  "gripper_class": "ZhixingGripper",
+  "speed_effective": 0.01,
+  "speed_source": "asset default",
+  "q_open": -0.000898,
+  "closing_steps_to_stop": 400,
+  "closing_seconds_to_stop": 20.0,
+  "q_closed": -0.90956,
+  "joint_stroke_rad": 0.908662,
+  "traj_sample": [
+    {
+      "i": 0,
+      "Left_1": -0.118379,
+      "current_action": 0.0
+    },
+    {
+      "i": 1,
+      "Left_1": -0.236895,
+      "current_action": 0.0
+    },
+    {
+      "i": 2,
+      "Left_1": -0.342745,
+      "current_action": 0.0
+    },
+    {
+      "i": 3,
+      "Left_1": -0.460533,
+      "current_action": 0.0
+    },
+    {
+      "i": 4,
+      "Left_1": -0.575674,
+      "current_action": 0.0
+    },
+    {
+      "i": 10,
+      "Left_1": -0.909405,
+      "current_action": 0.0
+    },
+    {
+      "i": 20,
+      "Left_1": -0.909809,
+      "current_action": 0.0
+    },
+    {
+      "i": 30,
+      "Left_1": -0.90956,
+      "current_action": 0.0
+    },
+    {
+      "i": 40,
+      "Left_1": -0.909125,
+      "current_action": 0.0
+    },
+    {
+      "i": 50,
+      "Left_1": -0.909364,
+      "current_action": 0.0
+    },
+    {
+      "i": 60,
+      "Left_1": -0.909703,
+      "current_action": 0.0
+    },
+    {
+      "i": 70,
+      "Left_1": -0.909785,
+      "current_action": 0.0
+    },
+    {
+      "i": 80,
+      "Left_1": -0.909074,
+      "current_action": 0.0
+    },
+    {
+      "i": 90,
+      "Left_1": -0.909223,
+      "current_action": 0.0
+    }
+  ],
+  "current_action_end": 0.0,
+  "pad_aperture_closed_mm": 0.0397,
+  "expected_steps_full_stroke": 100.0,
+  "implied_close_speed_mm_s": 4.5
+}

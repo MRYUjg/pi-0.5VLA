@@ -1,0 +1,362 @@
+{
+  "version": "verify_real_object_r3",
+  "batch": "agent-work-space/zhixing_gripper_solve/evidence/real_objects_regression_20261002_r10",
+  "pass": true,
+  "complete": true,
+  "summary": {
+    "bowl": {
+      "success": 5,
+      "total": 5,
+      "unique_initial_states": 5,
+      "unique_target_bboxes": 5
+    }
+  },
+  "records": [
+    {
+      "case": "bowl",
+      "seed": 50102,
+      "success": true,
+      "failure": null,
+      "audit_pass": true,
+      "errors": [],
+      "gates": {
+        "initial_goal_false": true,
+        "all_stages_complete": true,
+        "lift_30mm": true,
+        "hold_40steps": true,
+        "bilateral_hold": true,
+        "unsupported_hold": true,
+        "penetration_2mm": true,
+        "max_step_disp_20mm": true,
+        "native_success_window": true,
+        "post_drift_5mm": true,
+        "target_support_contact": true,
+        "no_physics_warnings": true,
+        "hold_height": true
+      },
+      "initial_state_sha256": "df67a35979f3b592ad22192ccb27c9c8e076232599a7245c0fd5a92b265d0fc4",
+      "initial_object_bbox": [
+        [
+          -0.14343837112440067,
+          0.13266317044563616,
+          0.8999925920851883
+        ],
+        [
+          -0.03621013703624389,
+          0.23967910438300832,
+          0.9505386857865462
+        ]
+      ],
+      "mass_kg": 0.005591296580799999,
+      "physics_samples": 12875,
+      "bilateral_hold": 1.0,
+      "hold_force_mean_N": [
+        4.819522015040229,
+        5.335939765168416
+      ],
+      "hold_force_balance_mean_N": [
+        -1.9311612928254207e-05,
+        -1.0071980640585342e-05,
+        -0.00015261785146281764
+      ],
+      "hold_other_force_peak_N": 0.0,
+      "penetration_peak_mm": 0.24875720482146074,
+      "max_step_disp_mm": 8.625528819830215,
+      "recipient_shift_mm": 0.010704877795064072,
+      "min_horizontal_clearance_mm": 41.78379857576786,
+      "unsafe_contact_samples": 0,
+      "robot_nontarget_contacts": 0,
+      "hold_relative_slip_mm": 2.192831743550776,
+      "post_drift_mm": 0.0002024288795638643,
+      "sources": {
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r10.py": "b3c8809a6ee4881f1779d8a2f9852060ddc8a2163e3954b02ef0c1dbd4ded24d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+        "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+        "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+        "/app/third_party/libero/libero/libero/assets/stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml": "18c1074cfa09baea739bb75928f9bd2bd80e22ac18655f6a27f005dbf77ccfda"
+      }
+    },
+    {
+      "case": "bowl",
+      "seed": 50104,
+      "success": true,
+      "failure": null,
+      "audit_pass": true,
+      "errors": [],
+      "gates": {
+        "initial_goal_false": true,
+        "all_stages_complete": true,
+        "lift_30mm": true,
+        "hold_40steps": true,
+        "bilateral_hold": true,
+        "unsupported_hold": true,
+        "penetration_2mm": true,
+        "max_step_disp_20mm": true,
+        "native_success_window": true,
+        "post_drift_5mm": true,
+        "target_support_contact": true,
+        "no_physics_warnings": true,
+        "hold_height": true
+      },
+      "initial_state_sha256": "75d7e4bc00ae2c8b3804cf8cd238089ad3b8b4a2ec6cdfe7ae004291262ea445",
+      "initial_object_bbox": [
+        [
+          -0.17388159542943785,
+          0.16975921947250563,
+          0.8999060050614566
+        ],
+        [
+          -0.06695835081563999,
+          0.27696216588253086,
+          0.9550189391124784
+        ]
+      ],
+      "mass_kg": 0.005591296580799999,
+      "physics_samples": 13675,
+      "bilateral_hold": 1.0,
+      "hold_force_mean_N": [
+        4.0738632796689,
+        4.305304092682112
+      ],
+      "hold_force_balance_mean_N": [
+        2.437193032136758e-05,
+        7.279532119589649e-06,
+        3.367076325514612e-05
+      ],
+      "hold_other_force_peak_N": 0.0,
+      "penetration_peak_mm": 0.3813889308328685,
+      "max_step_disp_mm": 8.232147907619087,
+      "recipient_shift_mm": 0.010843961414694764,
+      "min_horizontal_clearance_mm": 43.48030799089675,
+      "unsafe_contact_samples": 0,
+      "robot_nontarget_contacts": 0,
+      "hold_relative_slip_mm": 1.3982507936623967,
+      "post_drift_mm": 0.00021103565065080528,
+      "sources": {
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r10.py": "b3c8809a6ee4881f1779d8a2f9852060ddc8a2163e3954b02ef0c1dbd4ded24d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+        "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+        "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+        "/app/third_party/libero/libero/libero/assets/stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml": "18c1074cfa09baea739bb75928f9bd2bd80e22ac18655f6a27f005dbf77ccfda"
+      }
+    },
+    {
+      "case": "bowl",
+      "seed": 50106,
+      "success": true,
+      "failure": null,
+      "audit_pass": true,
+      "errors": [],
+      "gates": {
+        "initial_goal_false": true,
+        "all_stages_complete": true,
+        "lift_30mm": true,
+        "hold_40steps": true,
+        "bilateral_hold": true,
+        "unsupported_hold": true,
+        "penetration_2mm": true,
+        "max_step_disp_20mm": true,
+        "native_success_window": true,
+        "post_drift_5mm": true,
+        "target_support_contact": true,
+        "no_physics_warnings": true,
+        "hold_height": true
+      },
+      "initial_state_sha256": "6a765c5b5f7f25a058cb771c1e8872fa9d582dea2d50576937db244735cfbfba",
+      "initial_object_bbox": [
+        [
+          -0.1633022347739554,
+          0.11265345781843639,
+          0.8999925920851882
+        ],
+        [
+          -0.056252891155001414,
+          0.2197533700676131,
+          0.9505386857865461
+        ]
+      ],
+      "mass_kg": 0.005591296580799999,
+      "physics_samples": 13675,
+      "bilateral_hold": 1.0,
+      "hold_force_mean_N": [
+        5.282947382575192,
+        5.208333099101911
+      ],
+      "hold_force_balance_mean_N": [
+        2.5250450184477245e-05,
+        4.8828709462593875e-06,
+        3.280884877466389e-05
+      ],
+      "hold_other_force_peak_N": 0.0,
+      "penetration_peak_mm": 0.4394781986528888,
+      "max_step_disp_mm": 10.030958018657232,
+      "recipient_shift_mm": 0.010592198463793126,
+      "min_horizontal_clearance_mm": 45.17259786119177,
+      "unsafe_contact_samples": 0,
+      "robot_nontarget_contacts": 0,
+      "hold_relative_slip_mm": 0.6748361449801074,
+      "post_drift_mm": 0.0001556693152691377,
+      "sources": {
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r10.py": "b3c8809a6ee4881f1779d8a2f9852060ddc8a2163e3954b02ef0c1dbd4ded24d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+        "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+        "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+        "/app/third_party/libero/libero/libero/assets/stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml": "18c1074cfa09baea739bb75928f9bd2bd80e22ac18655f6a27f005dbf77ccfda"
+      }
+    },
+    {
+      "case": "bowl",
+      "seed": 50107,
+      "success": true,
+      "failure": null,
+      "audit_pass": true,
+      "errors": [],
+      "gates": {
+        "initial_goal_false": true,
+        "all_stages_complete": true,
+        "lift_30mm": true,
+        "hold_40steps": true,
+        "bilateral_hold": true,
+        "unsupported_hold": true,
+        "penetration_2mm": true,
+        "max_step_disp_20mm": true,
+        "native_success_window": true,
+        "post_drift_5mm": true,
+        "target_support_contact": true,
+        "no_physics_warnings": true,
+        "hold_height": true
+      },
+      "initial_state_sha256": "9646af87f64c8e18786e0885e3bff041b7247235e70a449f2b98918656758250",
+      "initial_object_bbox": [
+        [
+          -0.19224639806607266,
+          0.1759150863256867,
+          0.8999292423665488
+        ],
+        [
+          -0.09109173608543741,
+          0.2810220571965081,
+          0.9922733332264122
+        ]
+      ],
+      "mass_kg": 0.005591296580799999,
+      "physics_samples": 13375,
+      "bilateral_hold": 1.0,
+      "hold_force_mean_N": [
+        2.6671344054506982,
+        2.5948611380915465
+      ],
+      "hold_force_balance_mean_N": [
+        -1.2244502225106812e-05,
+        -1.5702607863718575e-05,
+        -0.00017328592894004513
+      ],
+      "hold_other_force_peak_N": 0.0,
+      "penetration_peak_mm": 0.45620970155339013,
+      "max_step_disp_mm": 10.377600818919557,
+      "recipient_shift_mm": 0.010493709758646979,
+      "min_horizontal_clearance_mm": 54.112998531642084,
+      "unsafe_contact_samples": 0,
+      "robot_nontarget_contacts": 0,
+      "hold_relative_slip_mm": 0.4058383366802041,
+      "post_drift_mm": 0.00015479162122317884,
+      "sources": {
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r10.py": "b3c8809a6ee4881f1779d8a2f9852060ddc8a2163e3954b02ef0c1dbd4ded24d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+        "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+        "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+        "/app/third_party/libero/libero/libero/assets/stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml": "18c1074cfa09baea739bb75928f9bd2bd80e22ac18655f6a27f005dbf77ccfda"
+      }
+    },
+    {
+      "case": "bowl",
+      "seed": 50109,
+      "success": true,
+      "failure": null,
+      "audit_pass": true,
+      "errors": [],
+      "gates": {
+        "initial_goal_false": true,
+        "all_stages_complete": true,
+        "lift_30mm": true,
+        "hold_40steps": true,
+        "bilateral_hold": true,
+        "unsupported_hold": true,
+        "penetration_2mm": true,
+        "max_step_disp_20mm": true,
+        "native_success_window": true,
+        "post_drift_5mm": true,
+        "target_support_contact": true,
+        "no_physics_warnings": true,
+        "hold_height": true
+      },
+      "initial_state_sha256": "7fd5093c861d98629cf1329a90aeb2ce737e9933e159085d6ceb78eda78d0afe",
+      "initial_object_bbox": [
+        [
+          -0.16319699034460178,
+          0.1476723549349488,
+          0.8999263153658915
+        ],
+        [
+          -0.055861803334134624,
+          0.2549142493162969,
+          0.9524476736157209
+        ]
+      ],
+      "mass_kg": 0.005591296580799999,
+      "physics_samples": 14150,
+      "bilateral_hold": 1.0,
+      "hold_force_mean_N": [
+        4.451943470143947,
+        4.622777047263511
+      ],
+      "hold_force_balance_mean_N": [
+        2.3673905985050855e-05,
+        6.176987585137461e-06,
+        3.25532278820026e-05
+      ],
+      "hold_other_force_peak_N": 0.0,
+      "penetration_peak_mm": 0.25614553626776176,
+      "max_step_disp_mm": 8.559189767126343,
+      "recipient_shift_mm": 0.010870221809216351,
+      "min_horizontal_clearance_mm": 43.22192104794142,
+      "unsafe_contact_samples": 0,
+      "robot_nontarget_contacts": 0,
+      "hold_relative_slip_mm": 0.9479529491967358,
+      "post_drift_mm": 0.0001884020121090864,
+      "sources": {
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r10.py": "b3c8809a6ee4881f1779d8a2f9852060ddc8a2163e3954b02ef0c1dbd4ded24d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+        "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+        "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+        "/app/third_party/libero/libero/libero/assets/stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml": "18c1074cfa09baea739bb75928f9bd2bd80e22ac18655f6a27f005dbf77ccfda"
+      }
+    }
+  ],
+  "limitation": "Native task predicates use recorded engine output; numeric gates recomputed independently from per-physics-step data. Audit PASS is evidence consistency, not task acceptance."
+}

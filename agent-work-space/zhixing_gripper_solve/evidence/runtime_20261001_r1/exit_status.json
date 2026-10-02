@@ -1,0 +1,13 @@
+{
+  "exit_codes": {
+    "old_py38_mj323_chain": 139,
+    "old_py38_mj323_nojit_chain": 139,
+    "old_py38_mj323_sensor_disabled_minimal": 134,
+    "old_py38_mj323_analytic_calibration_only": 0,
+    "new_py310_mj323_minimal": 0,
+    "new_py310_mj323_chain": 0,
+    "new_py310_mj326_chain": 0,
+    "upstream_verify_check_archive": 0
+  },
+  "note": "实际 shell 退出码；未使用 os._exit；隔离环境恢复正常退出，不等于已定位原环境内存损坏的具体依赖。"
+}

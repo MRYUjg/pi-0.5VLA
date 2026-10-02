@@ -1,0 +1,661 @@
+{
+  "version": "verify_real_stability_r1",
+  "records": [
+    {
+      "case": "bowl",
+      "seed": 49100,
+      "task_success": true,
+      "stages": {
+        "approach": {
+          "samples": [
+            {
+              "position_error_m": 0.0007842874136302873,
+              "angle_rad": 0.001883665512789281,
+              "displacement_m": 0.0004927200123354957,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0011702986769537758,
+              "angle_rad": 0.002384365152444695,
+              "displacement_m": 0.00039083156458124223,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0014540611644377193,
+              "angle_rad": 0.0027166150063365254,
+              "displacement_m": 0.00028545829507049065,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0016311714470039892,
+              "angle_rad": 0.0028831519402616776,
+              "displacement_m": 0.00017774410735049687,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0017019288957001685,
+              "angle_rad": 0.002880799425448073,
+              "displacement_m": 7.12482297753303e-05,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "descend": {
+          "samples": [
+            {
+              "position_error_m": 0.0009024582757936814,
+              "angle_rad": 0.0010025848688536721,
+              "displacement_m": 0.000371739645228099,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0005332967901221128,
+              "angle_rad": 0.00041686267441051983,
+              "displacement_m": 0.00037004965300193926,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.00017743167162002604,
+              "angle_rad": 0.0002741390952891321,
+              "displacement_m": 0.0003600086067178573,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.00017780174386899502,
+              "angle_rad": 0.0007718967329920126,
+              "displacement_m": 0.000342356013671929,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0004917347840525404,
+              "angle_rad": 0.0012607520154580415,
+              "displacement_m": 0.0003180639577834497,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "lift": {
+          "samples": [
+            {
+              "position_error_m": 0.0006887656523393427,
+              "angle_rad": 0.0018025008310727014,
+              "displacement_m": 0.0004538655001266881,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.00105087253780634,
+              "angle_rad": 0.0022814133003024543,
+              "displacement_m": 0.0003625773998513528,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0013241093864138468,
+              "angle_rad": 0.0026287927202675422,
+              "displacement_m": 0.0002740409592521895,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0015162283702741025,
+              "angle_rad": 0.0028544967685237687,
+              "displacement_m": 0.00019369776206176864,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0016356107236357538,
+              "angle_rad": 0.002961058172594962,
+              "displacement_m": 0.00012077306457817316,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "clearance_lift": {
+          "samples": [
+            {
+              "position_error_m": 0.00435101693651971,
+              "angle_rad": 0.005733149584030903,
+              "displacement_m": 0.00046610335694454753,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.004535310785413456,
+              "angle_rad": 0.005708758275899882,
+              "displacement_m": 0.0001842966304188556,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.004451605610656586,
+              "angle_rad": 0.005442843989204291,
+              "displacement_m": 8.421300355504958e-05,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.00415850932558059,
+              "angle_rad": 0.004913858540396141,
+              "displacement_m": 0.00029330299199387344,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0036884846847947505,
+              "angle_rad": 0.00415184519482619,
+              "displacement_m": 0.0004700885945934209,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "transport": {
+          "samples": [
+            {
+              "position_error_m": 0.0049208183054263764,
+              "angle_rad": 0.007601189367759583,
+              "displacement_m": 0.0004850247143172555,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.005338080317762308,
+              "angle_rad": 0.008129028564100063,
+              "displacement_m": 0.0004176781587423221,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.005690237438071194,
+              "angle_rad": 0.00856529428137568,
+              "displacement_m": 0.0003524504407682994,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.005979470264838084,
+              "angle_rad": 0.008913342071166373,
+              "displacement_m": 0.0002894102430498241,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.006207866001139347,
+              "angle_rad": 0.009176380696779158,
+              "displacement_m": 0.00022849464425715108,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "place": {
+          "samples": [
+            {
+              "position_error_m": 0.00639687260451071,
+              "angle_rad": 0.009226417099281153,
+              "displacement_m": 0.00031543494451519817,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.006503828810153775,
+              "angle_rad": 0.009158627670744629,
+              "displacement_m": 0.0001073873192546819,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.006429865831215236,
+              "angle_rad": 0.008779599601587772,
+              "displacement_m": 7.555676100173895e-05,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.006167833718739388,
+              "angle_rad": 0.008201780345599595,
+              "displacement_m": 0.00026315381290905617,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0057386280931666965,
+              "angle_rad": 0.0074760866331105725,
+              "displacement_m": 0.00042968705826363284,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        }
+      },
+      "claims_verified": true
+    },
+    {
+      "case": "bowl",
+      "seed": 51100,
+      "task_success": true,
+      "stages": {
+        "approach": {
+          "samples": [
+            {
+              "position_error_m": 0.0017797434942397562,
+              "angle_rad": 0.0023936697346896834,
+              "displacement_m": 0.00045662816792302747,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0014603317175643632,
+              "angle_rad": 0.001983748484696022,
+              "displacement_m": 0.0003226946713523155,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0012566123419496104,
+              "angle_rad": 0.0018048845225765912,
+              "displacement_m": 0.0002059962504740434,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.001169719337664497,
+              "angle_rad": 0.0018360352940699973,
+              "displacement_m": 8.714379531238571e-05,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0012053107633675896,
+              "angle_rad": 0.002063838103059179,
+              "displacement_m": 3.629636041691282e-05,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "descend": {
+          "samples": [
+            {
+              "position_error_m": 0.0007195984118622273,
+              "angle_rad": 0.0007631324734386587,
+              "displacement_m": 0.0003155386532220563,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0004102255534609721,
+              "angle_rad": 0.00029541315671364386,
+              "displacement_m": 0.0003103511035791694,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0001161660461776206,
+              "angle_rad": 0.00028692939073763816,
+              "displacement_m": 0.0002995284848145239,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.00018014710355430721,
+              "angle_rad": 0.0006953693083406107,
+              "displacement_m": 0.0002834584332720888,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.00044023656923133084,
+              "angle_rad": 0.0010919811003813657,
+              "displacement_m": 0.0002629365470245055,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "lift": {
+          "samples": [
+            {
+              "position_error_m": 0.0025675769973373744,
+              "angle_rad": 0.003549851859893406,
+              "displacement_m": 0.0004848255477422134,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0021463210287998753,
+              "angle_rad": 0.0029401856306525828,
+              "displacement_m": 0.00042150196002959875,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0017866952907713521,
+              "angle_rad": 0.002441849321389807,
+              "displacement_m": 0.0003631894342736678,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0015056815610482797,
+              "angle_rad": 0.002087607018415765,
+              "displacement_m": 0.00028665563601867384,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0013108992366728841,
+              "angle_rad": 0.0018752485312028672,
+              "displacement_m": 0.0001976879730551847,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "clearance_lift": {
+          "samples": [
+            {
+              "position_error_m": 0.0022245786728275286,
+              "angle_rad": 0.003113968554519463,
+              "displacement_m": 0.0003946417658002545,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0024636281846894727,
+              "angle_rad": 0.003261450400813798,
+              "displacement_m": 0.00023931883749952942,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0025391582137950113,
+              "angle_rad": 0.0032273923456825762,
+              "displacement_m": 7.585094610085865e-05,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0024735607313966573,
+              "angle_rad": 0.003097921038297948,
+              "displacement_m": 6.624401711918969e-05,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0023122335989080793,
+              "angle_rad": 0.002830396045273402,
+              "displacement_m": 0.00016160394599115503,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "transport": {
+          "samples": [
+            {
+              "position_error_m": 0.004701238272655156,
+              "angle_rad": 0.007243676143500679,
+              "displacement_m": 0.00046345342342713007,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0051018301425688525,
+              "angle_rad": 0.007751262348851679,
+              "displacement_m": 0.00040105226856362663,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.005442179476531728,
+              "angle_rad": 0.008174563720088663,
+              "displacement_m": 0.0003406844439866093,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.005724383281872386,
+              "angle_rad": 0.008516620701050488,
+              "displacement_m": 0.00028240693867229166,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0059504398408533315,
+              "angle_rad": 0.00878042596034273,
+              "displacement_m": 0.00022616288098606388,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "place": {
+          "samples": [
+            {
+              "position_error_m": 0.006202102010730996,
+              "angle_rad": 0.008984364606602853,
+              "displacement_m": 0.00036216222078456665,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.006366048503039829,
+              "angle_rad": 0.009001246235571648,
+              "displacement_m": 0.00016439582051933156,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.006347616343153902,
+              "angle_rad": 0.008729199054172283,
+              "displacement_m": 2.1032037243854916e-05,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.006153011711487182,
+              "angle_rad": 0.008229107552638854,
+              "displacement_m": 0.00019598972254961425,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.00579011231452869,
+              "angle_rad": 0.0075856213708930375,
+              "displacement_m": 0.00036349573772985374,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        }
+      },
+      "claims_verified": true
+    },
+    {
+      "case": "bowl",
+      "seed": 51106,
+      "task_success": true,
+      "stages": {
+        "approach": {
+          "samples": [
+            {
+              "position_error_m": 0.0023888509082169236,
+              "angle_rad": 0.0040849235873936796,
+              "displacement_m": 0.00046032720363757204,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.002752158657050644,
+              "angle_rad": 0.004526781893211208,
+              "displacement_m": 0.00036374402116763746,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0030124371507224833,
+              "angle_rad": 0.004805257961593784,
+              "displacement_m": 0.0002606824622458771,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0031660324842183885,
+              "angle_rad": 0.00491711279293214,
+              "displacement_m": 0.00015393678823060042,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.003209159670699601,
+              "angle_rad": 0.004888810381412206,
+              "displacement_m": 4.33250337987914e-05,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "descend": {
+          "samples": [
+            {
+              "position_error_m": 0.0006929626163111784,
+              "angle_rad": 0.0006802283744714983,
+              "displacement_m": 0.00032082710691233357,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0003734799660542801,
+              "angle_rad": 0.0002568033763621895,
+              "displacement_m": 0.0003195078871941177,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 6.83697725062015e-05,
+              "angle_rad": 0.00021128301374613822,
+              "displacement_m": 0.00030535116598216186,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.00021083896684587108,
+              "angle_rad": 0.000545078661225013,
+              "displacement_m": 0.0002788397017833378,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0004520316754481374,
+              "angle_rad": 0.0008325978665890125,
+              "displacement_m": 0.00024127623541247598,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "lift": {
+          "samples": [
+            {
+              "position_error_m": 0.003162076536929899,
+              "angle_rad": 0.0052477109592977715,
+              "displacement_m": 0.00043036365245594443,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.003475614013964506,
+              "angle_rad": 0.005593127523725275,
+              "displacement_m": 0.0003139287053449842,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0036684460426510746,
+              "angle_rad": 0.005749319085786001,
+              "displacement_m": 0.0001930927262585512,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.003736914968287509,
+              "angle_rad": 0.005731663911526247,
+              "displacement_m": 6.8532298187963e-05,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0036917348140911906,
+              "angle_rad": 0.005619770942917758,
+              "displacement_m": 4.560323851588777e-05,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "clearance_lift": {
+          "samples": [
+            {
+              "position_error_m": 0.00325027777498226,
+              "angle_rad": 0.004279962976045072,
+              "displacement_m": 0.00037144394220896666,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.003370047969607366,
+              "angle_rad": 0.004205234734780623,
+              "displacement_m": 0.00012001255357742299,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.003283195091563969,
+              "angle_rad": 0.003897263484438006,
+              "displacement_m": 8.702998291844466e-05,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0030198840851923185,
+              "angle_rad": 0.0033845985932113706,
+              "displacement_m": 0.00026368824976786783,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.002599787953288979,
+              "angle_rad": 0.0027246580549765216,
+              "displacement_m": 0.00042030978922766,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "transport": {
+          "samples": [
+            {
+              "position_error_m": 0.00539143827788517,
+              "angle_rad": 0.007827059651408062,
+              "displacement_m": 0.0004749030870155779,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.005760268278595567,
+              "angle_rad": 0.008225126230305056,
+              "displacement_m": 0.00036892107349234933,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.006024133666652991,
+              "angle_rad": 0.008480535500468258,
+              "displacement_m": 0.00026396663372339383,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.006184458449556473,
+              "angle_rad": 0.008595496343314605,
+              "displacement_m": 0.0001604740539450915,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.006243005540627194,
+              "angle_rad": 0.008575322196436525,
+              "displacement_m": 5.883249571387701e-05,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        },
+        "place": {
+          "samples": [
+            {
+              "position_error_m": 0.00449054011009408,
+              "angle_rad": 0.006244448501368783,
+              "displacement_m": 0.0003353604873714007,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.004646334347235832,
+              "angle_rad": 0.0062755912931154265,
+              "displacement_m": 0.00015584838350386806,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0046317984112708675,
+              "angle_rad": 0.006101987855939126,
+              "displacement_m": 1.5142201337569289e-05,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.00447899682740425,
+              "angle_rad": 0.005681534938157303,
+              "displacement_m": 0.0001536209031797381,
+              "satisfies_claim": true
+            },
+            {
+              "position_error_m": 0.0041770611817143624,
+              "angle_rad": 0.005123406913288832,
+              "displacement_m": 0.00030243084548840196,
+              "satisfies_claim": true
+            }
+          ],
+          "claim_verified": true
+        }
+      },
+      "claims_verified": true
+    }
+  ],
+  "all_reported_arrival_claims_verified": true,
+  "scope": "Supplemental read-only check of teacher dwell claims. Original task acceptance gates unchanged."
+}

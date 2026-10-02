@@ -1,0 +1,359 @@
+{
+  "version": "probe_real_initialization_r1",
+  "seed": 52104,
+  "reset_state": {
+    "time": 0.0,
+    "object_pos": [
+      -0.049144451011356435,
+      0.18713929868339682,
+      0.97
+    ],
+    "object_bbox": [
+      [
+        -0.1022579812010379,
+        0.13335538578393002,
+        0.97159
+      ],
+      [
+        0.0047492201689601915,
+        0.240555326108008,
+        1.0221319285234878
+      ]
+    ],
+    "contacts": [
+      {
+        "geoms": [
+          "akita_black_bowl_1_g7",
+          "plate_1_g2"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 0.021090146593075343
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g7",
+          "plate_1_g2"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 0.6109079218172695
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g7",
+          "plate_1_g3"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 0.021090146593075343
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g7",
+          "plate_1_g3"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 0.6109079218172695
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g7",
+          "plate_1_g10"
+        ],
+        "normal_N": 4.127438132202376,
+        "penetration_mm": 0.7685081656463941
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g7",
+          "plate_1_g10"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 0.13173863440574363
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g8",
+          "plate_1_g2"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 0.36008009253266954
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g8",
+          "plate_1_g2"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 1.292523002121574
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g8",
+          "plate_1_g3"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 0.36008009253266954
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g8",
+          "plate_1_g3"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 1.292523002121574
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g9",
+          "plate_1_g2"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 0.5377065180876849
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g9",
+          "plate_1_g2"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 1.050361569450409
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g9",
+          "plate_1_g3"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 0.5377065180876849
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g9",
+          "plate_1_g3"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 1.050361569450409
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g25",
+          "plate_1_g2"
+        ],
+        "normal_N": 2.0312364007137846,
+        "penetration_mm": 0.003942726078262754
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g25",
+          "plate_1_g3"
+        ],
+        "normal_N": 2.0312364007137846,
+        "penetration_mm": 0.003942726078262754
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g26",
+          "plate_1_g2"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 0.396151759472747
+      },
+      {
+        "geoms": [
+          "akita_black_bowl_1_g26",
+          "plate_1_g3"
+        ],
+        "normal_N": 0.0,
+        "penetration_mm": 0.396151759472747
+      }
+    ]
+  },
+  "after_quiet": {
+    "time": 5.999999999999561,
+    "object_pos": [
+      -0.06038187751825621,
+      0.19608384111964527,
+      0.898404150188853
+    ],
+    "object_bbox": [
+      [
+        -0.11399401319081466,
+        0.14215023110137848,
+        0.8999925920851882
+      ],
+      [
+        -0.006690227554834048,
+        0.24943192449025645,
+        0.950538685786546
+      ]
+    ],
+    "contacts": [
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g36"
+        ],
+        "normal_N": 0.003336730802349848,
+        "penetration_mm": 0.0035345734691585823
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g36"
+        ],
+        "normal_N": 0.002832362450548856,
+        "penetration_mm": 0.00300031129770124
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g36"
+        ],
+        "normal_N": 0.0026655407292947883,
+        "penetration_mm": 0.002823600807037139
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g36"
+        ],
+        "normal_N": 0.002161179180021808,
+        "penetration_mm": 0.0022893386355797964
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g37"
+        ],
+        "normal_N": 0.00283757890137685,
+        "penetration_mm": 0.0030058369568775212
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g37"
+        ],
+        "normal_N": 0.0026970609510436226,
+        "penetration_mm": 0.002856989512858055
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g37"
+        ],
+        "normal_N": 0.00216639556688171,
+        "penetration_mm": 0.0022948642947560782
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g37"
+        ],
+        "normal_N": 0.0020258792930474786,
+        "penetration_mm": 0.002146016850736612
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g38"
+        ],
+        "normal_N": 0.0034966383717917574,
+        "penetration_mm": 0.003703957405899415
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g38"
+        ],
+        "normal_N": 0.003291170162182127,
+        "penetration_mm": 0.003486312713413259
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g38"
+        ],
+        "normal_N": 0.0029922681543414543,
+        "penetration_mm": 0.0031696952344420727
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g38"
+        ],
+        "normal_N": 0.0027868023246831095,
+        "penetration_mm": 0.0029520505419559167
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g39"
+        ],
+        "normal_N": 0.0027323793191091758,
+        "penetration_mm": 0.002894401490267963
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g39"
+        ],
+        "normal_N": 0.0025443479083951392,
+        "penetration_mm": 0.0026952236201745715
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g39"
+        ],
+        "normal_N": 0.0022280171668871518,
+        "penetration_mm": 0.0023601393188106205
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g39"
+        ],
+        "normal_N": 0.0020399874103917597,
+        "penetration_mm": 0.002160961448717229
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g40"
+        ],
+        "normal_N": 0.003460460084798386,
+        "penetration_mm": 0.0036656351977130534
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g40"
+        ],
+        "normal_N": 0.003218870449930929,
+        "penetration_mm": 0.0034097281071830657
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g40"
+        ],
+        "normal_N": 0.0027892681523405223,
+        "penetration_mm": 0.002954662535591161
+      },
+      {
+        "geoms": [
+          "table_collision",
+          "akita_black_bowl_1_g40"
+        ],
+        "normal_N": 0.0025476820782315314,
+        "penetration_mm": 0.0026987554450611734
+      }
+    ]
+  },
+  "quiet_control_steps": 120,
+  "physics_samples": 3000,
+  "final_qpos_sha256": "d0e0aba5c2a9a51064aa59d4b135915de56978e3ccdde0eeb16ab6465f90fb11",
+  "reference_qpos_sha256": "d0e0aba5c2a9a51064aa59d4b135915de56978e3ccdde0eeb16ab6465f90fb11",
+  "exact_qpos_reproduction": true,
+  "source_sha256": "dfe23f18fb83241eca35a15a5b466645c69eac1850d89857b6a2f20b280dfe93",
+  "scope": "Observation of reset-to-preteacher interval. No state writes, resampling or gate changes."
+}

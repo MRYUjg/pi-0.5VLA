@@ -1,0 +1,209 @@
+{
+  "node": "EXPERT-ECO65-PANDA",
+  "generated_at": "2026-09-29T05:03:24",
+  "host_note": "纯 CPU 服务器；不使用 VLA 推理，脚本专家 + 7 维 OSC",
+  "robot": "ECO65",
+  "gripper": "PandaGripper",
+  "gripper_actual": {
+    "class": "PandaGripper",
+    "dof": 1,
+    "joints": [
+      "gripper0_finger_joint1",
+      "gripper0_finger_joint2"
+    ],
+    "n_actuators": 2,
+    "speed": 0.01
+  },
+  "suite": "libero_object",
+  "task_id": 0,
+  "block": {
+    "width_mm": 36.66599999999998,
+    "depth_mm": 60.0,
+    "height_mm": 70.0,
+    "density": 700.0,
+    "requested_width_mm": 50.0,
+    "grasp_margin_mm": 4.0
+  },
+  "transport_criterion_n4_style": {
+    "max_steps": 220,
+    "tol_m": 0.008
+  },
+  "penetration_soft_limit_mm": 2.0,
+  "assets": {
+    "n4_collect_sha16": "37b24549adad7c2a",
+    "n3_osc_full_chain_sha16": "c0d99a46c56258f8",
+    "n3_grasp_test_sha16": "f2094b6bb6716fc9"
+  },
+  "controller": {
+    "controller_type": "OperationalSpaceController",
+    "controller_output_max": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "controller_input_min": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "controller_input_max": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "control_timestep": 0.05,
+    "action_contract": "7 维 OSC_POSE 归一化动作 ∈[-1,1]：前 3 维平移，满量程 = output_max[0:3] = [0.05, 0.05, 0.05] m；后 3 维旋转，满量程 = output_max[3:6] = [0.5, 0.5, 0.5] rad；第 7 维夹爪 -1 开 / +1 合。"
+  },
+  "state_gripper": {
+    "indices": [
+      0,
+      1
+    ],
+    "names": [
+      "gripper0_finger_joint1",
+      "gripper0_finger_joint2"
+    ],
+    "resolution": "prismatic_fingers",
+    "note": "N4 原实现按 Left_1_Joint/Right_1_Joint 写死名字，PandaGripper 上会直接抛错；本脚本按关节名/平动指解析。"
+  },
+  "pilot": {
+    "gripper": {
+      "class": "PandaGripper",
+      "dof": 1,
+      "joints": [
+        "gripper0_finger_joint1",
+        "gripper0_finger_joint2"
+      ],
+      "n_actuators": 2,
+      "speed": 0.01
+    },
+    "pad_geoms": {
+      "representative": {
+        "left": "gripper0_finger1_pad_collision",
+        "right": "gripper0_finger2_pad_collision"
+      },
+      "left_all": [
+        "gripper0_finger1_pad_collision"
+      ],
+      "right_all": [
+        "gripper0_finger2_pad_collision"
+      ],
+      "pad_left": [
+        "gripper0_finger1_pad_collision"
+      ],
+      "pad_right": [
+        "gripper0_finger2_pad_collision"
+      ],
+      "n_left_geoms": 1,
+      "n_right_geoms": 1
+    },
+    "n3_pad_geoms_after_patch": {
+      "left": 27,
+      "right": 30,
+      "left_all": [
+        27
+      ],
+      "right_all": [
+        30
+      ]
+    },
+    "closing_axis_world": [
+      -0.0004890653086877954,
+      0.9999998804075548,
+      0.0
+    ],
+    "grip_site_world": [
+      -0.14846572962307625,
+      4.834551500964935e-07,
+      0.2612798407393846
+    ],
+    "empty_load_sequence": [
+      {
+        "cmd": -1.0,
+        "phase": "open1",
+        "jaw_gap_mm": 78.98087458512185,
+        "min_clearance_mm": 78.98087458512185,
+        "aperture_pair": [
+          "gripper0_finger1_pad_collision",
+          "gripper0_finger2_pad_collision"
+        ],
+        "grip_q": [
+          0.03999,
+          -0.03999
+        ],
+        "ncon": 29
+      },
+      {
+        "cmd": 1.0,
+        "phase": "close",
+        "jaw_gap_mm": 0.00045726801781407464,
+        "min_clearance_mm": 0.00045726801781407464,
+        "aperture_pair": [
+          "gripper0_finger1_pad_collision",
+          "gripper0_finger2_pad_collision"
+        ],
+        "grip_q": [
+          0.0005,
+          -0.0005
+        ],
+        "ncon": 33
+      },
+      {
+        "cmd": -1.0,
+        "phase": "open2",
+        "jaw_gap_mm": 78.97700408148165,
+        "min_clearance_mm": 78.97700408148165,
+        "aperture_pair": [
+          "gripper0_finger1_pad_collision",
+          "gripper0_finger2_pad_collision"
+        ],
+        "grip_q": [
+          0.039989,
+          -0.039988
+        ],
+        "ncon": 29
+      }
+    ],
+    "checks": {
+      "cmd_minus1_opens": true,
+      "cmd_plus1_closes": true,
+      "sign_convention_ok": true,
+      "reopen_ok": true,
+      "stroke_mm": 78.98041731710404
+    },
+    "repeatability": {
+      "n": 10,
+      "open_mm": {
+        "mean": 78.98087458512187,
+        "std": 1.4210854715202004e-14,
+        "min": 78.98087458512185,
+        "max": 78.98087458512185
+      },
+      "closed_mm": {
+        "mean": 0.0004572680178140746,
+        "std": 5.421010862427522e-20,
+        "min": 0.00045726801781407464,
+        "max": 0.00045726801781407464
+      },
+      "aperture_pair": [
+        "gripper0_finger1_pad_collision",
+        "gripper0_finger2_pad_collision"
+      ],
+      "min_clearance_mm": {
+        "mean": 0.0004572680178140746,
+        "max": 0.00045726801781407464
+      },
+      "pass": true,
+      "wall_seconds": 382.7
+    }
+  }
+}

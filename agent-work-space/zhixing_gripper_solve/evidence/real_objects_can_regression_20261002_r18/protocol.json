@@ -1,0 +1,22 @@
+{
+  "version": "run_real_control_ab_r5",
+  "teacher": "real_object_teacher_r18",
+  "teacher_sha256": "d9b54ef8aca58bbb38a415b3d8cd3335e1cc5225196d023f6211a47201c2c7d2",
+  "jobs": [
+    {
+      "case": "can",
+      "seed": 49100,
+      "profile": "eco65_no_extra_pd"
+    }
+  ],
+  "workers": 1,
+  "task": "native LIBERO Object task0 can / Spatial task0 bowl; no substitution",
+  "purpose": "scripted safe-path validation; no training dataset, no formal Spatial acceptance",
+  "runtime": "Python3.10 / MuJoCo3.2.6 CPU headless",
+  "upstream_sources_changed": false,
+  "runtime_profile_experiment": [
+    "eco65_no_extra_pd"
+  ],
+  "authorization_required": "Explicit user approval required before running eco65_no_extra_pd under AGENTS.md rule 4",
+  "acceptance": "native predicates plus real_object_teacher gates; see preregistered protocol"
+}

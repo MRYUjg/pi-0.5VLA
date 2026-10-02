@@ -1,0 +1,41 @@
+{
+  "jobs": [
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47100,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47101,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47103,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47201,
+      "force": 0
+    },
+    {
+      "gripper": "ZhixingGripper",
+      "mode": "chain",
+      "seed": 47202,
+      "force": 0
+    }
+  ],
+  "note": "Diagnostic only. No official acceptance gates altered; each load is an independent grasp.",
+  "force_duration_s": 2,
+  "relative_slip_limit_mm": 5,
+  "bilateral_fraction_min": 0.95,
+  "baseline_relative_slip_limit_mm": 2,
+  "baseline_lift_min_mm": 30,
+  "workers": 2
+}

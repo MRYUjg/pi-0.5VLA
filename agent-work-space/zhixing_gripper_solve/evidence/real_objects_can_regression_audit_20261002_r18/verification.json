@@ -1,0 +1,83 @@
+{
+  "version": "verify_real_object_r6",
+  "batch": "/mnt/data/vla-policy/openpi/agent-work-space/zhixing_gripper_solve/evidence/real_objects_can_regression_20261002_r18",
+  "pass": true,
+  "complete": true,
+  "summary": {
+    "can": {
+      "success": 0,
+      "total": 1,
+      "unique_initial_states": 1,
+      "unique_target_bboxes": 1
+    }
+  },
+  "records": [
+    {
+      "case": "can",
+      "seed": 49100,
+      "success": false,
+      "failure": {
+        "stage": "descend",
+        "type": "PathRejected",
+        "reason": "descend did not converge at actual post-action state",
+        "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r18.py\", line 171, in main\n    stage='descend';ep.servo_limited(pin,R,-1,stage,260,tol=.001 if a.case=='bowl' else .004)\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 242, in servo\n    arrived(ep,target,R,phase,ok,float(kw.get('tol',.004)))\n  File \"/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py\", line 197, in arrived\n    if not valid:raise PathRejected(phase+' did not converge at actual post-action state')\nsafe_teacher_r8.PathRejected: descend did not converge at actual post-action state\n"
+      },
+      "audit_pass": true,
+      "errors": [],
+      "gates": {
+        "initial_goal_false": true,
+        "all_stages_complete": false,
+        "lift_30mm": false,
+        "hold_40steps": false,
+        "bilateral_hold": false,
+        "unsupported_hold": false,
+        "penetration_2mm": true,
+        "max_step_disp_20mm": true,
+        "native_success_window": false,
+        "post_drift_5mm": false,
+        "target_support_contact": false,
+        "no_physics_warnings": true
+      },
+      "initial_state_sha256": "fd9574e0f94cc6edbff45a770d0fbe4343218eecfce33a0e0a0fd38bd3615279",
+      "initial_object_bbox": [
+        [
+          -0.15042355173033264,
+          -0.2747242593832103,
+          -2.0918335901648488e-05
+        ],
+        [
+          -0.08751504377732515,
+          -0.21219811010067,
+          0.0762012039677475
+        ]
+      ],
+      "mass_kg": 0.025851445888000014,
+      "physics_samples": 9200,
+      "bilateral_hold": 0,
+      "hold_force_mean_N": null,
+      "hold_force_balance_mean_N": null,
+      "hold_other_force_peak_N": null,
+      "penetration_peak_mm": 0.0,
+      "max_step_disp_mm": 7.043160997349826,
+      "recipient_shift_mm": 0.0,
+      "min_horizontal_clearance_mm": null,
+      "unsafe_contact_samples": 0,
+      "robot_nontarget_contacts": 0,
+      "hold_relative_slip_mm": 0.0,
+      "post_drift_mm": null,
+      "sources": {
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/real_object_teacher_r18.py": "d9b54ef8aca58bbb38a415b3d8cd3335e1cc5225196d023f6211a47201c2c7d2",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+        "/app/agent-work-space/zhixing_gripper_solve/scripts/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+        "/app/agent-work-space/zhixing_adaptation_20260927/scripts/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+        "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+        "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+        "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+      }
+    }
+  ],
+  "limitation": "Native task predicates use recorded engine output; numeric gates recomputed independently from per-physics-step data. Audit PASS is evidence consistency, not task acceptance."
+}

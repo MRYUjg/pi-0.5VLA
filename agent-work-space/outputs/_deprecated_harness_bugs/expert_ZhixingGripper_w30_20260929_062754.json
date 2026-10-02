@@ -1,0 +1,1008 @@
+{
+  "node": "EXPERT-ECO65-PANDA",
+  "generated_at": "2026-09-29T06:28:26",
+  "host_note": "纯 CPU 服务器；不使用 VLA 推理，脚本专家 + 7 维 OSC",
+  "robot": "ECO65",
+  "gripper": "ZhixingGripper",
+  "gripper_actual": {
+    "class": "ZhixingGripper",
+    "dof": 1,
+    "joints": [
+      "gripper0_Left_1_Joint",
+      "gripper0_Left_Support_Joint",
+      "gripper0_Left_2_Joint",
+      "gripper0_Right_2_Joint",
+      "gripper0_Right_1_Joint",
+      "gripper0_Right_Support_Joint"
+    ],
+    "n_actuators": 1,
+    "speed": 0.2
+  },
+  "suite": "libero_object",
+  "task_id": 0,
+  "block": {
+    "width_mm": 30.0,
+    "depth_mm": 60.0,
+    "height_mm": 70.0,
+    "density": 700.0,
+    "requested_width_mm": 30.0,
+    "grasp_margin_mm": 4.0
+  },
+  "transport_criterion_n4_style": {
+    "max_steps": 220,
+    "tol_m": 0.008
+  },
+  "penetration_soft_limit_mm": 2.0,
+  "aperture": {
+    "reset_mm": 17.8,
+    "full_open_mm": 107.77,
+    "definition": "两侧指垫碰撞 geom 表面点集的跨侧最近点对距离；aperture=当前状态下净距最大的那一对（功能性开口），min_clearance=所有组合的最小净距（判断是否合到底）"
+  },
+  "assets": {
+    "n4_collect_sha16": "37b24549adad7c2a",
+    "n3_osc_full_chain_sha16": "c0d99a46c56258f8",
+    "n3_grasp_test_sha16": "f2094b6bb6716fc9"
+  },
+  "controller": {
+    "controller_type": "OperationalSpaceController",
+    "controller_output_max": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "controller_input_min": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "controller_input_max": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "control_timestep": 0.05,
+    "action_contract": "7 维 OSC_POSE 归一化动作 ∈[-1,1]：前 3 维平移，满量程 = output_max[0:3] = [0.05, 0.05, 0.05] m；后 3 维旋转，满量程 = output_max[3:6] = [0.5, 0.5, 0.5] rad；第 7 维夹爪 -1 开 / +1 合。"
+  },
+  "state_gripper": {
+    "indices": [
+      0,
+      4
+    ],
+    "names": [
+      "gripper0_Left_1_Joint",
+      "gripper0_Right_1_Joint"
+    ],
+    "resolution": "zhixing_named",
+    "note": "N4 原实现按 Left_1_Joint/Right_1_Joint 写死名字，PandaGripper 上会直接抛错；本脚本按关节名/平动指解析。"
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "trial_label": "ZhixingGripper_w30_t1",
+      "seed": 45000,
+      "block_extent_mm": {
+        "x_depth": 60.0,
+        "y_width_along_closing_axis": 30.0,
+        "z_height": 70.0
+      },
+      "object_init_sample": {
+        "region": "floor_target_object_region",
+        "xy": [
+          -0.10099,
+          -0.25014
+        ],
+        "yaw_rad": 3.140222,
+        "region_ranges": [
+          -0.145,
+          -0.265,
+          -0.095,
+          -0.215
+        ],
+        "yaw_forced_rad": -3.142964,
+        "yaw_before_forced_rad": -2.845197
+      },
+      "open_budget_mm": 107.77487621442874,
+      "grasp_pinch_target": [
+        -0.10099,
+        -0.25014,
+        0.06589224457978382
+      ],
+      "grasp_z": 0.06589224457978382,
+      "grasp_section_width_mm": 30.1,
+      "grasp_fingertip_clear_mm": 46.1,
+      "grasp_plan_scan": [
+        [
+          0.0699,
+          30.1,
+          50.1,
+          true
+        ],
+        [
+          0.0679,
+          30.1,
+          48.1,
+          true
+        ],
+        [
+          0.0659,
+          30.1,
+          46.1,
+          true
+        ],
+        [
+          0.0059,
+          30.1,
+          -13.9,
+          false
+        ],
+        [
+          0.0039,
+          30.1,
+          -15.9,
+          false
+        ],
+        [
+          0.0019,
+          30.1,
+          -17.9,
+          false
+        ],
+        [
+          -0.0001,
+          30.1,
+          -19.9,
+          false
+        ]
+      ],
+      "contact_hook_installed": true,
+      "phases": [],
+      "gates": {
+        "lift_ge_30mm": false,
+        "hold_ge_25mm_40steps": false,
+        "place_release_stable": false,
+        "native_libero_predicate": false,
+        "no_teleport": true,
+        "penetration_within_soft_limit": false,
+        "approach_converged": true,
+        "descend_converged": true
+      },
+      "notes": [
+        "搬运段物体已脱落（高度回落），跳过下潜投放"
+      ],
+      "success": false,
+      "failed_gates": [
+        "lift_ge_30mm",
+        "hold_ge_25mm_40steps",
+        "place_release_stable",
+        "native_libero_predicate",
+        "penetration_within_soft_limit"
+      ],
+      "transport_converged": false,
+      "place_converged": false,
+      "servo_no_timeout_n4": false,
+      "success_n4_style": false,
+      "penetration_peak_pad_mm": 17.69527785778079,
+      "penetration_peak_object_any_mm": 17.69527785778079,
+      "penetration_per_phase_mm": {
+        "approach": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 2375
+        },
+        "descend": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 2525
+        },
+        "close": {
+          "pad_peak_mm": 17.69527785778079,
+          "any_peak_mm": 17.69527785778079,
+          "samples": 1675
+        },
+        "lift": {
+          "pad_peak_mm": 0.3135323539569308,
+          "any_peak_mm": 0.6037141890344391,
+          "samples": 525
+        },
+        "hold": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 1000
+        },
+        "transport": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 5450
+        }
+      },
+      "n_samples": 13550,
+      "max_step_disp_m": 0.011990373637008663,
+      "n_frames": 542,
+      "phase_end": {
+        "approach": [
+          true,
+          95
+        ],
+        "approach_residual_m": 0.0034875222597605627,
+        "descend": [
+          true,
+          101
+        ],
+        "descend_converged_pos": true,
+        "descend_residual_m": 0.0079559528905996,
+        "descend_pad_mid_z": 0.10083226948457182,
+        "descend_block_top_z": 0.06989224457978382,
+        "descend_pad_below_block_top_mm": -30.94002490478799,
+        "close_steps": 67,
+        "jaw_after_close_mm": 18.282413932421235,
+        "grip_q_after_close": [
+          -0.908937,
+          0.908004,
+          -0.909241,
+          0.90232,
+          0.90267,
+          0.90417
+        ],
+        "obj_shift_on_close_mm": 1.0381842510421848,
+        "close_penetration_peak_mm": 17.69527785778079,
+        "lift_servo": [
+          true,
+          21
+        ],
+        "lift_residual_m": 0.0029129951315282477,
+        "lift_mm": -1.3877787807814457e-14,
+        "hold_steps_used": 40,
+        "hold_min_mm": -1.3877787807814457e-14,
+        "hold_max_mm": -1.3877787807814457e-14,
+        "hold_end_mm": -1.3877787807814457e-14,
+        "hold_penetration_peak_mm": 0.0,
+        "place_point": [
+          0.010781297242499106,
+          0.24752292714363128,
+          0.17144845137544748
+        ],
+        "basket_inner_size_mm": [
+          157.33796365323144,
+          169.51924133156447,
+          141.4631848203737
+        ],
+        "transport": [
+          false,
+          218
+        ],
+        "transport_residual_m": 0.07417911740724625,
+        "transport_target": [
+          0.010781297242499106,
+          0.24752292714363128,
+          0.2614484513754475
+        ],
+        "transport_grip_site": [
+          -0.011159272099146019,
+          0.22962558100007305,
+          0.19290619129550723
+        ],
+        "transport_err_world_m": [
+          0.021940569341645125,
+          0.01789734614355823,
+          0.06854226007994024
+        ],
+        "transport_err_horizontal_m": 0.028314370591942823,
+        "sep_after_transport_mm": 18.334162248572003,
+        "object_lost_after_transport": true,
+        "place": [
+          false,
+          0
+        ],
+        "place_residual_m": null
+      },
+      "wall_seconds": 125.6,
+      "native_success_at_end": false
+    },
+    {
+      "trial": 2,
+      "trial_label": "ZhixingGripper_w30_t2",
+      "seed": 45001,
+      "block_extent_mm": {
+        "x_depth": 60.0,
+        "y_width_along_closing_axis": 30.0,
+        "z_height": 70.0
+      },
+      "object_init_sample": {
+        "region": "floor_target_object_region",
+        "xy": [
+          -0.11223,
+          -0.25845
+        ],
+        "yaw_rad": 3.140222,
+        "region_ranges": [
+          -0.145,
+          -0.265,
+          -0.095,
+          -0.215
+        ],
+        "yaw_forced_rad": -3.142964,
+        "yaw_before_forced_rad": -0.696681
+      },
+      "open_budget_mm": 107.77487621439056,
+      "grasp_pinch_target": [
+        -0.11223,
+        -0.25844999999999996,
+        0.06589224457978379
+      ],
+      "grasp_z": 0.06589224457978379,
+      "grasp_section_width_mm": 30.1,
+      "grasp_fingertip_clear_mm": 46.1,
+      "grasp_plan_scan": [
+        [
+          0.0699,
+          30.1,
+          50.1,
+          true
+        ],
+        [
+          0.0679,
+          30.1,
+          48.1,
+          true
+        ],
+        [
+          0.0659,
+          30.1,
+          46.1,
+          true
+        ],
+        [
+          0.0059,
+          30.1,
+          -13.9,
+          false
+        ],
+        [
+          0.0039,
+          30.1,
+          -15.9,
+          false
+        ],
+        [
+          0.0019,
+          30.1,
+          -17.9,
+          false
+        ],
+        [
+          -0.0001,
+          30.1,
+          -19.9,
+          false
+        ]
+      ],
+      "contact_hook_installed": true,
+      "phases": [],
+      "gates": {
+        "lift_ge_30mm": false,
+        "hold_ge_25mm_40steps": false,
+        "place_release_stable": false,
+        "native_libero_predicate": false,
+        "no_teleport": true,
+        "penetration_within_soft_limit": false,
+        "approach_converged": true,
+        "descend_converged": true
+      },
+      "notes": [
+        "搬运段物体已脱落（高度回落），跳过下潜投放"
+      ],
+      "success": false,
+      "failed_gates": [
+        "lift_ge_30mm",
+        "hold_ge_25mm_40steps",
+        "place_release_stable",
+        "native_libero_predicate",
+        "penetration_within_soft_limit"
+      ],
+      "transport_converged": false,
+      "place_converged": false,
+      "servo_no_timeout_n4": false,
+      "success_n4_style": false,
+      "penetration_peak_pad_mm": 17.710559825480733,
+      "penetration_peak_object_any_mm": 17.710559825480733,
+      "penetration_per_phase_mm": {
+        "approach": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 2425
+        },
+        "descend": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 2875
+        },
+        "close": {
+          "pad_peak_mm": 17.710559825480733,
+          "any_peak_mm": 17.710559825480733,
+          "samples": 1675
+        },
+        "lift": {
+          "pad_peak_mm": 0.2870300722650684,
+          "any_peak_mm": 0.5506298041913702,
+          "samples": 500
+        },
+        "hold": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 1000
+        },
+        "transport": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 5500
+        }
+      },
+      "n_samples": 13975,
+      "max_step_disp_m": 0.011967617491055791,
+      "n_frames": 559,
+      "phase_end": {
+        "approach": [
+          true,
+          97
+        ],
+        "approach_residual_m": 0.0035403769383924944,
+        "descend": [
+          true,
+          115
+        ],
+        "descend_converged_pos": true,
+        "descend_residual_m": 0.00794655496037334,
+        "descend_pad_mid_z": 0.10078790456476533,
+        "descend_block_top_z": 0.0698922445797838,
+        "descend_pad_below_block_top_mm": -30.89565998498153,
+        "close_steps": 67,
+        "jaw_after_close_mm": 18.286496140546873,
+        "grip_q_after_close": [
+          -0.908942,
+          0.908275,
+          -0.909158,
+          0.902457,
+          0.902885,
+          0.904613
+        ],
+        "obj_shift_on_close_mm": 0.8252384153374707,
+        "close_penetration_peak_mm": 17.710559825480733,
+        "lift_servo": [
+          true,
+          20
+        ],
+        "lift_residual_m": 0.0027391702224999434,
+        "lift_mm": -1.3877787807814457e-14,
+        "hold_steps_used": 40,
+        "hold_min_mm": -1.3877787807814457e-14,
+        "hold_max_mm": -1.3877787807814457e-14,
+        "hold_end_mm": -1.3877787807814457e-14,
+        "hold_penetration_peak_mm": 0.0,
+        "place_point": [
+          -0.0030435863922810766,
+          0.26833320999936555,
+          0.17144845137544745
+        ],
+        "basket_inner_size_mm": [
+          157.33796365323144,
+          169.51924133156447,
+          141.46318482037367
+        ],
+        "transport": [
+          false,
+          220
+        ],
+        "transport_residual_m": 0.07321441527077711,
+        "transport_target": [
+          -0.0030435863922810766,
+          0.26833320999936555,
+          0.2614484513754475
+        ],
+        "transport_grip_site": [
+          -0.025468971915445237,
+          0.2477084545671378,
+          0.1948836664342185
+        ],
+        "transport_err_world_m": [
+          0.02242538552316416,
+          0.020624755432227748,
+          0.06656478494122897
+        ],
+        "transport_err_horizontal_m": 0.030467662406258686,
+        "sep_after_transport_mm": 18.33417905244152,
+        "object_lost_after_transport": true,
+        "place": [
+          false,
+          0
+        ],
+        "place_residual_m": null
+      },
+      "wall_seconds": 127.3,
+      "native_success_at_end": false
+    },
+    {
+      "trial": 3,
+      "trial_label": "ZhixingGripper_w30_t3",
+      "seed": 45002,
+      "block_extent_mm": {
+        "x_depth": 60.0,
+        "y_width_along_closing_axis": 30.0,
+        "z_height": 70.0
+      },
+      "object_init_sample": {
+        "region": "floor_target_object_region",
+        "xy": [
+          -0.13656,
+          -0.25109
+        ],
+        "yaw_rad": 3.140222,
+        "region_ranges": [
+          -0.145,
+          -0.265,
+          -0.095,
+          -0.215
+        ],
+        "yaw_forced_rad": -3.142964,
+        "yaw_before_forced_rad": 0.599914
+      },
+      "open_budget_mm": 107.77487621441081,
+      "grasp_pinch_target": [
+        -0.13656,
+        -0.2510899999999999,
+        0.06589224457978379
+      ],
+      "grasp_z": 0.06589224457978379,
+      "grasp_section_width_mm": 30.1,
+      "grasp_fingertip_clear_mm": 46.1,
+      "grasp_plan_scan": [
+        [
+          0.0699,
+          30.1,
+          50.1,
+          true
+        ],
+        [
+          0.0679,
+          30.1,
+          48.1,
+          true
+        ],
+        [
+          0.0659,
+          30.1,
+          46.1,
+          true
+        ],
+        [
+          0.0059,
+          30.1,
+          -13.9,
+          false
+        ],
+        [
+          0.0039,
+          30.1,
+          -15.9,
+          false
+        ],
+        [
+          0.0019,
+          30.1,
+          -17.9,
+          false
+        ],
+        [
+          -0.0001,
+          30.1,
+          -19.9,
+          false
+        ]
+      ],
+      "contact_hook_installed": true,
+      "phases": [],
+      "gates": {
+        "lift_ge_30mm": false,
+        "hold_ge_25mm_40steps": false,
+        "place_release_stable": false,
+        "native_libero_predicate": false,
+        "no_teleport": true,
+        "penetration_within_soft_limit": false,
+        "approach_converged": true,
+        "descend_converged": false
+      },
+      "notes": [
+        "搬运段物体已脱落（高度回落），跳过下潜投放"
+      ],
+      "success": false,
+      "failed_gates": [
+        "lift_ge_30mm",
+        "hold_ge_25mm_40steps",
+        "place_release_stable",
+        "native_libero_predicate",
+        "penetration_within_soft_limit",
+        "descend_converged"
+      ],
+      "transport_converged": false,
+      "place_converged": false,
+      "servo_no_timeout_n4": false,
+      "success_n4_style": false,
+      "penetration_peak_pad_mm": 20.334314996319396,
+      "penetration_peak_object_any_mm": 20.334314996319396,
+      "penetration_per_phase_mm": {
+        "approach": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 2275
+        },
+        "descend": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 5125
+        },
+        "close": {
+          "pad_peak_mm": 20.334314996319396,
+          "any_peak_mm": 20.334314996319396,
+          "samples": 1675
+        },
+        "lift": {
+          "pad_peak_mm": 0.2139822454341963,
+          "any_peak_mm": 0.8911171325054063,
+          "samples": 425
+        },
+        "hold": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.107755420216675,
+          "samples": 1000
+        },
+        "transport": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 5500
+        }
+      },
+      "n_samples": 16000,
+      "max_step_disp_m": 0.008387179234670989,
+      "n_frames": 640,
+      "phase_end": {
+        "approach": [
+          true,
+          91
+        ],
+        "approach_residual_m": 0.003903025836672819,
+        "descend": [
+          false,
+          205
+        ],
+        "descend_converged_pos": true,
+        "descend_residual_m": 0.00588552363806461,
+        "descend_pad_mid_z": 0.09828681088740027,
+        "descend_block_top_z": 0.0698922445797838,
+        "descend_pad_below_block_top_mm": -28.39456630761647,
+        "close_steps": 67,
+        "jaw_after_close_mm": 18.300015904769246,
+        "grip_q_after_close": [
+          -0.908693,
+          0.909187,
+          -0.908531,
+          0.903263,
+          0.903886,
+          0.906139
+        ],
+        "obj_shift_on_close_mm": 2.870523106738292,
+        "close_penetration_peak_mm": 20.334314996319396,
+        "lift_servo": [
+          true,
+          17
+        ],
+        "lift_residual_m": 0.002572736955904303,
+        "lift_mm": -3.3306690738754696e-13,
+        "hold_steps_used": 40,
+        "hold_min_mm": -2.7755575615628914e-14,
+        "hold_max_mm": 0.0,
+        "hold_end_mm": 0.0,
+        "hold_penetration_peak_mm": 0.0,
+        "place_point": [
+          0.0057181486138538976,
+          0.2751431308727123,
+          0.17144845137544745
+        ],
+        "basket_inner_size_mm": [
+          157.33796365323144,
+          169.51924133156447,
+          141.46318482037367
+        ],
+        "transport": [
+          false,
+          220
+        ],
+        "transport_residual_m": 0.08035209213461998,
+        "transport_target": [
+          0.0057181486138538976,
+          0.2751431308727123,
+          0.2614484513754475
+        ],
+        "transport_grip_site": [
+          -0.01960022667750871,
+          0.25114252029925127,
+          0.18906518378789966
+        ],
+        "transport_err_world_m": [
+          0.025318375291362608,
+          0.024000610573461034,
+          0.07238326758754782
+        ],
+        "transport_err_horizontal_m": 0.034886235613680226,
+        "sep_after_transport_mm": 18.334156024190506,
+        "object_lost_after_transport": true,
+        "place": [
+          false,
+          0
+        ],
+        "place_residual_m": null
+      },
+      "wall_seconds": 139.2,
+      "native_success_at_end": false
+    },
+    {
+      "trial": 4,
+      "trial_label": "ZhixingGripper_w30_t4",
+      "seed": 45003,
+      "block_extent_mm": {
+        "x_depth": 60.0,
+        "y_width_along_closing_axis": 30.0,
+        "z_height": 70.0
+      },
+      "object_init_sample": {
+        "region": "floor_target_object_region",
+        "xy": [
+          -0.11957,
+          -0.22073
+        ],
+        "yaw_rad": 3.140222,
+        "region_ranges": [
+          -0.145,
+          -0.265,
+          -0.095,
+          -0.215
+        ],
+        "yaw_forced_rad": -3.142964,
+        "yaw_before_forced_rad": 1.959506
+      },
+      "open_budget_mm": 107.77487621441101,
+      "grasp_pinch_target": [
+        -0.11956999999999998,
+        -0.22072999999999998,
+        0.06589224457978382
+      ],
+      "grasp_z": 0.06589224457978382,
+      "grasp_section_width_mm": 30.1,
+      "grasp_fingertip_clear_mm": 46.1,
+      "grasp_plan_scan": [
+        [
+          0.0699,
+          30.1,
+          50.1,
+          true
+        ],
+        [
+          0.0679,
+          30.1,
+          48.1,
+          true
+        ],
+        [
+          0.0659,
+          30.1,
+          46.1,
+          true
+        ],
+        [
+          0.0059,
+          30.1,
+          -13.9,
+          false
+        ],
+        [
+          0.0039,
+          30.1,
+          -15.9,
+          false
+        ],
+        [
+          0.0019,
+          30.1,
+          -17.9,
+          false
+        ],
+        [
+          -0.0001,
+          30.1,
+          -19.9,
+          false
+        ]
+      ],
+      "contact_hook_installed": true,
+      "phases": [],
+      "gates": {
+        "lift_ge_30mm": false,
+        "hold_ge_25mm_40steps": false,
+        "place_release_stable": false,
+        "native_libero_predicate": false,
+        "no_teleport": true,
+        "penetration_within_soft_limit": false,
+        "approach_converged": true,
+        "descend_converged": false
+      },
+      "notes": [
+        "搬运段物体已脱落（高度回落），跳过下潜投放"
+      ],
+      "success": false,
+      "failed_gates": [
+        "lift_ge_30mm",
+        "hold_ge_25mm_40steps",
+        "place_release_stable",
+        "native_libero_predicate",
+        "penetration_within_soft_limit",
+        "descend_converged"
+      ],
+      "transport_converged": false,
+      "place_converged": false,
+      "servo_no_timeout_n4": false,
+      "success_n4_style": false,
+      "penetration_peak_pad_mm": 20.548090412600878,
+      "penetration_peak_object_any_mm": 20.548090412600878,
+      "penetration_per_phase_mm": {
+        "approach": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 2000
+        },
+        "descend": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.1077554202162101,
+          "samples": 5150
+        },
+        "close": {
+          "pad_peak_mm": 20.548090412600878,
+          "any_peak_mm": 20.548090412600878,
+          "samples": 1675
+        },
+        "lift": {
+          "pad_peak_mm": 0.21384297495136706,
+          "any_peak_mm": 0.43462915440814487,
+          "samples": 425
+        },
+        "hold": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.10775542021621703,
+          "samples": 1000
+        },
+        "transport": {
+          "pad_peak_mm": 0.0,
+          "any_peak_mm": 0.10775542021621703,
+          "samples": 5500
+        }
+      },
+      "n_samples": 15750,
+      "max_step_disp_m": 0.012161020129576107,
+      "n_frames": 630,
+      "phase_end": {
+        "approach": [
+          true,
+          80
+        ],
+        "approach_residual_m": 0.003836807162764848,
+        "descend": [
+          false,
+          206
+        ],
+        "descend_converged_pos": true,
+        "descend_residual_m": 0.005741340177203946,
+        "descend_pad_mid_z": 0.0982260719120909,
+        "descend_block_top_z": 0.06989224457978382,
+        "descend_pad_below_block_top_mm": -28.333827332307077,
+        "close_steps": 67,
+        "jaw_after_close_mm": 18.3005008947262,
+        "grip_q_after_close": [
+          -0.908997,
+          0.908967,
+          -0.909006,
+          0.902771,
+          0.903513,
+          0.906186
+        ],
+        "obj_shift_on_close_mm": 0.4336422550163924,
+        "close_penetration_peak_mm": 20.548090412600878,
+        "lift_servo": [
+          true,
+          17
+        ],
+        "lift_residual_m": 0.002379360846021124,
+        "lift_mm": 2.7755575615628914e-14,
+        "hold_steps_used": 40,
+        "hold_min_mm": 2.7755575615628914e-14,
+        "hold_max_mm": 2.7755575615628914e-14,
+        "hold_end_mm": 2.7755575615628914e-14,
+        "hold_penetration_peak_mm": 0.0,
+        "place_point": [
+          -0.0026278587800262973,
+          0.2546700908702159,
+          0.17144845137544745
+        ],
+        "basket_inner_size_mm": [
+          157.33796365323144,
+          169.51924133156447,
+          141.46318482037367
+        ],
+        "transport": [
+          false,
+          220
+        ],
+        "transport_residual_m": 0.06862090992657194,
+        "transport_target": [
+          -0.0026278587800262973,
+          0.2546700908702159,
+          0.2614484513754475
+        ],
+        "transport_grip_site": [
+          -0.02219925970412668,
+          0.23768846334804838,
+          0.19793319152199718
+        ],
+        "transport_err_world_m": [
+          0.019571400924100382,
+          0.01698162752216753,
+          0.0635152598534503
+        ],
+        "transport_err_horizontal_m": 0.025911684766404423,
+        "sep_after_transport_mm": 18.334178766486737,
+        "object_lost_after_transport": true,
+        "place": [
+          false,
+          0
+        ],
+        "place_residual_m": null
+      },
+      "wall_seconds": 140.7,
+      "native_success_at_end": false
+    }
+  ],
+  "summary": {
+    "n_total": 4,
+    "n_success_n3_gates": 0,
+    "success_rate_n3_gates": 0.0,
+    "n_success_n4_style": 0,
+    "success_rate_n4_style": 0.0,
+    "n_transport_converged": 0,
+    "transport_residual_m": [
+      0.07417911740724625,
+      0.07321441527077711,
+      0.08035209213461998,
+      0.06862090992657194
+    ],
+    "penetration_peak_pad_mm": [
+      17.69527785778079,
+      17.710559825480733,
+      20.334314996319396,
+      20.548090412600878
+    ],
+    "failed_gate_counts": {
+      "lift_ge_30mm": 4,
+      "hold_ge_25mm_40steps": 4,
+      "place_release_stable": 4,
+      "native_libero_predicate": 4,
+      "penetration_within_soft_limit": 4,
+      "descend_converged": 2
+    }
+  },
+  "verdict": "NOT_PASS"
+}

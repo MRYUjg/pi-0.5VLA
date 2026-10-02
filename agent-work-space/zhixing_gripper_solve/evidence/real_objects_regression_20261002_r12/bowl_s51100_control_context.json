@@ -1,0 +1,70 @@
+{
+  "version": "probe_real_control_context_r1",
+  "scope": "Read-only source/runtime and offline saved-state reconstruction; not an A/B causal test",
+  "profile": "legacy",
+  "extra_joint_pd_kp": 3.0,
+  "extra_joint_pd_kv": 3.4641016151377544,
+  "robot_class": "MountedECO65",
+  "controller_eef_name": "gripper0_grip_site",
+  "teacher_site": "gripper0_grip_site",
+  "osc_kp": [
+    150.0,
+    150.0,
+    150.0,
+    150.0,
+    150.0,
+    150.0
+  ],
+  "osc_uncoupling": true,
+  "position_output_max": [
+    0.05,
+    0.05,
+    0.05,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "saved_joint_q": [
+    0.16086396013913087,
+    -0.9507203045167141,
+    -0.37635885881091297,
+    -0.29136623277695234,
+    1.5808637779948824,
+    -1.4113096163613137
+  ],
+  "init_joint_q": [
+    -0.12639,
+    -0.222035,
+    -0.841572,
+    -0.563545,
+    1.563635,
+    -1.697476
+  ],
+  "extra_pd_torque_Nm": [
+    -0.8616997889075513,
+    2.1862037102406457,
+    -1.3956498274785354,
+    -0.8167434462778684,
+    -0.05170703677843686,
+    -0.8584076657949915
+  ],
+  "torque_limits": [
+    [
+      -60.0,
+      -60.0,
+      -30.0,
+      -10.0,
+      -10.0,
+      -10.0
+    ],
+    [
+      60.0,
+      60.0,
+      30.0,
+      10.0,
+      10.0,
+      10.0
+    ]
+  ],
+  "parameters_modified": false
+}

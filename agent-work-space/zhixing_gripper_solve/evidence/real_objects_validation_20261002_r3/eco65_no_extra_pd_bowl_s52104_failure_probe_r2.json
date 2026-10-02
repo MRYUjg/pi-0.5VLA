@@ -1,0 +1,90 @@
+{
+  "mode": "offline reconstructed mj_forward; not a live force trace",
+  "contacts": [],
+  "joints": [
+    {
+      "joint": "robot0_joint_1",
+      "position": 0.13960299381647753,
+      "range": [
+        -3.106,
+        3.106
+      ],
+      "bias_Nm": 4.671021638253877e-11,
+      "constraint_Nm": -0.03512897436733317,
+      "actuator_Nm": 0.03512665007793506,
+      "passive_Nm": -7.185706745421284e-07,
+      "frictionloss": 0.1,
+      "damping": 0.1
+    },
+    {
+      "joint": "robot0_joint_2",
+      "position": -1.084373830989771,
+      "range": [
+        -3.106,
+        2.356
+      ],
+      "bias_Nm": 25.418166801372948,
+      "constraint_Nm": -0.08892945076579407,
+      "actuator_Nm": 25.507098894182878,
+      "passive_Nm": -2.5179524899270875e-06,
+      "frictionloss": 0.1,
+      "damping": 0.1
+    },
+    {
+      "joint": "robot0_joint_3",
+      "position": -0.03022509010006703,
+      "range": [
+        -2.792,
+        2.53
+      ],
+      "bias_Nm": 12.164739580179031,
+      "constraint_Nm": 0.10000000000071305,
+      "actuator_Nm": 12.064733618439734,
+      "passive_Nm": 5.383490944897094e-06,
+      "frictionloss": 0.1,
+      "damping": 0.1
+    },
+    {
+      "joint": "robot0_joint_4",
+      "position": -0.5306178197070124,
+      "range": [
+        -3.106,
+        3.106
+      ],
+      "bias_Nm": 3.1420907180655373,
+      "constraint_Nm": -0.0372411699961872,
+      "actuator_Nm": 3.1793349656350416,
+      "passive_Nm": -2.9223360293816448e-06,
+      "frictionloss": 0.1,
+      "damping": 0.1
+    },
+    {
+      "joint": "robot0_joint_5",
+      "position": 1.5776226697792861,
+      "range": [
+        -3.106,
+        3.106
+      ],
+      "bias_Nm": 0.019232577665982742,
+      "constraint_Nm": 0.004185207268708683,
+      "actuator_Nm": 0.015046519782138421,
+      "passive_Nm": 3.922461361858305e-07,
+      "frictionloss": 0.1,
+      "damping": 0.1
+    },
+    {
+      "joint": "robot0_joint_6",
+      "position": -1.4319850360646165,
+      "range": [
+        -6.28,
+        6.28
+      ],
+      "bias_Nm": -3.421822307392297e-05,
+      "constraint_Nm": -0.008066863519215437,
+      "actuator_Nm": 0.008033335116257478,
+      "passive_Nm": -9.223586720948325e-07,
+      "frictionloss": 0.1,
+      "damping": 0.1
+    }
+  ]
+}
