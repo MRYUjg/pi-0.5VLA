@@ -1,3 +1,5 @@
+##本仓库对pi0.5项目进行本地ECO65+知行Gripper的适配部署，包含“仿真模型导入适配、Osc-pose实现、教师仿真数据采集、Lora微调、仿真闭环测试、AWQ/GPTQ量化推理”的仿真全流程，真机部署推理实控实现整理中。
+
 # openpi
 
 openpi holds open-source models and packages for robotics, published by the [Physical Intelligence team](https://www.physicalintelligence.company/).
