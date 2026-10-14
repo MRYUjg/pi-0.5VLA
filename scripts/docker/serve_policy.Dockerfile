@@ -8,24 +8,15 @@
 # docker run --rm -it --network=host -v .:/app --gpus=all openpi_server /bin/bash
 
 FROM nvidia/cuda:12.2.2-cudnn8-runtime-ubuntu22.04@sha256:2d913b09e6be8387e1a10976933642c73c840c0b735f0bf3c28d97fc9bc422e0
-COPY --from=ghcr.io/astral-sh/uv:0.12.15 /uv /uvx /bin/
+COPY --from=ghcr.io/astral-sh/uv:0.5.1 /uv /uvx /bin/
 
 WORKDIR /app
 
 # Needed because LeRobot uses git-lfs.
-RUN set -eux; \
-    for f in /etc/apt/sources.list /etc/apt/sources.list.d/ubuntu.sources; do \
-      if [ -f "$f" ]; then \
-        sed -i -E 's@https?://([a-z0-9.-]+\.)?archive\.ubuntu\.com@https://mirrors.aliyun.com@g; s@https?://security\.ubuntu\.com@https://mirrors.aliyun.com@g' "$f"; \
-      fi; \
-    done
-
 RUN apt-get update && apt-get install -y git git-lfs linux-headers-generic build-essential clang
 
 # Copy from the cache instead of linking since it's a mounted volume
 ENV UV_LINK_MODE=copy
-# [server-local] 使用清华 PyPI 镜像（服务器直连 pypi.org 仅 0.58 MiB/s）
-ENV UV_DEFAULT_INDEX=https://pypi.tuna.tsinghua.edu.cn/simple
 
 # Write the virtual environment outside of the project directory so it doesn't
 # leak out of the container when we mount the application code.

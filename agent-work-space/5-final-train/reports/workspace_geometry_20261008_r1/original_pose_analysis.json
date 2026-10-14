@@ -1,0 +1,339 @@
+{
+  "scope": "static reconstruction of recorded test poses; no policy rerun, simulation stepping, controller or source changes",
+  "weighted6d_rotation_scale_m": 0.2,
+  "tasks": [
+    {
+      "task": 2,
+      "seed": 640200,
+      "steps": 650,
+      "first": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          -0.0749915492483295,
+          0.013204196591843877,
+          0.898404150188853
+        ],
+        "tcp_world_m": [
+          -0.20585609709711988,
+          -0.0010700152393090445,
+          1.1744308484943848
+        ],
+        "base_target_horizontal_m": 0.5851574474092471,
+        "tcp_target_distance_m": 0.3058104334134499,
+        "arm_qpos_rad": [
+          -0.127240986723246,
+          -0.23013271550864894,
+          -0.8419805023555778,
+          -0.5570452363198336,
+          1.5619823290502957,
+          -1.6976694203961225
+        ],
+        "minimum_joint_margin_deg": 88.46569603903714,
+        "elbow_extension_ratio": 0.907478365067073,
+        "jacobian_position_smin_m_per_rad": 0.3093491459752543,
+        "jacobian_position_condition": 1.700259230133001,
+        "step": 1,
+        "weighted6d_smin": 0.049136529964885635,
+        "weighted6d_condition": 12.208285225589783
+      },
+      "closest_to_target": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          -0.0749915492483295,
+          0.013204196591843877,
+          0.898404150188853
+        ],
+        "tcp_world_m": [
+          -0.07521783314874145,
+          -0.029831926466099258,
+          0.9376660917924854
+        ],
+        "base_target_horizontal_m": 0.5851574474092471,
+        "tcp_target_distance_m": 0.05825512124053172,
+        "arm_qpos_rad": [
+          -0.13892014653955262,
+          -0.6919378687387883,
+          -1.1838363036425668,
+          0.2763825951949638,
+          1.5423765716618598,
+          -1.7103526620770668
+        ],
+        "minimum_joint_margin_deg": 89.58902319155195,
+        "elbow_extension_ratio": 0.8267149531877486,
+        "jacobian_position_smin_m_per_rad": 0.25003591255177443,
+        "jacobian_position_condition": 2.8619156732401927,
+        "step": 145,
+        "weighted6d_smin": 0.05666120257302569,
+        "weighted6d_condition": 13.929455087995844
+      },
+      "most_extended": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          -0.07004478409126473,
+          0.0036848900083655705,
+          0.9820873896098038
+        ],
+        "tcp_world_m": [
+          -0.06640345725793018,
+          -0.03910487525692942,
+          1.0366140534060762
+        ],
+        "base_target_horizontal_m": 0.5899667238008397,
+        "tcp_target_distance_m": 0.06940735074412455,
+        "arm_qpos_rad": [
+          -0.15100721846956824,
+          -0.8716622916100036,
+          -0.4115859910087603,
+          -0.4085786937443804,
+          1.5393420974495557,
+          -1.7129054399712602
+        ],
+        "minimum_joint_margin_deg": 89.76288575695826,
+        "elbow_extension_ratio": 0.9721530607579076,
+        "jacobian_position_smin_m_per_rad": 0.28222432891417554,
+        "jacobian_position_condition": 2.3162061142229415,
+        "step": 405,
+        "weighted6d_smin": 0.02326249324794021,
+        "weighted6d_condition": 30.646466969579038
+      },
+      "extension_over_0_98_steps": 0,
+      "minimum_position_smin": 0.24094202066006434,
+      "minimum_weighted6d_smin": 0.02326249324794021,
+      "minimum_joint_margin_deg": 82.0721272468862
+    },
+    {
+      "task": 3,
+      "seed": 640300,
+      "steps": 650,
+      "first": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.06898860046963524,
+          0.04075368037395069,
+          0.9171640852094416
+        ],
+        "tcp_world_m": [
+          -0.20544909885304205,
+          0.0006218282964519522,
+          1.1765960603783623
+        ],
+        "base_target_horizontal_m": 0.7301268671119422,
+        "tcp_target_distance_m": 0.37977831178299526,
+        "arm_qpos_rad": [
+          -0.12785487079066896,
+          -0.2275226867938436,
+          -0.8377073181963113,
+          -0.557915834014691,
+          1.5696398581452808,
+          -1.6983909987381385
+        ],
+        "minimum_joint_margin_deg": 88.02695194039586,
+        "elbow_extension_ratio": 0.9083286551144075,
+        "jacobian_position_smin_m_per_rad": 0.3093186701079531,
+        "jacobian_position_condition": 1.701169213426914,
+        "step": 1,
+        "weighted6d_smin": 0.04889427674349736,
+        "weighted6d_condition": 12.272706356703312
+      },
+      "closest_to_target": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.06925203268179679,
+          0.034560926415846606,
+          0.9191155056888127
+        ],
+        "tcp_world_m": [
+          0.0716172753660189,
+          -0.0169044472298476,
+          0.9630059175469147
+        ],
+        "base_target_horizontal_m": 0.7300705341302675,
+        "tcp_target_distance_m": 0.06768047953819474,
+        "arm_qpos_rad": [
+          -0.1244480102446446,
+          -1.7819388944221373,
+          0.8678988908653431,
+          -0.28380401038631964,
+          1.6286896322084246,
+          -1.6869391909882945
+        ],
+        "minimum_joint_margin_deg": 75.86311316703723,
+        "elbow_extension_ratio": 0.9022343784122084,
+        "jacobian_position_smin_m_per_rad": 0.16120810063750177,
+        "jacobian_position_condition": 4.946531220585572,
+        "step": 273,
+        "weighted6d_smin": 0.057536340945474156,
+        "weighted6d_condition": 14.953165231953625
+      },
+      "most_extended": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.06898860046697591,
+          0.04075368039483195,
+          0.9171640852094409
+        ],
+        "tcp_world_m": [
+          0.07106340668280559,
+          -0.0178722992200116,
+          1.0487936413668542
+        ],
+        "base_target_horizontal_m": 0.7301268671104525,
+        "tcp_target_distance_m": 0.14410985518288089,
+        "arm_qpos_rad": [
+          -0.12515434697186173,
+          -1.1767797971816965,
+          0.006270550016663748,
+          -0.1091459144186126,
+          1.6267216938909868,
+          -1.68983244517805
+        ],
+        "minimum_joint_margin_deg": 84.75640366530791,
+        "elbow_extension_ratio": 0.9927736507196274,
+        "jacobian_position_smin_m_per_rad": 0.21011702508454572,
+        "jacobian_position_condition": 3.770683585630319,
+        "step": 74,
+        "weighted6d_smin": 0.00037713880831750864,
+        "weighted6d_condition": 2269.2009000212
+      },
+      "extension_over_0_98_steps": 43,
+      "minimum_position_smin": 0.15807258335688215,
+      "minimum_weighted6d_smin": 0.00037713880831750864,
+      "minimum_joint_margin_deg": 73.42578606853031
+    },
+    {
+      "task": 6,
+      "seed": 640600,
+      "steps": 559,
+      "first": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.11782683846240104,
+          -0.07452663107757244,
+          0.898404150188853
+        ],
+        "tcp_world_m": [
+          -0.20596141967901685,
+          -0.0008569354280571385,
+          1.1766348523198378
+        ],
+        "base_target_horizontal_m": 0.7813890256281993,
+        "tcp_target_distance_m": 0.4332186327660047,
+        "arm_qpos_rad": [
+          -0.125878961289381,
+          -0.2266861430228636,
+          -0.8386446701197438,
+          -0.5578460127293073,
+          1.5603961898844076,
+          -1.69766782890996
+        ],
+        "minimum_joint_margin_deg": 88.55657511896293,
+        "elbow_extension_ratio": 0.9081424853792391,
+        "jacobian_position_smin_m_per_rad": 0.3094225924268262,
+        "jacobian_position_condition": 1.6994567198311588,
+        "step": 1,
+        "weighted6d_smin": 0.048954674333827636,
+        "weighted6d_condition": 12.256674403415106
+      },
+      "closest_to_target": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.11939568121110383,
+          -0.06676875246393497,
+          0.9025496999438537
+        ],
+        "tcp_world_m": [
+          0.12720234148254606,
+          -0.014435519591523229,
+          0.9392257034936664
+        ],
+        "base_target_horizontal_m": 0.7822504037685828,
+        "tcp_target_distance_m": 0.06438043525682058,
+        "arm_qpos_rad": [
+          -0.08579256189827829,
+          -1.8929758705937216,
+          0.7712754123822988,
+          0.13811920450137355,
+          1.54863422399187,
+          -1.6582264537203908
+        ],
+        "minimum_joint_margin_deg": 69.50116306251076,
+        "elbow_extension_ratio": 0.9210232376371619,
+        "jacobian_position_smin_m_per_rad": 0.11513095033640948,
+        "jacobian_position_condition": 7.6934436059768725,
+        "step": 372,
+        "weighted6d_smin": 0.06054414302045657,
+        "weighted6d_condition": 15.586935813358938
+      },
+      "most_extended": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.1269412005822578,
+          -0.06810387701202854,
+          0.9944663478773512
+        ],
+        "tcp_world_m": [
+          0.13400500212727345,
+          -0.016421818575556697,
+          1.0400487073853646
+        ],
+        "base_target_horizontal_m": 0.7898826439654911,
+        "tcp_target_distance_m": 0.06927253391363732,
+        "arm_qpos_rad": [
+          -0.08820437041353235,
+          -1.2907548375459046,
+          -0.000692963265834786,
+          0.2415825196967361,
+          1.5506020198637747,
+          -1.6585651800436674
+        ],
+        "minimum_joint_margin_deg": 89.11773972497876,
+        "elbow_extension_ratio": 0.9927783970736499,
+        "jacobian_position_smin_m_per_rad": 0.15964615839115887,
+        "jacobian_position_condition": 5.518544129753906,
+        "step": 446,
+        "weighted6d_smin": 4.631828183367107e-05,
+        "weighted6d_condition": 20275.030234954047
+      },
+      "extension_over_0_98_steps": 65,
+      "minimum_position_smin": 0.1120470851119528,
+      "minimum_weighted6d_smin": 4.631828183367107e-05,
+      "minimum_joint_margin_deg": 65.50332710720893
+    }
+  ]
+}

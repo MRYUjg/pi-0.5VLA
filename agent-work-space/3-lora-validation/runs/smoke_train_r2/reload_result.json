@@ -1,0 +1,31 @@
+{
+  "pass": true,
+  "independent_process": true,
+  "all_restored_parameter_bytes_equal": true,
+  "fixed_noise_prediction_max_error": 0.0,
+  "prediction_shape": [
+    1,
+    10,
+    32
+  ],
+  "restored_step": 300,
+  "resume_test_step": 301,
+  "resume_metrics": {
+    "grad_norm": 0.22626571357250214,
+    "loss": 0.08993382006883621,
+    "param_norm": 1833.3199462890625
+  },
+  "resume_test_saved_over_original": false,
+  "gpu_memory_stats": {
+    "num_allocs": 144,
+    "bytes_in_use": 7490204416,
+    "peak_bytes_in_use": 8180125440,
+    "largest_alloc_size": 2415919104,
+    "bytes_limit": 21622407774,
+    "bytes_reserved": 0,
+    "peak_bytes_reserved": 0,
+    "largest_free_block_bytes": 0,
+    "pool_bytes": 8587837440,
+    "peak_pool_bytes": 8587837440
+  }
+}

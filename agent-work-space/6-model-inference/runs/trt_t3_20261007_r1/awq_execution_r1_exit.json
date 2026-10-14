@@ -1,0 +1,17 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-t3-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t3_20261007_r1/awq_execution_r1_source/confirm_execution.py",
+    "--out",
+    "/work/runs/trt_t3_20261007_r1/awq_execution_r1.json",
+    "--coverage",
+    "/work/runs/trt_t3_20261007_r1/awq_coverage_r2.json",
+    "--profile",
+    "/work/runs/trt_t3_20261007_r1/awq_profile_r1/layer_profile.json"
+  ],
+  "exit_code": 0,
+  "seconds": 1.6115987300872803
+}

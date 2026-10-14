@@ -1,0 +1,75 @@
+{
+  "pass": true,
+  "stage": "regression",
+  "eligible_tasks": [
+    0,
+    2,
+    3,
+    5,
+    6
+  ],
+  "excluded_tasks": [
+    8
+  ],
+  "attempts": 18,
+  "counts": {
+    "0": {
+      "regression": {
+        "attempted": 3,
+        "accepted": 2
+      }
+    },
+    "2": {
+      "regression": {
+        "attempted": 3,
+        "accepted": 2
+      }
+    },
+    "3": {
+      "regression": {
+        "attempted": 3,
+        "accepted": 3
+      }
+    },
+    "5": {
+      "regression": {
+        "attempted": 3,
+        "accepted": 3
+      }
+    },
+    "6": {
+      "regression": {
+        "attempted": 3,
+        "accepted": 3
+      }
+    },
+    "8": {
+      "regression": {
+        "attempted": 3,
+        "accepted": 0
+      }
+    }
+  },
+  "duplicate_initializations": [],
+  "admission_threshold": "at least 2/3 regression successes per task",
+  "records": [
+    "runs/regression_20261005_r1/task00_s610000",
+    "runs/regression_20261005_r1/task02_s610200",
+    "runs/regression_20261005_r1/task03_s610300",
+    "runs/regression_20261005_r1/task05_s610500",
+    "runs/regression_20261005_r1/task06_s610600",
+    "runs/regression_20261005_r1/task08_s610800",
+    "runs/regression_20261005_r1/task00_s610001",
+    "runs/regression_20261005_r1/task02_s610201",
+    "runs/regression_20261005_r1/task03_s610301",
+    "runs/regression_20261005_r1/task05_s610501",
+    "runs/regression_20261005_r1/task06_s610601",
+    "runs/regression_20261005_r1/task08_s610801",
+    "runs/regression_20261005_r1/task00_s610002",
+    "runs/regression_20261005_r1/task02_s610202",
+    "runs/regression_20261005_r1/task03_s610302",
+    "runs/regression_20261005_r1/task05_s610502",
+    "runs/regression_20261005_r1/task06_s610602",
+    "runs/regression_20261005_r1/task08_s610802"
+  ]
+}

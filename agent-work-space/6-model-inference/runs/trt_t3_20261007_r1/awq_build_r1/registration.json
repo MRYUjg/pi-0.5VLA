@@ -1,0 +1,22 @@
+{
+  "algorithm": "AWQ",
+  "source_model_sha256": "69ee787ec12921613feabf69b01348628b3d6327a8865cbc02ecb9be788d9258",
+  "source_ONNX_sha256": "3856bcd3f837c525abd9d25c0cfb8b4cbb94b15b2286877870d4d5af04db54a8",
+  "external_data_sha256": {
+    "prefix_int4.data": "392547c874ca070399e7f9739554707f36804eb8f1da99cd7511101c56b3cd45"
+  },
+  "TensorRT": "10.13.3.9",
+  "strongly_typed": true,
+  "TF32": false,
+  "workspace_bytes": 2147483648,
+  "builder_optimization_level": 3,
+  "profiling_verbosity": "DETAILED",
+  "editable_timing_cache": true,
+  "INT4_initializer_count": 121,
+  "activation_precision": "original BF16/FP32",
+  "hardware_compatibility": "NONE",
+  "portability": "Development RTX4090 Linux x86_64, exact TensorRT; target4070 must rebuild/test",
+  "target_4070_8GB_accepted": false,
+  "timing_cache_input": null,
+  "device": "NVIDIA GeForce RTX 4090, 535.129.03, 49140 MiB"
+}

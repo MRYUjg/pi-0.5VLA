@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-10-07T20:59:48.769708+08:00",
+  "tool": "built-in image_gen",
+  "reference_frame": "robot0_right_hand",
+  "optical_center_translation_m": [
+    0.05,
+    0.0,
+    0.0
+  ],
+  "camera_quaternion_wxyz": [
+    0.0,
+    0.707108,
+    0.707108,
+    0.0
+  ],
+  "optical_axis_local": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "vertical_fov_deg": 75,
+  "diagram_scale": "not to scale",
+  "camera_and_bracket_geometry": "conceptual; actual housing and mounting holes not specified",
+  "measurement_reference": "right panel: wrist frame origin to camera optical center",
+  "placement_reference_only": true,
+  "physical_installation_verified": false,
+  "source_pose_files": [
+    "robosuite/models/assets/robots/ECO65-B/robot.xml:68",
+    "formal trajectories environment_xml for Spatial tasks 0,2,3,5,6"
+  ],
+  "installation_reference_sha256": "5fd1ff4f25dc8c6764e14126f141bfdb97043ce33ef42bb94167b77f3a02000b",
+  "original_generated_image": "/Users/yuyu/.codex/generated_images/01a106c2-3ad7-7183-b6cf-d1fa106c8862/exec-06d44d0d-f726-40aa-bab8-fea932df861f.png"
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-t3-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t3_20261007_r1/gptq_coverage_r3_source/inspect_coverage.py",
+    "--out",
+    "/work/runs/trt_t3_20261007_r1/gptq_coverage_r3.json",
+    "--build",
+    "/work/runs/trt_t3_20261007_r1/gptq_build_r1",
+    "--source-scope",
+    "/work/runs/trt_t0_t2_20261007_r1/gptq_r1/onnx_scope.json",
+    "--log",
+    "/work/runs/trt_t3_20261007_r1/gptq_build_r1.log"
+  ],
+  "exit_code": 0,
+  "seconds": 1.8600139617919922
+}

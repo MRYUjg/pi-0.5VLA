@@ -1,0 +1,22 @@
+{
+  "pass": true,
+  "errors": [],
+  "seed": 53100,
+  "steps": 576,
+  "reset_qpos_error": 0.0,
+  "max_qpos_error": 0.0,
+  "max_qvel_error": 0.0,
+  "max_state_error": 0.0,
+  "max_time_error": 0.0,
+  "max_rgb_pixel_error": 0,
+  "native_mismatches": 0,
+  "rendered_observation_indices": [
+    0,
+    144,
+    288,
+    432,
+    576
+  ],
+  "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+  "process_exit_pending": true
+}

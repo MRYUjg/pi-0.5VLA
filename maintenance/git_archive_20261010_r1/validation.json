@@ -1,0 +1,166 @@
+{
+  "date_beijing": "2026-10-10",
+  "gitignore_sha256": "fe2a9c6719757f6fd4229ac20ec20d23c86ae41cf8d9b826b70c4186803680fe",
+  "policy_checks": [
+    {
+      "path": "agent-work-space/项目工作总结与快速导读_20261008_r1.md",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "agent-work-space/5-final-train/versions/lora_20261007_r1/scripts/train.py",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "agent-work-space/5-final-train/releases/lora_20261007_r1/manifest.json",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "agent-work-space/5-final-train/runs/spatial_lora_20261007_r1/checkpoint/10000/assets/local/eco65_zhixing_spatial_formal_r3_train/norm_stats.json",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "gpt-rpent-control/versions/eco65_zhixing_20261007_r5/planner_prompt.txt",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task00_dual_camera.mp4",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "gpt-rpent-control/architecture/architecture_20261008_r1/output/ECO65_闭环控制架构_20261008_r2.pptx",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "robosuite/models/assets/robots/ECO65-B/robot.xml",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "maintenance/local_archive_audit_20261010_r1/recovery_scope.json",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "recovery/git_archive_20261010_r1/source_overrides/robosuite/models/grippers/zhixing_gripper.py",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "recovery/git_archive_20261010_r1/libero_source/libero/libero/envs/robots/mounted_eco65.py",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "agent-work-space/2-task-collection/releases/coverage_20261003_r1/source.tar.gz",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": ".env.example",
+      "expected_ignored": false,
+      "actual_ignored": false,
+      "passed": true
+    },
+    {
+      "path": "AGENTS.md",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    },
+    {
+      "path": "CODEX_交接_01a0e194.md",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    },
+    {
+      "path": ".publish/ssh/id_ed25519",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    },
+    {
+      "path": ".env",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    },
+    {
+      "path": ".env.production",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    },
+    {
+      "path": "ECO_data/vla_dataset.zip",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    },
+    {
+      "path": "libreo_raw_data/local/libero_spatial/data/chunk-000/episode_000000.parquet",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    },
+    {
+      "path": "agent-work-space/5-final-train/runs/spatial_lora_20261007_r1/checkpoint/10000/params/ocdbt.process_0/d/testblob",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    },
+    {
+      "path": "agent-work-space/6-model-inference/weights/pi05_libero_w8_r1/model.pt",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    },
+    {
+      "path": "agent-work-space/6-model-inference/engines/prefix.engine",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    },
+    {
+      "path": "agent-work-space/zhixing_gripper_solve/evidence/example/recipient_contacts.jsonl",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    },
+    {
+      "path": "gpt-rpent-control/architecture/architecture_20261008_r1/.build/candidate-r1.pptx",
+      "expected_ignored": true,
+      "actual_ignored": true,
+      "passed": true
+    }
+  ],
+  "credential_pattern_hits": [],
+  "untracked_archive_candidates": 7767,
+  "untracked_candidate_bytes": 1116964768,
+  "largest_untracked_candidate": {
+    "path": "robosuite/models/assets/textures/plywood-4k.jpg",
+    "bytes": 11405393
+  },
+  "new_candidates_over_100MiB": [],
+  "recovery_snapshot_files_verified": 631,
+  "limitations": "Text/source-archive pattern scan only; gitignore does not remove tracked files. Git index, remotes and commits were not changed."
+}

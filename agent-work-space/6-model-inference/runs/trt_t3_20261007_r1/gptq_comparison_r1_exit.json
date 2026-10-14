@@ -1,0 +1,21 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-t3-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t3_20261007_r1/gptq_comparison_r1_source/compare.py",
+    "--out",
+    "/work/runs/trt_t3_20261007_r1/gptq_comparison_r1.json",
+    "--reference",
+    "/work/runs/trt_t3_20261007_r1/float_infer_r1",
+    "--candidate",
+    "/work/runs/trt_t3_20261007_r1/gptq_infer_r2",
+    "--reload",
+    "/work/runs/trt_t3_20261007_r1/gptq_reload_r1",
+    "--old-float-cases",
+    "/work/runs/trt_t0_t2_20261007_r1/float_validation_r3/cases.json"
+  ],
+  "exit_code": 0,
+  "seconds": 1.624370813369751
+}

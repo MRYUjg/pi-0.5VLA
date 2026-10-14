@@ -1,0 +1,16 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-a100-closedloop-awq-r1",
+    "/.venv/bin/python",
+    "/work/runs/a100_closedloop_20261008_r1/closedloop_awq_r1_source/pilot.py",
+    "--variant",
+    "awq",
+    "--out",
+    "/out/pilot",
+    "--port",
+    "18884"
+  ],
+  "exit_code": 0
+}

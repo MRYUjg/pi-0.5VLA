@@ -1,0 +1,54 @@
+{
+  "version": "rollout_20261008_r1",
+  "authorization": "用户2026-10-08明确要求进行闭环测试并记录MP4",
+  "suite": "libero_spatial",
+  "tasks": 10,
+  "trials_per_task": 20,
+  "target": 0.9,
+  "primary_budget": 220,
+  "first_trial_extended_diagnostic_budget": 650,
+  "preparation_steps": 120,
+  "preparation": "frozen quiet_hold gains .02m/.05rad; legacy profile; open -1; unchanged initialization auditor",
+  "replan_steps": 5,
+  "sample_steps": 10,
+  "control_hz": 20,
+  "video": "predeclared first trial of every task/condition, both cameras at 20fps; not selected by success",
+  "counting": "all registered attempts including invalid initializations, process errors, interruptions; never resample",
+  "primary_success": "native goal within220 AND unchanged initialization pass AND finite physics/no warning AND process exit0",
+  "diagnostic_success": "native goal after220 before650, first trial only, never substitutes primary",
+  "test_tuning": "no model/checkpoint/action/controller tuning based on test outcomes",
+  "trained_tasks": [
+    0,
+    2,
+    3,
+    5,
+    6
+  ],
+  "conditions": {
+    "eco65_zhixing_lora": {
+      "robot": "ECO65",
+      "gripper": "ZhixingGripper",
+      "model": "finetuned",
+      "controller_profile": "eco65_no_extra_pd"
+    },
+    "panda_base": {
+      "robot": "Panda",
+      "gripper": "PandaGripper",
+      "model": "base",
+      "controller_profile": "legacy"
+    },
+    "eco65_zhixing_base": {
+      "robot": "ECO65",
+      "gripper": "ZhixingGripper",
+      "model": "base",
+      "controller_profile": "eco65_no_extra_pd"
+    },
+    "eco65_panda_base": {
+      "robot": "ECO65",
+      "gripper": "PandaGripper",
+      "model": "base",
+      "controller_profile": "legacy"
+    }
+  },
+  "panda_scene_pairing": "zero initialization noise still consumes RNG by joint count; Panda wrapper restores pre-reset RNG then consumes6 Gaussian values to match ECO65. Only RNG consumption changes; native sampler, initial robot qpos, object states, control parameters remain physical defaults."
+}

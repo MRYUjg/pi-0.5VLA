@@ -1,0 +1,39 @@
+{
+  "preflight_r1": {
+    "code_version": "eco65_zhixing_20261007_r1",
+    "exit_code": 1,
+    "passed": false,
+    "error": "NumPy int32 JSON serialization before preflight completion"
+  },
+  "preflight_r2": {
+    "code_version": "eco65_zhixing_20261007_r2",
+    "exit_code": 0,
+    "passed": true,
+    "scope": "real reset, initial object transfer, RGB/state8, one valid hold action"
+  },
+  "chain_r2": {
+    "run_id": "eco65_zhixing_chain_20261007_r1",
+    "code_version": "eco65_zhixing_20261007_r2",
+    "runtime_chain_passed": false,
+    "error": "reference rendering context freed; zero policy actions"
+  },
+  "chain_r3": {
+    "run_id": "eco65_zhixing_chain_20261007_r2",
+    "code_version": "eco65_zhixing_20261007_r3",
+    "runtime_chain_passed": true,
+    "steps": 10,
+    "VLA_requests": 2,
+    "independent_audit_passed": false,
+    "error": "cached returned state differed from actual post-action gripper qpos"
+  },
+  "chain_r4": {
+    "run_id": "eco65_zhixing_chain_20261007_r3",
+    "code_version": "eco65_zhixing_20261007_r4",
+    "runtime_chain_passed": true,
+    "steps": 10,
+    "VLA_requests": 2,
+    "independent_audit_passed": true
+  },
+  "formal_batch": "eco65_zhixing_spatial10_20261007_r1",
+  "development_counted_in_formal_success_rate": false
+}

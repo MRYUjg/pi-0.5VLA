@@ -1,0 +1,72 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "pi05-a100-closedloop-trt-float-r1",
+    "--gpus",
+    "all",
+    "--ipc",
+    "host",
+    "-p",
+    "127.0.0.1:18884:18884",
+    "-e",
+    "PYTHONPATH=/app/src:/app/packages/openpi-client/src",
+    "-e",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "-e",
+    "OPENPI_DATA_HOME=/openpi_assets",
+    "-e",
+    "HF_HUB_OFFLINE=1",
+    "-e",
+    "JAX_PLATFORMS=cpu",
+    "-v",
+    "/mnt/data/vla-policy/openpi:/app:ro",
+    "-v",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference:/work:ro",
+    "-v",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/a100_closedloop_20261008_r1/closedloop_trt_float_r1:/out",
+    "-w",
+    "/app",
+    "--entrypoint",
+    "/.venv/bin/python",
+    "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+    "/work/runs/a100_closedloop_20261008_r1/closedloop_trt_float_r1_source/server.py",
+    "--variant",
+    "trt_float",
+    "--out",
+    "/out/server",
+    "--port",
+    "18884"
+  ],
+  "host_pid": 63663,
+  "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+  "container_id": "15c0e194579496eb15d24378360a22b30d83a4b8e45330aa7625879b62ec3e88",
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+      "Destination": "/work",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/a100_closedloop_20261008_r1/closedloop_trt_float_r1",
+      "Destination": "/out",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/mnt/data/vla-policy/openpi",
+      "Destination": "/app",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "robot": "MountedPanda",
+  "gripper": "PandaGripper",
+  "controller": "OperationalSpaceController",
+  "control_freq": 20,
+  "controller_parameters": {
+    "input_min": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "input_max": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "output_min": [
+      -0.05,
+      -0.05,
+      -0.05,
+      -0.5,
+      -0.5,
+      -0.5
+    ],
+    "output_max": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "kp": [
+      150.0,
+      150.0,
+      150.0,
+      150.0,
+      150.0,
+      150.0
+    ],
+    "position_limits": null,
+    "orientation_limits": null
+  },
+  "XML_sha256": "8aa62e84e7f90d746c314253611f65221c80a3152cb7442c7008896613fe060d"
+}

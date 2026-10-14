@@ -1,0 +1,23 @@
+{
+  "python": "3.11.9",
+  "packages": {
+    "torch": "2.7.1",
+    "transformers": "4.53.2",
+    "onnx": "1.19.0",
+    "onnxruntime-gpu": "1.22.0",
+    "nvidia-modelopt": "0.33.1",
+    "tensorrt-cu12": "10.13.3.9",
+    "cupy-cuda12x": "13.6.0",
+    "safetensors": "0.5.3",
+    "numpy": "1.26.4",
+    "ml-dtypes": "0.5.3"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "capability": [
+    8,
+    9
+  ],
+  "cuda": "12.6",
+  "driver": "535.129.03",
+  "actual_4070_validation": false
+}

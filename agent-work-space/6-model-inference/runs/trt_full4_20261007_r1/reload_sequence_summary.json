@@ -1,0 +1,34 @@
+{
+  "phase": "reload",
+  "results": [
+    {
+      "command": [
+        "python3",
+        "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/trt_full4_20261007_r1/resources.py",
+        "--variant",
+        "full_awq",
+        "--attempt",
+        "r2",
+        "--count",
+        "128"
+      ],
+      "exit_code": 1,
+      "seconds": 37.213481426239014
+    },
+    {
+      "command": [
+        "python3",
+        "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/trt_full4_20261007_r1/resources.py",
+        "--variant",
+        "full_gptq",
+        "--attempt",
+        "r2",
+        "--count",
+        "128"
+      ],
+      "exit_code": 1,
+      "seconds": 37.93223333358765
+    }
+  ],
+  "all_exit_zero": false
+}

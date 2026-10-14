@@ -1,0 +1,38 @@
+{
+  "task": 0,
+  "seed": 0,
+  "suite": "libero_spatial",
+  "mode": "planner",
+  "native_success": false,
+  "runtime_chain_passed": true,
+  "planner_error": null,
+  "finish": {
+    "_finish": true,
+    "status": "failure",
+    "summary": "Baseline pi0_doubled run on the full original task language (\"pick up the black bowl between the plate and the ramekin and place it on the plate\"). Ran three consecutive pi0_doubled calls (20, 20, then 4 chunks). The policy moved the EEF toward the tabletop and closed the gripper, but the official termination flag never fired. The third call returned truncated=true with terminated=false, so the run ended in failure per protocol. No task completion was confirmed by official flags."
+  },
+  "planner_stats": {
+    "total_input_tokens": 21877,
+    "total_output_tokens": 604,
+    "total_cached_input_tokens": 17920,
+    "turns_used": 6,
+    "tool_calls": 6
+  },
+  "planner_model": "deepseek-flash",
+  "modality": "text_tools_no_images",
+  "max_episode_steps": 220,
+  "robot": "ECO65",
+  "gripper": "ZhixingGripper",
+  "action_dim": 7,
+  "steps": 220,
+  "truncated": true,
+  "init_index": 0,
+  "simulation_time": 11.50000000000051,
+  "toolkit_solved": false,
+  "finish_claim_matches_native": true,
+  "component_exit_codes": {
+    "env": 0,
+    "vla": 0
+  },
+  "owned_components_exited_cleanly": true
+}

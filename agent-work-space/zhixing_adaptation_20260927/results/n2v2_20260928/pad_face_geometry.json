@@ -1,0 +1,252 @@
+{
+  "eco65_zhixing": {
+    "tag": "eco65_zhixing",
+    "states": {
+      "reset": {
+        "driven": {
+          "driven": false
+        },
+        "constraint_residuals": {
+          "joint_eq_max": 0.0,
+          "connect_max_m": 1.7537402256312936e-07
+        },
+        "pinch_local_mm": [
+          0.003003419974031168,
+          0.018105900123446518,
+          -0.06502850943618307
+        ],
+        "pinch_approach_mm": -0.06502850943618307,
+        "pinch_lateral_mm": 0.018353314436924742,
+        "separation_mm": 0.574710200653849,
+        "pad_face_normal_angle_deg": 3.2158504959731724,
+        "face_band_thickness_mm": [
+          15.15853826703151,
+          15.170697111071236
+        ],
+        "left_1_joint": -0.91
+      },
+      "open": {
+        "driven": {
+          "driven": true,
+          "ctrl": {
+            "6": 0.0
+          },
+          "steps": 800
+        },
+        "constraint_residuals": {
+          "joint_eq_max": 0.003239769780593174,
+          "connect_max_m": 7.433997785864302e-05
+        },
+        "pinch_local_mm": [
+          0.10041076835029922,
+          0.018601831377468892,
+          -17.4186760923141
+        ],
+        "pinch_approach_mm": -17.4186760923141,
+        "pinch_lateral_mm": 0.10211929558752957,
+        "separation_mm": 89.94287208121875,
+        "pad_face_normal_angle_deg": 2.915785508462067,
+        "face_band_thickness_mm": [
+          15.16094157732688,
+          15.174358552091373
+        ],
+        "left_1_joint": -2.6334240192268102e-05
+      },
+      "closed": {
+        "driven": {
+          "driven": true,
+          "ctrl": {
+            "6": -0.91
+          },
+          "steps": 800
+        },
+        "constraint_residuals": {
+          "joint_eq_max": 1.43093064119459,
+          "connect_max_m": 0.018061575515195476
+        },
+        "pinch_local_mm": [
+          -7.119478617535618,
+          0.017204849074040292,
+          -47.77665966893757
+        ],
+        "pinch_approach_mm": -47.77665966893757,
+        "pinch_lateral_mm": 7.119499406024172,
+        "separation_mm": 22.684665691618434,
+        "pad_face_normal_angle_deg": 35.140340768416145,
+        "face_band_thickness_mm": [
+          13.908932630862395,
+          11.758475842166268
+        ],
+        "left_1_joint": -1.352807275367706
+      }
+    }
+  },
+  "eco65_panda": {
+    "tag": "eco65_panda",
+    "states": {
+      "reset": {
+        "driven": {
+          "driven": false
+        },
+        "constraint_residuals": {
+          "joint_eq_max": null,
+          "connect_max_m": null
+        },
+        "pinch_local_mm": [
+          1.1225782244467152e-15,
+          2.3573590823121208e-14,
+          -3.600000000000017
+        ],
+        "pinch_approach_mm": -3.600000000000017,
+        "pinch_lateral_mm": 2.360030436595991e-14,
+        "separation_mm": 40.66599999999998,
+        "pad_face_normal_angle_deg": 0.0,
+        "face_band_thickness_mm": [
+          11.313708498984758,
+          11.31370849898475
+        ],
+        "left_1_joint": null
+      },
+      "open": {
+        "driven": {
+          "driven": true,
+          "ctrl": {
+            "6": 0.04,
+            "7": -0.04
+          },
+          "steps": 800
+        },
+        "constraint_residuals": {
+          "joint_eq_max": null,
+          "connect_max_m": null
+        },
+        "pinch_local_mm": [
+          -0.005695935095751814,
+          -2.052043813334248e-14,
+          -3.5999999999999575
+        ],
+        "pinch_approach_mm": -3.5999999999999575,
+        "pinch_lateral_mm": 0.005695935095751814,
+        "separation_mm": 78.18998057114574,
+        "pad_face_normal_angle_deg": 0.0,
+        "face_band_thickness_mm": [
+          11.313708498984761,
+          11.31370849898476
+        ],
+        "left_1_joint": null
+      },
+      "closed": {
+        "driven": {
+          "driven": true,
+          "ctrl": {
+            "6": 0.0,
+            "7": -0.0
+          },
+          "steps": 800
+        },
+        "constraint_residuals": {
+          "joint_eq_max": null,
+          "connect_max_m": null
+        },
+        "pinch_local_mm": [
+          -0.0057233660777417416,
+          1.998500546274456e-14,
+          -3.6000000000000085
+        ],
+        "pinch_approach_mm": -3.6000000000000085,
+        "pinch_lateral_mm": 0.0057233660777417416,
+        "separation_mm": 0.0004887479677733284,
+        "pad_face_normal_angle_deg": 0.0,
+        "face_band_thickness_mm": [
+          11.313708498984763,
+          11.31370849898476
+        ],
+        "left_1_joint": null
+      }
+    }
+  },
+  "panda_panda": {
+    "tag": "panda_panda",
+    "states": {
+      "reset": {
+        "driven": {
+          "driven": false
+        },
+        "constraint_residuals": {
+          "joint_eq_max": null,
+          "connect_max_m": null
+        },
+        "pinch_local_mm": [
+          5.924268143190887e-18,
+          -9.952936348076902e-17,
+          -3.6000000000001298
+        ],
+        "pinch_approach_mm": -3.6000000000001298,
+        "pinch_lateral_mm": 9.970552215358719e-17,
+        "separation_mm": 40.665999999999904,
+        "pad_face_normal_angle_deg": 0.0,
+        "face_band_thickness_mm": [
+          11.313708498984743,
+          11.313708498984743
+        ],
+        "left_1_joint": null
+      },
+      "open": {
+        "driven": {
+          "driven": true,
+          "ctrl": {
+            "7": 0.04,
+            "8": -0.04
+          },
+          "steps": 800
+        },
+        "constraint_residuals": {
+          "joint_eq_max": null,
+          "connect_max_m": null
+        },
+        "pinch_local_mm": [
+          -0.00013018626734303152,
+          -9.569748536931855e-15,
+          -3.600000000000109
+        ],
+        "pinch_approach_mm": -3.600000000000109,
+        "pinch_lateral_mm": 0.00013018626734303152,
+        "separation_mm": 78.19035590403847,
+        "pad_face_normal_angle_deg": 0.0,
+        "face_band_thickness_mm": [
+          11.313708498984754,
+          11.313708498984743
+        ],
+        "left_1_joint": null
+      },
+      "closed": {
+        "driven": {
+          "driven": true,
+          "ctrl": {
+            "7": 0.0,
+            "8": -0.0
+          },
+          "steps": 800
+        },
+        "constraint_residuals": {
+          "joint_eq_max": null,
+          "connect_max_m": null
+        },
+        "pinch_local_mm": [
+          -0.00013073671180625196,
+          -1.2842908225213841e-14,
+          -3.6000000000003087
+        ],
+        "pinch_approach_mm": -3.6000000000003087,
+        "pinch_lateral_mm": 0.00013073671180625196,
+        "separation_mm": 0.0004193982868760114,
+        "pad_face_normal_angle_deg": 0.0,
+        "face_band_thickness_mm": [
+          11.313708498984745,
+          11.31370849898474
+        ],
+        "left_1_joint": null
+      }
+    }
+  }
+}

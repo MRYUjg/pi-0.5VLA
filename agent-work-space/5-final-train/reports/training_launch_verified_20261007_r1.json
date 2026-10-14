@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-07T21:44:13.165427+08:00",
+  "user_instruction": "启动对pai0.5的微调训练",
+  "training_run": "spatial_lora_20261007_r1",
+  "supervisor_pid": 108883,
+  "state": "running",
+  "stage": "train",
+  "prepare_exit_code": 0,
+  "smoke_exit_code": 0,
+  "formal_updates_verified": 156,
+  "latest_metric": {
+    "step": 156,
+    "source_frame_indices": [
+      10551,
+      40535,
+      72924,
+      105620
+    ],
+    "task_ids": [
+      0,
+      2,
+      3,
+      5
+    ],
+    "seconds": 0.515148401260376,
+    "grad_norm": 0.12403066456317902,
+    "loss": 0.14490197598934174,
+    "param_norm": 1833.2999267578125
+  },
+  "last_20_update_median_seconds": 0.5155125856399536,
+  "all_observed_loss_gradient_parameter_norms_finite": true,
+  "parameter_counts": {
+    "total": 3403421456,
+    "trainable": 49987584
+  },
+  "baseline_validation_task_balanced_loss": 0.30261684960020435,
+  "nvidia_smi": "24245 MiB, 73 %",
+  "frozen_file_fingerprints_verified": 143,
+  "target_steps": 10000,
+  "save_and_validate_every": 2000,
+  "full_training_completed": false,
+  "closed_loop_adaptation_accepted": false
+}

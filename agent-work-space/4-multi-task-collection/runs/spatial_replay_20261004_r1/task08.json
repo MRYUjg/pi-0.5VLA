@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "errors": [],
+  "seed": 57108,
+  "steps": 783,
+  "reset_qpos_error": 0.0,
+  "max_qpos_error": 0.0,
+  "max_qvel_error": 0.0,
+  "max_state_error": 0.0,
+  "max_time_error": 0.0,
+  "max_rgb_pixel_error": 0,
+  "native_mismatches": 0,
+  "rendered_observation_indices": [
+    0,
+    195,
+    391,
+    587,
+    783
+  ],
+  "method": "reset(seed), replay recorded preparation and teacher actions; initialize renderer after first preparation action exactly as capture; no state injection",
+  "renderer_first_preparation_frame_checked": true,
+  "process_exit_pending": true
+}

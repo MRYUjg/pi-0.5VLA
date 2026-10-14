@@ -1,0 +1,1492 @@
+{
+  "passed": true,
+  "algorithm": "GPTQ",
+  "source_INT4_layers_with_execution_witness": 121,
+  "unique_executed_GEMM_layers": 69,
+  "unique_executed_DQ_layers": 69,
+  "source_mapping_sha256": "6b568aecff8d599dfccbb780283b0ba88a8525f45dc5aaaba6859619906d2e68",
+  "profile_sha256": "884e46644150259217e78f8fb2c132c81976ade7cc0cee2fd734eab2796362c7",
+  "method": "DETAILED engine inspector source mapping joined to IProfiler execution callbacks",
+  "all_arithmetic_pure_integer_INT4": false,
+  "latency_or_closed_loop_accepted": false,
+  "layers": [
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj/MatMul+/k_proj/MatMul+/q_proj/MatMul_myl0_4": {
+          "calls": 1,
+          "total_ms": 0.09142400324344635
+        },
+        "__myl_ReplCastMulCast_myl0_3": {
+          "calls": 1,
+          "total_ms": 0.009216000325977802
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj/MatMul+/k_proj/MatMul+/q_proj/MatMul_myl0_4": {
+          "calls": 1,
+          "total_ms": 0.09142400324344635
+        },
+        "__myl_ReplCastMulCast_myl0_3": {
+          "calls": 1,
+          "total_ms": 0.009216000325977802
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj/MatMul+/k_proj/MatMul+/q_proj/MatMul_myl0_4": {
+          "calls": 1,
+          "total_ms": 0.09142400324344635
+        },
+        "__myl_ReplCastMulCast_myl0_3": {
+          "calls": 1,
+          "total_ms": 0.009216000325977802
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.o_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_8": {
+          "calls": 1,
+          "total_ms": 0.062463998794555664
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_10": {
+          "calls": 1,
+          "total_ms": 0.92876797914505
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_10": {
+          "calls": 1,
+          "total_ms": 0.92876797914505
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_12": {
+          "calls": 1,
+          "total_ms": 0.45260798931121826
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_1/MatMul+/k_proj_1/MatMul+/q_proj_1/MatMul_myl0_15": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_14": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_1/MatMul+/k_proj_1/MatMul+/q_proj_1/MatMul_myl0_15": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_14": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_1/MatMul+/k_proj_1/MatMul+/q_proj_1/MatMul_myl0_15": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_14": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/o_proj_1/MatMul_myl0_21": {
+          "calls": 1,
+          "total_ms": 0.060416001826524734
+        },
+        "__myl_ReplCastMulCast_myl0_20": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_23": {
+          "calls": 1,
+          "total_ms": 0.9300479888916016
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_23": {
+          "calls": 1,
+          "total_ms": 0.9300479888916016
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_25": {
+          "calls": 1,
+          "total_ms": 0.45158401131629944
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_27": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_2/MatMul+/k_proj_2/MatMul+/q_proj_2/MatMul_myl0_28": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_27": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_2/MatMul+/k_proj_2/MatMul+/q_proj_2/MatMul_myl0_28": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_27": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_2/MatMul+/k_proj_2/MatMul+/q_proj_2/MatMul_myl0_28": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_33": {
+          "calls": 1,
+          "total_ms": 0.008191999979317188
+        },
+        "/o_proj_2/MatMul_myl0_34": {
+          "calls": 1,
+          "total_ms": 0.06143999844789505
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_36": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_36": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_38": {
+          "calls": 1,
+          "total_ms": 0.4536319971084595
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_40": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_3/MatMul+/k_proj_3/MatMul+/q_proj_3/MatMul_myl0_41": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_40": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_3/MatMul+/k_proj_3/MatMul+/q_proj_3/MatMul_myl0_41": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_40": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_3/MatMul+/k_proj_3/MatMul+/q_proj_3/MatMul_myl0_41": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/o_proj_3/MatMul_myl0_47": {
+          "calls": 1,
+          "total_ms": 0.060416001826524734
+        },
+        "__myl_ReplCastMulCast_myl0_46": {
+          "calls": 1,
+          "total_ms": 0.0071680000983178616
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_49": {
+          "calls": 1,
+          "total_ms": 0.9297919869422913
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_49": {
+          "calls": 1,
+          "total_ms": 0.9297919869422913
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_51": {
+          "calls": 1,
+          "total_ms": 0.45260798931121826
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_4/MatMul+/k_proj_4/MatMul+/q_proj_4/MatMul_myl0_54": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_53": {
+          "calls": 1,
+          "total_ms": 0.010495999827980995
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_4/MatMul+/k_proj_4/MatMul+/q_proj_4/MatMul_myl0_54": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_53": {
+          "calls": 1,
+          "total_ms": 0.010495999827980995
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_4/MatMul+/k_proj_4/MatMul+/q_proj_4/MatMul_myl0_54": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_53": {
+          "calls": 1,
+          "total_ms": 0.010495999827980995
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_59": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        },
+        "/o_proj_4/MatMul_myl0_60": {
+          "calls": 1,
+          "total_ms": 0.06143999844789505
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_62": {
+          "calls": 1,
+          "total_ms": 0.9318400025367737
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_62": {
+          "calls": 1,
+          "total_ms": 0.9318400025367737
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_64": {
+          "calls": 1,
+          "total_ms": 0.45260798931121826
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_66": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_5/MatMul+/k_proj_5/MatMul+/q_proj_5/MatMul_myl0_67": {
+          "calls": 1,
+          "total_ms": 0.08502399921417236
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_66": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_5/MatMul+/k_proj_5/MatMul+/q_proj_5/MatMul_myl0_67": {
+          "calls": 1,
+          "total_ms": 0.08502399921417236
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_66": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_5/MatMul+/k_proj_5/MatMul+/q_proj_5/MatMul_myl0_67": {
+          "calls": 1,
+          "total_ms": 0.08502399921417236
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_72": {
+          "calls": 1,
+          "total_ms": 0.007519999984651804
+        },
+        "/o_proj_5/MatMul_myl0_73": {
+          "calls": 1,
+          "total_ms": 0.060416001826524734
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_75": {
+          "calls": 1,
+          "total_ms": 0.9318400025367737
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_75": {
+          "calls": 1,
+          "total_ms": 0.9318400025367737
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_77": {
+          "calls": 1,
+          "total_ms": 0.45158401131629944
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_6/MatMul+/k_proj_6/MatMul+/q_proj_6/MatMul_myl0_80": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_79": {
+          "calls": 1,
+          "total_ms": 0.01228800043463707
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_6/MatMul+/k_proj_6/MatMul+/q_proj_6/MatMul_myl0_80": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_79": {
+          "calls": 1,
+          "total_ms": 0.01228800043463707
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_6/MatMul+/k_proj_6/MatMul+/q_proj_6/MatMul_myl0_80": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_79": {
+          "calls": 1,
+          "total_ms": 0.01228800043463707
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/o_proj_6/MatMul_myl0_86": {
+          "calls": 1,
+          "total_ms": 0.06143999844789505
+        },
+        "__myl_ReplCastMulCast_myl0_85": {
+          "calls": 1,
+          "total_ms": 0.0071680000983178616
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_88": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_88": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_90": {
+          "calls": 1,
+          "total_ms": 0.4536319971084595
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_7/MatMul+/k_proj_7/MatMul+/q_proj_7/MatMul_myl0_93": {
+          "calls": 1,
+          "total_ms": 0.08499199897050858
+        },
+        "__myl_ReplCastMulCast_myl0_92": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_7/MatMul+/k_proj_7/MatMul+/q_proj_7/MatMul_myl0_93": {
+          "calls": 1,
+          "total_ms": 0.08499199897050858
+        },
+        "__myl_ReplCastMulCast_myl0_92": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_7/MatMul+/k_proj_7/MatMul+/q_proj_7/MatMul_myl0_93": {
+          "calls": 1,
+          "total_ms": 0.08499199897050858
+        },
+        "__myl_ReplCastMulCast_myl0_92": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/o_proj_7/MatMul_myl0_99": {
+          "calls": 1,
+          "total_ms": 0.06143999844789505
+        },
+        "__myl_ReplCastMulCast_myl0_98": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_101": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_101": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_103": {
+          "calls": 1,
+          "total_ms": 0.4546560049057007
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_105": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_8/MatMul+/k_proj_8/MatMul+/q_proj_8/MatMul_myl0_106": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_105": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_8/MatMul+/k_proj_8/MatMul+/q_proj_8/MatMul_myl0_106": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_105": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_8/MatMul+/k_proj_8/MatMul+/q_proj_8/MatMul_myl0_106": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_111": {
+          "calls": 1,
+          "total_ms": 0.008191999979317188
+        },
+        "/o_proj_8/MatMul_myl0_112": {
+          "calls": 1,
+          "total_ms": 0.06143999844789505
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_114": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_114": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_116": {
+          "calls": 1,
+          "total_ms": 0.45260798931121826
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_9/MatMul+/k_proj_9/MatMul+/q_proj_9/MatMul_myl0_119": {
+          "calls": 1,
+          "total_ms": 0.0833280012011528
+        },
+        "__myl_ReplCastMulCast_myl0_118": {
+          "calls": 1,
+          "total_ms": 0.011552000418305397
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_9/MatMul+/k_proj_9/MatMul+/q_proj_9/MatMul_myl0_119": {
+          "calls": 1,
+          "total_ms": 0.0833280012011528
+        },
+        "__myl_ReplCastMulCast_myl0_118": {
+          "calls": 1,
+          "total_ms": 0.011552000418305397
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_9/MatMul+/k_proj_9/MatMul+/q_proj_9/MatMul_myl0_119": {
+          "calls": 1,
+          "total_ms": 0.0833280012011528
+        },
+        "__myl_ReplCastMulCast_myl0_118": {
+          "calls": 1,
+          "total_ms": 0.011552000418305397
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/o_proj_9/MatMul_myl0_125": {
+          "calls": 1,
+          "total_ms": 0.06063999980688095
+        },
+        "__myl_ReplCastMulCast_myl0_124": {
+          "calls": 1,
+          "total_ms": 0.008191999979317188
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_127": {
+          "calls": 1,
+          "total_ms": 0.9297919869422913
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_127": {
+          "calls": 1,
+          "total_ms": 0.9297919869422913
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_129": {
+          "calls": 1,
+          "total_ms": 0.45260798931121826
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_131": {
+          "calls": 1,
+          "total_ms": 0.010432000271975994
+        },
+        "/v_proj_10/MatMul+/k_proj_10/MatMul+/q_proj_10/MatMul_myl0_132": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_131": {
+          "calls": 1,
+          "total_ms": 0.010432000271975994
+        },
+        "/v_proj_10/MatMul+/k_proj_10/MatMul+/q_proj_10/MatMul_myl0_132": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_131": {
+          "calls": 1,
+          "total_ms": 0.010432000271975994
+        },
+        "/v_proj_10/MatMul+/k_proj_10/MatMul+/q_proj_10/MatMul_myl0_132": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/o_proj_10/MatMul_myl0_138": {
+          "calls": 1,
+          "total_ms": 0.06143999844789505
+        },
+        "__myl_ReplCastMulCast_myl0_137": {
+          "calls": 1,
+          "total_ms": 0.009216000325977802
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_140": {
+          "calls": 1,
+          "total_ms": 0.9297919869422913
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_140": {
+          "calls": 1,
+          "total_ms": 0.9297919869422913
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_142": {
+          "calls": 1,
+          "total_ms": 0.4536319971084595
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_11/MatMul+/k_proj_11/MatMul+/q_proj_11/MatMul_myl0_145": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_144": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_11/MatMul+/k_proj_11/MatMul+/q_proj_11/MatMul_myl0_145": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_144": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_11/MatMul+/k_proj_11/MatMul+/q_proj_11/MatMul_myl0_145": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_144": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/o_proj_11/MatMul_myl0_151": {
+          "calls": 1,
+          "total_ms": 0.06143999844789505
+        },
+        "__myl_ReplCastMulCast_myl0_150": {
+          "calls": 1,
+          "total_ms": 0.008191999979317188
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_153": {
+          "calls": 1,
+          "total_ms": 0.928991973400116
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_153": {
+          "calls": 1,
+          "total_ms": 0.928991973400116
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_155": {
+          "calls": 1,
+          "total_ms": 0.45260798931121826
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_157": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        },
+        "/v_proj_12/MatMul+/k_proj_12/MatMul+/q_proj_12/MatMul_myl0_158": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_157": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        },
+        "/v_proj_12/MatMul+/k_proj_12/MatMul+/q_proj_12/MatMul_myl0_158": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_157": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        },
+        "/v_proj_12/MatMul+/k_proj_12/MatMul+/q_proj_12/MatMul_myl0_158": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/o_proj_12/MatMul_myl0_164": {
+          "calls": 1,
+          "total_ms": 0.060416001826524734
+        },
+        "__myl_ReplCastMulCast_myl0_163": {
+          "calls": 1,
+          "total_ms": 0.008191999979317188
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_166": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_166": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_168": {
+          "calls": 1,
+          "total_ms": 0.4536319971084595
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_170": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        },
+        "/v_proj_13/MatMul+/k_proj_13/MatMul+/q_proj_13/MatMul_myl0_171": {
+          "calls": 1,
+          "total_ms": 0.08499199897050858
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_170": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        },
+        "/v_proj_13/MatMul+/k_proj_13/MatMul+/q_proj_13/MatMul_myl0_171": {
+          "calls": 1,
+          "total_ms": 0.08499199897050858
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_170": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        },
+        "/v_proj_13/MatMul+/k_proj_13/MatMul+/q_proj_13/MatMul_myl0_171": {
+          "calls": 1,
+          "total_ms": 0.08499199897050858
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_176": {
+          "calls": 1,
+          "total_ms": 0.009216000325977802
+        },
+        "/o_proj_13/MatMul_myl0_177": {
+          "calls": 1,
+          "total_ms": 0.060416001826524734
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_179": {
+          "calls": 1,
+          "total_ms": 0.9298880100250244
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_179": {
+          "calls": 1,
+          "total_ms": 0.9298880100250244
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_181": {
+          "calls": 1,
+          "total_ms": 0.4536319971084595
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_14/MatMul+/k_proj_14/MatMul+/q_proj_14/MatMul_myl0_184": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_183": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_14/MatMul+/k_proj_14/MatMul+/q_proj_14/MatMul_myl0_184": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_183": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_14/MatMul+/k_proj_14/MatMul+/q_proj_14/MatMul_myl0_184": {
+          "calls": 1,
+          "total_ms": 0.08396799862384796
+        },
+        "__myl_ReplCastMulCast_myl0_183": {
+          "calls": 1,
+          "total_ms": 0.010239999741315842
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_189": {
+          "calls": 1,
+          "total_ms": 0.008191999979317188
+        },
+        "/o_proj_14/MatMul_myl0_190": {
+          "calls": 1,
+          "total_ms": 0.06143999844789505
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_192": {
+          "calls": 1,
+          "total_ms": 0.92876797914505
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_192": {
+          "calls": 1,
+          "total_ms": 0.92876797914505
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_194": {
+          "calls": 1,
+          "total_ms": 0.4536319971084595
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_196": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_15/MatMul+/k_proj_15/MatMul+/q_proj_15/MatMul_myl0_197": {
+          "calls": 1,
+          "total_ms": 0.08294399827718735
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_196": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_15/MatMul+/k_proj_15/MatMul+/q_proj_15/MatMul_myl0_197": {
+          "calls": 1,
+          "total_ms": 0.08294399827718735
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_196": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        },
+        "/v_proj_15/MatMul+/k_proj_15/MatMul+/q_proj_15/MatMul_myl0_197": {
+          "calls": 1,
+          "total_ms": 0.08294399827718735
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/o_proj_15/MatMul_myl0_203": {
+          "calls": 1,
+          "total_ms": 0.060416001826524734
+        },
+        "__myl_ReplCastMulCast_myl0_202": {
+          "calls": 1,
+          "total_ms": 0.0071680000983178616
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_205": {
+          "calls": 1,
+          "total_ms": 0.9297919869422913
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_205": {
+          "calls": 1,
+          "total_ms": 0.9297919869422913
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_207": {
+          "calls": 1,
+          "total_ms": 0.45260798931121826
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_16/MatMul+/k_proj_16/MatMul+/q_proj_16/MatMul_myl0_210": {
+          "calls": 1,
+          "total_ms": 0.08499199897050858
+        },
+        "__myl_ReplCastMulCast_myl0_209": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.k_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_16/MatMul+/k_proj_16/MatMul+/q_proj_16/MatMul_myl0_210": {
+          "calls": 1,
+          "total_ms": 0.08499199897050858
+        },
+        "__myl_ReplCastMulCast_myl0_209": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.v_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "/v_proj_16/MatMul+/k_proj_16/MatMul+/q_proj_16/MatMul_myl0_210": {
+          "calls": 1,
+          "total_ms": 0.08499199897050858
+        },
+        "__myl_ReplCastMulCast_myl0_209": {
+          "calls": 1,
+          "total_ms": 0.011264000087976456
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.o_proj",
+      "fused_DQ_GEMM": false,
+      "executed_layers": {
+        "__myl_ReplCastMulCast_myl0_215": {
+          "calls": 1,
+          "total_ms": 0.009216000325977802
+        },
+        "/o_proj_16/MatMul_myl0_216": {
+          "calls": 1,
+          "total_ms": 0.060416001826524734
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.gate_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_218": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.up_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_218": {
+          "calls": 1,
+          "total_ms": 0.9308159947395325
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.down_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_220": {
+          "calls": 1,
+          "total_ms": 0.45260798931121826
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.k_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_222": {
+          "calls": 1,
+          "total_ms": 0.02252800017595291
+        }
+      }
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.v_proj",
+      "fused_DQ_GEMM": true,
+      "executed_layers": {
+        "__myl_ReplCastMulCastFc_myl0_222": {
+          "calls": 1,
+          "total_ms": 0.02252800017595291
+        }
+      }
+    }
+  ]
+}

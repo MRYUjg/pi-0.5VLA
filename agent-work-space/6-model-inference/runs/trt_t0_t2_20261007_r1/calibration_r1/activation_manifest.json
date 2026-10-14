@@ -1,0 +1,858 @@
+{
+  "source_sha256": "69ee787ec12921613feabf69b01348628b3d6327a8865cbc02ecb9be788d9258",
+  "dataset_sha256": "f29faf7034ee2deb0c7eab0d4f61a2b2a7833080f5d5c7e4fee31b53dd964391",
+  "modules": {
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.q_proj": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.k_proj": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.v_proj": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.q_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.o_proj": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.gate_proj": "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.up_proj": "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.down_proj": "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.down_proj"
+  },
+  "activation_groups": {
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_000.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "0b7c04209e0b99a5d9f54dc650ace2ad70c0d8fe13d7bb1c92f578da7a77c497",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_001.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "85adf5897992f5af96617a8e1de408480c1328dbb1c93b970663c14b63df1d6c",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_002.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "87204e9b7172922a503c71db42921bf7f762e10fb2148abd35bd3613a31384ac",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_003.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "687131338ae7dff5483c672486a501f88390adbffd620941bef60df14acd3c54",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_004.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "e164f0d35c11dd90367a1be21b1c852eb675cde8be84abb768099c5d9154bca3",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_005.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "b697017a27649d6ccaf33b39931515b94edcdcacf7acf62ea495329f7838eb96",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_006.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "e72dfb9e9bb37f160bc0718298730f720007bcbf1e9f08d19d7041106a64eea6",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_007.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "fc2e280bf59794fff47990f8d0d8a8180edd68483b64311d82cf168c30bd62f2",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_008.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "b06f5a2281f8a517959acf523f7dda24502ad6500cc3754a86786d59d2ed15a3",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_009.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "0d59d20d5f9398cd9401c6771c064713a45fa5ce1db46124f4d5f5150cb8912a",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_010.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "a6085c28d01099e330a4baa94db37168de13b19040e047e088b58a6aae13df7a",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_011.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "fbd6b099e8fc4da4252ffa87cfcce2babff55303e550179d6dc4553a2845d04d",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_012.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "00887efb07976ecf29f7b0bfe07cdad0a9c0a959d8e73edeb3baa179a3fff454",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_013.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "4cbd4b49b3112498c8e7ab60d66e7b34c8c22a2cf747e70ddcd695ff0a09c9ed",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_014.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "c80dcacdb70a2dcc24a517ce5b48e56bec1750c446e670ad5d5999eaf615477d",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_015.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "8007441439c0ace1bfcbb46dc5ac353846d1a97b7abf7a2f76edc59f9868d47a",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_016.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "d8840fddd3eacb0f75642d971969b3da9cc4edfbd9e3fe8111e60fbcf26fdf40",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_017.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "3ac1ed43139ce810c0fc175bf07b92d2bb501d8f97716e212ff187cfa0609c75",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_018.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "9abbd70d52bd4393666eca8cc6f17194f6dc97e30bee70223a82cdae33745f29",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_019.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "3cd1af42bbf7d22b26d22a705f9468360418c3087152b3594396d43b9461e9b4",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_020.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "f5c97d0c8d4b50158dc3ededcc6a55bdb7879fce93a1f2f3a06af680691d147d",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_021.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "7fe98ecb7a0d5735e15e388893d8017af56502106a25f5ce52025f78912f1714",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_022.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "33b148b04daf23a8a42fcffc4c639d7f0a25f5984f93ebf0901c2c523cc2e9ba",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_023.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "56553bdd437fd1ae8b59e3eff8a754c6e3d27d14bf14a06addbec24ac9d373c3",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_024.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "7e8bb65a6b5f8c625bf5bdba98b68de98cb5f6be1b3aa8715b55a7a8c99e5bbe",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_025.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "758b1976de40c5338e242c78c7186a1bd033ab700661363ee9734eed346dbd29",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_026.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "679bb2f9ff9e4489aaa76271a3f1769b13e95d8a2cc8fe27b4b2c27e30e23289",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_027.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "2582c2b94f2565878ae3b6f8e6495dc05f7dd0d7c9a5ebc3145038a851aa0cca",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_028.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "95fed93434e73075adbd8b3e97704188255589f5af917e855ff454e59542e114",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_029.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "f6b6ff63bcdddd8fd3d01a2db8043530f2e047513496a4a3518051343ddb2926",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_030.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "3d462a525b4a1c033a3649b7d8e6f1f8e39df1d66b13f047217324aa9274e249",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_031.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "323d0242b3cb4fdd62d8bd7f51820b9bd16d9ac181bdcefefe51afed44c87eaf",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_032.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "251add39590205fb8748d5582106a77abec3522dad47a00e4fd69ad580614c38",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_033.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "211795b947c28f350e628651204b08a12243ffb512a88f4a2cea665d9e017fcb",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_034.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "5dffc828042ca3f904c38048ad5c82c57f4d3daec6fefd38378b87f569d368e7",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_035.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "de8f59b1b0bcbbeb581cfd4f6a07b17c7dce08229f4b7007dc31f84a52387b4d",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_036.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "bca08c268c1454a1e17bf80fef10ce5b60c4d387489c5d5e9b4800572be1a812",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_037.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "99d4dca657340aa38922f35b59c521bac85d5d9d23b63ef10a55a0702329f7c9",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_038.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "1886c5a7f2039962683f059d062af0e96eb5251d091c573a2f6fbfe85503f11b",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_039.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "214feee429790f5794b55738bcacc77c17eb690b51d1d4d68c998eac3dc6297e",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_040.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "7f408550623411532aaf0045f87f3f2ea522933ef3dddd5b23111e5c2a2c92e8",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_041.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "265971747963cdec7520a074a1d44764e8b933daf6e8905e019d449bb0052a35",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_042.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "087849804730fa25fba370f3ed1d3bcc5f54a56c5f309d91f0bcc073a2cec1e5",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_043.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "09dede9797ae47c050c38f77bb2404368542491c9105d4c9a9dec882583f4ef8",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_044.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "cd9608dce2a70d0912437224f0d9e7fbb0d706b15b12f83eca399355a4ba1f99",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_045.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "aaa6d94d04225eab7ac3d3a9982d578c0fda91cc181abaf444e86266df6ebfc9",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_046.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "a1ebea2669c7872358efb5499b9585d3cec4b15ac70d9a35d172bf9bcd8166b7",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_047.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "e0b01eb125bf86369ef68444b212632e46f262906b1222f5b04958cdca9af6f5",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_048.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "b0d63c2b8194f5ef1507895a66d66a64a9846f69862372328de95b94b4a0238b",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_049.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "8df100a35a067d60c8b1ef831e3be9e39cb9570122ee6b4be54648a590340e9d",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_050.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "43cdbe0d9d3596c73d560f1c0e324626f9d2415f3bf4d36c6b340e37d9a2064a",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_051.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "e36b72a144735049f50a8fcbc10cf1f17eb629428e83222c5ba7e77d63fd88de",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_052.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "7efb2f194653905da9eec2dfedaba84e9671ab2e8102da9c38dbe4066cc89e88",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_053.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "4e826e9618f24013e07b73db96c0f89bce10229c0507543ef7292495d40cd1d3",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_054.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "fb8d0d19e2a99e889fea9d18eac5c394be7308b54482d33e133c021b3d51dee2",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_055.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "80a4488f6426cf2b3da650140876480424d3efba3adc8f971655e3c940c33f7e",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_056.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "2ca0012929cd0c46751fb2f846b2af0a38c5e218fa0a5a4e03c0cae3d17504e4",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_057.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "2bb9b2983755584590a9dec0a4a7cf39bced53dcb1da43d2f5be52abf091e1d4",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_058.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "c51124cc5f3c188e385267ec480399f4a4aeb43cb81b0cb20800ff4bf81ee422",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_059.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "bae7ffff58628aa5e25fc4665228b811bea08db0b2678c5ea638ed1ac5f8fe6e",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_060.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "4327838948b7ed5e3bd9f4b9991dade2b32eaa9e8acc79afad939f567bd3cf30",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_061.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "7801fc694b48a8d3c0adffaf52300a0df59d37c9bce216bc9a0caa08deaa3d0f",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_062.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "415cbca314f005729abd075f8894ac7fd47870616afc9f30c9e4e99255017ce5",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_063.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "0df4957bc6925e789c2a7068a18088f22af1318f0785a7911e12283b84e8fe16",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_064.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "a0b850b193eef5c33591259c597451dcf62d6da797ec5b044be9d7f9873f81ed",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_065.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "6a1de913add3ea7bf81c6447a5f7ea78249d94a293d7ff1b80ce67360e267f68",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_066.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "3a82d48bcf3f54446a985155d57a43fcca3977acb6557a2a20fd152ebd00b165",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_067.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "fffdfe57930085551015b700632aa49f91d95970ac45d0543969d9187e0332d8",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.down_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_068.pt",
+      "shape": [
+        8000,
+        16384
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "c215f69b20aeb2cee79892d0bcf9adfe49ef14aefa4a4c4b2569b93d3466f871",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.gate_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_069.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "8e5437d571a321146ad471f4c893c0a2448ba7e3ba72a714fc6c745dbd088406",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.o_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_070.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "a6eba83ad96b1a2bbd53df355ed51c8b2e356ef41aacce4368c0b8b3782c41c2",
+      "forwards": 2000
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/activations/layer_071.pt",
+      "shape": [
+        8000,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "7954148fd1f1c43e1f88403c959248273d3b96e3c4f666b3f1ae17982f3b967f",
+      "forwards": 2000
+    }
+  },
+  "full_sample_actions_forwards": 2000,
+  "denoise_steps_each": 10,
+  "tokens_per_observation": 4,
+  "all_phases_from_real_policy_trajectories": true
+}

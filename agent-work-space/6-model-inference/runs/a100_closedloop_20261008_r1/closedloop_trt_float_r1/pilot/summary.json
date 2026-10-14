@@ -1,0 +1,15 @@
+{
+  "variant": "trt_float",
+  "device": "A100",
+  "observations": 128,
+  "warmup": 20,
+  "all_finite": true,
+  "repeat_internal_max_abs": 0.0,
+  "repeat_passed": true,
+  "round_trip_ms": {
+    "p50": 90.18123949863366,
+    "p99": 93.23274059046526
+  },
+  "calibration_related_not_generalization_test": true,
+  "1000_request_or_two_hour_claim": false
+}

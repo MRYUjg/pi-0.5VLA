@@ -1,0 +1,19 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-a100-build-20261008-r1",
+    "/.venv/bin/python",
+    "/work/runs/a100_closedloop_20261008_r1/build_float_vision_r1_source/build.py",
+    "--source",
+    "/work/runs/trt_t0_t2_20261007_r1/t1_attempt_r6/vision.onnx",
+    "--out",
+    "/work/runs/a100_closedloop_20261008_r1/build_float_vision_r1",
+    "--stage",
+    "vision",
+    "--algorithm",
+    "float"
+  ],
+  "exit_code": 0,
+  "seconds": 66.46879291534424
+}

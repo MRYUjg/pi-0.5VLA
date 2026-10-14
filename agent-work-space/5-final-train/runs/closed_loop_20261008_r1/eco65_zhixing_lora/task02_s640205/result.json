@@ -1,0 +1,195 @@
+{
+  "condition": "eco65_zhixing_lora",
+  "task_id": 2,
+  "seed": 640205,
+  "task_name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+  "prompt": "pick up the black bowl from table center and place it on the plate",
+  "trained_task": true,
+  "smoke": false,
+  "primary_success": false,
+  "native_success_220": false,
+  "native_success_extended": false,
+  "primary_budget": 220,
+  "extended_budget": 220,
+  "initialization_pass": true,
+  "failure": "time_budget_exhausted",
+  "video": null,
+  "physical_audit_scope": "native initialization gate; execution contacts observed each physics substep; not full r6 teacher trajectory certification",
+  "panda_zero_noise_rng_alignment": false,
+  "reset_objects": {
+    "akita_black_bowl_1": {
+      "position": [
+        -0.07500000000000001,
+        -0.011799766560272358,
+        0.97
+      ],
+      "quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865477
+      ]
+    },
+    "akita_black_bowl_2": {
+      "position": [
+        -0.00028661820417644895,
+        0.30467967324356604,
+        0.97
+      ],
+      "quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865477
+      ]
+    },
+    "cookies_1": {
+      "position": [
+        0.07731210059775523,
+        0.03640924526562369,
+        0.97
+      ],
+      "quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865477
+      ]
+    },
+    "glazed_rim_porcelain_ramekin_1": {
+      "position": [
+        -0.19163724359292075,
+        0.18840213503158204,
+        0.97
+      ],
+      "quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865477
+      ]
+    },
+    "plate_1": {
+      "position": [
+        0.06410747291320659,
+        0.1973877307238362,
+        0.97
+      ],
+      "quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865477
+      ]
+    },
+    "wooden_cabinet_1": {
+      "position": [
+        0.027522776875139605,
+        -0.2681992538119954,
+        0.905
+      ],
+      "quaternion": [
+        0.23592995346642423,
+        0.0,
+        0.0,
+        0.9717700638820539
+      ]
+    },
+    "flat_stove_1": {
+      "position": [
+        -0.4170799477595189,
+        -0.14896792796414907,
+        0.905
+      ],
+      "quaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "reset_object_hash": "84c0fdb93642085f122fd166b996f3f47c9f3c6724c9ef6eba944127da3a6fc9",
+  "settled_objects": {
+    "akita_black_bowl_1": [
+      -0.0749915492483295,
+      -0.01183666395374302,
+      0.898404150188853
+    ],
+    "akita_black_bowl_2": [
+      -0.00027816745250588715,
+      0.3046427758500959,
+      0.898404150188853
+    ],
+    "cookies_1": [
+      0.07731210059775523,
+      0.03640924526562369,
+      0.9093709548372153
+    ],
+    "glazed_rim_porcelain_ramekin_1": [
+      -0.19163657990829147,
+      0.18840761394716085,
+      0.8993413701303519
+    ],
+    "plate_1": [
+      0.06411557472735041,
+      0.19738546473918686,
+      0.9024998346667837
+    ],
+    "wooden_cabinet_1": [
+      0.027522776875139605,
+      -0.2681992538119954,
+      0.905
+    ],
+    "flat_stove_1": [
+      -0.4170799477595189,
+      -0.14896792796414907,
+      0.905
+    ]
+  },
+  "controller": {
+    "input_max": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "output_max": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "profile": "eco65_no_extra_pd",
+    "control_frequency": 20
+  },
+  "steps": 220,
+  "queries": 44,
+  "clipped_action_frames": 140,
+  "execution_contacts": {
+    "max_cross_entity_penetration_mm": 0.44685422064034763,
+    "max_robot_object_penetration_mm": 0.44685422064034763,
+    "max_normal_N": 9.64751626222349,
+    "worst_geoms": [
+      "akita_black_bowl_1_g30",
+      "gripper0_left_fingerpad_col"
+    ],
+    "physics_substeps": 5500
+  },
+  "physics_warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "video_frames": 0,
+  "seconds": 48.74084702500113
+}

@@ -1,0 +1,18 @@
+{
+  "exit_code": 0,
+  "command": [
+    "docker",
+    "exec",
+    "pi05-full4-resource-full-awq-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_full4_20261007_r1/resource_full_awq_r1_source/client.py",
+    "--out",
+    "/out/benchmark",
+    "--variant",
+    "full_awq",
+    "--port",
+    "18883",
+    "--count",
+    "1000"
+  ]
+}

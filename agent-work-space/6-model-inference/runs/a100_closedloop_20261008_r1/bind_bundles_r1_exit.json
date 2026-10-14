@@ -1,0 +1,11 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-a100-build-20261008-r1",
+    "/.venv/bin/python",
+    "/work/runs/a100_closedloop_20261008_r1/bind_bundles_r1_source/bind_bundles.py"
+  ],
+  "exit_code": 0,
+  "seconds": 21.642781257629395
+}

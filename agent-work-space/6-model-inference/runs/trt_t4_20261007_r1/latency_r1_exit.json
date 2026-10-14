@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/trt_t4_20261007_r1/run_latency_probe.py",
+    "--variant",
+    "original_torch",
+    "trt_float",
+    "awq",
+    "gptq",
+    "--attempt",
+    "r1"
+  ],
+  "exit_code": 0
+}

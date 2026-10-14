@@ -1,0 +1,16 @@
+{
+  "algorithm": "AWQ",
+  "observations": 128,
+  "motion_mae": 0.002934223321686842,
+  "motion_p99_abs": 0.022941100405011825,
+  "motion_max_abs": 0.10170291095590589,
+  "gripper_disagreements": 6,
+  "confident_gripper_count": 1280,
+  "gripper_disagreement_fraction": 0.0046875,
+  "clipping_rate_increase": 0.0030133928571428573,
+  "comparison": "same source PyTorch float versus offline canonical dequantized weights; same observations/noise/steps",
+  "native_INT4_engine_built": false,
+  "4070_8GB_accepted": false,
+  "Panda_closed_loop_accepted": false,
+  "offline_accuracy_passed": true
+}

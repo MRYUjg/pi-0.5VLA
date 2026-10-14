@@ -1,0 +1,41 @@
+{
+  "opset": 21,
+  "torch_export_opset": 20,
+  "conversion": "ONNX official 20-to-21",
+  "vision_sdpa_export": "FP32 scores/probabilities/value accumulation, original BF16 interfaces; separately validated",
+  "operators": {
+    "Cast": 137,
+    "Conv": 1,
+    "Shape": 1,
+    "Constant": 494,
+    "Slice": 1,
+    "Concat": 109,
+    "Reshape": 109,
+    "Transpose": 299,
+    "Gather": 1,
+    "Add": 218,
+    "LayerNormalization": 55,
+    "MatMul": 217,
+    "Unsqueeze": 405,
+    "Mul": 27,
+    "Softmax": 27,
+    "Gelu": 27
+  },
+  "inputs": [
+    "image"
+  ],
+  "outputs": [
+    "image_embedding"
+  ],
+  "initializers": 439,
+  "engine": {
+    "inputs": [
+      "image"
+    ],
+    "outputs": [
+      "image_embedding"
+    ],
+    "layers": 3190,
+    "engine_bytes": 834302196
+  }
+}

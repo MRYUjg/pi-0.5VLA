@@ -1,0 +1,54 @@
+{
+  "version": "a100_comparison_20261008_r1",
+  "frozen_at_utc": "2026-10-08T10:17:58.735614+00:00",
+  "status": "report_only_no_new_inference",
+  "source_version": "a100_closedloop_20261008_r1",
+  "source_manifest_sha256": "68e55030753fd346559c69351f9d820fbee5133e25d350490ab256cc2a3a3cd3",
+  "files_relative_to_6_model_inference": {
+    "versions/a100_comparison_20261008_r1/A100模型综合对比.md": {
+      "sha256": "6c5756e8f050a81d1871071ebc00f07f133a30a9ac1e248e1c3a1ff84c86233d",
+      "bytes": 3007
+    },
+    "versions/a100_comparison_20261008_r1/A100综合对比表.png": {
+      "sha256": "a635938d87117767b015458ad9e46f45a0adc3ea68825e816a1c904d0e7e37ce",
+      "bytes": 257744
+    },
+    "versions/a100_comparison_20261008_r1/README.md": {
+      "sha256": "cc42c28763f719930e3b578910ab27d2a9835e78d1e87fa9632951033ba4baf5",
+      "bytes": 791
+    },
+    "versions/a100_comparison_20261008_r1/comparison.json": {
+      "sha256": "8decef2c9c08c7adde07f9cedf176cfe59668eac25fe2b78834e393a70c9f0ae",
+      "bytes": 5745
+    },
+    "versions/a100_comparison_20261008_r1/generate_tables.py": {
+      "sha256": "96699fcd986537e2e3cf293e09d4a9c64834d84dfd7b58be0f6410409aed4cb6",
+      "bytes": 11617
+    },
+    "versions/a100_comparison_20261008_r1/render_environment.json": {
+      "sha256": "bf52cc6b40e9e01e1fa8498c7e61ca5e5646e5f57c64f41b6d87955b5a007ca2",
+      "bytes": 220
+    },
+    "当前实施索引_20261008_r2.md": {
+      "sha256": "bd0c2832885828beeb9df9ee35fdb27ea02e7f260be7f42ba202a89881bed573",
+      "bytes": 1192
+    }
+  },
+  "unchanged_frozen_dependencies": {
+    "runs/a100_closedloop_20261008_r1/report_r1/summary.json": "f18c2d7d9bf752743e7a0b91797ca779ba92caec0c511516e234022326066c8d",
+    "runs/a100_closedloop_20261008_r1/closedloop_trt_float_r1/pilot/cases.json": "195a2e391a09acebd32eb8a5a32bd18bff5ed7cda72de79e66237cd808d3290a",
+    "runs/a100_closedloop_20261008_r1/closedloop_trt_float_r1/pilot/summary.json": "4d13ed9da262de01ef64ab821018fadd68f36dbb152d838321aec1a88d492ccf",
+    "runs/a100_closedloop_20261008_r1/closedloop_awq_r1/pilot/cases.json": "784f78703b229aac6a9cc3ac9e9977e98cd9911a49269f2992906a76fd327193",
+    "runs/a100_closedloop_20261008_r1/closedloop_awq_r1/pilot/summary.json": "98b733e2282949d3420b76efaf0c08c3e849bac5aeb19ddde32292791e11cfec",
+    "runs/a100_closedloop_20261008_r1/closedloop_gptq_r1/pilot/cases.json": "7824eb7aea0d07e2acf68ff084af20ce6d4f2b48ca6b19033a9f9a0d2c960e6f",
+    "runs/a100_closedloop_20261008_r1/closedloop_gptq_r1/pilot/summary.json": "bf9810a7c7ed2e95f9c960311e05cbb233590ef4c67c0f8692ed0432f0f0e619",
+    "runs/a100_closedloop_20261008_r1/closedloop_full_awq_r1/pilot/cases.json": "2e635f403a56aa7ee32713f00780cf96950f5a6d5444bffd5eb1cf31eea835d0",
+    "runs/a100_closedloop_20261008_r1/closedloop_full_awq_r1/pilot/summary.json": "39342e97d24959f1a648615ab4f2ee877d42cd122a16049a424955da0a4a8f59",
+    "runs/a100_closedloop_20261008_r1/closedloop_full_gptq_r1/pilot/cases.json": "bd97b6ad623c4910059750970c130b4a18af1d1398ef205bb8173a87f9b2edfb",
+    "runs/a100_closedloop_20261008_r1/closedloop_full_gptq_r1/pilot/summary.json": "086248ef2926bd3124d47c2245f66d1b54470bce865667110294165f12122cf8",
+    "releases/a100_closedloop_20261008_r1/manifest.json": "68e55030753fd346559c69351f9d820fbee5133e25d350490ab256cc2a3a3cd3"
+  },
+  "visual_review_passed": true,
+  "production_release_accepted": false,
+  "manifest_excludes_itself_and_verification_receipts": true
+}

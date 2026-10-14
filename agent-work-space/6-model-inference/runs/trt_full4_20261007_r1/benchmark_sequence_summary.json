@@ -1,0 +1,76 @@
+{
+  "phase": "benchmark",
+  "results": [
+    {
+      "command": [
+        "python3",
+        "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/trt_full4_20261007_r1/resources.py",
+        "--variant",
+        "trt_float",
+        "--attempt",
+        "r1",
+        "--count",
+        "1000"
+      ],
+      "exit_code": 1,
+      "seconds": 130.48434495925903
+    },
+    {
+      "command": [
+        "python3",
+        "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/trt_full4_20261007_r1/resources.py",
+        "--variant",
+        "awq",
+        "--attempt",
+        "r1",
+        "--count",
+        "1000"
+      ],
+      "exit_code": 1,
+      "seconds": 117.44087290763855
+    },
+    {
+      "command": [
+        "python3",
+        "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/trt_full4_20261007_r1/resources.py",
+        "--variant",
+        "gptq",
+        "--attempt",
+        "r1",
+        "--count",
+        "1000"
+      ],
+      "exit_code": 1,
+      "seconds": 117.41474223136902
+    },
+    {
+      "command": [
+        "python3",
+        "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/trt_full4_20261007_r1/resources.py",
+        "--variant",
+        "full_awq",
+        "--attempt",
+        "r1",
+        "--count",
+        "1000"
+      ],
+      "exit_code": 0,
+      "seconds": 117.19843578338623
+    },
+    {
+      "command": [
+        "python3",
+        "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/trt_full4_20261007_r1/resources.py",
+        "--variant",
+        "full_gptq",
+        "--attempt",
+        "r1",
+        "--count",
+        "1000"
+      ],
+      "exit_code": 0,
+      "seconds": 116.12896466255188
+    }
+  ],
+  "all_exit_zero": false
+}

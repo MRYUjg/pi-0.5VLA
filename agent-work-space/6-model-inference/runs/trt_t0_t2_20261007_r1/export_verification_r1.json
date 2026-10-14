@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "algorithms": {
+    "AWQ": {
+      "passed": true,
+      "packed_layers_verified": 126,
+      "ONNX_INT4_tensors_verified_bytewise": 121,
+      "exported_codes_scales_input_multipliers_match_packed_bundle": true,
+      "TensorRT_parser_passed": true,
+      "full_INT4_engine_built": false,
+      "prefix_ONNX_bytes": 788937,
+      "prefix_external_data_bytes": 2020204544,
+      "prefix_ONNX_sha256": "3856bcd3f837c525abd9d25c0cfb8b4cbb94b15b2286877870d4d5af04db54a8",
+      "prefix_external_data_sha256": "392547c874ca070399e7f9739554707f36804eb8f1da99cd7511101c56b3cd45",
+      "packed_manifest_sha256": "34e1c667aa7320fcafa884e9771c5e26b2f293356a75f9f8fa459ea224f1b2d8"
+    },
+    "GPTQ": {
+      "passed": true,
+      "packed_layers_verified": 126,
+      "ONNX_INT4_tensors_verified_bytewise": 121,
+      "exported_codes_scales_input_multipliers_match_packed_bundle": true,
+      "TensorRT_parser_passed": true,
+      "full_INT4_engine_built": false,
+      "prefix_ONNX_bytes": 733862,
+      "prefix_external_data_bytes": 2019221504,
+      "prefix_ONNX_sha256": "40aad0c68aa1782d9bc8f64758bc9a3ffd59d34469f7fbf3f63b83011fcf2631",
+      "prefix_external_data_sha256": "eff4c5aa24cf4e005ba2573476c385237232c140241dc4bed8b46ba4afc45ded",
+      "packed_manifest_sha256": "5bbab584689ea492c8d0d68bb0d1bea6864b9da33970407ef0ad1e556aac42ec"
+    },
+    "RTN": {
+      "passed": true,
+      "packed_layers_verified": 126,
+      "ONNX_INT4_tensors_verified_bytewise": 121,
+      "exported_codes_scales_input_multipliers_match_packed_bundle": true,
+      "TensorRT_parser_passed": true,
+      "full_INT4_engine_built": false,
+      "prefix_ONNX_bytes": 733862,
+      "prefix_external_data_bytes": 2019221504,
+      "prefix_ONNX_sha256": "40aad0c68aa1782d9bc8f64758bc9a3ffd59d34469f7fbf3f63b83011fcf2631",
+      "prefix_external_data_sha256": "b5e229d2343d2aa6c59546d8d717815d99249c236a0791a51b81cbc8e1815786",
+      "packed_manifest_sha256": "806c26d0f61ad1e063721f7196c74c577cffeecc9b972f211e2d186d71c8aa9f"
+    }
+  },
+  "performance_memory_closed_loop_acceptance": false
+}

@@ -1,0 +1,3972 @@
+{
+  "scope": "one warm request, diagnostic only",
+  "profiles": {
+    "vision": {
+      "/vision_tower/vision_model/embeddings/Cast": {
+        "calls": 3,
+        "total_ms": 0.0
+      },
+      "/vision_tower/vision_model/embeddings/patch_embedding/Conv": {
+        "calls": 3,
+        "total_ms": 0.15651199966669083
+      },
+      "__myl_Gath_myl2_0": {
+        "calls": 3,
+        "total_ms": 0.03433600068092346
+      },
+      "__myl_TranAddCast_myl2_1": {
+        "calls": 3,
+        "total_ms": 0.018432000186294317
+      },
+      "__myl_CastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_2": {
+        "calls": 3,
+        "total_ms": 0.018432000186294317
+      },
+      "/vision_tower/vision_model/encoder/layers_0/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_0/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_0/self_attn/q_proj/MatMul_myl2_3": {
+        "calls": 3,
+        "total_ms": 0.11878399923443794
+      },
+      "__myl_TranReshCast_myl2_4": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "__myl_TranReshCast_myl2_5": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_0/self_attn/MatMul_myl2_6": {
+        "calls": 3,
+        "total_ms": 0.02672000043094158
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_7": {
+        "calls": 3,
+        "total_ms": 0.015551999676972628
+      },
+      "__myl_TranReshCast_myl2_8": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_0/self_attn/MatMul_1_myl2_9": {
+        "calls": 3,
+        "total_ms": 98.47193582355976
+      },
+      "__myl_CastReshTran_myl2_10": {
+        "calls": 3,
+        "total_ms": 0.015583999920636415
+      },
+      "/vision_tower/vision_model/encoder/layers_0/self_attn/out_proj/MatMul_myl2_11": {
+        "calls": 3,
+        "total_ms": 0.06336000096052885
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_12": {
+        "calls": 3,
+        "total_ms": 0.012383999768644571
+      },
+      "/vision_tower/vision_model/encoder/layers_0/mlp/fc1/MatMul_myl2_13": {
+        "calls": 3,
+        "total_ms": 0.09039999917149544
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_14": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_0/mlp/fc2/MatMul_myl2_15": {
+        "calls": 3,
+        "total_ms": 0.09523199871182442
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_16": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "/vision_tower/vision_model/encoder/layers_1/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_1/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_1/self_attn/q_proj/MatMul_myl2_17": {
+        "calls": 3,
+        "total_ms": 0.05859199911355972
+      },
+      "__myl_TranReshCast_myl2_18": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "__myl_TranReshCast_myl2_19": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_1/self_attn/MatMul_myl2_20": {
+        "calls": 3,
+        "total_ms": 0.028672000393271446
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_21": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_TranReshCast_myl2_22": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_1/self_attn/MatMul_1_myl2_23": {
+        "calls": 3,
+        "total_ms": 0.031007999554276466
+      },
+      "__myl_CastReshTran_myl2_24": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_1/self_attn/out_proj/MatMul_myl2_25": {
+        "calls": 3,
+        "total_ms": 0.035904000513255596
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_26": {
+        "calls": 3,
+        "total_ms": 0.014527999795973301
+      },
+      "/vision_tower/vision_model/encoder/layers_1/mlp/fc1/MatMul_myl2_27": {
+        "calls": 3,
+        "total_ms": 0.0829440001398325
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_28": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_1/mlp/fc2/MatMul_myl2_29": {
+        "calls": 3,
+        "total_ms": 0.0935679990798235
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_30": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_2/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_2/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_2/self_attn/q_proj/MatMul_myl2_31": {
+        "calls": 3,
+        "total_ms": 0.05939199775457382
+      },
+      "__myl_TranReshCast_myl2_32": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "__myl_TranReshCast_myl2_33": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_2/self_attn/MatMul_myl2_34": {
+        "calls": 3,
+        "total_ms": 0.028672000393271446
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_35": {
+        "calls": 3,
+        "total_ms": 0.014495999552309513
+      },
+      "__myl_TranReshCast_myl2_36": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_2/self_attn/MatMul_1_myl2_37": {
+        "calls": 3,
+        "total_ms": 0.031903999857604504
+      },
+      "__myl_CastReshTran_myl2_38": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_2/self_attn/out_proj/MatMul_myl2_39": {
+        "calls": 3,
+        "total_ms": 0.03411199990659952
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_40": {
+        "calls": 3,
+        "total_ms": 0.013311999849975109
+      },
+      "/vision_tower/vision_model/encoder/layers_2/mlp/fc1/MatMul_myl2_41": {
+        "calls": 3,
+        "total_ms": 0.08115200139582157
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_42": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_2/mlp/fc2/MatMul_myl2_43": {
+        "calls": 3,
+        "total_ms": 0.0942079983651638
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_44": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "/vision_tower/vision_model/encoder/layers_3/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_3/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_3/self_attn/q_proj/MatMul_myl2_45": {
+        "calls": 3,
+        "total_ms": 0.05939199775457382
+      },
+      "__myl_TranReshCast_myl2_46": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "__myl_TranReshCast_myl2_47": {
+        "calls": 3,
+        "total_ms": 0.01027199998497963
+      },
+      "/vision_tower/vision_model/encoder/layers_3/self_attn/MatMul_myl2_48": {
+        "calls": 3,
+        "total_ms": 0.028032001107931137
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_49": {
+        "calls": 3,
+        "total_ms": 0.01462399959564209
+      },
+      "__myl_TranReshCast_myl2_50": {
+        "calls": 3,
+        "total_ms": 0.009312000125646591
+      },
+      "/vision_tower/vision_model/encoder/layers_3/self_attn/MatMul_1_myl2_51": {
+        "calls": 3,
+        "total_ms": 0.03174399957060814
+      },
+      "__myl_CastReshTran_myl2_52": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_3/self_attn/out_proj/MatMul_myl2_53": {
+        "calls": 3,
+        "total_ms": 0.03504000045359135
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_54": {
+        "calls": 3,
+        "total_ms": 0.012480000033974648
+      },
+      "/vision_tower/vision_model/encoder/layers_3/mlp/fc1/MatMul_myl2_55": {
+        "calls": 3,
+        "total_ms": 0.07987199909985065
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_56": {
+        "calls": 3,
+        "total_ms": 0.012351999524980783
+      },
+      "/vision_tower/vision_model/encoder/layers_3/mlp/fc2/MatMul_myl2_57": {
+        "calls": 3,
+        "total_ms": 0.0942079983651638
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_58": {
+        "calls": 3,
+        "total_ms": 0.012319999746978283
+      },
+      "/vision_tower/vision_model/encoder/layers_4/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_4/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_4/self_attn/q_proj/MatMul_myl2_59": {
+        "calls": 3,
+        "total_ms": 0.05836799740791321
+      },
+      "__myl_TranReshCast_myl2_60": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "__myl_TranReshCast_myl2_61": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_4/self_attn/MatMul_myl2_62": {
+        "calls": 3,
+        "total_ms": 0.028672000393271446
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_63": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_TranReshCast_myl2_64": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_4/self_attn/MatMul_1_myl2_65": {
+        "calls": 3,
+        "total_ms": 0.030815999023616314
+      },
+      "__myl_CastReshTran_myl2_66": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_4/self_attn/out_proj/MatMul_myl2_67": {
+        "calls": 3,
+        "total_ms": 0.03481600061058998
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_68": {
+        "calls": 3,
+        "total_ms": 0.013535999692976475
+      },
+      "/vision_tower/vision_model/encoder/layers_4/mlp/fc1/MatMul_myl2_69": {
+        "calls": 3,
+        "total_ms": 0.07987199909985065
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_70": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_4/mlp/fc2/MatMul_myl2_71": {
+        "calls": 3,
+        "total_ms": 0.0942079983651638
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_72": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "/vision_tower/vision_model/encoder/layers_5/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_5/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_5/self_attn/q_proj/MatMul_myl2_73": {
+        "calls": 3,
+        "total_ms": 0.060415998101234436
+      },
+      "__myl_TranReshCast_myl2_74": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "__myl_TranReshCast_myl2_75": {
+        "calls": 3,
+        "total_ms": 0.010336000006645918
+      },
+      "/vision_tower/vision_model/encoder/layers_5/self_attn/MatMul_myl2_76": {
+        "calls": 3,
+        "total_ms": 0.029695999808609486
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_77": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_TranReshCast_myl2_78": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_5/self_attn/MatMul_1_myl2_79": {
+        "calls": 3,
+        "total_ms": 0.032096000388264656
+      },
+      "__myl_CastReshTran_myl2_80": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_5/self_attn/out_proj/MatMul_myl2_81": {
+        "calls": 3,
+        "total_ms": 0.03500800020992756
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_82": {
+        "calls": 3,
+        "total_ms": 0.013471999671310186
+      },
+      "/vision_tower/vision_model/encoder/layers_5/mlp/fc1/MatMul_myl2_83": {
+        "calls": 3,
+        "total_ms": 0.08089599944651127
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_84": {
+        "calls": 3,
+        "total_ms": 0.011423999909311533
+      },
+      "/vision_tower/vision_model/encoder/layers_5/mlp/fc2/MatMul_myl2_85": {
+        "calls": 3,
+        "total_ms": 0.09318399801850319
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_86": {
+        "calls": 3,
+        "total_ms": 0.013311999849975109
+      },
+      "/vision_tower/vision_model/encoder/layers_6/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_6/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_6/self_attn/q_proj/MatMul_myl2_87": {
+        "calls": 3,
+        "total_ms": 0.05939199775457382
+      },
+      "__myl_TranReshCast_myl2_88": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "__myl_TranReshCast_myl2_89": {
+        "calls": 3,
+        "total_ms": 0.010399999795481563
+      },
+      "/vision_tower/vision_model/encoder/layers_6/self_attn/MatMul_myl2_90": {
+        "calls": 3,
+        "total_ms": 0.027648000977933407
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_91": {
+        "calls": 3,
+        "total_ms": 0.014655999839305878
+      },
+      "__myl_TranReshCast_myl2_92": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_6/self_attn/MatMul_1_myl2_93": {
+        "calls": 3,
+        "total_ms": 0.03289599996060133
+      },
+      "__myl_CastReshTran_myl2_94": {
+        "calls": 3,
+        "total_ms": 0.0095360002014786
+      },
+      "/vision_tower/vision_model/encoder/layers_6/self_attn/out_proj/MatMul_myl2_95": {
+        "calls": 3,
+        "total_ms": 0.03488000016659498
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_96": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "/vision_tower/vision_model/encoder/layers_6/mlp/fc1/MatMul_myl2_97": {
+        "calls": 3,
+        "total_ms": 0.08089599944651127
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_98": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_6/mlp/fc2/MatMul_myl2_99": {
+        "calls": 3,
+        "total_ms": 0.09523199871182442
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_100": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_7/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_7/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_7/self_attn/q_proj/MatMul_myl2_101": {
+        "calls": 3,
+        "total_ms": 0.05939199775457382
+      },
+      "__myl_TranReshCast_myl2_102": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "__myl_TranReshCast_myl2_103": {
+        "calls": 3,
+        "total_ms": 0.009440000168979168
+      },
+      "/vision_tower/vision_model/encoder/layers_7/self_attn/MatMul_myl2_104": {
+        "calls": 3,
+        "total_ms": 0.027648000977933407
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_105": {
+        "calls": 3,
+        "total_ms": 0.013567999936640263
+      },
+      "__myl_TranReshCast_myl2_106": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_7/self_attn/MatMul_1_myl2_107": {
+        "calls": 3,
+        "total_ms": 0.03199999965727329
+      },
+      "__myl_CastReshTran_myl2_108": {
+        "calls": 3,
+        "total_ms": 0.00937600014731288
+      },
+      "/vision_tower/vision_model/encoder/layers_7/self_attn/out_proj/MatMul_myl2_109": {
+        "calls": 3,
+        "total_ms": 0.03520000074058771
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_110": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "/vision_tower/vision_model/encoder/layers_7/mlp/fc1/MatMul_myl2_111": {
+        "calls": 3,
+        "total_ms": 0.07916799932718277
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_112": {
+        "calls": 3,
+        "total_ms": 0.010560000082477927
+      },
+      "/vision_tower/vision_model/encoder/layers_7/mlp/fc2/MatMul_myl2_113": {
+        "calls": 3,
+        "total_ms": 0.09324799850583076
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_114": {
+        "calls": 3,
+        "total_ms": 0.01241600001230836
+      },
+      "/vision_tower/vision_model/encoder/layers_8/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_8/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_8/self_attn/q_proj/MatMul_myl2_115": {
+        "calls": 3,
+        "total_ms": 0.060415998101234436
+      },
+      "__myl_TranReshCast_myl2_116": {
+        "calls": 3,
+        "total_ms": 0.010336000006645918
+      },
+      "__myl_TranReshCast_myl2_117": {
+        "calls": 3,
+        "total_ms": 0.009504000190645456
+      },
+      "/vision_tower/vision_model/encoder/layers_8/self_attn/MatMul_myl2_118": {
+        "calls": 3,
+        "total_ms": 0.028672000393271446
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_119": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_TranReshCast_myl2_120": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_8/self_attn/MatMul_1_myl2_121": {
+        "calls": 3,
+        "total_ms": 0.030847999267280102
+      },
+      "__myl_CastReshTran_myl2_122": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_8/self_attn/out_proj/MatMul_myl2_123": {
+        "calls": 3,
+        "total_ms": 0.035840000957250595
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_124": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "/vision_tower/vision_model/encoder/layers_8/mlp/fc1/MatMul_myl2_125": {
+        "calls": 3,
+        "total_ms": 0.08089599944651127
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_126": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_8/mlp/fc2/MatMul_myl2_127": {
+        "calls": 3,
+        "total_ms": 0.09523199871182442
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_128": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_9/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_9/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_9/self_attn/q_proj/MatMul_myl2_129": {
+        "calls": 3,
+        "total_ms": 0.05951999872922897
+      },
+      "__myl_TranReshCast_myl2_130": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "__myl_TranReshCast_myl2_131": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_9/self_attn/MatMul_myl2_132": {
+        "calls": 3,
+        "total_ms": 0.029056000523269176
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_133": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_TranReshCast_myl2_134": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_9/self_attn/MatMul_1_myl2_135": {
+        "calls": 3,
+        "total_ms": 0.031903999857604504
+      },
+      "__myl_CastReshTran_myl2_136": {
+        "calls": 3,
+        "total_ms": 0.01228800043463707
+      },
+      "/vision_tower/vision_model/encoder/layers_9/self_attn/out_proj/MatMul_myl2_137": {
+        "calls": 3,
+        "total_ms": 0.03481600061058998
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_138": {
+        "calls": 3,
+        "total_ms": 0.014463999774307013
+      },
+      "/vision_tower/vision_model/encoder/layers_9/mlp/fc1/MatMul_myl2_139": {
+        "calls": 3,
+        "total_ms": 0.07987199909985065
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_140": {
+        "calls": 3,
+        "total_ms": 0.01068799989297986
+      },
+      "/vision_tower/vision_model/encoder/layers_9/mlp/fc2/MatMul_myl2_141": {
+        "calls": 3,
+        "total_ms": 0.09439999982714653
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_142": {
+        "calls": 3,
+        "total_ms": 0.013567999936640263
+      },
+      "/vision_tower/vision_model/encoder/layers_10/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_10/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_10/self_attn/q_proj/MatMul_myl2_143": {
+        "calls": 3,
+        "total_ms": 0.05939199775457382
+      },
+      "__myl_TranReshCast_myl2_144": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "__myl_TranReshCast_myl2_145": {
+        "calls": 3,
+        "total_ms": 0.010303999995812774
+      },
+      "/vision_tower/vision_model/encoder/layers_10/self_attn/MatMul_myl2_146": {
+        "calls": 3,
+        "total_ms": 0.026624000631272793
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_147": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_TranReshCast_myl2_148": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_10/self_attn/MatMul_1_myl2_149": {
+        "calls": 3,
+        "total_ms": 0.03174399957060814
+      },
+      "__myl_CastReshTran_myl2_150": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_10/self_attn/out_proj/MatMul_myl2_151": {
+        "calls": 3,
+        "total_ms": 0.03481600061058998
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_152": {
+        "calls": 3,
+        "total_ms": 0.01235199999064207
+      },
+      "/vision_tower/vision_model/encoder/layers_10/mlp/fc1/MatMul_myl2_153": {
+        "calls": 3,
+        "total_ms": 0.08012799918651581
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_154": {
+        "calls": 3,
+        "total_ms": 0.01155199995264411
+      },
+      "/vision_tower/vision_model/encoder/layers_10/mlp/fc2/MatMul_myl2_155": {
+        "calls": 3,
+        "total_ms": 0.09545600041747093
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_156": {
+        "calls": 3,
+        "total_ms": 0.012319999746978283
+      },
+      "/vision_tower/vision_model/encoder/layers_11/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_11/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_11/self_attn/q_proj/MatMul_myl2_157": {
+        "calls": 3,
+        "total_ms": 0.05955199897289276
+      },
+      "__myl_TranReshCast_myl2_158": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "__myl_TranReshCast_myl2_159": {
+        "calls": 3,
+        "total_ms": 0.010303999995812774
+      },
+      "/vision_tower/vision_model/encoder/layers_11/self_attn/MatMul_myl2_160": {
+        "calls": 3,
+        "total_ms": 0.028863999992609024
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_161": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "__myl_TranReshCast_myl2_162": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_11/self_attn/MatMul_1_myl2_163": {
+        "calls": 3,
+        "total_ms": 0.03174399957060814
+      },
+      "__myl_CastReshTran_myl2_164": {
+        "calls": 3,
+        "total_ms": 0.010464000049978495
+      },
+      "/vision_tower/vision_model/encoder/layers_11/self_attn/out_proj/MatMul_myl2_165": {
+        "calls": 3,
+        "total_ms": 0.035840000957250595
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_166": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "/vision_tower/vision_model/encoder/layers_11/mlp/fc1/MatMul_myl2_167": {
+        "calls": 3,
+        "total_ms": 0.08089599944651127
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_168": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_11/mlp/fc2/MatMul_myl2_169": {
+        "calls": 3,
+        "total_ms": 0.095551997423172
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_170": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_12/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_12/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_12/self_attn/q_proj/MatMul_myl2_171": {
+        "calls": 3,
+        "total_ms": 0.05939199775457382
+      },
+      "__myl_TranReshCast_myl2_172": {
+        "calls": 3,
+        "total_ms": 0.01027199998497963
+      },
+      "__myl_TranReshCast_myl2_173": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_12/self_attn/MatMul_myl2_174": {
+        "calls": 3,
+        "total_ms": 0.027648000977933407
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_175": {
+        "calls": 3,
+        "total_ms": 0.014688000082969666
+      },
+      "__myl_TranReshCast_myl2_176": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_12/self_attn/MatMul_1_myl2_177": {
+        "calls": 3,
+        "total_ms": 0.03276799991726875
+      },
+      "__myl_CastReshTran_myl2_178": {
+        "calls": 3,
+        "total_ms": 0.009312000125646591
+      },
+      "/vision_tower/vision_model/encoder/layers_12/self_attn/out_proj/MatMul_myl2_179": {
+        "calls": 3,
+        "total_ms": 0.035840000957250595
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_180": {
+        "calls": 3,
+        "total_ms": 0.014399999752640724
+      },
+      "/vision_tower/vision_model/encoder/layers_12/mlp/fc1/MatMul_myl2_181": {
+        "calls": 3,
+        "total_ms": 0.07884799875319004
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_182": {
+        "calls": 3,
+        "total_ms": 0.010336000006645918
+      },
+      "/vision_tower/vision_model/encoder/layers_12/mlp/fc2/MatMul_myl2_183": {
+        "calls": 3,
+        "total_ms": 0.09523199871182442
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_184": {
+        "calls": 3,
+        "total_ms": 0.013311999849975109
+      },
+      "/vision_tower/vision_model/encoder/layers_13/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_13/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_13/self_attn/q_proj/MatMul_myl2_185": {
+        "calls": 3,
+        "total_ms": 0.0594559982419014
+      },
+      "__myl_TranReshCast_myl2_186": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "__myl_TranReshCast_myl2_187": {
+        "calls": 3,
+        "total_ms": 0.00937600014731288
+      },
+      "/vision_tower/vision_model/encoder/layers_13/self_attn/MatMul_myl2_188": {
+        "calls": 3,
+        "total_ms": 0.028672000393271446
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_189": {
+        "calls": 3,
+        "total_ms": 0.01459199981763959
+      },
+      "__myl_TranReshCast_myl2_190": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_13/self_attn/MatMul_1_myl2_191": {
+        "calls": 3,
+        "total_ms": 0.030719999223947525
+      },
+      "__myl_CastReshTran_myl2_192": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_13/self_attn/out_proj/MatMul_myl2_193": {
+        "calls": 3,
+        "total_ms": 0.03379200026392937
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_194": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_13/mlp/fc1/MatMul_myl2_195": {
+        "calls": 3,
+        "total_ms": 0.08009600080549717
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_196": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_13/mlp/fc2/MatMul_myl2_197": {
+        "calls": 3,
+        "total_ms": 0.09215999767184258
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_198": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_14/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_14/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_14/self_attn/q_proj/MatMul_myl2_199": {
+        "calls": 3,
+        "total_ms": 0.060415998101234436
+      },
+      "__myl_TranReshCast_myl2_200": {
+        "calls": 3,
+        "total_ms": 0.011647999985143542
+      },
+      "__myl_TranReshCast_myl2_201": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_14/self_attn/MatMul_myl2_202": {
+        "calls": 3,
+        "total_ms": 0.027840000577270985
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_203": {
+        "calls": 3,
+        "total_ms": 0.013791999779641628
+      },
+      "__myl_TranReshCast_myl2_204": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_14/self_attn/MatMul_1_myl2_205": {
+        "calls": 3,
+        "total_ms": 0.03174399957060814
+      },
+      "__myl_CastReshTran_myl2_206": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_14/self_attn/out_proj/MatMul_myl2_207": {
+        "calls": 3,
+        "total_ms": 0.035840000957250595
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_208": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_14/mlp/fc1/MatMul_myl2_209": {
+        "calls": 3,
+        "total_ms": 0.0790719985961914
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_210": {
+        "calls": 3,
+        "total_ms": 0.011391999898478389
+      },
+      "/vision_tower/vision_model/encoder/layers_14/mlp/fc2/MatMul_myl2_211": {
+        "calls": 3,
+        "total_ms": 0.09625599905848503
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_212": {
+        "calls": 3,
+        "total_ms": 0.013663999736309052
+      },
+      "/vision_tower/vision_model/encoder/layers_15/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_15/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_15/self_attn/q_proj/MatMul_myl2_213": {
+        "calls": 3,
+        "total_ms": 0.05939199775457382
+      },
+      "__myl_TranReshCast_myl2_214": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "__myl_TranReshCast_myl2_215": {
+        "calls": 3,
+        "total_ms": 0.009248000103980303
+      },
+      "/vision_tower/vision_model/encoder/layers_15/self_attn/MatMul_myl2_216": {
+        "calls": 3,
+        "total_ms": 0.027967999689280987
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_217": {
+        "calls": 3,
+        "total_ms": 0.013824000023305416
+      },
+      "__myl_TranReshCast_myl2_218": {
+        "calls": 3,
+        "total_ms": 0.009408000158146024
+      },
+      "/vision_tower/vision_model/encoder/layers_15/self_attn/MatMul_1_myl2_219": {
+        "calls": 3,
+        "total_ms": 0.03206400014460087
+      },
+      "__myl_CastReshTran_myl2_220": {
+        "calls": 3,
+        "total_ms": 0.009344000136479735
+      },
+      "/vision_tower/vision_model/encoder/layers_15/self_attn/out_proj/MatMul_myl2_221": {
+        "calls": 3,
+        "total_ms": 0.035840000957250595
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_222": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_15/mlp/fc1/MatMul_myl2_223": {
+        "calls": 3,
+        "total_ms": 0.07987199909985065
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_224": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_15/mlp/fc2/MatMul_myl2_225": {
+        "calls": 3,
+        "total_ms": 0.0942079983651638
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_226": {
+        "calls": 3,
+        "total_ms": 0.012319999746978283
+      },
+      "/vision_tower/vision_model/encoder/layers_16/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_16/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_16/self_attn/q_proj/MatMul_myl2_227": {
+        "calls": 3,
+        "total_ms": 0.060415998101234436
+      },
+      "__myl_TranReshCast_myl2_228": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "__myl_TranReshCast_myl2_229": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_16/self_attn/MatMul_myl2_230": {
+        "calls": 3,
+        "total_ms": 0.027648000977933407
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_231": {
+        "calls": 3,
+        "total_ms": 0.01539199985563755
+      },
+      "__myl_TranReshCast_myl2_232": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_16/self_attn/MatMul_1_myl2_233": {
+        "calls": 3,
+        "total_ms": 0.030719999223947525
+      },
+      "__myl_CastReshTran_myl2_234": {
+        "calls": 3,
+        "total_ms": 0.010592000093311071
+      },
+      "/vision_tower/vision_model/encoder/layers_16/self_attn/out_proj/MatMul_myl2_235": {
+        "calls": 3,
+        "total_ms": 0.03481600061058998
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_236": {
+        "calls": 3,
+        "total_ms": 0.013439999893307686
+      },
+      "/vision_tower/vision_model/encoder/layers_16/mlp/fc1/MatMul_myl2_237": {
+        "calls": 3,
+        "total_ms": 0.08022399991750717
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_238": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_16/mlp/fc2/MatMul_myl2_239": {
+        "calls": 3,
+        "total_ms": 0.0942079983651638
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_240": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "/vision_tower/vision_model/encoder/layers_17/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_17/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_17/self_attn/q_proj/MatMul_myl2_241": {
+        "calls": 3,
+        "total_ms": 0.05939199775457382
+      },
+      "__myl_TranReshCast_myl2_242": {
+        "calls": 3,
+        "total_ms": 0.011423999909311533
+      },
+      "__myl_TranReshCast_myl2_243": {
+        "calls": 3,
+        "total_ms": 0.010303999995812774
+      },
+      "/vision_tower/vision_model/encoder/layers_17/self_attn/MatMul_myl2_244": {
+        "calls": 3,
+        "total_ms": 0.029695999808609486
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_245": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_TranReshCast_myl2_246": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_17/self_attn/MatMul_1_myl2_247": {
+        "calls": 3,
+        "total_ms": 0.03174399957060814
+      },
+      "__myl_CastReshTran_myl2_248": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_17/self_attn/out_proj/MatMul_myl2_249": {
+        "calls": 3,
+        "total_ms": 0.03481600061058998
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_250": {
+        "calls": 3,
+        "total_ms": 0.01334399962797761
+      },
+      "/vision_tower/vision_model/encoder/layers_17/mlp/fc1/MatMul_myl2_251": {
+        "calls": 3,
+        "total_ms": 0.08095999993383884
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_252": {
+        "calls": 3,
+        "total_ms": 0.011423999909311533
+      },
+      "/vision_tower/vision_model/encoder/layers_17/mlp/fc2/MatMul_myl2_253": {
+        "calls": 3,
+        "total_ms": 0.09321599826216698
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_254": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_18/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_18/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_18/self_attn/q_proj/MatMul_myl2_255": {
+        "calls": 3,
+        "total_ms": 0.060415998101234436
+      },
+      "__myl_TranReshCast_myl2_256": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "__myl_TranReshCast_myl2_257": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_18/self_attn/MatMul_myl2_258": {
+        "calls": 3,
+        "total_ms": 0.028672000393271446
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_259": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_TranReshCast_myl2_260": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_18/self_attn/MatMul_1_myl2_261": {
+        "calls": 3,
+        "total_ms": 0.03174399957060814
+      },
+      "__myl_CastReshTran_myl2_262": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_18/self_attn/out_proj/MatMul_myl2_263": {
+        "calls": 3,
+        "total_ms": 0.035840000957250595
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_264": {
+        "calls": 3,
+        "total_ms": 0.013535999692976475
+      },
+      "/vision_tower/vision_model/encoder/layers_18/mlp/fc1/MatMul_myl2_265": {
+        "calls": 3,
+        "total_ms": 0.07987199909985065
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_266": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_18/mlp/fc2/MatMul_myl2_267": {
+        "calls": 3,
+        "total_ms": 0.09427199885249138
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_268": {
+        "calls": 3,
+        "total_ms": 0.013311999849975109
+      },
+      "/vision_tower/vision_model/encoder/layers_19/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_19/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_19/self_attn/q_proj/MatMul_myl2_269": {
+        "calls": 3,
+        "total_ms": 0.05849599838256836
+      },
+      "__myl_TranReshCast_myl2_270": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "__myl_TranReshCast_myl2_271": {
+        "calls": 3,
+        "total_ms": 0.009280000114813447
+      },
+      "/vision_tower/vision_model/encoder/layers_19/self_attn/MatMul_myl2_272": {
+        "calls": 3,
+        "total_ms": 0.028672000393271446
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_273": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_TranReshCast_myl2_274": {
+        "calls": 3,
+        "total_ms": 0.010592000093311071
+      },
+      "/vision_tower/vision_model/encoder/layers_19/self_attn/MatMul_1_myl2_275": {
+        "calls": 3,
+        "total_ms": 0.030847999267280102
+      },
+      "__myl_CastReshTran_myl2_276": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_19/self_attn/out_proj/MatMul_myl2_277": {
+        "calls": 3,
+        "total_ms": 0.036128001287579536
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_278": {
+        "calls": 3,
+        "total_ms": 0.01241600001230836
+      },
+      "/vision_tower/vision_model/encoder/layers_19/mlp/fc1/MatMul_myl2_279": {
+        "calls": 3,
+        "total_ms": 0.08089599944651127
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_280": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_19/mlp/fc2/MatMul_myl2_281": {
+        "calls": 3,
+        "total_ms": 0.09327999874949455
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_282": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "/vision_tower/vision_model/encoder/layers_20/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_20/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_20/self_attn/q_proj/MatMul_myl2_283": {
+        "calls": 3,
+        "total_ms": 0.05836799740791321
+      },
+      "__myl_TranReshCast_myl2_284": {
+        "calls": 3,
+        "total_ms": 0.010368000017479062
+      },
+      "__myl_TranReshCast_myl2_285": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_20/self_attn/MatMul_myl2_286": {
+        "calls": 3,
+        "total_ms": 0.028672000393271446
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_287": {
+        "calls": 3,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_TranReshCast_myl2_288": {
+        "calls": 3,
+        "total_ms": 0.010592000093311071
+      },
+      "/vision_tower/vision_model/encoder/layers_20/self_attn/MatMul_1_myl2_289": {
+        "calls": 3,
+        "total_ms": 0.03174399957060814
+      },
+      "__myl_CastReshTran_myl2_290": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_20/self_attn/out_proj/MatMul_myl2_291": {
+        "calls": 3,
+        "total_ms": 0.035232000052928925
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_292": {
+        "calls": 3,
+        "total_ms": 0.01241600001230836
+      },
+      "/vision_tower/vision_model/encoder/layers_20/mlp/fc1/MatMul_myl2_293": {
+        "calls": 3,
+        "total_ms": 0.08089599944651127
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_294": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_20/mlp/fc2/MatMul_myl2_295": {
+        "calls": 3,
+        "total_ms": 0.09433599933981895
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_296": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_21/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_21/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_21/self_attn/q_proj/MatMul_myl2_297": {
+        "calls": 3,
+        "total_ms": 0.060415998101234436
+      },
+      "__myl_TranReshCast_myl2_298": {
+        "calls": 3,
+        "total_ms": 0.010560000082477927
+      },
+      "__myl_TranReshCast_myl2_299": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_21/self_attn/MatMul_myl2_300": {
+        "calls": 3,
+        "total_ms": 0.029695999808609486
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_301": {
+        "calls": 3,
+        "total_ms": 0.01548799965530634
+      },
+      "__myl_TranReshCast_myl2_302": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_21/self_attn/MatMul_1_myl2_303": {
+        "calls": 3,
+        "total_ms": 0.03087999951094389
+      },
+      "__myl_CastReshTran_myl2_304": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_21/self_attn/out_proj/MatMul_myl2_305": {
+        "calls": 3,
+        "total_ms": 0.035936000756919384
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_306": {
+        "calls": 3,
+        "total_ms": 0.013311999849975109
+      },
+      "/vision_tower/vision_model/encoder/layers_21/mlp/fc1/MatMul_myl2_307": {
+        "calls": 3,
+        "total_ms": 0.08191999979317188
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_308": {
+        "calls": 3,
+        "total_ms": 0.01235199999064207
+      },
+      "/vision_tower/vision_model/encoder/layers_21/mlp/fc2/MatMul_myl2_309": {
+        "calls": 3,
+        "total_ms": 0.09318399801850319
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_310": {
+        "calls": 3,
+        "total_ms": 0.013311999849975109
+      },
+      "/vision_tower/vision_model/encoder/layers_22/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_22/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_22/self_attn/q_proj/MatMul_myl2_311": {
+        "calls": 3,
+        "total_ms": 0.05939199775457382
+      },
+      "__myl_TranReshCast_myl2_312": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "__myl_TranReshCast_myl2_313": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_22/self_attn/MatMul_myl2_314": {
+        "calls": 3,
+        "total_ms": 0.02870399970561266
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_315": {
+        "calls": 3,
+        "total_ms": 0.015519999898970127
+      },
+      "__myl_TranReshCast_myl2_316": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_22/self_attn/MatMul_1_myl2_317": {
+        "calls": 3,
+        "total_ms": 0.03094399906694889
+      },
+      "__myl_CastReshTran_myl2_318": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_22/self_attn/out_proj/MatMul_myl2_319": {
+        "calls": 3,
+        "total_ms": 0.035840000957250595
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_320": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "/vision_tower/vision_model/encoder/layers_22/mlp/fc1/MatMul_myl2_321": {
+        "calls": 3,
+        "total_ms": 0.0800320003181696
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_322": {
+        "calls": 3,
+        "total_ms": 0.011583999963477254
+      },
+      "/vision_tower/vision_model/encoder/layers_22/mlp/fc2/MatMul_myl2_323": {
+        "calls": 3,
+        "total_ms": 0.0923519991338253
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_324": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_23/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_23/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_23/self_attn/q_proj/MatMul_myl2_325": {
+        "calls": 3,
+        "total_ms": 0.05939199775457382
+      },
+      "__myl_TranReshCast_myl2_326": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_TranReshCast_myl2_327": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_23/self_attn/MatMul_myl2_328": {
+        "calls": 3,
+        "total_ms": 0.028672000393271446
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_329": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "__myl_TranReshCast_myl2_330": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_23/self_attn/MatMul_1_myl2_331": {
+        "calls": 3,
+        "total_ms": 0.03174399957060814
+      },
+      "__myl_CastReshTran_myl2_332": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_23/self_attn/out_proj/MatMul_myl2_333": {
+        "calls": 3,
+        "total_ms": 0.035840000957250595
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_334": {
+        "calls": 3,
+        "total_ms": 0.012575999833643436
+      },
+      "/vision_tower/vision_model/encoder/layers_23/mlp/fc1/MatMul_myl2_335": {
+        "calls": 3,
+        "total_ms": 0.08089599944651127
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_336": {
+        "calls": 3,
+        "total_ms": 0.01155199995264411
+      },
+      "/vision_tower/vision_model/encoder/layers_23/mlp/fc2/MatMul_myl2_337": {
+        "calls": 3,
+        "total_ms": 0.09257599897682667
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_338": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "/vision_tower/vision_model/encoder/layers_24/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_24/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_24/self_attn/q_proj/MatMul_myl2_339": {
+        "calls": 3,
+        "total_ms": 0.06063999980688095
+      },
+      "__myl_TranReshCast_myl2_340": {
+        "calls": 3,
+        "total_ms": 0.012287999968975782
+      },
+      "__myl_TranReshCast_myl2_341": {
+        "calls": 3,
+        "total_ms": 0.00963200000114739
+      },
+      "/vision_tower/vision_model/encoder/layers_24/self_attn/MatMul_myl2_342": {
+        "calls": 3,
+        "total_ms": 0.027008000761270523
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_343": {
+        "calls": 3,
+        "total_ms": 0.01548799965530634
+      },
+      "__myl_TranReshCast_myl2_344": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_24/self_attn/MatMul_1_myl2_345": {
+        "calls": 3,
+        "total_ms": 0.030719999223947525
+      },
+      "__myl_CastReshTran_myl2_346": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_24/self_attn/out_proj/MatMul_myl2_347": {
+        "calls": 3,
+        "total_ms": 0.035840000957250595
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_348": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "/vision_tower/vision_model/encoder/layers_24/mlp/fc1/MatMul_myl2_349": {
+        "calls": 3,
+        "total_ms": 0.07987199909985065
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_350": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_24/mlp/fc2/MatMul_myl2_351": {
+        "calls": 3,
+        "total_ms": 0.09433599933981895
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_352": {
+        "calls": 3,
+        "total_ms": 0.013311999849975109
+      },
+      "/vision_tower/vision_model/encoder/layers_25/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_25/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_25/self_attn/q_proj/MatMul_myl2_353": {
+        "calls": 3,
+        "total_ms": 0.05875199846923351
+      },
+      "__myl_TranReshCast_myl2_354": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "__myl_TranReshCast_myl2_355": {
+        "calls": 3,
+        "total_ms": 0.011264000087976456
+      },
+      "/vision_tower/vision_model/encoder/layers_25/self_attn/MatMul_myl2_356": {
+        "calls": 3,
+        "total_ms": 0.02768000029027462
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_357": {
+        "calls": 3,
+        "total_ms": 0.014335999730974436
+      },
+      "__myl_TranReshCast_myl2_358": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_25/self_attn/MatMul_1_myl2_359": {
+        "calls": 3,
+        "total_ms": 0.03276799991726875
+      },
+      "__myl_CastReshTran_myl2_360": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_25/self_attn/out_proj/MatMul_myl2_361": {
+        "calls": 3,
+        "total_ms": 0.03379200026392937
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_362": {
+        "calls": 3,
+        "total_ms": 0.013311999849975109
+      },
+      "/vision_tower/vision_model/encoder/layers_25/mlp/fc1/MatMul_myl2_363": {
+        "calls": 3,
+        "total_ms": 0.08111999928951263
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_364": {
+        "calls": 3,
+        "total_ms": 0.010560000082477927
+      },
+      "/vision_tower/vision_model/encoder/layers_25/mlp/fc2/MatMul_myl2_365": {
+        "calls": 3,
+        "total_ms": 0.09215999767184258
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_366": {
+        "calls": 3,
+        "total_ms": 0.013311999849975109
+      },
+      "/vision_tower/vision_model/encoder/layers_26/self_attn/v_proj/MatMul+/vision_tower/vision_model/encoder/layers_26/self_attn/k_proj/MatMul+/vision_tower/vision_model/encoder/layers_26/self_attn/q_proj/MatMul_myl2_367": {
+        "calls": 3,
+        "total_ms": 0.0594559982419014
+      },
+      "__myl_TranReshCast_myl2_368": {
+        "calls": 3,
+        "total_ms": 0.009568000212311745
+      },
+      "__myl_TranReshCast_myl2_369": {
+        "calls": 3,
+        "total_ms": 0.010240000206977129
+      },
+      "/vision_tower/vision_model/encoder/layers_26/self_attn/MatMul_myl2_370": {
+        "calls": 3,
+        "total_ms": 0.029695999808609486
+      },
+      "__myl_MulMaxrSubExpSumDivMul_myl2_371": {
+        "calls": 3,
+        "total_ms": 0.015423999633640051
+      },
+      "__myl_TranReshCast_myl2_372": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_26/self_attn/MatMul_1_myl2_373": {
+        "calls": 3,
+        "total_ms": 0.031071999110281467
+      },
+      "__myl_CastReshTran_myl2_374": {
+        "calls": 3,
+        "total_ms": 0.009216000325977802
+      },
+      "/vision_tower/vision_model/encoder/layers_26/self_attn/out_proj/MatMul_myl2_375": {
+        "calls": 3,
+        "total_ms": 0.03481600061058998
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_376": {
+        "calls": 3,
+        "total_ms": 0.013311999849975109
+      },
+      "/vision_tower/vision_model/encoder/layers_26/mlp/fc1/MatMul_myl2_377": {
+        "calls": 3,
+        "total_ms": 0.07987199909985065
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMul_myl2_378": {
+        "calls": 3,
+        "total_ms": 0.011615999974310398
+      },
+      "/vision_tower/vision_model/encoder/layers_26/mlp/fc2/MatMul_myl2_379": {
+        "calls": 3,
+        "total_ms": 0.0942079983651638
+      },
+      "__myl_AddCastMeanSubMulMeanAddSqrtDivMulCastMulAdd_myl2_380": {
+        "calls": 3,
+        "total_ms": 0.014495999552309513
+      },
+      "/projector/linear/MatMul_myl2_381": {
+        "calls": 3,
+        "total_ms": 0.039199999533593655
+      }
+    },
+    "prefix": {
+      "__myl_Cast_myl0_0": {
+        "calls": 1,
+        "total_ms": 0.013376000337302685
+      },
+      "__myl_Cast_myl0_1": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_CastGathMulConcCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_2": {
+        "calls": 1,
+        "total_ms": 0.016543999314308167
+      },
+      "__myl_ReplCastMulCastFc_myl0_3": {
+        "calls": 1,
+        "total_ms": 0.024800000712275505
+      },
+      "__myl_Resh_myl0_4": {
+        "calls": 1,
+        "total_ms": 0.0030720001086592674
+      },
+      "__myl_ReplCastMulCastFc_myl0_5": {
+        "calls": 1,
+        "total_ms": 0.016383999958634377
+      },
+      "__myl_ReplCastMulCastFc_myl0_6": {
+        "calls": 1,
+        "total_ms": 0.06143999844789505
+      },
+      "__myl_MoveMulConcSinCosCastReshCastReshMulSlicNegSlicConcMulAddReshReplReshTranTranMulSlicNegSlicEtc_myl0_7": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplReshMove_myl0_8": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "_gemm_mha_v2_myl0_9": {
+        "calls": 1,
+        "total_ms": 0.11980800330638885
+      },
+      "__myl_TranReshMoveMul_myl0_10": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCastFc_myl0_11": {
+        "calls": 1,
+        "total_ms": 0.05939200147986412
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_12": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_ReplCastMulCastFc_myl0_13": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_ReplCastMulCastFc_myl0_14": {
+        "calls": 1,
+        "total_ms": 0.4362240135669708
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_15": {
+        "calls": 1,
+        "total_ms": 0.06566400080919266
+      },
+      "__myl_ReplCastMulCastFc_myl0_16": {
+        "calls": 1,
+        "total_ms": 0.42291200160980225
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_17": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplCastMulCastFc_myl0_18": {
+        "calls": 1,
+        "total_ms": 0.016383999958634377
+      },
+      "__myl_Resh_myl0_19": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "__myl_ReplCastMulCastFc_myl0_20": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_21": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_22": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "/q_proj_1/MatMul_myl0_23": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_ReplReshMove_myl0_24": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_25": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_26": {
+        "calls": 1,
+        "total_ms": 0.12083200365304947
+      },
+      "__myl_ReplCastMulCast_myl0_27": {
+        "calls": 1,
+        "total_ms": 0.008287999778985977
+      },
+      "__myl_TranReshMoveMul_myl0_28": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_1/MatMul_myl0_29": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_30": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_ReplCastMulCastFc_myl0_31": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_ReplCastMulCastFc_myl0_32": {
+        "calls": 1,
+        "total_ms": 0.4362240135669708
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_33": {
+        "calls": 1,
+        "total_ms": 0.06451199948787689
+      },
+      "__myl_ReplCastMulCastFc_myl0_34": {
+        "calls": 1,
+        "total_ms": 0.42291200160980225
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_35": {
+        "calls": 1,
+        "total_ms": 0.014336000196635723
+      },
+      "__myl_ReplCastMulCastFc_myl0_36": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_Resh_myl0_37": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "__myl_ReplCastMulCastFc_myl0_38": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_39": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_40": {
+        "calls": 1,
+        "total_ms": 0.010239999741315842
+      },
+      "/q_proj_2/MatMul_myl0_41": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_ReplReshMove_myl0_42": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_43": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_44": {
+        "calls": 1,
+        "total_ms": 0.12185599654912949
+      },
+      "__myl_ReplCastMulCast_myl0_45": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_TranReshMoveMul_myl0_46": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_2/MatMul_myl0_47": {
+        "calls": 1,
+        "total_ms": 0.05734400078654289
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_48": {
+        "calls": 1,
+        "total_ms": 0.008320000022649765
+      },
+      "__myl_ReplCastMulCastFc_myl0_49": {
+        "calls": 1,
+        "total_ms": 0.4373120069503784
+      },
+      "__myl_ReplCastMulCastFc_myl0_50": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_51": {
+        "calls": 1,
+        "total_ms": 0.06451199948787689
+      },
+      "__myl_ReplCastMulCastFc_myl0_52": {
+        "calls": 1,
+        "total_ms": 0.4220159947872162
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_53": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplCastMulCastFc_myl0_54": {
+        "calls": 1,
+        "total_ms": 0.016383999958634377
+      },
+      "__myl_Resh_myl0_55": {
+        "calls": 1,
+        "total_ms": 0.0032319999299943447
+      },
+      "__myl_ReplCastMulCastFc_myl0_56": {
+        "calls": 1,
+        "total_ms": 0.014336000196635723
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_57": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_58": {
+        "calls": 1,
+        "total_ms": 0.010304000228643417
+      },
+      "/q_proj_3/MatMul_myl0_59": {
+        "calls": 1,
+        "total_ms": 0.055296000093221664
+      },
+      "__myl_ReplReshMove_myl0_60": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_61": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_62": {
+        "calls": 1,
+        "total_ms": 0.12185599654912949
+      },
+      "__myl_ReplCastMulCast_myl0_63": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_TranReshMoveMul_myl0_64": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_3/MatMul_myl0_65": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_66": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_ReplCastMulCastFc_myl0_67": {
+        "calls": 1,
+        "total_ms": 0.43827199935913086
+      },
+      "__myl_ReplCastMulCastFc_myl0_68": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_69": {
+        "calls": 1,
+        "total_ms": 0.0647680014371872
+      },
+      "__myl_ReplCastMulCastFc_myl0_70": {
+        "calls": 1,
+        "total_ms": 0.42188799381256104
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_71": {
+        "calls": 1,
+        "total_ms": 0.014336000196635723
+      },
+      "__myl_ReplCastMulCastFc_myl0_72": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_Resh_myl0_73": {
+        "calls": 1,
+        "total_ms": 0.0030720001086592674
+      },
+      "__myl_ReplCastMulCastFc_myl0_74": {
+        "calls": 1,
+        "total_ms": 0.016383999958634377
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_75": {
+        "calls": 1,
+        "total_ms": 0.005216000135987997
+      },
+      "__myl_ReplCastMulCast_myl0_76": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "/q_proj_4/MatMul_myl0_77": {
+        "calls": 1,
+        "total_ms": 0.05564799904823303
+      },
+      "__myl_ReplReshMove_myl0_78": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_79": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_80": {
+        "calls": 1,
+        "total_ms": 0.12083200365304947
+      },
+      "__myl_ReplCastMulCast_myl0_81": {
+        "calls": 1,
+        "total_ms": 0.008448000065982342
+      },
+      "__myl_TranReshMoveMul_myl0_82": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_4/MatMul_myl0_83": {
+        "calls": 1,
+        "total_ms": 0.05734400078654289
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_84": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_ReplCastMulCastFc_myl0_85": {
+        "calls": 1,
+        "total_ms": 0.43750399351119995
+      },
+      "__myl_ReplCastMulCastFc_myl0_86": {
+        "calls": 1,
+        "total_ms": 0.4362240135669708
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_87": {
+        "calls": 1,
+        "total_ms": 0.0655359998345375
+      },
+      "__myl_ReplCastMulCastFc_myl0_88": {
+        "calls": 1,
+        "total_ms": 0.42188799381256104
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_89": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplCastMulCastFc_myl0_90": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_Resh_myl0_91": {
+        "calls": 1,
+        "total_ms": 0.0030720001086592674
+      },
+      "__myl_ReplCastMulCastFc_myl0_92": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_93": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_94": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "/q_proj_5/MatMul_myl0_95": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_ReplReshMove_myl0_96": {
+        "calls": 1,
+        "total_ms": 0.004288000054657459
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_97": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_98": {
+        "calls": 1,
+        "total_ms": 0.12390399724245071
+      },
+      "__myl_ReplCastMulCast_myl0_99": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_TranReshMoveMul_myl0_100": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_5/MatMul_myl0_101": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_102": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_ReplCastMulCastFc_myl0_103": {
+        "calls": 1,
+        "total_ms": 0.43827199935913086
+      },
+      "__myl_ReplCastMulCastFc_myl0_104": {
+        "calls": 1,
+        "total_ms": 0.4362240135669708
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_105": {
+        "calls": 1,
+        "total_ms": 0.06451199948787689
+      },
+      "__myl_ReplCastMulCastFc_myl0_106": {
+        "calls": 1,
+        "total_ms": 0.42393600940704346
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_107": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplCastMulCastFc_myl0_108": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_Resh_myl0_109": {
+        "calls": 1,
+        "total_ms": 0.0030720001086592674
+      },
+      "__myl_ReplCastMulCastFc_myl0_110": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_111": {
+        "calls": 1,
+        "total_ms": 0.0054720002226531506
+      },
+      "__myl_ReplCastMulCast_myl0_112": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "/q_proj_6/MatMul_myl0_113": {
+        "calls": 1,
+        "total_ms": 0.055296000093221664
+      },
+      "__myl_ReplReshMove_myl0_114": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_115": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_116": {
+        "calls": 1,
+        "total_ms": 0.12083200365304947
+      },
+      "__myl_ReplCastMulCast_myl0_117": {
+        "calls": 1,
+        "total_ms": 0.008224000222980976
+      },
+      "__myl_TranReshMoveMul_myl0_118": {
+        "calls": 1,
+        "total_ms": 0.006144000217318535
+      },
+      "/o_proj_6/MatMul_myl0_119": {
+        "calls": 1,
+        "total_ms": 0.05651199817657471
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_120": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_ReplCastMulCastFc_myl0_121": {
+        "calls": 1,
+        "total_ms": 0.43827199935913086
+      },
+      "__myl_ReplCastMulCastFc_myl0_122": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_123": {
+        "calls": 1,
+        "total_ms": 0.0655359998345375
+      },
+      "__myl_ReplCastMulCastFc_myl0_124": {
+        "calls": 1,
+        "total_ms": 0.42188799381256104
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_125": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplCastMulCastFc_myl0_126": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_Resh_myl0_127": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "__myl_ReplCastMulCastFc_myl0_128": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_129": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_130": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "/q_proj_7/MatMul_myl0_131": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_ReplReshMove_myl0_132": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_133": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_134": {
+        "calls": 1,
+        "total_ms": 0.12083200365304947
+      },
+      "__myl_ReplCastMulCast_myl0_135": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_TranReshMoveMul_myl0_136": {
+        "calls": 1,
+        "total_ms": 0.005247999913990498
+      },
+      "/o_proj_7/MatMul_myl0_137": {
+        "calls": 1,
+        "total_ms": 0.055296000093221664
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_138": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_ReplCastMulCastFc_myl0_139": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_ReplCastMulCastFc_myl0_140": {
+        "calls": 1,
+        "total_ms": 0.4362240135669708
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_141": {
+        "calls": 1,
+        "total_ms": 0.06451199948787689
+      },
+      "__myl_ReplCastMulCastFc_myl0_142": {
+        "calls": 1,
+        "total_ms": 0.42188799381256104
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_143": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplCastMulCastFc_myl0_144": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_Resh_myl0_145": {
+        "calls": 1,
+        "total_ms": 0.0030720001086592674
+      },
+      "__myl_ReplCastMulCastFc_myl0_146": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_147": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_148": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "/q_proj_8/MatMul_myl0_149": {
+        "calls": 1,
+        "total_ms": 0.055296000093221664
+      },
+      "__myl_ReplReshMove_myl0_150": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_151": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_152": {
+        "calls": 1,
+        "total_ms": 0.12083200365304947
+      },
+      "__myl_ReplCastMulCast_myl0_153": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_TranReshMoveMul_myl0_154": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_8/MatMul_myl0_155": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_156": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_ReplCastMulCastFc_myl0_157": {
+        "calls": 1,
+        "total_ms": 0.43929600715637207
+      },
+      "__myl_ReplCastMulCastFc_myl0_158": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_159": {
+        "calls": 1,
+        "total_ms": 0.06351999938488007
+      },
+      "__myl_ReplCastMulCastFc_myl0_160": {
+        "calls": 1,
+        "total_ms": 0.42291200160980225
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_161": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplCastMulCastFc_myl0_162": {
+        "calls": 1,
+        "total_ms": 0.016383999958634377
+      },
+      "__myl_Resh_myl0_163": {
+        "calls": 1,
+        "total_ms": 0.0030720001086592674
+      },
+      "__myl_ReplCastMulCastFc_myl0_164": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_165": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_166": {
+        "calls": 1,
+        "total_ms": 0.011264000087976456
+      },
+      "/q_proj_9/MatMul_myl0_167": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_ReplReshMove_myl0_168": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_169": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_170": {
+        "calls": 1,
+        "total_ms": 0.12185599654912949
+      },
+      "__myl_ReplCastMulCast_myl0_171": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_TranReshMoveMul_myl0_172": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_9/MatMul_myl0_173": {
+        "calls": 1,
+        "total_ms": 0.055296000093221664
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_174": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_ReplCastMulCastFc_myl0_175": {
+        "calls": 1,
+        "total_ms": 0.43827199935913086
+      },
+      "__myl_ReplCastMulCastFc_myl0_176": {
+        "calls": 1,
+        "total_ms": 0.436383992433548
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_177": {
+        "calls": 1,
+        "total_ms": 0.06348799914121628
+      },
+      "__myl_ReplCastMulCastFc_myl0_178": {
+        "calls": 1,
+        "total_ms": 0.42393600940704346
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_179": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplCastMulCastFc_myl0_180": {
+        "calls": 1,
+        "total_ms": 0.015552000142633915
+      },
+      "__myl_Resh_myl0_181": {
+        "calls": 1,
+        "total_ms": 0.0030720001086592674
+      },
+      "__myl_ReplCastMulCastFc_myl0_182": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_183": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_184": {
+        "calls": 1,
+        "total_ms": 0.010239999741315842
+      },
+      "/q_proj_10/MatMul_myl0_185": {
+        "calls": 1,
+        "total_ms": 0.055296000093221664
+      },
+      "__myl_ReplReshMove_myl0_186": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_187": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_188": {
+        "calls": 1,
+        "total_ms": 0.12185599654912949
+      },
+      "__myl_ReplCastMulCast_myl0_189": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_TranReshMoveMul_myl0_190": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_10/MatMul_myl0_191": {
+        "calls": 1,
+        "total_ms": 0.05734400078654289
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_192": {
+        "calls": 1,
+        "total_ms": 0.008352000266313553
+      },
+      "__myl_ReplCastMulCastFc_myl0_193": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_ReplCastMulCastFc_myl0_194": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_195": {
+        "calls": 1,
+        "total_ms": 0.06451199948787689
+      },
+      "__myl_ReplCastMulCastFc_myl0_196": {
+        "calls": 1,
+        "total_ms": 0.42291200160980225
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_197": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplCastMulCastFc_myl0_198": {
+        "calls": 1,
+        "total_ms": 0.016383999958634377
+      },
+      "__myl_Resh_myl0_199": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "__myl_ReplCastMulCastFc_myl0_200": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_201": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_202": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "/q_proj_11/MatMul_myl0_203": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_ReplReshMove_myl0_204": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_205": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_206": {
+        "calls": 1,
+        "total_ms": 0.12185599654912949
+      },
+      "__myl_ReplCastMulCast_myl0_207": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_TranReshMoveMul_myl0_208": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_11/MatMul_myl0_209": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_210": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_ReplCastMulCastFc_myl0_211": {
+        "calls": 1,
+        "total_ms": 0.43929600715637207
+      },
+      "__myl_ReplCastMulCastFc_myl0_212": {
+        "calls": 1,
+        "total_ms": 0.4362240135669708
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_213": {
+        "calls": 1,
+        "total_ms": 0.06451199948787689
+      },
+      "__myl_ReplCastMulCastFc_myl0_214": {
+        "calls": 1,
+        "total_ms": 0.42291200160980225
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_215": {
+        "calls": 1,
+        "total_ms": 0.014336000196635723
+      },
+      "__myl_ReplCastMulCastFc_myl0_216": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_Resh_myl0_217": {
+        "calls": 1,
+        "total_ms": 0.0030720001086592674
+      },
+      "__myl_ReplCastMulCastFc_myl0_218": {
+        "calls": 1,
+        "total_ms": 0.016383999958634377
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_219": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_220": {
+        "calls": 1,
+        "total_ms": 0.010239999741315842
+      },
+      "/q_proj_12/MatMul_myl0_221": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_ReplReshMove_myl0_222": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_223": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "_gemm_mha_v2_myl0_224": {
+        "calls": 1,
+        "total_ms": 0.11980800330638885
+      },
+      "__myl_ReplCastMulCast_myl0_225": {
+        "calls": 1,
+        "total_ms": 0.008383999578654766
+      },
+      "__myl_TranReshMoveMul_myl0_226": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_12/MatMul_myl0_227": {
+        "calls": 1,
+        "total_ms": 0.05734400078654289
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_228": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_ReplCastMulCastFc_myl0_229": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_ReplCastMulCastFc_myl0_230": {
+        "calls": 1,
+        "total_ms": 0.4362240135669708
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_231": {
+        "calls": 1,
+        "total_ms": 0.0655359998345375
+      },
+      "__myl_ReplCastMulCastFc_myl0_232": {
+        "calls": 1,
+        "total_ms": 0.42188799381256104
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_233": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplCastMulCastFc_myl0_234": {
+        "calls": 1,
+        "total_ms": 0.016383999958634377
+      },
+      "__myl_Resh_myl0_235": {
+        "calls": 1,
+        "total_ms": 0.0030720001086592674
+      },
+      "__myl_ReplCastMulCastFc_myl0_236": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_237": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_238": {
+        "calls": 1,
+        "total_ms": 0.010239999741315842
+      },
+      "/q_proj_13/MatMul_myl0_239": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_ReplReshMove_myl0_240": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_241": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_242": {
+        "calls": 1,
+        "total_ms": 0.12185599654912949
+      },
+      "__myl_ReplCastMulCast_myl0_243": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_TranReshMoveMul_myl0_244": {
+        "calls": 1,
+        "total_ms": 0.006144000217318535
+      },
+      "/o_proj_13/MatMul_myl0_245": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_246": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_ReplCastMulCastFc_myl0_247": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_ReplCastMulCastFc_myl0_248": {
+        "calls": 1,
+        "total_ms": 0.4373440146446228
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_249": {
+        "calls": 1,
+        "total_ms": 0.06451199948787689
+      },
+      "__myl_ReplCastMulCastFc_myl0_250": {
+        "calls": 1,
+        "total_ms": 0.42291200160980225
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_251": {
+        "calls": 1,
+        "total_ms": 0.014336000196635723
+      },
+      "__myl_ReplCastMulCastFc_myl0_252": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_Resh_myl0_253": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "__myl_ReplCastMulCastFc_myl0_254": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_255": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_ReplCastMulCast_myl0_256": {
+        "calls": 1,
+        "total_ms": 0.009440000168979168
+      },
+      "/q_proj_14/MatMul_myl0_257": {
+        "calls": 1,
+        "total_ms": 0.05555199831724167
+      },
+      "__myl_ReplReshMove_myl0_258": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_259": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_260": {
+        "calls": 1,
+        "total_ms": 0.1228799968957901
+      },
+      "__myl_ReplCastMulCast_myl0_261": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_TranReshMoveMul_myl0_262": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_14/MatMul_myl0_263": {
+        "calls": 1,
+        "total_ms": 0.05657599866390228
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_264": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_ReplCastMulCastFc_myl0_265": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_ReplCastMulCastFc_myl0_266": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_267": {
+        "calls": 1,
+        "total_ms": 0.06489600241184235
+      },
+      "__myl_ReplCastMulCastFc_myl0_268": {
+        "calls": 1,
+        "total_ms": 0.42291200160980225
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_269": {
+        "calls": 1,
+        "total_ms": 0.014336000196635723
+      },
+      "__myl_ReplCastMulCastFc_myl0_270": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_Resh_myl0_271": {
+        "calls": 1,
+        "total_ms": 0.0030720001086592674
+      },
+      "__myl_ReplCastMulCastFc_myl0_272": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_273": {
+        "calls": 1,
+        "total_ms": 0.006144000217318535
+      },
+      "__myl_ReplCastMulCast_myl0_274": {
+        "calls": 1,
+        "total_ms": 0.00940799992531538
+      },
+      "/q_proj_15/MatMul_myl0_275": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_ReplReshMove_myl0_276": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_277": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_278": {
+        "calls": 1,
+        "total_ms": 0.12185599654912949
+      },
+      "__myl_ReplCastMulCast_myl0_279": {
+        "calls": 1,
+        "total_ms": 0.008191999979317188
+      },
+      "__myl_TranReshMoveMul_myl0_280": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "/o_proj_15/MatMul_myl0_281": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_282": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_ReplCastMulCastFc_myl0_283": {
+        "calls": 1,
+        "total_ms": 0.43827199935913086
+      },
+      "__myl_ReplCastMulCastFc_myl0_284": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_285": {
+        "calls": 1,
+        "total_ms": 0.06451199948787689
+      },
+      "__myl_ReplCastMulCastFc_myl0_286": {
+        "calls": 1,
+        "total_ms": 0.42291200160980225
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMulMul_myl0_287": {
+        "calls": 1,
+        "total_ms": 0.013311999849975109
+      },
+      "__myl_ReplCastMulCastFc_myl0_288": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_Resh_myl0_289": {
+        "calls": 1,
+        "total_ms": 0.004095999989658594
+      },
+      "__myl_ReplCastMulCastFc_myl0_290": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAddReshReplReshTranReshMove_myl0_291": {
+        "calls": 1,
+        "total_ms": 0.006144000217318535
+      },
+      "__myl_ReplCastMulCast_myl0_292": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "/q_proj_16/MatMul_myl0_293": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_ReplReshMove_myl0_294": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "__myl_TranSlicNegSlicConcMulMulAddReshMove_myl0_295": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      },
+      "_gemm_mha_v2_myl0_296": {
+        "calls": 1,
+        "total_ms": 0.12195199728012085
+      },
+      "__myl_ReplCastMulCast_myl0_297": {
+        "calls": 1,
+        "total_ms": 0.0033279999624937773
+      },
+      "__myl_ReplCastMulCast_myl0_298": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_TranReshMoveMul_myl0_299": {
+        "calls": 1,
+        "total_ms": 0.005183999892324209
+      },
+      "/o_proj_16/MatMul_myl0_300": {
+        "calls": 1,
+        "total_ms": 0.05632000043988228
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_301": {
+        "calls": 1,
+        "total_ms": 0.009216000325977802
+      },
+      "__myl_ReplCastMulCastFc_myl0_302": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_ReplCastMulCastFc_myl0_303": {
+        "calls": 1,
+        "total_ms": 0.43724799156188965
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMulMul_myl0_304": {
+        "calls": 1,
+        "total_ms": 0.06451199948787689
+      },
+      "__myl_ReplCastMulCastFc_myl0_305": {
+        "calls": 1,
+        "total_ms": 0.42188799381256104
+      },
+      "__myl_AddCastMulMeanAddSqrtDivMulMulCastMulMul_myl0_306": {
+        "calls": 1,
+        "total_ms": 0.011264000087976456
+      },
+      "/v_proj_17/MatMul_myl0_307": {
+        "calls": 1,
+        "total_ms": 0.014336000196635723
+      },
+      "__myl_ReplCastMulCastFc_myl0_308": {
+        "calls": 1,
+        "total_ms": 0.015359999611973763
+      },
+      "__myl_SlicNegSlicConcMulMulAdd_myl0_309": {
+        "calls": 1,
+        "total_ms": 0.005119999870657921
+      }
+    },
+    "action_step": {
+      "__myl_Cast_myl0_0": {
+        "calls": 10,
+        "total_ms": 0.07385600032284856
+      },
+      "/time_in/Gemm_myl0_1": {
+        "calls": 10,
+        "total_ms": 0.1699839998036623
+      },
+      "__myl_Silu_myl0_2": {
+        "calls": 10,
+        "total_ms": 0.027200000826269388
+      },
+      "/time_out/Gemm_myl0_3": {
+        "calls": 10,
+        "total_ms": 0.08396800048649311
+      },
+      "__myl_Silu_myl0_4": {
+        "calls": 10,
+        "total_ms": 0.029920000582933426
+      },
+      "/norm/dense/Gemm+/post_attention_layernorm/dense_17/Gemm+/input_layernorm/dense_17/Gemm+/post_attention_layernorm/dense_16/Gemm+/input_layernorm/dense_16/Gemm+/post_attention_layernorm/dense_15/Gemm+/input_layernorm/dense_15/Gemm+/post_attention_layernorm/dense_14/Gemm+/input_layernorm/dense_14/Gemm+/post_attention_layernorm/dense_13/Gemm+/input_layernorm/dense_13/Gemm+/post_attention_layernorm/dense_12/Gemm+/input_layernorm/dense_12/Gemm+/post_attention_layernorm/dense_11/Gemm+/input_layernorm/dense_11/Gemm+/post_attention_layernorm/dense_10/Gemm+/input_layernorm/dense_10/Gemm+/post_attention_layernorm/dense_9/Gemm+/input_layernorm/dense_9/Gemm+/post_attention_layernorm/dense_8/Gemm+/input_layernorm/dense_8/Gemm+/post_attention_layernorm/dense_7/Gemm+/input_layernorm/dense_7/Gemm+/post_attention_layernorm/dense_6/Gemm+/input_layernorm/dense_6/Gemm+/post_attention_layernorm/dense_5/Gemm+/input_layernorm/dense_5/Gemm+/post_attention_layernorm/dense_4/Gemm+/input_layernorm/dense_4/Gemm+/post_attention_layernorm/dense_3/Gemm+/input_layernorm/dense_3/Gemm+/post_attention_layernorm/dense_2/Gemm+/input_layernorm/dense_2/Gemm+/post_attention_layernorm/dense_1/Gemm+/input_layernorm/dense_1/Gemm+/post_attention_layernorm/dense/Gemm+/input_layernorm/dense/Gemm_myl0_5": {
+        "calls": 10,
+        "total_ms": 4.8015360832214355
+      },
+      "/action_in/MatMul_myl0_6": {
+        "calls": 10,
+        "total_ms": 0.052447999361902475
+      },
+      "__myl_CastCastMulMeanAddSqrtDivMulSlicSlicAddMulAddCast_myl0_7": {
+        "calls": 10,
+        "total_ms": 0.036000000312924385
+      },
+      "/v_proj/MatMul+/k_proj/MatMul+/q_proj/MatMul_myl0_8": {
+        "calls": 10,
+        "total_ms": 0.09728000033646822
+      },
+      "__mye439255_myl0_9": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_MoveMulConcSinCosCastReshCastReshReshSlicNegSlicConcMulMulAddReshTranSlicNegSlicConcMulMulEtc_myl0_10": {
+        "calls": 10,
+        "total_ms": 0.033792000729590654
+      },
+      "__mye439257_myl0_11": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_12": {
+        "calls": 10,
+        "total_ms": 0.05222399951890111
+      },
+      "__mye439259_myl0_13": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_14": {
+        "calls": 10,
+        "total_ms": 0.048255999106913805
+      },
+      "__mye439261_myl0_15": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_16": {
+        "calls": 10,
+        "total_ms": 0.9034560099244118
+      },
+      "/o_proj/MatMul_myl0_17": {
+        "calls": 10,
+        "total_ms": 0.09014400281012058
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_18": {
+        "calls": 10,
+        "total_ms": 0.03491200041025877
+      },
+      "/mlp/up_proj/MatMul+/mlp/gate_proj/MatMul_myl0_19": {
+        "calls": 10,
+        "total_ms": 0.22134399972856045
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_20": {
+        "calls": 10,
+        "total_ms": 0.028896000934764743
+      },
+      "/mlp/down_proj/MatMul_myl0_21": {
+        "calls": 10,
+        "total_ms": 0.16921599954366684
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_22": {
+        "calls": 10,
+        "total_ms": 0.0332480005454272
+      },
+      "/v_proj_1/MatMul+/k_proj_1/MatMul+/q_proj_1/MatMul_myl0_23": {
+        "calls": 10,
+        "total_ms": 0.09763199929147959
+      },
+      "__mye439263_myl0_24": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439265_myl0_25": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_26": {
+        "calls": 10,
+        "total_ms": 0.0471039991825819
+      },
+      "__mye439267_myl0_27": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_28": {
+        "calls": 10,
+        "total_ms": 0.030720001086592674
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_29": {
+        "calls": 10,
+        "total_ms": 0.048351998906582594
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_30": {
+        "calls": 10,
+        "total_ms": 0.027872000820934772
+      },
+      "__mye439269_myl0_31": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_32": {
+        "calls": 10,
+        "total_ms": 0.8981120064854622
+      },
+      "/o_proj_1/MatMul_myl0_33": {
+        "calls": 10,
+        "total_ms": 0.09123200085014105
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_34": {
+        "calls": 10,
+        "total_ms": 0.033600000431761146
+      },
+      "/mlp/up_proj_1/MatMul+/mlp/gate_proj_1/MatMul_myl0_35": {
+        "calls": 10,
+        "total_ms": 0.22553599998354912
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_36": {
+        "calls": 10,
+        "total_ms": 0.030720001086592674
+      },
+      "/mlp/down_proj_1/MatMul_myl0_37": {
+        "calls": 10,
+        "total_ms": 0.16454399935901165
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_38": {
+        "calls": 10,
+        "total_ms": 0.03721600002609193
+      },
+      "/v_proj_2/MatMul+/k_proj_2/MatMul+/q_proj_2/MatMul_myl0_39": {
+        "calls": 10,
+        "total_ms": 0.09523200150579214
+      },
+      "__mye439271_myl0_40": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439273_myl0_41": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_42": {
+        "calls": 10,
+        "total_ms": 0.049151998944580555
+      },
+      "__mye439275_myl0_43": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_44": {
+        "calls": 10,
+        "total_ms": 0.03276800084859133
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_45": {
+        "calls": 10,
+        "total_ms": 0.049247998744249344
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_46": {
+        "calls": 10,
+        "total_ms": 0.029696000972762704
+      },
+      "__mye439277_myl0_47": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_48": {
+        "calls": 10,
+        "total_ms": 0.8987840116024017
+      },
+      "/o_proj_2/MatMul_myl0_49": {
+        "calls": 10,
+        "total_ms": 0.08828800171613693
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_50": {
+        "calls": 10,
+        "total_ms": 0.03523200028575957
+      },
+      "/mlp/up_proj_2/MatMul+/mlp/gate_proj_2/MatMul_myl0_51": {
+        "calls": 10,
+        "total_ms": 0.21737599931657314
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_52": {
+        "calls": 10,
+        "total_ms": 0.02896000095643103
+      },
+      "/mlp/down_proj_2/MatMul_myl0_53": {
+        "calls": 10,
+        "total_ms": 0.15891199838370085
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_54": {
+        "calls": 10,
+        "total_ms": 0.03708800021559
+      },
+      "/v_proj_3/MatMul+/k_proj_3/MatMul+/q_proj_3/MatMul_myl0_55": {
+        "calls": 10,
+        "total_ms": 0.09679999947547913
+      },
+      "__mye439279_myl0_56": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439281_myl0_57": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_58": {
+        "calls": 10,
+        "total_ms": 0.05017599882557988
+      },
+      "__mye439283_myl0_59": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_60": {
+        "calls": 10,
+        "total_ms": 0.03276800084859133
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_61": {
+        "calls": 10,
+        "total_ms": 0.04758399911224842
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_62": {
+        "calls": 10,
+        "total_ms": 0.028928000014275312
+      },
+      "__mye439285_myl0_63": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_64": {
+        "calls": 10,
+        "total_ms": 0.8931520059704781
+      },
+      "/o_proj_3/MatMul_myl0_65": {
+        "calls": 10,
+        "total_ms": 0.0890880012884736
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_66": {
+        "calls": 10,
+        "total_ms": 0.039936000015586615
+      },
+      "/mlp/up_proj_3/MatMul+/mlp/gate_proj_3/MatMul_myl0_67": {
+        "calls": 10,
+        "total_ms": 0.21913599967956543
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_68": {
+        "calls": 10,
+        "total_ms": 0.03008000086992979
+      },
+      "/mlp/down_proj_3/MatMul_myl0_69": {
+        "calls": 10,
+        "total_ms": 0.15433599799871445
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_70": {
+        "calls": 10,
+        "total_ms": 0.0324160004965961
+      },
+      "/v_proj_4/MatMul+/k_proj_4/MatMul+/q_proj_4/MatMul_myl0_71": {
+        "calls": 10,
+        "total_ms": 0.09830399975180626
+      },
+      "__mye439287_myl0_72": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439289_myl0_73": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_74": {
+        "calls": 10,
+        "total_ms": 0.04505599942058325
+      },
+      "__mye439291_myl0_75": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_76": {
+        "calls": 10,
+        "total_ms": 0.03174400073476136
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_77": {
+        "calls": 10,
+        "total_ms": 0.04575999965891242
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_78": {
+        "calls": 10,
+        "total_ms": 0.029920001048594713
+      },
+      "__mye439293_myl0_79": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_80": {
+        "calls": 10,
+        "total_ms": 0.8962560072541237
+      },
+      "/o_proj_4/MatMul_myl0_81": {
+        "calls": 10,
+        "total_ms": 0.08704000152647495
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_82": {
+        "calls": 10,
+        "total_ms": 0.03484800038859248
+      },
+      "/mlp/up_proj_4/MatMul+/mlp/gate_proj_4/MatMul_myl0_83": {
+        "calls": 10,
+        "total_ms": 0.22035199962556362
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_84": {
+        "calls": 10,
+        "total_ms": 0.028992000967264175
+      },
+      "/mlp/down_proj_4/MatMul_myl0_85": {
+        "calls": 10,
+        "total_ms": 0.1580479983240366
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_86": {
+        "calls": 10,
+        "total_ms": 0.036351999966427684
+      },
+      "/v_proj_5/MatMul+/k_proj_5/MatMul+/q_proj_5/MatMul_myl0_87": {
+        "calls": 10,
+        "total_ms": 0.09523200150579214
+      },
+      "__mye439295_myl0_88": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439297_myl0_89": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_90": {
+        "calls": 10,
+        "total_ms": 0.046079999301582575
+      },
+      "__mye439299_myl0_91": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_92": {
+        "calls": 10,
+        "total_ms": 0.03276800084859133
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_93": {
+        "calls": 10,
+        "total_ms": 0.048127999529242516
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_94": {
+        "calls": 10,
+        "total_ms": 0.030848000897094607
+      },
+      "__mye439301_myl0_95": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_96": {
+        "calls": 10,
+        "total_ms": 0.8970560058951378
+      },
+      "/o_proj_5/MatMul_myl0_97": {
+        "calls": 10,
+        "total_ms": 0.08937600255012512
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_98": {
+        "calls": 10,
+        "total_ms": 0.037120000226423144
+      },
+      "/mlp/up_proj_5/MatMul+/mlp/gate_proj_5/MatMul_myl0_99": {
+        "calls": 10,
+        "total_ms": 0.21503999829292297
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_100": {
+        "calls": 10,
+        "total_ms": 0.02985600079409778
+      },
+      "/mlp/down_proj_5/MatMul_myl0_101": {
+        "calls": 10,
+        "total_ms": 0.15510399732738733
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_102": {
+        "calls": 10,
+        "total_ms": 0.03587200026959181
+      },
+      "/v_proj_6/MatMul+/k_proj_6/MatMul+/q_proj_6/MatMul_myl0_103": {
+        "calls": 10,
+        "total_ms": 0.09728000033646822
+      },
+      "__mye439303_myl0_104": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439305_myl0_105": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_106": {
+        "calls": 10,
+        "total_ms": 0.05017599882557988
+      },
+      "__mye439307_myl0_107": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_108": {
+        "calls": 10,
+        "total_ms": 0.031744000967592
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_109": {
+        "calls": 10,
+        "total_ms": 0.04623999912291765
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_110": {
+        "calls": 10,
+        "total_ms": 0.030784000642597675
+      },
+      "__mye439309_myl0_111": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_112": {
+        "calls": 10,
+        "total_ms": 0.8973440080881119
+      },
+      "/o_proj_6/MatMul_myl0_113": {
+        "calls": 10,
+        "total_ms": 0.08915200177580118
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_114": {
+        "calls": 10,
+        "total_ms": 0.03584000049158931
+      },
+      "/mlp/up_proj_6/MatMul+/mlp/gate_proj_6/MatMul_myl0_115": {
+        "calls": 10,
+        "total_ms": 0.21913599967956543
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_116": {
+        "calls": 10,
+        "total_ms": 0.029696000972762704
+      },
+      "/mlp/down_proj_6/MatMul_myl0_117": {
+        "calls": 10,
+        "total_ms": 0.15433599799871445
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_118": {
+        "calls": 10,
+        "total_ms": 0.03321600053459406
+      },
+      "/v_proj_7/MatMul+/k_proj_7/MatMul+/q_proj_7/MatMul_myl0_119": {
+        "calls": 10,
+        "total_ms": 0.09625600092113018
+      },
+      "__mye439311_myl0_120": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439313_myl0_121": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_122": {
+        "calls": 10,
+        "total_ms": 0.049151998944580555
+      },
+      "__mye439315_myl0_123": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_124": {
+        "calls": 10,
+        "total_ms": 0.032768000615760684
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_125": {
+        "calls": 10,
+        "total_ms": 0.05119999870657921
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_126": {
+        "calls": 10,
+        "total_ms": 0.029728000750765204
+      },
+      "__mye439317_myl0_127": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_128": {
+        "calls": 10,
+        "total_ms": 0.8994240090250969
+      },
+      "/o_proj_7/MatMul_myl0_129": {
+        "calls": 10,
+        "total_ms": 0.08860800135880709
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_130": {
+        "calls": 10,
+        "total_ms": 0.03289600065909326
+      },
+      "/mlp/up_proj_7/MatMul+/mlp/gate_proj_7/MatMul_myl0_131": {
+        "calls": 10,
+        "total_ms": 0.21760000102221966
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_132": {
+        "calls": 10,
+        "total_ms": 0.029792000772431493
+      },
+      "/mlp/down_proj_7/MatMul_myl0_133": {
+        "calls": 10,
+        "total_ms": 0.15564799681305885
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_134": {
+        "calls": 10,
+        "total_ms": 0.036864000372588634
+      },
+      "/v_proj_8/MatMul+/k_proj_8/MatMul+/q_proj_8/MatMul_myl0_135": {
+        "calls": 10,
+        "total_ms": 0.09558400046080351
+      },
+      "__mye439319_myl0_136": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439321_myl0_137": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_138": {
+        "calls": 10,
+        "total_ms": 0.049151998944580555
+      },
+      "__mye439323_myl0_139": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_140": {
+        "calls": 10,
+        "total_ms": 0.031744000967592
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_141": {
+        "calls": 10,
+        "total_ms": 0.0495039988309145
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_142": {
+        "calls": 10,
+        "total_ms": 0.028672000858932734
+      },
+      "__mye439325_myl0_143": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_144": {
+        "calls": 10,
+        "total_ms": 0.8977600112557411
+      },
+      "/o_proj_8/MatMul_myl0_145": {
+        "calls": 10,
+        "total_ms": 0.0892480006441474
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_146": {
+        "calls": 10,
+        "total_ms": 0.036096000112593174
+      },
+      "/mlp/up_proj_8/MatMul+/mlp/gate_proj_8/MatMul_myl0_147": {
+        "calls": 10,
+        "total_ms": 0.2170879989862442
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_148": {
+        "calls": 10,
+        "total_ms": 0.028896000934764743
+      },
+      "/mlp/down_proj_8/MatMul_myl0_149": {
+        "calls": 10,
+        "total_ms": 0.15487999748438597
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_150": {
+        "calls": 10,
+        "total_ms": 0.03408000059425831
+      },
+      "/v_proj_9/MatMul+/k_proj_9/MatMul+/q_proj_9/MatMul_myl0_151": {
+        "calls": 10,
+        "total_ms": 0.09449600148946047
+      },
+      "__mye439327_myl0_152": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439329_myl0_153": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_154": {
+        "calls": 10,
+        "total_ms": 0.05017599882557988
+      },
+      "__mye439331_myl0_155": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_156": {
+        "calls": 10,
+        "total_ms": 0.03276800084859133
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_157": {
+        "calls": 10,
+        "total_ms": 0.049151998944580555
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_158": {
+        "calls": 10,
+        "total_ms": 0.030848000897094607
+      },
+      "__mye439333_myl0_159": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_160": {
+        "calls": 10,
+        "total_ms": 0.8995200097560883
+      },
+      "/o_proj_9/MatMul_myl0_161": {
+        "calls": 10,
+        "total_ms": 0.0884480020031333
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_162": {
+        "calls": 10,
+        "total_ms": 0.033376000355929136
+      },
+      "/mlp/up_proj_9/MatMul+/mlp/gate_proj_9/MatMul_myl0_163": {
+        "calls": 10,
+        "total_ms": 0.21411199867725372
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_164": {
+        "calls": 10,
+        "total_ms": 0.027904000831767917
+      },
+      "/mlp/down_proj_9/MatMul_myl0_165": {
+        "calls": 10,
+        "total_ms": 0.15388799645006657
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_166": {
+        "calls": 10,
+        "total_ms": 0.03625600039958954
+      },
+      "/v_proj_10/MatMul+/k_proj_10/MatMul+/q_proj_10/MatMul_myl0_167": {
+        "calls": 10,
+        "total_ms": 0.10035199858248234
+      },
+      "__mye439335_myl0_168": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439337_myl0_169": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_170": {
+        "calls": 10,
+        "total_ms": 0.04812799906358123
+      },
+      "__mye439339_myl0_171": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_172": {
+        "calls": 10,
+        "total_ms": 0.03276800084859133
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_173": {
+        "calls": 10,
+        "total_ms": 0.04767999891191721
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_174": {
+        "calls": 10,
+        "total_ms": 0.02979200053960085
+      },
+      "__mye439341_myl0_175": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_176": {
+        "calls": 10,
+        "total_ms": 0.8990720063447952
+      },
+      "/o_proj_10/MatMul_myl0_177": {
+        "calls": 10,
+        "total_ms": 0.08736000116914511
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_178": {
+        "calls": 10,
+        "total_ms": 0.03481600061058998
+      },
+      "/mlp/up_proj_10/MatMul+/mlp/gate_proj_10/MatMul_myl0_179": {
+        "calls": 10,
+        "total_ms": 0.21663999930024147
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_180": {
+        "calls": 10,
+        "total_ms": 0.029600000707432628
+      },
+      "/mlp/down_proj_10/MatMul_myl0_181": {
+        "calls": 10,
+        "total_ms": 0.15606399811804295
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_182": {
+        "calls": 10,
+        "total_ms": 0.03481600061058998
+      },
+      "/v_proj_11/MatMul+/k_proj_11/MatMul+/q_proj_11/MatMul_myl0_183": {
+        "calls": 10,
+        "total_ms": 0.09670399967581034
+      },
+      "__mye439343_myl0_184": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439345_myl0_185": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_186": {
+        "calls": 10,
+        "total_ms": 0.0471039991825819
+      },
+      "__mye439347_myl0_187": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_188": {
+        "calls": 10,
+        "total_ms": 0.030720001086592674
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_189": {
+        "calls": 10,
+        "total_ms": 0.046495999209582806
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_190": {
+        "calls": 10,
+        "total_ms": 0.028288000728935003
+      },
+      "__mye439349_myl0_191": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_192": {
+        "calls": 10,
+        "total_ms": 0.8980480059981346
+      },
+      "/o_proj_11/MatMul_myl0_193": {
+        "calls": 10,
+        "total_ms": 0.09113600291311741
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_194": {
+        "calls": 10,
+        "total_ms": 0.03523200028575957
+      },
+      "/mlp/up_proj_11/MatMul+/mlp/gate_proj_11/MatMul_myl0_195": {
+        "calls": 10,
+        "total_ms": 0.21727999858558178
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_196": {
+        "calls": 10,
+        "total_ms": 0.03088000090792775
+      },
+      "/mlp/down_proj_11/MatMul_myl0_197": {
+        "calls": 10,
+        "total_ms": 0.15596799738705158
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_198": {
+        "calls": 10,
+        "total_ms": 0.03481600061058998
+      },
+      "/v_proj_12/MatMul+/k_proj_12/MatMul+/q_proj_12/MatMul_myl0_199": {
+        "calls": 10,
+        "total_ms": 0.09644800052046776
+      },
+      "__mye439351_myl0_200": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439353_myl0_201": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_202": {
+        "calls": 10,
+        "total_ms": 0.04812799906358123
+      },
+      "__mye439355_myl0_203": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_204": {
+        "calls": 10,
+        "total_ms": 0.029696000972762704
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_205": {
+        "calls": 10,
+        "total_ms": 0.047359999269247055
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_206": {
+        "calls": 10,
+        "total_ms": 0.02979200053960085
+      },
+      "__mye439357_myl0_207": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_208": {
+        "calls": 10,
+        "total_ms": 0.8980480059981346
+      },
+      "/o_proj_12/MatMul_myl0_209": {
+        "calls": 10,
+        "total_ms": 0.09062400180846453
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_210": {
+        "calls": 10,
+        "total_ms": 0.034080000361427665
+      },
+      "/mlp/up_proj_12/MatMul+/mlp/gate_proj_12/MatMul_myl0_211": {
+        "calls": 10,
+        "total_ms": 0.21718399971723557
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_212": {
+        "calls": 10,
+        "total_ms": 0.02918400033377111
+      },
+      "/mlp/down_proj_12/MatMul_myl0_213": {
+        "calls": 10,
+        "total_ms": 0.15327999740839005
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_214": {
+        "calls": 10,
+        "total_ms": 0.036096000112593174
+      },
+      "/v_proj_13/MatMul+/k_proj_13/MatMul+/q_proj_13/MatMul_myl0_215": {
+        "calls": 10,
+        "total_ms": 0.0936960019171238
+      },
+      "__mye439359_myl0_216": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439361_myl0_217": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_218": {
+        "calls": 10,
+        "total_ms": 0.049151998944580555
+      },
+      "__mye439363_myl0_219": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_220": {
+        "calls": 10,
+        "total_ms": 0.029696000972762704
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_221": {
+        "calls": 10,
+        "total_ms": 0.048223999328911304
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_222": {
+        "calls": 10,
+        "total_ms": 0.028096000431105494
+      },
+      "__mye439365_myl0_223": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_224": {
+        "calls": 10,
+        "total_ms": 0.8975040093064308
+      },
+      "/o_proj_13/MatMul_myl0_225": {
+        "calls": 10,
+        "total_ms": 0.0878400020301342
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_226": {
+        "calls": 10,
+        "total_ms": 0.03276800084859133
+      },
+      "/mlp/up_proj_13/MatMul+/mlp/gate_proj_13/MatMul_myl0_227": {
+        "calls": 10,
+        "total_ms": 0.21625599823892117
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_228": {
+        "calls": 10,
+        "total_ms": 0.0288640009239316
+      },
+      "/mlp/down_proj_13/MatMul_myl0_229": {
+        "calls": 10,
+        "total_ms": 0.15673599764704704
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_230": {
+        "calls": 10,
+        "total_ms": 0.03395200055092573
+      },
+      "/v_proj_14/MatMul+/k_proj_14/MatMul+/q_proj_14/MatMul_myl0_231": {
+        "calls": 10,
+        "total_ms": 0.09446400217711926
+      },
+      "__mye439367_myl0_232": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439369_myl0_233": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_234": {
+        "calls": 10,
+        "total_ms": 0.0471039991825819
+      },
+      "__mye439371_myl0_235": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_236": {
+        "calls": 10,
+        "total_ms": 0.030720001086592674
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_237": {
+        "calls": 10,
+        "total_ms": 0.049407999496906996
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_238": {
+        "calls": 10,
+        "total_ms": 0.029888000804930925
+      },
+      "__mye439373_myl0_239": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_240": {
+        "calls": 10,
+        "total_ms": 0.8998400121927261
+      },
+      "/o_proj_14/MatMul_myl0_241": {
+        "calls": 10,
+        "total_ms": 0.08924800250679255
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_242": {
+        "calls": 10,
+        "total_ms": 0.03337600058875978
+      },
+      "/mlp/up_proj_14/MatMul+/mlp/gate_proj_14/MatMul_myl0_243": {
+        "calls": 10,
+        "total_ms": 0.217119999229908
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_244": {
+        "calls": 10,
+        "total_ms": 0.030848000897094607
+      },
+      "/mlp/down_proj_14/MatMul_myl0_245": {
+        "calls": 10,
+        "total_ms": 0.1561279995366931
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_246": {
+        "calls": 10,
+        "total_ms": 0.034944000421091914
+      },
+      "/v_proj_15/MatMul+/k_proj_15/MatMul+/q_proj_15/MatMul_myl0_247": {
+        "calls": 10,
+        "total_ms": 0.0962880002334714
+      },
+      "__mye439375_myl0_248": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439377_myl0_249": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_250": {
+        "calls": 10,
+        "total_ms": 0.04812799906358123
+      },
+      "__mye439379_myl0_251": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_252": {
+        "calls": 10,
+        "total_ms": 0.032768000615760684
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_253": {
+        "calls": 10,
+        "total_ms": 0.04710399964824319
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_254": {
+        "calls": 10,
+        "total_ms": 0.030720001086592674
+      },
+      "__mye439381_myl0_255": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_256": {
+        "calls": 10,
+        "total_ms": 0.8975360095500946
+      },
+      "/o_proj_15/MatMul_myl0_257": {
+        "calls": 10,
+        "total_ms": 0.0884480020031333
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_258": {
+        "calls": 10,
+        "total_ms": 0.03395200055092573
+      },
+      "/mlp/up_proj_15/MatMul+/mlp/gate_proj_15/MatMul_myl0_259": {
+        "calls": 10,
+        "total_ms": 0.22057600133121014
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_260": {
+        "calls": 10,
+        "total_ms": 0.029696000972762704
+      },
+      "/mlp/down_proj_15/MatMul_myl0_261": {
+        "calls": 10,
+        "total_ms": 0.15603199787437916
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_262": {
+        "calls": 10,
+        "total_ms": 0.03481600061058998
+      },
+      "/v_proj_16/MatMul+/k_proj_16/MatMul+/q_proj_16/MatMul_myl0_263": {
+        "calls": 10,
+        "total_ms": 0.09625600092113018
+      },
+      "__mye439383_myl0_264": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439385_myl0_265": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_266": {
+        "calls": 10,
+        "total_ms": 0.046079999301582575
+      },
+      "__mye439387_myl0_267": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_268": {
+        "calls": 10,
+        "total_ms": 0.031744000967592
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_269": {
+        "calls": 10,
+        "total_ms": 0.049151998944580555
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_270": {
+        "calls": 10,
+        "total_ms": 0.02992000081576407
+      },
+      "__mye439389_myl0_271": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_272": {
+        "calls": 10,
+        "total_ms": 0.8998400121927261
+      },
+      "/o_proj_16/MatMul_myl0_273": {
+        "calls": 10,
+        "total_ms": 0.0901120025664568
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_274": {
+        "calls": 10,
+        "total_ms": 0.03520000050775707
+      },
+      "/mlp/up_proj_16/MatMul+/mlp/gate_proj_16/MatMul_myl0_275": {
+        "calls": 10,
+        "total_ms": 0.21753599867224693
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_276": {
+        "calls": 10,
+        "total_ms": 0.02793600084260106
+      },
+      "/mlp/down_proj_16/MatMul_myl0_277": {
+        "calls": 10,
+        "total_ms": 0.15708799846470356
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_278": {
+        "calls": 10,
+        "total_ms": 0.03571200021542609
+      },
+      "/v_proj_17/MatMul+/k_proj_17/MatMul+/q_proj_17/MatMul_myl0_279": {
+        "calls": 10,
+        "total_ms": 0.0954560013487935
+      },
+      "__mye439391_myl0_280": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__mye439393_myl0_281": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshConcReshReplReshMove_myl0_282": {
+        "calls": 10,
+        "total_ms": 0.0471039991825819
+      },
+      "__mye439395_myl0_283": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "__myl_ReshSlicNegSlicConcMulMulAdd_myl0_284": {
+        "calls": 10,
+        "total_ms": 0.032768000615760684
+      },
+      "__myl_ConcReshReplReshTranReshMove_myl0_285": {
+        "calls": 10,
+        "total_ms": 0.04838399915024638
+      },
+      "__myl_ReshTranSlicNegSlicConcMulMulAddReshMove_myl0_286": {
+        "calls": 10,
+        "total_ms": 0.028800000436604023
+      },
+      "__mye439397_myl0_287": {
+        "calls": 10,
+        "total_ms": 0.0
+      },
+      "_gemm_mha_v2_myl0_288": {
+        "calls": 10,
+        "total_ms": 0.8975360095500946
+      },
+      "/o_proj_17/MatMul_myl0_289": {
+        "calls": 10,
+        "total_ms": 0.09027200285345316
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCast_myl0_290": {
+        "calls": 10,
+        "total_ms": 0.03414400038309395
+      },
+      "/mlp/up_proj_17/MatMul+/mlp/gate_proj_17/MatMul_myl0_291": {
+        "calls": 10,
+        "total_ms": 0.21411199867725372
+      },
+      "__myl_MulMulMulAddMulTanhAddMulMulMul_myl0_292": {
+        "calls": 10,
+        "total_ms": 0.029152000788599253
+      },
+      "/mlp/down_proj_17/MatMul_myl0_293": {
+        "calls": 10,
+        "total_ms": 0.15401599649339914
+      },
+      "__myl_SlicSlicSlicCastAddMulAddCastMulMeanAddSqrtDivMulMulAddCastCast_myl0_294": {
+        "calls": 10,
+        "total_ms": 0.03584000049158931
+      },
+      "/action_out/MatMul_myl0_295": {
+        "calls": 10,
+        "total_ms": 0.11369600147008896
+      }
+    }
+  },
+  "target_device_latency_accepted": false
+}

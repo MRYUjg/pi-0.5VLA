@@ -1,0 +1,417 @@
+{
+  "inputs": [
+    {
+      "name": "image_embeddings",
+      "shape": [
+        1,
+        768,
+        2048
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "tokens",
+      "shape": [
+        1,
+        200
+      ],
+      "dtype": "DataType.INT64"
+    },
+    {
+      "name": "pad_mask",
+      "shape": [
+        1,
+        968
+      ],
+      "dtype": "DataType.BOOL"
+    },
+    {
+      "name": "position_ids",
+      "shape": [
+        1,
+        968
+      ],
+      "dtype": "DataType.INT64"
+    },
+    {
+      "name": "attention_mask",
+      "shape": [
+        1,
+        1,
+        968,
+        968
+      ],
+      "dtype": "DataType.FLOAT"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "prefix_pad_mask",
+      "shape": [
+        1,
+        968
+      ],
+      "dtype": "DataType.BOOL"
+    },
+    {
+      "name": "key_0",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_0",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_1",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_1",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_2",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_2",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_3",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_3",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_4",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_4",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_5",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_5",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_6",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_6",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_7",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_7",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_8",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_8",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_9",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_9",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_10",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_10",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_11",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_11",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_12",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_12",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_13",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_13",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_14",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_14",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_15",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_15",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_16",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_16",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "key_17",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    },
+    {
+      "name": "value_17",
+      "shape": [
+        1,
+        1,
+        968,
+        256
+      ],
+      "dtype": "DataType.BF16"
+    }
+  ]
+}

@@ -1,0 +1,1900 @@
+{
+  "algorithm": "RTN",
+  "layers": [
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_000.pt",
+      "sha256": "15bfb6bd9385884f22b1853935f2d8ca128863e4e3e5a33ca9c92f5ffe824a01",
+      "seconds": 0.8523597717285156,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.009889433160424232,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_001.pt",
+      "sha256": "496cc0f2db5b186df9cdddc9c43a3dc57a1ec6f18dcc9eb250ea6f7cc70f864c",
+      "seconds": 0.08363747596740723,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.0076681096106767654,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_002.pt",
+      "sha256": "01c975173879701f6f9cb3813b321812ac15b0533976d78a73429bfa09084ca8",
+      "seconds": 0.07591485977172852,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.009570876136422157,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_003.pt",
+      "sha256": "b948d4ae5803ea1a2b2bd15c226767f08298e08b27c90df74f8d0855ebf7563b",
+      "seconds": 0.34308385848999023,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.028862062841653824,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_004.pt",
+      "sha256": "dce7033bcba107651f60d80c3f80d0d481dd8b2b74766f5805e7b5e2f8d71ea0",
+      "seconds": 2.7702720165252686,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.02248169481754303,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_005.pt",
+      "sha256": "96546f6dc83e02dc1d40eba842e3743bd0177496b92209830e0e4efcb0e6dd43",
+      "seconds": 2.9689669609069824,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.020769648253917694,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_006.pt",
+      "sha256": "4e7fb62725f2e26aeee1b6264188467220faca7f8fb8c0ce48d4bb7e8a3ccf07",
+      "seconds": 3.0828709602355957,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.006357425823807716,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_007.pt",
+      "sha256": "008f191793220a0e16039ab3c8c8cfe422ed941205601700dcb4e2ee055a4096",
+      "seconds": 0.3347129821777344,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.007040670141577721,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_008.pt",
+      "sha256": "b348d190c0d1333709806e679a900f2279aebfc2e306aa99fb3cc99399148c8c",
+      "seconds": 0.0737295150756836,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.007766727823764086,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_009.pt",
+      "sha256": "413e3cdfe7a6eedf4bc27da1334688f741fcc07813c08d008a4496cbbadb5ce1",
+      "seconds": 0.09019303321838379,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.007466789335012436,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_010.pt",
+      "sha256": "6c3bc443e5c01a0247202885cbf289b96a4472dcf8d85b38ad594b6f03155293",
+      "seconds": 0.33679771423339844,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.0026402936782687902,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_011.pt",
+      "sha256": "fb0fdabc017a629a0594c82b9e60d579bb1caa829a48f2dd325295266a01c32b",
+      "seconds": 2.630094051361084,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.005364834330976009,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_012.pt",
+      "sha256": "81f13f230adb7ef0b08e5a56a58f54e87bc8e769ac8dd92dbc0a7450a8044b4f",
+      "seconds": 2.6363117694854736,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.0060112979263067245,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_013.pt",
+      "sha256": "901193960535fd812880cc40b916c5c791eb71f63a77f32fd673ea557264ccf0",
+      "seconds": 2.922102928161621,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.007233850657939911,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_014.pt",
+      "sha256": "0aaaf7169b2a2e937f1d43daa3635ebaaa9ef72c9ba1e13f7e681262a00ca247",
+      "seconds": 0.31853628158569336,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.007599374745041132,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_015.pt",
+      "sha256": "be0412baa1494f0407e7d2d62f03cf923287d2bcd81c91006f94afa9f2df8680",
+      "seconds": 0.07306122779846191,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.009935119189321995,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_016.pt",
+      "sha256": "2ff17a6202e2a0e64b2c91b7076073f9494596a225d2e48155916dff096d5d29",
+      "seconds": 0.08602523803710938,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.006238045170903206,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_017.pt",
+      "sha256": "7e0a90f2da6224dd5429d5d57c74a630ea0a72fb704405eb26ef28d27314e21d",
+      "seconds": 0.3255636692047119,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.0012885285541415215,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_018.pt",
+      "sha256": "5451fd045a6577d9b78643bcdac929932f3d433446c9dfbf86220901516bab9c",
+      "seconds": 2.723675012588501,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.0077216606587171555,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_019.pt",
+      "sha256": "7775cbdc02c1ed73dd6452e4c490f813c514513f818c61d2f749cd237fb5a62d",
+      "seconds": 2.7054944038391113,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.00813775323331356,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_020.pt",
+      "sha256": "3884c498f4d1c4a0057fa248d383c3f098bf5e9678fb3c2f758cbd58e0f6c445",
+      "seconds": 3.313737392425537,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.006159821525216103,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_021.pt",
+      "sha256": "6be6027fb5467163b6afe9f61b0071c2d0ed624cc09d47120c9d2797271a6992",
+      "seconds": 0.3591768741607666,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.00909500103443861,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_022.pt",
+      "sha256": "dce920a98d1d0c1e121e7f14d01d64a02e6c87f17d5ae2ed342d8c8ecf47d2ea",
+      "seconds": 0.07807612419128418,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.01207139901816845,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_023.pt",
+      "sha256": "8114b6132ee5053b347784bd01bbb3f4436ce19cb6726827ac857695332bf0d0",
+      "seconds": 0.09263110160827637,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.009725813753902912,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_024.pt",
+      "sha256": "ef03f513908d94d174664a5d0189d8df5e0eef70725ab66fdc506850f3f32657",
+      "seconds": 0.32935094833374023,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.002898641861975193,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_025.pt",
+      "sha256": "cd43073bda3a3fbbe97fb9fb514f170fa5ffdd5629f302d949a97f255bcaa195",
+      "seconds": 2.703845977783203,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.004606421105563641,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_026.pt",
+      "sha256": "e7c544bbf94c113489485609f751e7ec1a4e8e69693307db5eac0c594abd24e3",
+      "seconds": 3.0029516220092773,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.005451435223221779,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_027.pt",
+      "sha256": "284d88d93323046754b8e0fc03ed48a437eb5d9a1f0a6dea82e932230f0b5333",
+      "seconds": 3.378110647201538,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.007624526042491198,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_028.pt",
+      "sha256": "0b22d7385f0d3d734d21af3c8f4b8ed846cd5f83119cd2a480dc88ca79e6b4dc",
+      "seconds": 0.3291151523590088,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.010148799046874046,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_029.pt",
+      "sha256": "4dbb105bd981aa64766b36de343c5a640a5bc035dffd231e8a3b367e812d1ac2",
+      "seconds": 0.08579158782958984,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.012620145455002785,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_030.pt",
+      "sha256": "032373f1b456e32050b008d2d5c64435f98aca37186230422fb4d687647c4a02",
+      "seconds": 0.08455801010131836,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.007545351982116699,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_031.pt",
+      "sha256": "6f919ac686c4178112f735f37bfc346d5e2eeb8ef9da20ebb8f873badd1b2e42",
+      "seconds": 0.32675814628601074,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.0021038001868873835,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_032.pt",
+      "sha256": "bb83cb35c9c61a33e44e3d95c177bb28a46c09c06112bb4640c00cb85f90a4c4",
+      "seconds": 3.190335750579834,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.004427928011864424,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_033.pt",
+      "sha256": "bbf6d30167b4562edcfb05f6b1ceb1fe455be4aaa28b8717d95c9773fa00bb91",
+      "seconds": 3.117324113845825,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.004927386995404959,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_034.pt",
+      "sha256": "4986cb54e283273e96ed07931d29d9d33b537a9030ef5f6eeab841d3f127a1d6",
+      "seconds": 3.3965468406677246,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.01066255196928978,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_035.pt",
+      "sha256": "f498e887f8a948703227d587af96645ba888890b5bdf63651db9eb268a6ba156",
+      "seconds": 0.3348660469055176,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.009169984608888626,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_036.pt",
+      "sha256": "73e10973470bf3abb0528680ae4dcb94d95665d3749685aaaef6d6b2828caf1e",
+      "seconds": 0.07657670974731445,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.01073402352631092,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_037.pt",
+      "sha256": "9384d80b6e66439146c5cbf17e68762a344f2e016d3e3a12edf0ba5a75811fec",
+      "seconds": 0.07532739639282227,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.007125077769160271,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_038.pt",
+      "sha256": "bcc3811b3a887e18b52df672b2c8041c7c011ce902b44584522ea632b58d71f4",
+      "seconds": 0.33731937408447266,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.00265189865604043,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_039.pt",
+      "sha256": "bbe7d206ff40a2b030ee322f8efbcd135d85b37fd63fc147c1a6743d03d54c02",
+      "seconds": 2.787198066711426,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.005118293687701225,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_040.pt",
+      "sha256": "b924bae58c16bc53f7e2b1450ade251e703fb86eb35d2499124d1733c53ef5f7",
+      "seconds": 2.5790417194366455,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.005652573890984058,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_041.pt",
+      "sha256": "ebfa31073ff8a829618769ca5eaa7029450ff062145e556ce1fe6cca920f0c1f",
+      "seconds": 3.1290197372436523,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.012393427081406116,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_042.pt",
+      "sha256": "01a8344cf0dcfa17a4912cead3b7ca2ed875125b4ff45cc2219b4d610520b94e",
+      "seconds": 0.3338625431060791,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.011235813610255718,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_043.pt",
+      "sha256": "c610c42aad4b58c8ff73c0ed40941174e3e1e374855d85d68311792aff3ec581",
+      "seconds": 0.07636451721191406,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.011092571541666985,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_044.pt",
+      "sha256": "c9a60463a432ae6649009dc88faa02fe0ea3bf99d364ec76ad660ffcee7d7869",
+      "seconds": 0.09513354301452637,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.012070898897945881,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_045.pt",
+      "sha256": "f7f321a58fb4d12675970b1372c5e0ff7b826d274cf64df7b24d833f49998011",
+      "seconds": 0.3340263366699219,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.006419026292860508,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_046.pt",
+      "sha256": "e8c4a22e0aef65121d6f4901c9d4ff35b5c3e945bb2647750dcf88dd2c213111",
+      "seconds": 2.740368604660034,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.00697732251137495,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_047.pt",
+      "sha256": "776504e5d8c0c71ace0ac56af03d976d48f511199102a5525f8fb40ba0e4647f",
+      "seconds": 2.6433088779449463,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.007265754975378513,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_048.pt",
+      "sha256": "09f9bf3c3d9de5b3cd6e9c11da9421f6634c5cd44efc22720338d351ab4f5553",
+      "seconds": 3.2588160037994385,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.012514298781752586,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_049.pt",
+      "sha256": "feb05c2e320b0e2b33a65fdda8306a5162ad925968070f43eac8583f05b0ddfd",
+      "seconds": 0.3695666790008545,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.011167947202920914,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_050.pt",
+      "sha256": "de2e688c56a430cf873bd622231f612e6b2ee145b1590ab0d66fd00ff3967b25",
+      "seconds": 0.08373212814331055,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.014184894040226936,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_051.pt",
+      "sha256": "d9d20ec1008a3c380fd78400b0e13763547a3536897e463afe2c0a127f4d1888",
+      "seconds": 0.09867048263549805,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.009755349718034267,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_052.pt",
+      "sha256": "10d453750e966c006e6bb34b7c2e3573a75787e97a5a84aa4358491477e87eb2",
+      "seconds": 0.3263435363769531,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.003009563311934471,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_053.pt",
+      "sha256": "2ffda348f215ae4486c9313a16b25fca466e45a966fd1f6d7200f35425f3c256",
+      "seconds": 2.608635187149048,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.0062115611508488655,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_054.pt",
+      "sha256": "8891eabaa945c28ae056f76234eebbce985c49ae8ad9435fbe38042b0fedb8a4",
+      "seconds": 2.7857820987701416,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.006645140238106251,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_055.pt",
+      "sha256": "1fd8388bede383f915ff2be133e93020c8ad1144b4c8474285d78cd74e24f185",
+      "seconds": 3.3917019367218018,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.01240770984441042,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_056.pt",
+      "sha256": "8e36c8400764175f3977625d318b730bd74cc6f91ce60f377d97e72e2c96c264",
+      "seconds": 0.3304314613342285,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.013930661603808403,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_057.pt",
+      "sha256": "2f2fde9af8bc5110e8e8c22846db603becbcedf8db160907f05a47a76e80e839",
+      "seconds": 0.08049750328063965,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.01798471063375473,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_058.pt",
+      "sha256": "d0eaa839e3729d90bc94598673192999cb44380f5db28c197657b37e4e8a7e77",
+      "seconds": 0.08995628356933594,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.01164712943136692,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_059.pt",
+      "sha256": "0dee6b344917b7024bb9f9132787d9011b489966ce7e5e74328bc97cf36abaa9",
+      "seconds": 0.3425877094268799,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.005281461402773857,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_060.pt",
+      "sha256": "bf58f2d170c909add6a3c56bd76d3a2ab9fa3237cee48741f569defe2a01ecf0",
+      "seconds": 2.758002519607544,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.006482245400547981,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_061.pt",
+      "sha256": "f507c1d8798f559f5e2fde0552df4076d474e0f8c8cd5430bec3509548bff01c",
+      "seconds": 2.6908376216888428,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.007220019586384296,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_062.pt",
+      "sha256": "3d0294e0d2bd87f420fc8d20951c94e8ba6636d248900769545f80128dd3673a",
+      "seconds": 2.9782941341400146,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.01734583079814911,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_063.pt",
+      "sha256": "95736c7462eb568d8aed13c0bd7bc5189defb2f5ce75bd3f5518842e0332651b",
+      "seconds": 0.315781831741333,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.026721034198999405,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_064.pt",
+      "sha256": "9cc692d4057edb371c1a18603e0dacd7951c81d464d1ab38f6e652e27bba5895",
+      "seconds": 0.07274079322814941,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.029023269191384315,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_065.pt",
+      "sha256": "e3d2d38bae011a94a1cbe1a52b8ad6b70bad8df548c249125db61348a40d8f98",
+      "seconds": 0.07663273811340332,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.025660313665866852,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_066.pt",
+      "sha256": "adb277bf052df6ebf5f913533246ca76acb57731b842f6a49479d6fe0a09168a",
+      "seconds": 0.32242369651794434,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.009884554892778397,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_067.pt",
+      "sha256": "a12b4eb73c00fdd2c35a099b5cc498203335307858544e221d967be4354b9587",
+      "seconds": 2.683366060256958,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.008083736523985863,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_068.pt",
+      "sha256": "02c44a847b7ce4885aac9f407acf710a5fd333d327f556a3892d3e61a38ee07c",
+      "seconds": 2.712695598602295,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.008763410151004791,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_069.pt",
+      "sha256": "21cb4904896215cad8e69fbcdeac5772e507ad30ff33bf64956f419b1dfa16ab",
+      "seconds": 3.1150410175323486,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.027778252959251404,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_070.pt",
+      "sha256": "bb0c09f833e5cf912f80b614346177dd1412bdef66b3bc2fa0b60859dc764667",
+      "seconds": 0.3370082378387451,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.024716440588235855,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_071.pt",
+      "sha256": "aef842479a7e8e06556df3682f2526cfc1fd334fc0d4c745eab8f591ecef19e7",
+      "seconds": 0.08123183250427246,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.025039486587047577,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_072.pt",
+      "sha256": "44b1d7e1628f74e94ffaaf8961db2bb1d17dfe9d13040e2ce100510053fbda59",
+      "seconds": 0.07865309715270996,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.024291913956403732,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_073.pt",
+      "sha256": "254d0aed21d03e5a505590dfd8bdff06508e029fea3c317ea8f383fbbca50868",
+      "seconds": 0.32966160774230957,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.010548684746026993,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_074.pt",
+      "sha256": "ffe602b4ed90fbbfbc9dc91a41fcd96976f0c8dcea7c0ef25c6868f9a896d56c",
+      "seconds": 2.7043027877807617,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.011155478656291962,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_075.pt",
+      "sha256": "e0345811f8cbd2bfa5488c5642a4982c834292cc8aa505d8f2bc7c4095e7c631",
+      "seconds": 2.685049295425415,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.012659426778554916,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_076.pt",
+      "sha256": "8ce118c72d7c1ea3463e7c0108864167ef3f51d9dd14c31a2e3c2c85b680551e",
+      "seconds": 3.279221296310425,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.039285387843847275,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_077.pt",
+      "sha256": "17fa210e3055328e13b6f421954dc2c5eda90de911e6454bc00dc9fb7748391e",
+      "seconds": 0.3676567077636719,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.03552256152033806,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_078.pt",
+      "sha256": "35c007898b0b363a216763d0978defc3038f3e4ff4718079c20cfcb2104ee9a9",
+      "seconds": 0.0787808895111084,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.025054749101400375,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_079.pt",
+      "sha256": "2ca073a33637cf41614b7498706a3b2177d222847e603edbf7c113aed3cba6cc",
+      "seconds": 0.0976099967956543,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.038875482976436615,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_080.pt",
+      "sha256": "6344c428d71553f369340a669bd4aed9cb5fe60631425cc2876853dfc593477d",
+      "seconds": 0.32270383834838867,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.009449672885239124,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_081.pt",
+      "sha256": "bcce96e1b7c45fd814bb366f18bb18c56b5397317f3865ca8852611e0a7e4186",
+      "seconds": 2.6669600009918213,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.011982392519712448,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_082.pt",
+      "sha256": "6e90b8f9884ecb43ee5eec0a171996649e30b035b4a2052da9c9ac23cd276e27",
+      "seconds": 2.605652093887329,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.013852622359991074,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_083.pt",
+      "sha256": "2e84243bd65db51a83569188764afac549b4baba2c7a5cbd520d56fc0b9cfad6",
+      "seconds": 3.2963268756866455,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.07692185044288635,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_084.pt",
+      "sha256": "6df53d9730f14738a430518c0b2ddeb7444eb748e09504f5d09049c0da00d6bc",
+      "seconds": 0.3498716354370117,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.03803563863039017,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_085.pt",
+      "sha256": "af8a4fc1378d40c828bb03a1897565e3a6ae04f6379570f4aa396cbe9b8aa7ff",
+      "seconds": 0.08145713806152344,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.031177660450339317,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_086.pt",
+      "sha256": "ba3b87cfbd2706d8ef27ec663429fe108705ab3847548f7e8c662735c865d975",
+      "seconds": 0.07718110084533691,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.09314467012882233,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_087.pt",
+      "sha256": "0f1af6e12ebaf670f9f508ea2132cfaec0e54c92fe6f6f0ac63ea2c75d00827e",
+      "seconds": 0.3343677520751953,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.0606011338531971,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_088.pt",
+      "sha256": "937004e636bc08aa70d1200cc958d74cc484b11ec2408739fd7defce7decccbe",
+      "seconds": 2.646327257156372,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.016855504363775253,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_089.pt",
+      "sha256": "bb9d37e4a5be88610648598b6b64b02cbae862da9fefe87dce6e4cb656c3409f",
+      "seconds": 2.7008957862854004,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.020417965948581696,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_090.pt",
+      "sha256": "7c070c23894b4387af6ce7809e8c978ba76cf25f3474fa9a52264ca7e9d49ce3",
+      "seconds": 3.1144721508026123,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.12829194962978363,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_091.pt",
+      "sha256": "bdeea3ab7e249ac2dfd41e1f3accf6ce858685e7f5eb0433767fbf617e4ab6b7",
+      "seconds": 0.34836721420288086,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.03908291831612587,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_092.pt",
+      "sha256": "f22852a047e0c554a6a3f1917a3727a80471adcfaa62aa0cc614377c27b8eaf2",
+      "seconds": 0.07880234718322754,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.030399445444345474,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_093.pt",
+      "sha256": "b7099a1365e60771428953337ae2f918346e9d0f03f3d81c04395790a88b684a",
+      "seconds": 0.07754921913146973,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.07577993720769882,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_094.pt",
+      "sha256": "f6f7437b364991a291281e5a1dfacd4239895e652d18fe747a45f97b648d9ced",
+      "seconds": 0.34880709648132324,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.01576348766684532,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_095.pt",
+      "sha256": "ee806e2a9690e463c9362555ea05aedff8494c6d23536c6b45aa0cfeac62155d",
+      "seconds": 3.185136556625366,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.027484532445669174,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_096.pt",
+      "sha256": "86c2cfe9f94cb95c19d225aca4d14262e75e6502b9c7f7e77ddaa215cf594155",
+      "seconds": 2.7976644039154053,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.034087054431438446,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_097.pt",
+      "sha256": "c9039e3ab9288e1430086e0cc2d03b3678ee556aaac88beee5c943f48e67f4b0",
+      "seconds": 4.201791048049927,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 0.7017233371734619,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_098.pt",
+      "sha256": "c9915fd5ab8380b216499f344a42174b13f21117bc36640e199cb45631e475eb",
+      "seconds": 0.3715066909790039,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.097145214676857,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_099.pt",
+      "sha256": "0d62acae98578e3ee8a40c9e15ad87f325e0f0e9f49eeaa2f73ef08bf5427a60",
+      "seconds": 0.08087801933288574,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.06132647767663002,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_100.pt",
+      "sha256": "c2672bf910e318e52981a5c86b4ea53464a5dc383ec3757fe2dd41a86a279a07",
+      "seconds": 0.07652950286865234,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.3815167248249054,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_101.pt",
+      "sha256": "834fadb044b746c01ce442c406bc01c2a5b3d0745a0b5b43ca300e11d6ba8a74",
+      "seconds": 0.3208146095275879,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.09245438873767853,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_102.pt",
+      "sha256": "deb56eeb81b6b4ede4c03abacdbc021b728aa136be3e54f6d88d29817ca8ac8e",
+      "seconds": 2.794157028198242,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.03850824385881424,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_103.pt",
+      "sha256": "77391d7fd699ccccb78d469309bb750873c613584a6d8d6905f243aa5c35e115",
+      "seconds": 2.5887370109558105,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.04840591549873352,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_104.pt",
+      "sha256": "5301043593d168fb494ffe33929fe3b28fb2c0d602494045e1cea6108a47f4ec",
+      "seconds": 3.0255980491638184,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 1.6864413022994995,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_105.pt",
+      "sha256": "a08f1b807e44decddae6bca55e76d31a1c376bc7cacc386a683625ac97028eb3",
+      "seconds": 0.33104872703552246,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.07091739773750305,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_106.pt",
+      "sha256": "6c200d3f483f3bc5559d746a9edb093b9287fbb383abc7b2547b786736f1b034",
+      "seconds": 0.0749056339263916,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.04088565707206726,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_107.pt",
+      "sha256": "9e27e0c12186157c58fdfbedbd52c9b487a77eda697fb888d02cfc5e44374e9c",
+      "seconds": 0.08793902397155762,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.31283193826675415,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_108.pt",
+      "sha256": "ad938264b8a23145b489ca656ba83ad2f0d5b071d3d504e9ed441345773045ae",
+      "seconds": 0.3520660400390625,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.0699428915977478,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_109.pt",
+      "sha256": "b9bafed6658607128889bf2c0f9b19dbb54a70cdd5cfb03f3dd67501d919b3e5",
+      "seconds": 2.790024995803833,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.043875742703676224,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_110.pt",
+      "sha256": "3335b832f5021b5682fe0ae43760379d15f64d01f9087341bc7067468e507736",
+      "seconds": 2.6741931438446045,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.056930966675281525,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_111.pt",
+      "sha256": "1d2db26f1800c8bc87e03f3b9ab265f20d21ce3aa7c15149e1c2889bc8676b25",
+      "seconds": 3.433887481689453,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 9.681913375854492,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_112.pt",
+      "sha256": "c6f1c2e6a2afa1ecec5239ad063918f51c9af1ed6f32f24d377ee3ddc7d63d7d",
+      "seconds": 0.3627204895019531,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.0854974240064621,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_113.pt",
+      "sha256": "7e62281b91fd8aa47feb208218ff74a205e3b05acca587dcec8527aed2c54ae9",
+      "seconds": 0.07565903663635254,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.051520608365535736,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_114.pt",
+      "sha256": "c2a42dd1f98901998150e9dd55d568f041c04b54532b5fee43a6abf48ff6f263",
+      "seconds": 0.09316372871398926,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.3025591969490051,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_115.pt",
+      "sha256": "46e141d745411a7f02e0344a6f8625727c8e471a41f98da3f3458b711760106c",
+      "seconds": 0.3344249725341797,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.1475585252046585,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_116.pt",
+      "sha256": "e1f09bae8a97006a18c4c8eaf567cb55bf22a305e865bd0438bcda6cde1942b1",
+      "seconds": 2.637944221496582,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.08897773176431656,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_117.pt",
+      "sha256": "1a4d6c9430f266a755a969567f72800b6509cd37e7199711486c184b7ab2b0d4",
+      "seconds": 2.5731201171875,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.11390942335128784,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_118.pt",
+      "sha256": "7d7f0d7996ee2dd9b166aa52b10230bf717c7229bcf3a2272c7dee84b6a52b04",
+      "seconds": 3.800870895385742,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 368.5350341796875,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.q_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_119.pt",
+      "sha256": "0be73af2b8af48dfef2d206f0876637225e851315621ae69c1bdac6712ba79e5",
+      "seconds": 0.34047651290893555,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.17248666286468506,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.k_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_120.pt",
+      "sha256": "fda4ccce709077925979d91e2789362abfdbbfe44f06a3ee9bc9aa08872869b3",
+      "seconds": 0.07878851890563965,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.09661136567592621,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.v_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_121.pt",
+      "sha256": "992e3189526e14bfc833c768d099fe1d85277ee106b8679c12b5023a72c6ff3a",
+      "seconds": 0.09174489974975586,
+      "packed_weight_bytes": 262144,
+      "scale_bytes": 8192,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.38223421573638916,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.o_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_122.pt",
+      "sha256": "c9e5f4c80ac3d0bcbdf19f98d8f0b395fccf883a1d5c0970d10342436e725b1b",
+      "seconds": 0.33228540420532227,
+      "packed_weight_bytes": 2097152,
+      "scale_bytes": 65536,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 9.386774063110352,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.gate_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_123.pt",
+      "sha256": "e7e288d43c6d6f71939e7b2137c64490d9e76eacb6d625497e2d13ef47a07c17",
+      "seconds": 3.630295515060425,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.143310546875,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.up_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_124.pt",
+      "sha256": "2102b2da06f28cc8200ea5b3abf326cf87a2331d8fa3687cb7deca884802cec9",
+      "seconds": 3.398167133331299,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 4096,
+      "input_tokens": 8000,
+      "output_mse": 0.19252589344978333,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.down_proj",
+      "file": "/work/runs/trt_t0_t2_20261007_r1/rtn_r1/packed_layers/layer_125.pt",
+      "sha256": "208317b3f3647dec5bbeede48f0d537e92862c26607a2baf943e20d77370f203",
+      "seconds": 3.4963324069976807,
+      "packed_weight_bytes": 16777216,
+      "scale_bytes": 524288,
+      "input_multiplier_bytes": 32768,
+      "input_tokens": 8000,
+      "output_mse": 550.5203247070312,
+      "metadata": {
+        "method": "RTN engineering baseline"
+      },
+      "reload_exact": true
+    }
+  ],
+  "layer_count": 126,
+  "packed_weight_bytes": 990904320,
+  "scale_bytes": 30965760,
+  "real_packing": true,
+  "reload_exact": true
+}

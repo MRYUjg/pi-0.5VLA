@@ -1,0 +1,24 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "-e",
+    "PYTHONPATH=/app/src:/app/packages/openpi-client/src",
+    "-e",
+    "OPENPI_DATA_HOME=/openpi_assets",
+    "-e",
+    "HF_HUB_OFFLINE=1",
+    "pi05-trt-t0t2-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t0_t2_20261007_r1/t1_attempt_r6_source/t1.py",
+    "--out",
+    "/work/runs/trt_t0_t2_20261007_r1/t1_attempt_r6",
+    "--reference",
+    "/work/runs/trt_t0_t2_20261007_r1/t0_attempt_r4/reference_inputs.pt",
+    "--reuse",
+    "/work/runs/trt_t0_t2_20261007_r1/t1_attempt_r5",
+    "--attention-rounding"
+  ],
+  "exit_code": 0,
+  "seconds": 211.35254311561584
+}

@@ -1,0 +1,3107 @@
+{
+  "stage": "vision",
+  "algorithm": "AWQ",
+  "layers": [
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_000.pt",
+      "sha256": "9ec4138b0e84ce7948055ad748072c600129810ac5e29d038b424046bfb6504a",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0010498162591829896,
+      "seconds": 5.033539772033691,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.193359375,
+        "pre_scale_max": 5.1875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_001.pt",
+      "sha256": "23f73c48d00773277fd90a49cc7c437540dea9d4567495778bea278da084e3d2",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.00017005136760417372,
+      "seconds": 0.2333087921142578,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.21484375,
+        "pre_scale_max": 4.65625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_002.pt",
+      "sha256": "00c75ee48e61f7453d72ebb7e12593bd6eda2d2afef4cf301fe48bef55197b56",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0008155133109539747,
+      "seconds": 0.21696782112121582,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.193359375,
+        "pre_scale_max": 5.15625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_003.pt",
+      "sha256": "3762e1090b927e13bfc0bd96e3feabd67829999bf6b401b88e94a9a948e8dcf6",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 4.040270869154483e-05,
+      "seconds": 0.20787930488586426,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.61328125,
+        "pre_scale_max": 1.625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_004.pt",
+      "sha256": "74bf0692d309559ec16c31decc90cb97fe6564f91a4ca809a1cb3c1823e22ff6",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0016288585029542446,
+      "seconds": 0.3046092987060547,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.240234375,
+        "pre_scale_max": 4.15625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_005.pt",
+      "sha256": "b4f2738b21b63130767561ecf55f70c7ec6056ade00161076a57eb47579649f5",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0007435840088874102,
+      "seconds": 0.3663499355316162,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.006011962890625,
+        "pre_scale_max": 166.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_006.pt",
+      "sha256": "693c27355039d848cf0e711a704513669dae23ced31eb6f74e66c493a73b3ec9",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0008797938353382051,
+      "seconds": 0.20170307159423828,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.205078125,
+        "pre_scale_max": 4.875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_007.pt",
+      "sha256": "aae8bd7b287be561bbb5fcf0f93c910a585b1f574428f112d8652285a0ce040a",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.00041766063077375293,
+      "seconds": 0.20085740089416504,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.3515625,
+        "pre_scale_max": 2.84375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_008.pt",
+      "sha256": "ce4573951cdd932e8c3b28a69119d314c6f59e998f36d9bd8705e76ee094cddb",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0010273443767800927,
+      "seconds": 0.19928288459777832,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.2109375,
+        "pre_scale_max": 4.71875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_009.pt",
+      "sha256": "c332a4c452c47668e09a30b751ca55d57b8550c384a3888bff213cb8420b75c8",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 6.172803841764107e-05,
+      "seconds": 0.20373058319091797,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.59375,
+        "pre_scale_max": 1.6796875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_010.pt",
+      "sha256": "fb7460e51472b04e421811d4cadbcb870e6f2bfbe0223b01f129ec8b3ee2af06",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.002029562136158347,
+      "seconds": 0.4995105266571045,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.21484375,
+        "pre_scale_max": 4.65625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_011.pt",
+      "sha256": "7ece7de7238c41e8a91ffab04af75cdbf41bb0fac097cae4ecaebc62de1f3eaa",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.000524708884768188,
+      "seconds": 0.3578634262084961,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.00010013580322265625,
+        "pre_scale_max": 9984.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_012.pt",
+      "sha256": "deac24502a122fdafc47bdc648246c463bbe8459ec029903c59047012eb114ff",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.002918624086305499,
+      "seconds": 0.20512700080871582,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.40625,
+        "pre_scale_max": 2.46875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_013.pt",
+      "sha256": "98d8ee1941fbfa96de726bff6985140de73f346b12bf71f3c6d7869bece9fff5",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0011552957585081458,
+      "seconds": 0.2056717872619629,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.396484375,
+        "pre_scale_max": 2.515625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_014.pt",
+      "sha256": "380f069f445be85002c603986dd0bca94adcdce6e760ad5a9c9142b347e5de2b",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.002779521979391575,
+      "seconds": 0.19645929336547852,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.40234375,
+        "pre_scale_max": 2.484375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_015.pt",
+      "sha256": "034a86b6e1e580385124acb747483d523597227e5125297da6f6003028fccb46",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0005460347165353596,
+      "seconds": 0.20805120468139648,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.60546875,
+        "pre_scale_max": 1.6484375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_016.pt",
+      "sha256": "f6996631cc2621b18fb74a7a0c7720bb47a5f6a6377f08014af344fdf211e670",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.003874862566590309,
+      "seconds": 0.2995023727416992,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.455078125,
+        "pre_scale_max": 2.203125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_017.pt",
+      "sha256": "b9f2533014a9457a32bcdb012c26a93db52549aa452838fd5a2e0d6dfc4f1c98",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0009984743082895875,
+      "seconds": 0.3832836151123047,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.00543212890625,
+        "pre_scale_max": 184.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_018.pt",
+      "sha256": "45a75a680ca95171ce299fc8cb2d5309e34b889c423b82221e674a2cc4805bd2",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.003976177889853716,
+      "seconds": 0.19761443138122559,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.494140625,
+        "pre_scale_max": 2.03125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_019.pt",
+      "sha256": "f531aa7a37cf371e1c7476e205101de555b70bc6abee7b82c193970cd3635522",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0014585345052182674,
+      "seconds": 0.19655370712280273,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.39453125,
+        "pre_scale_max": 2.53125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_020.pt",
+      "sha256": "5a02f20141bad8ff3e2bad7ed6647f2e0c38599f898c3a32b97ed882d647e94b",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0034355928655713797,
+      "seconds": 0.19647431373596191,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.515625,
+        "pre_scale_max": 1.9375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_021.pt",
+      "sha256": "d774cb7c4a4f9ce99dd18ab3de91f992ea1fce7460004ec30463d142e52535a8",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0007707347976975143,
+      "seconds": 0.19562983512878418,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.671875,
+        "pre_scale_max": 1.484375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_022.pt",
+      "sha256": "67f11a67b02d0ca75a0ed0e331efdfcadbc80baa5b564242ae5267697ea94e49",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.004190437030047178,
+      "seconds": 0.28174805641174316,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.44921875,
+        "pre_scale_max": 2.21875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_023.pt",
+      "sha256": "ad3c665af3a68febba8473951dcad5b15b4dfd49e1a5e9dcff04642a3df5a592",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0010453310096636415,
+      "seconds": 0.36348724365234375,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.005401611328125,
+        "pre_scale_max": 185.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_024.pt",
+      "sha256": "e3f1b3f3806367a57aaa23021e6d0d6639b596a0f54badb86c5dafbaf6cf4647",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.005141636822372675,
+      "seconds": 0.20618200302124023,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.482421875,
+        "pre_scale_max": 2.0625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_025.pt",
+      "sha256": "1e711268871474259ae4a608d02230f66c64538038d12ebc0e5ede52abd7a7fa",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.00322380056604743,
+      "seconds": 0.21238160133361816,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.390625,
+        "pre_scale_max": 2.5625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_026.pt",
+      "sha256": "cac60a23cae1deb19b6f1f57b841bf6da1458ec539682bf4c7ddd53eb9325335",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.004575716331601143,
+      "seconds": 0.21352791786193848,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.51171875,
+        "pre_scale_max": 1.9609375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_027.pt",
+      "sha256": "b2046fae055cb67dad4abd371b3b3f31664bf138c39c786b195496d7d303a498",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0006398809491656721,
+      "seconds": 0.20341014862060547,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.7265625,
+        "pre_scale_max": 1.375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_028.pt",
+      "sha256": "0af35536cc8680fdeaf4fe7da1962917254b52c056ed10a811df6500b9df5750",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.005465014837682247,
+      "seconds": 0.2884492874145508,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.55859375,
+        "pre_scale_max": 1.7890625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_029.pt",
+      "sha256": "1a650a7f27c0500a116145e794aa4523643309f38ee72f69f3b5d604afee6002",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0008960088016465306,
+      "seconds": 0.35628771781921387,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.005401611328125,
+        "pre_scale_max": 185.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_030.pt",
+      "sha256": "6b3e9cf073675d96027c3c850cd6f99139a90a34202ff406ae197cf46d9eb19c",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.005370286758989096,
+      "seconds": 0.20510268211364746,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.55859375,
+        "pre_scale_max": 1.7890625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_031.pt",
+      "sha256": "daf754f06c6bebb301038074c745d2917274d75ac1c89ca2702d94fa33e9b242",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0029561081901192665,
+      "seconds": 0.2052910327911377,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.44140625,
+        "pre_scale_max": 2.265625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_032.pt",
+      "sha256": "4b7870e559476a4a521a31814c1a5a1370b55c48a6d9762aab0401d233af6488",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0046948655508458614,
+      "seconds": 0.1984236240386963,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.55859375,
+        "pre_scale_max": 1.7890625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_033.pt",
+      "sha256": "3783fdfb1e2b7520c91848933885c75c83e5edf22666aa983de02d4cdb5a59f2",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0009801641572266817,
+      "seconds": 0.198899507522583,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.70703125,
+        "pre_scale_max": 1.4140625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_034.pt",
+      "sha256": "f5fb649b76cf978b5ef1618ac81dc95ba25e333864a6a8665bbe02c6f5f7ab33",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0053998748771846294,
+      "seconds": 0.28278279304504395,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.54296875,
+        "pre_scale_max": 1.8359375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_035.pt",
+      "sha256": "ef016df85b1481390896eb08fdd6bc0a2218219065acfdc277d06f8c4b34d424",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0009387723403051496,
+      "seconds": 0.3501424789428711,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.006317138671875,
+        "pre_scale_max": 158.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_036.pt",
+      "sha256": "bd6befc46e2c0839e5a4507b68347070156e2958ae6fc54a428ede1418653735",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.006116216536611319,
+      "seconds": 0.2017686367034912,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.6328125,
+        "pre_scale_max": 1.578125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_037.pt",
+      "sha256": "d5d7eb765a0f13c248713cb7ae47adcb06f7916da23d3379a05de0d2df8875d8",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0038948485162109137,
+      "seconds": 0.20674943923950195,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.51171875,
+        "pre_scale_max": 1.9609375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_038.pt",
+      "sha256": "85ec05007a7e129a123ec48883d227a545b5314b70d9b3240b00b3e54f86a2a1",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.005592134781181812,
+      "seconds": 0.20074987411499023,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.60546875,
+        "pre_scale_max": 1.6484375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_039.pt",
+      "sha256": "9ffaf7a2a7430999e07b414ba81b47f9831439c2c01c0dff92b756c67d32bb6f",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.001356484368443489,
+      "seconds": 0.1998136043548584,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.63671875,
+        "pre_scale_max": 1.5703125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_040.pt",
+      "sha256": "abfbb71ebb460fcacbf4045dc7bd5f7c364831d307b0d2ab2c8d12a363df3eef",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.00694752624258399,
+      "seconds": 0.28540468215942383,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.5703125,
+        "pre_scale_max": 1.75
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_041.pt",
+      "sha256": "1a934b2360ad92fb6e9b90bde89be3683fe509eb1c92e3cd51b74ac960e670a2",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0015486759366467595,
+      "seconds": 0.35959744453430176,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.005279541015625,
+        "pre_scale_max": 189.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_042.pt",
+      "sha256": "d8bfe97ce60bf6feabb4c2f7de61be358b4cbc6f3c06693c01b9fac6c0bab1de",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.006707467138767242,
+      "seconds": 0.2051699161529541,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.5625,
+        "pre_scale_max": 1.78125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_043.pt",
+      "sha256": "f47c56189cfc7c7bfa3aab370c23827d06b837dba0604cbae0773d24c69a3a86",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0035980811808258295,
+      "seconds": 0.19891595840454102,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.39453125,
+        "pre_scale_max": 2.53125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_044.pt",
+      "sha256": "3dab769f8b857a66c6108964d736bdc1e461b2f4d41694765a3508ec4fcc3db9",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.006077264901250601,
+      "seconds": 0.1995089054107666,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.50390625,
+        "pre_scale_max": 1.9921875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_045.pt",
+      "sha256": "c7634cc22672ec6f9215d821775e99a1e974c4ae9b67e7ce1bacb17b34ba0a89",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.001744758919812739,
+      "seconds": 0.20234036445617676,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.625,
+        "pre_scale_max": 1.6015625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_046.pt",
+      "sha256": "0f5421c866e0d0f0c40eb3c8f49a932a68a1c5c1c155652868c86c762e52a009",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.007170578930526972,
+      "seconds": 0.28501248359680176,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.66796875,
+        "pre_scale_max": 1.4921875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_047.pt",
+      "sha256": "50f942c74b63c94cc438caa22b425c16ed2ffac7b75478a05f2a6b7852ebbfc3",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0011880373349413276,
+      "seconds": 0.3465726375579834,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.005462646484375,
+        "pre_scale_max": 183.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_048.pt",
+      "sha256": "cd9fb7b029f8d8e48b50b1e409c767e3bff3ada4c12852474b6182e7dbb2924e",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.007671478670090437,
+      "seconds": 0.20198559761047363,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.61328125,
+        "pre_scale_max": 1.625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_049.pt",
+      "sha256": "8f968992d75cd46aa3d4e1e9d4f519877899acfac4545c646b5df93c6997abda",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.006387373898178339,
+      "seconds": 0.20150971412658691,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.482421875,
+        "pre_scale_max": 2.078125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_050.pt",
+      "sha256": "77f35fab4bbf5c6f9c3ad3282fbe1914f85a1db31ffe529f95bbb5176f61dab4",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.007274193223565817,
+      "seconds": 0.20090341567993164,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.6171875,
+        "pre_scale_max": 1.6171875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_051.pt",
+      "sha256": "78276a455046e02d0bcbaf91cf33b5e47f29e7e55c1505edee842daccc1606d4",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0019120621727779508,
+      "seconds": 0.2106165885925293,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.54296875,
+        "pre_scale_max": 1.8359375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_052.pt",
+      "sha256": "90dbd9f6d8869eb355b29ad476ba0396e74514b47396a52ffe0e574842a64614",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.00800915528088808,
+      "seconds": 0.29614996910095215,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.58984375,
+        "pre_scale_max": 1.6953125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_053.pt",
+      "sha256": "b011413a8f51ba12f00d8fb8467720c0112ffd839efc3ac64e8ebe707dd104cd",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0015793988713994622,
+      "seconds": 0.3453633785247803,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.0057373046875,
+        "pre_scale_max": 174.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_054.pt",
+      "sha256": "3f61070e078b8e838440dcfa3ec12ebd71c136315d2a14e67233a4b88efd58d3",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.007953377440571785,
+      "seconds": 0.21285104751586914,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.59765625,
+        "pre_scale_max": 1.671875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_055.pt",
+      "sha256": "797c34933592f1c6d0745b4c5dd59f42bf111d3686b0ad40531ceaba826e5774",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.005439271684736013,
+      "seconds": 0.20086979866027832,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.419921875,
+        "pre_scale_max": 2.390625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_056.pt",
+      "sha256": "d085d0d3a397d959bd8bb9fb6ef0eb1b82dfd67d4c8ce844fbe4111bf47b20a9",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.00720797386020422,
+      "seconds": 0.1996462345123291,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.56640625,
+        "pre_scale_max": 1.7578125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_057.pt",
+      "sha256": "1172de8310e03a9518d4b33a44e7b966500a40473dce09d083d406cbf2992e79",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0020505725406110287,
+      "seconds": 0.20395565032958984,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.734375,
+        "pre_scale_max": 1.3671875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_058.pt",
+      "sha256": "ceae57fac27c5ef9296927689e405c43257a3d05d41101f946f28c9a7386f541",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.009915059432387352,
+      "seconds": 0.28444552421569824,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.57421875,
+        "pre_scale_max": 1.7421875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_059.pt",
+      "sha256": "02ac52edb35c9e0785cc7c6ffdd59053226bed21913f475b5ff994a5ad40132c",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0015979845775291324,
+      "seconds": 0.3664236068725586,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.005615234375,
+        "pre_scale_max": 178.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_060.pt",
+      "sha256": "cfe13e58176543c3936af2a96ce867d7a8ae9b25699e29ffa1b2bbdf9d3c6212",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.007979906164109707,
+      "seconds": 0.21833276748657227,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.65625,
+        "pre_scale_max": 1.5234375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_061.pt",
+      "sha256": "fa5d8a95f1f12a8c51bfd985b92d2626aea4d31fb87b67f1e232cd1371e2258d",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.006286878604441881,
+      "seconds": 0.2027733325958252,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.3984375,
+        "pre_scale_max": 2.515625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_062.pt",
+      "sha256": "875eb6f277216084699fff01d77125c7699a510f4e154539fa28937d1ea37f43",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.007326921913772821,
+      "seconds": 0.19861245155334473,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.578125,
+        "pre_scale_max": 1.734375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_063.pt",
+      "sha256": "cb6ed754efe0e57e072abaf7bb4b6346931af3a02b6a3105af4fced9ce70419a",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.003279842669144273,
+      "seconds": 0.20008420944213867,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.7734375,
+        "pre_scale_max": 1.296875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_064.pt",
+      "sha256": "e4723767d4e9ef1423702b94435f6cb14ceef95d5da966bc6a425450e7344dbb",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010628823190927505,
+      "seconds": 0.29135608673095703,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.56640625,
+        "pre_scale_max": 1.765625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_065.pt",
+      "sha256": "6c623f7a6bb4eaf9ec95ac335a8210494cb899a375b1439d24ea47a1a8878603",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.001940430491231382,
+      "seconds": 0.3589003086090088,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.005401611328125,
+        "pre_scale_max": 185.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_066.pt",
+      "sha256": "0666d98e7510ecedd86a28db427c536921267919c670cae8024956fb3be78acf",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.008141410537064075,
+      "seconds": 0.20072627067565918,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.68359375,
+        "pre_scale_max": 1.46875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_067.pt",
+      "sha256": "06b780dd79f8db6a784be9b19300c69651b03a17777e4886eeefdbc68057cd2a",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.006897151004523039,
+      "seconds": 0.20305418968200684,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.46484375,
+        "pre_scale_max": 2.15625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_068.pt",
+      "sha256": "8a1202c687d32c3795685538a336d2419dbe0fff299dab70d849e09a8a5b3eb2",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.007559768855571747,
+      "seconds": 0.21697473526000977,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.5546875,
+        "pre_scale_max": 1.8046875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_069.pt",
+      "sha256": "0ae82978175eaa1f60974b1ab282024ac3105119af648a6d27518778f6dc56ed",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.002291526412591338,
+      "seconds": 0.21683764457702637,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.76171875,
+        "pre_scale_max": 1.3125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_070.pt",
+      "sha256": "1160d32b146b8971b9b7acf37357ccb935ce94b9e8a84bd4a19fba39827ee38e",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011563870124518871,
+      "seconds": 0.3150365352630615,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.52734375,
+        "pre_scale_max": 1.8984375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_071.pt",
+      "sha256": "a20c24cb1ecd41cc4e6d6c7ae8fd40467ddd51f731c4988f6aa831be87a9529b",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0022590970620512962,
+      "seconds": 0.3789510726928711,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.0054931640625,
+        "pre_scale_max": 182.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_072.pt",
+      "sha256": "234c4ddc3e8cad01e9fff05f59fa8ba35323db419049a66a5ce12a64cca56a6b",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.009561935439705849,
+      "seconds": 0.20323920249938965,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.640625,
+        "pre_scale_max": 1.5546875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_073.pt",
+      "sha256": "0b1c33e8a49a83361fa2bd15080b2ecc87e46f0ed060685ce82b2587d96d462a",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.00785522349178791,
+      "seconds": 0.19957375526428223,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.431640625,
+        "pre_scale_max": 2.3125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_074.pt",
+      "sha256": "6a333eda9ef4249ac92a7cbd1dd5e8020b5416c9fc68b29db66b625a027c1f99",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.008753016591072083,
+      "seconds": 0.20702338218688965,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.63671875,
+        "pre_scale_max": 1.5703125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_075.pt",
+      "sha256": "847f1d4e0d53485d635ab6a90c841005bef24ff2ab4670713038daebefa1d5ab",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0035755701828747988,
+      "seconds": 0.21873021125793457,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.63671875,
+        "pre_scale_max": 1.5703125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_076.pt",
+      "sha256": "96c89e211388cc191d8b6d429075e3961d606f7fc36a769b1016e0da711fe650",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0126737579703331,
+      "seconds": 0.3192915916442871,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.4453125,
+        "pre_scale_max": 2.25
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_077.pt",
+      "sha256": "02a6209c17b7b54c31f44973d87ddf5f57c8037e43c9e976d1d2fa86b84b16b4",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.002077848184853792,
+      "seconds": 0.40712451934814453,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.005462646484375,
+        "pre_scale_max": 183.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_078.pt",
+      "sha256": "347471f31d7f4a64d05b041d4aad0d591a25c53e3efc927081eb96c8f6dc6d7f",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.009712067432701588,
+      "seconds": 0.22524309158325195,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.7109375,
+        "pre_scale_max": 1.40625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_079.pt",
+      "sha256": "d51460b9322d6df902ef3490e69711ae846240271f74cb1ded0e0dc197cb978b",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.008444334380328655,
+      "seconds": 0.22283482551574707,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.49609375,
+        "pre_scale_max": 2.015625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_080.pt",
+      "sha256": "b8cf1bab8e1e79293e1fa13bee56e35bca1bdfb679412e3d4a365b3f5baa97dc",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.008959325961768627,
+      "seconds": 0.20747876167297363,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.65625,
+        "pre_scale_max": 1.53125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_081.pt",
+      "sha256": "f4a90375c239f2568d8a6205b5567128eaa3593f4369d912d3888702316ab7a4",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.00510442117229104,
+      "seconds": 0.20288586616516113,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.81640625,
+        "pre_scale_max": 1.2265625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_082.pt",
+      "sha256": "0377dd2cfb3ce0f8ecdaaff2cd89d525997ebd6527a78481539ecc746d1a8103",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.013617565855383873,
+      "seconds": 0.3262746334075928,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.443359375,
+        "pre_scale_max": 2.25
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_083.pt",
+      "sha256": "a81e0972082a8e1243249db68e2362cb93119f64f34eec9bff9a933b37371d3e",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0028271053452044725,
+      "seconds": 0.3704812526702881,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.00518798828125,
+        "pre_scale_max": 193.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_084.pt",
+      "sha256": "41997e4479ce1a24b7c3e7d76efccd488971f29a2f48e0fd8ecb8cd9847d8c93",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010559363290667534,
+      "seconds": 0.21510982513427734,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.71484375,
+        "pre_scale_max": 1.3984375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_085.pt",
+      "sha256": "15dd278eda7dd50ea223c2322cffce827749945f0bad9cd31613aecad085b6f3",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010187480598688126,
+      "seconds": 0.22172904014587402,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.43359375,
+        "pre_scale_max": 2.3125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_086.pt",
+      "sha256": "ba358993366b6bb73cacc9beab099efb0b793eefdfc31648b59021e37efce7f5",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010312467813491821,
+      "seconds": 0.21861934661865234,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.67578125,
+        "pre_scale_max": 1.484375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_087.pt",
+      "sha256": "4068c5899357f068b803ef22f605322732eb4b4d6fbc23e2ee69790cf6b02c62",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.005514710210263729,
+      "seconds": 0.21657848358154297,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.81640625,
+        "pre_scale_max": 1.2265625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_088.pt",
+      "sha256": "0fe3260ecbbc5d64d08b571db1db0a9d029f9283ec2db60f008e0cf3e2faea41",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.014972837641835213,
+      "seconds": 0.31241607666015625,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.5078125,
+        "pre_scale_max": 1.9765625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_089.pt",
+      "sha256": "9cfbc91a402d27345ac16f71624f6b93d64b228d616feeeebc628ea229c6518d",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.004663033876568079,
+      "seconds": 0.38799190521240234,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.0042724609375,
+        "pre_scale_max": 234.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_090.pt",
+      "sha256": "09528378d86f122bdda555a7554b71c31cb0745371eb04daef2181a260d2ae16",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011131423525512218,
+      "seconds": 0.2241053581237793,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.66015625,
+        "pre_scale_max": 1.515625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_091.pt",
+      "sha256": "3de2a4e5906c61eb20fc6c6e30f4b937f224b6ab999a77acdbd80b1035cee895",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.009819400496780872,
+      "seconds": 0.22118711471557617,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.455078125,
+        "pre_scale_max": 2.203125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_092.pt",
+      "sha256": "506be167ec0e36ef40461fa2a9e99e8178645d2a38d033d48b79800a0878ce9e",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010872986167669296,
+      "seconds": 0.21770572662353516,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.6640625,
+        "pre_scale_max": 1.5078125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_093.pt",
+      "sha256": "8807f215ad847715ad1c66a0555da1ff29085f0e7b1c4a5998960ed5bbef1877",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.006239109672605991,
+      "seconds": 0.19991135597229004,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.7578125,
+        "pre_scale_max": 1.3203125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_094.pt",
+      "sha256": "940044eafc0836dd205c71df78c700d566e7237107d051f55c75a8306ef2acfa",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.019703371450304985,
+      "seconds": 0.2933840751647949,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.451171875,
+        "pre_scale_max": 2.21875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_095.pt",
+      "sha256": "d45a1ca97ca6616a5ec7dca1c8141f43e7a13a20e6548c38b38e28c3f8567394",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0027325365226715803,
+      "seconds": 0.39050745964050293,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.004638671875,
+        "pre_scale_max": 216.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_096.pt",
+      "sha256": "552890e6af3e07e644791e91770287e24a770cbdf4bb80f880b601bbcdb064b6",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011913062073290348,
+      "seconds": 0.2202913761138916,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.609375,
+        "pre_scale_max": 1.640625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_097.pt",
+      "sha256": "820fabc4162109550110492073a40a686c60657b5ffba3fec3b87cccbbc867f0",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010896868072450161,
+      "seconds": 0.21697545051574707,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.458984375,
+        "pre_scale_max": 2.171875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_098.pt",
+      "sha256": "42c880fab5b3887331b4b4df79dae41163ce04ea856ff25e81f1f3384cebb239",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011686146259307861,
+      "seconds": 0.20473909378051758,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.67578125,
+        "pre_scale_max": 1.484375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_099.pt",
+      "sha256": "5f1101b37e7ae14e99a394d4c8b60b5ac6e09af979c110058b66f60909227ccb",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.006977545563131571,
+      "seconds": 0.21631574630737305,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.828125,
+        "pre_scale_max": 1.203125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_100.pt",
+      "sha256": "b969ebcaa44f55a295fd0ca9ac33bc8cbbb121d44f7095433b677e6ef4259e0d",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.03151857107877731,
+      "seconds": 0.2848367691040039,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.40234375,
+        "pre_scale_max": 2.484375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_101.pt",
+      "sha256": "bd73bb963d5813cf759c8fcefbed36fbc11df81e4684b1fc7e096e9e86c99824",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0021166333463042974,
+      "seconds": 0.3489539623260498,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.0047607421875,
+        "pre_scale_max": 210.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_102.pt",
+      "sha256": "c3363e67d753953e8fd53947ce3f3a254f9c14b9fadf54c328d2f6629732ae98",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.012326040305197239,
+      "seconds": 0.20114922523498535,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.59375,
+        "pre_scale_max": 1.6875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_103.pt",
+      "sha256": "a601a709e06b87019492440179e74570b2685f386e7cf59e8dd87f856c836b7f",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0110244769603014,
+      "seconds": 0.20242810249328613,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.439453125,
+        "pre_scale_max": 2.28125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_104.pt",
+      "sha256": "f7ae0384cedc0f7bfaddd5c35fff7d90e24c4658958abaf195a7dfc93cd91445",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.01232601422816515,
+      "seconds": 0.1968061923980713,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.65625,
+        "pre_scale_max": 1.5234375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_105.pt",
+      "sha256": "9032312fd90fd98fa3a4f4866b9853dd13701a5db602cb42e4bd7a99add6852e",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.006419348530471325,
+      "seconds": 0.2006697654724121,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.90625,
+        "pre_scale_max": 1.1015625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_106.pt",
+      "sha256": "1ae787fec8a2f406633362e24174366bd84f916132f741bbf1edcc46f4729e66",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.05398239940404892,
+      "seconds": 0.2837672233581543,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.40625,
+        "pre_scale_max": 2.453125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_107.pt",
+      "sha256": "6df95f17239cb02e5211dcce4810d1b08a67e9d959720ffaff7866b43305791e",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0015462065348401666,
+      "seconds": 0.33561038970947266,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.0040283203125,
+        "pre_scale_max": 248.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_108.pt",
+      "sha256": "880df4a72afabfef4df8f72dba116c6f5ba2424f8f3aa7c732859dfbe2ef2db0",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010708855465054512,
+      "seconds": 0.22188854217529297,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.625,
+        "pre_scale_max": 1.6015625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_109.pt",
+      "sha256": "0dad1fc551295627ba709a1bc294ef15eb5bc675cffab5bfada32bf0faf89f35",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011007406748831272,
+      "seconds": 0.22142815589904785,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.48828125,
+        "pre_scale_max": 2.046875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_110.pt",
+      "sha256": "2d11eac20ff1d60e368c8424d81f026a2e4be4ed8d6d974d2504b8dee0afef68",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.01102052628993988,
+      "seconds": 0.21854066848754883,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.69140625,
+        "pre_scale_max": 1.4453125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_111.pt",
+      "sha256": "5b7970691a9ef9dc7c87b57281c48220b377e2e0162b5746a783c74436eebd8d",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0070488774217665195,
+      "seconds": 0.20409679412841797,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.71875,
+        "pre_scale_max": 1.390625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_112.pt",
+      "sha256": "a1d181bc81af4b6854072af4b267f239a7df329fd14dba32f380dc96a097216c",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.07039174437522888,
+      "seconds": 0.2895183563232422,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.408203125,
+        "pre_scale_max": 2.453125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_113.pt",
+      "sha256": "efa467b78cbd78598011e471348dfd0beab6ae16bd657efe7cbf942662086b28",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0016055349260568619,
+      "seconds": 0.3349568843841553,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.004852294921875,
+        "pre_scale_max": 206.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_114.pt",
+      "sha256": "1a2f74fe06c262ff507aaef905f7dbe48cb6401f3456d20b02550fe25b837ed5",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011354560032486916,
+      "seconds": 0.2451484203338623,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.59765625,
+        "pre_scale_max": 1.671875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_115.pt",
+      "sha256": "ef97c2156277470a9c068363c6717fe474f2c27067ec105cb549e4cd2d690bfd",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011597520671784878,
+      "seconds": 0.20472073554992676,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.484375,
+        "pre_scale_max": 2.0625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_116.pt",
+      "sha256": "21d6322852c35d4e737dd515c785df83874cb5349ae54fed23131deba52598db",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011834325268864632,
+      "seconds": 0.19997763633728027,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.65625,
+        "pre_scale_max": 1.5234375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_117.pt",
+      "sha256": "6a048a5d22b7fa9465a580838cddc2a05c53415ea16e740b9b1e4766a6cea43b",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.008401969447731972,
+      "seconds": 0.20268774032592773,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.8125,
+        "pre_scale_max": 1.2265625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_118.pt",
+      "sha256": "90cb70a0c77733deeff8ece3c4da88f03528c8262fd67e44548219d950a92926",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.14483925700187683,
+      "seconds": 0.29589414596557617,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.32421875,
+        "pre_scale_max": 3.078125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_119.pt",
+      "sha256": "511fc6e1ef0cee9d2b99b70e8f92afdcb0c4d295c7764bba00072b86510f1973",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0010859136236831546,
+      "seconds": 0.3430197238922119,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.00433349609375,
+        "pre_scale_max": 231.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_120.pt",
+      "sha256": "d34bed7700ce216c021ff61a22d8493c82b2e0f8ae7e779a56336d5f98e18f0a",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011744968593120575,
+      "seconds": 0.20397162437438965,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.62890625,
+        "pre_scale_max": 1.5859375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_121.pt",
+      "sha256": "ff7bfd838a5d050ea69cd243f62cbc8c9485daad6c294d29aa9386ace4eb74d3",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011526703834533691,
+      "seconds": 0.24639201164245605,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.466796875,
+        "pre_scale_max": 2.140625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_122.pt",
+      "sha256": "fd497b755a59aec84d54957c906d919c66bf193fb6f3e186678bd975be137813",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.012187751941382885,
+      "seconds": 0.23604536056518555,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.6328125,
+        "pre_scale_max": 1.5859375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_123.pt",
+      "sha256": "d59cc9abc5641924a483e62eda03cc6ac681c480ac73da11ec9b17c81ca81129",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0058007268235087395,
+      "seconds": 0.23922300338745117,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.7578125,
+        "pre_scale_max": 1.3203125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_124.pt",
+      "sha256": "b602df99145029eb4607291b73611ebd68ac5b9cf395bdf9cffc92ca2d3a5ec7",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.2137921303510666,
+      "seconds": 0.36844491958618164,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.384765625,
+        "pre_scale_max": 2.609375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_125.pt",
+      "sha256": "79d69c7230e5419c626445f094abeee96aa5fa5715790bd1b4ee1bec10c32fe6",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0006071918178349733,
+      "seconds": 0.45499658584594727,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.0062255859375,
+        "pre_scale_max": 161.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_126.pt",
+      "sha256": "b0146fbab8a04a605c12567ff3849074335afb4a1f102210262c7a7aae86e1a7",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.01159119512885809,
+      "seconds": 0.30843043327331543,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.66015625,
+        "pre_scale_max": 1.515625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_127.pt",
+      "sha256": "921330b8467c677e4500b1c55d66b31aa4edffe4981bb6f4c8459c6173909371",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.01154175866395235,
+      "seconds": 0.21840667724609375,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.5390625,
+        "pre_scale_max": 1.8515625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_128.pt",
+      "sha256": "212eefc7ce3889da1e85fcb8247e01b97fa60e9c6d40e03bad6e0e82a6b3f74a",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011723380535840988,
+      "seconds": 0.2694060802459717,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.59375,
+        "pre_scale_max": 1.6796875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_129.pt",
+      "sha256": "4a12849c62882a81800a662627a4f369d081b4a70fd1ff8e7687c112198c2042",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.005807510577142239,
+      "seconds": 0.22235941886901855,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.83984375,
+        "pre_scale_max": 1.1875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_130.pt",
+      "sha256": "43e4925b7cb70f52c55e208a2c5ffe94162d8d06e801104f1bc362cd53acb46c",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.39549174904823303,
+      "seconds": 0.32364439964294434,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.294921875,
+        "pre_scale_max": 3.390625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_131.pt",
+      "sha256": "e38c8f40358d0639810ce62a73db956c481d7023df2e59800ca98a8e8c3bee70",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0007170152966864407,
+      "seconds": 0.35347461700439453,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.0042724609375,
+        "pre_scale_max": 233.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_132.pt",
+      "sha256": "f6e0914ade9676b53c4f09848bbf2e8d0b1d1374dc5f53e3755377640d048c9f",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010949341580271721,
+      "seconds": 0.20952081680297852,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.58984375,
+        "pre_scale_max": 1.6953125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_133.pt",
+      "sha256": "430416d6ed4a0d117f6940896c84c78782bbc32a551ef2a3122f065af6768f91",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011275570839643478,
+      "seconds": 0.21825289726257324,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.5546875,
+        "pre_scale_max": 1.8046875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_134.pt",
+      "sha256": "87946d47f89fac22f46cad2567e21dbb2f5b0bf1545fd8b03fd7e068aa7d204b",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011026187799870968,
+      "seconds": 0.23663091659545898,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.609375,
+        "pre_scale_max": 1.640625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_135.pt",
+      "sha256": "80088b03a6c49323685cd3c886107c8fd70dffe2d235c49324161b2adef47405",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.006379338447004557,
+      "seconds": 0.20553231239318848,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.74609375,
+        "pre_scale_max": 1.34375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_136.pt",
+      "sha256": "e58c8e40860f445ad8bc681d4a71684187fe807c4e9e57bfb6d11b0a0a565c3f",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.5706004500389099,
+      "seconds": 0.29309797286987305,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.333984375,
+        "pre_scale_max": 3.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_137.pt",
+      "sha256": "7d84070beaea66e230de236ac959f1770d397c92095750bd55e0e37d458d42dc",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.00041990375029854476,
+      "seconds": 0.2918248176574707,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.004302978515625,
+        "pre_scale_max": 233.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_138.pt",
+      "sha256": "4f28a942536138121f29e70f83aca3efc3e2bfaf4442aac34a5a10f8e4b29a42",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010796831920742989,
+      "seconds": 0.23135757446289062,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.6640625,
+        "pre_scale_max": 1.5
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_139.pt",
+      "sha256": "5fe0f4fac37f680f7794d2bb4111018f54cd306e7448bb49b9982e184378a044",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.011355460621416569,
+      "seconds": 0.20443487167358398,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.57421875,
+        "pre_scale_max": 1.734375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_140.pt",
+      "sha256": "33cbf95b9aa8f02c6461dc3924978680b3c0a5226a3c2158e76fb13a585cd975",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010851085186004639,
+      "seconds": 0.20370888710021973,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.60546875,
+        "pre_scale_max": 1.6484375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_141.pt",
+      "sha256": "2ccafdd11146fef1dd2a9c89d96cd48e677cac89d6e23b629193fe0b0cf96b52",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.007308516185730696,
+      "seconds": 0.20762968063354492,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.75,
+        "pre_scale_max": 1.3359375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_142.pt",
+      "sha256": "d118307fbbecaf0166ac3f6a777da006187e19f99e3457469572852acf3c78a5",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.7842578291893005,
+      "seconds": 0.3059253692626953,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.41796875,
+        "pre_scale_max": 2.390625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_143.pt",
+      "sha256": "c726f82cabcab9452e522a80b0adac03865f82375b6760bc86834ac8f67976eb",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0004469813429750502,
+      "seconds": 0.34633493423461914,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.004150390625,
+        "pre_scale_max": 241.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_144.pt",
+      "sha256": "3e4ad942e1d2dcb41f0f0d31fc6621cbcb20a6482c0aa8952eaf963bd0df0633",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010938895866274834,
+      "seconds": 0.22942090034484863,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.58984375,
+        "pre_scale_max": 1.6953125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_145.pt",
+      "sha256": "a0eaa27d3b81cbf08553f98b3096861820274a286f2bfd8076efcfe079148c8c",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.01134661864489317,
+      "seconds": 0.2290489673614502,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.5625,
+        "pre_scale_max": 1.78125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_146.pt",
+      "sha256": "3670a8178545742d37534fb3026c2d64839cb2109755534631b60817e45190d9",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010364428162574768,
+      "seconds": 0.2323446273803711,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.609375,
+        "pre_scale_max": 1.640625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_147.pt",
+      "sha256": "fd8a8ef79416465e4e335ef78e2562d04ecd1f567b285dd1071ec7c108798037",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.007436579558998346,
+      "seconds": 0.2190244197845459,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.61328125,
+        "pre_scale_max": 1.625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_148.pt",
+      "sha256": "582997a0e9accde57be835dbdd4533fc6eef775a62a510ad21348e9f93e7ff32",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.9927034378051758,
+      "seconds": 0.3405184745788574,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.42578125,
+        "pre_scale_max": 2.34375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_149.pt",
+      "sha256": "ba750f76f6a10adb085d1cda6d7cd009d577a8a13ed0c764fb9e8ad4a9bd5267",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.0014836142072454095,
+      "seconds": 0.3421802520751953,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.0031585693359375,
+        "pre_scale_max": 316.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_150.pt",
+      "sha256": "542e87de66f18e8fc5e18217c333b573c7790fc1dce3a1e2aeda0ecfdd7c4e04",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.008822436444461346,
+      "seconds": 0.2338113784790039,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.5703125,
+        "pre_scale_max": 1.7578125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_151.pt",
+      "sha256": "523847e2eb822bf7df70c3339e57bf39b93a64f80c097e4ace5d1e7685fd0f0d",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.010447229258716106,
+      "seconds": 0.22987890243530273,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.609375,
+        "pre_scale_max": 1.640625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_152.pt",
+      "sha256": "8e5c5a5f72d1b6794379616f259a33f41b2c9772da5374c64d1cfaff94b9e381",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.008617394603788853,
+      "seconds": 0.23142313957214355,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.5546875,
+        "pre_scale_max": 1.796875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_153.pt",
+      "sha256": "bea5cd45f16e2b4e1fae2a125d91f89f10439132e4bb9be69bd48d492f2e981c",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.007958576083183289,
+      "seconds": 0.21355152130126953,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.65625,
+        "pre_scale_max": 1.5234375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_154.pt",
+      "sha256": "4a021be6d0b61d8216e84f2c1bd14e816169e144ef3883177727bd64eaecd628",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.5993472933769226,
+      "seconds": 0.3134281635284424,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.392578125,
+        "pre_scale_max": 2.546875
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_155.pt",
+      "sha256": "96e8410277a88d3a409ad6d05d3fdf801a72741ba6cb4c34a64461c5410ec3c2",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.004360224585980177,
+      "seconds": 0.40853357315063477,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.003631591796875,
+        "pre_scale_max": 274.0
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.self_attn.k_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_156.pt",
+      "sha256": "9a72afec98aac54cc9778bc45c7439663bc3396199baebca51a9d1249b1658db",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.005990786012262106,
+      "seconds": 0.23853611946105957,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.53125,
+        "pre_scale_max": 1.8828125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.self_attn.v_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_157.pt",
+      "sha256": "69382c0f8b02226fc8dfe5da9abe38ebf49b4fc347eb9455351787d13df39dad",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.006179640535265207,
+      "seconds": 0.22415733337402344,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.609375,
+        "pre_scale_max": 1.640625
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.self_attn.q_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_158.pt",
+      "sha256": "37aa0178f633ba5bd2f4e04b9e8327942eb11441fea5bf4420bfe8f2cadfebbe",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.005512530915439129,
+      "seconds": 0.22518324851989746,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.5625,
+        "pre_scale_max": 1.78125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.self_attn.out_proj",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_159.pt",
+      "sha256": "cf38c8569950fbefec80c2f876a897230e1e0fe2e431134d4278cf954925a558",
+      "original_weight_parameters": 1327104,
+      "packed_parameters_including_zeros": 1327104,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.007161566987633705,
+      "seconds": 0.22376298904418945,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.4921875,
+        "pre_scale_max": 2.03125
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.mlp.fc1",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_160.pt",
+      "sha256": "267633cedbc346361f74f541bcbdeac5913632213f41dd767a7a92e99a9ceed4",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 4958208,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.3231957256793976,
+      "seconds": 0.3204023838043213,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.57421875,
+        "pre_scale_max": 1.734375
+      }
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.mlp.fc2",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_161.pt",
+      "sha256": "efb143919c01ac2a8db3396062802aa44f5419a71732310c8c1c5d175ad57e51",
+      "original_weight_parameters": 4958208,
+      "packed_parameters_including_zeros": 5013504,
+      "pad_K": 48,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.009954354725778103,
+      "seconds": 0.48085975646972656,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.0033721923828125,
+        "pre_scale_max": 296.0
+      }
+    },
+    {
+      "module": "projector.linear",
+      "file": "/work/runs/trt_full4_20261007_r1/awq_vision_r1/packed_layers/layer_162.pt",
+      "sha256": "f1efaf65d922730d30565b1fc9fe629cecb9d4fe28119631e1ddb10a4e533c7a",
+      "original_weight_parameters": 2359296,
+      "packed_parameters_including_zeros": 2359296,
+      "pad_K": 0,
+      "scale_dtype": "torch.bfloat16",
+      "calibration_rows": 3200,
+      "layer_output_mse": 0.016366150230169296,
+      "seconds": 0.24998784065246582,
+      "metadata": {
+        "method": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+        "alpha_step": 0.1,
+        "calibration_rows": 3200,
+        "pre_scale_min": 0.46875,
+        "pre_scale_max": 2.125
+      }
+    }
+  ],
+  "calibration_manifest_sha256": "dcf785c2916971714404a7c1d2953fb5afd4d54e8eaddff4637bc08081e493c0",
+  "all_Linear_quantized": true,
+  "original_Linear_parameters": 413429760,
+  "padded_parameters": 414922752
+}

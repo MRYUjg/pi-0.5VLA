@@ -1,0 +1,4020 @@
+{
+  "stage": "action_step",
+  "nodes": [
+    {
+      "module": "time_in",
+      "weight": "time_in.weight",
+      "matmul": "/time_in/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        1024,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        1024
+      ],
+      "scale_shape": [
+        1024,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "time_out",
+      "weight": "time_out.weight",
+      "matmul": "/time_out/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        1024,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        1024
+      ],
+      "scale_shape": [
+        1024,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "action_in",
+      "weight": "action_in.weight",
+      "matmul": "/action_in/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        32
+      ],
+      "INT4_shape": [
+        128,
+        1024
+      ],
+      "scale_shape": [
+        1,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 96,
+      "input_rank": 3,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.0.input_layernorm.dense",
+      "weight": "expert.layers.0.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.0.self_attn.q_proj",
+      "weight": "expert.layers.0.self_attn.q_proj.weight",
+      "matmul": "/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.0.self_attn.k_proj",
+      "weight": "expert.layers.0.self_attn.k_proj.weight",
+      "matmul": "/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.0.self_attn.v_proj",
+      "weight": "expert.layers.0.self_attn.v_proj.weight",
+      "matmul": "/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.0.self_attn.o_proj",
+      "weight": "expert.layers.0.self_attn.o_proj.weight",
+      "matmul": "/o_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.0.post_attention_layernorm.dense",
+      "weight": "expert.layers.0.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.0.mlp.gate_proj",
+      "weight": "expert.layers.0.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.0.mlp.up_proj",
+      "weight": "expert.layers.0.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.0.mlp.down_proj",
+      "weight": "expert.layers.0.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.1.input_layernorm.dense",
+      "weight": "expert.layers.1.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_1/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.1.self_attn.q_proj",
+      "weight": "expert.layers.1.self_attn.q_proj.weight",
+      "matmul": "/q_proj_1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.1.self_attn.k_proj",
+      "weight": "expert.layers.1.self_attn.k_proj.weight",
+      "matmul": "/k_proj_1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.1.self_attn.v_proj",
+      "weight": "expert.layers.1.self_attn.v_proj.weight",
+      "matmul": "/v_proj_1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.1.self_attn.o_proj",
+      "weight": "expert.layers.1.self_attn.o_proj.weight",
+      "matmul": "/o_proj_1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.1.post_attention_layernorm.dense",
+      "weight": "expert.layers.1.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_1/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.1.mlp.gate_proj",
+      "weight": "expert.layers.1.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.1.mlp.up_proj",
+      "weight": "expert.layers.1.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.1.mlp.down_proj",
+      "weight": "expert.layers.1.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.2.input_layernorm.dense",
+      "weight": "expert.layers.2.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_2/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.2.self_attn.q_proj",
+      "weight": "expert.layers.2.self_attn.q_proj.weight",
+      "matmul": "/q_proj_2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.2.self_attn.k_proj",
+      "weight": "expert.layers.2.self_attn.k_proj.weight",
+      "matmul": "/k_proj_2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.2.self_attn.v_proj",
+      "weight": "expert.layers.2.self_attn.v_proj.weight",
+      "matmul": "/v_proj_2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.2.self_attn.o_proj",
+      "weight": "expert.layers.2.self_attn.o_proj.weight",
+      "matmul": "/o_proj_2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.2.post_attention_layernorm.dense",
+      "weight": "expert.layers.2.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_2/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.2.mlp.gate_proj",
+      "weight": "expert.layers.2.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.2.mlp.up_proj",
+      "weight": "expert.layers.2.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.2.mlp.down_proj",
+      "weight": "expert.layers.2.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.3.input_layernorm.dense",
+      "weight": "expert.layers.3.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_3/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.3.self_attn.q_proj",
+      "weight": "expert.layers.3.self_attn.q_proj.weight",
+      "matmul": "/q_proj_3/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.3.self_attn.k_proj",
+      "weight": "expert.layers.3.self_attn.k_proj.weight",
+      "matmul": "/k_proj_3/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.3.self_attn.v_proj",
+      "weight": "expert.layers.3.self_attn.v_proj.weight",
+      "matmul": "/v_proj_3/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.3.self_attn.o_proj",
+      "weight": "expert.layers.3.self_attn.o_proj.weight",
+      "matmul": "/o_proj_3/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.3.post_attention_layernorm.dense",
+      "weight": "expert.layers.3.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_3/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.3.mlp.gate_proj",
+      "weight": "expert.layers.3.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_3/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.3.mlp.up_proj",
+      "weight": "expert.layers.3.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_3/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.3.mlp.down_proj",
+      "weight": "expert.layers.3.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_3/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.4.input_layernorm.dense",
+      "weight": "expert.layers.4.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_4/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.4.self_attn.q_proj",
+      "weight": "expert.layers.4.self_attn.q_proj.weight",
+      "matmul": "/q_proj_4/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.4.self_attn.k_proj",
+      "weight": "expert.layers.4.self_attn.k_proj.weight",
+      "matmul": "/k_proj_4/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.4.self_attn.v_proj",
+      "weight": "expert.layers.4.self_attn.v_proj.weight",
+      "matmul": "/v_proj_4/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.4.self_attn.o_proj",
+      "weight": "expert.layers.4.self_attn.o_proj.weight",
+      "matmul": "/o_proj_4/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.4.post_attention_layernorm.dense",
+      "weight": "expert.layers.4.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_4/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.4.mlp.gate_proj",
+      "weight": "expert.layers.4.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_4/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.4.mlp.up_proj",
+      "weight": "expert.layers.4.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_4/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.4.mlp.down_proj",
+      "weight": "expert.layers.4.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_4/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.5.input_layernorm.dense",
+      "weight": "expert.layers.5.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_5/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.5.self_attn.q_proj",
+      "weight": "expert.layers.5.self_attn.q_proj.weight",
+      "matmul": "/q_proj_5/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.5.self_attn.k_proj",
+      "weight": "expert.layers.5.self_attn.k_proj.weight",
+      "matmul": "/k_proj_5/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.5.self_attn.v_proj",
+      "weight": "expert.layers.5.self_attn.v_proj.weight",
+      "matmul": "/v_proj_5/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.5.self_attn.o_proj",
+      "weight": "expert.layers.5.self_attn.o_proj.weight",
+      "matmul": "/o_proj_5/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.5.post_attention_layernorm.dense",
+      "weight": "expert.layers.5.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_5/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.5.mlp.gate_proj",
+      "weight": "expert.layers.5.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_5/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.5.mlp.up_proj",
+      "weight": "expert.layers.5.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_5/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.5.mlp.down_proj",
+      "weight": "expert.layers.5.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_5/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.6.input_layernorm.dense",
+      "weight": "expert.layers.6.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_6/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.6.self_attn.q_proj",
+      "weight": "expert.layers.6.self_attn.q_proj.weight",
+      "matmul": "/q_proj_6/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.6.self_attn.k_proj",
+      "weight": "expert.layers.6.self_attn.k_proj.weight",
+      "matmul": "/k_proj_6/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.6.self_attn.v_proj",
+      "weight": "expert.layers.6.self_attn.v_proj.weight",
+      "matmul": "/v_proj_6/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.6.self_attn.o_proj",
+      "weight": "expert.layers.6.self_attn.o_proj.weight",
+      "matmul": "/o_proj_6/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.6.post_attention_layernorm.dense",
+      "weight": "expert.layers.6.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_6/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.6.mlp.gate_proj",
+      "weight": "expert.layers.6.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_6/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.6.mlp.up_proj",
+      "weight": "expert.layers.6.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_6/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.6.mlp.down_proj",
+      "weight": "expert.layers.6.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_6/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.7.input_layernorm.dense",
+      "weight": "expert.layers.7.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_7/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.7.self_attn.q_proj",
+      "weight": "expert.layers.7.self_attn.q_proj.weight",
+      "matmul": "/q_proj_7/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.7.self_attn.k_proj",
+      "weight": "expert.layers.7.self_attn.k_proj.weight",
+      "matmul": "/k_proj_7/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.7.self_attn.v_proj",
+      "weight": "expert.layers.7.self_attn.v_proj.weight",
+      "matmul": "/v_proj_7/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.7.self_attn.o_proj",
+      "weight": "expert.layers.7.self_attn.o_proj.weight",
+      "matmul": "/o_proj_7/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.7.post_attention_layernorm.dense",
+      "weight": "expert.layers.7.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_7/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.7.mlp.gate_proj",
+      "weight": "expert.layers.7.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_7/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.7.mlp.up_proj",
+      "weight": "expert.layers.7.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_7/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.7.mlp.down_proj",
+      "weight": "expert.layers.7.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_7/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.8.input_layernorm.dense",
+      "weight": "expert.layers.8.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_8/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.8.self_attn.q_proj",
+      "weight": "expert.layers.8.self_attn.q_proj.weight",
+      "matmul": "/q_proj_8/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.8.self_attn.k_proj",
+      "weight": "expert.layers.8.self_attn.k_proj.weight",
+      "matmul": "/k_proj_8/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.8.self_attn.v_proj",
+      "weight": "expert.layers.8.self_attn.v_proj.weight",
+      "matmul": "/v_proj_8/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.8.self_attn.o_proj",
+      "weight": "expert.layers.8.self_attn.o_proj.weight",
+      "matmul": "/o_proj_8/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.8.post_attention_layernorm.dense",
+      "weight": "expert.layers.8.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_8/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.8.mlp.gate_proj",
+      "weight": "expert.layers.8.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_8/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.8.mlp.up_proj",
+      "weight": "expert.layers.8.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_8/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.8.mlp.down_proj",
+      "weight": "expert.layers.8.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_8/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.9.input_layernorm.dense",
+      "weight": "expert.layers.9.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_9/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.9.self_attn.q_proj",
+      "weight": "expert.layers.9.self_attn.q_proj.weight",
+      "matmul": "/q_proj_9/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.9.self_attn.k_proj",
+      "weight": "expert.layers.9.self_attn.k_proj.weight",
+      "matmul": "/k_proj_9/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.9.self_attn.v_proj",
+      "weight": "expert.layers.9.self_attn.v_proj.weight",
+      "matmul": "/v_proj_9/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.9.self_attn.o_proj",
+      "weight": "expert.layers.9.self_attn.o_proj.weight",
+      "matmul": "/o_proj_9/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.9.post_attention_layernorm.dense",
+      "weight": "expert.layers.9.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_9/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.9.mlp.gate_proj",
+      "weight": "expert.layers.9.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_9/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.9.mlp.up_proj",
+      "weight": "expert.layers.9.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_9/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.9.mlp.down_proj",
+      "weight": "expert.layers.9.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_9/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.10.input_layernorm.dense",
+      "weight": "expert.layers.10.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_10/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.10.self_attn.q_proj",
+      "weight": "expert.layers.10.self_attn.q_proj.weight",
+      "matmul": "/q_proj_10/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.10.self_attn.k_proj",
+      "weight": "expert.layers.10.self_attn.k_proj.weight",
+      "matmul": "/k_proj_10/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.10.self_attn.v_proj",
+      "weight": "expert.layers.10.self_attn.v_proj.weight",
+      "matmul": "/v_proj_10/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.10.self_attn.o_proj",
+      "weight": "expert.layers.10.self_attn.o_proj.weight",
+      "matmul": "/o_proj_10/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.10.post_attention_layernorm.dense",
+      "weight": "expert.layers.10.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_10/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.10.mlp.gate_proj",
+      "weight": "expert.layers.10.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_10/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.10.mlp.up_proj",
+      "weight": "expert.layers.10.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_10/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.10.mlp.down_proj",
+      "weight": "expert.layers.10.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_10/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.11.input_layernorm.dense",
+      "weight": "expert.layers.11.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_11/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.11.self_attn.q_proj",
+      "weight": "expert.layers.11.self_attn.q_proj.weight",
+      "matmul": "/q_proj_11/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.11.self_attn.k_proj",
+      "weight": "expert.layers.11.self_attn.k_proj.weight",
+      "matmul": "/k_proj_11/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.11.self_attn.v_proj",
+      "weight": "expert.layers.11.self_attn.v_proj.weight",
+      "matmul": "/v_proj_11/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.11.self_attn.o_proj",
+      "weight": "expert.layers.11.self_attn.o_proj.weight",
+      "matmul": "/o_proj_11/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.11.post_attention_layernorm.dense",
+      "weight": "expert.layers.11.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_11/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.11.mlp.gate_proj",
+      "weight": "expert.layers.11.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_11/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.11.mlp.up_proj",
+      "weight": "expert.layers.11.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_11/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.11.mlp.down_proj",
+      "weight": "expert.layers.11.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_11/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.12.input_layernorm.dense",
+      "weight": "expert.layers.12.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_12/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.12.self_attn.q_proj",
+      "weight": "expert.layers.12.self_attn.q_proj.weight",
+      "matmul": "/q_proj_12/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.12.self_attn.k_proj",
+      "weight": "expert.layers.12.self_attn.k_proj.weight",
+      "matmul": "/k_proj_12/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.12.self_attn.v_proj",
+      "weight": "expert.layers.12.self_attn.v_proj.weight",
+      "matmul": "/v_proj_12/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.12.self_attn.o_proj",
+      "weight": "expert.layers.12.self_attn.o_proj.weight",
+      "matmul": "/o_proj_12/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.12.post_attention_layernorm.dense",
+      "weight": "expert.layers.12.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_12/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.12.mlp.gate_proj",
+      "weight": "expert.layers.12.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_12/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.12.mlp.up_proj",
+      "weight": "expert.layers.12.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_12/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.12.mlp.down_proj",
+      "weight": "expert.layers.12.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_12/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.13.input_layernorm.dense",
+      "weight": "expert.layers.13.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_13/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.13.self_attn.q_proj",
+      "weight": "expert.layers.13.self_attn.q_proj.weight",
+      "matmul": "/q_proj_13/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.13.self_attn.k_proj",
+      "weight": "expert.layers.13.self_attn.k_proj.weight",
+      "matmul": "/k_proj_13/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.13.self_attn.v_proj",
+      "weight": "expert.layers.13.self_attn.v_proj.weight",
+      "matmul": "/v_proj_13/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.13.self_attn.o_proj",
+      "weight": "expert.layers.13.self_attn.o_proj.weight",
+      "matmul": "/o_proj_13/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.13.post_attention_layernorm.dense",
+      "weight": "expert.layers.13.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_13/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.13.mlp.gate_proj",
+      "weight": "expert.layers.13.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_13/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.13.mlp.up_proj",
+      "weight": "expert.layers.13.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_13/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.13.mlp.down_proj",
+      "weight": "expert.layers.13.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_13/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.14.input_layernorm.dense",
+      "weight": "expert.layers.14.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_14/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.14.self_attn.q_proj",
+      "weight": "expert.layers.14.self_attn.q_proj.weight",
+      "matmul": "/q_proj_14/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.14.self_attn.k_proj",
+      "weight": "expert.layers.14.self_attn.k_proj.weight",
+      "matmul": "/k_proj_14/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.14.self_attn.v_proj",
+      "weight": "expert.layers.14.self_attn.v_proj.weight",
+      "matmul": "/v_proj_14/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.14.self_attn.o_proj",
+      "weight": "expert.layers.14.self_attn.o_proj.weight",
+      "matmul": "/o_proj_14/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.14.post_attention_layernorm.dense",
+      "weight": "expert.layers.14.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_14/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.14.mlp.gate_proj",
+      "weight": "expert.layers.14.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_14/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.14.mlp.up_proj",
+      "weight": "expert.layers.14.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_14/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.14.mlp.down_proj",
+      "weight": "expert.layers.14.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_14/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.15.input_layernorm.dense",
+      "weight": "expert.layers.15.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_15/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.15.self_attn.q_proj",
+      "weight": "expert.layers.15.self_attn.q_proj.weight",
+      "matmul": "/q_proj_15/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.15.self_attn.k_proj",
+      "weight": "expert.layers.15.self_attn.k_proj.weight",
+      "matmul": "/k_proj_15/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.15.self_attn.v_proj",
+      "weight": "expert.layers.15.self_attn.v_proj.weight",
+      "matmul": "/v_proj_15/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.15.self_attn.o_proj",
+      "weight": "expert.layers.15.self_attn.o_proj.weight",
+      "matmul": "/o_proj_15/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.15.post_attention_layernorm.dense",
+      "weight": "expert.layers.15.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_15/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.15.mlp.gate_proj",
+      "weight": "expert.layers.15.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_15/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.15.mlp.up_proj",
+      "weight": "expert.layers.15.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_15/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.15.mlp.down_proj",
+      "weight": "expert.layers.15.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_15/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.16.input_layernorm.dense",
+      "weight": "expert.layers.16.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_16/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.16.self_attn.q_proj",
+      "weight": "expert.layers.16.self_attn.q_proj.weight",
+      "matmul": "/q_proj_16/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.16.self_attn.k_proj",
+      "weight": "expert.layers.16.self_attn.k_proj.weight",
+      "matmul": "/k_proj_16/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.16.self_attn.v_proj",
+      "weight": "expert.layers.16.self_attn.v_proj.weight",
+      "matmul": "/v_proj_16/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.16.self_attn.o_proj",
+      "weight": "expert.layers.16.self_attn.o_proj.weight",
+      "matmul": "/o_proj_16/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.16.post_attention_layernorm.dense",
+      "weight": "expert.layers.16.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_16/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.16.mlp.gate_proj",
+      "weight": "expert.layers.16.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_16/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.16.mlp.up_proj",
+      "weight": "expert.layers.16.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_16/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.16.mlp.down_proj",
+      "weight": "expert.layers.16.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_16/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.17.input_layernorm.dense",
+      "weight": "expert.layers.17.input_layernorm.dense.weight",
+      "matmul": "/input_layernorm/dense_17/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.17.self_attn.q_proj",
+      "weight": "expert.layers.17.self_attn.q_proj.weight",
+      "matmul": "/q_proj_17/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        8,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.17.self_attn.k_proj",
+      "weight": "expert.layers.17.self_attn.k_proj.weight",
+      "matmul": "/k_proj_17/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.17.self_attn.v_proj",
+      "weight": "expert.layers.17.self_attn.v_proj.weight",
+      "matmul": "/v_proj_17/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        256,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        256
+      ],
+      "scale_shape": [
+        8,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.17.self_attn.o_proj",
+      "weight": "expert.layers.17.self_attn.o_proj.weight",
+      "matmul": "/o_proj_17/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        2048
+      ],
+      "INT4_shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        16,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.17.post_attention_layernorm.dense",
+      "weight": "expert.layers.17.post_attention_layernorm.dense.weight",
+      "matmul": "/post_attention_layernorm/dense_17/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.17.mlp.gate_proj",
+      "weight": "expert.layers.17.mlp.gate_proj.weight",
+      "matmul": "/mlp/gate_proj_17/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.17.mlp.up_proj",
+      "weight": "expert.layers.17.mlp.up_proj.weight",
+      "matmul": "/mlp/up_proj_17/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4096,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        8,
+        4096
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.layers.17.mlp.down_proj",
+      "weight": "expert.layers.17.mlp.down_proj.weight",
+      "matmul": "/mlp/down_proj_17/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1024,
+        4096
+      ],
+      "INT4_shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        32,
+        1024
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "expert.norm.dense",
+      "weight": "expert.norm.dense.weight",
+      "matmul": "/norm/dense/Gemm",
+      "op": "Gemm",
+      "original_shape": [
+        3072,
+        1024
+      ],
+      "INT4_shape": [
+        3072,
+        1024
+      ],
+      "scale_shape": [
+        3072,
+        8
+      ],
+      "axis": 1,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 2,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    },
+    {
+      "module": "action_out",
+      "weight": "action_out.weight",
+      "matmul": "/action_out/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        32,
+        1024
+      ],
+      "INT4_shape": [
+        1024,
+        32
+      ],
+      "scale_shape": [
+        8,
+        32
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.float32",
+      "algorithm": "AWQ"
+    }
+  ],
+  "target_reachable_Linear": 167,
+  "INT4_initializers": 167,
+  "all_target_Linear_weights_quantized": true,
+  "zero_padding_preserves_original_external_interface_and_float_Linear_algebra": true,
+  "float_source_Linear_weights_removed": true,
+  "source_ONNX_sha256": "8b41612ad776c097fcf7839bb89abc76b3cf55c5b25ad0516d767563a432a4b4",
+  "exported_ONNX_sha256": "8a3986180369acdf61d91c805c95c6112d8bfc57857db3860a7710f2d41582ae"
+}

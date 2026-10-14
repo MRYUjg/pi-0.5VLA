@@ -1,0 +1,48 @@
+{
+  "version": "pilot_20261003_r1",
+  "attempts": 1,
+  "accepted": 1,
+  "records": [
+    {
+      "seed": 52100,
+      "episode": "/app/agent-work-space/2-task-collection/runs/reference_capture_r1/can_s52100",
+      "accepted": true,
+      "errors": [],
+      "stats": {
+        "frames": 570,
+        "sim_seconds": 28.5,
+        "language": "pick up the alphabet soup and place it in the basket",
+        "initial_scene_sha256": "66e2d5eb454c4641ad905b63b2982317ead4bc1ccb468957a5f85aa66b868c66",
+        "initial_object_bbox": [
+          [
+            -0.15042355173033264,
+            -0.2747242593832104,
+            -2.0918335901662366e-05
+          ],
+          [
+            -0.08751504377732518,
+            -0.21219811010067,
+            0.07620120396774754
+          ]
+        ],
+        "max_action_abs": 1.0,
+        "phase_counts": {
+          "approach": 50,
+          "descend": 27,
+          "close": 80,
+          "lift": 32,
+          "hold": 40,
+          "clearance_lift": 38,
+          "transport": 161,
+          "place": 22,
+          "release": 60,
+          "post_release_settle": 40,
+          "post_release_window": 20
+        }
+      }
+    }
+  ],
+  "scope": "pipeline pilot only; not formal policy acceptance",
+  "unique_scene_hashes": 1,
+  "unique_target_bboxes": 1
+}

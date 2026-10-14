@@ -1,0 +1,1954 @@
+{
+  "nodes": [
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj",
+      "matmul": "/q_proj/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.k_proj",
+      "matmul": "/k_proj/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.v_proj",
+      "matmul": "/v_proj/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.o_proj",
+      "matmul": "/o_proj/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.up_proj",
+      "matmul": "/mlp/up_proj/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.down_proj",
+      "matmul": "/mlp/down_proj/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj",
+      "matmul": "/q_proj_1/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.k_proj",
+      "matmul": "/k_proj_1/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.v_proj",
+      "matmul": "/v_proj_1/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.o_proj",
+      "matmul": "/o_proj_1/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_1/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.up_proj",
+      "matmul": "/mlp/up_proj_1/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.down_proj",
+      "matmul": "/mlp/down_proj_1/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj",
+      "matmul": "/q_proj_2/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.k_proj",
+      "matmul": "/k_proj_2/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.v_proj",
+      "matmul": "/v_proj_2/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.o_proj",
+      "matmul": "/o_proj_2/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_2/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.up_proj",
+      "matmul": "/mlp/up_proj_2/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.down_proj",
+      "matmul": "/mlp/down_proj_2/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj",
+      "matmul": "/q_proj_3/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.k_proj",
+      "matmul": "/k_proj_3/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.v_proj",
+      "matmul": "/v_proj_3/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.o_proj",
+      "matmul": "/o_proj_3/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_3/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.up_proj",
+      "matmul": "/mlp/up_proj_3/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.down_proj",
+      "matmul": "/mlp/down_proj_3/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj",
+      "matmul": "/q_proj_4/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.k_proj",
+      "matmul": "/k_proj_4/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.v_proj",
+      "matmul": "/v_proj_4/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.o_proj",
+      "matmul": "/o_proj_4/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_4/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.up_proj",
+      "matmul": "/mlp/up_proj_4/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.down_proj",
+      "matmul": "/mlp/down_proj_4/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj",
+      "matmul": "/q_proj_5/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.k_proj",
+      "matmul": "/k_proj_5/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.v_proj",
+      "matmul": "/v_proj_5/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.o_proj",
+      "matmul": "/o_proj_5/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_5/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.up_proj",
+      "matmul": "/mlp/up_proj_5/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.down_proj",
+      "matmul": "/mlp/down_proj_5/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj",
+      "matmul": "/q_proj_6/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.k_proj",
+      "matmul": "/k_proj_6/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.v_proj",
+      "matmul": "/v_proj_6/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.o_proj",
+      "matmul": "/o_proj_6/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_6/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.up_proj",
+      "matmul": "/mlp/up_proj_6/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.down_proj",
+      "matmul": "/mlp/down_proj_6/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj",
+      "matmul": "/q_proj_7/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.k_proj",
+      "matmul": "/k_proj_7/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.v_proj",
+      "matmul": "/v_proj_7/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.o_proj",
+      "matmul": "/o_proj_7/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_7/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.up_proj",
+      "matmul": "/mlp/up_proj_7/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.down_proj",
+      "matmul": "/mlp/down_proj_7/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj",
+      "matmul": "/q_proj_8/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.k_proj",
+      "matmul": "/k_proj_8/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.v_proj",
+      "matmul": "/v_proj_8/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.o_proj",
+      "matmul": "/o_proj_8/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_8/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.up_proj",
+      "matmul": "/mlp/up_proj_8/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.down_proj",
+      "matmul": "/mlp/down_proj_8/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj",
+      "matmul": "/q_proj_9/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.k_proj",
+      "matmul": "/k_proj_9/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.v_proj",
+      "matmul": "/v_proj_9/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.o_proj",
+      "matmul": "/o_proj_9/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_9/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.up_proj",
+      "matmul": "/mlp/up_proj_9/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.down_proj",
+      "matmul": "/mlp/down_proj_9/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj",
+      "matmul": "/q_proj_10/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.k_proj",
+      "matmul": "/k_proj_10/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.v_proj",
+      "matmul": "/v_proj_10/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.o_proj",
+      "matmul": "/o_proj_10/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_10/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.up_proj",
+      "matmul": "/mlp/up_proj_10/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.down_proj",
+      "matmul": "/mlp/down_proj_10/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj",
+      "matmul": "/q_proj_11/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.k_proj",
+      "matmul": "/k_proj_11/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.v_proj",
+      "matmul": "/v_proj_11/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.o_proj",
+      "matmul": "/o_proj_11/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_11/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.up_proj",
+      "matmul": "/mlp/up_proj_11/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.down_proj",
+      "matmul": "/mlp/down_proj_11/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj",
+      "matmul": "/q_proj_12/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.k_proj",
+      "matmul": "/k_proj_12/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.v_proj",
+      "matmul": "/v_proj_12/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.o_proj",
+      "matmul": "/o_proj_12/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_12/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.up_proj",
+      "matmul": "/mlp/up_proj_12/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.down_proj",
+      "matmul": "/mlp/down_proj_12/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj",
+      "matmul": "/q_proj_13/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.k_proj",
+      "matmul": "/k_proj_13/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.v_proj",
+      "matmul": "/v_proj_13/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.o_proj",
+      "matmul": "/o_proj_13/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_13/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.up_proj",
+      "matmul": "/mlp/up_proj_13/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.down_proj",
+      "matmul": "/mlp/down_proj_13/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj",
+      "matmul": "/q_proj_14/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.k_proj",
+      "matmul": "/k_proj_14/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.v_proj",
+      "matmul": "/v_proj_14/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.o_proj",
+      "matmul": "/o_proj_14/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_14/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.up_proj",
+      "matmul": "/mlp/up_proj_14/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.down_proj",
+      "matmul": "/mlp/down_proj_14/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj",
+      "matmul": "/q_proj_15/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.k_proj",
+      "matmul": "/k_proj_15/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.v_proj",
+      "matmul": "/v_proj_15/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.o_proj",
+      "matmul": "/o_proj_15/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_15/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.up_proj",
+      "matmul": "/mlp/up_proj_15/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.down_proj",
+      "matmul": "/mlp/down_proj_15/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj",
+      "matmul": "/q_proj_16/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.k_proj",
+      "matmul": "/k_proj_16/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.v_proj",
+      "matmul": "/v_proj_16/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.o_proj",
+      "matmul": "/o_proj_16/MatMul",
+      "shape": [
+        2048,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.gate_proj",
+      "matmul": "/mlp/gate_proj_16/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.up_proj",
+      "matmul": "/mlp/up_proj_16/MatMul",
+      "shape": [
+        2048,
+        16384
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        16384
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.down_proj",
+      "matmul": "/mlp/down_proj_16/MatMul",
+      "shape": [
+        16384,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        128,
+        2048
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.k_proj",
+      "matmul": "/k_proj_17/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.v_proj",
+      "matmul": "/v_proj_17/MatMul",
+      "shape": [
+        2048,
+        256
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "scale_shape": [
+        16,
+        256
+      ],
+      "dtype": "INT4",
+      "zero_point": 0
+    }
+  ],
+  "INT4_initializers": 121,
+  "source_eligible_layers": 126,
+  "reachable_layers": 121,
+  "unused_layers": [
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.up_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.q_proj"
+  ],
+  "external_data": true,
+  "opset": 21,
+  "contains_floating_source_quantized_weights": false,
+  "source_prefix_sha256": "f705be35263740db3d62baad6a92497e44ae888f0e32b2571959ed92b016f9cc"
+}

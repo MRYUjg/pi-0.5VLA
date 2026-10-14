@@ -1,0 +1,28 @@
+{
+  "exit_code": 0,
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--cpus",
+    "4",
+    "--memory",
+    "3g",
+    "-v",
+    "/mnt/data/vla-policy/openpi:/app:ro",
+    "-v",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference:/work:ro",
+    "-v",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1:/out",
+    "--entrypoint",
+    "/app/agent-work-space/1.3-zhixing_gripper_solve/runtime/py310_mj326/bin/python",
+    "sha256:1ac69906b0b877c9fe1c2964794aa5b90112850da01967a445658e41a958f284",
+    "/work/runs/trt_t4_20261007_r1/artifact_audit_r1_source/audit_artifacts.py",
+    "--root",
+    "/work/runs/trt_t4_20261007_r1",
+    "--out",
+    "/out/artifact_audit_r1"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": "w4_plan_20261007_r4",
+  "status": "plan_frozen_implementation_on_hold_no_acceptance_claim",
+  "deployment_framework": "TensorRT",
+  "files_relative_to_6_model_inference": {
+    "README.md": "864f9bb1342fbb69dbfb98f5160a73b1ea20fbc88bafd3e0dc3545318877133e",
+    "plan_update_20261007_r1/变更记录.md": "5728bdc0d73019c4b6afb47fadb4115e114d1d3f7700084e6dbbdaf6afb90fb1",
+    "versions/w4_plan_20261007_r4/README.md": "a12dd8cde164806bba45766d5e22188a8007bea51966f1e29b8a644b28f51a1d",
+    "versions/w4_plan_20261007_r4/protocol.json": "aa3a247eb247c0e9e79d7ef770b865186d7390be8a435a91122ce07f4ad47f2f",
+    "versions/w4_plan_20261007_r4/references.json": "78286911b5cba2ad83fb3562443423fff7a1b8317bbb1baa179490a90cb56508",
+    "versions/w4_plan_20261007_r4/server_observation.json": "77f59ceffd86d62b61a637d95509cf6d15337ba0d26c5c8dfe4f39e3ef9eff7f",
+    "versions/w4_plan_20261007_r4/π0.5实机部署4bit量化压缩方案.md": "ec708e86bcc7dddeef35f929dccd7a1c3bf8444dbca3dcf1616872e4f23a1aa3"
+  },
+  "retained_asset_metadata_files_relative_to_6_model_inference": {
+    "weights/pi05_libero_bf16_r1/assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+    "weights/pi05_libero_bf16_r1/bundle_manifest.json": "6c697ed5ae07fa086170a31838c5405bedacac43e349ea004071089bdcc0eb38",
+    "weights/pi05_libero_bf16_r1/metadata.json": "bed1026eecd4d3ae5fe421d5ed22675801453d3f499ded2cd62fbc496d54bd5b",
+    "weights/pi05_libero_bf16_values_r1/assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+    "weights/pi05_libero_bf16_values_r1/bundle_manifest.json": "4fcc390e68dca260c2f29f367d97250f61c17181036a0f0951c6ab2591d7227d",
+    "weights/pi05_libero_bf16_values_r1/metadata.json": "d91ea11cd39b271d402e0e7380a92e2fd2d3006bcb705d8dc67316ef64224c45",
+    "weights/pi05_libero_w8_r1/assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+    "weights/pi05_libero_w8_r1/bundle_manifest.json": "f9dbf2d4c3df3ae44033c22437662a2b126e6933dd13b900ee15365efccbbc64",
+    "weights/pi05_libero_w8_r1/metadata.json": "56b6fb0661a6dc5d933591890e9ed6e21d0c37f10969e38d4478ff3b47a5a12e",
+    "weights/pi05_libero_w8_values_r1/assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+    "weights/pi05_libero_w8_values_r1/bundle_manifest.json": "02eb48f53401c6dd9dd3e0457c9ee495564bc10055815d7bf1f009c9aa1ad4b5",
+    "weights/pi05_libero_w8_values_r1/metadata.json": "4173c64cb7047c2d0d1854a3e0da0807ca36aff806ff9d118c470c08bd1727b8"
+  },
+  "predecessor_provenance_not_active_file_dependency": {
+    "r3_manifest_sha256": "c31a3262e36f209d1ffe8b8d8b8d5e643f1f589cde6fc88253cca81def5371dd",
+    "r3_protocol_sha256": "eb8a7707befc189c381ac6e310596fa6f4f590b1285939402be0b73bf6a54ecf",
+    "previous_cleanup_manifest_sha256": "08b43201d0badb1d997fac5a01716768aca1a875c186e9b213607eaac81ec90e"
+  },
+  "validation": {
+    "relative_links": "passed",
+    "json_and_budget_arithmetic": "passed",
+    "source_control_and_quality_contract_unchanged": "passed",
+    "quantization_and_target_device_acceptance": "not_executed"
+  }
+}

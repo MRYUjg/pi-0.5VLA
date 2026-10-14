@@ -1,0 +1,273 @@
+{
+  "version": "expansion_20261004_r1",
+  "seeds": [
+    56100,
+    56101,
+    56102,
+    56103,
+    56104,
+    56105,
+    56106,
+    56107,
+    56108,
+    56109,
+    56110,
+    56111,
+    56200,
+    56201,
+    56202,
+    56203
+  ],
+  "scenes": [
+    {
+      "id": "train_00",
+      "split": "train",
+      "seed": 56100,
+      "target_xy_m": [
+        -0.145,
+        -0.265
+      ],
+      "target_yaw_offset_deg": -20,
+      "basket_xy_m": [
+        -0.006,
+        0.254
+      ]
+    },
+    {
+      "id": "train_01",
+      "split": "train",
+      "seed": 56101,
+      "target_xy_m": [
+        -0.145,
+        -0.265
+      ],
+      "target_yaw_offset_deg": 0,
+      "basket_xy_m": [
+        0,
+        0.254
+      ]
+    },
+    {
+      "id": "train_02",
+      "split": "train",
+      "seed": 56102,
+      "target_xy_m": [
+        -0.145,
+        -0.265
+      ],
+      "target_yaw_offset_deg": 20,
+      "basket_xy_m": [
+        0.006,
+        0.254
+      ]
+    },
+    {
+      "id": "train_03",
+      "split": "train",
+      "seed": 56103,
+      "target_xy_m": [
+        -0.145,
+        -0.215
+      ],
+      "target_yaw_offset_deg": -20,
+      "basket_xy_m": [
+        -0.006,
+        0.266
+      ]
+    },
+    {
+      "id": "train_04",
+      "split": "train",
+      "seed": 56104,
+      "target_xy_m": [
+        -0.145,
+        -0.215
+      ],
+      "target_yaw_offset_deg": 0,
+      "basket_xy_m": [
+        0,
+        0.266
+      ]
+    },
+    {
+      "id": "train_05",
+      "split": "train",
+      "seed": 56105,
+      "target_xy_m": [
+        -0.145,
+        -0.215
+      ],
+      "target_yaw_offset_deg": 20,
+      "basket_xy_m": [
+        0.006,
+        0.266
+      ]
+    },
+    {
+      "id": "train_06",
+      "split": "train",
+      "seed": 56106,
+      "target_xy_m": [
+        -0.095,
+        -0.265
+      ],
+      "target_yaw_offset_deg": -20,
+      "basket_xy_m": [
+        -0.006,
+        0.254
+      ]
+    },
+    {
+      "id": "train_07",
+      "split": "train",
+      "seed": 56107,
+      "target_xy_m": [
+        -0.095,
+        -0.265
+      ],
+      "target_yaw_offset_deg": 0,
+      "basket_xy_m": [
+        0,
+        0.254
+      ]
+    },
+    {
+      "id": "train_08",
+      "split": "train",
+      "seed": 56108,
+      "target_xy_m": [
+        -0.095,
+        -0.265
+      ],
+      "target_yaw_offset_deg": 20,
+      "basket_xy_m": [
+        0.006,
+        0.254
+      ]
+    },
+    {
+      "id": "train_09",
+      "split": "train",
+      "seed": 56109,
+      "target_xy_m": [
+        -0.095,
+        -0.215
+      ],
+      "target_yaw_offset_deg": -20,
+      "basket_xy_m": [
+        -0.006,
+        0.266
+      ]
+    },
+    {
+      "id": "train_10",
+      "split": "train",
+      "seed": 56110,
+      "target_xy_m": [
+        -0.095,
+        -0.215
+      ],
+      "target_yaw_offset_deg": 0,
+      "basket_xy_m": [
+        0,
+        0.266
+      ]
+    },
+    {
+      "id": "train_11",
+      "split": "train",
+      "seed": 56111,
+      "target_xy_m": [
+        -0.095,
+        -0.215
+      ],
+      "target_yaw_offset_deg": 20,
+      "basket_xy_m": [
+        0.006,
+        0.266
+      ]
+    },
+    {
+      "id": "validation_00",
+      "split": "validation",
+      "seed": 56200,
+      "target_xy_m": [
+        -0.137,
+        -0.253
+      ],
+      "target_yaw_offset_deg": -10,
+      "basket_xy_m": [
+        -0.003,
+        0.257
+      ]
+    },
+    {
+      "id": "validation_01",
+      "split": "validation",
+      "seed": 56201,
+      "target_xy_m": [
+        -0.117,
+        -0.227
+      ],
+      "target_yaw_offset_deg": 10,
+      "basket_xy_m": [
+        0.003,
+        0.257
+      ]
+    },
+    {
+      "id": "validation_02",
+      "split": "validation",
+      "seed": 56202,
+      "target_xy_m": [
+        -0.108,
+        -0.257
+      ],
+      "target_yaw_offset_deg": 10,
+      "basket_xy_m": [
+        -0.003,
+        0.263
+      ]
+    },
+    {
+      "id": "validation_03",
+      "split": "validation",
+      "seed": 56203,
+      "target_xy_m": [
+        -0.127,
+        -0.217
+      ],
+      "target_yaw_offset_deg": -10,
+      "basket_xy_m": [
+        0.003,
+        0.263
+      ]
+    }
+  ],
+  "scene_manifest_sha256": "a3c83b9de3ce59aae57fcaaf0c44e629b3b08e1626b027e0024618f7c2867127",
+  "sources": {
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/lineage.json": "27e374f27f75d4f32c71a6f80a9dc63f9ce9da57d74d348f9aac18e91852b3b4",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scenes.json": "a3c83b9de3ce59aae57fcaaf0c44e629b3b08e1626b027e0024618f7c2867127",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/\u65b9\u6848.md": "795407c00d114d8fdcfbe40accf331f85ad00cfbfdcb67fa77855f8e4d71ee3c",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scripts/audit.py": "ea1f9fe2e6301fd3a7c114c97c5d651d7cdd6c557083c98f492849c2e0bc424a",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scripts/collect.py": "1c6b4f419247b0aad7f79daad1d9e83f0ebf304ed3963fbe9dd637e97bd876ec",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scripts/freeze.py": "afae4f2c3936dbbcb64182d6dc09bc4a16b387744be201ff4a345e2ed2d67d75",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scripts/pipeline.py": "ebd0d50dcfa667102f8f931e323d4f6a52ba9c9d83d15fdd4a09e130d64e2803",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scripts/preflight.py": "b68e236a823f5c5efb3dc2c6d0f2deb2adc8bfebdeab165fef96a277e4c5d6f7",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scripts/replay.py": "1ace65138f21c44cf121e6c00cb6cfbd745f89b065cad9188118f07265a43621",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scripts/run.py": "a5b9a625e54782c3ec0080d6b3b5dc253ce018b357f8072261dfbfef7b512946",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scripts/run_coverage.py": "d43a68499d751b3e9bbc074dce7fa665cc5e0aa4bdba790a5d29b528fdf49967",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scripts/scenes.py": "1c8fbc36ffafa72bbb06b2be57b055d49e9574c1b1f2f4c45428cfafb77a240b",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scripts/test_rejections.py": "47999b28bc2d9adb126c55eb1053ccbba4a98a84705c35f22bc42af9d7dd8fd6",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/scripts/validate.py": "d921d102b40639777d586c6ad4c9e7f537bebd081316fc1ffea39d034d365628",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+    "agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/verify_real_object_r6.py": "b5d47e3f69e6c5ee0617ed1d2daa9e2b0d34dce0d26afa713b5b4333fdb7e42a"
+  },
+  "scope": "controlled scene coverage, not official LIBERO evaluation"
+}

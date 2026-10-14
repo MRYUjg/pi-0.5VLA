@@ -1,0 +1,221 @@
+{
+  "exit_code": 0,
+  "seconds": 199.7065873146057,
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--gpus",
+    "all",
+    "--network",
+    "none",
+    "--memory",
+    "27g",
+    "--shm-size",
+    "1g",
+    "--cpus",
+    "8",
+    "-e",
+    "PYTHONPATH=/app/src:/app/packages/openpi-client/src:/app",
+    "-e",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "-e",
+    "OPENPI_DATA_HOME=/openpi_assets",
+    "-e",
+    "HF_HUB_OFFLINE=1",
+    "-e",
+    "HF_DATASETS_OFFLINE=1",
+    "-e",
+    "HF_HOME=/tmp/hf",
+    "-e",
+    "XDG_CACHE_HOME=/tmp/cache",
+    "-e",
+    "HF_LEROBOT_HOME=/app/agent-work-space/5-final-train/lerobot_exports/spatial_formal_r3/datasets",
+    "-e",
+    "XLA_PYTHON_CLIENT_MEM_FRACTION=0.85",
+    "-e",
+    "XLA_PYTHON_CLIENT_PREALLOCATE=false",
+    "-e",
+    "OMP_NUM_THREADS=1",
+    "-e",
+    "OPENBLAS_NUM_THREADS=1",
+    "-e",
+    "WANDB_MODE=disabled",
+    "-v",
+    "/mnt/data/vla-policy/openpi:/app:ro",
+    "-v",
+    "/mnt/data/vla-policy/openpi/agent-work-space/5-final-train:/app/agent-work-space/5-final-train",
+    "-v",
+    "/mnt/data/vla-policy/caches/openpi:/openpi_assets:ro",
+    "--workdir",
+    "/app",
+    "--entrypoint",
+    "/.venv/bin/python",
+    "openpi_server:latest",
+    "/app/agent-work-space/5-final-train/versions/lora_20261007_r1/scripts/reload.py",
+    "--out",
+    "/app/agent-work-space/5-final-train/runs/spatial_lora_20261007_r1"
+  ],
+  "gpu_samples": [
+    {
+      "time": 1791387721.5922394,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387726.612029,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387731.629737,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387736.6488883,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387741.6678414,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387746.6884036,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387751.7097251,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387756.7297437,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387761.7581365,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387766.7781181,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387771.8023074,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387776.823272,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387781.8419755,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387786.8613656,
+      "gpu": "13, 0"
+    },
+    {
+      "time": 1791387791.8823853,
+      "gpu": "1432, 0"
+    },
+    {
+      "time": 1791387796.9133341,
+      "gpu": "4508, 0"
+    },
+    {
+      "time": 1791387801.9332366,
+      "gpu": "8610, 9"
+    },
+    {
+      "time": 1791387806.9524322,
+      "gpu": "8610, 3"
+    },
+    {
+      "time": 1791387811.9741633,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387816.99826,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387822.0175908,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387827.0336988,
+      "gpu": "8610, 5"
+    },
+    {
+      "time": 1791387832.0515964,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387837.0683973,
+      "gpu": "8610, 5"
+    },
+    {
+      "time": 1791387842.0848792,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387847.1107037,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387852.129388,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387857.1483788,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387862.1658547,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387867.1859865,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387872.2029676,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387877.2191982,
+      "gpu": "8610, 5"
+    },
+    {
+      "time": 1791387882.236805,
+      "gpu": "8610, 0"
+    },
+    {
+      "time": 1791387887.2614303,
+      "gpu": "8636, 0"
+    },
+    {
+      "time": 1791387892.2859583,
+      "gpu": "8636, 0"
+    },
+    {
+      "time": 1791387897.3111842,
+      "gpu": "8636, 0"
+    },
+    {
+      "time": 1791387902.3319018,
+      "gpu": "8636, 0"
+    },
+    {
+      "time": 1791387907.3527539,
+      "gpu": "8636, 0"
+    },
+    {
+      "time": 1791387912.3806367,
+      "gpu": "8636, 0"
+    },
+    {
+      "time": 1791387917.4028058,
+      "gpu": "16858, 1"
+    }
+  ]
+}

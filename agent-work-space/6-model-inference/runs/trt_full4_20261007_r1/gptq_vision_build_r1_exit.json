@@ -1,0 +1,19 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-full4-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_full4_20261007_r1/gptq_vision_build_r1_source/build.py",
+    "--source",
+    "/work/runs/trt_full4_20261007_r1/gptq_vision_r1/vision_int4.onnx",
+    "--out",
+    "/work/runs/trt_full4_20261007_r1/gptq_vision_build_r1",
+    "--stage",
+    "vision",
+    "--algorithm",
+    "GPTQ"
+  ],
+  "exit_code": 0,
+  "seconds": 70.73878979682922
+}

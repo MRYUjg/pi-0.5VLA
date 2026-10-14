@@ -1,0 +1,418 @@
+{
+  "episodes": [
+    {
+      "task": 0,
+      "seed": 0,
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "native_success": true,
+      "steps": 78,
+      "dual_camera": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task00_seed0/env/dual_camera.mp4",
+        "bytes": 438728,
+        "sha256": "65773631b2ab57567895e26d9ddc39cb82e6d4014b434b099b1ae4d3861cde80",
+        "frames": 79,
+        "fps": 20.0,
+        "seconds": 3.95,
+        "expected_frames": 79,
+        "shape": [
+          256,
+          512,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      },
+      "rpent_episode": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task00_seed0/artifacts/episode.mp4",
+        "bytes": 56791,
+        "sha256": "f051b0f24db443b299cf64723792ac0c2159c7f6cecaf6524d7ff5990d09192c",
+        "frames": 78,
+        "fps": 20.0,
+        "seconds": 3.9,
+        "expected_frames": 78,
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      }
+    },
+    {
+      "task": 1,
+      "seed": 0,
+      "language": "pick up the black bowl next to the ramekin and place it on the plate",
+      "native_success": true,
+      "steps": 154,
+      "dual_camera": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task01_seed0/env/dual_camera.mp4",
+        "bytes": 674720,
+        "sha256": "7091539e8de5359a3d416cc48211a6a2121cf7cf1b26b0917e46f37c26252260",
+        "frames": 155,
+        "fps": 20.0,
+        "seconds": 7.75,
+        "expected_frames": 155,
+        "shape": [
+          256,
+          512,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      },
+      "rpent_episode": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task01_seed0/artifacts/episode.mp4",
+        "bytes": 84644,
+        "sha256": "be3a348b04708e90f184a95c40bcbaafd5df9c3433642cf08c6c3bfd9986fd17",
+        "frames": 154,
+        "fps": 20.0,
+        "seconds": 7.7,
+        "expected_frames": 154,
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      }
+    },
+    {
+      "task": 2,
+      "seed": 0,
+      "language": "pick up the black bowl from table center and place it on the plate",
+      "native_success": true,
+      "steps": 97,
+      "dual_camera": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task02_seed0/env/dual_camera.mp4",
+        "bytes": 544149,
+        "sha256": "57dec91a795e49d094415be418c835fbdc21d4e56c31e2ccc17ada503198dab1",
+        "frames": 98,
+        "fps": 20.0,
+        "seconds": 4.9,
+        "expected_frames": 98,
+        "shape": [
+          256,
+          512,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      },
+      "rpent_episode": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task02_seed0/artifacts/episode.mp4",
+        "bytes": 65769,
+        "sha256": "097bf79190bae42af8dcbfd8ed20c1e7fb38ae4517afa56cfa9e14f2c8167ce4",
+        "frames": 97,
+        "fps": 20.0,
+        "seconds": 4.85,
+        "expected_frames": 97,
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      }
+    },
+    {
+      "task": 3,
+      "seed": 0,
+      "language": "pick up the black bowl on the cookie box and place it on the plate",
+      "native_success": true,
+      "steps": 93,
+      "dual_camera": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task03_seed0/env/dual_camera.mp4",
+        "bytes": 524543,
+        "sha256": "005cf91b445bb3d8b616f68cc9c02dc98474d0f195644319808928ebf74ce2d5",
+        "frames": 94,
+        "fps": 20.0,
+        "seconds": 4.7,
+        "expected_frames": 94,
+        "shape": [
+          256,
+          512,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      },
+      "rpent_episode": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task03_seed0/artifacts/episode.mp4",
+        "bytes": 69864,
+        "sha256": "fe9cd7a3289d385fc49ddad955eccbe54646517f23322131a436daeec73254e9",
+        "frames": 93,
+        "fps": 20.0,
+        "seconds": 4.65,
+        "expected_frames": 93,
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      }
+    },
+    {
+      "task": 4,
+      "seed": 0,
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "native_success": true,
+      "steps": 117,
+      "dual_camera": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task04_seed0/env/dual_camera.mp4",
+        "bytes": 629250,
+        "sha256": "b2e8555ff38b27389339e32cbb037add2d92b83fbc20b256bd9e3b0a1a9f94d4",
+        "frames": 118,
+        "fps": 20.0,
+        "seconds": 5.9,
+        "expected_frames": 118,
+        "shape": [
+          256,
+          512,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      },
+      "rpent_episode": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task04_seed0/artifacts/episode.mp4",
+        "bytes": 82925,
+        "sha256": "1de5aee86bbb8c52091b6d564a8758f00a2e678825af7bdce5368b7d980d3c5e",
+        "frames": 117,
+        "fps": 20.0,
+        "seconds": 5.85,
+        "expected_frames": 117,
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      }
+    },
+    {
+      "task": 5,
+      "seed": 0,
+      "language": "pick up the black bowl on the ramekin and place it on the plate",
+      "native_success": true,
+      "steps": 112,
+      "dual_camera": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task05_seed0/env/dual_camera.mp4",
+        "bytes": 599624,
+        "sha256": "4b822bc9e3a3bb9262f5574bb0b483c35e2f8adb617ba8495bd3fd1781cd122b",
+        "frames": 113,
+        "fps": 20.0,
+        "seconds": 5.65,
+        "expected_frames": 113,
+        "shape": [
+          256,
+          512,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      },
+      "rpent_episode": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task05_seed0/artifacts/episode.mp4",
+        "bytes": 75221,
+        "sha256": "8085405548f5c65b8d39dc655379ad37109d05c602c994e4f90a77c6e03c09fa",
+        "frames": 112,
+        "fps": 20.0,
+        "seconds": 5.6,
+        "expected_frames": 112,
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      }
+    },
+    {
+      "task": 6,
+      "seed": 0,
+      "language": "pick up the black bowl next to the cookie box and place it on the plate",
+      "native_success": true,
+      "steps": 111,
+      "dual_camera": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task06_seed0/env/dual_camera.mp4",
+        "bytes": 543205,
+        "sha256": "42d6a918784dfbc0583088f7bbe17b0e9f91a9b41d9e42298c3335bffa7d3987",
+        "frames": 112,
+        "fps": 20.0,
+        "seconds": 5.6,
+        "expected_frames": 112,
+        "shape": [
+          256,
+          512,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      },
+      "rpent_episode": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task06_seed0/artifacts/episode.mp4",
+        "bytes": 88164,
+        "sha256": "72280d378d58abd4a1a23e26526e06a473283b2f675ab9b48ae32db085e3ff82",
+        "frames": 111,
+        "fps": 20.0,
+        "seconds": 5.55,
+        "expected_frames": 111,
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      }
+    },
+    {
+      "task": 7,
+      "seed": 0,
+      "language": "pick up the black bowl on the stove and place it on the plate",
+      "native_success": true,
+      "steps": 116,
+      "dual_camera": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task07_seed0/env/dual_camera.mp4",
+        "bytes": 663000,
+        "sha256": "df4371d3f5e338f7abd0160416ae6aecb3b0d559fde85c22130c54426f0316e4",
+        "frames": 117,
+        "fps": 20.0,
+        "seconds": 5.85,
+        "expected_frames": 117,
+        "shape": [
+          256,
+          512,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      },
+      "rpent_episode": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task07_seed0/artifacts/episode.mp4",
+        "bytes": 72860,
+        "sha256": "faba6dbb5ef4f7163e0d00d1afb1c46a6dd7206be9d6699eab49188befde8cfe",
+        "frames": 116,
+        "fps": 20.0,
+        "seconds": 5.8,
+        "expected_frames": 116,
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      }
+    },
+    {
+      "task": 8,
+      "seed": 0,
+      "language": "pick up the black bowl next to the plate and place it on the plate",
+      "native_success": true,
+      "steps": 102,
+      "dual_camera": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task08_seed0/env/dual_camera.mp4",
+        "bytes": 560565,
+        "sha256": "86005dfed938a93e2f2c8b3768f691e57f33aa398b20718ea5ae1b638c1418ff",
+        "frames": 103,
+        "fps": 20.0,
+        "seconds": 5.15,
+        "expected_frames": 103,
+        "shape": [
+          256,
+          512,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      },
+      "rpent_episode": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task08_seed0/artifacts/episode.mp4",
+        "bytes": 74520,
+        "sha256": "f4c57105334cf3bbfb74b13e4d4f85928825222669e17ba163ee570383cdff10",
+        "frames": 102,
+        "fps": 20.0,
+        "seconds": 5.1,
+        "expected_frames": 102,
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      }
+    },
+    {
+      "task": 9,
+      "seed": 0,
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "native_success": true,
+      "steps": 140,
+      "dual_camera": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task09_seed0/env/dual_camera.mp4",
+        "bytes": 660434,
+        "sha256": "3a1d380246694f0fff15b2a91d0a9e404f3848758a44b1eecbd36a8541e330d9",
+        "frames": 141,
+        "fps": 20.0,
+        "seconds": 7.05,
+        "expected_frames": 141,
+        "shape": [
+          256,
+          512,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      },
+      "rpent_episode": {
+        "file": "/control/runs/spatial10_video_20261007_r2/task09_seed0/artifacts/episode.mp4",
+        "bytes": 92417,
+        "sha256": "f7b8e20b25b12ba22737d62c83ff022fa8d99626971bef10e0b35365943600b2",
+        "frames": 140,
+        "fps": 20.0,
+        "seconds": 7.0,
+        "expected_frames": 140,
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      }
+    }
+  ],
+  "tasks": 10,
+  "native_successes": 10,
+  "MP4_count": 20,
+  "all_videos_decoded": true
+}

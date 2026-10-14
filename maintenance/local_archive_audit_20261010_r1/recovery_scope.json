@@ -1,0 +1,293 @@
+{
+  "date_beijing": "2026-10-10",
+  "main_workspace_totals": {
+    "files": 7929,
+    "bytes": 3140078348,
+    "mp4_files_including_duplicates": 291
+  },
+  "simulation_manifest_items": 1640,
+  "exact_in_main_tree": 1637,
+  "exact_in_alternate_tree": 3,
+  "alternate_required_files": [
+    {
+      "path": "robosuite/models/grippers/zhixing_gripper.py",
+      "expected_sha256": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+      "actual_sha256": "91765fc70477d005128961a469d7564acd053fa21e2e9414c630d29608a428b2",
+      "status": "different",
+      "matches_after_CRLF_to_LF": false,
+      "alternate_copy": ".publish/pi-0.5VLA/robosuite/models/grippers/zhixing_gripper.py",
+      "alternate_status": "exact"
+    },
+    {
+      "path": "third_party/libero/libero/libero/envs/robots/__init__.py",
+      "expected_sha256": "bde447f580d08213c6021d138b82cfd812a6ce7964d5aa7ef9a7a4bb8e1da72d",
+      "actual_sha256": "ff309c0feab50a6e43b139c711f6361137632ee6eb33c3dd602d7f4415311674",
+      "status": "different",
+      "matches_after_CRLF_to_LF": false,
+      "alternate_copy": ".publish/pi-0.5VLA/third_party/libero/libero/libero/envs/robots/__init__.py",
+      "alternate_status": "exact"
+    },
+    {
+      "path": "src/openpi/policies/libero_policy.py",
+      "expected_sha256": "585feb6c9ffe218505bca37f5626ecafb25cb1eccbe8c5d752588a800511eb75",
+      "actual_sha256": "c0c5a19a3052dc88c99085e5200408ee45ef13151616006f5234ecfb8b878ce6",
+      "status": "different",
+      "matches_after_CRLF_to_LF": false,
+      "alternate_copy": ".publish/pi-0.5VLA/src/openpi/policies/libero_policy.py",
+      "alternate_status": "exact"
+    }
+  ],
+  "stage5_frozen_source_entries_verified": 172,
+  "latest_rpent_adapter_files_exact": 10,
+  "rpent_videos": [
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task00_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task00_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task01_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task01_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task02_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task02_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task03_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task03_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task04_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task04_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task05_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task05_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task06_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task06_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task07_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task07_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task08_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task08_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task09_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_deploy_spatial10_20261007_r1/task09_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task00_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task00_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task01_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task01_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task02_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task02_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task03_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task03_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task04_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task04_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task05_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task05_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task06_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task06_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task07_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task07_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task08_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task08_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task09_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/eco65_zhixing_spatial10_20261007_r1/task09_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task00_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task00_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task01_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task01_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task02_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task02_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task03_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task03_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task04_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task04_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task05_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task05_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task06_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task06_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task07_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task07_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task08_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task08_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task09_dual_camera.mp4",
+      "matches_saved_server_sha256": true
+    },
+    {
+      "path": "gpt-rpent-control/videos/spatial10_video_20261007_r2/task09_rpent_episode.mp4",
+      "matches_saved_server_sha256": true
+    }
+  ],
+  "checkpoint10000": {
+    "params_regular_file_count": 0,
+    "optimizer_regular_file_count": 0,
+    "normalization_preserved": true
+  },
+  "formal_training_parquet_expected": 228,
+  "formal_training_parquet_found": 0,
+  "full_rpent_source_repository_found": false,
+  "scope": "Project directory and its .publish mirror checked. Missing manifest paths can have renamed local media copies; the 60 RPent video copies are separately mapped and hash-verified. No server recovery or model rerun performed."
+}

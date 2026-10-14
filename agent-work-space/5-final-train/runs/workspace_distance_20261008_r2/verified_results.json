@@ -1,0 +1,995 @@
+{
+  "verification_pass": true,
+  "errors": [],
+  "complete": true,
+  "scope": "paired validation development diagnosis; not adaptation acceptance",
+  "groups": {
+    "0.05": {
+      "attempts": 6,
+      "initialization_rejected": 4,
+      "successes_by_budget": {
+        "220": 0,
+        "650": 0,
+        "1000": 1
+      }
+    },
+    "0.1": {
+      "attempts": 6,
+      "initialization_rejected": 6,
+      "successes_by_budget": {
+        "220": 0,
+        "650": 0,
+        "1000": 0
+      }
+    },
+    "0.0": {
+      "attempts": 6,
+      "initialization_rejected": 0,
+      "successes_by_budget": {
+        "220": 0,
+        "650": 2,
+        "1000": 2
+      }
+    }
+  },
+  "videos": [
+    {
+      "offset_m": 0.05,
+      "task": 3,
+      "seed": 630300,
+      "path": "runs/workspace_distance_20261008_r2/preflight/base_05cm/task03_s630300",
+      "preparation_only": true,
+      "video": "runs/workspace_distance_20261008_r2/preflight/base_05cm/task03_s630300/rollout.mp4",
+      "sha256": "9fceba957282f4653ac30a22bace620de8e72d1400c1939ee0bf8f41ae707495",
+      "frames": 40,
+      "seconds": 2.0,
+      "initialization_pass": false,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.61,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          1.082276285964005,
+          -0.5765135116342831,
+          -0.0007728351469485306
+        ],
+        "tcp_world_m": [
+          -0.15828170025649776,
+          5.425692551049942e-05,
+          1.1768735453005474
+        ],
+        "base_target_horizontal_m": 1.7877826649604307,
+        "tcp_target_distance_m": 1.8050666210139106,
+        "arm_qpos_rad": [
+          -0.12641146964753638,
+          -0.2220003436633813,
+          -0.8416416656622875,
+          -0.5635027170647027,
+          1.5636451305393104,
+          -1.6975021165827027
+        ],
+        "minimum_joint_margin_deg": 88.37042453154854,
+        "elbow_extension_ratio": 0.9075459334237856,
+        "jacobian_position_smin_m_per_rad": 0.3097101014373834,
+        "jacobian_position_condition": 1.691321476951393
+      },
+      "minimum_tcp_target_distance_m": 1.8050666210139106,
+      "maximum_elbow_extension_ratio": 0.9075459334237856,
+      "minimum_jacobian_position_smin": 0.3097101014373834,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.05,
+      "task": 3,
+      "seed": 630301,
+      "path": "runs/workspace_distance_20261008_r2/preflight/base_05cm/task03_s630301",
+      "preparation_only": true,
+      "video": "runs/workspace_distance_20261008_r2/preflight/base_05cm/task03_s630301/rollout.mp4",
+      "sha256": "58344e5ec1d647e6132f5a1d0c4ceaab698242642ffc877aa0fcc1ffc8d93da2",
+      "frames": 40,
+      "seconds": 2.0,
+      "initialization_pass": false,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.61,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          2.272099801331908,
+          -0.2685003048315842,
+          0.13232587386822958
+        ],
+        "tcp_world_m": [
+          -0.15825628869368136,
+          5.79161543290129e-05,
+          1.1769119214654316
+        ],
+        "base_target_horizontal_m": 2.8945797067159984,
+        "tcp_target_distance_m": 2.6589310358146436,
+        "arm_qpos_rad": [
+          -0.12639943692359623,
+          -0.22227420062018594,
+          -0.841090166406828,
+          -0.5638236353568815,
+          1.5636507248562541,
+          -1.6974850950927167
+        ],
+        "minimum_joint_margin_deg": 88.37010400079839,
+        "elbow_extension_ratio": 0.9076558221302915,
+        "jacobian_position_smin_m_per_rad": 0.30973142921325963,
+        "jacobian_position_condition": 1.6912635285863797
+      },
+      "minimum_tcp_target_distance_m": 2.6589310358146436,
+      "maximum_elbow_extension_ratio": 0.9076558221302915,
+      "minimum_jacobian_position_smin": 0.30973142921325963,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.05,
+      "task": 6,
+      "seed": 630600,
+      "path": "runs/workspace_distance_20261008_r2/preflight/base_05cm/task06_s630600",
+      "preparation_only": true,
+      "video": "runs/workspace_distance_20261008_r2/preflight/base_05cm/task06_s630600/rollout.mp4",
+      "sha256": "3f3141a86b474db6c33dde9314f0cc63217c5a898204271a7ba998b16a2b550a",
+      "frames": 40,
+      "seconds": 2.0,
+      "initialization_pass": false,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.61,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.25955952337280375,
+          2.004538241282495,
+          -0.0015929249019160604
+        ],
+        "tcp_world_m": [
+          -0.1582862024220873,
+          5.15692455192014e-05,
+          1.1768700985811513
+        ],
+        "base_target_horizontal_m": 2.185018838695048,
+        "tcp_target_distance_m": 2.362485336812862,
+        "arm_qpos_rad": [
+          -0.12641621819015922,
+          -0.22196850539320678,
+          -0.841699786511744,
+          -0.5634740930565986,
+          1.563640840911581,
+          -1.6975043348988543
+        ],
+        "minimum_joint_margin_deg": 88.37067030911311,
+        "elbow_extension_ratio": 0.9075343463375517,
+        "jacobian_position_smin_m_per_rad": 0.30970820458016446,
+        "jacobian_position_condition": 1.6913206451850598
+      },
+      "minimum_tcp_target_distance_m": 2.362485336812862,
+      "maximum_elbow_extension_ratio": 0.9075343463375517,
+      "minimum_jacobian_position_smin": 0.30970820458016446,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.05,
+      "task": 6,
+      "seed": 630601,
+      "path": "runs/workspace_distance_20261008_r2/preflight/base_05cm/task06_s630601",
+      "preparation_only": true,
+      "video": "runs/workspace_distance_20261008_r2/preflight/base_05cm/task06_s630601/rollout.mp4",
+      "sha256": "d7191214ce04ef04dc1b0f485a4ec885fef7a7ff5648ed24644ec9136ed3c1e2",
+      "frames": 40,
+      "seconds": 2.0,
+      "initialization_pass": false,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.61,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          2.493177699220504,
+          -3.825294309655643,
+          0.0818891189954636
+        ],
+        "tcp_world_m": [
+          -0.15824839992721462,
+          5.187252553622203e-05,
+          1.1769289086652972
+        ],
+        "base_target_horizontal_m": 4.925706892256511,
+        "tcp_target_distance_m": 4.781469012106004,
+        "arm_qpos_rad": [
+          -0.12640352829181006,
+          -0.22239016275680648,
+          -0.8408507378693703,
+          -0.5639721044090056,
+          1.5636384731253639,
+          -1.6974912002979454
+        ],
+        "minimum_joint_margin_deg": 88.37080597327014,
+        "elbow_extension_ratio": 0.9077035749264183,
+        "jacobian_position_smin_m_per_rad": 0.3097413877855767,
+        "jacobian_position_condition": 1.6912261623355438
+      },
+      "minimum_tcp_target_distance_m": 4.781469012106004,
+      "maximum_elbow_extension_ratio": 0.9077035749264183,
+      "minimum_jacobian_position_smin": 0.3097413877855767,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.1,
+      "task": 2,
+      "seed": 630201,
+      "path": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task02_s630201",
+      "preparation_only": true,
+      "video": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task02_s630201/rollout.mp4",
+      "sha256": "cf17e9207d18fa42513b9bf55da312af12cf68904a48bba5e03bc679c69b4bad",
+      "frames": 40,
+      "seconds": 2.0,
+      "initialization_pass": false,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.56,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          -0.9626037364604273,
+          0.6997016906690988,
+          0.039411697943378864
+        ],
+        "tcp_world_m": [
+          -0.10825003473204889,
+          6.22553586062484e-05,
+          1.1769275618158908
+        ],
+        "base_target_horizontal_m": 0.8072621783145129,
+        "tcp_target_distance_m": 1.5853573501454474,
+        "arm_qpos_rad": [
+          -0.12638110746675668,
+          -0.22238849221279725,
+          -0.8408562129986534,
+          -0.5639745161246567,
+          1.563638185803692,
+          -1.6974552536842014
+        ],
+        "minimum_joint_margin_deg": 88.3708224355893,
+        "elbow_extension_ratio": 0.9077024532624799,
+        "jacobian_position_smin_m_per_rad": 0.30974150461789424,
+        "jacobian_position_condition": 1.69122110893209
+      },
+      "minimum_tcp_target_distance_m": 1.5853573501454474,
+      "maximum_elbow_extension_ratio": 0.9077024532624799,
+      "minimum_jacobian_position_smin": 0.30974150461789424,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.1,
+      "task": 2,
+      "seed": 630202,
+      "path": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task02_s630202",
+      "preparation_only": true,
+      "video": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task02_s630202/rollout.mp4",
+      "sha256": "e4938e2b2e9b3babeba650e36985fdd2fcf1c2d5ea3a1c245219905b5e179bae",
+      "frames": 40,
+      "seconds": 2.0,
+      "initialization_pass": false,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.56,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.1481930158516001,
+          -0.31322194729166647,
+          -0.0006691348758826875
+        ],
+        "tcp_world_m": [
+          -0.10823360608052479,
+          5.064743344307769e-05,
+          1.1769367117759655
+        ],
+        "base_target_horizontal_m": 0.7743677007508566,
+        "tcp_target_distance_m": 1.2452509229508484,
+        "arm_qpos_rad": [
+          -0.1263972175091739,
+          -0.2225072278476307,
+          -0.84065569628401,
+          -0.5640707050032663,
+          1.5636308931801788,
+          -1.6974858253918692
+        ],
+        "minimum_joint_margin_deg": 88.37124027213818,
+        "elbow_extension_ratio": 0.9077424335238832,
+        "jacobian_position_smin_m_per_rad": 0.3097481381102018,
+        "jacobian_position_condition": 1.6912267913509713
+      },
+      "minimum_tcp_target_distance_m": 1.2452509229508484,
+      "maximum_elbow_extension_ratio": 0.9077424335238832,
+      "minimum_jacobian_position_smin": 0.3097481381102018,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.1,
+      "task": 3,
+      "seed": 630300,
+      "path": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task03_s630300",
+      "preparation_only": true,
+      "video": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task03_s630300/rollout.mp4",
+      "sha256": "5e1d2feffdf3e86552d5b18406e63a05c704dfb853b34059ae7c8346cd8633d8",
+      "frames": 40,
+      "seconds": 2.0,
+      "initialization_pass": false,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.56,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          -4.636935969916317,
+          -8.240028093322268,
+          0.1390929614407585
+        ],
+        "tcp_world_m": [
+          -0.10826711592333266,
+          6.574008441695854e-05,
+          1.176895521797236
+        ],
+        "base_target_horizontal_m": 9.193447116372493,
+        "tcp_target_distance_m": 9.459652325892081,
+        "arm_qpos_rad": [
+          -0.12637232866356546,
+          -0.22215487195918737,
+          -0.8413307075124217,
+          -0.5636803756430427,
+          1.563628403764343,
+          -1.697456985176934
+        ],
+        "minimum_joint_margin_deg": 88.37138290515902,
+        "elbow_extension_ratio": 0.9076079145451285,
+        "jacobian_position_smin_m_per_rad": 0.3097221681267481,
+        "jacobian_position_condition": 1.6912898562987582
+      },
+      "minimum_tcp_target_distance_m": 9.459652325892081,
+      "maximum_elbow_extension_ratio": 0.9076079145451285,
+      "minimum_jacobian_position_smin": 0.3097221681267481,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.1,
+      "task": 3,
+      "seed": 630301,
+      "path": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task03_s630301",
+      "preparation_only": true,
+      "video": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task03_s630301/rollout.mp4",
+      "sha256": "fc1c87e549565f8f3b5438da4f2c18e5703b3ac1b56c7b7e43379f154bb0174e",
+      "frames": 40,
+      "seconds": 2.0,
+      "initialization_pass": false,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.56,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.9412651221240111,
+          -0.7861586309698314,
+          -0.0015929249019160682
+        ],
+        "tcp_world_m": [
+          -0.10818942519297375,
+          5.6348302547469916e-05,
+          1.176980346300506
+        ],
+        "base_target_horizontal_m": 1.6946511027212598,
+        "tcp_target_distance_m": 1.7631006199617032,
+        "arm_qpos_rad": [
+          -0.1263756804866254,
+          -0.22283909916311628,
+          -0.8400176951426596,
+          -0.5643915183286251,
+          1.5636363010138283,
+          -1.6974612405725589
+        ],
+        "minimum_joint_margin_deg": 88.37093042609376,
+        "elbow_extension_ratio": 0.9078694313158266,
+        "jacobian_position_smin_m_per_rad": 0.3097697782188516,
+        "jacobian_position_condition": 1.691217891025521
+      },
+      "minimum_tcp_target_distance_m": 1.7631006199617032,
+      "maximum_elbow_extension_ratio": 0.9078694313158266,
+      "minimum_jacobian_position_smin": 0.3097697782188516,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.1,
+      "task": 6,
+      "seed": 630600,
+      "path": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task06_s630600",
+      "preparation_only": true,
+      "video": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task06_s630600/rollout.mp4",
+      "sha256": "af5dceae75db293c9a2300357105103d6f0ca9ca7fa0815259eb3eacdbd23285",
+      "frames": 40,
+      "seconds": 2.0,
+      "initialization_pass": false,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.56,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          1.1835715536165359,
+          1.4140776353903008,
+          0.020448489645163253
+        ],
+        "tcp_world_m": [
+          -0.10825846279196084,
+          5.8725962915039585e-05,
+          1.1769157174301321
+        ],
+        "base_target_horizontal_m": 2.2449181101972977,
+        "tcp_target_distance_m": 2.2373400985216443,
+        "arm_qpos_rad": [
+          -0.1263963129048948,
+          -0.22230085259153004,
+          -0.8410301443709793,
+          -0.563875609039375,
+          1.5636474263866904,
+          -1.6974864274891162
+        ],
+        "minimum_joint_margin_deg": 88.37029298918326,
+        "elbow_extension_ratio": 0.9076678089415732,
+        "jacobian_position_smin_m_per_rad": 0.309734798782955,
+        "jacobian_position_condition": 1.6912377772452412
+      },
+      "minimum_tcp_target_distance_m": 2.2373400985216443,
+      "maximum_elbow_extension_ratio": 0.9076678089415732,
+      "minimum_jacobian_position_smin": 0.309734798782955,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.1,
+      "task": 6,
+      "seed": 630601,
+      "path": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task06_s630601",
+      "preparation_only": true,
+      "video": "runs/workspace_distance_20261008_r2/preflight/base_10cm/task06_s630601/rollout.mp4",
+      "sha256": "0e6d2805a40959270d6347bc6467104391b20bec4ef0494272810df5a7015369",
+      "frames": 40,
+      "seconds": 2.0,
+      "initialization_pass": false,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.56,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.1400054841736565,
+          -0.11777109011972499,
+          0.8984041501888544
+        ],
+        "tcp_world_m": [
+          -0.10824184676901355,
+          4.351847471902751e-05,
+          1.1769397781372257
+        ],
+        "base_target_horizontal_m": 0.7098434387533519,
+        "tcp_target_distance_m": 0.39126604165837736,
+        "arm_qpos_rad": [
+          -0.12641113250228514,
+          -0.22248466241090506,
+          -0.8406676846138109,
+          -0.5640850313346526,
+          1.5636229605190441,
+          -1.6975057834258658
+        ],
+        "minimum_joint_margin_deg": 88.37169478014151,
+        "elbow_extension_ratio": 0.9077400714628551,
+        "jacobian_position_smin_m_per_rad": 0.30974904778265266,
+        "jacobian_position_condition": 1.6911990695679473
+      },
+      "minimum_tcp_target_distance_m": 0.39126604165837736,
+      "maximum_elbow_extension_ratio": 0.9077400714628551,
+      "minimum_jacobian_position_smin": 0.30974904778265266,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.0,
+      "task": 3,
+      "seed": 630300,
+      "path": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task03_s630300",
+      "preparation_only": false,
+      "video": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task03_s630300/rollout.mp4",
+      "sha256": "f7d6dd558703d6654ebdb4b6c432b83ef3b9c7571e50f1fc1b9d3aa0f8e15239",
+      "frames": 384,
+      "seconds": 19.2,
+      "initialization_pass": true,
+      "first_success_step": 363,
+      "successes_by_budget": {
+        "220": false,
+        "650": true,
+        "1000": true
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.07406013277513598,
+          0.017145563064867978,
+          0.9171640852094417
+        ],
+        "tcp_world_m": [
+          -0.20822539015707653,
+          4.522384597398476e-05,
+          1.1769457764380413
+        ],
+        "base_target_horizontal_m": 0.7342603413385893,
+        "tcp_target_distance_m": 0.3840105013617537,
+        "arm_qpos_rad": [
+          -0.12641174946158584,
+          -0.22256405395824266,
+          -0.8405403479750312,
+          -0.5641271875771833,
+          1.5636384417136486,
+          -1.6975007148178844
+        ],
+        "minimum_joint_margin_deg": 88.37080777302884,
+        "elbow_extension_ratio": 0.907765389779947,
+        "jacobian_position_smin_m_per_rad": 0.30975189862458885,
+        "jacobian_position_condition": 1.691226395163141
+      },
+      "minimum_tcp_target_distance_m": 0.04835657667281137,
+      "maximum_elbow_extension_ratio": 0.9927566233626971,
+      "minimum_jacobian_position_smin": 0.14622569919257541,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.0,
+      "task": 6,
+      "seed": 630601,
+      "path": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task06_s630601",
+      "preparation_only": false,
+      "video": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task06_s630601/rollout.mp4",
+      "sha256": "722da13bbe877f6ad3dc1e6ecbcf5be09926ad2f49c5ca8ba3dcdd8560d60483",
+      "frames": 654,
+      "seconds": 32.7,
+      "initialization_pass": true,
+      "first_success_step": 633,
+      "successes_by_budget": {
+        "220": false,
+        "650": true,
+        "1000": true
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.126200971298544,
+          -0.06416143351377232,
+          0.898404150188853
+        ],
+        "tcp_world_m": [
+          -0.20822539021841882,
+          4.5223850611914615e-05,
+          1.1769457763659574
+        ],
+        "base_target_horizontal_m": 0.7888147164076722,
+        "tcp_target_distance_m": 0.4399419548540097,
+        "arm_qpos_rad": [
+          -0.12641174947032327,
+          -0.2225640533728731,
+          -0.840540349103402,
+          -0.5641271869477295,
+          1.5636384417166342,
+          -1.6975007148261623
+        ],
+        "minimum_joint_margin_deg": 88.37080777285779,
+        "elbow_extension_ratio": 0.9077653895552388,
+        "jacobian_position_smin_m_per_rad": 0.3097518985824961,
+        "jacobian_position_condition": 1.6912263952462723
+      },
+      "minimum_tcp_target_distance_m": 0.07354231860262547,
+      "maximum_elbow_extension_ratio": 0.9927680109457379,
+      "minimum_jacobian_position_smin": 0.1110067397753741,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.0,
+      "task": 6,
+      "seed": 630600,
+      "path": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task06_s630600",
+      "preparation_only": false,
+      "video": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task06_s630600/rollout.mp4",
+      "sha256": "6cda91f6f4219af4001249f04f3159cc27a34c050c3e7c9799ac0fa2699d612c",
+      "frames": 1021,
+      "seconds": 51.05,
+      "initialization_pass": true,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.13269761453205878,
+          -0.060003586060573724,
+          0.898404150188853
+        ],
+        "tcp_world_m": [
+          -0.20822538990928566,
+          4.522382636598052e-05,
+          1.1769457767296752
+        ],
+        "base_target_horizontal_m": 0.7949653693243154,
+        "tcp_target_distance_m": 0.4443194709239711,
+        "arm_qpos_rad": [
+          -0.12641174942804423,
+          -0.22256405632806606,
+          -0.840540343406876,
+          -0.5641271901274928,
+          1.563638441701284,
+          -1.69750071478633
+        ],
+        "minimum_joint_margin_deg": 88.37080777373728,
+        "elbow_extension_ratio": 0.9077653906896642,
+        "jacobian_position_smin_m_per_rad": 0.3097518987951235,
+        "jacobian_position_condition": 1.6912263948243746
+      },
+      "minimum_tcp_target_distance_m": 0.06077069265889054,
+      "maximum_elbow_extension_ratio": 0.9927784081259127,
+      "minimum_jacobian_position_smin": 0.11564529971071402,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.0,
+      "task": 2,
+      "seed": 630201,
+      "path": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task02_s630201",
+      "preparation_only": false,
+      "video": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task02_s630201/rollout.mp4",
+      "sha256": "e23ba841860af7e2c059629f1ba3490b10303c350b3b4c26d6cecf13646a644c",
+      "frames": 1021,
+      "seconds": 51.05,
+      "initialization_pass": true,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          -0.0749915492483295,
+          0.008186519715553871,
+          0.898404150188853
+        ],
+        "tcp_world_m": [
+          -0.2082253899916768,
+          4.522383291649657e-05,
+          1.176945776632774
+        ],
+        "base_target_horizontal_m": 0.5850657284065807,
+        "tcp_target_distance_m": 0.30887371963295474,
+        "arm_qpos_rad": [
+          -0.12641174943924582,
+          -0.2225640555382722,
+          -0.8405403449284004,
+          -0.5641271892773608,
+          1.563638441705597,
+          -1.6975007147968932
+        ],
+        "minimum_joint_margin_deg": 88.37080777349017,
+        "elbow_extension_ratio": 0.907765390386662,
+        "jacobian_position_smin_m_per_rad": 0.3097518987382795,
+        "jacobian_position_condition": 1.6912263949378272
+      },
+      "minimum_tcp_target_distance_m": 0.05609577276174115,
+      "maximum_elbow_extension_ratio": 0.9927760561136638,
+      "minimum_jacobian_position_smin": 0.15840356314879087,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.0,
+      "task": 3,
+      "seed": 630301,
+      "path": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task03_s630301",
+      "preparation_only": false,
+      "video": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task03_s630301/rollout.mp4",
+      "sha256": "5f3a39d52569bbf7ee901f3424f01f6cfc73827dfbcbde8445f9c3572e267971",
+      "frames": 1021,
+      "seconds": 51.05,
+      "initialization_pass": true,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          0.07163835211996043,
+          0.04316955135710442,
+          0.9171640852094417
+        ],
+        "tcp_world_m": [
+          -0.20822538995312892,
+          4.5223829900355736e-05,
+          1.1769457766781088
+        ],
+        "base_target_horizontal_m": 0.7329108325418481,
+        "tcp_target_distance_m": 0.3842784784165619,
+        "arm_qpos_rad": [
+          -0.12641174943376132,
+          -0.2225640559080873,
+          -0.8405403442160649,
+          -0.564127189675442,
+          1.56363844170335,
+          -1.6975007147917047
+        ],
+        "minimum_joint_margin_deg": 88.37080777361892,
+        "elbow_extension_ratio": 0.9077653905285176,
+        "jacobian_position_smin_m_per_rad": 0.3097518987649002,
+        "jacobian_position_condition": 1.6912263948846065
+      },
+      "minimum_tcp_target_distance_m": 0.07092449453074759,
+      "maximum_elbow_extension_ratio": 0.9927635356077514,
+      "minimum_jacobian_position_smin": 0.16381065012099075,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.0,
+      "task": 2,
+      "seed": 630202,
+      "path": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task02_s630202",
+      "preparation_only": false,
+      "video": "runs/workspace_distance_20261008_r2/rollouts/base_00cm/task02_s630202/rollout.mp4",
+      "sha256": "94d3bacdbd3f34c30b276cb92da75c5b860acb1df117d4b7622d27f8d6786acc",
+      "frames": 1021,
+      "seconds": 51.05,
+      "initialization_pass": true,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          -0.0749915492483295,
+          -0.003052770228727657,
+          0.898404150188853
+        ],
+        "tcp_world_m": [
+          -0.2082253899467806,
+          4.522382941741252e-05,
+          1.1769457766856157
+        ],
+        "base_target_horizontal_m": 0.585016415886716,
+        "tcp_target_distance_m": 0.30878194825136174,
+        "arm_qpos_rad": [
+          -0.1264117494329446,
+          -0.22256405596856493,
+          -0.8405403440992629,
+          -0.5641271897405834,
+          1.5636384417031761,
+          -1.697500714790923
+        ],
+        "minimum_joint_margin_deg": 88.37080777362888,
+        "elbow_extension_ratio": 0.9077653905517789,
+        "jacobian_position_smin_m_per_rad": 0.3097518987692546,
+        "jacobian_position_condition": 1.6912263948760058
+      },
+      "minimum_tcp_target_distance_m": 0.06315948977942859,
+      "maximum_elbow_extension_ratio": 0.9927784538325654,
+      "minimum_jacobian_position_smin": 0.1543377210568595,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.05,
+      "task": 2,
+      "seed": 630201,
+      "path": "runs/workspace_distance_20261008_r2/rollouts/base_05cm/task02_s630201",
+      "preparation_only": false,
+      "video": "runs/workspace_distance_20261008_r2/rollouts/base_05cm/task02_s630201/rollout.mp4",
+      "sha256": "2cd7abe738dc987c53c6d9be625a1af4db5a32d0dc507e0e078e697e9f8690bc",
+      "frames": 983,
+      "seconds": 49.15,
+      "initialization_pass": true,
+      "first_success_step": 962,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": true
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.61,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          -0.07594226273493855,
+          0.017616571259853973,
+          0.8984047734614048
+        ],
+        "tcp_world_m": [
+          -0.1582183128593618,
+          4.296654262601111e-05,
+          1.1769519580303338
+        ],
+        "base_target_horizontal_m": 0.5343482107349391,
+        "tcp_target_distance_m": 0.2909754526383815,
+        "arm_qpos_rad": [
+          -0.1264123162186842,
+          -0.22261638675911755,
+          -0.8404430028558114,
+          -0.5641749854990372,
+          1.5636342715568394,
+          -1.6975013215573287
+        ],
+        "minimum_joint_margin_deg": 88.37104670541393,
+        "elbow_extension_ratio": 0.9077847770741201,
+        "jacobian_position_smin_m_per_rad": 0.3097551914527175,
+        "jacobian_position_condition": 1.691226190474654
+      },
+      "minimum_tcp_target_distance_m": 0.051395900603379396,
+      "maximum_elbow_extension_ratio": 0.9074342280763555,
+      "minimum_jacobian_position_smin": 0.18313036494663196,
+      "decode_pass": true
+    },
+    {
+      "offset_m": 0.05,
+      "task": 2,
+      "seed": 630202,
+      "path": "runs/workspace_distance_20261008_r2/rollouts/base_05cm/task02_s630202",
+      "preparation_only": false,
+      "video": "runs/workspace_distance_20261008_r2/rollouts/base_05cm/task02_s630202/rollout.mp4",
+      "sha256": "ea80b216949474d55c8a3245804dc1af990cf19e670bdf42059a9d4559a845f7",
+      "frames": 1021,
+      "seconds": 51.05,
+      "initialization_pass": true,
+      "first_success_step": null,
+      "successes_by_budget": {
+        "220": false,
+        "650": false,
+        "1000": false
+      },
+      "settled_geometry": {
+        "base_world_m": [
+          -0.61,
+          0.0,
+          0.912
+        ],
+        "target_world_m": [
+          -0.0749915492483295,
+          -0.003052770228727657,
+          0.898404150188853
+        ],
+        "tcp_world_m": [
+          -0.15822539026919047,
+          4.522385449964909e-05,
+          1.1769457763062223
+        ],
+        "base_target_horizontal_m": 0.5350171602685021,
+        "tcp_target_distance_m": 0.29072823622505956,
+        "arm_qpos_rad": [
+          -0.12641174947752806,
+          -0.22256405288817566,
+          -0.8405403500379471,
+          -0.5641271864263571,
+          1.563638441719246,
+          -1.6975007148330026
+        ],
+        "minimum_joint_margin_deg": 88.37080777270815,
+        "elbow_extension_ratio": 0.9077653893691319,
+        "jacobian_position_smin_m_per_rad": 0.30975189854762863,
+        "jacobian_position_condition": 1.6912263953152458
+      },
+      "minimum_tcp_target_distance_m": 0.033556265824802,
+      "maximum_elbow_extension_ratio": 0.9074502818391721,
+      "minimum_jacobian_position_smin": 0.20348575312035594,
+      "decode_pass": true
+    }
+  ],
+  "paired_native_scenes": {
+    "pairs": 6,
+    "all_equal": true
+  }
+}

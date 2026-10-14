@@ -1,0 +1,75 @@
+{
+  "algorithm": "AWQ",
+  "observations": 128,
+  "same_backend_TensorRT_quantization_error": {
+    "motion_mae": 0.0028989465790826546,
+    "motion_p99_abs": 0.02264160862729435,
+    "motion_max_abs": 0.10041108691363038,
+    "gripper_disagreements": 6,
+    "confident_gripper_count": 1280,
+    "gripper_disagreement_fraction": 0.0046875,
+    "clipping_rate_increase": -0.002232142857142857,
+    "reference_clips_per_dimension": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      427
+    ],
+    "candidate_clips_per_dimension": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      407
+    ],
+    "original_gates_passed": true
+  },
+  "cumulative_original_Torch_to_TensorRT_quantized_error": {
+    "motion_mae": 0.0029318584193417717,
+    "motion_p99_abs": 0.02329686537888618,
+    "motion_max_abs": 0.10105844224347177,
+    "gripper_disagreements": 6,
+    "confident_gripper_count": 1280,
+    "gripper_disagreement_fraction": 0.0046875,
+    "clipping_rate_increase": 0.008928571428571428,
+    "reference_clips_per_dimension": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      327
+    ],
+    "candidate_clips_per_dimension": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      407
+    ],
+    "original_gates_passed": true
+  },
+  "independent_process_reload": {
+    "passed": true,
+    "max_abs_internal_actions": 0.0,
+    "max_abs_velocity_fields": 0.0,
+    "max_abs_env_actions": 0.0,
+    "same_engine_bundle_sha256": true,
+    "different_process_pids": true
+  },
+  "original_T1_float_case_replay_max_abs_env_actions": 0.0,
+  "original_T1_float_case_replay_passed": true,
+  "T1_boundary_drift_temporarily_allowed_by_user": true,
+  "new_quantization_errors_automatically_waived": false,
+  "4070_8GB_accepted": false,
+  "closed_loop_accepted": false,
+  "T3_reload_passed": true
+}

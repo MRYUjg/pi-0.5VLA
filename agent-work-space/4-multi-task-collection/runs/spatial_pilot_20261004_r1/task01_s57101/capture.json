@@ -1,0 +1,27 @@
+{
+  "seed": 57101,
+  "teacher_finished": true,
+  "transitions": 203,
+  "observations": 204,
+  "probe": false,
+  "scene": {
+    "task_id_order0": 1,
+    "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+    "benchmark_prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+    "bddl_language": "(:language Pick the akita black bowl next to the ramekin and place it on the plate)",
+    "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate.bddl",
+    "bddl_sha256": "53a7516571412a2f46a27cbf8482d3b76dbad4221858c8f6b565d506c274e61d",
+    "init": "(:init\n    (On akita_black_bowl_1 main_table_next_to_ramekin_region)\n    (On akita_black_bowl_2 main_table_next_to_box_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+    "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+    "target_initial_predicate": [
+      "(On akita_black_bowl_1 main_table_next_to_ramekin_region)"
+    ],
+    "teacher_status": "not yet validated; current teacher hardcodes task0",
+    "seed": 57101,
+    "split": "development",
+    "suite": "libero_spatial",
+    "task_id": 1
+  },
+  "process_exit_pending": true,
+  "note": "Data release additionally requires real process exit, teacher numeric audit and replay."
+}

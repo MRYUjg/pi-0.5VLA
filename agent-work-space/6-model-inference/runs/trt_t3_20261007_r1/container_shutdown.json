@@ -1,0 +1,21 @@
+{
+  "container": "pi05-trt-t3-20261007-r1",
+  "running": false,
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 137,
+    "Error": "",
+    "StartedAt": "2026-10-07T07:29:50.956098281Z",
+    "FinishedAt": "2026-10-07T08:03:23.604012057Z"
+  },
+  "processes_before_stop": "PID                 COMMAND\n58398               sleep infinity\n",
+  "inference_jobs_running_at_stop": false,
+  "intentional_shutdown_of_idle_sleep_PID1": true,
+  "unrelated_jobs_touched": false
+}

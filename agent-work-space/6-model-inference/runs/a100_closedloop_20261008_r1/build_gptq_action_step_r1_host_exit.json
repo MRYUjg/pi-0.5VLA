@@ -1,0 +1,20 @@
+{
+  "name": "build_gptq_action_step_r1",
+  "command": [
+    "python3",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/a100_closedloop_20261008_r1/execute.py",
+    "--name",
+    "build_gptq_action_step_r1",
+    "build.py",
+    "--source",
+    "/work/runs/trt_full4_20261007_r1/gptq_action_step_r1/action_step_int4.onnx",
+    "--out",
+    "/work/runs/a100_closedloop_20261008_r1/build_gptq_action_step_r1",
+    "--stage",
+    "action_step",
+    "--algorithm",
+    "GPTQ"
+  ],
+  "exit_code": 0,
+  "seconds": 54.75177335739136
+}

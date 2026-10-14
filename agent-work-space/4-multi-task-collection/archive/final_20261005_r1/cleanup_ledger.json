@@ -1,0 +1,632 @@
+{
+  "archive_version": "final_20261005_r1",
+  "authorization": "User requested current results as final archive and deletion of obsolete code and Markdown.",
+  "deleted": [
+    {
+      "path": "Spatial交接_20261005_r1.md",
+      "sha256": "0fda10168452abfdc599ef2506d4218aa5bc729224592589ff5668ab979253e6",
+      "bytes": 2150,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "Spatial扩展清单_20261004_r1.md",
+      "sha256": "d102a3760b05cf41278d3496e61a5efc5501fba7f80960a3543db64ac41ca9f7",
+      "bytes": 2344,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "Spatial收尾完成记录_20261005_r1.md",
+      "sha256": "8af8572a8f604b27afc440e8355056b4c6abf3cb39189a408d145870383007fe",
+      "bytes": 3426,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "Spatial试采与视频_完成记录_20261004_r1.md",
+      "sha256": "7e625a4bccb7393c2f48d3e2ca41eac456ba5df5ef26f6e2148f0260f7d3c82b",
+      "bytes": 5549,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "audit_spatial_pilot_20261004_r1.py",
+      "sha256": "d1bee1fd31498bd4b1383fdcaeaf230c0fa695ba4a5dd2a8b3978b1f0ebb3c18",
+      "bytes": 5155,
+      "reason": "one-off execution/report/freeze entry point retired"
+    },
+    {
+      "path": "build_spatial_report_20261004_r1.py",
+      "sha256": "fc222831af614400937d0ff8d93b760812ca384dd0cc6fc22d207332baea663b",
+      "bytes": 13651,
+      "reason": "one-off execution/report/freeze entry point retired"
+    },
+    {
+      "path": "execute_20261004_r1.py",
+      "sha256": "dc3ea12b70c23617b1c2494bff1cfe4f03a1575c209476e2b20e86e25f2bdd84",
+      "bytes": 4760,
+      "reason": "one-off execution/report/freeze entry point retired"
+    },
+    {
+      "path": "export_spatial_videos_20261004_r1.py",
+      "sha256": "9f5a5940a8612730fe357f7a95a66075d063d459365b8c4126673f8fb23b0e48",
+      "bytes": 1783,
+      "reason": "one-off execution/report/freeze entry point retired"
+    },
+    {
+      "path": "finalize_20261004_r1.py",
+      "sha256": "671bfb6e90489d224454550e2d0d4f528a15f094cc05f193577d23c1f409d1c3",
+      "bytes": 6945,
+      "reason": "one-off execution/report/freeze entry point retired"
+    },
+    {
+      "path": "finalize_spatial_pilot_20261004_r1.py",
+      "sha256": "336b6deba4feae96f0ba6e3b87bbd3c59546f87694b5659fe402c38ab1f3fab1",
+      "bytes": 3369,
+      "reason": "one-off execution/report/freeze entry point retired"
+    },
+    {
+      "path": "maintenance/readme_20261004_r1/README.before.md",
+      "sha256": "8235a82be9e934cd3d88c99eda39ac9e9d209f10ea24d6428e610b64d73a8d45",
+      "bytes": 676,
+      "reason": "superseded closeout maintenance bundle"
+    },
+    {
+      "path": "maintenance/readme_20261004_r1/update.json",
+      "sha256": "227bd5bca5eb2eb50987045457e989585d8fe221da26322b6bb84d5077df82bc",
+      "bytes": 276,
+      "reason": "superseded closeout maintenance bundle"
+    },
+    {
+      "path": "maintenance/spatial_closeout_20261005_r1/delivery_verification.json",
+      "sha256": "97ce58044f59d1f448765ff5c8e2d7b49f201ee66d5076180d6bda8dffb42126",
+      "bytes": 238,
+      "reason": "superseded closeout maintenance bundle"
+    },
+    {
+      "path": "maintenance/spatial_closeout_20261005_r1/manifest.json",
+      "sha256": "7f3b86f9e09e2d0f81ed80cd60df9042a103f56860c6c976f8d1658e569c1e2f",
+      "bytes": 1106,
+      "reason": "superseded closeout maintenance bundle"
+    },
+    {
+      "path": "maintenance/spatial_closeout_20261005_r1/upload_manifest.json",
+      "sha256": "1a82c62789cbed08bc07e22c79c86462ef36fffaa2038f69aa30ff82d57c5bdb",
+      "bytes": 500,
+      "reason": "superseded closeout maintenance bundle"
+    },
+    {
+      "path": "maintenance/spatial_closeout_20261005_r1/verification.json",
+      "sha256": "381fb039038fea9d2e37232c5b3ab7d357fa76ea4b3a687b641821d1cb83e564",
+      "bytes": 4747,
+      "reason": "superseded closeout maintenance bundle"
+    },
+    {
+      "path": "maintenance/spatial_closeout_20261005_r1/verify_closeout.py",
+      "sha256": "a2dab61e9554ab4e7f8ee9499f9b634a21d3dae0fee6bea606fceeda59b7d10a",
+      "bytes": 5297,
+      "reason": "superseded closeout maintenance bundle"
+    },
+    {
+      "path": "maintenance/spatial_closeout_20261005_r1/方案.md",
+      "sha256": "e490cdee87d676298d5152d85ba922d7e70bb6d7d86dbd294d44ccf422983776",
+      "bytes": 905,
+      "reason": "superseded closeout maintenance bundle"
+    },
+    {
+      "path": "releases/expansion_20261004_r1/manifest.json",
+      "sha256": "2af46dc714d83533dcc25660502547e158a6407d079ff459f91e81d906653569",
+      "bytes": 228782,
+      "reason": "historical release packages superseded by final archive manifest"
+    },
+    {
+      "path": "releases/expansion_20261004_r1/source.tar.gz",
+      "sha256": "9c2c37d9ffceb5f6c4345ec5be0425c5fa616e84f3f4f205d585065b672a49fe",
+      "bytes": 100768,
+      "reason": "historical release packages superseded by final archive manifest"
+    },
+    {
+      "path": "releases/lerobot_expansion_20261004_r1/manifest.json",
+      "sha256": "d35ab70606d1adb788c785c0648b28bd905feebfc5765634fceb9cb319f54963",
+      "bytes": 23009,
+      "reason": "historical release packages superseded by final archive manifest"
+    },
+    {
+      "path": "releases/lerobot_expansion_20261004_r1/source.tar.gz",
+      "sha256": "c29ac445a3355683f006d73eab77b403af2441ad765df550641d2ee2b60322d1",
+      "bytes": 9009,
+      "reason": "historical release packages superseded by final archive manifest"
+    },
+    {
+      "path": "releases/report_20261004_r1/manifest.json",
+      "sha256": "b61af710eb7ed4c7392ab9facef01c74a9cdd8cfa46af571a86bdf2b55875dcf",
+      "bytes": 17795,
+      "reason": "historical release packages superseded by final archive manifest"
+    },
+    {
+      "path": "releases/report_20261004_r1/source_and_evidence.tar.gz",
+      "sha256": "70f9c7219c93443a1e88fc26cd87fb6e377d47b4ecd8fb21e299f7375d8fa01e",
+      "bytes": 420985,
+      "reason": "historical release packages superseded by final archive manifest"
+    },
+    {
+      "path": "releases/report_20261004_r1/verification.json",
+      "sha256": "09e468e7799ff9893872fbc267a0c319658c955dee289868ee17d0f238981237",
+      "bytes": 156,
+      "reason": "historical release packages superseded by final archive manifest"
+    },
+    {
+      "path": "releases/spatial_pilot_report_20261004_r1/local_verification.json",
+      "sha256": "18dc2c5f4c116802733a666a3045dd404d3f14f36c5608b2a08d27347f325db8",
+      "bytes": 132,
+      "reason": "historical release packages superseded by final archive manifest"
+    },
+    {
+      "path": "releases/spatial_pilot_report_20261004_r1/manifest.json",
+      "sha256": "a8ff02e6251525e91569ca7629405160ca04bea820df48af6d7bd55fb97882c9",
+      "bytes": 36954,
+      "reason": "historical release packages superseded by final archive manifest"
+    },
+    {
+      "path": "releases/spatial_pilot_report_20261004_r1/verification.json",
+      "sha256": "e6744e4ca3eda93369f043f74c16dde045000bb4fd7018bf85620845ba6bc7d2",
+      "bytes": 2861,
+      "reason": "historical release packages superseded by final archive manifest"
+    },
+    {
+      "path": "releases/spatial_pilot_source_20261004_r1/manifest.json",
+      "sha256": "7d15d7a83053271c1e89943f9e65125d3d672dce7f68ef580d9a80aff6f148d6",
+      "bytes": 2161,
+      "reason": "historical release packages superseded by final archive manifest"
+    },
+    {
+      "path": "run_spatial_replay_20261004_r1.py",
+      "sha256": "36a6fbd3831edd6a839498e317c17083f020a3134ae7ad923d184d5ada1086c8",
+      "bytes": 1759,
+      "reason": "one-off execution/report/freeze entry point retired"
+    },
+    {
+      "path": "versions/expansion_20261004_r1/scripts/__pycache__/freeze.cpython-38.pyc",
+      "sha256": "2351f97eec916b0562b8b8b8851163e44c2d15c5e992bac518196d36a0c32306",
+      "bytes": 3286,
+      "reason": "generated Python cache"
+    },
+    {
+      "path": "versions/expansion_20261004_r1/scripts/__pycache__/run.cpython-38.pyc",
+      "sha256": "83079592db9c7b38144a7b22b6115aad734c2f009f46a160214e4066208f5904",
+      "bytes": 3653,
+      "reason": "generated Python cache"
+    },
+    {
+      "path": "versions/expansion_20261004_r1/scripts/freeze.py",
+      "sha256": "afae4f2c3936dbbcb64182d6dc09bc4a16b387744be201ff4a345e2ed2d67d75",
+      "bytes": 2177,
+      "reason": "superseded implementation or obsolete release manifest"
+    },
+    {
+      "path": "versions/expansion_20261004_r1/scripts/pipeline.py",
+      "sha256": "ebd0d50dcfa667102f8f931e323d4f6a52ba9c9d83d15fdd4a09e130d64e2803",
+      "bytes": 727,
+      "reason": "superseded implementation or obsolete release manifest"
+    },
+    {
+      "path": "versions/expansion_20261004_r1/方案.md",
+      "sha256": "795407c00d114d8fdcfbe40accf331f85ad00cfbfdcb67fa77855f8e4d71ee3c",
+      "bytes": 4779,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "versions/lerobot_expansion_20261004_r1/scripts/freeze.py",
+      "sha256": "320fe0a080d11d3dcb37ff72ad90b680b07f3ad391f876b40ba53b6092c0a754",
+      "bytes": 1898,
+      "reason": "superseded implementation or obsolete release manifest"
+    },
+    {
+      "path": "versions/lerobot_expansion_20261004_r1/方案.md",
+      "sha256": "4179131151ec97ee9bc7a4d4d80279ec24f38777e410cb2ba129626f5f4952da",
+      "bytes": 1093,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "versions/spatial_pilot_20261004_r1/scripts/__pycache__/run.cpython-38.pyc",
+      "sha256": "7c01340d520743191bf1c1e3bf339d376e2d19408ea504a1527100f9b8ddccd8",
+      "bytes": 3657,
+      "reason": "generated Python cache"
+    },
+    {
+      "path": "versions/spatial_pilot_20261004_r1/scripts/batch.py",
+      "sha256": "05c620efcb8061530747d05dc6e73dc5258babd4914d0a8e945de4d339ba315b",
+      "bytes": 3015,
+      "reason": "superseded implementation or obsolete release manifest"
+    },
+    {
+      "path": "versions/spatial_pilot_20261004_r1/scripts/replay.py",
+      "sha256": "b76d7ab5f93ef818b80be72705a2fd6b49345e1388d9d36c8189aba4f690c976",
+      "bytes": 3011,
+      "reason": "superseded implementation or obsolete release manifest"
+    },
+    {
+      "path": "versions/spatial_pilot_20261004_r1/scripts/video.py",
+      "sha256": "11a6cfb51c0e75a35f57182bab96fb29319f24d08b1032959a36358ca979cce6",
+      "bytes": 4090,
+      "reason": "superseded implementation or obsolete release manifest"
+    },
+    {
+      "path": "versions/spatial_pilot_20261004_r1/方案.md",
+      "sha256": "7424d1650b2e63c9024bd68637e53f4f094ccdbccf48b8eae107e0d7a43d19a9",
+      "bytes": 1915,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "versions/spatial_replay_20261004_r1/manifest.json",
+      "sha256": "27973eb3a1bc90b81e36ef54113f59be0ffaf3c8cecb6a9bfaf4fbb040469c33",
+      "bytes": 270,
+      "reason": "superseded implementation or obsolete release manifest"
+    },
+    {
+      "path": "versions/spatial_replay_20261004_r1/scripts/__pycache__/run.cpython-38.pyc",
+      "sha256": "0a75a68e31eeca8b94b394519382e79057d33f2bc6beae342edda63c6587b0e3",
+      "bytes": 3658,
+      "reason": "generated Python cache"
+    },
+    {
+      "path": "versions/spatial_replay_20261004_r1/方案.md",
+      "sha256": "fe0921958e132bb3a088c2252a5f4bfeac6ec729c7c696baf822743d2e9ddfd6",
+      "bytes": 1124,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "versions/spatial_video_20261004_r2/manifest.json",
+      "sha256": "909fa38cccad6f6aa575e0b6eacd7db79ad02549d7c964c1b9a0db37c00f1a3a",
+      "bytes": 269,
+      "reason": "superseded implementation or obsolete release manifest"
+    },
+    {
+      "path": "versions/spatial_video_20261004_r2/scripts/__pycache__/run.cpython-38.pyc",
+      "sha256": "024addade18ec0c2666b00c9d528b4effc099f8f64c4ee218a84a6f3866d9cbb",
+      "bytes": 3657,
+      "reason": "generated Python cache"
+    },
+    {
+      "path": "versions/spatial_video_20261004_r2/方案.md",
+      "sha256": "0d5f4dce84645a357fd892284937796d59e6df8c0b6d5712ef8e589e496abbcc",
+      "bytes": 311,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/can_export.log",
+      "sha256": "6f92d71cfaf31ef6a4a37716d5ef1750e31331d44bbec0e8294d1077c9419edb",
+      "bytes": 1049,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/export_status.json",
+      "sha256": "be060e81f2eba9dd0f965b5b8c1d3321c186c0b3c5e049895e1567696c28c8cd",
+      "bytes": 3152,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/object_task00_can.jpg",
+      "sha256": "39d55b7754b6a90c87fd21b618288c3f33269cd0a6186f246a263450c2bab2cf",
+      "bytes": 81984,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/object_task00_can.json",
+      "sha256": "24407a8c7f2d07df02e9d2733ea1a3a64a961f8a2dea85455732036fa56c11e3",
+      "bytes": 1047,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/object_task00_can.mp4",
+      "sha256": "bb5c50ae3546c0d8c2df272f893edc7b09eb269ac9bb441c0a1928f7c17e3d03",
+      "bytes": 3768151,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task00.jpg",
+      "sha256": "ac501b006adaec8897ff7fa1e31fec04a64ebacdcabe9ca4c08d5edafe2c2bbe",
+      "bytes": 71365,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task00.json",
+      "sha256": "1ced2b885e291039e5f8bcad9a85e6050b0123f86c6d6d8c03cf60ffc3d1bb9c",
+      "bytes": 1060,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task00.mp4",
+      "sha256": "dd6458d297af0134c43c7b41a1c6ee708447a0a8648178bb051a77b37f53c309",
+      "bytes": 4319580,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task01.jpg",
+      "sha256": "7bc1323fb1fda8b177b0cb7bfe3146939b846e3b18f13490b0e8fe550171ed42",
+      "bytes": 75313,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task01.json",
+      "sha256": "5ee07f18adc0c615ac6b9e01478b3da4274181d9c4cb91b0251f4279991540f8",
+      "bytes": 2471,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task01.mp4",
+      "sha256": "c0cebb7e6aa52e0166cdd05f9f620895000770a7c6ca63861c243285978cb35a",
+      "bytes": 1427023,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task02.jpg",
+      "sha256": "bca02ae0e7efb8929259324a8d9677693a45c724242b442739826bd2ec581c62",
+      "bytes": 71001,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task02.json",
+      "sha256": "0d6e7005a124325de1499e052cc5cc171c42338722ceea1751a5dc09b716d38c",
+      "bytes": 1058,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task02.mp4",
+      "sha256": "c18ed7cb6660caf8305d06b57284efebfadde66fa140d0de8a060f69c3ffbc48",
+      "bytes": 3449106,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task03.jpg",
+      "sha256": "bb628df4c52303776c8ee267afa7656e87921ad4e75c3e17748fa1c5353ab14c",
+      "bytes": 67461,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task03.json",
+      "sha256": "e4f364bc7f7ec339390c77867679dc84754f496077f9a6eab82dad51fdd3947e",
+      "bytes": 1058,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task03.mp4",
+      "sha256": "80ec89c3ab80b2e7001de953c3d051630cfcb0930f039c9a4a16928555e8ed20",
+      "bytes": 3827171,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task04.jpg",
+      "sha256": "eeae8c18e5badfcfc8be9c6cbdde3ac0749fcc17eab50dc4ed9bb34d33ba0215",
+      "bytes": 75917,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task04.json",
+      "sha256": "8e8ca16fef3641b3b57f7f2a45f09ffed68e3701455deb280be25e36a6eaa03c",
+      "bytes": 2085,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task04.mp4",
+      "sha256": "79f21df97ba2fa6dd51007b4833a3060c1b631ff8be84c797f0564a685c213b0",
+      "bytes": 190746,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task05.jpg",
+      "sha256": "e6c9d6f384a4f31852cb10d84dca77364f9cf7573ad7931761a1f3af342a3a20",
+      "bytes": 69201,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task05.json",
+      "sha256": "9b76827f407a6e3c414c5045b91e1e031fd48f90973238e45414108496c0c6a2",
+      "bytes": 1060,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task05.mp4",
+      "sha256": "4bb7f5d8c0c2463a2b7e4ec9497bcb8d91e7d2f149d9e4816c19670662df5dc9",
+      "bytes": 3647033,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task06.jpg",
+      "sha256": "7906e439111ae1de1d5f374afca95cab2cda31aa39286566e96227be6d402caf",
+      "bytes": 68599,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task06.json",
+      "sha256": "2c0701f17cb4c5803ce4382be30a9105cb7d0c89c977e79d537e52b630b4d958",
+      "bytes": 1060,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task06.mp4",
+      "sha256": "840cf13554ba75526ed552c310a10a9334673201a11897f3dcb0787056e912dc",
+      "bytes": 3141237,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task07.jpg",
+      "sha256": "c142272220d7f0cea2d8757db561f749faeb6f512f5cf9bbde4e9b8b840d9b79",
+      "bytes": 66970,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task07.json",
+      "sha256": "2ee45e08b6fbd58fd853e23792748e3bba00713f90387acbf59ef262e2fe73e3",
+      "bytes": 1059,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task07.mp4",
+      "sha256": "5cd0e0904c11a89f28b776b02a3a9c8b80d6e0c97b074d712bdbd5b4fd178470",
+      "bytes": 3234563,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task08.jpg",
+      "sha256": "71490d2b67d041b5a35f2b8f76b9288f320c6e8899791fea74f13bebb4b81377",
+      "bytes": 67699,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task08.json",
+      "sha256": "5ead35895595c24759cde0b3fbe46f3f08d9457a5ea4d30bd5743d040a0be9ee",
+      "bytes": 1058,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task08.mp4",
+      "sha256": "756722ea97095a3e337b4a05de61e1ff43cc3decfd43f2274fca2464079c825e",
+      "bytes": 3414274,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task09.jpg",
+      "sha256": "e0f881256c43704087ace93a065f21ecb69f297375b63822467538e8066534e1",
+      "bytes": 73574,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task09.json",
+      "sha256": "660593ae685109bab6662f8ac8f35ebc68753b9527366601ce3a357ed275aadc",
+      "bytes": 2085,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/spatial_task09.mp4",
+      "sha256": "c9fff27a2e6cd4e0e7c6240be970b7d90661bfa4df7e3a72e6f2ba4ade986e6a",
+      "bytes": 187506,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/task00_export.log",
+      "sha256": "97a436667c4bfd6e3774607864ace95e29885c1c3556bbc7375e2d2fef8076b5",
+      "bytes": 1062,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/task01_export.log",
+      "sha256": "be80108d23e473a477bc1c5f1e72fd22b9e2f57308937aab480e98da42e81bf5",
+      "bytes": 2453,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/task02_export.log",
+      "sha256": "9e0b97ca15be45ddb6abceb5a83e20127cc3ba1dbd98baadc12c577da518b048",
+      "bytes": 1060,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/task03_export.log",
+      "sha256": "fad471faa8a146681478fd2184dffc0e618fd659b4f10be28a3d0e1f4685d323",
+      "bytes": 1060,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/task04_export.log",
+      "sha256": "8dfd72ee2048d8511e9c1e61ee6b5a84617b2b97c96942ac6e318be470d0b200",
+      "bytes": 2067,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/task05_export.log",
+      "sha256": "6373722665b9acd377310ecc44a9cc536a1b1952337f35e96cb2ff89e9203131",
+      "bytes": 1062,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/task06_export.log",
+      "sha256": "2ab952f3bdeaf1964236fb40a85861fa1c3079a22114f41e0796bc42ac16107f",
+      "bytes": 1062,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/task07_export.log",
+      "sha256": "80c9b27279443efa835e95cc38407202f39bd77ce925e0b32b0e50fdf5f8e081",
+      "bytes": 1061,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/task08_export.log",
+      "sha256": "cbf7aab497e3342db97fea7394cbf56233a3e9585b938c3eab11847735f8ec28",
+      "bytes": 1060,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "videos/spatial_pilot_20261004_r1/task09_export.log",
+      "sha256": "8e4975533fc23300c2bf344ae2c83a3b9f50b582eb9469b95077ba9eec16b374",
+      "bytes": 2067,
+      "reason": "superseded video export; final r2 retained"
+    },
+    {
+      "path": "当前版本与文件索引_20261004_r1.md",
+      "sha256": "bd5c5d7d12eab396b2a6a27ff1ea6d7c5af5cf240645fc6a74d210d53826abce",
+      "bytes": 2258,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "当前版本与文件索引_20261004_r2.md",
+      "sha256": "63aa7c97c3e703434d74ed7a1ca853639ebb664aa48d69786687871d5f3051b5",
+      "bytes": 730,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "当前版本与文件索引_20261005_r1.md",
+      "sha256": "a2b5ab4f2b1916b7df5fb7001c45d3138c7af25835e20920a40c711c73695c71",
+      "bytes": 1133,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "汇总扩展数据_20261004_r1.py",
+      "sha256": "96954618508df25075c2c771ace24d1274a6a2a85f8e9f9e2c819b34c4a52c11",
+      "bytes": 11826,
+      "reason": "one-off execution/report/freeze entry point retired"
+    },
+    {
+      "path": "绘制场景覆盖_20261004_r1.py",
+      "sha256": "587833b13d29346dd51f9f21a6f6332d0efe5b17d50b287aa799092c19751bd8",
+      "bytes": 2788,
+      "reason": "one-off execution/report/freeze entry point retired"
+    },
+    {
+      "path": "罐入篮数据扩展_完成记录_20261004_r1.md",
+      "sha256": "c75c9755760e19387a32ecbe87e013a86a2e4761dcbc9f6b7eea89419c0f2a20",
+      "bytes": 5706,
+      "reason": "historical Markdown consolidated into final README"
+    },
+    {
+      "path": "视频保留约定_20261004_r1.md",
+      "sha256": "592a6f3b5832eb5a5a08f12a096ed2f16237cc3de3a8e80ab7cd7de89b72f1f9",
+      "bytes": 1156,
+      "reason": "historical Markdown consolidated into final README"
+    }
+  ],
+  "replaced": [
+    {
+      "path": "README.md",
+      "sha256": "b881e6c8d82f1ad3b8200eef512ecd633529378c3f3b4dbe4b493f5423f244eb",
+      "bytes": 651,
+      "reason": "single consolidated final documentation"
+    }
+  ],
+  "relocated": [
+    {
+      "from": "audit_spatial_pilot_20261004_r1.py",
+      "to": "versions/spatial_pilot_20261004_r1/scripts/structural_audit.py",
+      "sha256": "d1bee1fd31498bd4b1383fdcaeaf230c0fa695ba4a5dd2a8b3978b1f0ebb3c18",
+      "byte_identical": true
+    }
+  ],
+  "retained_evidence_policy": "All runs, reports, raw data and LeRobot exports retained byte-for-byte; final r2 videos retained; historical JSON source paths remain historical facts.",
+  "source_behavior_changed": false,
+  "controller_changed": false,
+  "audit_thresholds_changed": false,
+  "summary": {
+    "deleted_files": 100,
+    "deleted_bytes": 32404225,
+    "deleted_python": 16,
+    "deleted_markdown": 16
+  }
+}

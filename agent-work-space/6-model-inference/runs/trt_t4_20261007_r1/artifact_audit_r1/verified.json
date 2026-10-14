@@ -1,0 +1,1126 @@
+{
+  "passed": true,
+  "primary_episodes": 120,
+  "latency_probe_episodes": 4,
+  "full_video_decodes": 124,
+  "decoded_frames": 16434,
+  "scope": "readback audit only; no changes to controls or success criteria",
+  "episodes": [
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task00/init00.json",
+      "variant": "original_torch",
+      "task": 0,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 86,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task00/init01.json",
+      "variant": "original_torch",
+      "task": 0,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 117,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task00/init02.json",
+      "variant": "original_torch",
+      "task": 0,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 122,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task01/init00.json",
+      "variant": "original_torch",
+      "task": 1,
+      "init_index": 0,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task01/init01.json",
+      "variant": "original_torch",
+      "task": 1,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 144,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task01/init02.json",
+      "variant": "original_torch",
+      "task": 1,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 111,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task02/init00.json",
+      "variant": "original_torch",
+      "task": 2,
+      "init_index": 0,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task02/init01.json",
+      "variant": "original_torch",
+      "task": 2,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 101,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task02/init02.json",
+      "variant": "original_torch",
+      "task": 2,
+      "init_index": 2,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task03/init00.json",
+      "variant": "original_torch",
+      "task": 3,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 92,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task03/init01.json",
+      "variant": "original_torch",
+      "task": 3,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 90,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task03/init02.json",
+      "variant": "original_torch",
+      "task": 3,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 82,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task04/init00.json",
+      "variant": "original_torch",
+      "task": 4,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 187,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task04/init01.json",
+      "variant": "original_torch",
+      "task": 4,
+      "init_index": 1,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task04/init02.json",
+      "variant": "original_torch",
+      "task": 4,
+      "init_index": 2,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task05/init00.json",
+      "variant": "original_torch",
+      "task": 5,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 171,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task05/init01.json",
+      "variant": "original_torch",
+      "task": 5,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 104,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task05/init02.json",
+      "variant": "original_torch",
+      "task": 5,
+      "init_index": 2,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task06/init00.json",
+      "variant": "original_torch",
+      "task": 6,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 110,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task06/init01.json",
+      "variant": "original_torch",
+      "task": 6,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 103,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task06/init02.json",
+      "variant": "original_torch",
+      "task": 6,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 102,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task07/init00.json",
+      "variant": "original_torch",
+      "task": 7,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 118,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task07/init01.json",
+      "variant": "original_torch",
+      "task": 7,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 119,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task07/init02.json",
+      "variant": "original_torch",
+      "task": 7,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 131,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task08/init00.json",
+      "variant": "original_torch",
+      "task": 8,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 145,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task08/init01.json",
+      "variant": "original_torch",
+      "task": 8,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 99,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task08/init02.json",
+      "variant": "original_torch",
+      "task": 8,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 99,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task09/init00.json",
+      "variant": "original_torch",
+      "task": 9,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 127,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task09/init01.json",
+      "variant": "original_torch",
+      "task": 9,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 181,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1/task09/init02.json",
+      "variant": "original_torch",
+      "task": 9,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 132,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/latency_original_torch_r1/episode/init00.json",
+      "variant": "original_torch",
+      "task": 0,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 86,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task00/init00.json",
+      "variant": "trt_float",
+      "task": 0,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 86,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task00/init01.json",
+      "variant": "trt_float",
+      "task": 0,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 174,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task00/init02.json",
+      "variant": "trt_float",
+      "task": 0,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 120,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task01/init00.json",
+      "variant": "trt_float",
+      "task": 1,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 176,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task01/init01.json",
+      "variant": "trt_float",
+      "task": 1,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 101,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task01/init02.json",
+      "variant": "trt_float",
+      "task": 1,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 110,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task02/init00.json",
+      "variant": "trt_float",
+      "task": 2,
+      "init_index": 0,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task02/init01.json",
+      "variant": "trt_float",
+      "task": 2,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 100,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task02/init02.json",
+      "variant": "trt_float",
+      "task": 2,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 102,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task03/init00.json",
+      "variant": "trt_float",
+      "task": 3,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 93,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task03/init01.json",
+      "variant": "trt_float",
+      "task": 3,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 90,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task03/init02.json",
+      "variant": "trt_float",
+      "task": 3,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 83,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task04/init00.json",
+      "variant": "trt_float",
+      "task": 4,
+      "init_index": 0,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task04/init01.json",
+      "variant": "trt_float",
+      "task": 4,
+      "init_index": 1,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task04/init02.json",
+      "variant": "trt_float",
+      "task": 4,
+      "init_index": 2,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task05/init00.json",
+      "variant": "trt_float",
+      "task": 5,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 131,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task05/init01.json",
+      "variant": "trt_float",
+      "task": 5,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 103,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task05/init02.json",
+      "variant": "trt_float",
+      "task": 5,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 124,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task06/init00.json",
+      "variant": "trt_float",
+      "task": 6,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 109,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task06/init01.json",
+      "variant": "trt_float",
+      "task": 6,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 106,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task06/init02.json",
+      "variant": "trt_float",
+      "task": 6,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 102,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task07/init00.json",
+      "variant": "trt_float",
+      "task": 7,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 118,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task07/init01.json",
+      "variant": "trt_float",
+      "task": 7,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 118,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task07/init02.json",
+      "variant": "trt_float",
+      "task": 7,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 129,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task08/init00.json",
+      "variant": "trt_float",
+      "task": 8,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 170,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task08/init01.json",
+      "variant": "trt_float",
+      "task": 8,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 100,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task08/init02.json",
+      "variant": "trt_float",
+      "task": 8,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 97,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task09/init00.json",
+      "variant": "trt_float",
+      "task": 9,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 127,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task09/init01.json",
+      "variant": "trt_float",
+      "task": 9,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 131,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_trt_float_r1/task09/init02.json",
+      "variant": "trt_float",
+      "task": 9,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 132,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/latency_trt_float_r1/episode/init00.json",
+      "variant": "trt_float",
+      "task": 0,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 86,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task00/init00.json",
+      "variant": "awq",
+      "task": 0,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 88,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task00/init01.json",
+      "variant": "awq",
+      "task": 0,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 149,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task00/init02.json",
+      "variant": "awq",
+      "task": 0,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 90,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task01/init00.json",
+      "variant": "awq",
+      "task": 1,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 178,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task01/init01.json",
+      "variant": "awq",
+      "task": 1,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 104,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task01/init02.json",
+      "variant": "awq",
+      "task": 1,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 107,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task02/init00.json",
+      "variant": "awq",
+      "task": 2,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 134,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task02/init01.json",
+      "variant": "awq",
+      "task": 2,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 103,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task02/init02.json",
+      "variant": "awq",
+      "task": 2,
+      "init_index": 2,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task03/init00.json",
+      "variant": "awq",
+      "task": 3,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 92,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task03/init01.json",
+      "variant": "awq",
+      "task": 3,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 89,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task03/init02.json",
+      "variant": "awq",
+      "task": 3,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 80,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task04/init00.json",
+      "variant": "awq",
+      "task": 4,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 201,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task04/init01.json",
+      "variant": "awq",
+      "task": 4,
+      "init_index": 1,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task04/init02.json",
+      "variant": "awq",
+      "task": 4,
+      "init_index": 2,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task05/init00.json",
+      "variant": "awq",
+      "task": 5,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 108,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task05/init01.json",
+      "variant": "awq",
+      "task": 5,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 111,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task05/init02.json",
+      "variant": "awq",
+      "task": 5,
+      "init_index": 2,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task06/init00.json",
+      "variant": "awq",
+      "task": 6,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 112,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task06/init01.json",
+      "variant": "awq",
+      "task": 6,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 104,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task06/init02.json",
+      "variant": "awq",
+      "task": 6,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 103,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task07/init00.json",
+      "variant": "awq",
+      "task": 7,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 119,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task07/init01.json",
+      "variant": "awq",
+      "task": 7,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 120,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task07/init02.json",
+      "variant": "awq",
+      "task": 7,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 130,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task08/init00.json",
+      "variant": "awq",
+      "task": 8,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 145,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task08/init01.json",
+      "variant": "awq",
+      "task": 8,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 100,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task08/init02.json",
+      "variant": "awq",
+      "task": 8,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 99,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task09/init00.json",
+      "variant": "awq",
+      "task": 9,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 133,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task09/init01.json",
+      "variant": "awq",
+      "task": 9,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 128,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_awq_r1/task09/init02.json",
+      "variant": "awq",
+      "task": 9,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 132,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/latency_awq_r1/episode/init00.json",
+      "variant": "awq",
+      "task": 0,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 88,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task00/init00.json",
+      "variant": "gptq",
+      "task": 0,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 87,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task00/init01.json",
+      "variant": "gptq",
+      "task": 0,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 145,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task00/init02.json",
+      "variant": "gptq",
+      "task": 0,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 89,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task01/init00.json",
+      "variant": "gptq",
+      "task": 1,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 146,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task01/init01.json",
+      "variant": "gptq",
+      "task": 1,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 196,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task01/init02.json",
+      "variant": "gptq",
+      "task": 1,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 133,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task02/init00.json",
+      "variant": "gptq",
+      "task": 2,
+      "init_index": 0,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task02/init01.json",
+      "variant": "gptq",
+      "task": 2,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 103,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task02/init02.json",
+      "variant": "gptq",
+      "task": 2,
+      "init_index": 2,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task03/init00.json",
+      "variant": "gptq",
+      "task": 3,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 91,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task03/init01.json",
+      "variant": "gptq",
+      "task": 3,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 90,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task03/init02.json",
+      "variant": "gptq",
+      "task": 3,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 81,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task04/init00.json",
+      "variant": "gptq",
+      "task": 4,
+      "init_index": 0,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task04/init01.json",
+      "variant": "gptq",
+      "task": 4,
+      "init_index": 1,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task04/init02.json",
+      "variant": "gptq",
+      "task": 4,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 157,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task05/init00.json",
+      "variant": "gptq",
+      "task": 5,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 129,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task05/init01.json",
+      "variant": "gptq",
+      "task": 5,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 114,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task05/init02.json",
+      "variant": "gptq",
+      "task": 5,
+      "init_index": 2,
+      "success": false,
+      "fully_decoded_video_frames": 221,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task06/init00.json",
+      "variant": "gptq",
+      "task": 6,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 109,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task06/init01.json",
+      "variant": "gptq",
+      "task": 6,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 101,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task06/init02.json",
+      "variant": "gptq",
+      "task": 6,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 102,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task07/init00.json",
+      "variant": "gptq",
+      "task": 7,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 115,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task07/init01.json",
+      "variant": "gptq",
+      "task": 7,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 120,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task07/init02.json",
+      "variant": "gptq",
+      "task": 7,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 124,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task08/init00.json",
+      "variant": "gptq",
+      "task": 8,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 96,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task08/init01.json",
+      "variant": "gptq",
+      "task": 8,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 100,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task08/init02.json",
+      "variant": "gptq",
+      "task": 8,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 103,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task09/init00.json",
+      "variant": "gptq",
+      "task": 9,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 131,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task09/init01.json",
+      "variant": "gptq",
+      "task": 9,
+      "init_index": 1,
+      "success": true,
+      "fully_decoded_video_frames": 130,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/closedloop_gptq_r1/task09/init02.json",
+      "variant": "gptq",
+      "task": 9,
+      "init_index": 2,
+      "success": true,
+      "fully_decoded_video_frames": 132,
+      "initial_arrays_and_action_sequence_passed": true
+    },
+    {
+      "path": "/work/runs/trt_t4_20261007_r1/latency_gptq_r1/episode/init00.json",
+      "variant": "gptq",
+      "task": 0,
+      "init_index": 0,
+      "success": true,
+      "fully_decoded_video_frames": 87,
+      "initial_arrays_and_action_sequence_passed": true
+    }
+  ]
+}

@@ -1,0 +1,5032 @@
+{
+  "coverage_passed": true,
+  "algorithm": "AWQ",
+  "reachable_INT4_layers": 121,
+  "INT4_parameters": 1872756736,
+  "fused_DQ_GEMM_layers": 88,
+  "separate_dequantization_GEMM_layers": 33,
+  "builder_total_weights_memory_bytes": 2020206340,
+  "persistent_weights_compressed": true,
+  "all_arithmetic_pure_integer_INT4": false,
+  "precision_note": "TensorRT INT4 weight-only: packed weights, original floating activations/GEMM; separate DQ fallback explicitly counted",
+  "runtime_kernel_execution_confirmation": "native inference plus per-layer profiler required",
+  "engine_layers_sha256": "c846bcf6251e385289c8bf8c96cdae1030d86604b6690e46fe520730a62e3568",
+  "layers": [
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_6",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_6",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_8_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_5",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_5",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_9_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_3",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_3",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_10_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_11",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_11",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_23_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_24_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_14",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_14",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_27_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_29_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_13",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_13",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x64x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_26_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_28_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_16",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_16",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_30_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_31_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_22",
+      "GEMM_engine_layer": "/q_proj_1/MatMul_myl0_23",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_1/MatMul_output_0.1_35_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_1/MatMul_output_0.1_41_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_1/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_20",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_20",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_34_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_1/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_18",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_18",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_33_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_1/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_27",
+      "GEMM_engine_layer": "/o_proj_1/MatMul_myl0_29",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_1/MatMul_output_0.1_47_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_1/MatMul_output_0.1_46_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_48_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_32",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_32",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_51_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_53_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_31",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_31",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_50_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_52_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_34",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_34",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_54_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_55_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_40",
+      "GEMM_engine_layer": "/q_proj_2/MatMul_myl0_41",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_2/MatMul_output_0.1_59_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_2/MatMul_output_0.1_65_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_2/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_38",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_38",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_58_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_2/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_36",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_36",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_57_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_2/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_45",
+      "GEMM_engine_layer": "/o_proj_2/MatMul_myl0_47",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_2/MatMul_output_0.1_71_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_2/MatMul_output_0.1_70_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_72_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_50",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_50",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_75_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_77_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_49",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_49",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_74_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_76_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_52",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_52",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_78_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_79_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_58",
+      "GEMM_engine_layer": "/q_proj_3/MatMul_myl0_59",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_3/MatMul_output_0.1_83_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_3/MatMul_output_0.1_89_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_3/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_56",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_56",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_82_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_3/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_54",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_54",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_81_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_3/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_63",
+      "GEMM_engine_layer": "/o_proj_3/MatMul_myl0_65",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_3/MatMul_output_0.1_95_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_3/MatMul_output_0.1_94_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_96_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_68",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_68",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_99_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_101_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_67",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_67",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_98_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_100_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_70",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_70",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_102_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_103_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_76",
+      "GEMM_engine_layer": "/q_proj_4/MatMul_myl0_77",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_4/MatMul_output_0.1_107_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_4/MatMul_output_0.1_113_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_4/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_74",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_74",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_106_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_4/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_72",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_72",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_105_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_4/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_81",
+      "GEMM_engine_layer": "/o_proj_4/MatMul_myl0_83",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_4/MatMul_output_0.1_119_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_4/MatMul_output_0.1_118_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_120_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_86",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_86",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_123_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_125_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_85",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_85",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_122_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_124_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_88",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_88",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_126_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_127_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_94",
+      "GEMM_engine_layer": "/q_proj_5/MatMul_myl0_95",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_5/MatMul_output_0.1_131_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_5/MatMul_output_0.1_137_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_5/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_92",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_92",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_130_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_5/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_90",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_90",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_129_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_5/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_99",
+      "GEMM_engine_layer": "/o_proj_5/MatMul_myl0_101",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_5/MatMul_output_0.1_143_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_5/MatMul_output_0.1_142_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_144_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_104",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_104",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_147_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_149_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_103",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_103",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_146_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_148_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_106",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_106",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_150_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_151_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_112",
+      "GEMM_engine_layer": "/q_proj_6/MatMul_myl0_113",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_6/MatMul_output_0.1_155_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_6/MatMul_output_0.1_161_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_6/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_110",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_110",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_154_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_6/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_108",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_108",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_153_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_6/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_117",
+      "GEMM_engine_layer": "/o_proj_6/MatMul_myl0_119",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_6/MatMul_output_0.1_167_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_6/MatMul_output_0.1_166_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_168_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_122",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_122",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_171_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_173_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_121",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_121",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_170_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_172_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_124",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_124",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_174_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_175_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_130",
+      "GEMM_engine_layer": "/q_proj_7/MatMul_myl0_131",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_7/MatMul_output_0.1_179_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_7/MatMul_output_0.1_185_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_7/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_128",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_128",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_178_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_7/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_126",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_126",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_177_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_7/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_135",
+      "GEMM_engine_layer": "/o_proj_7/MatMul_myl0_137",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_7/MatMul_output_0.1_191_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_7/MatMul_output_0.1_190_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_192_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_140",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_140",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_195_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_197_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_139",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_139",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_194_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_196_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_142",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_142",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_198_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_199_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_148",
+      "GEMM_engine_layer": "/q_proj_8/MatMul_myl0_149",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_8/MatMul_output_0.1_203_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_8/MatMul_output_0.1_209_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_8/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_146",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_146",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_202_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_8/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_144",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_144",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_201_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_8/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_153",
+      "GEMM_engine_layer": "/o_proj_8/MatMul_myl0_155",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_8/MatMul_output_0.1_215_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_8/MatMul_output_0.1_214_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_216_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_158",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_158",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_219_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_221_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_157",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_157",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_218_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_220_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_160",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_160",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_222_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_223_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_166",
+      "GEMM_engine_layer": "/q_proj_9/MatMul_myl0_167",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_9/MatMul_output_0.1_227_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_9/MatMul_output_0.1_233_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_9/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_164",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_164",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_226_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_9/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_162",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_162",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_225_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_9/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_171",
+      "GEMM_engine_layer": "/o_proj_9/MatMul_myl0_173",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_9/MatMul_output_0.1_239_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_9/MatMul_output_0.1_238_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_240_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_176",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_176",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_243_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_245_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_175",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_175",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_242_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_244_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_178",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_178",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_246_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_247_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_184",
+      "GEMM_engine_layer": "/q_proj_10/MatMul_myl0_185",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_10/MatMul_output_0.1_251_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_10/MatMul_output_0.1_257_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_10/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_182",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_182",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_250_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_10/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_180",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_180",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_249_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_10/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_189",
+      "GEMM_engine_layer": "/o_proj_10/MatMul_myl0_191",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_10/MatMul_output_0.1_263_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_10/MatMul_output_0.1_262_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_264_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_194",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_194",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_267_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_269_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_193",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_193",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_266_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_268_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_196",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_196",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_270_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_271_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_202",
+      "GEMM_engine_layer": "/q_proj_11/MatMul_myl0_203",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_11/MatMul_output_0.1_275_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_11/MatMul_output_0.1_281_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_11/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_200",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_200",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_274_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_11/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_198",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_198",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_273_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_11/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_207",
+      "GEMM_engine_layer": "/o_proj_11/MatMul_myl0_209",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_11/MatMul_output_0.1_287_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_11/MatMul_output_0.1_286_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_288_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_212",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_212",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_291_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_293_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_211",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_211",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_290_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_292_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_214",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_214",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_294_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_295_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_220",
+      "GEMM_engine_layer": "/q_proj_12/MatMul_myl0_221",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_12/MatMul_output_0.1_299_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_12/MatMul_output_0.1_305_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_12/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_218",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_218",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_298_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_12/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_216",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_216",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_297_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_12/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_225",
+      "GEMM_engine_layer": "/o_proj_12/MatMul_myl0_227",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_12/MatMul_output_0.1_311_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_12/MatMul_output_0.1_310_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_312_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_230",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_230",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_315_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_317_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_229",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_229",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_314_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_316_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_232",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_232",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_318_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_319_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_238",
+      "GEMM_engine_layer": "/q_proj_13/MatMul_myl0_239",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_13/MatMul_output_0.1_323_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_13/MatMul_output_0.1_329_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_13/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_236",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_236",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_322_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_13/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_234",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_234",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_321_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_13/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_243",
+      "GEMM_engine_layer": "/o_proj_13/MatMul_myl0_245",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_13/MatMul_output_0.1_335_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_13/MatMul_output_0.1_334_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_336_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_248",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_248",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_339_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_341_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_247",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_247",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_338_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_340_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_250",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_250",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_342_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_343_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_256",
+      "GEMM_engine_layer": "/q_proj_14/MatMul_myl0_257",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_14/MatMul_output_0.1_347_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_14/MatMul_output_0.1_353_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_14/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_254",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_254",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_346_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_14/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_252",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_252",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_345_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_14/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_261",
+      "GEMM_engine_layer": "/o_proj_14/MatMul_myl0_263",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_14/MatMul_output_0.1_359_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_14/MatMul_output_0.1_358_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_360_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_266",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_266",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_363_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_365_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_265",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_265",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_362_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_364_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_268",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_268",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_366_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_367_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_274",
+      "GEMM_engine_layer": "/q_proj_15/MatMul_myl0_275",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_15/MatMul_output_0.1_371_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_15/MatMul_output_0.1_377_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_15/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_272",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_272",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_370_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_15/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_270",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_270",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_369_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_15/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_279",
+      "GEMM_engine_layer": "/o_proj_15/MatMul_myl0_281",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_15/MatMul_output_0.1_383_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_15/MatMul_output_0.1_382_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_384_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_284",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_284",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_387_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_389_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_283",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_283",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_386_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_388_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_286",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_286",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_390_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_391_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_292",
+      "GEMM_engine_layer": "/q_proj_16/MatMul_myl0_293",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/q_proj_16/MatMul_output_0.1_395_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/q_proj_16/MatMul_output_0.1_401_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/q_proj_16/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_290",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_290",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_394_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_16/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_288",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_288",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_393_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/v_proj_16/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.o_proj",
+      "source_INT4_shape": [
+        2048,
+        2048
+      ],
+      "INT4_parameters": 4194304,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_298",
+      "GEMM_engine_layer": "/o_proj_16/MatMul_myl0_300",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize128x128x32_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.o_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "/o_proj_16/MatMul_output_0.1_408_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "/o_proj_16/MatMul_output_0.1_407_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_409_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.gate_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_303",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_303",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.gate_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_412_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_414_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.up_proj",
+      "source_INT4_shape": [
+        2048,
+        16384
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_302",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_302",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.up_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_411_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_413_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.down_proj",
+      "source_INT4_shape": [
+        16384,
+        2048
+      ],
+      "INT4_parameters": 33554432,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_305",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_305",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize128x128x64_stage3_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.down_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_415_myl0",
+          "Dimensions": [
+            1,
+            968,
+            16384
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "__myln_k_arg__bb1_416_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.k_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCastFc_myl0_308",
+      "GEMM_engine_layer": "__myl_ReplCastMulCastFc_myl0_308",
+      "fused_DQ_GEMM": true,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_tn_n_tilesize64x32x64_stage5_warpsize2x2x1_tensor16x8x16_by_fusion_tactic",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.k_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_418_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "/k_proj_17/MatMul_output_0.1_myl0",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "fused_INT4_dequantization_and_BF16_GEMM"
+    },
+    {
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.v_proj",
+      "source_INT4_shape": [
+        2048,
+        256
+      ],
+      "INT4_parameters": 524288,
+      "DQ_engine_layer": "__myl_ReplCastMulCast_myl0_297",
+      "GEMM_engine_layer": "/v_proj_17/MatMul_myl0_307",
+      "fused_DQ_GEMM": false,
+      "GEMM_tactic": "sm80_xmma_gemm_bf16bf16_bf16f32_f32_nn_n_tilesize64x64x64_stage4_warpsize2x2x1_tensor16x8x16",
+      "merged_source_modules": [
+        "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.v_proj"
+      ],
+      "DQ_tag_directly_visible": true,
+      "GEMM_inputs": [
+        {
+          "Name": "__myln_k_arg__bb1_417_myl0",
+          "Dimensions": [
+            1,
+            968,
+            2048
+          ],
+          "Format/Datatype": "BFloat16"
+        },
+        {
+          "Name": "value_17.1__mye386685_406_myl0",
+          "Dimensions": [
+            1,
+            2048,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "GEMM_outputs": [
+        {
+          "Name": "value_17",
+          "Dimensions": [
+            1,
+            968,
+            256
+          ],
+          "Format/Datatype": "BFloat16"
+        }
+      ],
+      "classification": "INT4_dequantization_then_separate_BF16_GEMM"
+    }
+  ]
+}

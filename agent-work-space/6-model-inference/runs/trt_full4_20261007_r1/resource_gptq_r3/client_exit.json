@@ -1,0 +1,18 @@
+{
+  "exit_code": 0,
+  "command": [
+    "docker",
+    "exec",
+    "pi05-full4-resource-gptq-r3",
+    "/.venv/bin/python",
+    "/work/runs/trt_full4_20261007_r1/resource_gptq_r3_source/client.py",
+    "--out",
+    "/out/benchmark",
+    "--variant",
+    "gptq",
+    "--port",
+    "18883",
+    "--count",
+    "1000"
+  ]
+}

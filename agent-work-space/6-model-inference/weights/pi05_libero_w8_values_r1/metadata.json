@@ -1,0 +1,5806 @@
+{
+  "source_bf16_sha256": "69ee787ec12921613feabf69b01348628b3d6327a8865cbc02ecb9be788d9258",
+  "precision": "INT8 weights + BF16 source values in FP32 islands",
+  "layers": {
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.0.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.0.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.0.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.0.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.0.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.0.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.1.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.1.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.1.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.1.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.1.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.1.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.2.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.2.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.2.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.2.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.2.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.2.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.3.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.3.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.3.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.3.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.3.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.3.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.4.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.4.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.4.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.4.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.4.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.4.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.5.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.5.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.5.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.5.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.5.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.5.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.6.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.6.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.6.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.6.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.6.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.6.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.7.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.7.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.7.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.7.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.7.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.7.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.8.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.8.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.8.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.8.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.8.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.8.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.9.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.9.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.9.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.9.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.9.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.9.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.10.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.10.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.10.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.10.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.10.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.10.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.11.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.11.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.11.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.11.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.11.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.11.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.12.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.12.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.12.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.12.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.12.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.12.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.13.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.13.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.13.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.13.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.13.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.13.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.14.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.14.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.14.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.14.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.14.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.14.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.15.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.15.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.15.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.15.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.15.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.15.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.16.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.16.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.16.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.16.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.16.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.16.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.17.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.17.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.17.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.17.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.17.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.17.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.18.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.18.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.18.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.18.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.18.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.18.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.19.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.19.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.19.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.19.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.19.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.19.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.20.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.20.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.20.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.20.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.20.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.20.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.21.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.21.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.21.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.21.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.21.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.21.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.22.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.22.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.22.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.22.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.22.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.22.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.23.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.23.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.23.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.23.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.23.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.23.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.24.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.24.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.24.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.24.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.24.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.24.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.25.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.25.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.25.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.25.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.25.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.25.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.26.self_attn.k_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.26.self_attn.v_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.26.self_attn.q_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.26.self_attn.out_proj": {
+      "numel": 1327104,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 1329408,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.26.mlp.fc1": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4304,
+        1152
+      ],
+      "scale_shape": [
+        4304
+      ],
+      "storage_bytes": 4966816,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.encoder.layers.26.mlp.fc2": {
+      "numel": 4958208,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        1152
+      ],
+      "storage_bytes": 4960512,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.q_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.k_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.v_proj": {
+      "numel": 524288,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        2048
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 524800,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.o_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 4198400,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.gate_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.up_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        16384,
+        2048
+      ],
+      "scale_shape": [
+        16384
+      ],
+      "storage_bytes": 33587200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.down_proj": {
+      "numel": 33554432,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        16384
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 33558528,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.0.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.0.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.0.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.0.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.0.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.0.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.0.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.1.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.1.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.1.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.1.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.1.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.1.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.1.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.2.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.2.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.2.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.2.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.2.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.2.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.2.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.3.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.3.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.3.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.3.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.3.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.3.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.3.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.4.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.4.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.4.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.4.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.4.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.4.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.4.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.5.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.5.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.5.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.5.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.5.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.5.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.5.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.6.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.6.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.6.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.6.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.6.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.6.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.6.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.7.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.7.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.7.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.7.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.7.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.7.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.7.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.8.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.8.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.8.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.8.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.8.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.8.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.8.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.9.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.9.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.9.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.9.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.9.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.9.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.9.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.10.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.10.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.10.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.10.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.10.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.10.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.10.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.11.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.11.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.11.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.11.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.11.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.11.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.11.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.12.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.12.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.12.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.12.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.12.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.12.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.12.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.13.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.13.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.13.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.13.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.13.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.13.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.13.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.14.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.14.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.14.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.14.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.14.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.14.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.14.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.15.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.15.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.15.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.15.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.15.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.15.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.15.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.16.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.16.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.16.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.16.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.16.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.16.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.16.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.17.self_attn.q_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        2048,
+        1024
+      ],
+      "scale_shape": [
+        2048
+      ],
+      "storage_bytes": 2101248,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.17.self_attn.k_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.17.self_attn.v_proj": {
+      "numel": 262144,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        256,
+        1024
+      ],
+      "scale_shape": [
+        256
+      ],
+      "storage_bytes": 262656,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.17.self_attn.o_proj": {
+      "numel": 2097152,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 2099200,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.17.mlp.gate_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.17.mlp.up_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        4096,
+        1024
+      ],
+      "scale_shape": [
+        4096
+      ],
+      "storage_bytes": 4202496,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.17.mlp.down_proj": {
+      "numel": 4194304,
+      "storage_dtype": "torch.int8",
+      "shape": [
+        1024,
+        4096
+      ],
+      "scale_shape": [
+        1024
+      ],
+      "storage_bytes": 4196352,
+      "logical_dtype": "torch.bfloat16",
+      "weight_class": "AffineQuantizedTensor"
+    }
+  },
+  "quantized_linear_count": 414,
+  "quantized_numel": 2704306176,
+  "weight_bytes": 4254753302,
+  "weight_sha256": "77af8eee2c71c7702ea08341e38e0b797a465230482b84220abb58d7d4e16b4d"
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "static reconstruction from validation seed630201; rendering flags only, no policy/test rerun",
+  "manual_context_default_geomgroups": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+  ],
+  "native_visual_only_geomgroups": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+  ],
+  "qpos_changed": false,
+  "qvel_changed": false,
+  "ongoing_evaluation_changed": false,
+  "differences": {
+    "image": {
+      "mean_abs_pixel_error": 3.508356730143229,
+      "max_abs_pixel_error": 183,
+      "different_pixel_fraction": 0.091278076171875
+    },
+    "wrist_image": {
+      "mean_abs_pixel_error": 1.4626057942708333,
+      "max_abs_pixel_error": 152,
+      "different_pixel_fraction": 0.059539794921875
+    }
+  },
+  "implication": "formal capture and this evaluation match each other; their manual default renderer also shows collision meshes. Base references in this run therefore are not identical to historical visual-only camera references. No causal success-rate effect has been established."
+}

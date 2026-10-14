@@ -1,0 +1,38 @@
+{
+  "pass": true,
+  "positive_control": "/app/agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55100",
+  "tests": [
+    {
+      "case": "scene",
+      "expected_error": "registered scene mismatch",
+      "errors": [
+        "registered scene mismatch"
+      ],
+      "rejected": true
+    },
+    {
+      "case": "manifest",
+      "expected_error": "scene manifest mismatch",
+      "errors": [
+        "scene manifest mismatch"
+      ],
+      "rejected": true
+    },
+    {
+      "case": "penetration",
+      "expected_error": "initialization non-support penetration >2mm",
+      "errors": [
+        "initialization non-support penetration >2mm"
+      ],
+      "rejected": true
+    },
+    {
+      "case": "drift",
+      "expected_error": "target drift before teacher >5mm",
+      "errors": [
+        "target drift before teacher >5mm"
+      ],
+      "rejected": true
+    }
+  ]
+}

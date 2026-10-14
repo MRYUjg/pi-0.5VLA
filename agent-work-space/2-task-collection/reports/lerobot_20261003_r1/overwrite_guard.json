@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "exit_code": 1,
+  "dataset_files_unchanged": true,
+  "checked_files": 22,
+  "stderr": "Traceback (most recent call last):\n  File \"/mnt/data/vla-policy/openpi/agent-work-space/2-task-collection/versions/lerobot_20261003_r1/scripts/run.py\", line 29, in <module>\n    if __name__=='__main__':raise SystemExit(main())\n  File \"/mnt/data/vla-policy/openpi/agent-work-space/2-task-collection/versions/lerobot_20261003_r1/scripts/run.py\", line 13, in main\n    parent=C/'lerobot_exports';parent.mkdir(exist_ok=True);out=parent/a.name;assert not out.exists(),'output already exists'\nAssertionError: output already exists\n"
+}

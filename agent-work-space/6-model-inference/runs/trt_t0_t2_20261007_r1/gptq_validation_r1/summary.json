@@ -1,0 +1,16 @@
+{
+  "algorithm": "GPTQ",
+  "observations": 128,
+  "motion_mae": 0.004876583426858768,
+  "motion_p99_abs": 0.03763765101850838,
+  "motion_max_abs": 0.2036850707696825,
+  "gripper_disagreements": 7,
+  "confident_gripper_count": 1280,
+  "gripper_disagreement_fraction": 0.00546875,
+  "clipping_rate_increase": -0.0140625,
+  "comparison": "same source PyTorch float versus offline canonical dequantized weights; same observations/noise/steps",
+  "native_INT4_engine_built": false,
+  "4070_8GB_accepted": false,
+  "Panda_closed_loop_accepted": false,
+  "offline_accuracy_passed": false
+}

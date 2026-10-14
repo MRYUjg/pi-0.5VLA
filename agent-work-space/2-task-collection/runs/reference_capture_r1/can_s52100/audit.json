@@ -1,0 +1,143 @@
+{
+  "accepted": true,
+  "errors": [],
+  "teacher_numeric_audit": {
+    "case": "can",
+    "seed": 52100,
+    "success": true,
+    "failure": null,
+    "audit_pass": true,
+    "errors": [],
+    "gates": {
+      "initial_goal_false": true,
+      "all_stages_complete": true,
+      "lift_30mm": true,
+      "hold_40steps": true,
+      "bilateral_hold": true,
+      "unsupported_hold": true,
+      "penetration_2mm": true,
+      "max_step_disp_20mm": true,
+      "native_success_window": true,
+      "post_drift_5mm": true,
+      "target_support_contact": true,
+      "no_physics_warnings": true,
+      "closure_bilateral": true,
+      "hold_height": true
+    },
+    "initial_state_sha256": "66e2d5eb454c4641ad905b63b2982317ead4bc1ccb468957a5f85aa66b868c66",
+    "initial_object_bbox": [
+      [
+        -0.15042355173033264,
+        -0.2747242593832104,
+        -2.0918335901662366e-05
+      ],
+      [
+        -0.08751504377732518,
+        -0.21219811010067,
+        0.07620120396774754
+      ]
+    ],
+    "mass_kg": 0.025851445888000014,
+    "physics_samples": 14250,
+    "bilateral_hold": 1.0,
+    "hold_force_mean_N": [
+      19.861185208547475,
+      19.082758877402817
+    ],
+    "hold_force_balance_mean_N": [
+      -5.019612738055412e-05,
+      3.090919140071335e-05,
+      -0.0006563860016639556
+    ],
+    "hold_other_force_peak_N": 0.0,
+    "penetration_peak_mm": 0.3079453992585572,
+    "max_step_disp_mm": 7.038389722414777,
+    "recipient_shift_mm": 0.004867143051618619,
+    "min_horizontal_clearance_mm": 37.148091319226864,
+    "unsafe_contact_samples": 0,
+    "robot_nontarget_contacts": 0,
+    "hold_relative_slip_mm": 0.3699112762590894,
+    "post_drift_mm": 6.571068843359291e-09,
+    "sources": {
+      "/app/agent-work-space/2-task-collection/versions/pilot_20261003_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+      "/app/agent-work-space/2-task-collection/versions/pilot_20261003_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+      "/app/agent-work-space/2-task-collection/versions/pilot_20261003_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+      "/app/agent-work-space/2-task-collection/versions/pilot_20261003_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+      "/app/agent-work-space/2-task-collection/versions/pilot_20261003_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+      "/app/agent-work-space/2-task-collection/versions/pilot_20261003_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+      "/app/agent-work-space/2-task-collection/versions/pilot_20261003_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+      "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+      "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+      "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+    }
+  },
+  "replay": {
+    "pass": true,
+    "errors": [],
+    "seed": 52100,
+    "steps": 570,
+    "reset_qpos_error": 0.0,
+    "max_qpos_error": 0.0,
+    "max_qvel_error": 0.0,
+    "max_state_error": 0.0,
+    "max_time_error": 0.0,
+    "max_rgb_pixel_error": 0,
+    "native_mismatches": 0,
+    "rendered_observation_indices": [
+      0,
+      142,
+      285,
+      427,
+      570
+    ],
+    "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+    "process_exit_pending": true
+  },
+  "stats": {
+    "frames": 570,
+    "sim_seconds": 28.5,
+    "language": "pick up the alphabet soup and place it in the basket",
+    "initial_scene_sha256": "66e2d5eb454c4641ad905b63b2982317ead4bc1ccb468957a5f85aa66b868c66",
+    "initial_object_bbox": [
+      [
+        -0.15042355173033264,
+        -0.2747242593832104,
+        -2.0918335901662366e-05
+      ],
+      [
+        -0.08751504377732518,
+        -0.21219811010067,
+        0.07620120396774754
+      ]
+    ],
+    "max_action_abs": 1.0,
+    "phase_counts": {
+      "approach": 50,
+      "descend": 27,
+      "close": 80,
+      "lift": 32,
+      "hold": 40,
+      "clearance_lift": 38,
+      "transport": 161,
+      "place": 22,
+      "release": 60,
+      "post_release_settle": 40,
+      "post_release_window": 20
+    }
+  },
+  "files": {
+    "trajectory.h5": "3b4c983c8d8b6c1fbf95e2b4a9a376cf0234bd24f33ccae9dddc418f55b46887",
+    "capture.json": "31a98971a82ebd572fd01a931a6719b651af0b92b3f538c3758357136b611b0f",
+    "reference_comparison.json": "85f76db415be3874109ed65e1c12d59c128ba9b0f7f7e390501e8430afad6375",
+    "teacher.status.json": "8ae95fdca8f298b96b3b16c6669b3357bf74fcaa134ac182a925f5c9a03d303b",
+    "replay.log": "d14481232d610f0c86da3661d42f4c461d02b66ab3ade74e93fb54cdad771982",
+    "replay.json": "4e51b7c397b82a12bbf6e43836b1c7c86129bd2575a1bbf3f090e4e6e3c57f65",
+    "replay.status.json": "c456ab530f63d3af67f3bbb9bda6827dd6e3071d1b38acac266065b49b66c641",
+    "preview.jpg": "fb90452ff72d40e201926c0cda5bff5eadd6159a06b5f131ccc39a4d31f488a0",
+    "teacher/result.json": "725bed41f7a750be3c6ec7a9be6e8b3e3515855f860ae237081c4ece758c1349",
+    "teacher/environment.xml": "ce81dd1b20d09f853e56e55a8d6720595f356eb204964e6a3605e0cb4bf23551",
+    "teacher/steps.jsonl": "ff4e9d37135875816ea6367c4d25e5c561af6303a3182a40035823afd27d2f30",
+    "teacher/recipient_contacts.jsonl": "98031bda357658786f85bfcf94e83eaa915b4d1cf47a9d9efb539e89fd561029",
+    "teacher/physics.npz": "d536f97aab699b6f2ecfb78525a25118cd23f17e9bf77a55cb33d504b4cfb592"
+  }
+}

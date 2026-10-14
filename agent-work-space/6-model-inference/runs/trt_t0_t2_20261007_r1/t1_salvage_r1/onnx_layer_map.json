@@ -1,0 +1,861 @@
+{
+  "source_eligible_layers": 126,
+  "reachable_layers": 121,
+  "unused_layers": [
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.down_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.gate_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.mlp.up_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.o_proj",
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.q_proj"
+  ],
+  "reason": "last layer outputs unused by prefix K/V",
+  "nodes": [
+    {
+      "node": "/q_proj/MatMul",
+      "input": "/input_layernorm/Cast_3_output_0",
+      "weight": "/q_proj/Transpose_output_0",
+      "output": "/q_proj/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj/MatMul",
+      "input": "/input_layernorm/Cast_3_output_0",
+      "weight": "/k_proj/Transpose_output_0",
+      "output": "/k_proj/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj/MatMul",
+      "input": "/input_layernorm/Cast_3_output_0",
+      "weight": "/v_proj/Transpose_output_0",
+      "output": "/v_proj/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj/MatMul",
+      "input": "/Reshape_7_output_0",
+      "weight": "/o_proj/Transpose_output_0",
+      "output": "/o_proj/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj/MatMul",
+      "input": "/post_attention_layernorm/Cast_3_output_0",
+      "weight": "/mlp/gate_proj/Transpose_output_0",
+      "output": "/mlp/gate_proj/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj/MatMul",
+      "input": "/post_attention_layernorm/Cast_3_output_0",
+      "weight": "/mlp/up_proj/Transpose_output_0",
+      "output": "/mlp/up_proj/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj/MatMul",
+      "input": "/mlp/Mul_output_0",
+      "weight": "/mlp/down_proj/Transpose_output_0",
+      "output": "/mlp/down_proj/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.0.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_1/MatMul",
+      "input": "/input_layernorm_1/Cast_3_output_0",
+      "weight": "/q_proj_1/Transpose_output_0",
+      "output": "/q_proj_1/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_1/MatMul",
+      "input": "/input_layernorm_1/Cast_3_output_0",
+      "weight": "/k_proj_1/Transpose_output_0",
+      "output": "/k_proj_1/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_1/MatMul",
+      "input": "/input_layernorm_1/Cast_3_output_0",
+      "weight": "/v_proj_1/Transpose_output_0",
+      "output": "/v_proj_1/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_1/MatMul",
+      "input": "/Reshape_15_output_0",
+      "weight": "/o_proj_1/Transpose_output_0",
+      "output": "/o_proj_1/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_1/MatMul",
+      "input": "/post_attention_layernorm_1/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_1/Transpose_output_0",
+      "output": "/mlp/gate_proj_1/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_1/MatMul",
+      "input": "/post_attention_layernorm_1/Cast_3_output_0",
+      "weight": "/mlp/up_proj_1/Transpose_output_0",
+      "output": "/mlp/up_proj_1/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_1/MatMul",
+      "input": "/mlp_1/Mul_output_0",
+      "weight": "/mlp/down_proj_1/Transpose_output_0",
+      "output": "/mlp/down_proj_1/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.1.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_2/MatMul",
+      "input": "/input_layernorm_2/Cast_3_output_0",
+      "weight": "/q_proj_2/Transpose_output_0",
+      "output": "/q_proj_2/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_2/MatMul",
+      "input": "/input_layernorm_2/Cast_3_output_0",
+      "weight": "/k_proj_2/Transpose_output_0",
+      "output": "/k_proj_2/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_2/MatMul",
+      "input": "/input_layernorm_2/Cast_3_output_0",
+      "weight": "/v_proj_2/Transpose_output_0",
+      "output": "/v_proj_2/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_2/MatMul",
+      "input": "/Reshape_23_output_0",
+      "weight": "/o_proj_2/Transpose_output_0",
+      "output": "/o_proj_2/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_2/MatMul",
+      "input": "/post_attention_layernorm_2/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_2/Transpose_output_0",
+      "output": "/mlp/gate_proj_2/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_2/MatMul",
+      "input": "/post_attention_layernorm_2/Cast_3_output_0",
+      "weight": "/mlp/up_proj_2/Transpose_output_0",
+      "output": "/mlp/up_proj_2/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_2/MatMul",
+      "input": "/mlp_2/Mul_output_0",
+      "weight": "/mlp/down_proj_2/Transpose_output_0",
+      "output": "/mlp/down_proj_2/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.2.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_3/MatMul",
+      "input": "/input_layernorm_3/Cast_3_output_0",
+      "weight": "/q_proj_3/Transpose_output_0",
+      "output": "/q_proj_3/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_3/MatMul",
+      "input": "/input_layernorm_3/Cast_3_output_0",
+      "weight": "/k_proj_3/Transpose_output_0",
+      "output": "/k_proj_3/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_3/MatMul",
+      "input": "/input_layernorm_3/Cast_3_output_0",
+      "weight": "/v_proj_3/Transpose_output_0",
+      "output": "/v_proj_3/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_3/MatMul",
+      "input": "/Reshape_31_output_0",
+      "weight": "/o_proj_3/Transpose_output_0",
+      "output": "/o_proj_3/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_3/MatMul",
+      "input": "/post_attention_layernorm_3/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_3/Transpose_output_0",
+      "output": "/mlp/gate_proj_3/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_3/MatMul",
+      "input": "/post_attention_layernorm_3/Cast_3_output_0",
+      "weight": "/mlp/up_proj_3/Transpose_output_0",
+      "output": "/mlp/up_proj_3/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_3/MatMul",
+      "input": "/mlp_3/Mul_output_0",
+      "weight": "/mlp/down_proj_3/Transpose_output_0",
+      "output": "/mlp/down_proj_3/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.3.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_4/MatMul",
+      "input": "/input_layernorm_4/Cast_3_output_0",
+      "weight": "/q_proj_4/Transpose_output_0",
+      "output": "/q_proj_4/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_4/MatMul",
+      "input": "/input_layernorm_4/Cast_3_output_0",
+      "weight": "/k_proj_4/Transpose_output_0",
+      "output": "/k_proj_4/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_4/MatMul",
+      "input": "/input_layernorm_4/Cast_3_output_0",
+      "weight": "/v_proj_4/Transpose_output_0",
+      "output": "/v_proj_4/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_4/MatMul",
+      "input": "/Reshape_39_output_0",
+      "weight": "/o_proj_4/Transpose_output_0",
+      "output": "/o_proj_4/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_4/MatMul",
+      "input": "/post_attention_layernorm_4/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_4/Transpose_output_0",
+      "output": "/mlp/gate_proj_4/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_4/MatMul",
+      "input": "/post_attention_layernorm_4/Cast_3_output_0",
+      "weight": "/mlp/up_proj_4/Transpose_output_0",
+      "output": "/mlp/up_proj_4/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_4/MatMul",
+      "input": "/mlp_4/Mul_output_0",
+      "weight": "/mlp/down_proj_4/Transpose_output_0",
+      "output": "/mlp/down_proj_4/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.4.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_5/MatMul",
+      "input": "/input_layernorm_5/Cast_3_output_0",
+      "weight": "/q_proj_5/Transpose_output_0",
+      "output": "/q_proj_5/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_5/MatMul",
+      "input": "/input_layernorm_5/Cast_3_output_0",
+      "weight": "/k_proj_5/Transpose_output_0",
+      "output": "/k_proj_5/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_5/MatMul",
+      "input": "/input_layernorm_5/Cast_3_output_0",
+      "weight": "/v_proj_5/Transpose_output_0",
+      "output": "/v_proj_5/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_5/MatMul",
+      "input": "/Reshape_47_output_0",
+      "weight": "/o_proj_5/Transpose_output_0",
+      "output": "/o_proj_5/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_5/MatMul",
+      "input": "/post_attention_layernorm_5/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_5/Transpose_output_0",
+      "output": "/mlp/gate_proj_5/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_5/MatMul",
+      "input": "/post_attention_layernorm_5/Cast_3_output_0",
+      "weight": "/mlp/up_proj_5/Transpose_output_0",
+      "output": "/mlp/up_proj_5/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_5/MatMul",
+      "input": "/mlp_5/Mul_output_0",
+      "weight": "/mlp/down_proj_5/Transpose_output_0",
+      "output": "/mlp/down_proj_5/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.5.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_6/MatMul",
+      "input": "/input_layernorm_6/Cast_3_output_0",
+      "weight": "/q_proj_6/Transpose_output_0",
+      "output": "/q_proj_6/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_6/MatMul",
+      "input": "/input_layernorm_6/Cast_3_output_0",
+      "weight": "/k_proj_6/Transpose_output_0",
+      "output": "/k_proj_6/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_6/MatMul",
+      "input": "/input_layernorm_6/Cast_3_output_0",
+      "weight": "/v_proj_6/Transpose_output_0",
+      "output": "/v_proj_6/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_6/MatMul",
+      "input": "/Reshape_55_output_0",
+      "weight": "/o_proj_6/Transpose_output_0",
+      "output": "/o_proj_6/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_6/MatMul",
+      "input": "/post_attention_layernorm_6/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_6/Transpose_output_0",
+      "output": "/mlp/gate_proj_6/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_6/MatMul",
+      "input": "/post_attention_layernorm_6/Cast_3_output_0",
+      "weight": "/mlp/up_proj_6/Transpose_output_0",
+      "output": "/mlp/up_proj_6/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_6/MatMul",
+      "input": "/mlp_6/Mul_output_0",
+      "weight": "/mlp/down_proj_6/Transpose_output_0",
+      "output": "/mlp/down_proj_6/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.6.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_7/MatMul",
+      "input": "/input_layernorm_7/Cast_3_output_0",
+      "weight": "/q_proj_7/Transpose_output_0",
+      "output": "/q_proj_7/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_7/MatMul",
+      "input": "/input_layernorm_7/Cast_3_output_0",
+      "weight": "/k_proj_7/Transpose_output_0",
+      "output": "/k_proj_7/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_7/MatMul",
+      "input": "/input_layernorm_7/Cast_3_output_0",
+      "weight": "/v_proj_7/Transpose_output_0",
+      "output": "/v_proj_7/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_7/MatMul",
+      "input": "/Reshape_63_output_0",
+      "weight": "/o_proj_7/Transpose_output_0",
+      "output": "/o_proj_7/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_7/MatMul",
+      "input": "/post_attention_layernorm_7/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_7/Transpose_output_0",
+      "output": "/mlp/gate_proj_7/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_7/MatMul",
+      "input": "/post_attention_layernorm_7/Cast_3_output_0",
+      "weight": "/mlp/up_proj_7/Transpose_output_0",
+      "output": "/mlp/up_proj_7/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_7/MatMul",
+      "input": "/mlp_7/Mul_output_0",
+      "weight": "/mlp/down_proj_7/Transpose_output_0",
+      "output": "/mlp/down_proj_7/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.7.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_8/MatMul",
+      "input": "/input_layernorm_8/Cast_3_output_0",
+      "weight": "/q_proj_8/Transpose_output_0",
+      "output": "/q_proj_8/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_8/MatMul",
+      "input": "/input_layernorm_8/Cast_3_output_0",
+      "weight": "/k_proj_8/Transpose_output_0",
+      "output": "/k_proj_8/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_8/MatMul",
+      "input": "/input_layernorm_8/Cast_3_output_0",
+      "weight": "/v_proj_8/Transpose_output_0",
+      "output": "/v_proj_8/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_8/MatMul",
+      "input": "/Reshape_71_output_0",
+      "weight": "/o_proj_8/Transpose_output_0",
+      "output": "/o_proj_8/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_8/MatMul",
+      "input": "/post_attention_layernorm_8/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_8/Transpose_output_0",
+      "output": "/mlp/gate_proj_8/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_8/MatMul",
+      "input": "/post_attention_layernorm_8/Cast_3_output_0",
+      "weight": "/mlp/up_proj_8/Transpose_output_0",
+      "output": "/mlp/up_proj_8/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_8/MatMul",
+      "input": "/mlp_8/Mul_output_0",
+      "weight": "/mlp/down_proj_8/Transpose_output_0",
+      "output": "/mlp/down_proj_8/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.8.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_9/MatMul",
+      "input": "/input_layernorm_9/Cast_3_output_0",
+      "weight": "/q_proj_9/Transpose_output_0",
+      "output": "/q_proj_9/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_9/MatMul",
+      "input": "/input_layernorm_9/Cast_3_output_0",
+      "weight": "/k_proj_9/Transpose_output_0",
+      "output": "/k_proj_9/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_9/MatMul",
+      "input": "/input_layernorm_9/Cast_3_output_0",
+      "weight": "/v_proj_9/Transpose_output_0",
+      "output": "/v_proj_9/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_9/MatMul",
+      "input": "/Reshape_79_output_0",
+      "weight": "/o_proj_9/Transpose_output_0",
+      "output": "/o_proj_9/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_9/MatMul",
+      "input": "/post_attention_layernorm_9/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_9/Transpose_output_0",
+      "output": "/mlp/gate_proj_9/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_9/MatMul",
+      "input": "/post_attention_layernorm_9/Cast_3_output_0",
+      "weight": "/mlp/up_proj_9/Transpose_output_0",
+      "output": "/mlp/up_proj_9/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_9/MatMul",
+      "input": "/mlp_9/Mul_output_0",
+      "weight": "/mlp/down_proj_9/Transpose_output_0",
+      "output": "/mlp/down_proj_9/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.9.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_10/MatMul",
+      "input": "/input_layernorm_10/Cast_3_output_0",
+      "weight": "/q_proj_10/Transpose_output_0",
+      "output": "/q_proj_10/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_10/MatMul",
+      "input": "/input_layernorm_10/Cast_3_output_0",
+      "weight": "/k_proj_10/Transpose_output_0",
+      "output": "/k_proj_10/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_10/MatMul",
+      "input": "/input_layernorm_10/Cast_3_output_0",
+      "weight": "/v_proj_10/Transpose_output_0",
+      "output": "/v_proj_10/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_10/MatMul",
+      "input": "/Reshape_87_output_0",
+      "weight": "/o_proj_10/Transpose_output_0",
+      "output": "/o_proj_10/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_10/MatMul",
+      "input": "/post_attention_layernorm_10/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_10/Transpose_output_0",
+      "output": "/mlp/gate_proj_10/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_10/MatMul",
+      "input": "/post_attention_layernorm_10/Cast_3_output_0",
+      "weight": "/mlp/up_proj_10/Transpose_output_0",
+      "output": "/mlp/up_proj_10/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_10/MatMul",
+      "input": "/mlp_10/Mul_output_0",
+      "weight": "/mlp/down_proj_10/Transpose_output_0",
+      "output": "/mlp/down_proj_10/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.10.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_11/MatMul",
+      "input": "/input_layernorm_11/Cast_3_output_0",
+      "weight": "/q_proj_11/Transpose_output_0",
+      "output": "/q_proj_11/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_11/MatMul",
+      "input": "/input_layernorm_11/Cast_3_output_0",
+      "weight": "/k_proj_11/Transpose_output_0",
+      "output": "/k_proj_11/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_11/MatMul",
+      "input": "/input_layernorm_11/Cast_3_output_0",
+      "weight": "/v_proj_11/Transpose_output_0",
+      "output": "/v_proj_11/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_11/MatMul",
+      "input": "/Reshape_95_output_0",
+      "weight": "/o_proj_11/Transpose_output_0",
+      "output": "/o_proj_11/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_11/MatMul",
+      "input": "/post_attention_layernorm_11/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_11/Transpose_output_0",
+      "output": "/mlp/gate_proj_11/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_11/MatMul",
+      "input": "/post_attention_layernorm_11/Cast_3_output_0",
+      "weight": "/mlp/up_proj_11/Transpose_output_0",
+      "output": "/mlp/up_proj_11/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_11/MatMul",
+      "input": "/mlp_11/Mul_output_0",
+      "weight": "/mlp/down_proj_11/Transpose_output_0",
+      "output": "/mlp/down_proj_11/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.11.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_12/MatMul",
+      "input": "/input_layernorm_12/Cast_3_output_0",
+      "weight": "/q_proj_12/Transpose_output_0",
+      "output": "/q_proj_12/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_12/MatMul",
+      "input": "/input_layernorm_12/Cast_3_output_0",
+      "weight": "/k_proj_12/Transpose_output_0",
+      "output": "/k_proj_12/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_12/MatMul",
+      "input": "/input_layernorm_12/Cast_3_output_0",
+      "weight": "/v_proj_12/Transpose_output_0",
+      "output": "/v_proj_12/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_12/MatMul",
+      "input": "/Reshape_103_output_0",
+      "weight": "/o_proj_12/Transpose_output_0",
+      "output": "/o_proj_12/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_12/MatMul",
+      "input": "/post_attention_layernorm_12/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_12/Transpose_output_0",
+      "output": "/mlp/gate_proj_12/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_12/MatMul",
+      "input": "/post_attention_layernorm_12/Cast_3_output_0",
+      "weight": "/mlp/up_proj_12/Transpose_output_0",
+      "output": "/mlp/up_proj_12/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_12/MatMul",
+      "input": "/mlp_12/Mul_output_0",
+      "weight": "/mlp/down_proj_12/Transpose_output_0",
+      "output": "/mlp/down_proj_12/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.12.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_13/MatMul",
+      "input": "/input_layernorm_13/Cast_3_output_0",
+      "weight": "/q_proj_13/Transpose_output_0",
+      "output": "/q_proj_13/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_13/MatMul",
+      "input": "/input_layernorm_13/Cast_3_output_0",
+      "weight": "/k_proj_13/Transpose_output_0",
+      "output": "/k_proj_13/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_13/MatMul",
+      "input": "/input_layernorm_13/Cast_3_output_0",
+      "weight": "/v_proj_13/Transpose_output_0",
+      "output": "/v_proj_13/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_13/MatMul",
+      "input": "/Reshape_111_output_0",
+      "weight": "/o_proj_13/Transpose_output_0",
+      "output": "/o_proj_13/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_13/MatMul",
+      "input": "/post_attention_layernorm_13/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_13/Transpose_output_0",
+      "output": "/mlp/gate_proj_13/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_13/MatMul",
+      "input": "/post_attention_layernorm_13/Cast_3_output_0",
+      "weight": "/mlp/up_proj_13/Transpose_output_0",
+      "output": "/mlp/up_proj_13/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_13/MatMul",
+      "input": "/mlp_13/Mul_output_0",
+      "weight": "/mlp/down_proj_13/Transpose_output_0",
+      "output": "/mlp/down_proj_13/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.13.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_14/MatMul",
+      "input": "/input_layernorm_14/Cast_3_output_0",
+      "weight": "/q_proj_14/Transpose_output_0",
+      "output": "/q_proj_14/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_14/MatMul",
+      "input": "/input_layernorm_14/Cast_3_output_0",
+      "weight": "/k_proj_14/Transpose_output_0",
+      "output": "/k_proj_14/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_14/MatMul",
+      "input": "/input_layernorm_14/Cast_3_output_0",
+      "weight": "/v_proj_14/Transpose_output_0",
+      "output": "/v_proj_14/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_14/MatMul",
+      "input": "/Reshape_119_output_0",
+      "weight": "/o_proj_14/Transpose_output_0",
+      "output": "/o_proj_14/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_14/MatMul",
+      "input": "/post_attention_layernorm_14/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_14/Transpose_output_0",
+      "output": "/mlp/gate_proj_14/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_14/MatMul",
+      "input": "/post_attention_layernorm_14/Cast_3_output_0",
+      "weight": "/mlp/up_proj_14/Transpose_output_0",
+      "output": "/mlp/up_proj_14/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_14/MatMul",
+      "input": "/mlp_14/Mul_output_0",
+      "weight": "/mlp/down_proj_14/Transpose_output_0",
+      "output": "/mlp/down_proj_14/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.14.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_15/MatMul",
+      "input": "/input_layernorm_15/Cast_3_output_0",
+      "weight": "/q_proj_15/Transpose_output_0",
+      "output": "/q_proj_15/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_15/MatMul",
+      "input": "/input_layernorm_15/Cast_3_output_0",
+      "weight": "/k_proj_15/Transpose_output_0",
+      "output": "/k_proj_15/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_15/MatMul",
+      "input": "/input_layernorm_15/Cast_3_output_0",
+      "weight": "/v_proj_15/Transpose_output_0",
+      "output": "/v_proj_15/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_15/MatMul",
+      "input": "/Reshape_127_output_0",
+      "weight": "/o_proj_15/Transpose_output_0",
+      "output": "/o_proj_15/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_15/MatMul",
+      "input": "/post_attention_layernorm_15/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_15/Transpose_output_0",
+      "output": "/mlp/gate_proj_15/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_15/MatMul",
+      "input": "/post_attention_layernorm_15/Cast_3_output_0",
+      "weight": "/mlp/up_proj_15/Transpose_output_0",
+      "output": "/mlp/up_proj_15/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_15/MatMul",
+      "input": "/mlp_15/Mul_output_0",
+      "weight": "/mlp/down_proj_15/Transpose_output_0",
+      "output": "/mlp/down_proj_15/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.15.mlp.down_proj"
+    },
+    {
+      "node": "/q_proj_16/MatMul",
+      "input": "/input_layernorm_16/Cast_3_output_0",
+      "weight": "/q_proj_16/Transpose_output_0",
+      "output": "/q_proj_16/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.q_proj"
+    },
+    {
+      "node": "/k_proj_16/MatMul",
+      "input": "/input_layernorm_16/Cast_3_output_0",
+      "weight": "/k_proj_16/Transpose_output_0",
+      "output": "/k_proj_16/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_16/MatMul",
+      "input": "/input_layernorm_16/Cast_3_output_0",
+      "weight": "/v_proj_16/Transpose_output_0",
+      "output": "/v_proj_16/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.v_proj"
+    },
+    {
+      "node": "/o_proj_16/MatMul",
+      "input": "/Reshape_135_output_0",
+      "weight": "/o_proj_16/Transpose_output_0",
+      "output": "/o_proj_16/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.self_attn.o_proj"
+    },
+    {
+      "node": "/mlp/gate_proj_16/MatMul",
+      "input": "/post_attention_layernorm_16/Cast_3_output_0",
+      "weight": "/mlp/gate_proj_16/Transpose_output_0",
+      "output": "/mlp/gate_proj_16/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.gate_proj"
+    },
+    {
+      "node": "/mlp/up_proj_16/MatMul",
+      "input": "/post_attention_layernorm_16/Cast_3_output_0",
+      "weight": "/mlp/up_proj_16/Transpose_output_0",
+      "output": "/mlp/up_proj_16/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.up_proj"
+    },
+    {
+      "node": "/mlp/down_proj_16/MatMul",
+      "input": "/mlp_16/Mul_output_0",
+      "weight": "/mlp/down_proj_16/Transpose_output_0",
+      "output": "/mlp/down_proj_16/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.16.mlp.down_proj"
+    },
+    {
+      "node": "/k_proj_17/MatMul",
+      "input": "/input_layernorm_17/Cast_3_output_0",
+      "weight": "/k_proj_17/Transpose_output_0",
+      "output": "/k_proj_17/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.k_proj"
+    },
+    {
+      "node": "/v_proj_17/MatMul",
+      "input": "/input_layernorm_17/Cast_3_output_0",
+      "weight": "/v_proj_17/Transpose_output_0",
+      "output": "/v_proj_17/MatMul_output_0",
+      "module": "paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.v_proj"
+    }
+  ]
+}

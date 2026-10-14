@@ -1,0 +1,17 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-t3-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t3_20261007_r1/gptq_bundle_r1_source/make_bundle.py",
+    "--algorithm",
+    "GPTQ",
+    "--build",
+    "/work/runs/trt_t3_20261007_r1/gptq_build_r1",
+    "--out",
+    "/work/runs/trt_t3_20261007_r1/bundles/gptq.json"
+  ],
+  "exit_code": 0,
+  "seconds": 6.190175294876099
+}

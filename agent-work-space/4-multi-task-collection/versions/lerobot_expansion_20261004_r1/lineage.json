@@ -1,0 +1,34 @@
+{
+  "upstream": "agent-work-space/2-task-collection/versions/lerobot_20261003_r1",
+  "changes": [
+    "common.py: source batch, dataset names, expected split counts",
+    "run.py: read-only original runtime; output mount to new directory",
+    "freeze.py: fingerprint existing read-only runtime"
+  ],
+  "unchanged": [
+    "convert.py",
+    "validate.py"
+  ],
+  "files": {
+    "run.py": {
+      "old": "421a6fa1b470ea4c064fc16a09eecd5b2f540c64a2d9d4a7b435938b52437d3c",
+      "new": "fbbaa2ad1913e43d0a92e0a3e5cc7044315f9f7abfa61ba03bdacb630a605dfe"
+    },
+    "convert.py": {
+      "old": "979ab7437676cf7dee59f40ad465aa4d87130ad8fea60aab82d4eb45b17b78ed",
+      "new": "979ab7437676cf7dee59f40ad465aa4d87130ad8fea60aab82d4eb45b17b78ed"
+    },
+    "validate.py": {
+      "old": "cc82301de46394fcb92c030423a04a34ba7db90a68630af3301004fee5180dd8",
+      "new": "cc82301de46394fcb92c030423a04a34ba7db90a68630af3301004fee5180dd8"
+    },
+    "common.py": {
+      "old": "30db4ea5ec0312cbd0eb82a7ba616f7bf58d06b88936339fbd2d90320a3a8501",
+      "new": "3d64bc6538b5fc8aa146c8872057e81d4ef937bbba72942954deeb09b6a55575"
+    },
+    "freeze.py": {
+      "old": "36c4f4a0a0694412c40058ce706fe4b5ccaad834ae7bc981cff93d5aa867c312",
+      "new": "320fe0a080d11d3dcb37ff72ad90b680b07f3ad391f876b40ba53b6092c0a754"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-t3-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t3_20261007_r1/float_bundle_r1_source/make_bundle.py",
+    "--algorithm",
+    "FLOAT",
+    "--out",
+    "/work/runs/trt_t3_20261007_r1/bundles/float.json"
+  ],
+  "exit_code": 0,
+  "seconds": 13.828727722167969
+}

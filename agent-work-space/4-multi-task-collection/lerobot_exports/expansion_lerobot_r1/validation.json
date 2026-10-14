@@ -1,0 +1,399 @@
+{
+  "pass": true,
+  "frames_verified": 9305,
+  "rgb_images_verified": 18610,
+  "raw_terminal_observations_excluded": 16,
+  "max_rgb_pixel_error": 0,
+  "max_action_float32_cast_error": 1.4805832282416276e-08,
+  "action_chunks_checked": 80,
+  "action_horizon": 50,
+  "splits": {
+    "train": {
+      "episodes": [
+        {
+          "seed": 56100,
+          "frames": 583,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4045270446683134e-08
+        },
+        {
+          "seed": 56101,
+          "frames": 582,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4805832282416276e-08
+        },
+        {
+          "seed": 56102,
+          "frames": 585,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4490696087499089e-08
+        },
+        {
+          "seed": 56103,
+          "frames": 560,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.3952070443412623e-08
+        },
+        {
+          "seed": 56104,
+          "frames": 561,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4428998440507712e-08
+        },
+        {
+          "seed": 56105,
+          "frames": 562,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4590195940300532e-08
+        },
+        {
+          "seed": 56106,
+          "frames": 608,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4491465138988247e-08
+        },
+        {
+          "seed": 56107,
+          "frames": 610,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4367406320214826e-08
+        },
+        {
+          "seed": 56108,
+          "frames": 609,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.448392933367515e-08
+        },
+        {
+          "seed": 56109,
+          "frames": 575,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4212627574838876e-08
+        },
+        {
+          "seed": 56110,
+          "frames": 576,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.411182054544824e-08
+        },
+        {
+          "seed": 56111,
+          "frames": 581,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4779741930315282e-08
+        }
+      ],
+      "frames": 6992,
+      "numeric_stats": {
+        "state": {
+          "count": 6992,
+          "mean": [
+            -0.0733937955921243,
+            -0.038790086471180985,
+            0.19531634038748982,
+            0.22647093117100697,
+            0.23247923444555882,
+            0.3251776555665673,
+            -0.39638175122050096,
+            0.28690163184353346
+          ],
+          "std": [
+            0.05062133716403234,
+            0.21633739373475472,
+            0.07132497367266734,
+            2.128974263501602,
+            2.1341880927539294,
+            0.2552258264196223,
+            0.28070446456856535,
+            0.20028712255449813
+          ],
+          "min": [
+            -0.15401004254817963,
+            -0.28044071793556213,
+            0.05983965843915939,
+            -2.2153077125549316,
+            -2.2146220207214355,
+            -0.3943940997123718,
+            -0.6344230771064758,
+            -0.002123656217008829
+          ],
+          "max": [
+            -0.0052878702990710735,
+            0.27543318271636963,
+            0.27080392837524414,
+            2.212970733642578,
+            2.194847345352173,
+            0.5649852156639099,
+            0.0039236415177583694,
+            0.4602408707141876
+          ],
+          "max_mean_error": 4.001064074499183e-08
+        },
+        "actions": {
+          "count": 6992,
+          "mean": [
+            0.006782559913498105,
+            0.03891657751293389,
+            -0.02303657006774841,
+            0.0019723182502407997,
+            -0.006838199371700008,
+            -0.000360089830773594,
+            0.31836384439359267
+          ],
+          "std": [
+            0.10244389519194934,
+            0.17679999050555106,
+            0.18732847114256918,
+            0.04498186745713951,
+            0.05061863877219253,
+            0.05338794787010119,
+            0.947968597888602
+          ],
+          "min": [
+            -0.28958532214164734,
+            -0.4000000059604645,
+            -0.4000000059604645,
+            -0.11999999731779099,
+            -0.11999999731779099,
+            -0.07999999821186066,
+            -1.0
+          ],
+          "max": [
+            0.2981472313404083,
+            0.23999999463558197,
+            0.3088982403278351,
+            0.08324648439884186,
+            0.09405927360057831,
+            0.07999999821186066,
+            1.0
+          ],
+          "max_mean_error": 2.78153558658234e-08
+        }
+      },
+      "dataloader_batch_shapes": {
+        "actions": [
+          4,
+          50,
+          7
+        ],
+        "state": [
+          4,
+          8
+        ],
+        "image": [
+          4,
+          3,
+          256,
+          256
+        ],
+        "wrist_image": [
+          4,
+          3,
+          256,
+          256
+        ],
+        "actions_is_pad": [
+          4,
+          50
+        ]
+      },
+      "stats_scope": "train only"
+    },
+    "validation": {
+      "episodes": [
+        {
+          "seed": 56200,
+          "frames": 579,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4772975787114007e-08
+        },
+        {
+          "seed": 56201,
+          "frames": 570,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4261714142982385e-08
+        },
+        {
+          "seed": 56202,
+          "frames": 603,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.475692884556068e-08
+        },
+        {
+          "seed": 56203,
+          "frames": 561,
+          "all_numeric_and_rgb_frames_equal": true,
+          "float64_to_float32_action_max_error": 1.4449941576621939e-08
+        }
+      ],
+      "frames": 2313,
+      "numeric_stats": {
+        "state": {
+          "count": 2313,
+          "mean": [
+            -0.07404678871986403,
+            -0.03659272564414105,
+            0.19560012242757185,
+            0.21743496568286466,
+            0.22350932291148803,
+            0.32453769917726794,
+            -0.3940401815807447,
+            0.2846555076024128
+          ],
+          "std": [
+            0.04930112436171046,
+            0.2154433198726422,
+            0.07184828184959427,
+            2.1298631822797494,
+            2.1351566519756773,
+            0.2558311358768795,
+            0.2802470879465433,
+            0.19955488948083383
+          ],
+          "min": [
+            -0.14821627736091614,
+            -0.27178359031677246,
+            0.0602559819817543,
+            -2.213927984237671,
+            -2.211681604385376,
+            -0.3946368992328644,
+            -0.6308916807174683,
+            -0.0019839175511151552
+          ],
+          "max": [
+            -0.008925407193601131,
+            0.27227672934532166,
+            0.2712370455265045,
+            2.2116692066192627,
+            2.193019390106201,
+            0.5613517761230469,
+            0.003747727023437619,
+            0.4563390016555786
+          ],
+          "max_mean_error": 4.493701885599499e-08
+        },
+        "actions": {
+          "count": 2313,
+          "mean": [
+            0.00720170057248151,
+            0.03857402201052809,
+            -0.022138570064593768,
+            0.0021047830452349285,
+            -0.006618656971489432,
+            -0.00034458038909635777,
+            0.3143104193687851
+          ],
+          "std": [
+            0.09959164135189172,
+            0.17729331436206008,
+            0.1873005698646068,
+            0.04526139673950237,
+            0.04996008108588916,
+            0.05223333264514002,
+            0.9493202622277682
+          ],
+          "min": [
+            -0.26941338181495667,
+            -0.4000000059604645,
+            -0.4000000059604645,
+            -0.11999999731779099,
+            -0.11999999731779099,
+            -0.07999999821186066,
+            -1.0
+          ],
+          "max": [
+            0.28890475630760193,
+            0.23999999463558197,
+            0.3028874397277832,
+            0.08263760060071945,
+            0.08641248196363449,
+            0.07999999821186066,
+            1.0
+          ],
+          "max_mean_error": 2.101365115247944e-08
+        }
+      },
+      "dataloader_batch_shapes": {
+        "actions": [
+          4,
+          50,
+          7
+        ],
+        "state": [
+          4,
+          8
+        ],
+        "image": [
+          4,
+          3,
+          256,
+          256
+        ],
+        "wrist_image": [
+          4,
+          3,
+          256,
+          256
+        ],
+        "actions_is_pad": [
+          4,
+          50
+        ]
+      },
+      "stats_scope": "validation only"
+    }
+  },
+  "negative_frame_tests": [
+    {
+      "case": "action",
+      "rejected": true,
+      "error": "action mismatch"
+    },
+    {
+      "case": "state",
+      "rejected": true,
+      "error": "state mismatch"
+    },
+    {
+      "case": "image",
+      "rejected": true,
+      "error": "image mismatch: image"
+    },
+    {
+      "case": "time",
+      "rejected": true,
+      "error": "timestamp mismatch"
+    },
+    {
+      "case": "terminal",
+      "rejected": true,
+      "error": "terminal mismatch"
+    },
+    {
+      "case": "language",
+      "rejected": true,
+      "error": "language mismatch"
+    }
+  ],
+  "negative_input_tests": [
+    {
+      "case": "unaccepted",
+      "rejected": true,
+      "error": "source not accepted"
+    },
+    {
+      "case": "duplicate",
+      "rejected": true,
+      "error": "duplicate or cross-split seed"
+    },
+    {
+      "case": "wrong_split",
+      "rejected": true,
+      "error": "split mismatch"
+    }
+  ],
+  "source_unchanged": true,
+  "training_executed": false,
+  "gpu_used": false,
+  "openpi_scope": "LeRobot public reader + CPU torch DataLoader verified; existing OpenPI LIBERO key/shape contract retained; full OpenPI training/model pipeline not executed"
+}

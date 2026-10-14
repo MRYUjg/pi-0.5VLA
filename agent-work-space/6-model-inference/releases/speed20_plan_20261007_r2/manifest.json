@@ -1,0 +1,146 @@
+{
+  "version": "speed20_plan_20261007_r2",
+  "status": "plan_files_frozen_implementation_not_started",
+  "created_utc": "2026-10-07T12:12:20.024478+00:00",
+  "previous_plan_manifest_sha256": "4d161e96ed4eafbc97ac235280612159068a5a0bab5f7a2a538501b2becfe987",
+  "baseline_release_manifest_sha256": "b9875e01fb7820d4c1e49b289421e3daa130ebe3b309001d374198232375c1c0",
+  "files_relative_to_6_model_inference": {
+    "versions/speed20_plan_20261007_r2/4090量化模型20Hz加速方案.md": {
+      "sha256": "46d383465bfd57bac047e7d9d64c126d07844f4c3d9d3d0ce9d38956b4131921",
+      "bytes": 19611
+    },
+    "versions/speed20_plan_20261007_r2/protocol.json": {
+      "sha256": "e69e612a8a48ff1193439a569cc1c1412d53b231522c0f96458bced9f899bc8d",
+      "bytes": 12537
+    },
+    "versions/speed20_plan_20261007_r2/source_evidence.json": {
+      "sha256": "81a6ba113bc27bc9731b6b08ac4ce9f12c769956d56fd40473ce791015c90bb2",
+      "bytes": 10607
+    },
+    "当前实施索引_20261007_r5.md": {
+      "sha256": "8479860e18906f2adff218ea0a28c59906c58f4f1a9dc83b8b754cce0d851b65",
+      "bytes": 2289
+    }
+  },
+  "selected_unchanged_frozen_dependencies": {
+    "versions/speed20_plan_20261007_r1/20Hz推理速度优化方案.md": {
+      "sha256": "90e276e4b41f14e490b2854267cd5b9ea4657465ece545920541d3a32b1a2f4f",
+      "bytes": 19922
+    },
+    "versions/speed20_plan_20261007_r1/protocol.json": {
+      "sha256": "5d854b89796d01d37110320267087a0b6b8f5ad8372b8994c97ce8ece82615e3",
+      "bytes": 4409
+    },
+    "versions/speed20_plan_20261007_r1/source_evidence.json": {
+      "sha256": "11920f0d3a883d475c389013d9b6fd12939a4cb4b2a080354d7e1d33fafe8ce6",
+      "bytes": 7103
+    },
+    "当前实施索引_20261007_r4.md": {
+      "sha256": "ea5b85d503b5e0ff495c8a0f400e60a8ec60b08fe9d750c51b5129231656018a",
+      "bytes": 1787
+    },
+    "runs/trt_t4_20261007_r1/report_r1/summary.json": {
+      "sha256": "bb14a9ac4faa986fa875fecf236eb910e8676f3ddc5c6ca3e3accce4823b3350",
+      "bytes": 406351
+    },
+    "versions/trt_t3_20261007_r1/runtime.py": {
+      "sha256": "2bf3a43643a20ecce502a185b1bbea5e22027b7f853b7339af2df03eb865ff9b",
+      "bytes": 6671
+    },
+    "versions/trt_t4_20261007_r1/models.py": {
+      "sha256": "cb91c520d54bd61a43b978c441b6c63570e8b97f24b79c7055be7a95fd2bc6d5",
+      "bytes": 4949
+    },
+    "versions/trt_t3_20261007_r1/common.py": {
+      "sha256": "93f5e7e2863b8b36c700bf0fbe994113a21aeb1973218cd841e949b981d9967e",
+      "bytes": 4043
+    },
+    "versions/trt_t0_t2_20261007_r1/onnx_export.py": {
+      "sha256": "805c725383cb3d2d92737b1e9dbd1c2bf35cab6446bd98c931809f0f30b62f58",
+      "bytes": 2225
+    },
+    "versions/trt_t4_20261007_r1/server.py": {
+      "sha256": "dfadc4e3e0a5e19f78a1806f1e81f5b8b88bec75f8940d5444f323e3f8d993cb",
+      "bytes": 4265
+    },
+    "versions/trt_t4_20261007_r1/benchmark_client.py": {
+      "sha256": "feb74bb27a84ae4edea8bbe18f364c719fe158b350ec10e4dd758707c1e0771e",
+      "bytes": 4783
+    },
+    "versions/trt_t3_20261007_r1/T3实施记录.md": {
+      "sha256": "700d47a2b6d9a615199b9f5bb38705a37a474a5e50c09c8fd9542cfd1f51d6d4",
+      "bytes": 11702
+    },
+    "versions/trt_t4_20261007_r1/T4闭环与资源对比记录.md": {
+      "sha256": "9c93233f9e8a132c6c06a43b41e36b4c362017c02a105b3078c473020685eac9",
+      "bytes": 14493
+    },
+    "versions/w4_plan_20261007_r4/π0.5实机部署4bit量化压缩方案.md": {
+      "sha256": "ec708e86bcc7dddeef35f929dccd7a1c3bf8444dbca3dcf1616872e4f23a1aa3",
+      "bytes": 15739
+    },
+    "runs/trt_t3_20261007_r1/awq_build_r1/engine_layers.json": {
+      "sha256": "c846bcf6251e385289c8bf8c96cdae1030d86604b6690e46fe520730a62e3568",
+      "bytes": 352071
+    },
+    "runs/trt_t3_20261007_r1/gptq_build_r1/engine_layers.json": {
+      "sha256": "6fb9931bb8b7bcd97d6cf5258e9f0854c1cd91567ef2c853891674dfb92b9a63",
+      "bytes": 262634
+    },
+    "releases/trt_t4_20261007_r1/manifest.json": {
+      "sha256": "b9875e01fb7820d4c1e49b289421e3daa130ebe3b309001d374198232375c1c0",
+      "bytes": 933432
+    },
+    "releases/speed20_plan_20261007_r1/manifest.json": {
+      "sha256": "4d161e96ed4eafbc97ac235280612159068a5a0bab5f7a2a538501b2becfe987",
+      "bytes": 3751
+    },
+    "versions/trt_t0_t2_20261007_r1/t2.py": {
+      "sha256": "23977f7e718f1ca09b9866a93ca138cfb8b943bd0c01f629aa08a7ff26cfe8e7",
+      "bytes": 9780
+    },
+    "versions/trt_t0_t2_20261007_r1/gptq.py": {
+      "sha256": "6d38b12db71e3b0c8a60cf67f6dbb47dbf975a22adf995066da0ca48a3f1c07f",
+      "bytes": 2155
+    },
+    "versions/trt_t0_t2_20261007_r1/codec.py": {
+      "sha256": "4a4378281249d554e9b4b8a017fd141fbe757832f0bc62d1fcfb5e071fcf87de",
+      "bytes": 1509
+    },
+    "versions/trt_t0_t2_20261007_r1/calibrate.py": {
+      "sha256": "9cf457ae1ffef2a9486d74a5cb6e9d85b8142200c22405961b4808e603d9435f",
+      "bytes": 4795
+    },
+    "versions/trt_t0_t2_20261007_r1/subgraphs.py": {
+      "sha256": "004d945e23a179c71eff705df77417fcae1d15576f89018329c517a7040165b7",
+      "bytes": 3937
+    },
+    "runs/trt_t0_t2_20261007_r1/calibration_audit_r1.json": {
+      "sha256": "9d7e764a9699b092bf239f32026434191910ba54cd46595984cde7c866994717",
+      "bytes": 1156
+    },
+    "runs/trt_t0_t2_20261007_r1/calibration_r1/dataset.json": {
+      "sha256": "f29faf7034ee2deb0c7eab0d4f61a2b2a7833080f5d5c7e4fee31b53dd964391",
+      "bytes": 1078060
+    },
+    "runs/trt_t0_t2_20261007_r1/calibration_r1/pilot.json": {
+      "sha256": "3e4a3cae16408dca1b883d0661f9dafe5db2d79f473a018b7b0c6067235ce074",
+      "bytes": 65384
+    },
+    "runs/trt_t0_t2_20261007_r1/calibration_r1/activation_manifest.json": {
+      "sha256": "e6d1191560006067080acc70aece3a955eb6e58ec6e3a530f335605be935af7a",
+      "bytes": 48454
+    }
+  },
+  "verification_scope": "new plan documents and selected unchanged frozen metadata/source only; no new engine build/inference and no large model/engine rehash",
+  "manifest_excludes_itself_and_verification_receipts": true,
+  "acceptance": {
+    "plan_designed": true,
+    "implementation_started": false,
+    "4090_20Hz_latency_accepted": false,
+    "8GB_optimized_deployment_accepted": false,
+    "closedloop_quality_accepted": false,
+    "actual_4070_validation_required": false,
+    "old_T1_and_GPTQ_failures_retained": true
+  }
+}

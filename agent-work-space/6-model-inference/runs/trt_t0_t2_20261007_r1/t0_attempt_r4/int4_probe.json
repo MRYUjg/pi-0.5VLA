@@ -1,0 +1,25 @@
+{
+  "tensorrt": "10.13.3.9",
+  "opset": 21,
+  "block_size": 128,
+  "signed_int4": true,
+  "zero_point": 0,
+  "symmetry": true,
+  "build": {
+    "inputs": [
+      "x"
+    ],
+    "outputs": [
+      "y"
+    ],
+    "layers": 5,
+    "engine_bytes": 137540
+  },
+  "accuracy": {
+    "max_abs": 0.0,
+    "mae": 0.0,
+    "p99_abs": 0.0,
+    "finite": true
+  },
+  "task_calibration": false
+}

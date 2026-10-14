@@ -1,0 +1,20 @@
+{
+  "process_peak_bytes": 3751804928,
+  "device_peak_bytes": 12020350976,
+  "samples": 1864,
+  "sample_interval_ms": 20,
+  "includes_launch_load_warmup_shutdown": true,
+  "policy_host_pid": 103918,
+  "warm_growth_bytes": 0,
+  "warm_growth_screen_passed": true,
+  "foreign_GPU_compute_pids": [
+    "102159"
+  ],
+  "isolated_compute": false,
+  "process_6_4GB_screen_passed": true,
+  "device_7_2GB_screen_passed": false,
+  "two_hour_run": false,
+  "actual_4070_or_8GB_hardware_test": false,
+  "variant": "full_gptq",
+  "count": 128
+}

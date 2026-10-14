@@ -1,0 +1,6 @@
+{
+  "stage": "T0",
+  "exit_code": 1,
+  "error": "ONNX 1.19 import: actual ml_dtypes 0.4.1 lacked float4_e2m1fn; repository uv overrides kept old version",
+  "repair": "isolated container uv --no-config pin ml-dtypes 0.5.3; rerun has separate directory"
+}

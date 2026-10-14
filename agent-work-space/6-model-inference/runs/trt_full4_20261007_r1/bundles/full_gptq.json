@@ -1,0 +1,34 @@
+{
+  "version": "trt_full4_20261007_r1",
+  "algorithm": "GPTQ",
+  "engines": {
+    "prefix": {
+      "path": "/work/runs/trt_t3_20261007_r1/gptq_build_r1/prefix.engine",
+      "sha256": "09bc51f20fb652b2b9f4dbb731addeb1ec1f33e0d6fc51fec6a2219a43b64c6c",
+      "bytes": 2026493756
+    },
+    "vision": {
+      "path": "/work/runs/trt_full4_20261007_r1/gptq_vision_build_r1/vision.engine",
+      "sha256": "b8f2f48238e22da9b7dcc9f35d36515f797b0c3daccb3f94b3303294e9db6199",
+      "bytes": 229536356
+    },
+    "action_step": {
+      "path": "/work/runs/trt_full4_20261007_r1/gptq_action_build_r1/action_step.engine",
+      "sha256": "ca8779d8e038758123f61fc3c29199f02002629f758c39ed42bb58af7ef728e3",
+      "bytes": 230901788
+    }
+  },
+  "total_engine_file_bytes": 2486931900,
+  "all_reachable_Linear_count": 451,
+  "vision_Linear_count": 163,
+  "expert_Linear_count": 167,
+  "prefix_reachable_Linear_count": 121,
+  "original_prefix_bundle_sha256": "0bad7b1eff7e22fa71972a11683a53fc0d4c5da5203c04158dc21dbad6b7a76b",
+  "activation_precision": "original BF16/FP32",
+  "denoising_steps": 10,
+  "source_model_instantiated_at_inference": false,
+  "source_JAX_tested": false,
+  "non_Linear_and_bias_float_remainder": true,
+  "20Hz_accepted": false,
+  "closedloop_accepted": false
+}

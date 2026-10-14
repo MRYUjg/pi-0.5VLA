@@ -1,0 +1,289 @@
+{
+  "version": "speed20_plan_20261007_r2",
+  "checked_at_utc": "2026-10-07T12:12:20.023417+00:00",
+  "authorization": [
+    "只在当前4090服务器验证；专注量化模型角度；重新设计方案",
+    "量化方案还是使用AWQ、GPTQ",
+    "此前继续仅保留方案"
+  ],
+  "scope": "plan-only read-only review; no new model experiments",
+  "previous_plan_manifest_sha256": "4d161e96ed4eafbc97ac235280612159068a5a0bab5f7a2a538501b2becfe987",
+  "baseline_release_manifest_sha256": "b9875e01fb7820d4c1e49b289421e3daa130ebe3b309001d374198232375c1c0",
+  "selected_frozen_sources": {
+    "versions/speed20_plan_20261007_r1/20Hz推理速度优化方案.md": {
+      "sha256": "90e276e4b41f14e490b2854267cd5b9ea4657465ece545920541d3a32b1a2f4f",
+      "bytes": 19922
+    },
+    "versions/speed20_plan_20261007_r1/protocol.json": {
+      "sha256": "5d854b89796d01d37110320267087a0b6b8f5ad8372b8994c97ce8ece82615e3",
+      "bytes": 4409
+    },
+    "versions/speed20_plan_20261007_r1/source_evidence.json": {
+      "sha256": "11920f0d3a883d475c389013d9b6fd12939a4cb4b2a080354d7e1d33fafe8ce6",
+      "bytes": 7103
+    },
+    "当前实施索引_20261007_r4.md": {
+      "sha256": "ea5b85d503b5e0ff495c8a0f400e60a8ec60b08fe9d750c51b5129231656018a",
+      "bytes": 1787
+    },
+    "runs/trt_t4_20261007_r1/report_r1/summary.json": {
+      "sha256": "bb14a9ac4faa986fa875fecf236eb910e8676f3ddc5c6ca3e3accce4823b3350",
+      "bytes": 406351
+    },
+    "versions/trt_t3_20261007_r1/runtime.py": {
+      "sha256": "2bf3a43643a20ecce502a185b1bbea5e22027b7f853b7339af2df03eb865ff9b",
+      "bytes": 6671
+    },
+    "versions/trt_t4_20261007_r1/models.py": {
+      "sha256": "cb91c520d54bd61a43b978c441b6c63570e8b97f24b79c7055be7a95fd2bc6d5",
+      "bytes": 4949
+    },
+    "versions/trt_t3_20261007_r1/common.py": {
+      "sha256": "93f5e7e2863b8b36c700bf0fbe994113a21aeb1973218cd841e949b981d9967e",
+      "bytes": 4043
+    },
+    "versions/trt_t0_t2_20261007_r1/onnx_export.py": {
+      "sha256": "805c725383cb3d2d92737b1e9dbd1c2bf35cab6446bd98c931809f0f30b62f58",
+      "bytes": 2225
+    },
+    "versions/trt_t4_20261007_r1/server.py": {
+      "sha256": "dfadc4e3e0a5e19f78a1806f1e81f5b8b88bec75f8940d5444f323e3f8d993cb",
+      "bytes": 4265
+    },
+    "versions/trt_t4_20261007_r1/benchmark_client.py": {
+      "sha256": "feb74bb27a84ae4edea8bbe18f364c719fe158b350ec10e4dd758707c1e0771e",
+      "bytes": 4783
+    },
+    "versions/trt_t3_20261007_r1/T3实施记录.md": {
+      "sha256": "700d47a2b6d9a615199b9f5bb38705a37a474a5e50c09c8fd9542cfd1f51d6d4",
+      "bytes": 11702
+    },
+    "versions/trt_t4_20261007_r1/T4闭环与资源对比记录.md": {
+      "sha256": "9c93233f9e8a132c6c06a43b41e36b4c362017c02a105b3078c473020685eac9",
+      "bytes": 14493
+    },
+    "versions/w4_plan_20261007_r4/π0.5实机部署4bit量化压缩方案.md": {
+      "sha256": "ec708e86bcc7dddeef35f929dccd7a1c3bf8444dbca3dcf1616872e4f23a1aa3",
+      "bytes": 15739
+    },
+    "runs/trt_t3_20261007_r1/awq_build_r1/engine_layers.json": {
+      "sha256": "c846bcf6251e385289c8bf8c96cdae1030d86604b6690e46fe520730a62e3568",
+      "bytes": 352071
+    },
+    "runs/trt_t3_20261007_r1/gptq_build_r1/engine_layers.json": {
+      "sha256": "6fb9931bb8b7bcd97d6cf5258e9f0854c1cd91567ef2c853891674dfb92b9a63",
+      "bytes": 262634
+    },
+    "releases/trt_t4_20261007_r1/manifest.json": {
+      "sha256": "b9875e01fb7820d4c1e49b289421e3daa130ebe3b309001d374198232375c1c0",
+      "bytes": 933432
+    },
+    "releases/speed20_plan_20261007_r1/manifest.json": {
+      "sha256": "4d161e96ed4eafbc97ac235280612159068a5a0bab5f7a2a538501b2becfe987",
+      "bytes": 3751
+    },
+    "versions/trt_t0_t2_20261007_r1/t2.py": {
+      "sha256": "23977f7e718f1ca09b9866a93ca138cfb8b943bd0c01f629aa08a7ff26cfe8e7",
+      "bytes": 9780
+    },
+    "versions/trt_t0_t2_20261007_r1/gptq.py": {
+      "sha256": "6d38b12db71e3b0c8a60cf67f6dbb47dbf975a22adf995066da0ca48a3f1c07f",
+      "bytes": 2155
+    },
+    "versions/trt_t0_t2_20261007_r1/codec.py": {
+      "sha256": "4a4378281249d554e9b4b8a017fd141fbe757832f0bc62d1fcfb5e071fcf87de",
+      "bytes": 1509
+    },
+    "versions/trt_t0_t2_20261007_r1/calibrate.py": {
+      "sha256": "9cf457ae1ffef2a9486d74a5cb6e9d85b8142200c22405961b4808e603d9435f",
+      "bytes": 4795
+    },
+    "versions/trt_t0_t2_20261007_r1/subgraphs.py": {
+      "sha256": "004d945e23a179c71eff705df77417fcae1d15576f89018329c517a7040165b7",
+      "bytes": 3937
+    },
+    "runs/trt_t0_t2_20261007_r1/calibration_audit_r1.json": {
+      "sha256": "9d7e764a9699b092bf239f32026434191910ba54cd46595984cde7c866994717",
+      "bytes": 1156
+    },
+    "runs/trt_t0_t2_20261007_r1/calibration_r1/dataset.json": {
+      "sha256": "f29faf7034ee2deb0c7eab0d4f61a2b2a7833080f5d5c7e4fee31b53dd964391",
+      "bytes": 1078060
+    },
+    "runs/trt_t0_t2_20261007_r1/calibration_r1/pilot.json": {
+      "sha256": "3e4a3cae16408dca1b883d0661f9dafe5db2d79f473a018b7b0c6067235ce074",
+      "bytes": 65384
+    },
+    "runs/trt_t0_t2_20261007_r1/calibration_r1/activation_manifest.json": {
+      "sha256": "e6d1191560006067080acc70aece3a955eb6e58ec6e3a530f335605be935af7a",
+      "bytes": 48454
+    }
+  },
+  "baseline": {
+    "trt_float": {
+      "successes": 26,
+      "trials": 30,
+      "HTTP_ms": {
+        "count": 1000,
+        "mean": 82.45735645898458,
+        "p50": 81.88160400095512,
+        "p95": 84.79140485032985,
+        "p99": 86.84080360992084,
+        "max": 91.44797399858362
+      },
+      "module_GPU_timeline_ms": {
+        "vision": {
+          "count": 1000,
+          "mean": 10.268639694452286,
+          "p50": 10.207695960998535,
+          "p95": 10.313809466361999,
+          "p99": 12.166460177898403,
+          "max": 14.786944150924683
+        },
+        "prefix": {
+          "count": 1000,
+          "mean": 26.766201179504396,
+          "p50": 26.744815826416016,
+          "p95": 26.835846614837646,
+          "p99": 26.97275905609131,
+          "max": 29.666208267211914
+        },
+        "action_step": {
+          "count": 1000,
+          "mean": 36.49518661236763,
+          "p50": 36.334336042404175,
+          "p95": 37.32244113683701,
+          "p99": 39.68285502433777,
+          "max": 43.54035186767578
+        }
+      },
+      "device_peak_bytes": 7933460480,
+      "module_times_may_include_host_synchronization_gaps": true,
+      "HTTP_excludes_client_image_transform_and_precomputed_payload_encoding": true
+    },
+    "awq": {
+      "successes": 26,
+      "trials": 30,
+      "HTTP_ms": {
+        "count": 1000,
+        "mean": 84.85833826205999,
+        "p50": 84.13000899963663,
+        "p95": 87.53638910184236,
+        "p99": 90.255383742915,
+        "max": 92.42879299927154
+      },
+      "module_GPU_timeline_ms": {
+        "vision": {
+          "count": 1000,
+          "mean": 10.311147067546845,
+          "p50": 10.244688034057617,
+          "p95": 10.379126501083373,
+          "p99": 12.390406064987182,
+          "max": 15.655936002731323
+        },
+        "prefix": {
+          "count": 1000,
+          "mean": 28.680353004455565,
+          "p50": 28.667295455932617,
+          "p95": 28.750828742980957,
+          "p99": 28.814425315856933,
+          "max": 31.93974494934082
+        },
+        "action_step": {
+          "count": 1000,
+          "mean": 36.572213096141816,
+          "p50": 36.380144000053406,
+          "p95": 38.299545753002164,
+          "p99": 40.07833278417587,
+          "max": 41.68780779838562
+        }
+      },
+      "device_peak_bytes": 5165219840,
+      "module_times_may_include_host_synchronization_gaps": true,
+      "HTTP_excludes_client_image_transform_and_precomputed_payload_encoding": true
+    },
+    "gptq": {
+      "successes": 25,
+      "trials": 30,
+      "HTTP_ms": {
+        "count": 1000,
+        "mean": 84.17721184302718,
+        "p50": 83.6168549994909,
+        "p95": 86.8048013511725,
+        "p99": 88.91947533946222,
+        "max": 91.08405000006314
+      },
+      "module_GPU_timeline_ms": {
+        "vision": {
+          "count": 1000,
+          "mean": 10.299338270187379,
+          "p50": 10.232848048210144,
+          "p95": 10.366339325904846,
+          "p99": 12.679404151439666,
+          "max": 15.282687664031982
+        },
+        "prefix": {
+          "count": 1000,
+          "mean": 28.252809799194335,
+          "p50": 28.24291229248047,
+          "p95": 28.313405513763428,
+          "p99": 28.360804901123046,
+          "max": 31.930368423461914
+        },
+        "action_step": {
+          "count": 1000,
+          "mean": 36.5323662378788,
+          "p50": 36.362207770347595,
+          "p95": 37.512249970436095,
+          "p99": 39.919163987636566,
+          "max": 41.749183893203735
+        }
+      },
+      "device_peak_bytes": 5156831232,
+      "module_times_may_include_host_synchronization_gaps": true,
+      "HTTP_excludes_client_image_transform_and_precomputed_payload_encoding": true
+    }
+  },
+  "server_read_only_snapshot": {
+    "hostname": "ubuntu20",
+    "GPU": "NVIDIA GeForce RTX 4090",
+    "driver": "535.129.03",
+    "memory_total_MiB": 49140,
+    "memory_used_MiB": 13,
+    "running_Docker_containers": 0,
+    "no_GPU_inference_run_for_this_plan": true
+  },
+  "previous_plan_verification": {
+    "local_checked": 17,
+    "server_checked": 17,
+    "mismatches": [],
+    "includes_docs_and_selected_frozen_sources_only_not_large_engine_rehash": true
+  },
+  "official_sources": [
+    {
+      "url": "https://arxiv.org/abs/2306.00978",
+      "claim": "AWQ activation-aware weight quantization; framework kernel benchmarks not a guarantee for pi05"
+    },
+    {
+      "url": "https://arxiv.org/abs/2210.17323",
+      "claim": "GPTQ approximate second-order weight error compensation"
+    },
+    {
+      "url": "https://docs.nvidia.com/deeplearning/tensorrt/10.x.x/inference-library/work-quantized-types.html#weight-only-quantization",
+      "claim": "INT4 WoQ reads compressed weights, dequantizes and computes in high precision; block64/128 supported"
+    },
+    {
+      "url": "https://github.com/NVIDIA/Model-Optimizer/blob/0.33.1/modelopt/torch/quantization/config.py",
+      "claim": "version-pinned quantization recipe source; exact existing awq_lite adapter is frozen local dependency"
+    }
+  ],
+  "planning_estimate": {
+    "AWQ_old_HTTP_mean_ms": 84.85833826205999,
+    "module_interval_sum_ms": 75.56371316814423,
+    "remaining_interval_estimate_ms": 9.29462509391576,
+    "uniform_twofold_module_shortening_estimated_old_mean_ms": 47.07648167798787,
+    "not_measured_not_P99_not_kernel_busy_lower_bound": true
+  },
+  "new_candidate_results": null,
+  "20Hz_accepted": false
+}

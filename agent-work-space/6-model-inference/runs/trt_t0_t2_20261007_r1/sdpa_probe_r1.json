@@ -1,0 +1,42 @@
+{
+  "FP32_probabilities": [
+    {
+      "max_abs": 3.0,
+      "mae": 0.012302083894610405,
+      "p99_abs": 0.0625,
+      "finite": true
+    },
+    {
+      "max_abs": 2.0,
+      "mae": 0.01375253964215517,
+      "p99_abs": 0.0625,
+      "finite": true
+    },
+    {
+      "max_abs": 2.0,
+      "mae": 0.014832910150289536,
+      "p99_abs": 0.0859375,
+      "finite": true
+    }
+  ],
+  "BF16_probabilities": [
+    {
+      "max_abs": 3.0,
+      "mae": 0.01234386581927538,
+      "p99_abs": 0.0625,
+      "finite": true
+    },
+    {
+      "max_abs": 2.0,
+      "mae": 0.014248328283429146,
+      "p99_abs": 0.0625,
+      "finite": true
+    },
+    {
+      "max_abs": 2.0,
+      "mae": 0.01560123823583126,
+      "p99_abs": 0.0859375,
+      "finite": true
+    }
+  ]
+}

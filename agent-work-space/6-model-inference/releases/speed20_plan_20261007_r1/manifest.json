@@ -1,0 +1,89 @@
+{
+  "version": "speed20_plan_20261007_r1",
+  "status": "plan_files_frozen_implementation_not_started",
+  "created_utc": "2026-10-07T11:44:23.076608+00:00",
+  "previous_release_manifest_sha256": "b9875e01fb7820d4c1e49b289421e3daa130ebe3b309001d374198232375c1c0",
+  "files_relative_to_6_model_inference": {
+    "versions/speed20_plan_20261007_r1/20Hz推理速度优化方案.md": {
+      "sha256": "90e276e4b41f14e490b2854267cd5b9ea4657465ece545920541d3a32b1a2f4f",
+      "bytes": 19922
+    },
+    "versions/speed20_plan_20261007_r1/protocol.json": {
+      "sha256": "5d854b89796d01d37110320267087a0b6b8f5ad8372b8994c97ce8ece82615e3",
+      "bytes": 4409
+    },
+    "versions/speed20_plan_20261007_r1/source_evidence.json": {
+      "sha256": "11920f0d3a883d475c389013d9b6fd12939a4cb4b2a080354d7e1d33fafe8ce6",
+      "bytes": 7103
+    },
+    "当前实施索引_20261007_r4.md": {
+      "sha256": "ea5b85d503b5e0ff495c8a0f400e60a8ec60b08fe9d750c51b5129231656018a",
+      "bytes": 1787
+    }
+  },
+  "selected_unchanged_frozen_dependencies": {
+    "runs/trt_t4_20261007_r1/report_r1/summary.json": {
+      "sha256": "bb14a9ac4faa986fa875fecf236eb910e8676f3ddc5c6ca3e3accce4823b3350",
+      "bytes": 406351
+    },
+    "versions/trt_t3_20261007_r1/runtime.py": {
+      "sha256": "2bf3a43643a20ecce502a185b1bbea5e22027b7f853b7339af2df03eb865ff9b",
+      "bytes": 6671
+    },
+    "versions/trt_t4_20261007_r1/models.py": {
+      "sha256": "cb91c520d54bd61a43b978c441b6c63570e8b97f24b79c7055be7a95fd2bc6d5",
+      "bytes": 4949
+    },
+    "versions/trt_t3_20261007_r1/common.py": {
+      "sha256": "93f5e7e2863b8b36c700bf0fbe994113a21aeb1973218cd841e949b981d9967e",
+      "bytes": 4043
+    },
+    "versions/trt_t0_t2_20261007_r1/onnx_export.py": {
+      "sha256": "805c725383cb3d2d92737b1e9dbd1c2bf35cab6446bd98c931809f0f30b62f58",
+      "bytes": 2225
+    },
+    "versions/trt_t4_20261007_r1/server.py": {
+      "sha256": "dfadc4e3e0a5e19f78a1806f1e81f5b8b88bec75f8940d5444f323e3f8d993cb",
+      "bytes": 4265
+    },
+    "versions/trt_t4_20261007_r1/benchmark_client.py": {
+      "sha256": "feb74bb27a84ae4edea8bbe18f364c719fe158b350ec10e4dd758707c1e0771e",
+      "bytes": 4783
+    },
+    "versions/trt_t3_20261007_r1/T3实施记录.md": {
+      "sha256": "700d47a2b6d9a615199b9f5bb38705a37a474a5e50c09c8fd9542cfd1f51d6d4",
+      "bytes": 11702
+    },
+    "versions/trt_t4_20261007_r1/T4闭环与资源对比记录.md": {
+      "sha256": "9c93233f9e8a132c6c06a43b41e36b4c362017c02a105b3078c473020685eac9",
+      "bytes": 14493
+    },
+    "versions/w4_plan_20261007_r4/π0.5实机部署4bit量化压缩方案.md": {
+      "sha256": "ec708e86bcc7dddeef35f929dccd7a1c3bf8444dbca3dcf1616872e4f23a1aa3",
+      "bytes": 15739
+    },
+    "runs/trt_t3_20261007_r1/awq_build_r1/engine_layers.json": {
+      "sha256": "c846bcf6251e385289c8bf8c96cdae1030d86604b6690e46fe520730a62e3568",
+      "bytes": 352071
+    },
+    "runs/trt_t3_20261007_r1/gptq_build_r1/engine_layers.json": {
+      "sha256": "6fb9931bb8b7bcd97d6cf5258e9f0854c1cd91567ef2c853891674dfb92b9a63",
+      "bytes": 262634
+    },
+    "releases/trt_t4_20261007_r1/manifest.json": {
+      "sha256": "b9875e01fb7820d4c1e49b289421e3daa130ebe3b309001d374198232375c1c0",
+      "bytes": 933432
+    }
+  },
+  "verification_scope": "plan documents and selected cited frozen metadata/source only; engine bytes were previously checked by T4, not rebenchmarked",
+  "manifest_excludes_itself_and_verification_receipts": true,
+  "acceptance": {
+    "plan_designed": true,
+    "implementation_started": false,
+    "20Hz_latency_accepted": false,
+    "actual_4070_accepted": false,
+    "8GB_optimized_deployment_accepted": false,
+    "closedloop_quality_accepted": false,
+    "old_T1_and_GPTQ_failures_retained": true
+  }
+}

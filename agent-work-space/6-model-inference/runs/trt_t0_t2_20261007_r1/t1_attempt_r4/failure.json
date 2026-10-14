@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/work/runs/trt_t0_t2_20261007_r1/t1_attempt_r4_source/t1.py\", line 133, in <module>\n    main(a.out,a.reference,a.reuse)\n  File \"/work/runs/trt_t0_t2_20261007_r1/t1_attempt_r4_source/t1.py\", line 93, in main\n    exports[name]['engine'] = build(path, out / (name + '.engine'))\n    ~~~~~~~^^^^^^\nKeyError: 'paligemma_with_expert.paligemma.model.language_model.layers.17.self_attn.v_proj'\n"
+}

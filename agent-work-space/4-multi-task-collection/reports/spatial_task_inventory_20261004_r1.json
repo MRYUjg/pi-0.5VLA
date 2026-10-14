@@ -1,0 +1,147 @@
+{
+  "scope": "read-only BDDL inventory, no simulated rollout or test use",
+  "task_order_index": 0,
+  "task_map_sha256": "0c950df0a785aa55de968bb38ccd865d2017f71ddbe6f48cfd05ac0742b6d62d",
+  "tasks": [
+    {
+      "task_id_order0": 0,
+      "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "benchmark_prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "bddl_language": "(:language Pick the akita black bowl between the plate and the ramekin and place it on the plate)",
+      "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+      "bddl_sha256": "9b59eb1287802868ad9bc78d58e6d36d4ba31134e679cfdbdf4b0feb660c959b",
+      "init": "(:init\n    (On akita_black_bowl_1 main_table_between_plate_ramekin_region)\n    (On akita_black_bowl_2 main_table_next_to_ramekin_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+      "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+      "target_initial_predicate": [
+        "(On akita_black_bowl_1 main_table_between_plate_ramekin_region)"
+      ],
+      "teacher_status": "r20 historical task0 candidate; data adapter pending"
+    },
+    {
+      "task_id_order0": 1,
+      "name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+      "benchmark_prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "bddl_language": "(:language Pick the akita black bowl next to the ramekin and place it on the plate)",
+      "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate.bddl",
+      "bddl_sha256": "53a7516571412a2f46a27cbf8482d3b76dbad4221858c8f6b565d506c274e61d",
+      "init": "(:init\n    (On akita_black_bowl_1 main_table_next_to_ramekin_region)\n    (On akita_black_bowl_2 main_table_next_to_box_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+      "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+      "target_initial_predicate": [
+        "(On akita_black_bowl_1 main_table_next_to_ramekin_region)"
+      ],
+      "teacher_status": "not yet validated; current teacher hardcodes task0"
+    },
+    {
+      "task_id_order0": 2,
+      "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+      "benchmark_prompt": "pick up the black bowl from table center and place it on the plate",
+      "bddl_language": "(:language Pick the akita black bowl from table center and place it on the plate)",
+      "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.bddl",
+      "bddl_sha256": "5e19880ebc844f86b89f63b172aab0b7a89f85b6e6955891f544f0ea7d0795d5",
+      "init": "(:init\n    (On akita_black_bowl_1 main_table_table_center)\n    (On akita_black_bowl_2 main_table_next_to_plate_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+      "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+      "target_initial_predicate": [
+        "(On akita_black_bowl_1 main_table_table_center)"
+      ],
+      "teacher_status": "not yet validated; current teacher hardcodes task0"
+    },
+    {
+      "task_id_order0": 3,
+      "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+      "benchmark_prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "bddl_language": "(:language Pick the akita black bowl on the cookies box and place it on the plate)",
+      "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate.bddl",
+      "bddl_sha256": "3d4ccf070c3d9883ae0676f2d888588f98c696ddad71b7694f47c379fc99ef36",
+      "init": "(:init\n    (On akita_black_bowl_1 cookies_1)\n    (On akita_black_bowl_2 wooden_cabinet_1_top_side)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+      "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+      "target_initial_predicate": [
+        "(On akita_black_bowl_1 cookies_1)"
+      ],
+      "teacher_status": "not yet validated; current teacher hardcodes task0"
+    },
+    {
+      "task_id_order0": 4,
+      "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+      "benchmark_prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "bddl_language": "(:language Pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate)",
+      "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate.bddl",
+      "bddl_sha256": "4371189e11d9fd29bb548ab9a8adcd741bb0ce41bb66c612672d0e8cb29a52a9",
+      "init": "(:init\n    (In akita_black_bowl_1 wooden_cabinet_1_top_region)\n    (On akita_black_bowl_2 wooden_cabinet_1_top_side)\n    (Open wooden_cabinet_1_top_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+      "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+      "target_initial_predicate": [
+        "(In akita_black_bowl_1 wooden_cabinet_1_top_region)"
+      ],
+      "teacher_status": "not yet validated; current teacher hardcodes task0"
+    },
+    {
+      "task_id_order0": 5,
+      "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+      "benchmark_prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "bddl_language": "(:language Pick the akita black bowl on the ramekin and place it on the plate)",
+      "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate.bddl",
+      "bddl_sha256": "10239815a9d18ad53e09365d453a362ee54d29ca276e04eef411cf1db8d72940",
+      "init": "(:init\n    (On akita_black_bowl_1 glazed_rim_porcelain_ramekin_1)\n    (On akita_black_bowl_2 cookies_1)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+      "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+      "target_initial_predicate": [
+        "(On akita_black_bowl_1 glazed_rim_porcelain_ramekin_1)"
+      ],
+      "teacher_status": "not yet validated; current teacher hardcodes task0"
+    },
+    {
+      "task_id_order0": 6,
+      "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+      "benchmark_prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "bddl_language": "(:language Pick the akita black bowl next to the cookies box and place it on the plate)",
+      "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate.bddl",
+      "bddl_sha256": "566c65596f3472e752e6522817bff51bbf3ce5159d7bec1d3554e5ead46b1e55",
+      "init": "(:init\n    (On akita_black_bowl_1 main_table_next_to_box_region)\n    (On akita_black_bowl_2 flat_stove_1_cook_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+      "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+      "target_initial_predicate": [
+        "(On akita_black_bowl_1 main_table_next_to_box_region)"
+      ],
+      "teacher_status": "not yet validated; current teacher hardcodes task0"
+    },
+    {
+      "task_id_order0": 7,
+      "name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+      "benchmark_prompt": "pick up the black bowl on the stove and place it on the plate",
+      "bddl_language": "(:language Pick the akita black bowl on the stove and place it on the plate)",
+      "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate.bddl",
+      "bddl_sha256": "dd11837141a30d874ebbbfaae20e91ecc67ec85ab3872ceb4cff3abfcbef7cb0",
+      "init": "(:init\n    (On akita_black_bowl_1 flat_stove_1_cook_region)\n    (On akita_black_bowl_2 wooden_cabinet_1_top_side)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+      "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+      "target_initial_predicate": [
+        "(On akita_black_bowl_1 flat_stove_1_cook_region)"
+      ],
+      "teacher_status": "not yet validated; current teacher hardcodes task0"
+    },
+    {
+      "task_id_order0": 8,
+      "name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+      "benchmark_prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "bddl_language": "(:language Pick the akita black bowl next to the plate and place it on the plate)",
+      "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate.bddl",
+      "bddl_sha256": "c8fbb9effa27b947d04d26862d75273d93cac1806734e53836cd472a08aec1fe",
+      "init": "(:init\n    (On akita_black_bowl_1 main_table_next_to_plate_region)\n    (On akita_black_bowl_2 main_table_next_to_ramekin_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+      "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+      "target_initial_predicate": [
+        "(On akita_black_bowl_1 main_table_next_to_plate_region)"
+      ],
+      "teacher_status": "not yet validated; current teacher hardcodes task0"
+    },
+    {
+      "task_id_order0": 9,
+      "name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+      "benchmark_prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "bddl_language": "(:language Pick the akita black bowl on the wooden cabinet and place it on the plate)",
+      "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.bddl",
+      "bddl_sha256": "5293e759381b477e126beaf83d738542bbd4d93f522a3eead1066e612bad4a8c",
+      "init": "(:init\n    (On akita_black_bowl_1 wooden_cabinet_1_top_side)\n    (On akita_black_bowl_2 flat_stove_1_cook_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+      "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+      "target_initial_predicate": [
+        "(On akita_black_bowl_1 wooden_cabinet_1_top_side)"
+      ],
+      "teacher_status": "not yet validated; current teacher hardcodes task0"
+    }
+  ]
+}

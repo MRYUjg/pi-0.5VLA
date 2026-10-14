@@ -1,0 +1,256 @@
+{
+  "interrupted_attempts": [
+    {
+      "scene": {
+        "task_id_order0": 0,
+        "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "benchmark_prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+        "bddl_language": "(:language Pick the akita black bowl between the plate and the ramekin and place it on the plate)",
+        "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "9b59eb1287802868ad9bc78d58e6d36d4ba31134e679cfdbdf4b0feb660c959b",
+        "init": "(:init\n    (On akita_black_bowl_1 main_table_between_plate_ramekin_region)\n    (On akita_black_bowl_2 main_table_next_to_ramekin_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+        "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+        "target_initial_predicate": [
+          "(On akita_black_bowl_1 main_table_between_plate_ramekin_region)"
+        ],
+        "teacher_status": "unchanged r20; acceptance pending per-episode audit",
+        "seed": 620018,
+        "split": "train",
+        "suite": "libero_spatial",
+        "task_id": 0
+      },
+      "capture": {
+        "exit_code": null,
+        "normal_exit": false,
+        "exit_observed": false,
+        "reason": "user-confirmed server shutdown interrupted attempt"
+      },
+      "accepted": false,
+      "development_pass": false,
+      "interrupted": true,
+      "interruption_files_sha256": {
+        "runs/formal_20261005_r1/task00_s620018/trajectory.partial.h5": "e6a8cec6fa22dbd1110e848a68658f23cdc2364bfd28cf97f4dff564aa2f154c",
+        "runs/formal_20261005_r1/preflight/task00_s620018/preparation.h5": "2dbca6cab32f143271d363e97e3c144c290d8fa5e9cf6b36c8dfe5e954e809f8",
+        "runs/formal_20261005_r1/preflight/task00_s620018/initialization.json": "d5a2c35351b7174cf34ade84448f1b915aa99a9800e43c16ddaa587f8efd5ca9",
+        "runs/formal_20261005_r1/preflight/task00_s620018/preflight.json": "6785b1b829d89e9ca38bec60645f9ab8c41b61df295e7245f713fafaf4fde1e7",
+        "runs/formal_20261005_r1/task00_s620018.log": "f9ba22b93a9a2c954b65c06894769cc320d74f4157de44fd7ca30efd0f246aa9",
+        "runs/formal_20261005_r1/preflight/task00_s620018.log": "9967e81535dc2d7a76fc6df3d83b81e0984d1905b109f022d454088afa1b92fa",
+        "runs/formal_20261005_r1/preflight/task00_s620018.status.json": "0fc70ca2f719d44642a0e3cb71c07e5bf32ac1b7be15ec845da89cc07bac6b05"
+      },
+      "recovery_time": "2026-10-06T10:47:56.796375+00:00",
+      "scope": "preserved incomplete evidence; never retried or admitted"
+    },
+    {
+      "scene": {
+        "task_id_order0": 2,
+        "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+        "benchmark_prompt": "pick up the black bowl from table center and place it on the plate",
+        "bddl_language": "(:language Pick the akita black bowl from table center and place it on the plate)",
+        "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "5e19880ebc844f86b89f63b172aab0b7a89f85b6e6955891f544f0ea7d0795d5",
+        "init": "(:init\n    (On akita_black_bowl_1 main_table_table_center)\n    (On akita_black_bowl_2 main_table_next_to_plate_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+        "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+        "target_initial_predicate": [
+          "(On akita_black_bowl_1 main_table_table_center)"
+        ],
+        "teacher_status": "unchanged r20; acceptance pending per-episode audit",
+        "seed": 620218,
+        "split": "train",
+        "suite": "libero_spatial",
+        "task_id": 2
+      },
+      "capture": {
+        "exit_code": null,
+        "normal_exit": false,
+        "exit_observed": false,
+        "reason": "user-confirmed server shutdown interrupted attempt"
+      },
+      "accepted": false,
+      "development_pass": false,
+      "interrupted": true,
+      "interruption_files_sha256": {
+        "runs/formal_20261005_r1/task02_s620218/trajectory.partial.h5": "c51d1c8fb1221a121195c68e137e095ae64d95250f8c41143be83eb0ba139313",
+        "runs/formal_20261005_r1/preflight/task02_s620218/preparation.h5": "cd6f775a45a72314d8ec24c6b5c9bb25898e65b7821c9382ffef37a3ef3c2f09",
+        "runs/formal_20261005_r1/preflight/task02_s620218/initialization.json": "b471403b70ffcfdafb8f2fdade1b24a60e6180f1501f412b208cde7e1a6eff43",
+        "runs/formal_20261005_r1/preflight/task02_s620218/preflight.json": "1eb5b404e6d911c7ae51ab9e884400c8e677c0e0b016fc0860a4dec31b7cf928",
+        "runs/formal_20261005_r1/task02_s620218.log": "c787942d8af5532a4d4b060647be4a0a77ffce5648756c502961cd704c2021ad",
+        "runs/formal_20261005_r1/preflight/task02_s620218.log": "606c1f16e8f3981601f6bcf9a75a122350c50bd263407652bce3f2b1b3d0a797",
+        "runs/formal_20261005_r1/preflight/task02_s620218.status.json": "2139d5d351d6324aa2201ae70c96a9a3c0865577333ed4e322ed49cf5c14431e"
+      },
+      "recovery_time": "2026-10-06T10:47:57.057866+00:00",
+      "scope": "preserved incomplete evidence; never retried or admitted"
+    },
+    {
+      "scene": {
+        "task_id_order0": 3,
+        "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "benchmark_prompt": "pick up the black bowl on the cookie box and place it on the plate",
+        "bddl_language": "(:language Pick the akita black bowl on the cookies box and place it on the plate)",
+        "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "3d4ccf070c3d9883ae0676f2d888588f98c696ddad71b7694f47c379fc99ef36",
+        "init": "(:init\n    (On akita_black_bowl_1 cookies_1)\n    (On akita_black_bowl_2 wooden_cabinet_1_top_side)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+        "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+        "target_initial_predicate": [
+          "(On akita_black_bowl_1 cookies_1)"
+        ],
+        "teacher_status": "unchanged r20; acceptance pending per-episode audit",
+        "seed": 620318,
+        "split": "train",
+        "suite": "libero_spatial",
+        "task_id": 3
+      },
+      "capture": {
+        "exit_code": null,
+        "normal_exit": false,
+        "exit_observed": false,
+        "reason": "user-confirmed server shutdown interrupted attempt"
+      },
+      "accepted": false,
+      "development_pass": false,
+      "interrupted": true,
+      "interruption_files_sha256": {
+        "runs/formal_20261005_r1/task03_s620318/trajectory.partial.h5": "fe00becf0a8515e6f4a66d20a0d32cdf66974a8f070a2ec9e5b0ba27173b8b04",
+        "runs/formal_20261005_r1/preflight/task03_s620318/preparation.h5": "50079d1b15bfe60ddcb46480832567a06a5a77cf3fb4636f72de831d7de541eb",
+        "runs/formal_20261005_r1/preflight/task03_s620318/initialization.json": "290b35a2fe8b0d49d51aa2812a4f3c160d4c26675702b24f36306e0ddf443029",
+        "runs/formal_20261005_r1/preflight/task03_s620318/preflight.json": "c6da47c098cf7d460ca44358967f888c15af4d85d11b4014d6bf33c74298de48",
+        "runs/formal_20261005_r1/task03_s620318.log": "96d25b773cef5832af302ece6a1d2a44bb5e626a9e941b4f4b8fa70fc300ae71",
+        "runs/formal_20261005_r1/preflight/task03_s620318.log": "e9cb58e0d4d039309f6d18af1244fe173527b124151cd28378dd123212589417",
+        "runs/formal_20261005_r1/preflight/task03_s620318.status.json": "0621aebda1abe9a723f6b6c78dd53b6295add614f3c4c75ddaa6a40d6b343406"
+      },
+      "recovery_time": "2026-10-06T10:47:57.322137+00:00",
+      "scope": "preserved incomplete evidence; never retried or admitted"
+    },
+    {
+      "scene": {
+        "task_id_order0": 5,
+        "name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "benchmark_prompt": "pick up the black bowl on the ramekin and place it on the plate",
+        "bddl_language": "(:language Pick the akita black bowl on the ramekin and place it on the plate)",
+        "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "10239815a9d18ad53e09365d453a362ee54d29ca276e04eef411cf1db8d72940",
+        "init": "(:init\n    (On akita_black_bowl_1 glazed_rim_porcelain_ramekin_1)\n    (On akita_black_bowl_2 cookies_1)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+        "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+        "target_initial_predicate": [
+          "(On akita_black_bowl_1 glazed_rim_porcelain_ramekin_1)"
+        ],
+        "teacher_status": "unchanged r20; acceptance pending per-episode audit",
+        "seed": 620518,
+        "split": "train",
+        "suite": "libero_spatial",
+        "task_id": 5
+      },
+      "capture": {
+        "exit_code": null,
+        "normal_exit": false,
+        "exit_observed": false,
+        "reason": "user-confirmed server shutdown interrupted attempt"
+      },
+      "accepted": false,
+      "development_pass": false,
+      "interrupted": true,
+      "interruption_files_sha256": {
+        "runs/formal_20261005_r1/task05_s620518/trajectory.partial.h5": "cdf47af0f5e0f3dd370385a45f128f71fccb62cea48686af256e94385e7b5b30",
+        "runs/formal_20261005_r1/preflight/task05_s620518/preparation.h5": "1cb7b443ca330caf3202959b73e07aac2557c3a75342ad10b43a0294612d4c62",
+        "runs/formal_20261005_r1/preflight/task05_s620518/initialization.json": "32bbf20b0a30efda1254de067f2a6d122d0750e92622b44816ecd7160cc965c2",
+        "runs/formal_20261005_r1/preflight/task05_s620518/preflight.json": "6d4b796668b726c77a65dc7e4b26e10e579e74167201eca9a4ec0b3ad9764fba",
+        "runs/formal_20261005_r1/task05_s620518.log": "a7aca00d791d8e33948019490810075032e61f5c3447c3c868d3f56508009e5d",
+        "runs/formal_20261005_r1/preflight/task05_s620518.log": "942292b3b6c594931ef7818e33513aa419d99b1931a8b540cd0daddcca5a0218",
+        "runs/formal_20261005_r1/preflight/task05_s620518.status.json": "384c7d8bf835216c95e6a9060a7fca3a9346666fa978c6342edc91a73f643cb7"
+      },
+      "recovery_time": "2026-10-06T10:47:57.494939+00:00",
+      "scope": "preserved incomplete evidence; never retried or admitted"
+    },
+    {
+      "scene": {
+        "task_id_order0": 6,
+        "name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "benchmark_prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+        "bddl_language": "(:language Pick the akita black bowl next to the cookies box and place it on the plate)",
+        "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "566c65596f3472e752e6522817bff51bbf3ce5159d7bec1d3554e5ead46b1e55",
+        "init": "(:init\n    (On akita_black_bowl_1 main_table_next_to_box_region)\n    (On akita_black_bowl_2 flat_stove_1_cook_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+        "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+        "target_initial_predicate": [
+          "(On akita_black_bowl_1 main_table_next_to_box_region)"
+        ],
+        "teacher_status": "unchanged r20; acceptance pending per-episode audit",
+        "seed": 620618,
+        "split": "train",
+        "suite": "libero_spatial",
+        "task_id": 6
+      },
+      "capture": {
+        "exit_code": null,
+        "normal_exit": false,
+        "exit_observed": false,
+        "reason": "user-confirmed server shutdown interrupted attempt"
+      },
+      "accepted": false,
+      "development_pass": false,
+      "interrupted": true,
+      "interruption_files_sha256": {
+        "runs/formal_20261005_r1/task06_s620618/trajectory.partial.h5": "74d84ecbc8a2322360fc04e4691c35d4a1b5a7278f9ed36679fb4fea81f86dda",
+        "runs/formal_20261005_r1/preflight/task06_s620618/preparation.h5": "517ed8ad967e3ec0f47621b84642b1a893a20413f65446f6fe7c1d87a22ddd5a",
+        "runs/formal_20261005_r1/preflight/task06_s620618/initialization.json": "5556c9fba042d258faef948b7057a37167202f3092768f7b05015e204904eeb1",
+        "runs/formal_20261005_r1/preflight/task06_s620618/preflight.json": "5a01fb1d0325465e64bd2e1eb9314d671d9ac1edafdf09d1ebe70cd88cfb99b0",
+        "runs/formal_20261005_r1/task06_s620618.log": "4c6cce128f1506e72ffe4ce389c95d1d7be3ae7dcf6689bba0f7b4193f0d08dc",
+        "runs/formal_20261005_r1/preflight/task06_s620618.log": "b791c8c3832e667d679282ed70244635173d852bb7d8b45dad5a863de791eef8",
+        "runs/formal_20261005_r1/preflight/task06_s620618.status.json": "3ff69565d2391e1dff4652efda84c8bfd787018772ccfb98803b477370f4dd18"
+      },
+      "recovery_time": "2026-10-06T10:47:57.550558+00:00",
+      "scope": "preserved incomplete evidence; never retried or admitted"
+    },
+    {
+      "scene": {
+        "task_id_order0": 2,
+        "name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+        "benchmark_prompt": "pick up the black bowl from table center and place it on the plate",
+        "bddl_language": "(:language Pick the akita black bowl from table center and place it on the plate)",
+        "bddl_path": "third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "5e19880ebc844f86b89f63b172aab0b7a89f85b6e6955891f544f0ea7d0795d5",
+        "init": "(:init\n    (On akita_black_bowl_1 main_table_table_center)\n    (On akita_black_bowl_2 main_table_next_to_plate_region)\n    (On plate_1 main_table_plate_region)\n    (On cookies_1 main_table_box_region)\n    (On glazed_rim_porcelain_ramekin_1 main_table_ramekin_region)\n    (On wooden_cabinet_1 main_table_cabinet_region)\n    (On flat_stove_1 main_table_stove_region)\n  )",
+        "goal": "(:goal\n    (And (On akita_black_bowl_1 plate_1))\n  )",
+        "target_initial_predicate": [
+          "(On akita_black_bowl_1 main_table_table_center)"
+        ],
+        "teacher_status": "unchanged r20; acceptance pending per-episode audit",
+        "seed": 620219,
+        "split": "train",
+        "suite": "libero_spatial",
+        "task_id": 2
+      },
+      "capture": {
+        "exit_code": null,
+        "normal_exit": false,
+        "exit_observed": false,
+        "reason": "user-confirmed server shutdown interrupted attempt"
+      },
+      "accepted": false,
+      "development_pass": false,
+      "interrupted": true,
+      "interruption_files_sha256": {
+        "runs/formal_20261005_r1/preflight/task02_s620219/preparation.h5": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runs/formal_20261005_r1/preflight/task02_s620219.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "recovery_time": "2026-10-06T10:47:57.551085+00:00",
+      "scope": "preserved incomplete evidence; never retried or admitted"
+    }
+  ],
+  "completed_before_shutdown": 141,
+  "accepted_before_shutdown": 106,
+  "original_attempts": 300,
+  "remaining_not_started": 153,
+  "retry_interrupted": false,
+  "new_validation_seeds": [
+    650200,
+    650201,
+    650202,
+    650203,
+    650204,
+    650205,
+    650206,
+    650207,
+    650208,
+    650209
+  ]
+}

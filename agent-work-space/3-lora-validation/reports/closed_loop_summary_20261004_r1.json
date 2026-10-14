@@ -1,0 +1,153 @@
+{
+  "successes": 0,
+  "total": 3,
+  "results": [
+    {
+      "seed": 55200,
+      "steps": 650,
+      "initial_qpos_error": 0.0,
+      "initial_rgb_exact": true,
+      "native_success_seen": false,
+      "released_supported_native_stable20": false,
+      "action_frames_clipped": 361,
+      "max_sampled_non_support_penetration_mm": 0.044419615813218634,
+      "physics_warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scope": "preliminary policy closed-loop diagnostic; step-boundary contact checks, not full teacher r6 physical certification",
+      "replan_steps": 5,
+      "max_steps": 650,
+      "controller_profile": "eco65_no_extra_pd",
+      "scene": {
+        "id": "validation_00",
+        "split": "validation",
+        "seed": 55200,
+        "target_xy_m": [
+          -0.13,
+          -0.25
+        ],
+        "target_yaw_offset_deg": -10,
+        "basket_xy_m": [
+          -0.003,
+          0.257
+        ]
+      },
+      "clipped_frames_by_dimension": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        361
+      ],
+      "target_gripper_contact_steps": 4,
+      "max_target_center_rise_from_first_step_mm": 1.6938351434354209
+    },
+    {
+      "seed": 55201,
+      "steps": 650,
+      "initial_qpos_error": 0.0,
+      "initial_rgb_exact": true,
+      "native_success_seen": false,
+      "released_supported_native_stable20": false,
+      "action_frames_clipped": 365,
+      "max_sampled_non_support_penetration_mm": 0.19369114421592643,
+      "physics_warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scope": "preliminary policy closed-loop diagnostic; step-boundary contact checks, not full teacher r6 physical certification",
+      "replan_steps": 5,
+      "max_steps": 650,
+      "controller_profile": "eco65_no_extra_pd",
+      "scene": {
+        "id": "validation_01",
+        "split": "validation",
+        "seed": 55201,
+        "target_xy_m": [
+          -0.11,
+          -0.23
+        ],
+        "target_yaw_offset_deg": 10,
+        "basket_xy_m": [
+          0.003,
+          0.263
+        ]
+      },
+      "clipped_frames_by_dimension": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        365
+      ],
+      "target_gripper_contact_steps": 10,
+      "max_target_center_rise_from_first_step_mm": 4.20477594614703
+    },
+    {
+      "seed": 55202,
+      "steps": 650,
+      "initial_qpos_error": 0.0,
+      "initial_rgb_exact": true,
+      "native_success_seen": false,
+      "released_supported_native_stable20": false,
+      "action_frames_clipped": 378,
+      "max_sampled_non_support_penetration_mm": 0.09944004937204926,
+      "physics_warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scope": "preliminary policy closed-loop diagnostic; step-boundary contact checks, not full teacher r6 physical certification",
+      "replan_steps": 5,
+      "max_steps": 650,
+      "controller_profile": "eco65_no_extra_pd",
+      "scene": {
+        "id": "validation_02",
+        "split": "validation",
+        "seed": 55202,
+        "target_xy_m": [
+          -0.13,
+          -0.23
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0,
+          0.26
+        ]
+      },
+      "clipped_frames_by_dimension": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        378
+      ],
+      "target_gripper_contact_steps": 8,
+      "max_target_center_rise_from_first_step_mm": 3.6064857809914934
+    }
+  ]
+}

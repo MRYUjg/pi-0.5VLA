@@ -1,0 +1,21 @@
+{
+  "run_id": "eco65_zhixing_spatial10_20261007_r1",
+  "code_version": "eco65_zhixing_20261007_r4",
+  "native_successes": 0,
+  "trials": 10,
+  "MP4_count": 20,
+  "all_trajectory_audits_passed": true,
+  "all_videos_decoded": true,
+  "control_steps": 2200,
+  "VLA_requests": 440,
+  "actual_planner_models": [
+    "deepseek-flash"
+  ],
+  "workflow_seconds": 976.6364759700009,
+  "policy_variant": "original_torch",
+  "physical_hardware_tested": false,
+  "formal_multi_initial_benchmark": false,
+  "control_profile": "legacy",
+  "gripper_speed": 0.01,
+  "observation_post_action_force_refresh": true
+}

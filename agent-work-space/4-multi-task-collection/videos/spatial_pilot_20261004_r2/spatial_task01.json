@@ -1,0 +1,43 @@
+{
+  "episode": "/app/agent-work-space/4-multi-task-collection/runs/spatial_pilot_20261004_r1/task01_s57101",
+  "video": "/app/agent-work-space/4-multi-task-collection/videos/spatial_pilot_20261004_r2/spatial_task01.mp4",
+  "label": "LIBERO Spatial task01 / ECO65 + ZhiXing",
+  "status": "TEACHER FAILED / NOT TRAINING DATA",
+  "teacher_success": false,
+  "physical_audit_pass": true,
+  "replay_pass": true,
+  "replay_source": "/app/agent-work-space/4-multi-task-collection/runs/spatial_replay_20261004_r1/task01.json",
+  "failure": {
+    "stage": "close",
+    "type": "PathRejected",
+    "reason": "gripper contacted non-target environment",
+    "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 172, in main\n    stage='close';ep.track(pin,R,1,stage,80)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/safe_teacher_r8.py\", line 250, in track\n    return orig_track(ep,target,R,grip,phase,steps,*args,**kw)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 150, in residual_track\n    residual_action(ep,target,R,grip,phase)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 131, in residual_action\n    ep.act(np.r_[ap,ar,grip],phase)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/n3_osc_full_chain.py\", line 442, in act\n    fr = super().act(action, self.phase)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/safe_teacher_r8.py\", line 60, in act\n    raise PathRejected('gripper contacted non-target environment')\nsafe_teacher_r8.PathRejected: gripper contacted non-target environment\n"
+  },
+  "frames": 324,
+  "decoded_frames": 324,
+  "fps": 20,
+  "duration_seconds": 16.2,
+  "size": [
+    512,
+    384
+  ],
+  "video_sha256": "251db418ba1022cf9446841bf0c931b031f16eebb0c25ad7c9e41a7553f37f86",
+  "hdf5_sha256": "cce3ec637723c38bd6eedd20ef973f5de4f2909427069ee0822a6ebc2cfb0601",
+  "metadata": {
+    "ffmpeg_version": "4.2.2-static https://johnvansickle.com/ffmpeg/ built with gcc 8 (Debian 8.3.0-6)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p",
+    "fps": 20.0,
+    "source_size": [
+      512,
+      384
+    ],
+    "size": [
+      512,
+      384
+    ],
+    "rotate": 0,
+    "duration": 16.2
+  },
+  "includes_preparation": true
+}

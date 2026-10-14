@@ -1,0 +1,255 @@
+{
+  "task": 3,
+  "variant": "gptq",
+  "episodes": [
+    {
+      "variant": "gptq",
+      "task": 3,
+      "init_index": 0,
+      "seed": 940300,
+      "initial_state_sha256": "36424fa758f0e72399a35cefa285d0658e4b5bd17bfb3e2127f85aa2e0944517",
+      "success": true,
+      "steps": 90,
+      "requests": 18,
+      "seconds": 44.663059267997596,
+      "initialization": {
+        "simulation_state_sha256": "007cc1692dfdb8beb7786f7c1878462b47c109d67739cac905bacac5adebd191",
+        "initial_observation_sha256": "628efdf95953776f73b3ccd0ccc585c78c3c400e2a7e10de18ce9f2b74c41b9b",
+        "xml_sha256": "939b4ab6fa9b2cd7c4ba69ca5febaac0badf4848cf9d864001c0da49599c5773",
+        "controller_sha256": "f4fd08397f6fcbe7be92dd1117102c5d71e027f71c9cc296c798d917f3c7d844",
+        "controller": {
+          "robot": "MountedPanda",
+          "gripper": "PandaGripper",
+          "controller": "OperationalSpaceController",
+          "control_freq": 20,
+          "controller_parameters": {
+            "input_min": [
+              -1.0,
+              -1.0,
+              -1.0,
+              -1.0,
+              -1.0,
+              -1.0
+            ],
+            "input_max": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "output_min": [
+              -0.05,
+              -0.05,
+              -0.05,
+              -0.5,
+              -0.5,
+              -0.5
+            ],
+            "output_max": [
+              0.05,
+              0.05,
+              0.05,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "kp": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "position_limits": null,
+            "orientation_limits": null
+          }
+        },
+        "state8": [
+          -0.20676182210445404,
+          -0.008029661141335964,
+          1.173269510269165,
+          3.1408472061157227,
+          -0.0019182440591976047,
+          -0.08460790663957596,
+          0.03872321918606758,
+          -0.03872234746813774
+        ]
+      },
+      "video": "init00.mp4",
+      "video_frames": 91,
+      "video_sha256": "42a6a269fd64ee4a8f0965e9b1d1521874eeac8b8d25621726b6818f59a1d3a0",
+      "video_fps_is_simulated_control_rate": 20,
+      "formal_acceptance": false
+    },
+    {
+      "variant": "gptq",
+      "task": 3,
+      "init_index": 1,
+      "seed": 940301,
+      "initial_state_sha256": "3a92ca9cb754b9daca5db603179f05e323c01209edfaf5d287655d5998252f9f",
+      "success": true,
+      "steps": 88,
+      "requests": 18,
+      "seconds": 38.990990176000196,
+      "initialization": {
+        "simulation_state_sha256": "d7fad7a24884757830a4b20ebbbe1a809090213bdc7f26c0f229e1d4ddab74cf",
+        "initial_observation_sha256": "8a3b4aad76651f52174219c9f59358f384dbd211a0ef042e102b061e409c9779",
+        "xml_sha256": "fdf9e5977f8c92812ca3448c5045a046d79a409f8e73682c4c3f505bd22df1ce",
+        "controller_sha256": "f4fd08397f6fcbe7be92dd1117102c5d71e027f71c9cc296c798d917f3c7d844",
+        "controller": {
+          "robot": "MountedPanda",
+          "gripper": "PandaGripper",
+          "controller": "OperationalSpaceController",
+          "control_freq": 20,
+          "controller_parameters": {
+            "input_min": [
+              -1.0,
+              -1.0,
+              -1.0,
+              -1.0,
+              -1.0,
+              -1.0
+            ],
+            "input_max": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "output_min": [
+              -0.05,
+              -0.05,
+              -0.05,
+              -0.5,
+              -0.5,
+              -0.5
+            ],
+            "output_max": [
+              0.05,
+              0.05,
+              0.05,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "kp": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "position_limits": null,
+            "orientation_limits": null
+          }
+        },
+        "state8": [
+          -0.20507201552391052,
+          -0.004188999999314547,
+          1.1790779829025269,
+          3.140918731689453,
+          -0.0034162155352532864,
+          -0.08483123034238815,
+          0.038723815232515335,
+          -0.03872176259756088
+        ]
+      },
+      "video": "init01.mp4",
+      "video_frames": 89,
+      "video_sha256": "bef0e363118754166c68e5de8889efc04b50248c4ba436041267794bb77e670b",
+      "video_fps_is_simulated_control_rate": 20,
+      "formal_acceptance": false
+    },
+    {
+      "variant": "gptq",
+      "task": 3,
+      "init_index": 2,
+      "seed": 940302,
+      "initial_state_sha256": "1b7b03eb038b60bd3d265226a1f5832c44ebb968731ac264f8983ceebb1774e5",
+      "success": true,
+      "steps": 78,
+      "requests": 16,
+      "seconds": 35.14272332800101,
+      "initialization": {
+        "simulation_state_sha256": "18223ff55381c8c04e9743288560867a07f60095c22b00397af30da21616343e",
+        "initial_observation_sha256": "6fafcf2a0bc649c92206357de4c567d0a21b6e1201aec0a820605bc925596da4",
+        "xml_sha256": "ca9ebf4c16cb91de7ed5b289bdaa0e5cc1f4d1a7baf8d337130f7faa884f2154",
+        "controller_sha256": "f4fd08397f6fcbe7be92dd1117102c5d71e027f71c9cc296c798d917f3c7d844",
+        "controller": {
+          "robot": "MountedPanda",
+          "gripper": "PandaGripper",
+          "controller": "OperationalSpaceController",
+          "control_freq": 20,
+          "controller_parameters": {
+            "input_min": [
+              -1.0,
+              -1.0,
+              -1.0,
+              -1.0,
+              -1.0,
+              -1.0
+            ],
+            "input_max": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "output_min": [
+              -0.05,
+              -0.05,
+              -0.05,
+              -0.5,
+              -0.5,
+              -0.5
+            ],
+            "output_max": [
+              0.05,
+              0.05,
+              0.05,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "kp": [
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0,
+              150.0
+            ],
+            "position_limits": null,
+            "orientation_limits": null
+          }
+        },
+        "state8": [
+          -0.2090948224067688,
+          0.010584193281829357,
+          1.1656066179275513,
+          3.140993595123291,
+          0.0029909650329500437,
+          -0.09114479273557663,
+          0.038724225014448166,
+          -0.03872131183743477
+        ]
+      },
+      "video": "init02.mp4",
+      "video_frames": 79,
+      "video_sha256": "a74f0aa05670614013fd94c17354a5b5c1261a0db7c666d1490a4d218056597e",
+      "video_fps_is_simulated_control_rate": 20,
+      "formal_acceptance": false
+    }
+  ],
+  "successes": 3,
+  "trials": 3,
+  "all_videos_decoded": true
+}

@@ -1,0 +1,49 @@
+{
+  "episodes": [
+    {
+      "task": 0,
+      "seed": 0,
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "native_success": false,
+      "steps": 10,
+      "dual_camera": {
+        "file": "/control/runs/eco65_zhixing_chain_20261007_r3/task00_seed0/env/dual_camera.mp4",
+        "bytes": 66349,
+        "sha256": "df9f23904fd5b7e77a7003c984eb2622fa05959050c836b2896bfdb2ec47821b",
+        "frames": 11,
+        "fps": 20.0,
+        "seconds": 0.55,
+        "expected_frames": 11,
+        "shape": [
+          256,
+          512,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      },
+      "rpent_episode": {
+        "file": "/control/runs/eco65_zhixing_chain_20261007_r3/task00_seed0/artifacts/episode.mp4",
+        "bytes": 9580,
+        "sha256": "ebd71b8ff00259bc9aabcd76d6274ab590e99d2de13760d41e35e6073fa943b7",
+        "frames": 10,
+        "fps": 20.0,
+        "seconds": 0.5,
+        "expected_frames": 10,
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "codec": "h264",
+        "all_frames_decoded": true,
+        "image_changes": true
+      }
+    }
+  ],
+  "tasks": 1,
+  "native_successes": 0,
+  "MP4_count": 2,
+  "all_videos_decoded": true
+}

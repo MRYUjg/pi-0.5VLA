@@ -1,0 +1,38 @@
+{
+  "seed": 55200,
+  "steps": 650,
+  "initial_qpos_error": 0.0,
+  "initial_rgb_exact": true,
+  "native_success_seen": false,
+  "released_supported_native_stable20": false,
+  "action_frames_clipped": 361,
+  "max_sampled_non_support_penetration_mm": 0.044419615813218634,
+  "physics_warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "scope": "preliminary policy closed-loop diagnostic; step-boundary contact checks, not full teacher r6 physical certification",
+  "replan_steps": 5,
+  "max_steps": 650,
+  "controller_profile": "eco65_no_extra_pd",
+  "scene": {
+    "id": "validation_00",
+    "split": "validation",
+    "seed": 55200,
+    "target_xy_m": [
+      -0.13,
+      -0.25
+    ],
+    "target_yaw_offset_deg": -10,
+    "basket_xy_m": [
+      -0.003,
+      0.257
+    ]
+  }
+}

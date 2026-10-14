@@ -1,0 +1,19 @@
+{
+  "source": "/openpi_assets/openpi-assets/checkpoints/pi05_libero",
+  "config_name": "pi05_libero",
+  "pi05": true,
+  "action_horizon": 10,
+  "action_dim": 32,
+  "discrete_state_input": false,
+  "precision": "mixed_bf16_fp32",
+  "num_tensors": 811,
+  "numel": 3353433872,
+  "weight_bytes": 6946443712,
+  "weight_sha256": "5d61d98adfd3c811537c39392c9e2143ae952be5ad4e7784ef74904eacd768b9",
+  "strict_all_used_keys_and_shapes": true,
+  "removed_unused_heads": [
+    "paligemma.lm_head",
+    "gemma_expert.lm_head"
+  ],
+  "converter_sha256": "03b3a7cc507a8a159d78e65deb9eaf88fe5d7861824b45a2457913a635d90e3c"
+}

@@ -1,0 +1,51 @@
+{
+  "episodes": [
+    {
+      "task": 0,
+      "seed": 0,
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "native_success": true,
+      "steps": 78,
+      "VLA_requests": 16,
+      "actual_models": [
+        "deepseek-flash"
+      ],
+      "planner_stats": {
+        "total_input_tokens": 6870,
+        "total_output_tokens": 332,
+        "total_cached_input_tokens": 5248,
+        "turns_used": 3,
+        "tool_calls": 3
+      },
+      "checks": {
+        "runtime_chain_passed": true,
+        "clean_component_exits": true,
+        "frozen_executed_source_matches": true,
+        "Panda_and_PandaGripper": true,
+        "controller_20Hz_OSC_unchanged": true,
+        "prediction_actual_action_exact": true,
+        "normalization_clipping_exact": true,
+        "finite_actions_and_states": true,
+        "every_control_interval_50ms": true,
+        "bounded_control_budget": true,
+        "native_result_matches_actual_terminal": true,
+        "LLM_finish_claim_matches_native": true,
+        "decoded_video_T_plus_1_dual_camera": true,
+        "real_VLA_requests": true,
+        "real_component_guards_and_camera_checks": true,
+        "initial_frame_and_reset_present": true,
+        "real_DeepSeek_responses": true,
+        "actual_model_identity_matches": true,
+        "no_planner_error": true,
+        "planner_finish_recorded": true,
+        "native_terminal_or_budget_exhausted": true
+      },
+      "audit_passed": true,
+      "task_success_independent_of_audit": true
+    }
+  ],
+  "trials": 1,
+  "successes": 1,
+  "all_audits_passed": true,
+  "formal_benchmark_accepted": false
+}

@@ -1,0 +1,55 @@
+{
+  "source_version": "workspace_distance_20261008_r2",
+  "evidence_run": "runs/workspace_distance_20261008_r2",
+  "scope": "effective frozen executable protocol, development diagnostic; explanatory record only",
+  "offsets_m": [
+    0.0,
+    0.05,
+    0.1
+  ],
+  "base_world_x_m": [
+    -0.66,
+    -0.61,
+    -0.56
+  ],
+  "tasks": {
+    "2": [
+      630201,
+      630202
+    ],
+    "3": [
+      630300,
+      630301
+    ],
+    "6": [
+      630600,
+      630601
+    ]
+  },
+  "registered_layouts": 18,
+  "preparation_steps": 120,
+  "initialization_gate": "unchanged collection_20261005_r4 initialization.py",
+  "policy_layouts": 8,
+  "rejected_layouts": 10,
+  "model": "spatial_lora_20261007_r1/checkpoint/10000",
+  "controller_profile": "eco65_no_extra_pd",
+  "preparation_profile": "legacy",
+  "gripper_speed": 0.01,
+  "control_hz": 20,
+  "replan_steps": 5,
+  "diagnostic_budget_all_admitted_layouts": 1000,
+  "report_budgets": [
+    220,
+    650,
+    1000
+  ],
+  "video": "all18 registered layouts, plus two preparation-only visual reproductions",
+  "unused_inherited_old_template_fields": [
+    "tasks=10",
+    "trials_per_task=20",
+    "first_trial_extended_diagnostic_budget=650",
+    "video=first_trial_only"
+  ],
+  "frozen_plan_and_episode_budget_were_1000_before_launch": true,
+  "adaptation_acceptance_pass": false
+}

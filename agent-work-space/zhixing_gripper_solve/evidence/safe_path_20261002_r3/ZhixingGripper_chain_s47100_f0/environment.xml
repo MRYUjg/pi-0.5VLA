@@ -1,0 +1,249 @@
+<mujoco model="base">
+  <compiler angle="radian" meshdir="meshes/" inertiagrouprange="0 0" autolimits="true" />
+  <option impratio="20" cone="elliptic" density="1.2" viscosity="0.00002" timestep="0.002" />
+  <size nconmax="5000" njmax="5000" />
+
+  <asset>
+  <texture builtin="gradient" height="256" rgb1=".9 .9 1." rgb2=".2 .3 .4" type="skybox" width="256" />
+    <texture file="/app/third_party/libero/libero/libero/assets/scenes/../textures/light-gray-floor-tile.png" type="2d" name="texplane" />
+    <material name="floorplane" reflectance="0.0" shininess="0.0" specular="0.0" texrepeat="3 3" texture="texplane" texuniform="true" />
+    
+    <texture file="/app/third_party/libero/libero/libero/assets/scenes/../textures/martin_novak_wood_table.png" type="cube" name="tex-table" />
+    <material name="table_texture" reflectance="0.0" shininess="0.0" specular="0.2" texrepeat="1 1" texture="tex-table" />
+    
+    <texture file="/app/third_party/libero/libero/libero/assets/scenes/../textures/martin_novak_wood_table.png" type="cube" name="tex-table-legs" />
+    <material name="table_legs" reflectance="0.8" shininess="0.8" texrepeat="1 1" texture="tex-table-legs" />
+    
+    <texture file="/app/third_party/libero/libero/libero/assets/scenes/../textures/light-gray-plaster.png" type="2d" name="tex-wall" />
+
+    <material name="walls_mat" reflectance="0.0" shininess="0.1" specular="0.8" texrepeat="3 3" texture="tex-wall" texuniform="true" />
+    
+    <texture name="textable" builtin="flat" height="512" width="512" rgb1="0.5 0.5 0.5" rgb2="0.5 0.5 0.5" />
+    <material name="table_mat" texture="textable" />
+
+
+    <texture file="/app/third_party/libero/libero/libero/assets/scenes/living_room/living_room_wall_unit.png" name="tex-living_room" type="2d" />
+    <material name="living_room" reflectance="0.5" texrepeat="1 1" texture="tex-living_room" texuniform="false" />
+    <mesh file="/app/third_party/libero/libero/libero/assets/scenes/living_room/visual/living_room_vis.msh" name="living_room_vis" scale="0.7 0.7 0.7" />
+  <mesh name="robot0_base_link" content_type="model/stl" file="/app/robosuite/models/assets/robots/ECO65-B/meshes/base_link.STL" />
+    <mesh name="robot0_link_1" content_type="model/stl" file="/app/robosuite/models/assets/robots/ECO65-B/meshes/link_1.STL" />
+    <mesh name="robot0_link_2" content_type="model/stl" file="/app/robosuite/models/assets/robots/ECO65-B/meshes/link_2.STL" />
+    <mesh name="robot0_link_3" content_type="model/stl" file="/app/robosuite/models/assets/robots/ECO65-B/meshes/link_3.STL" />
+    <mesh name="robot0_link_4" content_type="model/stl" file="/app/robosuite/models/assets/robots/ECO65-B/meshes/link_4.STL" />
+    <mesh name="robot0_link_5" content_type="model/stl" file="/app/robosuite/models/assets/robots/ECO65-B/meshes/link_5.STL" />
+    <mesh name="robot0_link_6" content_type="model/stl" file="/app/robosuite/models/assets/robots/ECO65-B/meshes/link_6.STL" />
+  <mesh name="gripper0_base_link" content_type="model/stl" file="/app/robosuite/models/assets/grippers/meshes/zhixing_gripper/base_link.STL" />
+    <mesh name="gripper0_Left_1_Link" content_type="model/stl" file="/app/robosuite/models/assets/grippers/meshes/zhixing_gripper/Left_1_Link.STL" />
+    <mesh name="gripper0_Left_Support_Link" content_type="model/stl" file="/app/robosuite/models/assets/grippers/meshes/zhixing_gripper/Left_Support_Link.STL" />
+    <mesh name="gripper0_Left_2_Link" content_type="model/stl" file="/app/robosuite/models/assets/grippers/meshes/zhixing_gripper/Left_2_Link.STL" />
+    <mesh name="gripper0_Right_2_Link" content_type="model/stl" file="/app/robosuite/models/assets/grippers/meshes/zhixing_gripper/Right_2_Link.STL" />
+    <mesh name="gripper0_Right_1_Link" content_type="model/stl" file="/app/robosuite/models/assets/grippers/meshes/zhixing_gripper/Right_1_Link.STL" />
+    <mesh name="gripper0_Right_Support_Link" content_type="model/stl" file="/app/robosuite/models/assets/grippers/meshes/zhixing_gripper/Right_Support_Link.STL" />
+  <texture file="/app/third_party/libero/libero/libero/assets/stable_scanned_objects/basket/texture.png" name="basket_1_tex-basket" type="2d" />
+  <material name="basket_1_basket" reflectance="0.5" texrepeat="1 1" texture="basket_1_tex-basket" texuniform="false" />
+  <mesh file="/app/third_party/libero/libero/libero/assets/stable_scanned_objects/basket/visual/basket_vis.msh" name="basket_1_basket_vis" scale="1.0 1.0 1.0" /><texture file="/app/third_party/libero/libero/libero/assets/stable_hope_objects/salad_dressing/texture_map.png" name="salad_dressing_1_tex-textured" type="2d" />
+  <material name="salad_dressing_1_textured" reflectance="0.5" texrepeat="1 1" texture="salad_dressing_1_tex-textured" texuniform="false" />
+  <mesh file="/app/third_party/libero/libero/libero/assets/stable_hope_objects/salad_dressing/visual/textured_vis.msh" name="salad_dressing_1_textured_vis" scale="0.01 0.01 0.01" /><texture file="/app/third_party/libero/libero/libero/assets/stable_hope_objects/cream_cheese/texture_map.png" name="cream_cheese_1_tex-cream_cheese" type="2d" />
+  <material name="cream_cheese_1_cream_cheese" reflectance="0.5" texrepeat="1 1" texture="cream_cheese_1_tex-cream_cheese" texuniform="false" />
+  <mesh file="/app/third_party/libero/libero/libero/assets/stable_hope_objects/cream_cheese/visual/cream_cheese_vis.msh" name="cream_cheese_1_cream_cheese_vis" scale="0.008 0.008 0.008" /><texture file="/app/third_party/libero/libero/libero/assets/stable_hope_objects/milk/texture_map.png" name="milk_1_tex-textured" type="2d" />
+  <material name="milk_1_textured" reflectance="0.5" texrepeat="1 1" texture="milk_1_tex-textured" texuniform="false" />
+  <mesh file="/app/third_party/libero/libero/libero/assets/stable_hope_objects/milk/visual/textured_vis.msh" name="milk_1_textured_vis" scale="0.0075 0.0075 0.0075" /><texture file="/app/third_party/libero/libero/libero/assets/stable_hope_objects/tomato_sauce/texture_map.png" name="tomato_sauce_1_tex-textured" type="2d" />
+  <material name="tomato_sauce_1_textured" reflectance="0.5" texrepeat="1 1" texture="tomato_sauce_1_tex-textured" texuniform="false" />
+  <mesh file="/app/third_party/libero/libero/libero/assets/stable_hope_objects/tomato_sauce/visual/textured_vis.msh" name="tomato_sauce_1_textured_vis" scale="0.01 0.01 0.01" /><texture file="/app/third_party/libero/libero/libero/assets/stable_hope_objects/butter/texture_map.png" name="butter_1_tex-butter" type="2d" />
+  <material name="butter_1_butter" reflectance="0.5" texrepeat="1 1" texture="butter_1_tex-butter" texuniform="false" />
+  <mesh file="/app/third_party/libero/libero/libero/assets/stable_hope_objects/butter/visual/butter_vis.msh" name="butter_1_butter_vis" scale="0.0075 0.0075 0.0075" /></asset>
+
+  <visual>
+    <map znear="0.001" />
+  </visual>
+
+  <actuator>
+  <motor ctrllimited="true" ctrlrange="-60.0 60.0" joint="robot0_joint_1" name="robot0_torq_j1" />
+    <motor ctrllimited="true" ctrlrange="-60.0 60.0" joint="robot0_joint_2" name="robot0_torq_j2" />
+    <motor ctrllimited="true" ctrlrange="-30.0 30.0" joint="robot0_joint_3" name="robot0_torq_j3" />
+    <motor ctrllimited="true" ctrlrange="-10.0 10.0" joint="robot0_joint_4" name="robot0_torq_j4" />
+    <motor ctrllimited="true" ctrlrange="-10.0 10.0" joint="robot0_joint_5" name="robot0_torq_j5" />
+    <motor ctrllimited="true" ctrlrange="-10.0 10.0" joint="robot0_joint_6" name="robot0_torq_j6" />
+  <position name="gripper0_gripper" joint="gripper0_Left_1_Joint" ctrlrange="-0.91 0" kp="100" ctrllimited="true" forcelimited="true" forcerange="-2 2" />
+  </actuator>
+
+  <worldbody>
+  <body name="floor" pos="0.0 0.0 0.0">    
+      <geom condim="3" group="1" material="floorplane" name="floor" pos="0 0 0" size="3 3 .125" type="plane" />
+    <site quat="1 0 0 0" type="box" pos="0.0 0.26 0.02" size="0.01 0.010000000000000009 0.007" rgba="0 0 1 0" name="floor_bin_region" /><site quat="1 0 0 0" type="box" pos="-0.12 -0.24 0.02" size="0.024999999999999994 0.02500000000000001 0.007" rgba="0 0 1 0" name="floor_target_object_region" /><site quat="1 0 0 0" type="box" pos="0.05 -0.1 0.02" size="0.025000000000000005 0.024999999999999994 0.007" rgba="0 0 1 0" name="floor_other_object_region_0" /><site quat="1 0 0 0" type="box" pos="-0.15 0.06 0.02" size="0.024999999999999994 0.024999999999999998 0.007" rgba="0 0 1 0" name="floor_other_object_region_1" /><site quat="1 0 0 0" type="box" pos="0.1 -0.2 0.02" size="0.024999999999999994 0.024999999999999994 0.007" rgba="0 0 1 0" name="floor_other_object_region_2" /><site quat="1 0 0 0" type="box" pos="0.15 0.03 0.02" size="0.024999999999999994 0.025 0.007" rgba="0 0 1 0" name="floor_other_object_region_3" /><site quat="1 0 0 0" type="box" pos="-0.2 -0.08 0.02" size="0.024999999999999994 0.025000000000000005 0.007" rgba="0 0 1 0" name="floor_other_object_region_4" /></body>
+    
+    
+    
+    
+    
+
+    <geom pos="-1.25 2.25 1.5" quat="0.6532815 0.6532815 0.2705981 0.2705981" size="1.06 1.5 0.01" type="box" conaffinity="0" contype="0" group="1" name="wall_leftcorner_visual" material="walls_mat" />
+    <geom pos="-1.25 -2.25 1.5" quat="0.6532815 0.6532815 -0.2705981 -0.2705981" size="1.06 1.5 0.01" type="box" conaffinity="0" contype="0" group="1" name="wall_rightcorner_visual" material="walls_mat" />
+    <geom pos="1.25 3.0 1.5" quat="0.7071 0.7071 0 0" size="1.75 1.5 0.01" type="box" conaffinity="0" contype="0" group="1" name="wall_left_visual" material="walls_mat" />
+    <geom pos="1.25 -3.0 1.5" quat="0.7071 -0.7071 0 0" size="1.75 1.5 0.01" type="box" conaffinity="0" contype="0" group="1" name="wall_right_visual" material="walls_mat" />
+    <geom pos="-2.0 0.0 1.5" quat="0.5 0.5 0.5 0.5" size="1.5 1.5 0.01" type="box" conaffinity="0" contype="0" group="1" name="wall_rear_visual" material="walls_mat" />
+    <geom pos="3.0 0.0 1.5" quat="0.5 0.5 -0.5 -0.5" size="3 1.5 0.01" type="box" conaffinity="0" contype="0" group="1" name="wall_front_visual" material="walls_mat" />
+    
+    <light name="light1" diffuse=".8 .8 .8" dir="0 -.15 -1" directional="false" pos="1.0 1.0 4.0" specular="0.3 0.3 0.3" castshadow="false" />
+    <light name="light2" diffuse=".8 .8 .8" dir="0 -.15 -1" directional="false" pos="-3.0 -3.0 4.0" specular="0.3 0.3 0.3" castshadow="false" />
+
+    
+    <camera mode="fixed" name="frontview" pos="1.0 0.0 0.65" quat="0.56 0.43 0.43 0.56" />
+    
+    <camera mode="fixed" name="birdview" pos="-0.2 0.0 3.0" quat="0.7071 0 0 0.7071" />
+    
+    <camera mode="fixed" name="agentview" pos="0.8965773716836134 5.216182733499864e-07 0.65" quat="0.6182166934013367 0.3432307541370392 0.3432314395904541 0.6182177066802979" />
+
+    
+    <camera mode="fixed" name="sideview" pos="-0.05651774593317116 1.2761224129427358 1.4879572214102434" quat="0.009905065491771751 0.006877963156909582 0.5912228352893879 0.806418094001364" />
+  <camera pos="2.844547668904445 2.1279684793440667 3.128616846013882" quat="0.42261379957199097 0.23374411463737488 0.41646939516067505 0.7702690958976746" name="galleryview" /><body name="robot0_base" pos="-0.6 0.0 0.0" quat="0 0 0 1">
+      
+      <camera mode="fixed" name="robot0_robotview" pos="1.0 0 0.4" quat="0.653 0.271 0.271 0.653" />
+      <geom type="sphere" size="0.01" pos="1.0 0 0.4" rgba="1 0 0 0.5" contype="0" conaffinity="0" group="1" name="robot0_g0_vis" />
+      <inertial diaginertia="0.05 0.05 0.05" mass="0.5" pos="0 0 0" />
+      <site name="robot0_right_center" pos="0 0 0" size="0.01" rgba="1 0.3 0.3 1" group="2" />
+      
+      <geom type="mesh" rgba="1 1 1 1" mesh="robot0_base_link" contype="0" conaffinity="0" group="1" name="robot0_g1_vis" />
+      <geom type="mesh" group="0" mesh="robot0_base_link" name="robot0_base_link_collision" rgba="0 0.5 0 1" />
+    
+      <body name="robot0_link_1" pos="0 0 0.1625">
+        <inertial pos="-0.01105 2.736e-05 -0.03347" quat="0.334328 0.614071 0.629289 0.339318" mass="1.507" diaginertia="0.00310148 0.00277418 0.00161034" />
+        <joint name="robot0_joint_1" pos="0 0 0" axis="0 0 1" limited="true" range="-3.106 3.106" damping="0.1" frictionloss="0.1" armature="5.0" />
+        <geom type="mesh" rgba="1 1 1 1" mesh="robot0_link_1" contype="0" conaffinity="0" group="1" name="robot0_g2_vis" />
+        <geom type="mesh" group="0" mesh="robot0_link_1" name="robot0_link_1_collision" rgba="0 0.5 0 1" />
+        <body name="robot0_link_2" pos="-0.086 0 0" quat="0.499998 -0.500002 -0.5 -0.5">
+          <inertial pos="0.05818 -1.163e-05 -0.05236" quat="-0.0229779 0.739545 -0.0249887 0.672251" mass="2.0227" diaginertia="0.0173635 0.0173112 0.00213628" />
+          <joint name="robot0_joint_2" pos="0 0 0" axis="0 0 1" limited="true" range="-3.106 2.356" damping="0.1" frictionloss="0.1" armature="2.5" />
+          <geom type="mesh" rgba="1 1 1 1" mesh="robot0_link_2" contype="0" conaffinity="0" group="1" name="robot0_g3_vis" />
+          <geom type="mesh" group="0" mesh="robot0_link_2" name="robot0_link_2_collision" rgba="0 0.5 0 1" />
+          <body name="robot0_link_3" pos="0.26 0 0">
+            <inertial pos="0.092768 -9.3866e-05 0.00181" quat="0.517744 0.481067 0.476046 0.52335" mass="1.8858" diaginertia="0.0224832 0.0220354 0.00177385" />
+            <joint name="robot0_joint_3" pos="0 0 0" axis="0 0 1" limited="true" range="-2.792 2.53" damping="0.1" frictionloss="0.1" armature="1.6666666666666667" />
+            <geom type="mesh" rgba="1 1 1 1" mesh="robot0_link_3" contype="0" conaffinity="0" group="1" name="robot0_g4_vis" />
+            <geom type="mesh" group="0" mesh="robot0_link_3" name="robot0_link_3_collision" rgba="0 0.5 0 1" />
+            <body name="robot0_link_4" pos="0.24 0 -0.05888" quat="0.707105 0 0 0.707108">
+              <inertial pos="-4.028e-05 -0.03496 0.0038015" quat="0.499483 0.501045 -0.498955 0.500515" mass="0.57" diaginertia="0.000661995 0.000661995 0.000661995" />
+              <joint name="robot0_joint_4" pos="0 0 0" axis="0 0 1" limited="true" range="-3.106 3.106" damping="0.1" frictionloss="0.1" armature="1.25" />
+              <geom type="mesh" rgba="1 1 1 1" mesh="robot0_link_4" contype="0" conaffinity="0" group="1" name="robot0_g5_vis" />
+              <geom type="mesh" group="0" mesh="robot0_link_4" name="robot0_link_4_collision" rgba="0 0.5 0 1" />
+              <body name="robot0_link_5" pos="0 -0.11 0" quat="0.707105 0.707108 0 0">
+                <inertial pos="-3.97e-05 0.022647 -0.007365" quat="0.521958 0.852819 0.0130273 -0.00945686" mass="0.641" diaginertia="0.000623402 0.000615338 0.000335442" />
+                <joint name="robot0_joint_5" pos="0 0 0" axis="0 0 1" limited="true" range="-3.106 3.106" damping="0.1" frictionloss="0.1" armature="1.0" />
+                <geom type="mesh" rgba="1 1 1 1" mesh="robot0_link_5" contype="0" conaffinity="0" group="1" name="robot0_g6_vis" />
+                <geom type="mesh" group="0" mesh="robot0_link_5" name="robot0_link_5_collision" rgba="0 0.5 0 1" />
+                <body name="robot0_link_6" pos="0 0.0795 0" quat="0.707105 -0.707108 0 0">
+                  <inertial pos="0.0004478 -0.0002134 -0.0103358" quat="0.614952 0.353463 -0.612793 0.3484" mass="0.0857" diaginertia="5.14607e-05 3.4523e-05 2.87098e-05" />
+                  <joint name="robot0_joint_6" pos="0 0 0" axis="0 0 1" limited="true" range="-6.28 6.28" damping="0.1" frictionloss="0.1" armature="0.8333333333333334" />
+                  <geom type="mesh" rgba="1 1 1 1" mesh="robot0_link_6" contype="0" conaffinity="0" group="1" name="robot0_g7_vis" />
+                  <geom type="mesh" group="0" mesh="robot0_link_6" name="robot0_link_6_collision" rgba="0 0.5 0 1" />
+                  <body name="robot0_right_hand" pos="0 0 -0.02" quat="1 0 0 0">
+                      <inertial pos="0 0 0" mass="0.5" diaginertia="0.05 0.05 0.05" />
+                      
+                      <geom type="sphere" size="0.01" rgba="1 0 0 0.5" contype="0" conaffinity="0" group="1" name="robot0_g8_vis" />
+                      <camera mode="fixed" name="robot0_eye_in_hand" pos="0.05 0 0" quat="0 0.707108 0.707108 0" fovy="75" />
+                      
+                  <body name="gripper0_right_gripper" pos="0 0 0" quat="0.707107 0 0 -0.707107">
+      <site name="gripper0_ft_frame" pos="0 0 0" size="0.01 0.01 0.01" rgba="1 0 0 1" type="sphere" group="1" />
+      <inertial pos="0 0 0.05" mass="0.5" diaginertia="0.05 0.05 0.05" />
+
+      <body name="gripper0_base_link" pos="0 0 0">
+        <inertial pos="3.84872e-06 -4.41448e-05 0.0553868" mass="0.953456" fullinertia="0.00177629 0.00187418 0.000875449 -8.19676e-10 -3.00473e-08 -3.98010e-07" />
+        <geom type="mesh" mesh="gripper0_base_link" contype="0" conaffinity="0" group="1" rgba="0.616 0.639 0.675 1" name="gripper0_g0_vis" />
+
+        <body name="gripper0_Left_1_Link" pos="0.030141 0 0.10415" quat="0.707105 0.707108 0 0">
+          <inertial pos="0.0202604 0.0187578 0" quat="-0.257975 0.658368 0.257975 0.658368" mass="0.0309053" diaginertia="9.19223e-06 8.92299e-06 3.59913e-07" />
+          <joint name="gripper0_Left_1_Joint" pos="0 0 0" axis="0 0 -1" range="-0.91 0" />
+          <geom type="mesh" mesh="gripper0_Left_1_Link" contype="0" conaffinity="0" group="1" rgba="0.616 0.639 0.675 1" name="gripper0_g1_vis" />
+
+          <body name="gripper0_Left_Support_Link" pos="0.040359 0.037365 0">
+            <inertial pos="-0.0177926 0.0354309 -3.45319e-05" quat="0.699435 0.699435 0.10388 0.10388" mass="0.0828693" diaginertia="2.95349e-05 2.83129e-05 4.20884e-06" />
+            <joint name="gripper0_Left_Support_Joint" pos="0 0 0" axis="0 0 -1" />
+            <geom type="mesh" mesh="gripper0_Left_Support_Link" contype="0" conaffinity="0" group="1" rgba="0.616 0.639 0.675 1" name="gripper0_g2_vis" />
+            
+            <geom type="mesh" mesh="gripper0_Left_Support_Link" group="0" conaffinity="1" contype="1" solref="0.01 0.5" solimp="0.99 0.999 0.0001 0.5 2" friction="2 0.05 0.0001" condim="4" name="gripper0_left_fingerpad_col" rgba="0 0 0.5 1" />
+            <site name="gripper0_Left_Support_tip" pos="-0.014141 0.01685 0" />
+          </body>
+        </body>
+
+        <body name="gripper0_Left_2_Link" pos="0.016 0 0.121" quat="0.707105 0.707108 0 0">
+          <inertial pos="0.0202604 0.0187578 0" quat="-0.257975 0.658368 0.257975 0.658368" mass="0.0309053" diaginertia="9.19223e-06 8.92299e-06 3.59913e-07" />
+          <joint name="gripper0_Left_2_Joint" pos="0 0 0" axis="0 0 -1" />
+          <geom type="mesh" mesh="gripper0_Left_2_Link" contype="0" conaffinity="0" group="1" rgba="0.616 0.639 0.675 1" name="gripper0_g3_vis" />
+          <site name="gripper0_Left_2_connect" pos="0.040359 0.037365 0" />
+        </body>
+
+        <body name="gripper0_Right_2_Link" pos="-0.016 0 0.121" quat="-2.59734e-06 -2.59735e-06 0.707108 0.707105">
+          <inertial pos="0.0202604 0.0187578 0" quat="-0.257975 0.658368 0.257975 0.658368" mass="0.0309053" diaginertia="9.19223e-06 8.92299e-06 3.59913e-07" />
+          <joint name="gripper0_Right_2_Joint" pos="0 0 0" axis="0 0 1" />
+          <geom type="mesh" mesh="gripper0_Right_2_Link" contype="0" conaffinity="0" group="1" rgba="0.616 0.639 0.675 1" name="gripper0_g4_vis" />
+          <site name="gripper0_Right_2_connect" pos="0.040359 0.037365 0" />
+        </body>
+
+        <body name="gripper0_Right_1_Link" pos="-0.030141 0 0.10415" quat="-2.59734e-06 -2.59735e-06 0.707108 0.707105">
+          <inertial pos="0.0202604 0.0187578 0" quat="-0.257975 0.658368 0.257975 0.658368" mass="0.0309053" diaginertia="9.19223e-06 8.92299e-06 3.59913e-07" />
+          <joint name="gripper0_Right_1_Joint" pos="0 0 0" axis="0 0 1" />
+          <geom type="mesh" mesh="gripper0_Right_1_Link" contype="0" conaffinity="0" group="1" rgba="0.616 0.639 0.675 1" name="gripper0_g5_vis" />
+
+          <body name="gripper0_Right_Support_Link" pos="0.040359 0.037365 0">
+            <inertial pos="-0.0177926 0.0354309 -2.81888e-08" quat="0.699435 0.699435 0.10388 0.10388" mass="0.0828694" diaginertia="2.95349e-05 2.83129e-05 4.20884e-06" />
+            <joint name="gripper0_Right_Support_Joint" pos="0 0 0" axis="0 0 -1" />
+            <geom type="mesh" mesh="gripper0_Right_Support_Link" contype="0" conaffinity="0" group="1" rgba="0.616 0.639 0.675 1" name="gripper0_g6_vis" />
+            
+            <geom type="mesh" mesh="gripper0_Right_Support_Link" group="0" conaffinity="1" contype="1" solref="0.01 0.5" solimp="0.99 0.999 0.0001 0.5 2" friction="2 0.05 0.0001" condim="4" name="gripper0_right_fingerpad_col" rgba="0 0 0.5 1" />
+            <site name="gripper0_Right_Support_tip" pos="-0.014141 0.01685 0" />
+          </body>
+        </body>
+      </body>
+
+      <body name="gripper0_eef" pos="0 0 0.20254" quat="1 0 0 0">
+        <site name="gripper0_grip_site" pos="0 0 0" size="0.01 0.01 0.01" rgba="1 0 0 0.5" type="sphere" group="1" />
+        <site name="gripper0_ee_x" pos="0.1 0 0" size="0.005 .1" quat="0.707105 0 0.707108 0" rgba="1 0 0 0" type="cylinder" group="1" />
+        <site name="gripper0_ee_y" pos="0 0.1 0" size="0.005 .1" quat="0.707105 0.707108 0 0" rgba="0 1 0 0" type="cylinder" group="1" />
+        <site name="gripper0_ee_z" pos="0 0 0.1" size="0.005 .1" quat="1 0 0 0" rgba="0 0 1 0" type="cylinder" group="1" />
+        <site name="gripper0_grip_site_cylinder" pos="0 0 0" size="0.005 10" rgba="0 1 0 0.3" type="cylinder" group="1" />
+      </body>
+    </body>
+  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    <body name="mount0_base" pos="0.0 0.0 0.0">
+        </body>
+    </body>
+  <body name="alphabet_soup_1_main">
+        <geom name="alphabet_soup_1_g0" type="box" size="0.03 0.015 0.035" group="0" rgba="0.85 0.22 0.18 0.3" contype="1" conaffinity="1" condim="4" friction="1 0.005 0.0001" solref="0.02 1" density="700.0" />
+        <geom name="alphabet_soup_1_g1" type="box" size="0.03 0.015 0.035" group="1" rgba="0.85 0.22 0.18 1" contype="0" conaffinity="0" />
+      <joint type="free" damping="0.0005" name="alphabet_soup_1_joint0" /><site pos="0 0 0" size="0.002 0.002 0.002" rgba="1 0 0 0" type="sphere" group="0" name="alphabet_soup_1_default_site" /></body>
+      <body name="basket_1_main">
+      <site type="box" pos="-0.00000 -0.00000 0.07185" quat="0.00000 0.00000 0.00000 1.00000" size="0.06108 0.06108 0.06949" group="0" rgba="0.8 0 0 0" name="basket_1_contain_region" />
+      <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="mesh" mesh="basket_1_basket_vis" conaffinity="0" contype="0" group="1" material="basket_1_basket" name="basket_1_g0" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00251 -0.00000 0.01308" quat="0.70880 -0.00000 0.70541 -0.00000" size="0.00850 0.07240 0.07658" group="0" rgba="0.8 0.8 0.8 0.3" name="basket_1_g1" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.07265 -0.00000 0.07657" quat="0.02672 -0.02672 0.70660 0.70660" size="0.00667 0.06368 0.07240" group="0" rgba="0.8 0.8 0.8 0.3" name="basket_1_g2" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00047 -0.06855 0.08177" quat="0.51263 -0.49025 0.50956 -0.48704" size="0.00667 0.06368 0.07240" group="0" rgba="0.8 0.8 0.8 0.3" name="basket_1_g3" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00020 0.06909 0.08177" quat="0.48794 -0.51043 -0.48935 0.51177" size="0.00667 0.06368 0.07240" group="0" rgba="0.8 0.8 0.8 0.3" name="basket_1_g4" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.07557 0.00000 0.07657" quat="0.01765 0.01765 -0.70689 0.70689" size="0.00667 0.06368 0.07240" group="0" rgba="0.8 0.8 0.8 0.3" name="basket_1_g5" /><joint type="free" damping="0.0005" name="basket_1_joint0" /><site pos="0 0 0" size="0.002 0.002 0.002" rgba="1 0 0 0" type="sphere" group="0" name="basket_1_default_site" /></body>
+      <body name="salad_dressing_1_main">
+      <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="mesh" mesh="salad_dressing_1_textured_vis" conaffinity="0" contype="0" group="1" material="salad_dressing_1_textured" name="salad_dressing_1_g0" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00012 0.05420 0.00043" quat="0.50000 0.50000 0.50000 -0.50000" size="0.01237 0.01277 0.01865" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g1" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00096 -0.03138 0.00023" quat="0.70711 -0.00000 -0.70711 -0.00000" size="0.01733 0.02097 0.02637" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g2" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00048 0.00843 0.00023" quat="0.70711 0.70711 0.00000 -0.00000" size="0.01294 0.01494 0.02738" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g3" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00012 0.05420 -0.01366" quat="0.50000 -0.50000 0.50000 0.50000" size="0.00208 0.00780 0.01865" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g4" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00012 0.05420 0.01479" quat="0.50000 -0.50000 0.50000 0.50000" size="0.00208 0.00780 0.01865" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g5" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.01509 0.05420 -0.00068" quat="0.70711 0.70711 0.00086 -0.00086" size="0.00208 0.00780 0.01865" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g6" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.01447 0.05420 -0.00068" quat="0.70711 0.70711 0.00086 -0.00086" size="0.00208 0.00780 0.01865" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g7" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.01145 0.05420 -0.01062" quat="0.23994 0.23994 0.66515 -0.66515" size="0.00208 0.00780 0.01865" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g8" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.01182 0.05420 -0.01062" quat="0.66388 0.66388 0.24343 -0.24343" size="0.00208 0.00780 0.01865" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g9" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.01220 0.05420 0.00988" quat="0.21187 0.21187 0.67462 -0.67462" size="0.00208 0.00780 0.01865" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g10" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.01158 0.05420 0.00988" quat="0.66557 -0.66557 0.23877 0.23877" size="0.00208 0.00780 0.01865" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g11" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00096 -0.06947 0.00023" quat="0.00000 -0.70711 0.70711 -0.00000" size="0.00325 0.01729 0.01733" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g12" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00096 -0.05722 0.00023" quat="0.50000 0.50000 -0.50000 -0.50000" size="0.00558 0.01733 0.02217" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g13" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00096 -0.00434 0.00023" quat="0.50000 0.50000 -0.50000 -0.50000" size="0.00558 0.01733 0.02290" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g14" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00096 0.00719 0.00023" quat="0.70711 -0.00000 -0.00000 -0.70711" size="0.00558 0.01712 0.01733" group="0" rgba="0.8 0.8 0.8 0.3" name="salad_dressing_1_g15" /><joint type="free" damping="0.0005" name="salad_dressing_1_joint0" /><site pos="0 0 0" size="0.002 0.002 0.002" rgba="1 0 0 0" type="sphere" group="0" name="salad_dressing_1_default_site" /></body>
+      <body name="cream_cheese_1_main">
+      
+      <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="mesh" mesh="cream_cheese_1_cream_cheese_vis" conaffinity="0" contype="0" group="1" material="cream_cheese_1_cream_cheese" name="cream_cheese_1_g0" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00000 0.00000 -0.00000" quat="0.00707 0.00000 0.00707 0.00000" size="0.008936 0.021336 0.040608" group="0" rgba="0.8 0.8 0.8 0.0" name="cream_cheese_1_g1" />
+      <joint type="free" damping="0.0005" name="cream_cheese_1_joint0" /><site pos="0 0 0" size="0.002 0.002 0.002" rgba="1 0 0 0" type="sphere" group="0" name="cream_cheese_1_default_site" /></body>
+      <body name="milk_1_main">
+      <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="mesh" mesh="milk_1_textured_vis" conaffinity="0" contype="0" group="1" material="milk_1_textured" name="milk_1_g0" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00037 -0.01500 0.00000" quat="0.70711 0.70711 0.00000 -0.00000" size="0.02625 0.02625 0.05475" group="0" rgba="0.8 0.8 0.8 0.3" name="milk_1_g1" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00005 0.04784 0.01352" quat="0.28687 0.64630 -0.28687 -0.64630" size="0.00218 0.01381 0.02631" group="0" rgba="0.8 0.8 0.8 0.3" name="milk_1_g2" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00005 0.04784 -0.01344" quat="0.64203 0.29630 0.64203 0.29630" size="0.00218 0.01381 0.02631" group="0" rgba="0.8 0.8 0.8 0.3" name="milk_1_g3" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00005 0.05849 0.00005" quat="0.50000 0.50000 -0.50000 -0.50000" size="0.00295 0.00348 0.02650" group="0" rgba="0.8 0.8 0.8 0.3" name="milk_1_g4" /><joint type="free" damping="0.0005" name="milk_1_joint0" /><site pos="0 0 0" size="0.002 0.002 0.002" rgba="1 0 0 0" type="sphere" group="0" name="milk_1_default_site" /></body>
+      <body name="tomato_sauce_1_main">
+      <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="mesh" mesh="tomato_sauce_1_textured_vis" conaffinity="0" contype="0" group="1" material="tomato_sauce_1_textured" name="tomato_sauce_1_g0" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00000 -0.00104 -0.00235" quat="0.50000 -0.50000 0.50000 0.50000" size="0.01874 0.02352 0.03625" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g1" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.02595 -0.00000 -0.00209" quat="0.70711 0.70711 0.00000 -0.00000" size="0.00226 0.01471 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g2" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.02470 -0.00060 -0.00209" quat="0.70711 0.70711 0.00000 -0.00000" size="0.00226 0.01662 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g3" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00012 -0.00060 -0.02325" quat="0.50000 -0.50000 0.50000 0.50000" size="0.00421 0.01985 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g4" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00012 -0.00060 0.01776" quat="0.50000 -0.50000 0.50000 0.50000" size="0.00421 0.01985 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g5" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00012 -0.00060 -0.03162" quat="0.50000 0.50000 0.50000 -0.50000" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g6" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00012 -0.00060 0.02575" quat="0.50000 0.50000 0.50000 -0.50000" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g7" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.02944 -0.00060 -0.00291" quat="0.00030 0.00030 -0.70711 0.70711" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g8" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.02920 -0.00060 -0.00286" quat="0.70711 0.70711 0.00030 -0.00030" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g9" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.02685 -0.00060 0.00853" quat="0.12141 -0.12141 0.69661 0.69661" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g10" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.02626 -0.00060 -0.01619" quat="0.68638 0.68638 -0.16993 0.16993" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g11" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.01937 -0.00060 -0.02393" quat="0.30330 -0.30330 0.63875 0.63875" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g12" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.00969 -0.00060 -0.03023" quat="0.41278 -0.41278 0.57412 0.57412" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g13" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.01270 -0.00060 0.02274" quat="0.41278 -0.41278 0.57412 0.57412" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g14" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.01240 -0.00060 -0.02883" quat="0.60318 0.60318 0.36902 -0.36902" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g15" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.02211 -0.00060 -0.02076" quat="0.65137 0.65137 0.27516 -0.27516" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g16" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.02745 -0.00099 -0.01027" quat="0.05205 0.05205 -0.70519 0.70519" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g17" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.02700 -0.00060 0.00886" quat="0.69496 0.69496 0.13049 -0.13049" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g18" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.02005 -0.00060 0.01808" quat="0.65572 0.65572 0.26463 -0.26463" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g19" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="-0.01084 -0.00060 0.02397" quat="0.56204 -0.56204 0.42908 0.42908" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g20" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.02211 -0.00060 -0.02076" quat="0.65137 0.65137 0.27516 -0.27516" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g21" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.01270 -0.00060 0.02274" quat="0.41278 -0.41278 0.57412 0.57412" size="0.00177 0.00694 0.03760" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g22" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.02305 -0.00037 0.01722" quat="0.66333 0.66333 -0.24494 0.24494" size="0.00110 0.00624 0.03750" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g23" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.02305 -0.00037 0.01722" quat="0.66333 0.66333 -0.24494 0.24494" size="0.00110 0.00624 0.03750" group="0" rgba="0.8 0.8 0.8 0.3" name="tomato_sauce_1_g24" /><joint type="free" damping="0.0005" name="tomato_sauce_1_joint0" /><site pos="0 0 0" size="0.002 0.002 0.002" rgba="1 0 0 0" type="sphere" group="0" name="tomato_sauce_1_default_site" /></body>
+      <body name="butter_1_main">
+      <geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="mesh" mesh="butter_1_butter_vis" conaffinity="0" contype="0" group="1" material="butter_1_butter" name="butter_1_g0" /><geom solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" type="box" pos="0.00000 0.00000 -0.00000" quat="0.00530 0.00000 0.00530 0.00000" size="0.00871 0.01977 0.03809" group="0" rgba="0.8 0.8 0.8 0." name="butter_1_g1" /><joint type="free" damping="0.0005" name="butter_1_joint0" /><site pos="0 0 0" size="0.002 0.002 0.002" rgba="1 0 0 0" type="sphere" group="0" name="butter_1_default_site" /></body>
+      </worldbody>
+
+  <equality>
+  <joint name="gripper0_eq_Left_2" joint1="gripper0_Left_2_Joint" joint2="gripper0_Left_1_Joint" polycoef="0 1 0 0 0" />
+    <joint name="gripper0_eq_Right_1" joint1="gripper0_Right_1_Joint" joint2="gripper0_Left_1_Joint" polycoef="0 -1 0 0 0" />
+    <joint name="gripper0_eq_Right_2" joint1="gripper0_Right_2_Joint" joint2="gripper0_Left_1_Joint" polycoef="0 -1 0 0 0" />
+    <joint name="gripper0_eq_Left_Support" joint1="gripper0_Left_Support_Joint" joint2="gripper0_Left_1_Joint" polycoef="0 -1 0 0 0" />
+    <joint name="gripper0_eq_Right_Support" joint1="gripper0_Right_Support_Joint" joint2="gripper0_Left_1_Joint" polycoef="0 -1 0 0 0" />
+    <connect name="gripper0_conn_left" site1="gripper0_Left_Support_tip" site2="gripper0_Left_2_connect" />
+    <connect name="gripper0_conn_right" site1="gripper0_Right_Support_tip" site2="gripper0_Right_2_connect" />
+  </equality>
+<sensor><force name="gripper0_force_ee" site="gripper0_ft_frame" />
+    <torque name="gripper0_torque_ee" site="gripper0_ft_frame" />
+  </sensor><tendon /><contact><exclude body1="robot0_base" body2="robot0_link_1" />
+  </contact></mujoco>

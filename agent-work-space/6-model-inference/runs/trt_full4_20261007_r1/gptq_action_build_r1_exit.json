@@ -1,0 +1,19 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-full4-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_full4_20261007_r1/gptq_action_build_r1_source/build.py",
+    "--source",
+    "/work/runs/trt_full4_20261007_r1/gptq_action_step_r1/action_step_int4.onnx",
+    "--out",
+    "/work/runs/trt_full4_20261007_r1/gptq_action_build_r1",
+    "--stage",
+    "action_step",
+    "--algorithm",
+    "GPTQ"
+  ],
+  "exit_code": 0,
+  "seconds": 61.28453063964844
+}

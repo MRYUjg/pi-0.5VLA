@@ -1,0 +1,499 @@
+{
+  "source_bf16_sha256": "5d61d98adfd3c811537c39392c9e2143ae952be5ad4e7784ef74904eacd768b9",
+  "precision": "BF16 parameter values; original FP32 compute islands",
+  "reason": "match JAX restore_params(dtype=bfloat16) before comparing quantization",
+  "weight_sha256": "69ee787ec12921613feabf69b01348628b3d6327a8865cbc02ecb9be788d9258",
+  "weight_bytes": 6946443712,
+  "rounding": {
+    "action_in_proj.bias": {
+      "numel": 1024,
+      "max_abs_rounding": 0.0002378225326538086
+    },
+    "action_in_proj.weight": {
+      "numel": 32768,
+      "max_abs_rounding": 0.001942455768585205
+    },
+    "action_out_proj.bias": {
+      "numel": 32,
+      "max_abs_rounding": 2.7975067496299744e-05
+    },
+    "action_out_proj.weight": {
+      "numel": 32768,
+      "max_abs_rounding": 0.000294417142868042
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.0.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0002437382936477661
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.0.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00024413317441940308
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.0.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00024150311946868896
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.0.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0004724264144897461
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.1.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00024196505546569824
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.1.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00047069787979125977
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.1.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0003087371587753296
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.1.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0018804669380187988
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.10.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00036472082138061523
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.10.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0004809349775314331
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.10.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0005651414394378662
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.10.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0014753341674804688
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.11.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00023977458477020264
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.11.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00048182904720306396
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.11.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.000799030065536499
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.11.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0009647607803344727
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.12.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00024352967739105225
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.12.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00045402348041534424
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.12.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0011197924613952637
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.12.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0019304156303405762
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.13.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0002430155873298645
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.13.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00048682093620300293
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.13.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0009592771530151367
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.13.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0012720823287963867
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.14.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00035634636878967285
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.14.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0004839599132537842
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.14.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0018100142478942871
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.14.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0019509196281433105
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.15.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00024140626192092896
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.15.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00048498809337615967
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.15.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0019404888153076172
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.15.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.001946091651916504
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.16.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00023864209651947021
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.16.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0006793439388275146
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.16.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0018426775932312012
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.16.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00193864107131958
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.17.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0004312247037887573
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.17.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0004870295524597168
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.17.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0009495913982391357
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.17.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.000693976879119873
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.2.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0004725456237792969
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.2.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0004874765872955322
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.2.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0002668797969818115
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.2.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00048573315143585205
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.3.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00048157572746276855
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.3.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00048786401748657227
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.3.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00047175586223602295
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.3.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0008761286735534668
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.4.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00048626959323883057
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.4.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00048613548278808594
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.4.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00048363208770751953
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.4.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0008974671363830566
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.5.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0003819465637207031
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.5.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0004862099885940552
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.5.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00048801302909851074
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.5.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0019394159317016602
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.6.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00047542154788970947
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.6.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00048638880252838135
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.6.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0009508430957794189
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.6.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.003844738006591797
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.7.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0004639476537704468
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.7.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.00048604607582092285
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.7.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.0015946626663208008
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.7.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0036722421646118164
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.8.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00044707953929901123
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.8.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0004820823669433594
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.8.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.002365589141845703
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.8.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0038433074951171875
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.9.input_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00041979551315307617
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.9.input_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.000805199146270752
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.9.post_attention_layernorm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.001801908016204834
+    },
+    "paligemma_with_expert.gemma_expert.model.layers.9.post_attention_layernorm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0029593706130981445
+    },
+    "paligemma_with_expert.gemma_expert.model.norm.dense.bias": {
+      "numel": 3072,
+      "max_abs_rounding": 0.00024394690990447998
+    },
+    "paligemma_with_expert.gemma_expert.model.norm.dense.weight": {
+      "numel": 3145728,
+      "max_abs_rounding": 0.0004428476095199585
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.015617847442626953
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.0.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.018479347229003906
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.016460418701171875
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.1.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.02956676483154297
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.01520538330078125
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.10.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.0152587890625
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.009794235229492188
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.11.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.013319969177246094
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.007807254791259766
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.12.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.009764671325683594
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.011927127838134766
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.13.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.015445232391357422
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.007790565490722656
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.14.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.0301055908203125
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.0077228546142578125
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.15.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.0154571533203125
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.0078051090240478516
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.16.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.014655113220214844
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.015592098236083984
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.17.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.014141082763671875
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.007061958312988281
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.2.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.014389991760253906
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.007554769515991211
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.3.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.014627456665039062
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.007767200469970703
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.4.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.009099960327148438
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.010678291320800781
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.5.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.009140491485595703
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.01427602767944336
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.6.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.015471935272216797
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.007802009582519531
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.7.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.014600276947021484
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.0078122615814208984
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.8.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.015238285064697266
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.input_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.014887809753417969
+    },
+    "paligemma_with_expert.paligemma.model.language_model.layers.9.post_attention_layernorm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.015380382537841797
+    },
+    "paligemma_with_expert.paligemma.model.language_model.norm.weight": {
+      "numel": 2048,
+      "max_abs_rounding": 0.007176876068115234
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias": {
+      "numel": 1152,
+      "max_abs_rounding": 0.004387855529785156
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight": {
+      "numel": 677376,
+      "max_abs_rounding": 0.0009311139583587646
+    },
+    "paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.position_embedding.weight": {
+      "numel": 294912,
+      "max_abs_rounding": 0.5948486328125
+    },
+    "time_mlp_in.bias": {
+      "numel": 1024,
+      "max_abs_rounding": 0.0004658997058868408
+    },
+    "time_mlp_in.weight": {
+      "numel": 1048576,
+      "max_abs_rounding": 0.00048826634883880615
+    },
+    "time_mlp_out.bias": {
+      "numel": 1024,
+      "max_abs_rounding": 0.00010988116264343262
+    },
+    "time_mlp_out.weight": {
+      "numel": 1048576,
+      "max_abs_rounding": 0.0008175969123840332
+    }
+  },
+  "numel": 3353433872,
+  "num_tensors": 811
+}

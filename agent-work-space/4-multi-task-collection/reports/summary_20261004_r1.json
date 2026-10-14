@@ -1,0 +1,2042 @@
+{
+  "pass": true,
+  "scope": "Object task0 controlled initialization data expansion; no policy training or Spatial rollout",
+  "attempts": 16,
+  "normal_capture_exits": 16,
+  "accepted": 16,
+  "splits": {
+    "train": {
+      "episodes": 12,
+      "frames": 6992,
+      "configured_xy_centers": 4,
+      "configured_xy_yaw_combinations": 12,
+      "actual_target_xy_span_mm": [
+        50.14965614587605,
+        50.61956555992836
+      ]
+    },
+    "validation": {
+      "episodes": 4,
+      "frames": 2313,
+      "configured_xy_centers": 4,
+      "configured_xy_yaw_combinations": 4,
+      "actual_target_xy_span_mm": [
+        28.924017583422433,
+        39.68543832132077
+      ]
+    }
+  },
+  "phase_frames": {
+    "approach": 804,
+    "descend": 452,
+    "close": 1280,
+    "lift": 516,
+    "hold": 640,
+    "clearance_lift": 694,
+    "transport": 2607,
+    "place": 392,
+    "release": 960,
+    "post_release_settle": 640,
+    "post_release_window": 320
+  },
+  "physics": {
+    "max_penetration_mm": 0.8416681750326808,
+    "max_step_disp_mm": 7.693849562777242,
+    "min_horizontal_clearance_mm": 34.26597581407342,
+    "min_bilateral_hold_ratio": 1.0,
+    "unsafe_contact_samples": 0,
+    "robot_nontarget_contacts": 0
+  },
+  "conversion": {
+    "frames_verified": 9305,
+    "rgb_images_verified": 18610,
+    "max_rgb_pixel_error": 0,
+    "action_chunks_checked": 80,
+    "action_horizon": 50
+  },
+  "source_batches_not_merged": true,
+  "source_h5_bytes": 1940564216,
+  "source_fingerprint": {
+    "runs/expansion_train_val_r1/dataset_manifest.json": "0f6c918974b187488f3db728c3005d2046e593e3005dabb6ed9fade45d9a9cd7",
+    "lerobot_exports/expansion_lerobot_r1/validation.json": "d153ac2ff164f3a574f3aa928492f6a433da3695b0237253b5330b2469f790c1",
+    "runs/execution_20261004_r1/completed.json": "505f8882edf4ebbcb8184dd2edb9a352cd915b8530316a0f7070a55a6a080a19"
+  },
+  "scene_isolation": {
+    "pass": true,
+    "configured_min_cross_split_mm": 7.071067811865462,
+    "settled_min_cross_split_mm": 6.861268294029891,
+    "old_tests_preserved": true,
+    "new_seeds_disjoint": true,
+    "note": "Four train XY centers each have three yaw variants; not 12 unique XY centers."
+  },
+  "records": [
+    {
+      "seed": 56100,
+      "scene": {
+        "id": "train_00",
+        "split": "train",
+        "seed": 56100,
+        "target_xy_m": [
+          -0.145,
+          -0.265
+        ],
+        "target_yaw_offset_deg": -20,
+        "basket_xy_m": [
+          -0.006,
+          0.254
+        ]
+      },
+      "frames": 583,
+      "target_position_m": [
+        -0.14407405073417476,
+        -0.2651041943392252,
+        0.0383929103724439
+      ],
+      "target_quaternion_wxyz": [
+        0.12045766161905905,
+        0.12511538293272245,
+        0.6965623710079437,
+        0.6961587146668912
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56100,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "c4aacfb66ec472fdc9a484309d459b6ec014a14e1940550c535f3da8d4620f06",
+        "initial_object_bbox": [
+          [
+            -0.17689445429790665,
+            -0.29983762516094087,
+            -2.0918335901655427e-05
+          ],
+          [
+            -0.11312990797163268,
+            -0.2368890515147739,
+            0.07620120396774752
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14575,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.83644186295306,
+          19.131636179602364
+        ],
+        "hold_force_balance_mean_N": [
+          -9.367416413384195e-05,
+          6.735519697217107e-05,
+          -0.0007040665566441784
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.25645598675232406,
+        "max_step_disp_mm": 6.652513483231811,
+        "recipient_shift_mm": 0.0036938579830155514,
+        "min_horizontal_clearance_mm": 37.81626721219139,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.337623963096969,
+        "post_drift_mm": 7.048392312347219e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56100,
+        "steps": 583,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          145,
+          291,
+          437,
+          583
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "75808e6205358ff6bda4a0ae32eede06680a267fa284c2c97f9a47d15b5e2e64",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56101,
+      "scene": {
+        "id": "train_01",
+        "split": "train",
+        "seed": 56101,
+        "target_xy_m": [
+          -0.145,
+          -0.265
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0,
+          0.254
+        ]
+      },
+      "frames": 582,
+      "target_position_m": [
+        -0.14409425574484627,
+        -0.26478121735108745,
+        0.03839291037244391
+      ],
+      "target_quaternion_wxyz": [
+        -0.00225905309668771,
+        0.0022578127763507117,
+        0.7077060816695568,
+        0.7064997529571372
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56101,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "b07c610767604eb8d99e220116b455088a2914b3591a96d5da6f536db4d0c3b3",
+        "initial_object_bbox": [
+          [
+            -0.17542355173033256,
+            -0.2997242593832104,
+            -2.0918335901662366e-05
+          ],
+          [
+            -0.11251504377732509,
+            -0.23719811010067005,
+            0.07620120396774754
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14550,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.881302184787426,
+          19.069399047350803
+        ],
+        "hold_force_balance_mean_N": [
+          -9.443409287123727e-05,
+          3.865778957229082e-05,
+          -0.0007616465052628918
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.4291389208151379,
+        "max_step_disp_mm": 6.650057495421455,
+        "recipient_shift_mm": 0.003924879061564166,
+        "min_horizontal_clearance_mm": 36.46583090577643,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.37031382073287367,
+        "post_drift_mm": 6.2729226776901865e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56101,
+        "steps": 582,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          145,
+          291,
+          436,
+          582
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "a11b4f453ed4073308c18e9da372e485d55412605dfa79a465ee91a626a55afa",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56102,
+      "scene": {
+        "id": "train_02",
+        "split": "train",
+        "seed": 56102,
+        "target_xy_m": [
+          -0.145,
+          -0.265
+        ],
+        "target_yaw_offset_deg": 20,
+        "basket_xy_m": [
+          0.006,
+          0.254
+        ]
+      },
+      "frames": 585,
+      "target_position_m": [
+        -0.144223706880051,
+        -0.26448462877929724,
+        0.038392910372443904
+      ],
+      "target_quaternion_wxyz": [
+        -0.12490712762722755,
+        -0.12066835987872199,
+        0.6973465011561969,
+        0.6953741537599056
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56102,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "0d7b44d34afaf47a16be264ed577b2fb52950bc4e8ead6450d5cbcaafbb54537",
+        "initial_object_bbox": [
+          [
+            -0.17528964748903558,
+            -0.29930684841278915,
+            -2.0918335901655427e-05
+          ],
+          [
+            -0.11085021568557633,
+            -0.23577792329974273,
+            0.07620120396774752
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14625,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.92526328394176,
+          19.154987973410268
+        ],
+        "hold_force_balance_mean_N": [
+          -8.277469156120323e-05,
+          4.3845263722477766e-05,
+          -0.0007512976524438053
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.4633446932606773,
+        "max_step_disp_mm": 6.6499085116505245,
+        "recipient_shift_mm": 0.004199902251666182,
+        "min_horizontal_clearance_mm": 37.468588185377016,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.3307782123492993,
+        "post_drift_mm": 4.6096697567446944e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56102,
+        "steps": 585,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          146,
+          292,
+          438,
+          585
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "54e16668fff5f90ececb5df4ca6204be854aca4daa242c68e6ec286125c8d460",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56103,
+      "scene": {
+        "id": "train_03",
+        "split": "train",
+        "seed": 56103,
+        "target_xy_m": [
+          -0.145,
+          -0.215
+        ],
+        "target_yaw_offset_deg": -20,
+        "basket_xy_m": [
+          -0.006,
+          0.266
+        ]
+      },
+      "frames": 560,
+      "target_position_m": [
+        -0.14407405073417479,
+        -0.21510419433922506,
+        0.0383929103724439
+      ],
+      "target_quaternion_wxyz": [
+        0.12045766161905905,
+        0.12511538293272245,
+        0.6965623710079437,
+        0.6961587146668912
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56103,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "1da0060c6eb107c7f44a7653bc5fe11707d899cb5608d47f326d7718ccb18ffc",
+        "initial_object_bbox": [
+          [
+            -0.17689445429790668,
+            -0.2498376251609407,
+            -2.0918335901655427e-05
+          ],
+          [
+            -0.1131299079716327,
+            -0.18688905151477375,
+            0.07620120396774752
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14000,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.824844594985603,
+          19.15661377036747
+        ],
+        "hold_force_balance_mean_N": [
+          -0.00014730111406886066,
+          8.601644659814766e-05,
+          -0.0008145451422145178
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.3365858212748128,
+        "max_step_disp_mm": 7.1182751423802895,
+        "recipient_shift_mm": 0.0037307403919069515,
+        "min_horizontal_clearance_mm": 37.79091255441364,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.3392663858671001,
+        "post_drift_mm": 6.7647202738064514e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56103,
+        "steps": 560,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          140,
+          280,
+          420,
+          560
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "d24485ef749f16a08538cff2c6cdb53f3fd92f475dab4f5cd03676a84b00e6dc",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56104,
+      "scene": {
+        "id": "train_04",
+        "split": "train",
+        "seed": 56104,
+        "target_xy_m": [
+          -0.145,
+          -0.215
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0,
+          0.266
+        ]
+      },
+      "frames": 561,
+      "target_position_m": [
+        -0.1440942557448463,
+        -0.21478121735108735,
+        0.03839291037244391
+      ],
+      "target_quaternion_wxyz": [
+        -0.0022590530966877117,
+        0.0022578127763507086,
+        0.7077060816695568,
+        0.7064997529571372
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56104,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "53c9d8aafbdade0cafc54b581037a6fe58e4fd106db7ad7400bf356f65d0db98",
+        "initial_object_bbox": [
+          [
+            -0.17542355173033258,
+            -0.24972425938321036,
+            -2.0918335901662366e-05
+          ],
+          [
+            -0.11251504377732512,
+            -0.18719811010066995,
+            0.07620120396774754
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14025,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.866096049133404,
+          19.094784893775056
+        ],
+        "hold_force_balance_mean_N": [
+          -0.0001451119415830237,
+          8.478508082339786e-05,
+          -0.0008255659708786278
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.33029621304210716,
+        "max_step_disp_mm": 7.114111448713418,
+        "recipient_shift_mm": 0.004922590432934945,
+        "min_horizontal_clearance_mm": 36.35936835677678,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.37096821348380893,
+        "post_drift_mm": 6.572941410450778e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56104,
+        "steps": 561,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          140,
+          280,
+          420,
+          561
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "47b5458a1732bf466eb50dda931377a12b624ee22941d86ea28405ef3715bf07",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56105,
+      "scene": {
+        "id": "train_05",
+        "split": "train",
+        "seed": 56105,
+        "target_xy_m": [
+          -0.145,
+          -0.215
+        ],
+        "target_yaw_offset_deg": 20,
+        "basket_xy_m": [
+          0.006,
+          0.266
+        ]
+      },
+      "frames": 562,
+      "target_position_m": [
+        -0.144223706880051,
+        -0.21448462877929697,
+        0.038392910372443925
+      ],
+      "target_quaternion_wxyz": [
+        -0.1249071276272275,
+        -0.12066835987872195,
+        0.697346501156197,
+        0.6953741537599059
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56105,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "ad4850c4882ad4aa68dc24218a2d81506c17c16f9c1c8eea9d4cb0a7800816e1",
+        "initial_object_bbox": [
+          [
+            -0.17528964748903558,
+            -0.24930684841278886,
+            -2.0918335901655427e-05
+          ],
+          [
+            -0.11085021568557632,
+            -0.18577792329974244,
+            0.07620120396774757
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14050,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.81878496324999,
+          19.1564163012861
+        ],
+        "hold_force_balance_mean_N": [
+          -0.0001679916323925498,
+          9.763981898269947e-05,
+          -0.0006479260265071507
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.1641469646445697,
+        "max_step_disp_mm": 7.114740251275652,
+        "recipient_shift_mm": 0.004784798675486079,
+        "min_horizontal_clearance_mm": 37.16875729447128,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.24570776634352973,
+        "post_drift_mm": 6.999105365653883e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56105,
+        "steps": 562,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          140,
+          281,
+          421,
+          562
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "1c9b73763129aeeac7ff88cd06a34679d2677260dec45fd1868d76834d7de29b",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56106,
+      "scene": {
+        "id": "train_06",
+        "split": "train",
+        "seed": 56106,
+        "target_xy_m": [
+          -0.095,
+          -0.265
+        ],
+        "target_yaw_offset_deg": -20,
+        "basket_xy_m": [
+          -0.006,
+          0.254
+        ]
+      },
+      "frames": 608,
+      "target_position_m": [
+        -0.09407405073417496,
+        -0.2651041943392253,
+        0.0383929103724439
+      ],
+      "target_quaternion_wxyz": [
+        0.12045766161905905,
+        0.12511538293272245,
+        0.6965623710079437,
+        0.6961587146668912
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56106,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "58f93b8e96bc808a3dacea30a740eae71ef464a6394c1e4a54b19d3fc5d3527a",
+        "initial_object_bbox": [
+          [
+            -0.12689445429790686,
+            -0.2998376251609409,
+            -2.0918335901655427e-05
+          ],
+          [
+            -0.06312990797163288,
+            -0.23688905151477396,
+            0.07620120396774752
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 15200,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.947823306851546,
+          19.128863275786184
+        ],
+        "hold_force_balance_mean_N": [
+          7.744905141057734e-05,
+          2.1113127202383453e-06,
+          -0.000462984233797481
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.18995278836376275,
+        "max_step_disp_mm": 7.326813101577347,
+        "recipient_shift_mm": 0.0039108582202065055,
+        "min_horizontal_clearance_mm": 38.519578534694816,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.3228702776981321,
+        "post_drift_mm": 6.890446107559018e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56106,
+        "steps": 608,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          152,
+          304,
+          456,
+          608
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "67cc13d5380d86c3e89eeb8dc685496d588457b5e077fb6f0d2de11dac523ab9",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56107,
+      "scene": {
+        "id": "train_07",
+        "split": "train",
+        "seed": 56107,
+        "target_xy_m": [
+          -0.095,
+          -0.265
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0,
+          0.254
+        ]
+      },
+      "frames": 610,
+      "target_position_m": [
+        -0.09409425574484635,
+        -0.26478121735108745,
+        0.03839291037244387
+      ],
+      "target_quaternion_wxyz": [
+        -0.0022590530966877433,
+        0.0022578127763506943,
+        0.7077060816695565,
+        0.7064997529571369
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56107,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "9017b810af0fbbe3939ab69d6a610cd3adaf5d6cd9e64826d32bac74df5ef346",
+        "initial_object_bbox": [
+          [
+            -0.1254235517303326,
+            -0.2997242593832104,
+            -2.0918335901662366e-05
+          ],
+          [
+            -0.0625150437773252,
+            -0.23719811010067007,
+            0.07620120396774746
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 15250,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.952547970260404,
+          19.03587443055965
+        ],
+        "hold_force_balance_mean_N": [
+          6.752953402579698e-06,
+          -2.0325657635442694e-05,
+          -0.0004849442522762426
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.4226934489089182,
+        "max_step_disp_mm": 7.349143936661316,
+        "recipient_shift_mm": 0.0049312855941124585,
+        "min_horizontal_clearance_mm": 37.73469816536307,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.36874662990138213,
+        "post_drift_mm": 7.1638540440426025e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56107,
+        "steps": 610,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          152,
+          305,
+          457,
+          610
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "576a0d7aefba77b2de4a300d67b819e76ebfdb6f15ad0570465d54804eb2a0d0",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56108,
+      "scene": {
+        "id": "train_08",
+        "split": "train",
+        "seed": 56108,
+        "target_xy_m": [
+          -0.095,
+          -0.265
+        ],
+        "target_yaw_offset_deg": 20,
+        "basket_xy_m": [
+          0.006,
+          0.254
+        ]
+      },
+      "frames": 609,
+      "target_position_m": [
+        -0.09422370688005109,
+        -0.26448462877929724,
+        0.038392910372443946
+      ],
+      "target_quaternion_wxyz": [
+        -0.12490712762722758,
+        -0.12066835987872199,
+        0.6973465011561973,
+        0.695374153759906
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56108,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "722fb61ec2d99650cd3194d439ab8c9468838ee1a2e4cf916d60109338c3b422",
+        "initial_object_bbox": [
+          [
+            -0.1252896474890357,
+            -0.29930684841278915,
+            -2.0918335901655427e-05
+          ],
+          [
+            -0.060850215685576386,
+            -0.2357779232997427,
+            0.07620120396774763
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 15225,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.966448037132615,
+          19.132399980038365
+        ],
+        "hold_force_balance_mean_N": [
+          3.6466016239858485e-06,
+          -3.661065763087734e-05,
+          -0.0004352204982802643
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.3720692826924235,
+        "max_step_disp_mm": 7.371922123276909,
+        "recipient_shift_mm": 0.008076938243232133,
+        "min_horizontal_clearance_mm": 37.95219136742631,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.28286511218032273,
+        "post_drift_mm": 5.078733525211294e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56108,
+        "steps": 609,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          152,
+          304,
+          456,
+          609
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "780e3246d9a9504e8ab081be09dd35ca3e560c74f561567aed1dd0755031399f",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56109,
+      "scene": {
+        "id": "train_09",
+        "split": "train",
+        "seed": 56109,
+        "target_xy_m": [
+          -0.095,
+          -0.215
+        ],
+        "target_yaw_offset_deg": -20,
+        "basket_xy_m": [
+          -0.006,
+          0.266
+        ]
+      },
+      "frames": 575,
+      "target_position_m": [
+        -0.09407405073417496,
+        -0.21510419433922506,
+        0.0383929103724439
+      ],
+      "target_quaternion_wxyz": [
+        0.12045766161905905,
+        0.12511538293272245,
+        0.6965623710079437,
+        0.6961587146668912
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56109,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "9aa7445e56f461a77e9184d8224a75190f770c18ef449ca9b01bf3a4209d554a",
+        "initial_object_bbox": [
+          [
+            -0.12689445429790686,
+            -0.2498376251609407,
+            -2.0918335901655427e-05
+          ],
+          [
+            -0.06312990797163288,
+            -0.18688905151477375,
+            0.07620120396774752
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14375,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.870743965504346,
+          19.160911815787625
+        ],
+        "hold_force_balance_mean_N": [
+          6.987074602720111e-05,
+          -2.385712016060726e-05,
+          -0.0005303272542648285
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.32457323924354087,
+        "max_step_disp_mm": 7.6414443362536435,
+        "recipient_shift_mm": 0.0037538010720049343,
+        "min_horizontal_clearance_mm": 35.60211426596938,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.3290858487276811,
+        "post_drift_mm": 7.367589652193986e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56109,
+        "steps": 575,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          143,
+          287,
+          431,
+          575
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "8673bcba2dfd8cc7b05f358d2faedcc32324f91259276e0f7464313b123190ab",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56110,
+      "scene": {
+        "id": "train_10",
+        "split": "train",
+        "seed": 56110,
+        "target_xy_m": [
+          -0.095,
+          -0.215
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0,
+          0.266
+        ]
+      },
+      "frames": 576,
+      "target_position_m": [
+        -0.09409425574484637,
+        -0.21478121735108735,
+        0.03839291037244391
+      ],
+      "target_quaternion_wxyz": [
+        -0.0022590530966877112,
+        0.00225781277635071,
+        0.7077060816695568,
+        0.7064997529571372
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56110,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "1eb6ae05b2e2e0f183792778c93cb1c17e1f729fee23cf4243693d67245738cf",
+        "initial_object_bbox": [
+          [
+            -0.12542355173033265,
+            -0.24972425938321036,
+            -2.0918335901662366e-05
+          ],
+          [
+            -0.06251504377732518,
+            -0.18719811010066995,
+            0.07620120396774754
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14400,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.91584661455327,
+          19.07937668706449
+        ],
+        "hold_force_balance_mean_N": [
+          5.544266880460114e-05,
+          -1.6885003894294926e-05,
+          -0.0005743507569602735
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.2230940546085075,
+        "max_step_disp_mm": 7.668468666755734,
+        "recipient_shift_mm": 0.004485022874321086,
+        "min_horizontal_clearance_mm": 35.357458045052304,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.3667953000234487,
+        "post_drift_mm": 7.089212108988512e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56110,
+        "steps": 576,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          144,
+          288,
+          432,
+          576
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "c46b0ea369e853f901bdcdd6cb7ab7af7a15bf74a2b45c0fc24c415a51488a2e",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56111,
+      "scene": {
+        "id": "train_11",
+        "split": "train",
+        "seed": 56111,
+        "target_xy_m": [
+          -0.095,
+          -0.215
+        ],
+        "target_yaw_offset_deg": 20,
+        "basket_xy_m": [
+          0.006,
+          0.266
+        ]
+      },
+      "frames": 581,
+      "target_position_m": [
+        -0.0942237068800511,
+        -0.21448462877929692,
+        0.038392910372443925
+      ],
+      "target_quaternion_wxyz": [
+        -0.1249071276272275,
+        -0.12066835987872195,
+        0.697346501156197,
+        0.6953741537599059
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56111,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "f1757008ac102e1511a47bd8b8b242681c48cb04b33f5ac5bc3fb975b71547c5",
+        "initial_object_bbox": [
+          [
+            -0.1252896474890357,
+            -0.2493068484127888,
+            -2.0918335901655427e-05
+          ],
+          [
+            -0.060850215685576414,
+            -0.18577792329974238,
+            0.07620120396774757
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14525,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.900979800572234,
+          19.16576717194191
+        ],
+        "hold_force_balance_mean_N": [
+          7.157506487180692e-05,
+          -2.1726200213826985e-05,
+          -0.0005242116538028974
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.8416681750326808,
+        "max_step_disp_mm": 7.693849562777242,
+        "recipient_shift_mm": 0.007579692948824907,
+        "min_horizontal_clearance_mm": 34.26597581407342,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.3246241555604029,
+        "post_drift_mm": 3.5990422985824535e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56111,
+        "steps": 581,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          145,
+          290,
+          435,
+          581
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "b7e3caae798201554795e40ce5eaabf0a7e87209c1ce8d4609ab6055be942c1c",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56200,
+      "scene": {
+        "id": "validation_00",
+        "split": "validation",
+        "seed": 56200,
+        "target_xy_m": [
+          -0.137,
+          -0.253
+        ],
+        "target_yaw_offset_deg": -10,
+        "basket_xy_m": [
+          -0.003,
+          0.257
+        ]
+      },
+      "frames": 579,
+      "target_position_m": [
+        -0.13607002482698974,
+        -0.2529418219904662,
+        0.038392910372443904
+      ],
+      "target_quaternion_wxyz": [
+        0.059325054002388224,
+        0.06392987031202947,
+        0.7048162650169882,
+        0.7040081975495763
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56200,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "b4209ec3731efc6c259d3ba4c1d149344ebb7f5c00a2808e77874f4fe67ea8c7",
+        "initial_object_bbox": [
+          [
+            -0.1686336506221714,
+            -0.2880374218161084,
+            -2.0918335901662366e-05
+          ],
+          [
+            -0.1043968707300393,
+            -0.22463451464019735,
+            0.07620120396774754
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14475,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.87721197410023,
+          19.171323224537016
+        ],
+        "hold_force_balance_mean_N": [
+          -8.114809080307806e-05,
+          5.480157021550625e-05,
+          -0.000755702192957064
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.2952804753918824,
+        "max_step_disp_mm": 6.716338821321109,
+        "recipient_shift_mm": 0.004482705666411961,
+        "min_horizontal_clearance_mm": 36.74183336027889,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.46635792033388035,
+        "post_drift_mm": 8.244017992559158e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56200,
+        "steps": 579,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          144,
+          289,
+          434,
+          579
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "d3360d2f5d6d2ffec7a587af7fc9cd486934aaa693dd28938c1f61bf2c2cc693",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56201,
+      "scene": {
+        "id": "validation_01",
+        "split": "validation",
+        "seed": 56201,
+        "target_xy_m": [
+          -0.117,
+          -0.227
+        ],
+        "target_yaw_offset_deg": 10,
+        "basket_xy_m": [
+          0.003,
+          0.257
+        ]
+      },
+      "frames": 570,
+      "target_position_m": [
+        -0.11614600724356731,
+        -0.22662726031178687,
+        0.038392910372443925
+      ],
+      "target_quaternion_wxyz": [
+        -0.06382596743764447,
+        -0.059431428077860705,
+        0.7052098277160045,
+        0.70361441864848
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56201,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "eabf6be1de379795f8768e0490d5605030ff9a9bb49d51cf290c92fbdd702c45",
+        "initial_object_bbox": [
+          [
+            -0.1476875841441491,
+            -0.26177776920712015,
+            -2.0918335901648488e-05
+          ],
+          [
+            -0.08316865559126431,
+            -0.19819631488923753,
+            0.07620120396774757
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14250,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.84178891039402,
+          19.220972425742925
+        ],
+        "hold_force_balance_mean_N": [
+          -5.550073389510529e-05,
+          3.205020473368769e-05,
+          -0.0007017309201300947
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.3154699099912749,
+        "max_step_disp_mm": 7.138355831423619,
+        "recipient_shift_mm": 0.004034681750317157,
+        "min_horizontal_clearance_mm": 37.46800479022405,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.3453774166208939,
+        "post_drift_mm": 6.554803722739362e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56201,
+        "steps": 570,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          142,
+          285,
+          427,
+          570
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "686a7890330289098b0164009a56bbf804e946f8b22298d1c17198a0da614cad",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56202,
+      "scene": {
+        "id": "validation_02",
+        "split": "validation",
+        "seed": 56202,
+        "target_xy_m": [
+          -0.108,
+          -0.257
+        ],
+        "target_yaw_offset_deg": 10,
+        "basket_xy_m": [
+          -0.003,
+          0.263
+        ]
+      },
+      "frames": 603,
+      "target_position_m": [
+        -0.1071460072435673,
+        -0.2566272603117867,
+        0.038392910372443925
+      ],
+      "target_quaternion_wxyz": [
+        -0.06382596743764447,
+        -0.059431428077860705,
+        0.7052098277160045,
+        0.70361441864848
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56202,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "47b94fb49ef1c71ceb0a43fb2ac1bb99afbea3d99c95b29f90ec7b37237f09c8",
+        "initial_object_bbox": [
+          [
+            -0.13868758414414908,
+            -0.29177776920711995,
+            -2.0918335901648488e-05
+          ],
+          [
+            -0.0741686555912643,
+            -0.22819631488923733,
+            0.07620120396774757
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 15075,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.883279411231772,
+          19.23141619646758
+        ],
+        "hold_force_balance_mean_N": [
+          8.463448872201914e-05,
+          -4.120003417271079e-05,
+          -0.0005207211532675116
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.3442546681923497,
+        "max_step_disp_mm": 7.201588470138019,
+        "recipient_shift_mm": 0.00410708123683197,
+        "min_horizontal_clearance_mm": 37.76420563176225,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.33817924756077594,
+        "post_drift_mm": 6.506752442033188e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56202,
+        "steps": 603,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          150,
+          301,
+          452,
+          603
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "e13fda6f54e0b02897cb7776288a4bf1ecff9a616d7a6bfa6f657befbdc04606",
+      "replay_exit": 0
+    },
+    {
+      "seed": 56203,
+      "scene": {
+        "id": "validation_03",
+        "split": "validation",
+        "seed": 56203,
+        "target_xy_m": [
+          -0.127,
+          -0.217
+        ],
+        "target_yaw_offset_deg": -10,
+        "basket_xy_m": [
+          0.003,
+          0.263
+        ]
+      },
+      "frames": 561,
+      "target_position_m": [
+        -0.12607002482698965,
+        -0.2169418219904659,
+        0.038392910372443884
+      ],
+      "target_quaternion_wxyz": [
+        0.05932505400238828,
+        0.06392987031202957,
+        0.7048162650169881,
+        0.7040081975495761
+      ],
+      "physical": {
+        "case": "can",
+        "seed": 56203,
+        "success": true,
+        "failure": null,
+        "audit_pass": true,
+        "errors": [],
+        "gates": {
+          "initial_goal_false": true,
+          "all_stages_complete": true,
+          "lift_30mm": true,
+          "hold_40steps": true,
+          "bilateral_hold": true,
+          "unsupported_hold": true,
+          "penetration_2mm": true,
+          "max_step_disp_20mm": true,
+          "native_success_window": true,
+          "post_drift_5mm": true,
+          "target_support_contact": true,
+          "no_physics_warnings": true,
+          "closure_bilateral": true,
+          "hold_height": true
+        },
+        "initial_state_sha256": "97a2858673b3c076be2e35f2e4e214dacc5d5eb2a8c5feb3e2146d854f129408",
+        "initial_object_bbox": [
+          [
+            -0.1586336506221713,
+            -0.2520374218161081,
+            -2.0918335901655427e-05
+          ],
+          [
+            -0.09439687073003922,
+            -0.188634514640197,
+            0.07620120396774749
+          ]
+        ],
+        "mass_kg": 0.025851445888000014,
+        "physics_samples": 14025,
+        "bilateral_hold": 1.0,
+        "hold_force_mean_N": [
+          19.832795241331297,
+          19.177197990759854
+        ],
+        "hold_force_balance_mean_N": [
+          -0.00010027375877730532,
+          5.856090453446683e-05,
+          -0.00075745917069997
+        ],
+        "hold_other_force_peak_N": 0.0,
+        "penetration_peak_mm": 0.31757286611881386,
+        "max_step_disp_mm": 7.013608842383475,
+        "recipient_shift_mm": 0.004329253892150143,
+        "min_horizontal_clearance_mm": 36.11946656871004,
+        "unsafe_contact_samples": 0,
+        "robot_nontarget_contacts": 0,
+        "hold_relative_slip_mm": 0.4710840248612371,
+        "post_drift_mm": 7.49124403534304e-09,
+        "sources": {
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/real_object_teacher_r20.py": "1a7392e23169dfa38e4e28794e8dc2c9f2762fc0c3cfa480dcb9c66c6f4ea2a4",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/safe_teacher_r8.py": "7608e8265d21944a92dc1561becf8785d107c3fc38560c28e0db1effbd3dd37d",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/loaded_diagnostics_r5.py": "eef495c244fe1646f739dc3781b35f8278c463b0b30ad6cb118f3b546bb511ad",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/eco65_expert_validation.py": "325d8f1ae287236f5c7caabf4933591838a9008bb6168671083f1fd5b344c719",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_grasp_test.py": "f2094b6bb6716fc9b4bd1a2d6a79210c9843346a23cc781e00ca2f3550860306",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n3_osc_full_chain.py": "c0d99a46c56258f80bc9bc0cec662f92be03cd3571ba5ed5eb0817e8959701eb",
+          "/app/agent-work-space/4-multi-task-collection/versions/expansion_20261004_r1/vendor/n4_collect.py": "37b24549adad7c2a3a8e0ea70e982785db568fafcc534a2c31c4971237385c2b",
+          "/app/robosuite/models/assets/grippers/zhixing_gripper.xml": "c0692e58374b151361236e5b30c236a5c39b8c8d15cdf32e362c544e4c13983a",
+          "/app/robosuite/models/grippers/zhixing_gripper.py": "8b36e05f2583b4d56d7a1ffc73f0f0e4a049f66e31aed472d1bf3f2786eaebca",
+          "/app/third_party/libero/libero/libero/assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3"
+        }
+      },
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 56203,
+        "steps": 561,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          140,
+          280,
+          420,
+          561
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      },
+      "source_h5_sha256": "ff5b9063cda9ed0e0397e89d25c2c787d011d68bd0b7a7a88c91b869a68b14d6",
+      "replay_exit": 0
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-07T21:30:11.565183+08:00",
+  "user_instruction": "启动对pai0.5的微调训练",
+  "training_authorized": true,
+  "automatic_training": true,
+  "training_run": "spatial_lora_20261007_r1",
+  "training_version": "lora_20261007_r1",
+  "phases": [
+    "prepare",
+    "smoke",
+    "train",
+    "reload"
+  ],
+  "supersedes": "reports/execution_policy_20261007_r1.json",
+  "data_collection_or_conversion_restart": false,
+  "closed_loop_evaluation_authorized_by_this_launch": false
+}

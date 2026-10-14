@@ -1,0 +1,1738 @@
+{
+  "attempts": 10,
+  "teacher_successes": 6,
+  "physical_evidence_passes": 10,
+  "structural_passes": 10,
+  "replay_passes": 8,
+  "dataset_released": false,
+  "scope": "one native development attempt per task; not policy evaluation or formal LIBERO benchmark",
+  "records": [
+    {
+      "task_id": 0,
+      "seed": 57100,
+      "teacher_success": true,
+      "failure": null,
+      "physical_audit_pass": true,
+      "physical_errors": [],
+      "structural_pass": true,
+      "structural_errors": [],
+      "replay_pass": true,
+      "frames": 889,
+      "preparation_frames": 120,
+      "initialization": {
+        "reset_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              -0.035637628627154805,
+              0.18952058103823874,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              -0.1714588924061553,
+              0.330351737718734,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.08101363378161137,
+              0.0286076371634656,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.21138478018215529,
+              0.1982998670164964,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.06549125902805462,
+              0.21012614434112703,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          }
+        },
+        "reset_contacts_raw": {
+          "non_support_penetration_mm": 4.822323423594264,
+          "pairs": [
+            {
+              "geoms": [
+                "akita_black_bowl_1_g7",
+                "plate_1_g2"
+              ],
+              "penetration_mm": 1.1176240823868846
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g7",
+                "plate_1_g3"
+              ],
+              "penetration_mm": 1.1176240823868846
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g7",
+                "plate_1_g10"
+              ],
+              "penetration_mm": 1.0060578325185516
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g7",
+                "plate_1_g10"
+              ],
+              "penetration_mm": 0.8373559023895211
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g7",
+                "plate_1_g10"
+              ],
+              "penetration_mm": 1.118753422420829
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g8",
+                "plate_1_g2"
+              ],
+              "penetration_mm": 4.822323423594264
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g8",
+                "plate_1_g2"
+              ],
+              "penetration_mm": 0.750085518992954
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g8",
+                "plate_1_g3"
+              ],
+              "penetration_mm": 4.822323423594264
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g8",
+                "plate_1_g3"
+              ],
+              "penetration_mm": 0.750085518992954
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g8",
+                "plate_1_g10"
+              ],
+              "penetration_mm": 1.2113825556775437
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g8",
+                "plate_1_g10"
+              ],
+              "penetration_mm": 2.7246961771120963
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g9",
+                "plate_1_g2"
+              ],
+              "penetration_mm": 4.788206219560835
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g9",
+                "plate_1_g2"
+              ],
+              "penetration_mm": 1.088441843540781
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g9",
+                "plate_1_g2"
+              ],
+              "penetration_mm": 1.6186336072956526
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g9",
+                "plate_1_g3"
+              ],
+              "penetration_mm": 4.788206219560835
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g9",
+                "plate_1_g3"
+              ],
+              "penetration_mm": 1.088441843540781
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g9",
+                "plate_1_g3"
+              ],
+              "penetration_mm": 1.6186336072956526
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g10",
+                "plate_1_g2"
+              ],
+              "penetration_mm": 0.44696856750253744
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g10",
+                "plate_1_g3"
+              ],
+              "penetration_mm": 0.44696856750253744
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g25",
+                "plate_1_g10"
+              ],
+              "penetration_mm": 0.9944212736085069
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g27",
+                "plate_1_g2"
+              ],
+              "penetration_mm": 0.6540634554817636
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g27",
+                "plate_1_g3"
+              ],
+              "penetration_mm": 0.6540634554817636
+            }
+          ]
+        },
+        "preparation_max_contact_penetration_mm": 4.822323423594264,
+        "settled_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              -0.0440980491062274,
+              0.18663845304211457,
+              0.9023738306210344
+            ],
+            "quaternion_wxyz": [
+              0.6672589613947713,
+              -0.06040976123705257,
+              -0.06605768378831504,
+              0.7394271577364313
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              -0.17145044165448506,
+              0.33031484032526387,
+              0.898404150188853
+            ],
+            "quaternion_wxyz": [
+              0.7071067829265478,
+              -2.7755353462611506e-05,
+              3.3351593355376637e-06,
+              0.7071067788939558
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.08101363378161137,
+              0.0286076371634656,
+              0.9093709548372153
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              5.3525801310928007e-17,
+              5.481084461859894e-17,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.211384116497526,
+              0.19830534593207522,
+              0.8993413701303519
+            ],
+            "quaternion_wxyz": [
+              0.7071067844070473,
+              -6.687274308329007e-08,
+              1.6368629656235366e-07,
+              0.7071067779660267
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.05597891609033159,
+              0.20707745983903575,
+              0.9024985231044148
+            ],
+            "quaternion_wxyz": [
+              0.7075702547880163,
+              -5.8957745583025594e-05,
+              -4.894107565504133e-05,
+              0.7066429994473716
+            ]
+          }
+        },
+        "note": "Raw contact classifier counts object-object support; diagnostic only, not an initialization acceptance gate."
+      },
+      "task_name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "bddl_sha256": "9b59eb1287802868ad9bc78d58e6d36d4ba31134e679cfdbdf4b0feb660c959b",
+      "dataset_released": false,
+      "hdf5_sha256": "0acbdbd93002087bf53e3c20958b52edeaf1b3b18598ec9db852602c9458188a"
+    },
+    {
+      "task_id": 1,
+      "seed": 57101,
+      "teacher_success": false,
+      "failure": {
+        "stage": "close",
+        "type": "PathRejected",
+        "reason": "gripper contacted non-target environment",
+        "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 172, in main\n    stage='close';ep.track(pin,R,1,stage,80)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/safe_teacher_r8.py\", line 250, in track\n    return orig_track(ep,target,R,grip,phase,steps,*args,**kw)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 150, in residual_track\n    residual_action(ep,target,R,grip,phase)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 131, in residual_action\n    ep.act(np.r_[ap,ar,grip],phase)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/n3_osc_full_chain.py\", line 442, in act\n    fr = super().act(action, self.phase)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/safe_teacher_r8.py\", line 60, in act\n    raise PathRejected('gripper contacted non-target environment')\nsafe_teacher_r8.PathRejected: gripper contacted non-target environment\n"
+      },
+      "physical_audit_pass": true,
+      "physical_errors": [],
+      "structural_pass": true,
+      "structural_errors": [],
+      "replay_pass": true,
+      "frames": 203,
+      "preparation_frames": 120,
+      "initialization": {
+        "reset_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              -0.172233227347089,
+              0.324665709921486,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              0.1160435357777802,
+              -0.0667755356981476,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.06694356087235592,
+              0.029222329920750075,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.18954007779745494,
+              0.20512835449102654,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.046283840900546255,
+              0.19268593139790588,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          }
+        },
+        "reset_contacts_raw": {
+          "non_support_penetration_mm": 0.0,
+          "pairs": []
+        },
+        "preparation_max_contact_penetration_mm": 0.0,
+        "settled_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              -0.17222477659541877,
+              0.3246288125280159,
+              0.898404150188853
+            ],
+            "quaternion_wxyz": [
+              0.7071067829265478,
+              -2.7755353462611178e-05,
+              3.335159335537938e-06,
+              0.7071067788939558
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              0.11605198652945072,
+              -0.06681243309161826,
+              0.898404150188853
+            ],
+            "quaternion_wxyz": [
+              0.7071067829265478,
+              -2.7755353462609504e-05,
+              3.3351593355388513e-06,
+              0.7071067788939558
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.06694356087235592,
+              0.029222329920750075,
+              0.9093709548372153
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              5.3355942634418123e-17,
+              5.3670126542338614e-17,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.18953941411282565,
+              0.20513383340660535,
+              0.8993413701303519
+            ],
+            "quaternion_wxyz": [
+              0.7071067844070473,
+              -6.687274308388134e-08,
+              1.6368629656122933e-07,
+              0.7071067779660267
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.04629194271469003,
+              0.19268366541325654,
+              0.9024998346667837
+            ],
+            "quaternion_wxyz": [
+              0.7071068091221642,
+              -2.6609958600394367e-05,
+              1.2067212470603679e-05,
+              0.7071067526472676
+            ]
+          }
+        },
+        "note": "Raw contact classifier counts object-object support; diagnostic only, not an initialization acceptance gate."
+      },
+      "task_name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+      "bddl_sha256": "53a7516571412a2f46a27cbf8482d3b76dbad4221858c8f6b565d506c274e61d",
+      "dataset_released": false,
+      "hdf5_sha256": "cce3ec637723c38bd6eedd20ef973f5de4f2909427069ee0822a6ebc2cfb0601"
+    },
+    {
+      "task_id": 2,
+      "seed": 57102,
+      "teacher_success": true,
+      "failure": null,
+      "physical_audit_pass": true,
+      "physical_errors": [],
+      "structural_pass": true,
+      "structural_errors": [],
+      "replay_pass": true,
+      "frames": 679,
+      "preparation_frames": 120,
+      "initialization": {
+        "reset_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              -0.07500000000000001,
+              0.008786983492946734,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              0.002271707688899994,
+              0.31092255763230775,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.0816182063377109,
+              0.01913102688503107,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.2141701943347411,
+              0.19809769041973252,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.04824050059017107,
+              0.19644237274427873,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          }
+        },
+        "reset_contacts_raw": {
+          "non_support_penetration_mm": 0.0,
+          "pairs": []
+        },
+        "preparation_max_contact_penetration_mm": 0.0,
+        "settled_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              -0.0749915492483295,
+              0.00875008609947607,
+              0.898404150188853
+            ],
+            "quaternion_wxyz": [
+              0.7071067829265478,
+              -2.7755353462611747e-05,
+              3.3351593355367858e-06,
+              0.7071067788939558
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              0.00228015844057055,
+              0.3108856602388376,
+              0.898404150188853
+            ],
+            "quaternion_wxyz": [
+              0.7071067829265478,
+              -2.7755353462611415e-05,
+              3.3351593355378573e-06,
+              0.7071067788939558
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.0816182063377109,
+              0.01913102688503107,
+              0.9093709548372153
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              5.473749230791615e-17,
+              5.115419320204962e-17,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.21416953065011182,
+              0.19810316933531133,
+              0.8993413701303519
+            ],
+            "quaternion_wxyz": [
+              0.7071067844070473,
+              -6.687274308463005e-08,
+              1.636862965621464e-07,
+              0.7071067779660267
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.04824860240431485,
+              0.1964401067596294,
+              0.9024998346667837
+            ],
+            "quaternion_wxyz": [
+              0.7071068091221642,
+              -2.6609958600396773e-05,
+              1.2067212470597375e-05,
+              0.7071067526472676
+            ]
+          }
+        },
+        "note": "Raw contact classifier counts object-object support; diagnostic only, not an initialization acceptance gate."
+      },
+      "task_name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+      "bddl_sha256": "5e19880ebc844f86b89f63b172aab0b7a89f85b6e6955891f544f0ea7d0795d5",
+      "dataset_released": false,
+      "hdf5_sha256": "91278f0345d1a7febbc156f21f618a2ad8ddafd3d7553ce424cad0c70ef75c8c"
+    },
+    {
+      "task_id": 3,
+      "seed": 57103,
+      "teacher_success": true,
+      "failure": null,
+      "physical_audit_pass": true,
+      "physical_errors": [],
+      "structural_pass": true,
+      "structural_errors": [],
+      "replay_pass": true,
+      "frames": 857,
+      "preparation_frames": 120,
+      "initialization": {
+        "reset_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              0.07284484277223834,
+              0.024756366954004745,
+              1.08
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              0.014863506211151258,
+              -0.2849997905041718,
+              1.2315200000000002
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.07284484277223834,
+              0.024756366954004745,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.19608769085637365,
+              0.19240909895353397,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.07171412883789711,
+              0.21418987330460637,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          }
+        },
+        "reset_contacts_raw": {
+          "non_support_penetration_mm": 0.0,
+          "pairs": []
+        },
+        "preparation_max_contact_penetration_mm": 0.5731880659744638,
+        "settled_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              0.07288379075053791,
+              0.024585730159844454,
+              0.9171640852094417
+            ],
+            "quaternion_wxyz": [
+              0.707106783726867,
+              -1.4898301989110688e-05,
+              1.1380760242738465e-05,
+              0.7071067783976925
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              0.014880251236346809,
+              -0.28507329973331813,
+              1.1263999683946322
+            ],
+            "quaternion_wxyz": [
+              0.7071067828641613,
+              -1.498969603468619e-07,
+              1.801355292624305e-08,
+              0.7071067795089179
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.072844804030639,
+              0.02475667580010828,
+              0.9093541286645574
+            ],
+            "quaternion_wxyz": [
+              0.707106781046642,
+              -1.4661434688298126e-05,
+              1.1352261791525856e-05,
+              0.7071067810833273
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.19608702717174437,
+              0.19241457786911279,
+              0.8993413701303519
+            ],
+            "quaternion_wxyz": [
+              0.7071067844070473,
+              -6.687274308541226e-08,
+              1.6368629656258794e-07,
+              0.7071067779660267
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.07172223065204092,
+              0.21418760731995704,
+              0.9024998346667837
+            ],
+            "quaternion_wxyz": [
+              0.7071068091221642,
+              -2.660995860039574e-05,
+              1.2067212470596035e-05,
+              0.7071067526472676
+            ]
+          }
+        },
+        "note": "Raw contact classifier counts object-object support; diagnostic only, not an initialization acceptance gate."
+      },
+      "task_name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+      "bddl_sha256": "3d4ccf070c3d9883ae0676f2d888588f98c696ddad71b7694f47c379fc99ef36",
+      "dataset_released": false,
+      "hdf5_sha256": "846aa6f6a0df988eb304245e6ba2eb6766c5e0700b9f01261827fd28b96932d7"
+    },
+    {
+      "task_id": 4,
+      "seed": 57104,
+      "teacher_success": false,
+      "failure": {
+        "stage": "planning",
+        "type": "PathRejected",
+        "reason": "no feasible native-object grasp",
+        "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 169, in main\n    plan=plan_grasp(env,a.case);SURFACE_MODE=plan.get('surface_fallback',False);pin,R=plan['pin'],plan['R'];print('GRASP',a.case,plan['strategy'],pin,'tilt',plan['tilt_deg'],'width',plan['material_width_m'],flush=True)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 107, in plan_grasp\n    return plan_grasp(env,case,True)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 108, in plan_grasp\n    S.PLAN['grasp_candidates']=candidates;raise S.PathRejected('no feasible native-object grasp')\nsafe_teacher_r8.PathRejected: no feasible native-object grasp\n"
+      },
+      "physical_audit_pass": true,
+      "physical_errors": [],
+      "structural_pass": true,
+      "structural_errors": [],
+      "replay_pass": null,
+      "frames": 0,
+      "preparation_frames": 120,
+      "initialization": {
+        "reset_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              0.08136570192567491,
+              -0.14261395161765464,
+              1.15063
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              0.04167766925379878,
+              -0.2798767307401843,
+              1.2315200000000002
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.06836013209112017,
+              0.015333790956486654,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.2068517650672457,
+              0.1929340995477103,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.046835695311023835,
+              0.2116366087706957,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          }
+        },
+        "reset_contacts_raw": {
+          "non_support_penetration_mm": 0.0,
+          "pairs": []
+        },
+        "preparation_max_contact_penetration_mm": null,
+        "settled_object_states": {},
+        "note": "Raw contact classifier counts object-object support; diagnostic only, not an initialization acceptance gate."
+      },
+      "task_name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+      "bddl_sha256": "4371189e11d9fd29bb548ab9a8adcd741bb0ce41bb66c612672d0e8cb29a52a9",
+      "dataset_released": false,
+      "hdf5_sha256": "41a07ac50e8fb57760243a21253669d1559b1c160219c3e2d559075d5ed78bd7"
+    },
+    {
+      "task_id": 5,
+      "seed": 57105,
+      "teacher_success": true,
+      "failure": null,
+      "physical_audit_pass": true,
+      "physical_errors": [],
+      "structural_pass": true,
+      "structural_errors": [],
+      "replay_pass": true,
+      "frames": 742,
+      "preparation_frames": 120,
+      "initialization": {
+        "reset_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              -0.19190434441820378,
+              0.21264080154305284,
+              1.08
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              0.05890704442023885,
+              0.02952472401504509,
+              1.08
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.05890704442023885,
+              0.02952472401504509,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.19190434441820378,
+              0.21264080154305284,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.06150853001949789,
+              0.2023159602874639,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          }
+        },
+        "reset_contacts_raw": {
+          "non_support_penetration_mm": 0.0,
+          "pairs": []
+        },
+        "preparation_max_contact_penetration_mm": 1.7066125460548667,
+        "settled_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              -0.2065013950592654,
+              0.21306587559591209,
+              0.9344016991109253
+            ],
+            "quaternion_wxyz": [
+              0.7222114850729957,
+              0.100468401189859,
+              0.09564843379759311,
+              0.6776193978208408
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              0.058945992398556066,
+              0.029354087220884794,
+              0.9171640852094417
+            ],
+            "quaternion_wxyz": [
+              0.707106783726867,
+              -1.4898301989018843e-05,
+              1.1380760242832889e-05,
+              0.7071067783976925
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.05890700567863952,
+              0.02952503286114862,
+              0.9093541286645574
+            ],
+            "quaternion_wxyz": [
+              0.707106781046642,
+              -1.4661434688233273e-05,
+              1.1352261791594078e-05,
+              0.7071067810833273
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.19198468728579898,
+              0.2125382828227966,
+              0.8993393633891177
+            ],
+            "quaternion_wxyz": [
+              0.7086279640036022,
+              -1.285432154149898e-05,
+              -4.0358673505762925e-06,
+              0.705582318691864
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.061516631833641665,
+              0.20231369430281457,
+              0.9024998346667837
+            ],
+            "quaternion_wxyz": [
+              0.7071068091221642,
+              -2.660995860039657e-05,
+              1.2067212470598197e-05,
+              0.7071067526472676
+            ]
+          }
+        },
+        "note": "Raw contact classifier counts object-object support; diagnostic only, not an initialization acceptance gate."
+      },
+      "task_name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+      "bddl_sha256": "10239815a9d18ad53e09365d453a362ee54d29ca276e04eef411cf1db8d72940",
+      "dataset_released": false,
+      "hdf5_sha256": "7770293e669cc2f33da7cf25693abdb5097f28b557a2dbd8cc67b6ccc045c2d6"
+    },
+    {
+      "task_id": 6,
+      "seed": 57106,
+      "teacher_success": true,
+      "failure": null,
+      "physical_audit_pass": true,
+      "physical_errors": [],
+      "structural_pass": true,
+      "structural_errors": [],
+      "replay_pass": true,
+      "frames": 696,
+      "preparation_frames": 120,
+      "initialization": {
+        "reset_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              0.11720942038493207,
+              -0.08108302411680796,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              -0.2515403147631904,
+              -0.14950377136218632,
+              1.01
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.06601206540462098,
+              0.01862152195620292,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.1949979494459107,
+              0.1874849902619566,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.06094485727723599,
+              0.20948263980005327,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          }
+        },
+        "reset_contacts_raw": {
+          "non_support_penetration_mm": 0.0,
+          "pairs": []
+        },
+        "preparation_max_contact_penetration_mm": 0.0,
+        "settled_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              0.11721787113660258,
+              -0.08111992151027861,
+              0.898404150188853
+            ],
+            "quaternion_wxyz": [
+              0.7071067829265478,
+              -2.7755353462610022e-05,
+              3.3351593355382084e-06,
+              0.7071067788939558
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              -0.2515374437543757,
+              -0.14955104557812926,
+              0.9289041501888531
+            ],
+            "quaternion_wxyz": [
+              0.7071064488152593,
+              -2.7755355038499808e-05,
+              3.3351462210294114e-06,
+              0.7071071130050889
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.06601206540462098,
+              0.01862152195620292,
+              0.9093709548372153
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              5.324971182635006e-17,
+              5.435258757551333e-17,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.19499728576128142,
+              0.18749046917753542,
+              0.8993413701303519
+            ],
+            "quaternion_wxyz": [
+              0.7071067844070473,
+              -6.687274308525039e-08,
+              1.6368629656249766e-07,
+              0.7071067779660267
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.060952959091379766,
+              0.20948037381540394,
+              0.9024998346667837
+            ],
+            "quaternion_wxyz": [
+              0.7071068091221642,
+              -2.6609958600396512e-05,
+              1.2067212470590584e-05,
+              0.7071067526472676
+            ]
+          }
+        },
+        "note": "Raw contact classifier counts object-object support; diagnostic only, not an initialization acceptance gate."
+      },
+      "task_name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+      "bddl_sha256": "566c65596f3472e752e6522817bff51bbf3ce5159d7bec1d3554e5ead46b1e55",
+      "dataset_released": false,
+      "hdf5_sha256": "b4cdeffa7b03475da354b6170e0eb97400896b0d51deab95d7e03955340ad2e2"
+    },
+    {
+      "task_id": 7,
+      "seed": 57107,
+      "teacher_success": false,
+      "failure": null,
+      "physical_audit_pass": true,
+      "physical_errors": [],
+      "structural_pass": true,
+      "structural_errors": [],
+      "replay_pass": true,
+      "frames": 735,
+      "preparation_frames": 120,
+      "initialization": {
+        "reset_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              -0.24773569185572616,
+              -0.13711978701473748,
+              1.01
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              0.0467563569964939,
+              -0.30555142504397664,
+              1.2315200000000002
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.07933916988933457,
+              0.01667038882877503,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.1869104835514546,
+              0.18517894142785313,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.07316467920073699,
+              0.1990376702025619,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          }
+        },
+        "reset_contacts_raw": {
+          "non_support_penetration_mm": 0.0,
+          "pairs": []
+        },
+        "preparation_max_contact_penetration_mm": 0.0,
+        "settled_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              -0.24773282084683249,
+              -0.13716706123081743,
+              0.9289041501888531
+            ],
+            "quaternion_wxyz": [
+              0.7071064488139662,
+              -2.7755355038461163e-05,
+              3.3351462210030433e-06,
+              0.7071071130063816
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              0.04677310202168949,
+              -0.305624934273123,
+              1.1263999683946322
+            ],
+            "quaternion_wxyz": [
+              0.7071067828641613,
+              -1.4989696034613993e-07,
+              1.801355292614343e-08,
+              0.7071067795089179
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.07933916988933457,
+              0.01667038882877503,
+              0.9093709548372153
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              5.419965749942861e-17,
+              5.359147271898829e-17,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.1869098198668253,
+              0.18518442034343194,
+              0.8993413701303519
+            ],
+            "quaternion_wxyz": [
+              0.7071067844070473,
+              -6.687274308332304e-08,
+              1.6368629656244334e-07,
+              0.7071067779660267
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.0731727810148808,
+              0.19903540421791258,
+              0.9024998346667837
+            ],
+            "quaternion_wxyz": [
+              0.7071068091221642,
+              -2.6609958600396817e-05,
+              1.2067212470593858e-05,
+              0.7071067526472676
+            ]
+          }
+        },
+        "note": "Raw contact classifier counts object-object support; diagnostic only, not an initialization acceptance gate."
+      },
+      "task_name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+      "bddl_sha256": "dd11837141a30d874ebbbfaae20e91ecc67ec85ab3872ceb4cff3abfcbef7cb0",
+      "dataset_released": false,
+      "hdf5_sha256": "db6aee815da92b3e64a6627071d23ee7e3adf58a493dbc0d9c1510b0f6ba5aac"
+    },
+    {
+      "task_id": 8,
+      "seed": 57108,
+      "teacher_success": true,
+      "failure": null,
+      "physical_audit_pass": true,
+      "physical_errors": [],
+      "structural_pass": true,
+      "structural_errors": [],
+      "replay_pass": true,
+      "frames": 783,
+      "preparation_frames": 120,
+      "initialization": {
+        "reset_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              0.005908764519296294,
+              0.29667669658678775,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              -0.1748584141221541,
+              0.33217667416119195,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.06313185093990137,
+              0.0424821730364621,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.20702271700450361,
+              0.18861619622530362,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.04970519023094727,
+              0.1995018215135601,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          }
+        },
+        "reset_contacts_raw": {
+          "non_support_penetration_mm": 4.578303329737796,
+          "pairs": [
+            {
+              "geoms": [
+                "akita_black_bowl_1_g5",
+                "plate_1_g4"
+              ],
+              "penetration_mm": 0.4984292975660741
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g5",
+                "plate_1_g4"
+              ],
+              "penetration_mm": 3.0029717052504084
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g5",
+                "plate_1_g5"
+              ],
+              "penetration_mm": 2.181633214861566
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g6",
+                "plate_1_g4"
+              ],
+              "penetration_mm": 3.2812703387675137
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g6",
+                "plate_1_g4"
+              ],
+              "penetration_mm": 3.640652517239505
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g6",
+                "plate_1_g4"
+              ],
+              "penetration_mm": 2.6420081231490413
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g6",
+                "plate_1_g5"
+              ],
+              "penetration_mm": 0.49786652850926666
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g6",
+                "plate_1_g5"
+              ],
+              "penetration_mm": 4.578303329737796
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g6",
+                "plate_1_g5"
+              ],
+              "penetration_mm": 1.5559306164159021
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g21",
+                "plate_1_g4"
+              ],
+              "penetration_mm": 0.8364969148857242
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g21",
+                "plate_1_g4"
+              ],
+              "penetration_mm": 0.3824473208666717
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g21",
+                "plate_1_g4"
+              ],
+              "penetration_mm": 0.4408438106251669
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g22",
+                "plate_1_g4"
+              ],
+              "penetration_mm": 0.8379393828125804
+            },
+            {
+              "geoms": [
+                "akita_black_bowl_1_g23",
+                "plate_1_g5"
+              ],
+              "penetration_mm": 0.29849412400269526
+            }
+          ]
+        },
+        "preparation_max_contact_penetration_mm": 4.578303329737796,
+        "settled_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              0.02280971995311157,
+              0.3625912900966694,
+              0.898404150188853
+            ],
+            "quaternion_wxyz": [
+              0.6490408040515477,
+              -2.793207682093523e-05,
+              1.1322623804671648e-06,
+              0.7607535960444988
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              -0.17484996337048386,
+              0.33213977676772183,
+              0.898404150188853
+            ],
+            "quaternion_wxyz": [
+              0.7071067829265478,
+              -2.7755353462610947e-05,
+              3.3351593355382007e-06,
+              0.7071067788939558
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.06313185093990137,
+              0.0424821730364621,
+              0.9093709548372153
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              5.36258404629431e-17,
+              5.319888898488713e-17,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.20702205331987433,
+              0.18862167514088243,
+              0.8993413701303519
+            ],
+            "quaternion_wxyz": [
+              0.7071067844070473,
+              -6.687274308464424e-08,
+              1.636862965626891e-07,
+              0.7071067779660267
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.045826062261534274,
+              0.17644894782556034,
+              0.9024998346667839
+            ],
+            "quaternion_wxyz": [
+              0.6615900501876937,
+              -2.7311307623922517e-05,
+              1.0382677371468034e-05,
+              0.7498657244060015
+            ]
+          }
+        },
+        "note": "Raw contact classifier counts object-object support; diagnostic only, not an initialization acceptance gate."
+      },
+      "task_name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+      "bddl_sha256": "c8fbb9effa27b947d04d26862d75273d93cac1806734e53836cd472a08aec1fe",
+      "dataset_released": false,
+      "hdf5_sha256": "5a90f086940dc367fc29ad9e9e0821534399cf1934651e0f181956400cdb955d"
+    },
+    {
+      "task_id": 9,
+      "seed": 57109,
+      "teacher_success": false,
+      "failure": {
+        "stage": "planning",
+        "type": "PathRejected",
+        "reason": "no feasible native-object grasp",
+        "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 169, in main\n    plan=plan_grasp(env,a.case);SURFACE_MODE=plan.get('surface_fallback',False);pin,R=plan['pin'],plan['R'];print('GRASP',a.case,plan['strategy'],pin,'tilt',plan['tilt_deg'],'width',plan['material_width_m'],flush=True)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 107, in plan_grasp\n    return plan_grasp(env,case,True)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 108, in plan_grasp\n    S.PLAN['grasp_candidates']=candidates;raise S.PathRejected('no feasible native-object grasp')\nsafe_teacher_r8.PathRejected: no feasible native-object grasp\n"
+      },
+      "physical_audit_pass": true,
+      "physical_errors": [],
+      "structural_pass": true,
+      "structural_errors": [],
+      "replay_pass": null,
+      "frames": 0,
+      "preparation_frames": 120,
+      "initialization": {
+        "reset_object_states": {
+          "akita_black_bowl_1": {
+            "position": [
+              0.03196509800397433,
+              -0.28196346050062066,
+              1.2315200000000002
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "akita_black_bowl_2": {
+            "position": [
+              -0.25024862189657926,
+              -0.13824865815999632,
+              1.01
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "cookies_1": {
+            "position": [
+              0.06647827802939434,
+              0.03766690633396081,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "glazed_rim_porcelain_ramekin_1": {
+            "position": [
+              -0.193571971356277,
+              0.1873028244385797,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          },
+          "plate_1": {
+            "position": [
+              0.045229240960219776,
+              0.18677561459154432,
+              0.97
+            ],
+            "quaternion_wxyz": [
+              0.7071067811865476,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ]
+          }
+        },
+        "reset_contacts_raw": {
+          "non_support_penetration_mm": 0.0,
+          "pairs": []
+        },
+        "preparation_max_contact_penetration_mm": null,
+        "settled_object_states": {},
+        "note": "Raw contact classifier counts object-object support; diagnostic only, not an initialization acceptance gate."
+      },
+      "task_name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+      "bddl_sha256": "5293e759381b477e126beaf83d738542bbd4d93f522a3eead1066e612bad4a8c",
+      "dataset_released": false,
+      "hdf5_sha256": "1bda84bfaa7d17a98752ffbbcccba93348b481882f9a71a58ba2a7960fc3cd72"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-t3-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t3_20261007_r1/gptq_infer_r2_source/infer.py",
+    "--out",
+    "/work/runs/trt_t3_20261007_r1/gptq_infer_r2",
+    "--bundle",
+    "/work/runs/trt_t3_20261007_r1/bundles/gptq.json",
+    "--pilot",
+    "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/pilot.json"
+  ],
+  "exit_code": 0,
+  "seconds": 31.738905906677246
+}

@@ -9,13 +9,6 @@
 FROM nvidia/cuda:12.2.2-cudnn8-runtime-ubuntu22.04@sha256:2d913b09e6be8387e1a10976933642c73c840c0b735f0bf3c28d97fc9bc422e0
 COPY --from=ghcr.io/astral-sh/uv:0.5.1 /uv /uvx /bin/
 
-RUN set -eux; \
-    for f in /etc/apt/sources.list /etc/apt/sources.list.d/ubuntu.sources; do \
-      if [ -f "$f" ]; then \
-        sed -i -E 's@https?://([a-z0-9.-]+\.)?archive\.ubuntu\.com@https://mirrors.aliyun.com@g; s@https?://security\.ubuntu\.com@https://mirrors.aliyun.com@g' "$f"; \
-      fi; \
-    done
-
 RUN apt-get update && \
     apt-get install -y \
     make \
@@ -47,19 +40,10 @@ ENV UV_PROJECT_ENVIRONMENT=/.venv
 COPY ./examples/libero/requirements.txt /tmp/requirements.txt
 COPY ./third_party/libero/requirements.txt /tmp/requirements-libero.txt
 COPY ./packages/openpi-client/pyproject.toml /tmp/openpi-client/pyproject.toml
-COPY ./examples/libero/build-constraints.txt /tmp/build-constraints.txt
 
 # Install python dependencies.
 RUN uv venv --python 3.8 $UV_PROJECT_ENVIRONMENT
-# [server-local] third_party/libero 里 robosuite 未固定版本，显式钉到 1.4.1（与 examples 侧一致）
-RUN sed -i -E 's/^[[:space:]]*robosuite[[:space:]]*$/robosuite==1.4.1/' /tmp/requirements-libero.txt && grep -n robosuite /tmp/requirements-libero.txt
-# [server-local] 加 uv 缓存挂载 + 构建期 setuptools 约束，避免重试时重复下载 ~2.5GB 轮子
-RUN --mount=type=cache,target=/root/.cache/uv \
-    uv pip sync /tmp/requirements.txt /tmp/requirements-libero.txt /tmp/openpi-client/pyproject.toml \
-    --index-url https://pypi.tuna.tsinghua.edu.cn/simple \
-    --extra-index-url https://download.pytorch.org/whl/cu113 \
-    --index-strategy=unsafe-best-match \
-    --build-constraint /tmp/build-constraints.txt
+RUN uv pip sync /tmp/requirements.txt /tmp/requirements-libero.txt /tmp/openpi-client/pyproject.toml --extra-index-url https://download.pytorch.org/whl/cu113 --index-strategy=unsafe-best-match
 ENV PYTHONPATH=/app:/app/packages/openpi-client/src:/app/third_party/libero
 
 # Create a default config file to avoid an input prompt from LIBERO's init script.

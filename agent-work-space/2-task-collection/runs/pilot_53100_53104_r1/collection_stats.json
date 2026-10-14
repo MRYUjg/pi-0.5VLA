@@ -1,0 +1,88 @@
+{
+  "episodes": [
+    {
+      "seed": 53100,
+      "success": true,
+      "frames": 576,
+      "size_bytes": 120040714,
+      "wall_seconds": 221.1094353199005,
+      "target_center_m": [
+        -0.11896929775382892,
+        -0.24346118474194012,
+        0.038090142815922934
+      ],
+      "max_step_mm": 7.038371304278227,
+      "action_delta_max": 2.0,
+      "reset_qpos_sha256": "2c5c1ed52ee76937283031bdf054eb9378ec173b0dff1dcbb61358c7251dea0f"
+    },
+    {
+      "seed": 53101,
+      "success": true,
+      "frames": 574,
+      "size_bytes": 119697845,
+      "wall_seconds": 220.38796186447144,
+      "target_center_m": [
+        -0.11896929775382892,
+        -0.24346118474194012,
+        0.03809014281592294
+      ],
+      "max_step_mm": 7.038393390684196,
+      "action_delta_max": 2.0,
+      "reset_qpos_sha256": "c0155992724cb6465936685c80ea9ff1c446fa17b53d65b0625135d1ed6659bc"
+    },
+    {
+      "seed": 53102,
+      "success": true,
+      "frames": 576,
+      "size_bytes": 120076778,
+      "wall_seconds": 220.80391669273376,
+      "target_center_m": [
+        -0.11896929775382892,
+        -0.24346118474194012,
+        0.0380901428159229
+      ],
+      "max_step_mm": 7.0383748253483605,
+      "action_delta_max": 2.0,
+      "reset_qpos_sha256": "3b2e2d0bec94f4cf4edbec4a94e9abaa0bc7e739456b550ffc0388c8777f9801"
+    },
+    {
+      "seed": 53103,
+      "success": true,
+      "frames": 580,
+      "size_bytes": 120923900,
+      "wall_seconds": 220.71501684188843,
+      "target_center_m": [
+        -0.11896929775382892,
+        -0.24346118474194012,
+        0.038090142815922934
+      ],
+      "max_step_mm": 7.038368742808735,
+      "action_delta_max": 2.0,
+      "reset_qpos_sha256": "f03371bf837eb310bf02cff07232336834a46ccc8fa261f415087357c510172f"
+    },
+    {
+      "seed": 53104,
+      "success": true,
+      "frames": 575,
+      "size_bytes": 119876573,
+      "wall_seconds": 211.80036640167236,
+      "target_center_m": [
+        -0.11896929775382892,
+        -0.24346118474194017,
+        0.0380901428159229
+      ],
+      "max_step_mm": 7.038391825571723,
+      "action_delta_max": 2.0,
+      "reset_qpos_sha256": "9beb7b11273857371a54e82cdda5a333beb8854b166403b503d6945eb3abae7a"
+    }
+  ],
+  "total_transitions": 2881,
+  "total_observations": 2886,
+  "raw_h5_bytes": 600615810,
+  "target_centers_at_1mm": 1,
+  "target_center_range_mm": [
+    0.0,
+    5.551115123125783e-14,
+    4.163336342344337e-14
+  ]
+}

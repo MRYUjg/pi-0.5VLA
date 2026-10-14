@@ -1,0 +1,12 @@
+{
+  "algorithm": "GPTQ",
+  "stage": "action_step",
+  "source_ONNX_sha256": "5963b70eb8f415dfaed46d767777d506bc055906e289d60c58f8ef4590e05842",
+  "source_INT4_initializers": 167,
+  "TensorRT": "10.13.3.9",
+  "strongly_typed": true,
+  "TF32": false,
+  "workspace_bytes": 2147483648,
+  "builder_optimization_level": 3,
+  "hardware_compatibility": "NONE"
+}

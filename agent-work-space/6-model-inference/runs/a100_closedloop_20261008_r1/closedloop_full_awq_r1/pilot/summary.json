@@ -1,0 +1,15 @@
+{
+  "variant": "full_awq",
+  "device": "A100",
+  "observations": 128,
+  "warmup": 20,
+  "all_finite": true,
+  "repeat_internal_max_abs": 0.0,
+  "repeat_passed": true,
+  "round_trip_ms": {
+    "p50": 104.61121499974979,
+    "p99": 106.76258683179185
+  },
+  "calibration_related_not_generalization_test": true,
+  "1000_request_or_two_hour_claim": false
+}

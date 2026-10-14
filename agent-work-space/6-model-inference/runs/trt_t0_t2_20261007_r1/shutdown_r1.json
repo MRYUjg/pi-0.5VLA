@@ -1,0 +1,22 @@
+{
+  "container": "pi05-trt-t0t2-20261007-r1",
+  "runtime_image_saved": "pi05_trt:20261007-r1",
+  "teacher_stopped_before_freeze": true,
+  "remaining_workload_before_stop": "PID                 PPID                COMMAND\n27931               27899               sleep infinity\n",
+  "docker_stop_result": "pi05-trt-t0t2-20261007-r1",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 137,
+    "Error": "",
+    "StartedAt": "2026-10-07T05:06:00.666673007Z",
+    "FinishedAt": "2026-10-07T06:28:29.063606305Z"
+  },
+  "GPU_after_stop": "NVIDIA GeForce RTX 4090, 13 MiB, 49140 MiB",
+  "only_own_container_stopped": true
+}

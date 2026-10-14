@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/work/versions/trt_t0_t2_20261007_r1/t1.py\", line 96, in <module>\n    main(a.out,a.reference)\n  File \"/work/versions/trt_t0_t2_20261007_r1/t1.py\", line 38, in main\n    torch.onnx.export(module, args, str(path), opset_version=21, dynamo=False,\n  File \"/.venv/lib/python3.11/site-packages/torch/onnx/__init__.py\", line 396, in export\n    export(\n  File \"/.venv/lib/python3.11/site-packages/torch/onnx/utils.py\", line 529, in export\n    _export(\n  File \"/.venv/lib/python3.11/site-packages/torch/onnx/utils.py\", line 1430, in _export\n    GLOBALS.export_onnx_opset_version = opset_version\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/.venv/lib/python3.11/site-packages/torch/onnx/_globals.py\", line 61, in export_onnx_opset_version\n    raise ValueError(f\"Unsupported ONNX opset version: {value}\")\nValueError: Unsupported ONNX opset version: 21\n"
+}

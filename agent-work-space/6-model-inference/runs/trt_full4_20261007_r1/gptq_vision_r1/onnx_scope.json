@@ -1,0 +1,3924 @@
+{
+  "stage": "vision",
+  "nodes": [
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.0.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.0/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.0.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.0/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.0.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.0/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.0.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.0/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.0.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.0/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.0.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.0.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.0/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.1.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.1/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.1.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.1/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.1.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.1/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.1.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.1/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.1.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.1/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.1.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.1.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.1/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.2.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.2/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.2.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.2/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.2.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.2/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.2.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.2/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.2.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.2/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.2.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.2.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.2/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.3.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.3/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.3.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.3/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.3.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.3/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.3.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.3/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.3.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.3/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.3.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.3.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.3/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.4.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.4/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.4.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.4/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.4.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.4/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.4.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.4/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.4.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.4/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.4.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.4.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.4/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.5.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.5/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.5.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.5/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.5.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.5/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.5.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.5/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.5.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.5/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.5.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.5.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.5/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.6.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.6/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.6.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.6/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.6.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.6/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.6.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.6/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.6.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.6/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.6.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.6.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.6/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.7.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.7/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.7.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.7/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.7.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.7/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.7.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.7/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.7.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.7/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.7.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.7.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.7/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.8.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.8/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.8.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.8/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.8.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.8/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.8.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.8/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.8.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.8/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.8.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.8.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.8/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.9.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.9/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.9.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.9/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.9.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.9/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.9.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.9/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.9.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.9/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.9.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.9.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.9/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.10.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.10/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.10.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.10/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.10.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.10/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.10.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.10/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.10.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.10/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.10.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.10.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.10/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.11.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.11/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.11.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.11/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.11.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.11/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.11.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.11/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.11.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.11/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.11.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.11.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.11/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.12.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.12/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.12.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.12/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.12.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.12/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.12.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.12/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.12.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.12/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.12.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.12.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.12/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.13.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.13/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.13.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.13/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.13.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.13/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.13.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.13/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.13.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.13/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.13.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.13.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.13/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.14.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.14/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.14.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.14/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.14.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.14/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.14.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.14/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.14.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.14/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.14.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.14.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.14/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.15.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.15/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.15.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.15/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.15.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.15/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.15.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.15/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.15.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.15/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.15.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.15.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.15/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.16.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.16/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.16.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.16/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.16.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.16/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.16.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.16/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.16.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.16/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.16.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.16.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.16/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.17.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.17/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.17.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.17/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.17.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.17/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.17.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.17/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.17.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.17/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.17.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.17.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.17/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.18.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.18/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.18.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.18/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.18.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.18/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.18.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.18/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.18.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.18/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.18.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.18.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.18/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.19.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.19/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.19.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.19/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.19.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.19/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.19.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.19/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.19.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.19/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.19.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.19.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.19/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.20.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.20/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.20.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.20/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.20.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.20/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.20.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.20/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.20.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.20/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.20.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.20.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.20/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.21.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.21/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.21.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.21/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.21.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.21/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.21.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.21/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.21.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.21/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.21.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.21.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.21/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.22.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.22/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.22.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.22/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.22.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.22/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.22.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.22/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.22.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.22/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.22.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.22.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.22/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.23.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.23/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.23.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.23/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.23.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.23/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.23.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.23/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.23.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.23/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.23.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.23.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.23/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.24.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.24/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.24.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.24/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.24.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.24/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.24.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.24/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.24.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.24/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.24.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.24.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.24/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.25.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.25/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.25.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.25/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.25.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.25/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.25.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.25/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.25.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.25/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.25.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.25.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.25/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.self_attn.q_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.26.self_attn.q_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.26/self_attn/q_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.self_attn.k_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.26.self_attn.k_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.26/self_attn/k_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.self_attn.v_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.26.self_attn.v_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.26/self_attn/v_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.self_attn.out_proj",
+      "weight": "vision_tower.vision_model.encoder.layers.26.self_attn.out_proj.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.26/self_attn/out_proj/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        1152
+      ],
+      "scale_shape": [
+        9,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.mlp.fc1",
+      "weight": "vision_tower.vision_model.encoder.layers.26.mlp.fc1.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.26/mlp/fc1/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        4304,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        4304
+      ],
+      "scale_shape": [
+        9,
+        4304
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "vision_tower.vision_model.encoder.layers.26.mlp.fc2",
+      "weight": "vision_tower.vision_model.encoder.layers.26.mlp.fc2.weight",
+      "matmul": "/vision_tower/vision_model/encoder/layers.26/mlp/fc2/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        1152,
+        4304
+      ],
+      "INT4_shape": [
+        4352,
+        1152
+      ],
+      "scale_shape": [
+        34,
+        1152
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 48,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    },
+    {
+      "module": "projector.linear",
+      "weight": "projector.linear.weight",
+      "matmul": "/projector/linear/MatMul",
+      "op": "MatMul",
+      "original_shape": [
+        2048,
+        1152
+      ],
+      "INT4_shape": [
+        1152,
+        2048
+      ],
+      "scale_shape": [
+        9,
+        2048
+      ],
+      "axis": 0,
+      "block_size": 128,
+      "padded_input_channels": 0,
+      "input_rank": 3,
+      "scale_dtype": "torch.bfloat16",
+      "algorithm": "GPTQ"
+    }
+  ],
+  "target_reachable_Linear": 163,
+  "INT4_initializers": 163,
+  "all_target_Linear_weights_quantized": true,
+  "zero_padding_preserves_original_external_interface_and_float_Linear_algebra": true,
+  "float_source_Linear_weights_removed": true,
+  "source_ONNX_sha256": "2259deba622089caf6ebfa478f77bdf5f93a051f603df25ab44b5a49c62ffc4e",
+  "exported_ONNX_sha256": "1c6edc863a90595f78d1f67ceefb36b7683056371adc52d39fbdfd83bb93ee09"
+}

@@ -1,0 +1,72 @@
+{
+  "verified_at": "2026-10-08T00:11:36.170275+08:00",
+  "finished_at": "2026-10-07T23:45:21.311765+08:00",
+  "training_run": "spatial_lora_20261007_r1",
+  "pipeline": "pipeline_20261007_r3",
+  "completed_steps": 10000,
+  "all_observed_training_metrics_finite": true,
+  "phase_exit_codes": {
+    "prepare": 0,
+    "smoke": 0,
+    "train": 0,
+    "reload": 0
+  },
+  "phase_duration_seconds": {
+    "prepare": 79.12361097335815,
+    "smoke": 466.76012897491455,
+    "train": 7363.992965698242,
+    "reload": 199.80250144004822
+  },
+  "selected_checkpoint": {
+    "step": 10000,
+    "validation_task_balanced_loss": 0.020352864245139376
+  },
+  "baseline_validation_loss": 0.30261684960020435,
+  "validation_loss_by_checkpoint": {
+    "2000": 0.037669540212992285,
+    "4000": 0.029659851719888615,
+    "6000": 0.025129032813702427,
+    "8000": 0.021540305964547788,
+    "10000": 0.020352864245139376
+  },
+  "selected_validation_per_task": {
+    "0": 0.026276660876517,
+    "2": 0.01902126727821139,
+    "3": 0.00978316383255636,
+    "5": 0.03354416440024579,
+    "6": 0.013139064838166329
+  },
+  "changed_lora_leaves_by_checkpoint": {
+    "2000": 20,
+    "4000": 20,
+    "6000": 20,
+    "8000": 20,
+    "10000": 20
+  },
+  "non_lora_hashes_unchanged_at_every_checkpoint": true,
+  "reload": {
+    "pass": true,
+    "independent_process": true,
+    "all_restored_parameter_bytes_equal": true,
+    "fixed_noise_prediction_max_error": 0.0,
+    "prediction_shape": [
+      1,
+      10,
+      32
+    ],
+    "restored_step": 10000,
+    "resume_test_step": 10001,
+    "resume_metrics": {
+      "grad_norm": 0.10015750676393509,
+      "loss": 0.020416267216205597,
+      "param_norm": 1833.8109130859375
+    },
+    "resume_test_saved_over_original": false,
+    "scope": "checkpoint mechanics; closed-loop policy performance evaluated separately"
+  },
+  "training_source_hashes_unchanged": true,
+  "frozen_file_hashes_verified": 143,
+  "checkpoint_path": "/mnt/data/vla-policy/openpi/agent-work-space/5-final-train/runs/spatial_lora_20261007_r1/checkpoint/10000",
+  "closed_loop_policy_evaluation_complete": false,
+  "adaptation_success_rate": null
+}

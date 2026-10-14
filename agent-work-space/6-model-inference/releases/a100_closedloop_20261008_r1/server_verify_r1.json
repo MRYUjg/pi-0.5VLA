@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "manifest_sha256": "68e55030753fd346559c69351f9d820fbee5133e25d350490ab256cc2a3a3cd3",
+  "current_files_verified": 1332,
+  "used_inherited_files_verified": 328,
+  "all_current_files_readonly": true,
+  "chmod_command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "-v",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/a100_closedloop_20261008_r1:/freeze:rw",
+    "--entrypoint",
+    "/.venv/bin/python",
+    "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+    "-c",
+    "import pathlib; [p.chmod(0o444) for p in pathlib.Path('/freeze').rglob('*') if p.is_file()]"
+  ],
+  "chmod_exit_code": 0,
+  "elapsed_seconds": 42.17967424199742,
+  "method": "Each file receives one complete SHA256 content read; stable inode/size/mtime checks permit reuse within this verification process. No claim of a second independent content read.",
+  "historical_unused_dependencies_rehashed": false,
+  "evidence_freeze_is_not_deployment_acceptance": true
+}

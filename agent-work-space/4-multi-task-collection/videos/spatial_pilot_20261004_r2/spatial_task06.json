@@ -1,0 +1,38 @@
+{
+  "episode": "/app/agent-work-space/4-multi-task-collection/runs/spatial_pilot_20261004_r1/task06_s57106",
+  "video": "/app/agent-work-space/4-multi-task-collection/videos/spatial_pilot_20261004_r2/spatial_task06.mp4",
+  "label": "LIBERO Spatial task06 / ECO65 + ZhiXing",
+  "status": "TEACHER PASS / DEVELOPMENT ONLY",
+  "teacher_success": true,
+  "physical_audit_pass": true,
+  "replay_pass": true,
+  "replay_source": "/app/agent-work-space/4-multi-task-collection/runs/spatial_replay_20261004_r1/task06.json",
+  "failure": null,
+  "frames": 817,
+  "decoded_frames": 817,
+  "fps": 20,
+  "duration_seconds": 40.85,
+  "size": [
+    512,
+    384
+  ],
+  "video_sha256": "959a05ee8f9f359c282cd6822ef04c95411eb4600066952723667f78482a39c6",
+  "hdf5_sha256": "b4cdeffa7b03475da354b6170e0eb97400896b0d51deab95d7e03955340ad2e2",
+  "metadata": {
+    "ffmpeg_version": "4.2.2-static https://johnvansickle.com/ffmpeg/ built with gcc 8 (Debian 8.3.0-6)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p",
+    "fps": 20.0,
+    "source_size": [
+      512,
+      384
+    ],
+    "size": [
+      512,
+      384
+    ],
+    "rotate": 0,
+    "duration": 40.85
+  },
+  "includes_preparation": true
+}

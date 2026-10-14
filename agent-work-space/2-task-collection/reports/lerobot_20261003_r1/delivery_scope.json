@@ -1,0 +1,16 @@
+{
+  "request": "LeRobot conversion validation only; no training; CPU server",
+  "source": "coverage_train_val_r1",
+  "source_episodes": 12,
+  "expected_train_episodes": 9,
+  "expected_validation_episodes": 3,
+  "expected_actions": 6947,
+  "excluded_reserved_test_seeds": [
+    55300,
+    55301,
+    55302
+  ],
+  "expected_data_format": "LeRobot v2.1",
+  "expected_lerobot_commit": "0cf864870cf29f4738d3ade893e6fd13fbd7cdb5",
+  "full_openpi_training_pipeline_tested": false
+}

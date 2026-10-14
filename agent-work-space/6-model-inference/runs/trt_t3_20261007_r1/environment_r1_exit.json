@@ -1,0 +1,13 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-t3-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t3_20261007_r1/environment_r1_source/capture_environment.py",
+    "--out",
+    "/work/runs/trt_t3_20261007_r1/environment_r1"
+  ],
+  "exit_code": 0,
+  "seconds": 2.152799129486084
+}

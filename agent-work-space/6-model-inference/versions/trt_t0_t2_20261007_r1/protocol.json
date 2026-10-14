@@ -1,0 +1,137 @@
+{
+  "version": "trt_t0_t2_20261007_r1",
+  "status": "files_frozen_with_failed_quality_gates",
+  "authorization": "2026-10-07 user explicitly requested implementation of T0, T1, T2",
+  "authorized_stages": [
+    "T0",
+    "T1",
+    "T2"
+  ],
+  "frozen_plan": "w4_plan_20261007_r4",
+  "frozen_plan_manifest_sha256": "b2d47a077017110825fcaafc6e454876f32ffcbc784eec62100a85732bbba745",
+  "target": {
+    "gpu": "RTX 4070",
+    "hard_budget_bytes": 8000000000,
+    "actual_device_validation_stage": "T5"
+  },
+  "development": {
+    "gpu": "RTX 4090",
+    "driver": "535.129.03",
+    "TensorRT": "10.13.3.9",
+    "ModelOpt": "0.33.1",
+    "ONNX": "1.19.0",
+    "opset": 21
+  },
+  "source_sha256": "69ee787ec12921613feabf69b01348628b3d6327a8865cbc02ecb9be788d9258",
+  "scope": {
+    "source_eligible_language_linear": 126,
+    "reachable_prefix_linear": 121,
+    "excluded_by_reachability": [
+      "layer17.q_proj",
+      "layer17.o_proj",
+      "layer17.gate_proj",
+      "layer17.up_proj",
+      "layer17.down_proj"
+    ],
+    "reason": "Last-layer attention/MLP outputs do not influence any returned prefix K/V",
+    "vision": "float",
+    "action_expert": "float"
+  },
+  "codec": {
+    "signed_range": [
+      -8,
+      7
+    ],
+    "zero_point": 0,
+    "symmetric": true,
+    "group_size": 128,
+    "scale_dtype": "bfloat16",
+    "input_multiplier_dtype": "bfloat16",
+    "rounding": "nearest_even",
+    "layout": "ONNX MatMul weight [K,N], DQ axis=0, scales [K/128,N]",
+    "packing": "even index low nibble, odd index high nibble",
+    "post_export_requantization": false
+  },
+  "algorithms": {
+    "main": "NVIDIA ModelOpt awq_lite",
+    "comparison": "controlled Linear GPTQ with 1% Hessian diagonal damping",
+    "baseline": "RTN"
+  },
+  "calibration": {
+    "robot": "Panda",
+    "gripper": "PandaGripper",
+    "tasks": 10,
+    "raw_per_task_min": 256,
+    "expanded_per_task": 200,
+    "expanded_total": 2000,
+    "pilot_total": 128,
+    "observation_stride_steps": 2,
+    "tokens_per_observation_per_layer": 4,
+    "full_forward": "sample_actions, ten denoising steps",
+    "trajectory_phases": "relative episode thirds",
+    "noise_seed": "920000-series episode seed * 1000 + observed control step",
+    "temporally_correlated_frames": true,
+    "formal_test_used": false,
+    "Panda_formal_reserve": "last 20 official init states per task",
+    "ECO65_formal_seeds": "stage 5 frozen ledger, never sampled",
+    "raw_observations": 2867,
+    "complete_episodes": 48,
+    "pilot_is_subset_of_calibration": true
+  },
+  "export": {
+    "torch_legacy_opset": 20,
+    "official_onnx_conversion_to": 21,
+    "vision_sdpa": "version-local FP32 accumulation symbolic, original BF16 interfaces; numerical gates unchanged",
+    "time_embedding": "original FP64 helper then FP32, actual repeated FP32 time sequence",
+    "cache": "read-only 18 key/value pairs",
+    "real_cameras": 2,
+    "image_slots": 3,
+    "token_length": 200
+  },
+  "later_stages_not_accepted": [
+    "quantized_engine_build",
+    "4070_engine_load",
+    "8GB_memory",
+    "latency",
+    "Panda_closed_loop_success",
+    "ECO65_closed_loop_success",
+    "real_robot"
+  ],
+  "runtime_image": {
+    "tag": "pi05_trt:20261007-r1",
+    "id": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369"
+  },
+  "actual_results": {
+    "T0_contract_and_INT4_probe": "passed",
+    "T1_float_graph_export_and_build": "passed",
+    "T1_single_fixture": "passed",
+    "T1_extended_128_observation_gate": "failed",
+    "T1_failed_metric": {
+      "clipping_rate_increase": 0.011160714285714286,
+      "maximum": 0.01,
+      "additional_clipping_dimensions": [
+        "gripper"
+      ],
+      "controller_or_gate_changed": false
+    },
+    "T2_calibration_audit": "passed",
+    "T2_real_INT4_pack_reload_export_parser": "passed",
+    "T2_bytewise_ONNX_verification": "passed",
+    "T2_offline_AWQ": "passed",
+    "T2_offline_GPTQ": "failed",
+    "T2_offline_RTN": "failed",
+    "production_release": "held_pending_T1_gate"
+  },
+  "offline_validation": {
+    "observations": 128,
+    "comparison": "original Torch float vs canonical dequantized BF16 policy; not native TensorRT INT4",
+    "gates": {
+      "motion_mae_max": 0.01,
+      "motion_p99_abs_max": 0.05,
+      "gripper_disagreement_max_fraction": 0.005,
+      "clipping_increase_max_fraction": 0.01
+    },
+    "exit_zero_means_comparison_completed_not_candidate_accepted": true,
+    "main_candidate": "AWQ"
+  }
+}

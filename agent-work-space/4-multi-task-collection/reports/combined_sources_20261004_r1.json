@@ -1,0 +1,624 @@
+{
+  "scope": "read-only accepted source index; not a merged LeRobot export",
+  "train": [
+    {
+      "seed": 55100,
+      "scene": {
+        "id": "train_00",
+        "split": "train",
+        "seed": 55100,
+        "target_xy_m": [
+          -0.14,
+          -0.26
+        ],
+        "target_yaw_offset_deg": -20,
+        "basket_xy_m": [
+          -0.006,
+          0.254
+        ]
+      },
+      "frames": 580,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55100/trajectory.h5",
+      "h5_sha256": "baed86d97aa669a526c2fcd80c5ee956e06be3ce91fd8812a0abb7d7713c368f",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55100/audit.json",
+      "audit_sha256": "83c9c3a7bb70a53bc649b8511d596824c2643ca0546c14f0a18087a85988eabc"
+    },
+    {
+      "seed": 55101,
+      "scene": {
+        "id": "train_01",
+        "split": "train",
+        "seed": 55101,
+        "target_xy_m": [
+          -0.14,
+          -0.24
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0,
+          0.254
+        ]
+      },
+      "frames": 568,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55101/trajectory.h5",
+      "h5_sha256": "32f013672957a0cec4d849df031c52d8a957f1cf6621f4ee5a659f8c1e6dfa94",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55101/audit.json",
+      "audit_sha256": "26bd07fe65ebd83c65480046ee5b1d7b792aad0aff731604e1c032e9df12aa88"
+    },
+    {
+      "seed": 55102,
+      "scene": {
+        "id": "train_02",
+        "split": "train",
+        "seed": 55102,
+        "target_xy_m": [
+          -0.14,
+          -0.22
+        ],
+        "target_yaw_offset_deg": 20,
+        "basket_xy_m": [
+          0.006,
+          0.254
+        ]
+      },
+      "frames": 559,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55102/trajectory.h5",
+      "h5_sha256": "5d7aa39f0df19bdb62410acde69c31627793a9b925d48c796e6e2af6dae07f8c",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55102/audit.json",
+      "audit_sha256": "f393ab3d08a805980313338e9e20861c65dcea19d4511918c21e9c7ea24c3828"
+    },
+    {
+      "seed": 55103,
+      "scene": {
+        "id": "train_03",
+        "split": "train",
+        "seed": 55103,
+        "target_xy_m": [
+          -0.12,
+          -0.26
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          -0.006,
+          0.26
+        ]
+      },
+      "frames": 590,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55103/trajectory.h5",
+      "h5_sha256": "816d164d949e133a41709854989c2a9f7b8e83f8fe6853d47930163ad82c0233",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55103/audit.json",
+      "audit_sha256": "973fd129c574d9aa5ded87fd6fd32e467a1062d72dcc52d9b6e91352f30bbacf"
+    },
+    {
+      "seed": 55104,
+      "scene": {
+        "id": "train_04",
+        "split": "train",
+        "seed": 55104,
+        "target_xy_m": [
+          -0.12,
+          -0.24
+        ],
+        "target_yaw_offset_deg": 20,
+        "basket_xy_m": [
+          0,
+          0.26
+        ]
+      },
+      "frames": 578,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55104/trajectory.h5",
+      "h5_sha256": "1da29a35672bc71675ee702f6b990123256c7a5706bb7657e8ff3b14dbb29b45",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55104/audit.json",
+      "audit_sha256": "d0201b7a93ce24819d0628376ce8bef91cba32f5e139ea6522b14770187bc27b"
+    },
+    {
+      "seed": 55105,
+      "scene": {
+        "id": "train_05",
+        "split": "train",
+        "seed": 55105,
+        "target_xy_m": [
+          -0.12,
+          -0.22
+        ],
+        "target_yaw_offset_deg": -20,
+        "basket_xy_m": [
+          0.006,
+          0.26
+        ]
+      },
+      "frames": 567,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55105/trajectory.h5",
+      "h5_sha256": "d09df520a4a5c0ac2e227f3fae0cb98bc3a80ec2933b9aa228d3b89936c0cb10",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55105/audit.json",
+      "audit_sha256": "e7f27e19af3dee09bfd953ba3c172875d0d99fcf4570124b340a1cc403be5111"
+    },
+    {
+      "seed": 55106,
+      "scene": {
+        "id": "train_06",
+        "split": "train",
+        "seed": 55106,
+        "target_xy_m": [
+          -0.1,
+          -0.26
+        ],
+        "target_yaw_offset_deg": 20,
+        "basket_xy_m": [
+          -0.006,
+          0.266
+        ]
+      },
+      "frames": 611,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55106/trajectory.h5",
+      "h5_sha256": "7cf0dd7cd9f5b9b706dbd73abbc294a227b3db472499477cd5cc7a6a8c3e4e53",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55106/audit.json",
+      "audit_sha256": "6000f2c3583167914ea653a4648cbc80e14a892dfbd852be77b5beee021f6a4a"
+    },
+    {
+      "seed": 55107,
+      "scene": {
+        "id": "train_07",
+        "split": "train",
+        "seed": 55107,
+        "target_xy_m": [
+          -0.1,
+          -0.24
+        ],
+        "target_yaw_offset_deg": -20,
+        "basket_xy_m": [
+          0,
+          0.266
+        ]
+      },
+      "frames": 593,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55107/trajectory.h5",
+      "h5_sha256": "d09c279f2f67b1ea7cc441a184112701ebb718c3a0c29ee4aa65fc5920721024",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55107/audit.json",
+      "audit_sha256": "f134c7ffb887aa9b5ca0c4ba17fb07cfd02387d34db7567c3fdf15d9166baaf3"
+    },
+    {
+      "seed": 55108,
+      "scene": {
+        "id": "train_08",
+        "split": "train",
+        "seed": 55108,
+        "target_xy_m": [
+          -0.1,
+          -0.22
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0.006,
+          0.266
+        ]
+      },
+      "frames": 580,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55108/trajectory.h5",
+      "h5_sha256": "c38e57e0e0eb6d2790f37670c08aa3eb7b424be27632e227e5a36ab871203ff1",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55108/audit.json",
+      "audit_sha256": "1457a93cc215a168ef0ecfbd271d9577b9ef318f29a74d5d99c2a4f2f7d7632f"
+    },
+    {
+      "seed": 56100,
+      "scene": {
+        "id": "train_00",
+        "split": "train",
+        "seed": 56100,
+        "target_xy_m": [
+          -0.145,
+          -0.265
+        ],
+        "target_yaw_offset_deg": -20,
+        "basket_xy_m": [
+          -0.006,
+          0.254
+        ]
+      },
+      "frames": 583,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56100/trajectory.h5",
+      "h5_sha256": "75808e6205358ff6bda4a0ae32eede06680a267fa284c2c97f9a47d15b5e2e64",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56100/audit.json",
+      "audit_sha256": "a6e184b0adbf9466dc2e09a0d3b6aed6646cfa4224047b312f1bc1f0664c9246"
+    },
+    {
+      "seed": 56101,
+      "scene": {
+        "id": "train_01",
+        "split": "train",
+        "seed": 56101,
+        "target_xy_m": [
+          -0.145,
+          -0.265
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0,
+          0.254
+        ]
+      },
+      "frames": 582,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56101/trajectory.h5",
+      "h5_sha256": "a11b4f453ed4073308c18e9da372e485d55412605dfa79a465ee91a626a55afa",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56101/audit.json",
+      "audit_sha256": "6999498977dd0e739757e775f6c7622297105d5193a0a6d9ae4d3d4bf6a7ce65"
+    },
+    {
+      "seed": 56102,
+      "scene": {
+        "id": "train_02",
+        "split": "train",
+        "seed": 56102,
+        "target_xy_m": [
+          -0.145,
+          -0.265
+        ],
+        "target_yaw_offset_deg": 20,
+        "basket_xy_m": [
+          0.006,
+          0.254
+        ]
+      },
+      "frames": 585,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56102/trajectory.h5",
+      "h5_sha256": "54e16668fff5f90ececb5df4ca6204be854aca4daa242c68e6ec286125c8d460",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56102/audit.json",
+      "audit_sha256": "aafb0bf440e8bab9cfe82a8494257a3473b73f5544c6faaea1a24c7024ae2bf4"
+    },
+    {
+      "seed": 56103,
+      "scene": {
+        "id": "train_03",
+        "split": "train",
+        "seed": 56103,
+        "target_xy_m": [
+          -0.145,
+          -0.215
+        ],
+        "target_yaw_offset_deg": -20,
+        "basket_xy_m": [
+          -0.006,
+          0.266
+        ]
+      },
+      "frames": 560,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56103/trajectory.h5",
+      "h5_sha256": "d24485ef749f16a08538cff2c6cdb53f3fd92f475dab4f5cd03676a84b00e6dc",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56103/audit.json",
+      "audit_sha256": "4db1c5111ca2e26e2f494f0d319f02b29dbe005c536da0b5f3ca82a7cce1d54f"
+    },
+    {
+      "seed": 56104,
+      "scene": {
+        "id": "train_04",
+        "split": "train",
+        "seed": 56104,
+        "target_xy_m": [
+          -0.145,
+          -0.215
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0,
+          0.266
+        ]
+      },
+      "frames": 561,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56104/trajectory.h5",
+      "h5_sha256": "47b5458a1732bf466eb50dda931377a12b624ee22941d86ea28405ef3715bf07",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56104/audit.json",
+      "audit_sha256": "5b9a1b10975d4ddd4a9fd80fc65baac1bd7a2cda69d7e4b0e6c7898883000623"
+    },
+    {
+      "seed": 56105,
+      "scene": {
+        "id": "train_05",
+        "split": "train",
+        "seed": 56105,
+        "target_xy_m": [
+          -0.145,
+          -0.215
+        ],
+        "target_yaw_offset_deg": 20,
+        "basket_xy_m": [
+          0.006,
+          0.266
+        ]
+      },
+      "frames": 562,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56105/trajectory.h5",
+      "h5_sha256": "1c9b73763129aeeac7ff88cd06a34679d2677260dec45fd1868d76834d7de29b",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56105/audit.json",
+      "audit_sha256": "dc940642cd36e35cd7f29ae9cb2330140e926c7cd678e55bfbb70c4c1c862207"
+    },
+    {
+      "seed": 56106,
+      "scene": {
+        "id": "train_06",
+        "split": "train",
+        "seed": 56106,
+        "target_xy_m": [
+          -0.095,
+          -0.265
+        ],
+        "target_yaw_offset_deg": -20,
+        "basket_xy_m": [
+          -0.006,
+          0.254
+        ]
+      },
+      "frames": 608,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56106/trajectory.h5",
+      "h5_sha256": "67cc13d5380d86c3e89eeb8dc685496d588457b5e077fb6f0d2de11dac523ab9",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56106/audit.json",
+      "audit_sha256": "f050e4d76a70e6a3385b1666d1c6b12f3878c075de1a3938983bf2f4670627f2"
+    },
+    {
+      "seed": 56107,
+      "scene": {
+        "id": "train_07",
+        "split": "train",
+        "seed": 56107,
+        "target_xy_m": [
+          -0.095,
+          -0.265
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0,
+          0.254
+        ]
+      },
+      "frames": 610,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56107/trajectory.h5",
+      "h5_sha256": "576a0d7aefba77b2de4a300d67b819e76ebfdb6f15ad0570465d54804eb2a0d0",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56107/audit.json",
+      "audit_sha256": "53d0d14f15ce5030fbd5a8c6d5ff87584a2441ec6e5fd1e4eb34eb362c209b74"
+    },
+    {
+      "seed": 56108,
+      "scene": {
+        "id": "train_08",
+        "split": "train",
+        "seed": 56108,
+        "target_xy_m": [
+          -0.095,
+          -0.265
+        ],
+        "target_yaw_offset_deg": 20,
+        "basket_xy_m": [
+          0.006,
+          0.254
+        ]
+      },
+      "frames": 609,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56108/trajectory.h5",
+      "h5_sha256": "780e3246d9a9504e8ab081be09dd35ca3e560c74f561567aed1dd0755031399f",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56108/audit.json",
+      "audit_sha256": "ddc3dca8967965411fb811303dccd588d67fb4555f89baa528f494ce7e45fdc4"
+    },
+    {
+      "seed": 56109,
+      "scene": {
+        "id": "train_09",
+        "split": "train",
+        "seed": 56109,
+        "target_xy_m": [
+          -0.095,
+          -0.215
+        ],
+        "target_yaw_offset_deg": -20,
+        "basket_xy_m": [
+          -0.006,
+          0.266
+        ]
+      },
+      "frames": 575,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56109/trajectory.h5",
+      "h5_sha256": "8673bcba2dfd8cc7b05f358d2faedcc32324f91259276e0f7464313b123190ab",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56109/audit.json",
+      "audit_sha256": "9f52604e0ac4be7fa32ebf23f2cbacbcf562ebb583554b95aed84f4c968f45bf"
+    },
+    {
+      "seed": 56110,
+      "scene": {
+        "id": "train_10",
+        "split": "train",
+        "seed": 56110,
+        "target_xy_m": [
+          -0.095,
+          -0.215
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0,
+          0.266
+        ]
+      },
+      "frames": 576,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56110/trajectory.h5",
+      "h5_sha256": "c46b0ea369e853f901bdcdd6cb7ab7af7a15bf74a2b45c0fc24c415a51488a2e",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56110/audit.json",
+      "audit_sha256": "b9c6307b7809d9643ea735018cd5b73dd12388e5ccb4e06d78634f9fc15e30bf"
+    },
+    {
+      "seed": 56111,
+      "scene": {
+        "id": "train_11",
+        "split": "train",
+        "seed": 56111,
+        "target_xy_m": [
+          -0.095,
+          -0.215
+        ],
+        "target_yaw_offset_deg": 20,
+        "basket_xy_m": [
+          0.006,
+          0.266
+        ]
+      },
+      "frames": 581,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56111/trajectory.h5",
+      "h5_sha256": "b7e3caae798201554795e40ce5eaabf0a7e87209c1ce8d4609ab6055be942c1c",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56111/audit.json",
+      "audit_sha256": "ac88630037f0f71558367de2faf5527ad79f96f38a5301457a7468239c45f6cd"
+    }
+  ],
+  "validation": [
+    {
+      "seed": 55200,
+      "scene": {
+        "id": "validation_00",
+        "split": "validation",
+        "seed": 55200,
+        "target_xy_m": [
+          -0.13,
+          -0.25
+        ],
+        "target_yaw_offset_deg": -10,
+        "basket_xy_m": [
+          -0.003,
+          0.257
+        ]
+      },
+      "frames": 577,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55200/trajectory.h5",
+      "h5_sha256": "d4c311e2b159993498275160bde09a781644f5994c3efe930d4e05bc37a1a777",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55200/audit.json",
+      "audit_sha256": "84b395287db21a4d2ccebcb137294ee2a7580ce74c6741a3015c773158ad2ada"
+    },
+    {
+      "seed": 55201,
+      "scene": {
+        "id": "validation_01",
+        "split": "validation",
+        "seed": 55201,
+        "target_xy_m": [
+          -0.11,
+          -0.23
+        ],
+        "target_yaw_offset_deg": 10,
+        "basket_xy_m": [
+          0.003,
+          0.263
+        ]
+      },
+      "frames": 578,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55201/trajectory.h5",
+      "h5_sha256": "5d18180d615ed4d31e3786eedf4a9cbac0c48f1e41af317cf6a09bf53b3bb7c7",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55201/audit.json",
+      "audit_sha256": "1c59745e52eb068b3a386479dbbab951e6ba0c7786db947090a67d0de98b82e1"
+    },
+    {
+      "seed": 55202,
+      "scene": {
+        "id": "validation_02",
+        "split": "validation",
+        "seed": 55202,
+        "target_xy_m": [
+          -0.13,
+          -0.23
+        ],
+        "target_yaw_offset_deg": 0,
+        "basket_xy_m": [
+          0,
+          0.26
+        ]
+      },
+      "frames": 566,
+      "h5_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55202/trajectory.h5",
+      "h5_sha256": "dcd2378a4466b04d9ddedd9fe283b6d047a23152b203ec3e5dd46414ad0f3120",
+      "audit_repo_relative": "agent-work-space/2-task-collection/runs/coverage_train_val_r1/can_s55202/audit.json",
+      "audit_sha256": "147cb19c2d37930ab112b9dfea0567df8ad67f23a20318314a3281cc46e56555"
+    },
+    {
+      "seed": 56200,
+      "scene": {
+        "id": "validation_00",
+        "split": "validation",
+        "seed": 56200,
+        "target_xy_m": [
+          -0.137,
+          -0.253
+        ],
+        "target_yaw_offset_deg": -10,
+        "basket_xy_m": [
+          -0.003,
+          0.257
+        ]
+      },
+      "frames": 579,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56200/trajectory.h5",
+      "h5_sha256": "d3360d2f5d6d2ffec7a587af7fc9cd486934aaa693dd28938c1f61bf2c2cc693",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56200/audit.json",
+      "audit_sha256": "d3fac352fe5a807a5241767ce5472cceff216421585633d762cb804ce0b5c7ad"
+    },
+    {
+      "seed": 56201,
+      "scene": {
+        "id": "validation_01",
+        "split": "validation",
+        "seed": 56201,
+        "target_xy_m": [
+          -0.117,
+          -0.227
+        ],
+        "target_yaw_offset_deg": 10,
+        "basket_xy_m": [
+          0.003,
+          0.257
+        ]
+      },
+      "frames": 570,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56201/trajectory.h5",
+      "h5_sha256": "686a7890330289098b0164009a56bbf804e946f8b22298d1c17198a0da614cad",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56201/audit.json",
+      "audit_sha256": "35f63aef892f283c546f60b99257c80067e93c3b0c9b5e59d6122c4a451c9267"
+    },
+    {
+      "seed": 56202,
+      "scene": {
+        "id": "validation_02",
+        "split": "validation",
+        "seed": 56202,
+        "target_xy_m": [
+          -0.108,
+          -0.257
+        ],
+        "target_yaw_offset_deg": 10,
+        "basket_xy_m": [
+          -0.003,
+          0.263
+        ]
+      },
+      "frames": 603,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56202/trajectory.h5",
+      "h5_sha256": "e13fda6f54e0b02897cb7776288a4bf1ecff9a616d7a6bfa6f657befbdc04606",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56202/audit.json",
+      "audit_sha256": "83d653204c1fa9e762d6019215eb47ecab6e73acef9454ffdf18d537b8c87a23"
+    },
+    {
+      "seed": 56203,
+      "scene": {
+        "id": "validation_03",
+        "split": "validation",
+        "seed": 56203,
+        "target_xy_m": [
+          -0.127,
+          -0.217
+        ],
+        "target_yaw_offset_deg": -10,
+        "basket_xy_m": [
+          0.003,
+          0.263
+        ]
+      },
+      "frames": 561,
+      "h5_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56203/trajectory.h5",
+      "h5_sha256": "ff5b9063cda9ed0e0397e89d25c2c787d011d68bd0b7a7a88c91b869a68b14d6",
+      "audit_repo_relative": "agent-work-space/4-multi-task-collection/runs/expansion_train_val_r1/can_s56203/audit.json",
+      "audit_sha256": "d4f68fbe76dda6016f1508a0e0bc3e6535a8d5c3730f264341aad824751cb83b"
+    }
+  ],
+  "test_excluded": true
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/trt_full4_20261007_r1/resources.py",
+    "--variant",
+    "gptq",
+    "--attempt",
+    "r1",
+    "--count",
+    "1000"
+  ],
+  "exit_code": 1,
+  "seconds": 117.41474223136902
+}

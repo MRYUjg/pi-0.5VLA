@@ -1,0 +1,55 @@
+{
+  "container_name": "pi05-trt-t3-20261007-r1",
+  "container_id": "8c6b4629f86bb62ec9b6687ffc4e417975d6d4cdff5ffcdd265a8dbb3ef55049",
+  "image_id": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+  "image_size_bytes": 18274347443,
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "/mnt/data/vla-policy/openpi",
+      "Destination": "/app",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+      "Destination": "/work",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    }
+  ],
+  "working_directory": "/app",
+  "entrypoint": [
+    "/bin/bash"
+  ],
+  "command": [
+    "-c",
+    "sleep infinity"
+  ],
+  "device_requests": [
+    {
+      "Driver": "",
+      "Count": -1,
+      "DeviceIDs": null,
+      "Capabilities": [
+        [
+          "gpu"
+        ]
+      ],
+      "Options": {}
+    }
+  ],
+  "ipc_mode": "host",
+  "environment": [
+    "HF_HUB_OFFLINE=1",
+    "PYTHONPATH=/app/src:/app/packages/openpi-client/src",
+    "OPENPI_DATA_HOME=/openpi_assets",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "JAX_PLATFORMS=cpu",
+    "OMP_NUM_THREADS=1",
+    "OPENBLAS_NUM_THREADS=1"
+  ]
+}

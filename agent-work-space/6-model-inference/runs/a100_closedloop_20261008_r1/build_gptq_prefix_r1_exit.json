@@ -1,0 +1,19 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-a100-build-20261008-r1",
+    "/.venv/bin/python",
+    "/work/runs/a100_closedloop_20261008_r1/build_gptq_prefix_r1_source/build.py",
+    "--source",
+    "/work/runs/trt_t0_t2_20261007_r1/gptq_r1/prefix_int4.onnx",
+    "--out",
+    "/work/runs/a100_closedloop_20261008_r1/build_gptq_prefix_r1",
+    "--stage",
+    "prefix",
+    "--algorithm",
+    "GPTQ"
+  ],
+  "exit_code": 0,
+  "seconds": 70.27053809165955
+}

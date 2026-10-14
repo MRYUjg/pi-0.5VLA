@@ -1,0 +1,19 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-full4-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_full4_20261007_r1/awq_action_step_r1_source/quantize.py",
+    "--out",
+    "/work/runs/trt_full4_20261007_r1/awq_action_step_r1",
+    "--stage",
+    "action_step",
+    "--algorithm",
+    "AWQ",
+    "--calibration",
+    "/work/runs/trt_full4_20261007_r1/capture_r1"
+  ],
+  "exit_code": 0,
+  "seconds": 287.536883354187
+}

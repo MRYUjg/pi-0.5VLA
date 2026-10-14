@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-t4-resource-awq-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t4_20261007_r1/resource_awq_r1_source/benchmark_client.py",
+    "--variant",
+    "awq",
+    "--out",
+    "/out/benchmark",
+    "--port",
+    "18879"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "seed": 55103,
+  "teacher_finished": true,
+  "transitions": 590,
+  "observations": 591,
+  "probe": false,
+  "scene": {
+    "id": "train_03",
+    "split": "train",
+    "seed": 55103,
+    "target_xy_m": [
+      -0.12,
+      -0.26
+    ],
+    "target_yaw_offset_deg": 0,
+    "basket_xy_m": [
+      -0.006,
+      0.26
+    ]
+  },
+  "process_exit_pending": true,
+  "note": "Data release additionally requires real process exit, teacher numeric audit and replay."
+}

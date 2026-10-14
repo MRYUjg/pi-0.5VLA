@@ -1,0 +1,40 @@
+{
+  "status": "ready",
+  "pid": 1,
+  "variant": "original_torch",
+  "metadata": {
+    "variant": "original_torch",
+    "single_model_resident": true,
+    "source_weight_sha256": "69ee787ec12921613feabf69b01348628b3d6327a8865cbc02ecb9be788d9258",
+    "floating_source_model_instantiated": true,
+    "reference_backend": "original same-source PyTorch",
+    "JAX_performance_claim": false
+  },
+  "load_and_first_complete_warmup_seconds": 23.045370720999927,
+  "first_warmup": {
+    "preprocessing_and_noise_ms": 79.04964300178108,
+    "sample_wall_ms": 1212.5882589971297,
+    "sample_stream_elapsed_ms": 1212.472412109375,
+    "postprocessing_and_timing_collection_ms": 0.689193002472166,
+    "model_path_ms": 1292.327095001383,
+    "module_gpu_ms": {
+      "vision": 676.6380114555359,
+      "prefix": 253.37139892578125,
+      "action_step": 204.1205415725708
+    },
+    "module_calls": {
+      "vision": 3,
+      "prefix": 1,
+      "action_step": 10
+    },
+    "torch_allocated_bytes": 6968694784,
+    "torch_reserved_bytes": 7239368704,
+    "torch_peak_allocated_bytes": 7118341120,
+    "torch_peak_reserved_bytes": 7239368704
+  },
+  "denoising_steps": 10,
+  "resident_models": 1,
+  "serial_requests": true,
+  "JAX_PERFORMANCE_BASELINE": false,
+  "actual_4070_accepted": false
+}

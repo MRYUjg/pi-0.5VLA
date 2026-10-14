@@ -1,0 +1,222 @@
+{
+  "complete": true,
+  "verification_pass": true,
+  "scope": "fine-tuned cohort ONLY: 200 attempts, identity/native-goal/finite-state accounting, first10 MP4 full decode/frame/hash. Full action-chunk crosscheck and 3 baseline cohorts remain under frozen main evaluation.",
+  "source_run": "closed_loop_20261008_r1",
+  "condition": "eco65_zhixing_lora",
+  "successes": 0,
+  "attempts": 200,
+  "primary_budget": 220,
+  "initialization_pass_count": 175,
+  "tasks": {
+    "0": {
+      "completed": 20,
+      "planned": 20,
+      "successes": 0,
+      "invalid_initializations": 13
+    },
+    "1": {
+      "completed": 20,
+      "planned": 20,
+      "successes": 0,
+      "invalid_initializations": 0
+    },
+    "2": {
+      "completed": 20,
+      "planned": 20,
+      "successes": 0,
+      "invalid_initializations": 5
+    },
+    "3": {
+      "completed": 20,
+      "planned": 20,
+      "successes": 0,
+      "invalid_initializations": 0
+    },
+    "4": {
+      "completed": 20,
+      "planned": 20,
+      "successes": 0,
+      "invalid_initializations": 0
+    },
+    "5": {
+      "completed": 20,
+      "planned": 20,
+      "successes": 0,
+      "invalid_initializations": 0
+    },
+    "6": {
+      "completed": 20,
+      "planned": 20,
+      "successes": 0,
+      "invalid_initializations": 0
+    },
+    "7": {
+      "completed": 20,
+      "planned": 20,
+      "successes": 0,
+      "invalid_initializations": 0
+    },
+    "8": {
+      "completed": 20,
+      "planned": 20,
+      "successes": 0,
+      "invalid_initializations": 7
+    },
+    "9": {
+      "completed": 20,
+      "planned": 20,
+      "successes": 0,
+      "invalid_initializations": 0
+    }
+  },
+  "failure_categories": {
+    "invalid_native_initialization": 25,
+    "time_budget_exhausted": 174,
+    "success_only_after_primary_budget": 1
+  },
+  "videos": [
+    {
+      "condition": "eco65_zhixing_lora",
+      "task": 0,
+      "seed": 640000,
+      "path": "runs/closed_loop_20261008_r1/eco65_zhixing_lora/task00_s640000/rollout.mp4",
+      "primary_success": false,
+      "extended_success": false,
+      "initialization_pass": false,
+      "failure": "invalid_native_initialization",
+      "frames": 40,
+      "seconds": 2.0,
+      "sha256": "d89e93bc18a7c2755c98bcf5ba91dcaa44cd07f2599df5f405fdbc75ecc976f2",
+      "decode_pass": true
+    },
+    {
+      "condition": "eco65_zhixing_lora",
+      "task": 1,
+      "seed": 640100,
+      "path": "runs/closed_loop_20261008_r1/eco65_zhixing_lora/task01_s640100/rollout.mp4",
+      "primary_success": false,
+      "extended_success": false,
+      "initialization_pass": true,
+      "failure": "time_budget_exhausted",
+      "frames": 671,
+      "seconds": 33.55,
+      "sha256": "6a088f59a503ab5a42af844022a364c87511666099067a2b5dc505c6e429d0f4",
+      "decode_pass": true
+    },
+    {
+      "condition": "eco65_zhixing_lora",
+      "task": 2,
+      "seed": 640200,
+      "path": "runs/closed_loop_20261008_r1/eco65_zhixing_lora/task02_s640200/rollout.mp4",
+      "primary_success": false,
+      "extended_success": false,
+      "initialization_pass": true,
+      "failure": "time_budget_exhausted",
+      "frames": 671,
+      "seconds": 33.55,
+      "sha256": "734a5ba8c2cba910117325a2ffade5d7d68113d5ea32161e8711f33afaf33e63",
+      "decode_pass": true
+    },
+    {
+      "condition": "eco65_zhixing_lora",
+      "task": 3,
+      "seed": 640300,
+      "path": "runs/closed_loop_20261008_r1/eco65_zhixing_lora/task03_s640300/rollout.mp4",
+      "primary_success": false,
+      "extended_success": false,
+      "initialization_pass": true,
+      "failure": "time_budget_exhausted",
+      "frames": 671,
+      "seconds": 33.55,
+      "sha256": "cd4840756497384a2234ef948e13db3e95cd14fbdefa776e1ec2d3f142a095bc",
+      "decode_pass": true
+    },
+    {
+      "condition": "eco65_zhixing_lora",
+      "task": 4,
+      "seed": 640400,
+      "path": "runs/closed_loop_20261008_r1/eco65_zhixing_lora/task04_s640400/rollout.mp4",
+      "primary_success": false,
+      "extended_success": false,
+      "initialization_pass": true,
+      "failure": "time_budget_exhausted",
+      "frames": 671,
+      "seconds": 33.55,
+      "sha256": "e24ea232211c04af4c1e5bc42d7934cd7028dd6109b62f6cd5b9d4300d698187",
+      "decode_pass": true
+    },
+    {
+      "condition": "eco65_zhixing_lora",
+      "task": 5,
+      "seed": 640500,
+      "path": "runs/closed_loop_20261008_r1/eco65_zhixing_lora/task05_s640500/rollout.mp4",
+      "primary_success": false,
+      "extended_success": false,
+      "initialization_pass": true,
+      "failure": "time_budget_exhausted",
+      "frames": 671,
+      "seconds": 33.55,
+      "sha256": "8e8b309e3692ea0f5e504c901c0f29c2af160cccd8effab2892b338d250f273f",
+      "decode_pass": true
+    },
+    {
+      "condition": "eco65_zhixing_lora",
+      "task": 6,
+      "seed": 640600,
+      "path": "runs/closed_loop_20261008_r1/eco65_zhixing_lora/task06_s640600/rollout.mp4",
+      "primary_success": false,
+      "extended_success": true,
+      "initialization_pass": true,
+      "failure": "success_only_after_primary_budget",
+      "frames": 580,
+      "seconds": 29.0,
+      "sha256": "47d348da3442faedd4d4950dbd8eca2107d39ebad7abde660133c88bf05fbd60",
+      "decode_pass": true
+    },
+    {
+      "condition": "eco65_zhixing_lora",
+      "task": 7,
+      "seed": 640700,
+      "path": "runs/closed_loop_20261008_r1/eco65_zhixing_lora/task07_s640700/rollout.mp4",
+      "primary_success": false,
+      "extended_success": false,
+      "initialization_pass": true,
+      "failure": "time_budget_exhausted",
+      "frames": 671,
+      "seconds": 33.55,
+      "sha256": "fcb1f35966b9288acf093874fe7020284b27115c1ac727620524e1d4a7ed2ad9",
+      "decode_pass": true
+    },
+    {
+      "condition": "eco65_zhixing_lora",
+      "task": 8,
+      "seed": 640800,
+      "path": "runs/closed_loop_20261008_r1/eco65_zhixing_lora/task08_s640800/rollout.mp4",
+      "primary_success": false,
+      "extended_success": false,
+      "initialization_pass": true,
+      "failure": "time_budget_exhausted",
+      "frames": 671,
+      "seconds": 33.55,
+      "sha256": "7402bc19c85ef765ed54484b4c9914da5034622089309ab9c6b5b0e19b6301e5",
+      "decode_pass": true
+    },
+    {
+      "condition": "eco65_zhixing_lora",
+      "task": 9,
+      "seed": 640900,
+      "path": "runs/closed_loop_20261008_r1/eco65_zhixing_lora/task09_s640900/rollout.mp4",
+      "primary_success": false,
+      "extended_success": false,
+      "initialization_pass": true,
+      "failure": "time_budget_exhausted",
+      "frames": 671,
+      "seconds": 33.55,
+      "sha256": "bffbb7c053602516e9c7e25c98bdf248fa269b3254450ae4fc7ba87eebdbc88f",
+      "decode_pass": true
+    }
+  ],
+  "baseline_comparison_complete": false,
+  "adaptation_acceptance_pass": false
+}

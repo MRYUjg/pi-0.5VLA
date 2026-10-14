@@ -1,0 +1,132 @@
+{
+  "completed": true,
+  "variant": "full_awq",
+  "requests": 128,
+  "warmup": 20,
+  "observations": 128,
+  "all_finite": true,
+  "serial_seconds": 12.448165175002941,
+  "completed_requests_per_second_including_logging": 10.28263990720783,
+  "latency_ms": {
+    "client_full_ms": {
+      "count": 128,
+      "mean": 96.961318609317,
+      "p50": 92.01869699973031,
+      "p95": 134.30828080090566,
+      "p99": 145.0932203741104,
+      "max": 149.81183200143278
+    },
+    "client_HTTP_ms": {
+      "count": 128,
+      "mean": 95.57784017204085,
+      "p50": 90.62217699829489,
+      "p95": 132.93843689825724,
+      "p99": 143.74134520156076,
+      "max": 148.44520000042394
+    },
+    "model_path_ms": {
+      "count": 128,
+      "mean": 91.90954852351751,
+      "p50": 86.9772145015304,
+      "p95": 129.2771097520016,
+      "p99": 139.82098440021218,
+      "max": 144.97526299965102
+    }
+  },
+  "module_timeline_ms": {
+    "vision": {
+      "count": 128,
+      "mean": 13.633549727499485,
+      "p50": 12.831232070922852,
+      "p95": 18.151475143432616,
+      "p99": 23.81742008686066,
+      "max": 28.44159984588623
+    },
+    "prefix": {
+      "count": 128,
+      "mean": 30.12864024937153,
+      "p50": 28.62998390197754,
+      "p95": 41.0766839981079,
+      "p99": 48.5215643692017,
+      "max": 61.64992141723633
+    },
+    "action_step": {
+      "count": 128,
+      "mean": 40.300939777866006,
+      "p50": 38.31155216693878,
+      "p95": 52.05354573726654,
+      "p99": 58.65422328710557,
+      "max": 66.37465476989746
+    }
+  },
+  "events_may_include_host_enqueue_gaps": true,
+  "fresh_client_payload_encoding_included": true,
+  "captured_input_already_224": true,
+  "raw_internal_action_in_response_audit_overhead_included_for_all_variants": true,
+  "quality_vs_frozen_TRT_float": {
+    "motion_mae": 0.004116732103511795,
+    "motion_p99_abs": 0.025703134680905376,
+    "motion_max_abs": 0.07492926788491011,
+    "gripper_disagreements": 3,
+    "confident_gripper_count": 1280,
+    "gripper_disagreement_fraction": 0.00234375,
+    "clipping_rate_increase": -0.02421875,
+    "reference_clips_per_dimension": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      427
+    ],
+    "candidate_clips_per_dimension": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      210
+    ],
+    "original_gates_passed": true
+  },
+  "quality_cumulative_vs_original_Torch": {
+    "motion_mae": 0.004112226075211221,
+    "motion_p99_abs": 0.025912190608862594,
+    "motion_max_abs": 0.07704385163906219,
+    "gripper_disagreements": 3,
+    "confident_gripper_count": 1280,
+    "gripper_disagreement_fraction": 0.00234375,
+    "clipping_rate_increase": -0.013058035714285715,
+    "reference_clips_per_dimension": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      327
+    ],
+    "candidate_clips_per_dimension": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      210
+    ],
+    "original_gates_passed": true
+  },
+  "repeat_env_max_abs": 0.0,
+  "repeat_internal_max_abs": 0.0,
+  "repeat_passed": true,
+  "source_JAX_not_tested": true,
+  "closedloop_success_rate_tested": false,
+  "real_camera_or_rendering_included": false,
+  "two_hour_tested": false,
+  "formal_200_tested": false,
+  "20Hz_latency_screen_passed": false,
+  "128_pilot_is_calibration_related_regression_not_generalization": true
+}

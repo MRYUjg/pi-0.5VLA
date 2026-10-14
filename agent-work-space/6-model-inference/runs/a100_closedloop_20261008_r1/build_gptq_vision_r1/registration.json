@@ -1,0 +1,16 @@
+{
+  "algorithm": "GPTQ",
+  "stage": "vision",
+  "source_ONNX_sha256": "1c6edc863a90595f78d1f67ceefb36b7683056371adc52d39fbdfd83bb93ee09",
+  "external_data_sha256": {
+    "vision_int4.data": "0042ed58df8e9d2a6df6438ec93fb8091072fec9ee63f0b3c0e2de6b152fa025"
+  },
+  "source_INT4_initializers": 163,
+  "TensorRT": "10.13.3.9",
+  "build_GPU": "NVIDIA A100-SXM4-40GB",
+  "strongly_typed": true,
+  "TF32": false,
+  "workspace_bytes": 2147483648,
+  "builder_optimization_level": 3,
+  "hardware_compatibility": "NONE"
+}

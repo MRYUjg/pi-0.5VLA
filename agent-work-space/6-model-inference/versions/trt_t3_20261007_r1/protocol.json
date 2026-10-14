@@ -1,0 +1,72 @@
+{
+  "version": "trt_t3_20261007_r1",
+  "status": "T3_implementation_complete",
+  "date_asia_shanghai": "2026-10-07",
+  "user_authorization": "暂时允许这个情况，继续实施T3",
+  "authorized_stage": "T3",
+  "T1_exception": {
+    "kind": "temporary_permission_to_proceed_despite_known_T1_gripper_boundary_drift",
+    "original_gate": "failed, retained unchanged",
+    "observed_clipping_increase": 0.011160714285714286,
+    "original_limit": 0.01,
+    "gripper_direction_disagreements": 0,
+    "movement_clipping_increase": 0,
+    "does_not_waive_new_quantization_errors_or_target_resource_tests": true
+  },
+  "previous_release_manifest_sha256": "4f359c7b939e10c7eebba4213f4156aef7dc02874101c9919f9ad0a3222c23ee",
+  "runtime_image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+  "TensorRT": "10.13.3.9",
+  "main": "AWQ",
+  "mandatory_comparison": "GPTQ",
+  "scope": "prefix 121 reachable language Linear signed symmetric INT4 group128; vision/action original float",
+  "build": {
+    "strongly_typed": true,
+    "TF32": false,
+    "workspace_bytes": 2147483648,
+    "hardware_compatibility": "NONE, RTX4090 development; actual4070 rebuild and validation remains required",
+    "profiling_verbosity": "DETAILED",
+    "editable_timing_cache": true
+  },
+  "runtime": {
+    "single_model_resident": true,
+    "full_float_model_loaded": false,
+    "single_nondefault_cuda_stream": true,
+    "shared_serial_context_workspace": true,
+    "CUDA_Graph": false,
+    "prefix_cache_read_only": true,
+    "denoise_steps": 10,
+    "internal_actions": [
+      1,
+      10,
+      32
+    ],
+    "environment_actions": [
+      10,
+      7
+    ]
+  },
+  "gates": {
+    "independent_process_same_engine_reload_max_abs": 1e-06,
+    "motion_mae_max": 0.01,
+    "motion_p99_abs_max": 0.05,
+    "confident_gripper_disagreement_max_fraction": 0.005,
+    "clipping_rate_increase_max_fraction": 0.01,
+    "preclip_actions_are_scored": true
+  },
+  "not_executed": [
+    "T4_closed_loop",
+    "T5_actual_4070_8GB",
+    "T6_formal_200_trials",
+    "T7_robot"
+  ],
+  "stage_results": {
+    "T3_native_engines": "passed_AWQ_and_GPTQ",
+    "T3_actual_execution": "passed_121_source_layers_each",
+    "T3_independent_reload": "passed_max_abs_zero_each",
+    "AWQ_native_offline_quality": "passed_same_backend_and_cumulative",
+    "GPTQ_native_offline_quality": "failed_gripper_disagreement_7_of_1280",
+    "target_4070_8GB_accepted": false,
+    "closed_loop_accepted": false
+  },
+  "file_freeze_verification": "see new release manifest and separate verification receipt"
+}

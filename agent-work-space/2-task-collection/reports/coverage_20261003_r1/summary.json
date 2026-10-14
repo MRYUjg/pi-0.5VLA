@@ -1,0 +1,644 @@
+{
+  "attempts": 12,
+  "task_success": 12,
+  "accepted": 12,
+  "split_counts": {
+    "train": 9,
+    "validation": 3
+  },
+  "total_actions": 6947,
+  "total_observations": 6959,
+  "total_h5_bytes": 1448724395,
+  "unique_target_centers_1mm": 12,
+  "target_xy_span_mm": [
+    40.149656145876065,
+    40.61956555992836
+  ],
+  "reserved_test_episodes_collected": 0,
+  "initialization_preflight_pass": true,
+  "preflight_unique_target_centers_1mm": 15,
+  "max_preflight_yaw_error_deg": 0.0002116982864208694,
+  "yaw_checks": [
+    {
+      "scene_id": "train_00",
+      "configured_yaw_offset_deg": -20,
+      "settled_yaw_offset_deg": -20.000211698286364,
+      "yaw_error_deg": -0.000211698286364026
+    },
+    {
+      "scene_id": "train_01",
+      "configured_yaw_offset_deg": 0,
+      "settled_yaw_offset_deg": -0.00021169828633560428,
+      "yaw_error_deg": -0.00021169828633560428
+    },
+    {
+      "scene_id": "train_02",
+      "configured_yaw_offset_deg": 20,
+      "settled_yaw_offset_deg": 19.999788301713636,
+      "yaw_error_deg": -0.000211698286364026
+    },
+    {
+      "scene_id": "train_03",
+      "configured_yaw_offset_deg": 0,
+      "settled_yaw_offset_deg": -0.00021169828633560428,
+      "yaw_error_deg": -0.00021169828633560428
+    },
+    {
+      "scene_id": "train_04",
+      "configured_yaw_offset_deg": 20,
+      "settled_yaw_offset_deg": 19.99978830171358,
+      "yaw_error_deg": -0.0002116982864208694
+    },
+    {
+      "scene_id": "train_05",
+      "configured_yaw_offset_deg": -20,
+      "settled_yaw_offset_deg": -20.000211698286364,
+      "yaw_error_deg": -0.000211698286364026
+    },
+    {
+      "scene_id": "train_06",
+      "configured_yaw_offset_deg": 20,
+      "settled_yaw_offset_deg": 19.99978830171358,
+      "yaw_error_deg": -0.0002116982864208694
+    },
+    {
+      "scene_id": "train_07",
+      "configured_yaw_offset_deg": -20,
+      "settled_yaw_offset_deg": -20.000211698286364,
+      "yaw_error_deg": -0.000211698286364026
+    },
+    {
+      "scene_id": "train_08",
+      "configured_yaw_offset_deg": 0,
+      "settled_yaw_offset_deg": -0.00021169828633560428,
+      "yaw_error_deg": -0.00021169828633560428
+    },
+    {
+      "scene_id": "validation_00",
+      "configured_yaw_offset_deg": -10,
+      "settled_yaw_offset_deg": -10.000211698286392,
+      "yaw_error_deg": -0.0002116982863924477
+    },
+    {
+      "scene_id": "validation_01",
+      "configured_yaw_offset_deg": 10,
+      "settled_yaw_offset_deg": 9.999788301713636,
+      "yaw_error_deg": -0.000211698286364026
+    },
+    {
+      "scene_id": "validation_02",
+      "configured_yaw_offset_deg": 0,
+      "settled_yaw_offset_deg": -0.00021169828633560428,
+      "yaw_error_deg": -0.00021169828633560428
+    },
+    {
+      "scene_id": "test_00",
+      "configured_yaw_offset_deg": -10,
+      "settled_yaw_offset_deg": -10.000211698286392,
+      "yaw_error_deg": -0.0002116982863924477
+    },
+    {
+      "scene_id": "test_01",
+      "configured_yaw_offset_deg": 10,
+      "settled_yaw_offset_deg": 9.999788301713636,
+      "yaw_error_deg": -0.000211698286364026
+    },
+    {
+      "scene_id": "test_02",
+      "configured_yaw_offset_deg": 0,
+      "settled_yaw_offset_deg": -0.00021169828633560428,
+      "yaw_error_deg": -0.00021169828633560428
+    }
+  ],
+  "rows": [
+    {
+      "scene_id": "train_00",
+      "split": "train",
+      "seed": 55100,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 580,
+      "h5_bytes": 121022686,
+      "target_xy_mm": [
+        -139.0740507341748,
+        -260.1041943392253
+      ],
+      "basket_xy_mm": [
+        -5.999807521748364,
+        253.9754535524033
+      ],
+      "target_yaw_offset_configured_deg": -20,
+      "target_world_yaw_settled_deg": 159.99978830171364,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55100,
+        "steps": 580,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          145,
+          290,
+          435,
+          580
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    },
+    {
+      "scene_id": "train_01",
+      "split": "train",
+      "seed": 55101,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 568,
+      "h5_bytes": 118464503,
+      "target_xy_mm": [
+        -139.0942557448463,
+        -239.78121735108732
+      ],
+      "basket_xy_mm": [
+        0.00019247825164777488,
+        253.9754535524033
+      ],
+      "target_yaw_offset_configured_deg": 0,
+      "target_world_yaw_settled_deg": 179.99978830171366,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55101,
+        "steps": 568,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          142,
+          284,
+          426,
+          568
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    },
+    {
+      "scene_id": "train_02",
+      "split": "train",
+      "seed": 55102,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 559,
+      "h5_bytes": 116462214,
+      "target_xy_mm": [
+        -139.22370688005103,
+        -219.4846287792969
+      ],
+      "basket_xy_mm": [
+        6.000192478251638,
+        253.9754535524033
+      ],
+      "target_yaw_offset_configured_deg": 20,
+      "target_world_yaw_settled_deg": -160.00021169828636,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55102,
+        "steps": 559,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          139,
+          279,
+          419,
+          559
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    },
+    {
+      "scene_id": "train_03",
+      "split": "train",
+      "seed": 55103,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 590,
+      "h5_bytes": 123154217,
+      "target_xy_mm": [
+        -119.09425574484636,
+        -259.78121735108743
+      ],
+      "basket_xy_mm": [
+        -5.999807521748363,
+        259.97545355240334
+      ],
+      "target_yaw_offset_configured_deg": 0,
+      "target_world_yaw_settled_deg": 179.99978830171366,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55103,
+        "steps": 590,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          147,
+          295,
+          442,
+          590
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    },
+    {
+      "scene_id": "train_04",
+      "split": "train",
+      "seed": 55104,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 578,
+      "h5_bytes": 120521803,
+      "target_xy_mm": [
+        -119.22370688005105,
+        -239.4846287792969
+      ],
+      "basket_xy_mm": [
+        0.00019247825164757254,
+        259.97545355240334
+      ],
+      "target_yaw_offset_configured_deg": 20,
+      "target_world_yaw_settled_deg": -160.0002116982864,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55104,
+        "steps": 578,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          144,
+          289,
+          433,
+          578
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    },
+    {
+      "scene_id": "train_05",
+      "split": "train",
+      "seed": 55105,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 567,
+      "h5_bytes": 118173197,
+      "target_xy_mm": [
+        -119.07405073417496,
+        -220.10419433922505
+      ],
+      "basket_xy_mm": [
+        6.000192478251638,
+        259.97545355240334
+      ],
+      "target_yaw_offset_configured_deg": -20,
+      "target_world_yaw_settled_deg": 159.99978830171364,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55105,
+        "steps": 567,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          141,
+          283,
+          425,
+          567
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    },
+    {
+      "scene_id": "train_06",
+      "split": "train",
+      "seed": 55106,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 611,
+      "h5_bytes": 127510661,
+      "target_xy_mm": [
+        -99.22370688005108,
+        -259.4846287792972
+      ],
+      "basket_xy_mm": [
+        -5.999807521748363,
+        265.97545355240334
+      ],
+      "target_yaw_offset_configured_deg": 20,
+      "target_world_yaw_settled_deg": -160.0002116982864,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55106,
+        "steps": 611,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          152,
+          305,
+          458,
+          611
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    },
+    {
+      "scene_id": "train_07",
+      "split": "train",
+      "seed": 55107,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 593,
+      "h5_bytes": 123721898,
+      "target_xy_mm": [
+        -99.07405073417496,
+        -240.10419433922502
+      ],
+      "basket_xy_mm": [
+        0.00019247825164775908,
+        265.97545355240334
+      ],
+      "target_yaw_offset_configured_deg": -20,
+      "target_world_yaw_settled_deg": 159.99978830171364,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55107,
+        "steps": 593,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          148,
+          296,
+          444,
+          593
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    },
+    {
+      "scene_id": "train_08",
+      "split": "train",
+      "seed": 55108,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 580,
+      "h5_bytes": 120785625,
+      "target_xy_mm": [
+        -99.09425574484636,
+        -219.78121735108735
+      ],
+      "basket_xy_mm": [
+        6.000192478251638,
+        265.97545355240334
+      ],
+      "target_yaw_offset_configured_deg": 0,
+      "target_world_yaw_settled_deg": 179.99978830171366,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55108,
+        "steps": 580,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          145,
+          290,
+          435,
+          580
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    },
+    {
+      "scene_id": "validation_00",
+      "split": "validation",
+      "seed": 55200,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 577,
+      "h5_bytes": 120401127,
+      "target_xy_mm": [
+        -129.07002482698968,
+        -249.941821990466
+      ],
+      "basket_xy_mm": [
+        -2.9998075217483544,
+        256.97545355240334
+      ],
+      "target_yaw_offset_configured_deg": -10,
+      "target_world_yaw_settled_deg": 169.9997883017136,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55200,
+        "steps": 577,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          144,
+          288,
+          432,
+          577
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    },
+    {
+      "scene_id": "validation_01",
+      "split": "validation",
+      "seed": 55201,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 578,
+      "h5_bytes": 120555131,
+      "target_xy_mm": [
+        -109.14600724356731,
+        -229.62726031178687
+      ],
+      "basket_xy_mm": [
+        3.0001924782516456,
+        262.97545355240334
+      ],
+      "target_yaw_offset_configured_deg": 10,
+      "target_world_yaw_settled_deg": -170.00021169828636,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55201,
+        "steps": 578,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          144,
+          289,
+          433,
+          578
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    },
+    {
+      "scene_id": "validation_02",
+      "split": "validation",
+      "seed": 55202,
+      "accepted": true,
+      "teacher_success": true,
+      "frames": 566,
+      "h5_bytes": 117951333,
+      "target_xy_mm": [
+        -129.0942557448463,
+        -229.78121735108738
+      ],
+      "basket_xy_mm": [
+        0.00019247825164726197,
+        259.97545355240334
+      ],
+      "target_yaw_offset_configured_deg": 0,
+      "target_world_yaw_settled_deg": 179.99978830171366,
+      "preparation_penetration_mm": 0.0,
+      "capture_exit": 0,
+      "replay_exit": 0,
+      "replay": {
+        "pass": true,
+        "errors": [],
+        "seed": 55202,
+        "steps": 566,
+        "reset_qpos_error": 0.0,
+        "max_qpos_error": 0.0,
+        "max_qvel_error": 0.0,
+        "max_state_error": 0.0,
+        "max_time_error": 0.0,
+        "max_rgb_pixel_error": 0,
+        "native_mismatches": 0,
+        "rendered_observation_indices": [
+          0,
+          141,
+          283,
+          424,
+          566
+        ],
+        "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+        "process_exit_pending": true
+      }
+    }
+  ],
+  "scope": "controlled initialization collection; no policy evaluation or training"
+}

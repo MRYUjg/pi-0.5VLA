@@ -1,0 +1,30 @@
+{
+  "version": "trt_t3_20261007_r1",
+  "algorithm": "AWQ",
+  "engines": {
+    "vision": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/t1_attempt_r6/vision.engine",
+      "sha256": "b5508fb5a65fd294d4364eac312b799c8caf76730a2b9c96084f99dd691c2fd2",
+      "bytes": 834302196
+    },
+    "prefix": {
+      "path": "/work/runs/trt_t3_20261007_r1/awq_build_r1/prefix.engine",
+      "sha256": "14f0e9f94d4c500e3b18cd7eea89773e4e04eb4316a3dd3ba4c61f046bab8169",
+      "bytes": 2033143900
+    },
+    "action_step": {
+      "path": "/work/runs/trt_t0_t2_20261007_r1/t1_attempt_r6/action_step.engine",
+      "sha256": "ecc417248f181ca5c64cf2c34ec3b11d71f48482528ce73fc8adb7022ac859a0",
+      "bytes": 1100657764
+    }
+  },
+  "previous_release_manifest_sha256": "4f359c7b939e10c7eebba4213f4156aef7dc02874101c9919f9ad0a3222c23ee",
+  "TensorRT": "10.13.3.9",
+  "runtime_image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+  "resident_engine_count": 3,
+  "total_engine_file_bytes": 3968103860,
+  "hardware_compatibility": "NONE, development4090, actual4070 must rebuild/test",
+  "preprocessing_source": "/app/src",
+  "source_checkpoint_loaded_at_inference": false,
+  "target_device_accepted": false
+}

@@ -1,0 +1,157 @@
+{
+  "version": "a100_comparison_20261008_r1",
+  "source_version": "a100_closedloop_20261008_r1",
+  "source_manifest_sha256": "68e55030753fd346559c69351f9d820fbee5133e25d350490ab256cc2a3a3cd3",
+  "source_files": {
+    "runs/a100_closedloop_20261008_r1/report_r1/summary.json": {
+      "sha256": "f18c2d7d9bf752743e7a0b91797ca779ba92caec0c511516e234022326066c8d",
+      "bytes": 434311
+    },
+    "runs/a100_closedloop_20261008_r1/closedloop_trt_float_r1/pilot/cases.json": {
+      "sha256": "195a2e391a09acebd32eb8a5a32bd18bff5ed7cda72de79e66237cd808d3290a",
+      "bytes": 1796355
+    },
+    "runs/a100_closedloop_20261008_r1/closedloop_trt_float_r1/pilot/summary.json": {
+      "sha256": "4d13ed9da262de01ef64ab821018fadd68f36dbb152d838321aec1a88d492ccf",
+      "bytes": 352
+    },
+    "runs/a100_closedloop_20261008_r1/closedloop_awq_r1/pilot/cases.json": {
+      "sha256": "784f78703b229aac6a9cc3ac9e9977e98cd9911a49269f2992906a76fd327193",
+      "bytes": 1797833
+    },
+    "runs/a100_closedloop_20261008_r1/closedloop_awq_r1/pilot/summary.json": {
+      "sha256": "98b733e2282949d3420b76efaf0c08c3e849bac5aeb19ddde32292791e11cfec",
+      "bytes": 346
+    },
+    "runs/a100_closedloop_20261008_r1/closedloop_gptq_r1/pilot/cases.json": {
+      "sha256": "7824eb7aea0d07e2acf68ff084af20ce6d4f2b48ca6b19033a9f9a0d2c960e6f",
+      "bytes": 1787627
+    },
+    "runs/a100_closedloop_20261008_r1/closedloop_gptq_r1/pilot/summary.json": {
+      "sha256": "bf9810a7c7ed2e95f9c960311e05cbb233590ef4c67c0f8692ed0432f0f0e619",
+      "bytes": 346
+    },
+    "runs/a100_closedloop_20261008_r1/closedloop_full_awq_r1/pilot/cases.json": {
+      "sha256": "2e635f403a56aa7ee32713f00780cf96950f5a6d5444bffd5eb1cf31eea835d0",
+      "bytes": 1772185
+    },
+    "runs/a100_closedloop_20261008_r1/closedloop_full_awq_r1/pilot/summary.json": {
+      "sha256": "39342e97d24959f1a648615ab4f2ee877d42cd122a16049a424955da0a4a8f59",
+      "bytes": 353
+    },
+    "runs/a100_closedloop_20261008_r1/closedloop_full_gptq_r1/pilot/cases.json": {
+      "sha256": "bd97b6ad623c4910059750970c130b4a18af1d1398ef205bb8173a87f9b2edfb",
+      "bytes": 1773655
+    },
+    "runs/a100_closedloop_20261008_r1/closedloop_full_gptq_r1/pilot/summary.json": {
+      "sha256": "086248ef2926bd3124d47c2245f66d1b54470bce865667110294165f12122cf8",
+      "bytes": 353
+    }
+  },
+  "device": "NVIDIA A100-SXM4-40GB",
+  "overview": [
+    {
+      "variant": "trt_float",
+      "label": "TensorRT float",
+      "successes": 25,
+      "trials": 30,
+      "success_fraction": 0.8333333333333334,
+      "device_peak_GB": 8.123908096,
+      "process_peak_GB": 7.4448896,
+      "request_p99_ms": 93.23274059046526,
+      "closedloop_gate_passed": false,
+      "numerical_128_gate_passed": true,
+      "numerical_30_initial_gate_passed": true
+    },
+    {
+      "variant": "awq",
+      "label": "旧 AWQ INT4（prefix）",
+      "successes": 25,
+      "trials": 30,
+      "success_fraction": 0.8333333333333334,
+      "device_peak_GB": 5.48569088,
+      "process_peak_GB": 4.806672384,
+      "request_p99_ms": 92.93167190935492,
+      "closedloop_gate_passed": false,
+      "numerical_128_gate_passed": true,
+      "numerical_30_initial_gate_passed": true
+    },
+    {
+      "variant": "gptq",
+      "label": "旧 GPTQ INT4（prefix）",
+      "successes": 27,
+      "trials": 30,
+      "success_fraction": 0.9,
+      "device_peak_GB": 5.441650688,
+      "process_peak_GB": 4.762632192,
+      "request_p99_ms": 93.7299145797806,
+      "closedloop_gate_passed": true,
+      "numerical_128_gate_passed": false,
+      "numerical_30_initial_gate_passed": true
+    },
+    {
+      "variant": "full_awq",
+      "label": "全 Linear AWQ INT4",
+      "successes": 24,
+      "trials": 30,
+      "success_fraction": 0.8,
+      "device_peak_GB": 4.472766464,
+      "process_peak_GB": 3.793747968,
+      "request_p99_ms": 106.76258683179185,
+      "closedloop_gate_passed": false,
+      "numerical_128_gate_passed": true,
+      "numerical_30_initial_gate_passed": true
+    },
+    {
+      "variant": "full_gptq",
+      "label": "全 Linear GPTQ INT4",
+      "successes": 29,
+      "trials": 30,
+      "success_fraction": 0.9666666666666667,
+      "device_peak_GB": 4.470669312,
+      "process_peak_GB": 3.791650816,
+      "request_p99_ms": 101.77703490848216,
+      "closedloop_gate_passed": true,
+      "numerical_128_gate_passed": false,
+      "numerical_30_initial_gate_passed": false
+    }
+  ],
+  "module_mean_ms_same_128_observations": [
+    {
+      "variant": "trt_float",
+      "vision": 13.337488021701574,
+      "prefix": 21.857999965548515,
+      "action_step": 42.41906403005123
+    },
+    {
+      "variant": "awq",
+      "vision": 13.1664479970932,
+      "prefix": 26.580143958330154,
+      "action_step": 42.00995995849371
+    },
+    {
+      "variant": "gptq",
+      "vision": 13.23837597668171,
+      "prefix": 25.4409119784832,
+      "action_step": 42.17599228769541
+    },
+    {
+      "variant": "full_awq",
+      "vision": 17.5731359757483,
+      "prefix": 26.585296005010605,
+      "action_step": 49.30598400533199
+    },
+    {
+      "variant": "full_gptq",
+      "vision": 16.026800017803907,
+      "prefix": 25.357264012098312,
+      "action_step": 48.36323204264045
+    }
+  ],
+  "PyTorch_A100_measured": false,
+  "inference_rerun": false,
+  "request_scope": "20 warmups, then 128 serial preencoded-observation HTTP requests; camera and image base64 encoding excluded.",
+  "memory_scope": "NVML whole-device lifetime peak, including loading, warmups, pilot and closed-loop.",
+  "module_scope": "CUDA event intervals, including CPU enqueue gaps; vision 3 calls, prefix 1 call, expert 10 calls summed per request, then arithmetic mean across 128 requests.",
+  "production_release_accepted": false
+}

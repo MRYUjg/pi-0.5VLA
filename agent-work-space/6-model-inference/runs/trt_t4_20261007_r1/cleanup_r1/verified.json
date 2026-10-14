@@ -1,0 +1,572 @@
+{
+  "all_12_model_services_stopped_cleanly": true,
+  "containers": [
+    {
+      "name": "pi05-trt-t4-resource-original-torch-r1",
+      "id": "f10bd9d5964131920f2cc12066199cf34fb6c8a730ef31b5f6d8e14698e37827",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T08:32:03.204289705Z",
+        "FinishedAt": "2026-10-07T08:36:17.161863236Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/resource_original_torch_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    },
+    {
+      "name": "pi05-trt-t4-resource-trt-float-r1",
+      "id": "41bc0ff79f431e13259b1a03e7e0f1824daf13e5a8fed99217301b87634fb13b",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T08:36:17.601982575Z",
+        "FinishedAt": "2026-10-07T08:38:17.372630117Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/resource_trt_float_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    },
+    {
+      "name": "pi05-trt-t4-resource-awq-r1",
+      "id": "c865bae5d23153c038a7f70b21b2cd43cf5770494191adc56c80a48c14c6d1c3",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T08:38:17.958912642Z",
+        "FinishedAt": "2026-10-07T08:40:09.870365016Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/resource_awq_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    },
+    {
+      "name": "pi05-trt-t4-resource-gptq-r1",
+      "id": "3ef01cd322115b22eb33ed04371cbeea72380e3d9bbb4bea83e50b27eb6e5eb2",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T08:40:10.301239059Z",
+        "FinishedAt": "2026-10-07T08:42:01.61315817Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/resource_gptq_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    },
+    {
+      "name": "pi05-trt-t4-closedloop-original-torch-r1",
+      "id": "ca59c75a2c0e8c69302705d399279ff0b39f65ffd89e46aac992581ce9a05ab0",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T08:44:32.952972089Z",
+        "FinishedAt": "2026-10-07T09:00:25.323947669Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/closedloop_original_torch_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    },
+    {
+      "name": "pi05-trt-t4-closedloop-trt-float-r1",
+      "id": "2f8a726d27336d4ce0e99ad16416205f3e7f1382fa25676f67a4dfa67ed781c5",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T09:00:25.801928747Z",
+        "FinishedAt": "2026-10-07T09:14:48.906120197Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/closedloop_trt_float_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    },
+    {
+      "name": "pi05-trt-t4-closedloop-awq-r1",
+      "id": "b89afbc9f09fafad437f080bc43f779dabf333ac418ff91d5e732de766ad8218",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T09:14:49.352755151Z",
+        "FinishedAt": "2026-10-07T09:29:05.561952096Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/closedloop_awq_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    },
+    {
+      "name": "pi05-trt-t4-closedloop-gptq-r1",
+      "id": "c6dd88fb4d8956f06628fd2777badc35e4632edb6ee57512de93d8206afcb64f",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T09:29:05.980384578Z",
+        "FinishedAt": "2026-10-07T09:43:38.15791935Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/closedloop_gptq_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    },
+    {
+      "name": "pi05-trt-t4-latency-original-torch-r1",
+      "id": "abc61dba230df90e78dd64efd3ceb6f508ac28dec207fbd8c84b6fcd788fd711",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T09:43:39.804009817Z",
+        "FinishedAt": "2026-10-07T09:44:56.50482034Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/latency_original_torch_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    },
+    {
+      "name": "pi05-trt-t4-latency-trt-float-r1",
+      "id": "62aa1cbc11782b816550c3b0191dd9b632a41f252ac1c7bf2bfdab1175765137",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T09:44:56.909404649Z",
+        "FinishedAt": "2026-10-07T09:46:13.558397368Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/latency_trt_float_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    },
+    {
+      "name": "pi05-trt-t4-latency-awq-r1",
+      "id": "3bee55e8d91df6de2b148fdd8dd0516a964e37242ba646992098d4c3276718b4",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T09:46:13.938263676Z",
+        "FinishedAt": "2026-10-07T09:47:26.20651093Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/latency_awq_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    },
+    {
+      "name": "pi05-trt-t4-latency-gptq-r1",
+      "id": "9d70535495d8c121dfbf3398cc87ada70f0e58aa6d6ab28d806f34519ff2168c",
+      "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-07T09:47:26.603612133Z",
+        "FinishedAt": "2026-10-07T09:48:38.321858597Z"
+      },
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+          "Destination": "/work",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/latency_gptq_r1",
+          "Destination": "/out",
+          "Mode": "",
+          "RW": true,
+          "Propagation": "rprivate"
+        },
+        {
+          "Type": "bind",
+          "Source": "/mnt/data/vla-policy/openpi",
+          "Destination": "/app",
+          "Mode": "ro",
+          "RW": false,
+          "Propagation": "rprivate"
+        }
+      ],
+      "kept_stopped_for_audit": true
+    }
+  ],
+  "current_GPU_compute_processes": "",
+  "current_GPU_summary": "NVIDIA GeForce RTX 4090, 49140 MiB, 13 MiB, 0 %",
+  "step_and_render_metrics": {
+    "original_torch": {
+      "main_episode_steps": 4169,
+      "main_step_render_median_ms": 286.6980090002471,
+      "single_client_step_render_median_ms": 276.74722300071153
+    },
+    "trt_float": {
+      "main_episode_steps": 3886,
+      "main_step_render_median_ms": 285.7173109987343,
+      "single_client_step_render_median_ms": 278.7023470009444
+    },
+    "awq": {
+      "main_episode_steps": 3913,
+      "main_step_render_median_ms": 286.8454700001166,
+      "single_client_step_render_median_ms": 280.27162899888935
+    },
+    "gptq": {
+      "main_episode_steps": 3999,
+      "main_step_render_median_ms": 286.5501630003564,
+      "single_client_step_render_median_ms": 281.9968884996342
+    }
+  },
+  "time_utc": "2026-10-07T10:05:00.681144+00:00",
+  "other_user_jobs_modified": false,
+  "frozen_T0_T3_modified": false
+}

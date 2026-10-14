@@ -1,0 +1,16 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-a100-closedloop-gptq-r1",
+    "/.venv/bin/python",
+    "/work/runs/a100_closedloop_20261008_r1/closedloop_gptq_r1_source/pilot.py",
+    "--variant",
+    "gptq",
+    "--out",
+    "/out/pilot",
+    "--port",
+    "18884"
+  ],
+  "exit_code": 0
+}

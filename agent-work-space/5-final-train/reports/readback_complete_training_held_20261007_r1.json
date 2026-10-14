@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-07T16:37:13.288208+08:00",
+  "data_readback_pass": true,
+  "episodes": 228,
+  "frames_verified": 170724,
+  "rgb_images_verified": 341448,
+  "source_unchanged": true,
+  "max_rgb_pixel_error": 0,
+  "stage_exit_codes": {
+    "convert.py": 0,
+    "validate.py": 0
+  },
+  "frozen_file_hashes_checked": 141,
+  "automatic_training": false,
+  "training_processes": [],
+  "training_run_exists": false,
+  "training_execution_dir_exists": false,
+  "status": "data_validated_awaiting_user_training_instruction",
+  "user_instruction": "读回验证后，不要自动启动微调训练。"
+}

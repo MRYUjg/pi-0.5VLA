@@ -1,0 +1,17 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-t3-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t3_20261007_r1/awq_bundle_r1_source/make_bundle.py",
+    "--algorithm",
+    "AWQ",
+    "--build",
+    "/work/runs/trt_t3_20261007_r1/awq_build_r1",
+    "--out",
+    "/work/runs/trt_t3_20261007_r1/bundles/awq.json"
+  ],
+  "exit_code": 0,
+  "seconds": 6.656472206115723
+}

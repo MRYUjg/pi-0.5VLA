@@ -1,0 +1,17 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "-e",
+    "PYTHONPATH=/app/src:/app/packages/openpi-client/src",
+    "-e",
+    "OPENPI_DATA_HOME=/openpi_assets",
+    "-e",
+    "HF_HUB_OFFLINE=1",
+    "pi05-trt-t0t2-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t0_t2_20261007_r1/salvage_r1_source/salvage.py"
+  ],
+  "exit_code": 0,
+  "seconds": 15.06680679321289
+}

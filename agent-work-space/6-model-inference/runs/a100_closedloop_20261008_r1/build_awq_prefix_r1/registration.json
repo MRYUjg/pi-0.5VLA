@@ -1,0 +1,16 @@
+{
+  "algorithm": "AWQ",
+  "stage": "prefix",
+  "source_ONNX_sha256": "3856bcd3f837c525abd9d25c0cfb8b4cbb94b15b2286877870d4d5af04db54a8",
+  "external_data_sha256": {
+    "prefix_int4.data": "392547c874ca070399e7f9739554707f36804eb8f1da99cd7511101c56b3cd45"
+  },
+  "source_INT4_initializers": 121,
+  "TensorRT": "10.13.3.9",
+  "build_GPU": "NVIDIA A100-SXM4-40GB",
+  "strongly_typed": true,
+  "TF32": false,
+  "workspace_bytes": 2147483648,
+  "builder_optimization_level": 3,
+  "hardware_compatibility": "NONE"
+}

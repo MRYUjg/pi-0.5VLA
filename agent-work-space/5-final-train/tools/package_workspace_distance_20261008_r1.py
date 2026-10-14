@@ -1,0 +1,91 @@
+"""Archive verified distance diagnostics and preparation reproductions with honest labels."""
+import hashlib
+import json
+import pathlib
+import shutil
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+RUN = 'workspace_distance_20261008_r2'
+
+
+def main():
+    run = ROOT / 'runs' / RUN
+    report = json.loads((run / 'verified_results.json').read_text())
+    assert report['verification_pass'] and report['complete'] and not report['errors']
+    assert json.loads((run / 'verification_execution.json').read_text())['process_exit'] == 0
+    assert json.loads((run / 'server_execution.json').read_text())['process_exit'] == 0
+    for version in ['workspace_distance_20261008_r2', 'workspace_analysis_20261008_r1',
+                    'preparation_video_20261008_r1', 'distance_media_20261008_r1']:
+        for name, wanted in json.loads((ROOT / 'releases' / version / 'manifest.json').read_text())['files'].items():
+            assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == wanted, name
+    out = ROOT / 'videos' / RUN
+    out.mkdir(exist_ok=False)
+    videos = []
+    lines = ['# 工作区距离对照 — MP4索引', '',
+             '18个开发布局：8条策略闭环录像、10条初态拒绝录像。另有2条准备过程可视化复现；复现不增加试验分母。',
+             '视频末尾PRIMARY指220步；962步原生目标成立的录像仍显示PRIMARY FAILURE，其1000步诊断结果见本索引。未进行释放稳定认证。', '',
+             '| 基座前移 | Task | seed | 初态 | 220步 | 650步 | 1000步 | 视频 |', '|---:|---:|---:|---|---|---|---|---|']
+    for row in sorted(report['videos'], key=lambda x: (x['offset_m'], x['task'], x['seed'])):
+        cm = round(row['offset_m']*100)
+        dest = out / f'base_{cm:02d}cm' / f'task{row["task"]:02d}_s{row["seed"]}.mp4'
+        dest.parent.mkdir(exist_ok=True)
+        shutil.copyfile(ROOT / row['video'], dest)
+        assert hashlib.sha256(dest.read_bytes()).hexdigest() == row['sha256']
+        video = {**row, 'source_video': row['video'], 'video': str(dest.relative_to(ROOT)),
+                 'kind': 'initialization_rejected' if row['preparation_only'] else 'policy_rollout'}
+        videos.append(video)
+        outcomes = ['成功' if row['successes_by_budget'][str(n)] else '失败' for n in [220, 650, 1000]]
+        if row['first_success_step'] is not None:
+            outcomes[-1] += f'（{row["first_success_step"]}步）'
+        lines.append(f'| {cm}cm | {row["task"]} | {row["seed"]} | ' + ('通过' if row['initialization_pass'] else '拒绝') +
+                     ' | ' + ' | '.join(outcomes) + f' | [录像](base_{cm:02d}cm/{dest.name}) |')
+    lines += ['', '## 准备过程复现', '', '使用同一已登记validation种子、原quiet_hold和原审计，只有渲染记录增加；最终qpos与原预检误差0，进程退出0，均通过解码。', '']
+    for task, seed, cm in [(2, 630201, 10), (6, 630600, 5)]:
+        source = ROOT / 'videos/workspace_distance_preparation_20261008_r1' / f'task{task:02d}_s{seed}_base{cm:02d}cm'
+        record = json.loads((source / 'record.json').read_text())
+        assert record['decode_pass'] and record['settled_qpos_max_error_to_registered_preflight'] == 0
+        dest = out / 'preparation_only' / f'task{task:02d}_s{seed}_base{cm:02d}cm.mp4'
+        dest.parent.mkdir(exist_ok=True)
+        shutil.copyfile(source / 'preparation.mp4', dest)
+        assert hashlib.sha256(dest.read_bytes()).hexdigest() == record['sha256']
+        videos.append({'kind': 'preparation_visual_reproduction', 'task': task, 'seed': seed, 'offset_m': cm/100,
+                       'video': str(dest.relative_to(ROOT)), 'sha256': record['sha256'], 'decode_pass': True,
+                       'frames': record['frames'], 'seconds': record['seconds'], 'scope': record['scope']})
+        lines.append(f'- [task{task:02d} 前移{cm}cm：准备阶段物理异常](preparation_only/{dest.name})')
+    assert len(videos) == 20
+    (out / 'index.json').write_text(json.dumps({'run': RUN, 'videos': videos, 'additional_policy_tests': 0}, ensure_ascii=False, indent=2))
+    (out / '视频索引.md').write_text('\n'.join(lines)+'\n')
+    summary = ['# 工作区距离对照完成记录 — 20261008 r2', '',
+               '本轮用户要求缩短机械臂与工作区距离再测试。18个布局已完成原初态审核，8个有效布局完成策略闭环，其余10个在策略运行前被拒绝；动作交叉核对、配对对象哈希和全部18段试验MP4核验通过，推理服务与独立核验实际退出0。',
+               '另补2段准备过程可视化复现，最终qpos误差0，均解码通过。共20段视频。', '',
+               '固定checkpoint10000、归一化、控制器、夹爪速度0.01、20Hz、每5步推理。世界+x方向前移ECO65基座0/5/10cm，实际基座x=-0.66/-0.61/-0.56m。对象/桌子/原生采样器与外部相机不移动，腕相机随臂移动，原关节初值不变，初始世界TCP随基座平移。',
+               '三任务各两条既有validation种子，共六组配对。不是新的独立验收集，不能把本轮当作10任务≥90%通过，也不回写旧800次成功率。', '',
+               '| 前移 | 初态通过 | 220步原生成功 | 650步原生成功 | 1000步原生成功 |', '|---:|---:|---:|---:|---:|']
+    for offset in [0., .05, .1]:
+        g = report['groups'][str(offset)]
+        summary.append(f'| {round(offset*100)}cm | {6-g["initialization_rejected"]}/6 | {g["successes_by_budget"]["220"]}/6 | {g["successes_by_budget"]["650"]}/6 | {g["successes_by_budget"]["1000"]}/6 |')
+    summary += ['', '分母包含初态拒绝；10cm组没有策略动作，其0/6不是模型已运行六次失败。原位置达标为task03 seed630300第363步、task06 seed630601第633步。',
+                '可直接比较的task02两条种子：原位置1000步均未成功；前移5cm后seed630201第962步达到原生目标，seed630202仍未成功。因此有一个场景改善，但220和650步均未改善，样本不足以证明稳定提升。', '',
+                '## 伸直和可达性证据', '',
+                '静态读回旧录像对应的qpos、仅执行mj_forward计算几何，不控制机器人：task03和task06的肩肘腕伸展比例约99.3%，肘关节接近0°，完整6维位姿Jacobian接近退化。',
+                '以旋转部分乘0.2m统一量纲，task03第74步加权条件数约2269，task06第446步约20275；这是静态位姿证据，不是已证明的唯一失败原因。两例关节限位余量仍较大，不能把伸直直接描述为关节限位卡死。',
+                '本轮task02两条有效配对在策略执行期的最大伸展比例：原位置约99.3%，前移5cm约90.7%。靠近确实降低了这两条轨迹的伸直程度，但只有一条取得很晚的原生目标成功。',
+                '六对reset对象哈希一致；准备后的落定位置不保证恒同。例如task02 seed630201前移5cm后的目标y比原位置约多9.43mm，腕相机视野和世界TCP也随基座变化，不能将全部性能差异唯一归因于Jacobian。', '',
+                '## 靠近带来的物理问题', '',
+                '- 前移10cm、task02 seed630201：robot0_link_2_collision与小烤碗接触，最大穿透7.03mm、最大法向力3.59N，随后支撑失效/物体掉落。',
+                '- 前移5cm、task06 seed630600：gripper0_left_fingerpad_col碰到另一个黑碗，最大法向力1.70N，初态审核拒绝。',
+                '- 前移5cm、task03 seed630300：出现支撑与稳定性异常，但该条原审计没有记录机器人外部接触；具体触发机制仍需单独定位，不把所有拒绝都归为已证实的机器人碰撞。',
+                '物理阈值未放宽、未替换种子、无教师接管。近端布局失败不能删除后只报告可运行场景。', '',
+                '## 下一步', '',
+                '直接全局前移5/10cm还不适合作为部署方案。建议先在新的开发版本为靠近后的布局重新求安全初始位姿并检查整个工作区的障碍物间隙，确保三个任务均通过初始化；再固定布局扩展闭环、确认释放/稳定与动作时序；部署几何确定后采集匹配的训练数据，使用未消耗的测试集做正式验收。',
+                '本輪原生目标判断不等于完整r6物理认证或释放稳定认证。未自动更改控制器/夹爪速度、未再训练、未部署实物。', '',
+                f'[本轮20段视频](videos/{RUN}/视频索引.md)。[准备阶段对照图](reports/workspace_geometry_20261008_r1/preparation_comparison.png)。',
+                '原始证据：runs/'+RUN+'/verified_results.json、各preflight/rollouts记录；源码清单releases/workspace_distance_20261008_r2/manifest.json。旧800次已由rollout_recovery_20261008_r2恢复核验并发布44段MP4，见闭环测试恢复与完成记录_20261008_r2.md。',
+                '初版属性覆盖未作用于MountedECO65，实际坐标未移动；失败入口烟测与r1源码保留。r2在模型装载入口平移，并在准备动作前断言实际基座坐标。']
+    with (ROOT / '工作区距离_对照试验完成记录_20261008_r2.md').open('x') as f:
+        f.write('\n'.join(summary)+'\n')
+    print('DISTANCE ARCHIVE COMPLETE', len(videos), 'MP4', flush=True)
+
+
+if __name__ == '__main__':
+    main()

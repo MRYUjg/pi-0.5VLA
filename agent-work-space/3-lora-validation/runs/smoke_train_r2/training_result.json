@@ -1,0 +1,34 @@
+{
+  "pass": true,
+  "steps": 300,
+  "overfit_relative_loss_reduction": 0.6152859202153429,
+  "overfit_target": 0.2,
+  "baseline_overfit_mean": 0.35766867361962795,
+  "after_overfit_mean": 0.13760017463937402,
+  "final_overfit_mean": 0.129392153583467,
+  "baseline_validation_mean": 0.3638374215612809,
+  "after_overfit_validation_mean": 0.17445803433656693,
+  "final_validation_mean": 0.10475368176897366,
+  "all_gradients_finite": true,
+  "changed_lora_leaves": 20,
+  "changed_non_lora_leaves": [],
+  "checkpoint": "checkpoint/300",
+  "prediction_shape": [
+    1,
+    10,
+    32
+  ],
+  "gpu_memory_stats": {
+    "num_allocs": 13715,
+    "bytes_in_use": 7543335424,
+    "peak_bytes_in_use": 8233257216,
+    "largest_alloc_size": 2415919104,
+    "bytes_limit": 21622407774,
+    "bytes_reserved": 0,
+    "peak_bytes_reserved": 0,
+    "largest_free_block_bytes": 0,
+    "pool_bytes": 8592031744,
+    "peak_pool_bytes": 8592031744
+  },
+  "scope": "training mechanics + limited-data loss; not task success acceptance"
+}

@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-10-07T16:36:21.288264+08:00",
+  "user_instruction": "读回验证后，不要自动启动微调训练。",
+  "automatic_training": false,
+  "stop_after": "dataset_readback",
+  "training_requires_new_user_instruction": true,
+  "retired_supervisor": "pipeline_20261007_r1",
+  "retired_supervisor_pid": 60565,
+  "retired_supervisor_stopped": true,
+  "conversion_runner_pid": 60566,
+  "conversion_and_readback_retained": true,
+  "training_not_started_when_checked": true
+}

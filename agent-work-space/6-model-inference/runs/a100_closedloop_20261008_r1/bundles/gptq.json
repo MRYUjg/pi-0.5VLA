@@ -1,0 +1,73 @@
+{
+  "version": "a100_closedloop_20261008_r1",
+  "variant": "gptq",
+  "device": "A100-SXM4-40GB",
+  "engines": {
+    "vision": {
+      "path": "/work/runs/a100_closedloop_20261008_r1/build_float_vision_r1/vision.engine",
+      "sha256": "3b9a3eb943084b21226ed5ae88d5b6573f227534ad89e01524ecda69aa5bb881",
+      "bytes": 838571660
+    },
+    "prefix": {
+      "path": "/work/runs/a100_closedloop_20261008_r1/build_gptq_prefix_r1/prefix.engine",
+      "sha256": "26d2f90bf9ec24ad6cda0d6c2ca3ba08af05a7aa8fc1ecb28dfab72caf12419d",
+      "bytes": 2022891292
+    },
+    "action_step": {
+      "path": "/work/runs/a100_closedloop_20261008_r1/build_float_action_step_r1/action_step.engine",
+      "sha256": "df8254cf97498e8ad154396c76aef55f040f0d63cc81ac287c9ed73b99116b1f",
+      "bytes": 1100911572
+    }
+  },
+  "source_graph_registrations": {
+    "vision": {
+      "algorithm": "float",
+      "stage": "vision",
+      "source_ONNX_sha256": "2259deba622089caf6ebfa478f77bdf5f93a051f603df25ab44b5a49c62ffc4e",
+      "external_data_sha256": {},
+      "source_INT4_initializers": 0,
+      "TensorRT": "10.13.3.9",
+      "build_GPU": "NVIDIA A100-SXM4-40GB",
+      "strongly_typed": true,
+      "TF32": false,
+      "workspace_bytes": 2147483648,
+      "builder_optimization_level": 3,
+      "hardware_compatibility": "NONE"
+    },
+    "prefix": {
+      "algorithm": "GPTQ",
+      "stage": "prefix",
+      "source_ONNX_sha256": "40aad0c68aa1782d9bc8f64758bc9a3ffd59d34469f7fbf3f63b83011fcf2631",
+      "external_data_sha256": {
+        "prefix_int4.data": "eff4c5aa24cf4e005ba2573476c385237232c140241dc4bed8b46ba4afc45ded"
+      },
+      "source_INT4_initializers": 121,
+      "TensorRT": "10.13.3.9",
+      "build_GPU": "NVIDIA A100-SXM4-40GB",
+      "strongly_typed": true,
+      "TF32": false,
+      "workspace_bytes": 2147483648,
+      "builder_optimization_level": 3,
+      "hardware_compatibility": "NONE"
+    },
+    "action_step": {
+      "algorithm": "float",
+      "stage": "action_step",
+      "source_ONNX_sha256": "8b41612ad776c097fcf7839bb89abc76b3cf55c5b25ad0516d767563a432a4b4",
+      "external_data_sha256": {},
+      "source_INT4_initializers": 0,
+      "TensorRT": "10.13.3.9",
+      "build_GPU": "NVIDIA A100-SXM4-40GB",
+      "strongly_typed": true,
+      "TF32": false,
+      "workspace_bytes": 2147483648,
+      "builder_optimization_level": 3,
+      "hardware_compatibility": "NONE"
+    }
+  },
+  "same_frozen_quantized_weights": true,
+  "total_engine_file_bytes": 3962374524,
+  "denoising_steps": 10,
+  "new_closedloop_acceptance": "pending",
+  "4090_speed_comparison_claimed": false
+}

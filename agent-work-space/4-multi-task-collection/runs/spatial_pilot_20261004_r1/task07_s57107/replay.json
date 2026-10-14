@@ -1,0 +1,26 @@
+{
+  "pass": false,
+  "errors": [
+    "qpos replay drift",
+    "qvel replay drift",
+    "RGB replay mismatch"
+  ],
+  "seed": 57107,
+  "steps": 735,
+  "reset_qpos_error": 0.0,
+  "max_qpos_error": 1.9145417784471874e-07,
+  "max_qvel_error": 1.3424402434600562e-05,
+  "max_state_error": 9.5367431640625e-07,
+  "max_time_error": 0.0,
+  "max_rgb_pixel_error": 64,
+  "native_mismatches": 0,
+  "rendered_observation_indices": [
+    0,
+    183,
+    367,
+    551,
+    735
+  ],
+  "method": "reset(seed), replay recorded preparation and teacher actions; no state injection",
+  "process_exit_pending": true
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-full4-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_full4_20261007_r1/awq_execution_r1_source/bundle_coverage.py",
+    "--algorithm",
+    "AWQ"
+  ],
+  "exit_code": 0,
+  "seconds": 21.07484245300293
+}

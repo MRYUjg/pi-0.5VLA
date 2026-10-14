@@ -1,0 +1,16 @@
+[
+  {
+    "K": 32,
+    "N": 1024,
+    "passed": true,
+    "errors": []
+  },
+  {
+    "K": 4304,
+    "N": 1152,
+    "passed": false,
+    "errors": [
+      "In node 0 with name:  and operator: DequantizeLinear (QuantDequantLinearHelper): INVALID_NODE: Assertion failed: inputSize % scaleSize == 0: Inferred block size is not an integer. Input volume = 4958208, scale volume = 39168."
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-a100-build-20261008-r1",
+    "/.venv/bin/python",
+    "/work/runs/a100_closedloop_20261008_r1/report_r1_source/report.py",
+    "--root",
+    "/work/runs/a100_closedloop_20261008_r1",
+    "--out",
+    "/work/runs/a100_closedloop_20261008_r1/report_r1"
+  ],
+  "exit_code": 0,
+  "seconds": 4.275564908981323
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-a100-build-20261008-r1",
+    "/.venv/bin/python",
+    "/work/runs/a100_closedloop_20261008_r1/build_awq_vision_r1_source/build.py",
+    "--source",
+    "/work/runs/trt_full4_20261007_r1/awq_vision_r1/vision_int4.onnx",
+    "--out",
+    "/work/runs/a100_closedloop_20261008_r1/build_awq_vision_r1",
+    "--stage",
+    "vision",
+    "--algorithm",
+    "AWQ"
+  ],
+  "exit_code": 0,
+  "seconds": 79.74412298202515
+}

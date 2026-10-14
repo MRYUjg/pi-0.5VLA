@@ -1,0 +1,11 @@
+{
+  "pid": 189,
+  "bundle_sha256": "0bad7b1eff7e22fa71972a11683a53fc0d4c5da5203c04158dc21dbad6b7a76b",
+  "pilot_sha256": "3e4a3cae16408dca1b883d0661f9dafe5db2d79f473a018b7b0c6067235ce074",
+  "algorithm": "GPTQ",
+  "observations": 128,
+  "preprocessing": "original openpi transforms and Torch preprocessing without a source model",
+  "same_noise_and_ten_denoising_steps": true,
+  "full_float_model_loaded": false,
+  "memory_test_is_development_4090_only": true
+}

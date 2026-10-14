@@ -1,0 +1,25 @@
+{
+  "command": [
+    "docker",
+    "stop",
+    "-t",
+    "2",
+    "pi05-a100-build-20261008-r1"
+  ],
+  "docker_stop_exit_code": 0,
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 137,
+    "Error": "",
+    "StartedAt": "2026-10-08T07:58:10.635108482Z",
+    "FinishedAt": "2026-10-08T09:37:20.457762942Z"
+  },
+  "idle_container_only": true,
+  "idle_sleep_PID1_was_intentionally_stopped_after_all_build_and_analysis_execs_completed": true
+}

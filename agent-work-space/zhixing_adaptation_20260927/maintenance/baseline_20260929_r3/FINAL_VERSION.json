@@ -1,0 +1,66 @@
+{
+  "recorded_at_utc": "2026-09-29T04:02:56Z",
+  "note": "Written after the r4 freeze; maintenance/ is outside the frozen scope, so this file intentionally does not appear in any manifest.",
+  "current_version": "n0_20260929_r4",
+  "versions_retained": [
+    "n0_20260929_r2",
+    "n0_20260929_r3",
+    "n0_20260929_r4"
+  ],
+  "r4": {
+    "source_count": 2111,
+    "source_bytes": 1038284632,
+    "manifest_sha256": "c02189c488b0ac7c0aa6a4eae0e08aa4ab12e8278b49ce59061af2273f3c8915",
+    "integrity_sha256": "deb55bbe974ecf6f51ade1df42f8411f47b4224076fd821507bde5a960418ce0",
+    "archive_sha256": "853376ce5596918d56319db6ad61a1b10bb87dc35069a9fa7787ade7f8869871",
+    "archive_bytes": 457854003,
+    "predecessor_is_r3": true,
+    "change_vs_r3": {
+      "added": 1,
+      "retired": 0,
+      "changed": 3,
+      "changed_paths": [
+        "agent-work-space/zhixing_adaptation_20260927/configs/frozen_protocol.json",
+        "agent-work-space/zhixing_adaptation_20260927/当前版本与文件索引.md",
+        "agent-work-space/zhixing_adaptation_20260927/阶段进展.md"
+      ]
+    },
+    "verification": {
+      "version": "n0_20260929_r4",
+      "verdict": "PASS",
+      "scope": "N0 source/asset integrity only; not N1-N4 or training approval",
+      "source_count": 2111,
+      "source_bytes": 1038284632,
+      "archive_verified": true,
+      "restored_file_count": 2111,
+      "issues": [],
+      "snapshot": "agent-work-space/zhixing_adaptation_20260927/manifests/freezes/n0_20260929_r4",
+      "archive_sha256": "853376ce5596918d56319db6ad61a1b10bb87dc35069a9fa7787ade7f8869871"
+    }
+  },
+  "pointers": {
+    "current_json": {
+      "version": "n0_20260929_r4",
+      "manifest": "agent-work-space/zhixing_adaptation_20260927/manifests/freezes/n0_20260929_r4/manifest.json",
+      "manifest_sha256": "c02189c488b0ac7c0aa6a4eae0e08aa4ab12e8278b49ce59061af2273f3c8915",
+      "integrity_sha256": "deb55bbe974ecf6f51ade1df42f8411f47b4224076fd821507bde5a960418ce0",
+      "N0_status": "PASS",
+      "N1_N4_acceptance": "NOT_GRANTED"
+    },
+    "current_manifest_matches": true,
+    "current_integrity_matches": true,
+    "alias_is_byte_identical_to_r4_manifest": true
+  },
+  "cleanup": {
+    "plan": "deletion_plan.json",
+    "deleted_files": 113,
+    "deleted_bytes": 2697330,
+    "raw_preserved": true,
+    "raw_files": 46
+  },
+  "user_authorized_scope_reductions": [
+    "All repo *.bak backups cleared -> P0 criterion (c) loses its evidence basis.",
+    "Historical execution-record markdowns deleted.",
+    "Cleanup limited to the node directory plus repo-wide *.bak."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "pass": true,
+  "tests": [
+    {
+      "case": "stale_observation",
+      "rejected": true,
+      "errors": [
+        "o_t before action",
+        "o_t+1 after action",
+        "physics pre-state equality"
+      ]
+    },
+    {
+      "case": "wrong_action",
+      "rejected": true,
+      "errors": [
+        "actual executed action equality"
+      ]
+    },
+    {
+      "case": "wrong_gripper_state",
+      "rejected": true,
+      "errors": [
+        "named gripper state"
+      ]
+    },
+    {
+      "case": "blank_rgb",
+      "rejected": true,
+      "errors": [
+        "blank RGB image"
+      ]
+    },
+    {
+      "case": "crashed_capture",
+      "rejected": true,
+      "errors": [
+        "capture exit"
+      ]
+    },
+    {
+      "case": "replay_failure",
+      "rejected": true,
+      "errors": [
+        "replay failed"
+      ]
+    }
+  ]
+}

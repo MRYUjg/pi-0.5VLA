@@ -1,0 +1,33 @@
+{
+  "pass": true,
+  "steps": 10000,
+  "batch_size": 4,
+  "tasks": [
+    0,
+    2,
+    3,
+    5,
+    6
+  ],
+  "selected": {
+    "step": 10000,
+    "validation_task_balanced_loss": 0.020352864245139376
+  },
+  "baseline_validation_loss": 0.30261684960020435,
+  "last_window_mean_loss": 0.01628569557215087,
+  "all_loss_gradients_finite": true,
+  "non_lora_parameters_unchanged": true,
+  "gpu_memory_stats": {
+    "num_allocs": 157169,
+    "bytes_in_use": 7543335424,
+    "peak_bytes_in_use": 9465267456,
+    "largest_alloc_size": 2415919104,
+    "bytes_limit": 43357953625,
+    "bytes_reserved": 0,
+    "peak_bytes_reserved": 0,
+    "largest_free_block_bytes": 0,
+    "pool_bytes": 17181966336,
+    "peak_pool_bytes": 17181966336
+  },
+  "scope": "formal LoRA training/checkpoint selection; policy success still requires closed-loop evaluation"
+}

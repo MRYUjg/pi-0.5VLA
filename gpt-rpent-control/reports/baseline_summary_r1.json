@@ -1,0 +1,60 @@
+{
+  "suite": "libero_spatial",
+  "task_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "seed": 0,
+  "official_init_index": 0,
+  "robot": "Panda (LIBERO MountedPanda)",
+  "gripper": "PandaGripper",
+  "planner_actual_model": "deepseek-flash",
+  "policy": "original_torch pi0.5 frozen T4 reference",
+  "native_successes": 10,
+  "trials": 10,
+  "control_steps": 1120,
+  "VLA_requests": 229,
+  "planner_usage": {
+    "total_input_tokens": 123173,
+    "total_output_tokens": 4098,
+    "total_cached_input_tokens": 94080,
+    "turns_used": 43,
+    "tool_calls": 43
+  },
+  "workflow": {
+    "tasks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "seed": 0,
+    "workers": 2,
+    "seconds": 479.1385531959968,
+    "all_task_processes_exit_zero": true,
+    "policy_exited_zero": true,
+    "policy_running_after_cleanup": false
+  },
+  "final_checks": {
+    "reused_source_files": 446,
+    "reused_sources_unchanged": true,
+    "pilot_and_parallel_task0_actions_states_exact": true,
+    "all_native_tasks_success": true,
+    "all_audits_passed": true
+  },
+  "formal_multi_initial_benchmark": false
+}

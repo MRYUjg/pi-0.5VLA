@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/trt_full4_20261007_r1/execute.py",
+    "--name",
+    "gptq_execution_r1",
+    "bundle_coverage.py",
+    "--algorithm",
+    "GPTQ"
+  ],
+  "exit_code": 0,
+  "seconds": 21.16236925125122
+}

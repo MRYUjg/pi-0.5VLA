@@ -1,0 +1,41 @@
+{
+  "inherited_identical": [
+    "scripts/audit.py",
+    "scripts/collect.py",
+    "scripts/freeze.py",
+    "scripts/pipeline.py",
+    "scripts/preflight.py",
+    "scripts/replay.py",
+    "scripts/run.py",
+    "scripts/run_coverage.py",
+    "scripts/scenes.py",
+    "scripts/test_rejections.py",
+    "scripts/validate.py",
+    "vendor/eco65_expert_validation.py",
+    "vendor/loaded_diagnostics_r5.py",
+    "vendor/n3_grasp_test.py",
+    "vendor/n3_osc_full_chain.py",
+    "vendor/n4_collect.py",
+    "vendor/real_object_teacher_r20.py",
+    "vendor/safe_teacher_r8.py",
+    "vendor/verify_real_object_r6.py"
+  ],
+  "upstream": {
+    "coverage_20261003_r1": {
+      "files_checked": 1505,
+      "errors": [],
+      "manifest_sha256": "ed73d91225b5d7462c29b4278c269689e6923ecdd603f2103f32196c330969a8"
+    },
+    "lora_20261004_r1": {
+      "files_checked": 65,
+      "errors": [],
+      "manifest_sha256": "55c256fe4c88a9cd5faba13baf8086fffdbe9b42d83212d8971f8a7a0418cbca"
+    },
+    "rollout_20261004_r1": {
+      "files_checked": 29,
+      "errors": [],
+      "manifest_sha256": "812a5636f9d8d47bc6eb57c1064deed71ee2e8b173bf20606462f331973625ae"
+    }
+  },
+  "images": "sha256:1ac69906b0b877c9fe1c2964794aa5b90112850da01967a445658e41a958f284"
+}

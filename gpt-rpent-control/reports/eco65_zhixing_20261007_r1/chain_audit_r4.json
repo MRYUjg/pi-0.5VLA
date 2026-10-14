@@ -1,0 +1,49 @@
+{
+  "episodes": [
+    {
+      "task": 0,
+      "seed": 0,
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "native_success": false,
+      "steps": 10,
+      "VLA_requests": 2,
+      "actual_models": [],
+      "planner_stats": null,
+      "checks": {
+        "initial_objects_recomputed_from_archived_states": true,
+        "robot_reset_recomputed_from_archived_state": true,
+        "state_selection_matches_actual_gripper_qpos": true,
+        "runtime_chain_passed": true,
+        "clean_component_exits": true,
+        "frozen_executed_source_matches": true,
+        "ECO65_and_ZhixingGripper": true,
+        "official_scene_transfer_exact": true,
+        "existing_robot_reset_retained": true,
+        "ZhiXing_speed_unchanged": true,
+        "ZhiXing_state_named_active_joints": true,
+        "controller_20Hz_OSC_unchanged": true,
+        "prediction_actual_action_exact": true,
+        "normalization_clipping_exact": true,
+        "finite_actions_and_states": true,
+        "every_control_interval_50ms": true,
+        "bounded_control_budget": true,
+        "native_result_matches_actual_terminal": true,
+        "LLM_finish_claim_matches_native": true,
+        "decoded_video_T_plus_1_dual_camera": true,
+        "real_VLA_requests": true,
+        "every_prediction_uses_latest_state": true,
+        "archived_VLA_inputs_actions_match_request_records": true,
+        "policy_instructions_match_original_task": true,
+        "official_initial_state_archive_matches_registered_fingerprint": true,
+        "real_component_guards_and_camera_checks": true,
+        "initial_frame_and_reset_present": true
+      },
+      "audit_passed": true,
+      "task_success_independent_of_audit": true
+    }
+  ],
+  "trials": 1,
+  "successes": 0,
+  "all_audits_passed": true,
+  "formal_benchmark_accepted": false
+}

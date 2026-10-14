@@ -1,0 +1,12 @@
+{
+  "predecessor_version": "n0_20260929_r2",
+  "predecessor_content_sha256": "8e2ddca5417e8aa3968ba9d3a64381ae6dc143bf905c6ee18b8039c88c1ea327",
+  "scope": "Explicit predecessor-bound retirement record. Only managed sources may be listed here; node-local residue, results/ and *.bak are outside the frozen scope and are covered by maintenance/baseline_20260929_r3/deletion_plan.json instead.",
+  "retired_sources": [
+    {
+      "path": "agent-work-space/zhixing_adaptation_20260927/configs/retired_sources_n0_20260929_r2.json",
+      "sha256": "5b61bc119718965715cbaea5ec3387f882f6ac71e752fa925b3be96ca14637eb",
+      "reason": "r2-specific retirement list; superseded by configs/retired_sources_n0_20260929_r3.json in the baseline version"
+    }
+  ]
+}

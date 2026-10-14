@@ -1,0 +1,28 @@
+{
+  "exit_code": 0,
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--cpus",
+    "2",
+    "--memory",
+    "3g",
+    "-v",
+    "/mnt/data/vla-policy/openpi:/app:ro",
+    "-v",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference:/work:ro",
+    "-v",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1:/out",
+    "--entrypoint",
+    "/.venv/bin/python",
+    "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+    "/work/runs/trt_t4_20261007_r1/report_r1_source/report.py",
+    "--root",
+    "/work/runs/trt_t4_20261007_r1",
+    "--out",
+    "/out/report_r1"
+  ]
+}

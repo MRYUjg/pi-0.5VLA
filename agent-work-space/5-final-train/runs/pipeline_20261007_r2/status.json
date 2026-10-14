@@ -1,0 +1,162 @@
+{
+  "pid": 65353,
+  "started": 1791362181.383304,
+  "state": "completed",
+  "stage": "data_validated_awaiting_user_training_instruction",
+  "dataset_export": "spatial_formal_r3",
+  "automatic_training": false,
+  "training_status": "not_started_user_hold",
+  "user_instruction": "读回验证后，不要自动启动微调训练。",
+  "observed_conversion_runner_pid": 60566,
+  "scope": "Dataset readback only; training requires a new user instruction.",
+  "data_release_pass": true,
+  "counts": {
+    "0": {
+      "train": {
+        "attempted": 50,
+        "accepted": 22
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 7
+      }
+    },
+    "2": {
+      "train": {
+        "attempted": 50,
+        "accepted": 30
+      },
+      "validation": {
+        "attempted": 20,
+        "accepted": 7
+      }
+    },
+    "3": {
+      "train": {
+        "attempted": 50,
+        "accepted": 48
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 9
+      }
+    },
+    "5": {
+      "train": {
+        "attempted": 50,
+        "accepted": 47
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 10
+      }
+    },
+    "6": {
+      "train": {
+        "attempted": 50,
+        "accepted": 42
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 6
+      }
+    }
+  },
+  "updated": 1791362181.384882,
+  "conversion_result": {
+    "pass": true,
+    "records": [
+      {
+        "script": "convert.py",
+        "exit_code": 0,
+        "seconds": 1266.4723978042603,
+        "command": [
+          "docker",
+          "run",
+          "--rm",
+          "--network",
+          "none",
+          "--cpus",
+          "4",
+          "--memory",
+          "10g",
+          "--user",
+          "1000:1000",
+          "-e",
+          "CUDA_VISIBLE_DEVICES=",
+          "-e",
+          "HF_HUB_OFFLINE=1",
+          "-e",
+          "HF_DATASETS_OFFLINE=1",
+          "-e",
+          "HF_HOME=/tmp/hf",
+          "-e",
+          "XDG_CACHE_HOME=/tmp/cache",
+          "-e",
+          "OMP_NUM_THREADS=1",
+          "-e",
+          "OPENBLAS_NUM_THREADS=1",
+          "-e",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "-v",
+          "/mnt/data/vla-policy/openpi:/app:ro",
+          "-v",
+          "/mnt/data/vla-policy/openpi/agent-work-space/5-final-train:/app/agent-work-space/5-final-train",
+          "--entrypoint",
+          "/app/agent-work-space/2-task-collection/runtime/lerobot_py310_r1/venv/bin/python",
+          "libero:latest",
+          "/app/agent-work-space/5-final-train/versions/conversion_20261007_r1/scripts/convert.py",
+          "--out",
+          "/app/agent-work-space/5-final-train/lerobot_exports/spatial_formal_r3"
+        ]
+      },
+      {
+        "script": "validate.py",
+        "exit_code": 0,
+        "seconds": 1786.4039554595947,
+        "command": [
+          "docker",
+          "run",
+          "--rm",
+          "--network",
+          "none",
+          "--cpus",
+          "4",
+          "--memory",
+          "10g",
+          "--user",
+          "1000:1000",
+          "-e",
+          "CUDA_VISIBLE_DEVICES=",
+          "-e",
+          "HF_HUB_OFFLINE=1",
+          "-e",
+          "HF_DATASETS_OFFLINE=1",
+          "-e",
+          "HF_HOME=/tmp/hf",
+          "-e",
+          "XDG_CACHE_HOME=/tmp/cache",
+          "-e",
+          "OMP_NUM_THREADS=1",
+          "-e",
+          "OPENBLAS_NUM_THREADS=1",
+          "-e",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "-v",
+          "/mnt/data/vla-policy/openpi:/app:ro",
+          "-v",
+          "/mnt/data/vla-policy/openpi/agent-work-space/5-final-train:/app/agent-work-space/5-final-train",
+          "--entrypoint",
+          "/app/agent-work-space/2-task-collection/runtime/lerobot_py310_r1/venv/bin/python",
+          "libero:latest",
+          "/app/agent-work-space/5-final-train/versions/conversion_20261007_r1/scripts/validate.py",
+          "--out",
+          "/app/agent-work-space/5-final-train/lerobot_exports/spatial_formal_r3"
+        ]
+      }
+    ]
+  },
+  "dataset_validation_pass": true,
+  "frames_verified": 170724,
+  "rgb_images_verified": 341448
+}

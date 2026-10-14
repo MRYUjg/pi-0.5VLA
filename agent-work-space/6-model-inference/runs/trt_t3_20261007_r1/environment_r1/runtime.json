@@ -1,0 +1,808 @@
+{
+  "python": "3.11.9",
+  "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "Farama-Notifications": "0.0.4",
+    "Flask": "3.1.1",
+    "GitPython": "3.1.44",
+    "Jinja2": "3.1.6",
+    "MarkupSafe": "3.0.2",
+    "PuLP": "3.2.2",
+    "PyOpenGL": "3.1.9",
+    "PySocks": "1.7.1",
+    "PyYAML": "6.0.2",
+    "Pygments": "2.19.1",
+    "Werkzeug": "3.1.3",
+    "absl-py": "2.3.0",
+    "aiohappyeyeballs": "2.6.1",
+    "aiohttp": "3.12.4",
+    "aiosignal": "1.3.2",
+    "annotated-types": "0.7.0",
+    "antlr4-python3-runtime": "4.9.3",
+    "attrs": "25.3.0",
+    "augmax": "0.4.1",
+    "av": "17.0.0",
+    "beartype": "0.19.0",
+    "beautifulsoup4": "4.13.4",
+    "blinker": "1.9.0",
+    "cachetools": "5.5.2",
+    "certifi": "2025.4.26",
+    "cffi": "1.17.1",
+    "charset-normalizer": "3.4.2",
+    "chex": "0.1.90",
+    "click": "8.2.1",
+    "cloudpickle": "3.1.1",
+    "cmake": "4.0.2",
+    "coloredlogs": "15.0.1",
+    "crc32c": "2.7.1",
+    "cupy-cuda12x": "13.6.0",
+    "datasets": "3.6.0",
+    "decorator": "5.2.1",
+    "deepdiff": "8.5.0",
+    "diffusers": "0.33.1",
+    "dill": "0.3.8",
+    "dm-control": "1.0.14",
+    "dm-env": "1.6",
+    "dm-tree": "0.1.9",
+    "docker-pycreds": "0.4.0",
+    "docstring_parser": "0.16",
+    "donfig": "0.8.1.post1",
+    "draccus": "0.10.0",
+    "einops": "0.8.1",
+    "equinox": "0.12.2",
+    "etils": "1.12.2",
+    "evdev": "1.9.2",
+    "fastrlock": "0.8.3",
+    "filelock": "3.18.0",
+    "flatbuffers": "25.9.23",
+    "flax": "0.10.2",
+    "frozenlist": "1.6.0",
+    "fsspec": "2025.3.0",
+    "gcsfs": "2025.3.0",
+    "gdown": "5.2.0",
+    "gitdb": "4.0.12",
+    "glfw": "2.9.0",
+    "google-api-core": "2.24.2",
+    "google-auth": "2.40.2",
+    "google-auth-oauthlib": "1.2.2",
+    "google-cloud-core": "2.4.3",
+    "google-cloud-storage": "3.1.0",
+    "google-crc32c": "1.7.1",
+    "google-resumable-media": "2.7.2",
+    "googleapis-common-protos": "1.70.0",
+    "gym-aloha": "0.1.1",
+    "gymnasium": "0.29.1",
+    "h5py": "3.13.0",
+    "hf-xet": "1.1.2",
+    "hf_transfer": "0.1.9",
+    "huggingface-hub": "0.32.3",
+    "humanfriendly": "10.0",
+    "humanize": "4.12.3",
+    "idna": "3.10",
+    "imageio": "2.37.0",
+    "imageio-ffmpeg": "0.6.0",
+    "importlib_metadata": "8.7.0",
+    "importlib_resources": "6.5.2",
+    "inquirerpy": "0.3.4",
+    "itsdangerous": "2.2.0",
+    "jax": "0.5.3",
+    "jax-cuda12-pjrt": "0.5.3",
+    "jax-cuda12-plugin": "0.5.3",
+    "jaxlib": "0.5.3",
+    "jaxtyping": "0.2.36",
+    "jsonlines": "4.0.0",
+    "labmaze": "1.0.6",
+    "lerobot": "0.1.0",
+    "llvmlite": "0.44.0",
+    "lxml": "5.4.0",
+    "markdown-it-py": "3.0.0",
+    "mdurl": "0.1.2",
+    "mergedeep": "1.3.4",
+    "ml_collections": "1.0.0",
+    "ml_dtypes": "0.5.3",
+    "mpmath": "1.3.0",
+    "msgpack": "1.1.0",
+    "mujoco": "2.3.7",
+    "multidict": "6.4.4",
+    "multiprocess": "0.70.16",
+    "mypy_extensions": "1.1.0",
+    "nest-asyncio": "1.6.0",
+    "networkx": "3.5",
+    "ninja": "1.13.0",
+    "numba": "0.61.2",
+    "numcodecs": "0.16.1",
+    "numpy": "1.26.4",
+    "numpydantic": "1.6.9",
+    "nvidia-cublas-cu12": "12.6.4.1",
+    "nvidia-cuda-cupti-cu12": "12.6.80",
+    "nvidia-cuda-nvcc-cu12": "12.9.41",
+    "nvidia-cuda-nvrtc-cu12": "12.6.77",
+    "nvidia-cuda-runtime-cu12": "12.6.77",
+    "nvidia-cudnn-cu12": "9.5.1.17",
+    "nvidia-cufft-cu12": "11.3.0.4",
+    "nvidia-cufile-cu12": "1.11.1.6",
+    "nvidia-curand-cu12": "10.3.7.77",
+    "nvidia-cusolver-cu12": "11.7.1.2",
+    "nvidia-cusparse-cu12": "12.5.4.2",
+    "nvidia-cusparselt-cu12": "0.6.3",
+    "nvidia-modelopt": "0.33.1",
+    "nvidia-modelopt-core": "0.33.1",
+    "nvidia-nccl-cu12": "2.26.2",
+    "nvidia-nvjitlink-cu12": "12.6.85",
+    "nvidia-nvtx-cu12": "12.6.77",
+    "oauthlib": "3.2.2",
+    "omegaconf": "2.3.0",
+    "onnx": "1.19.0",
+    "onnx_graphsurgeon": "0.5.8",
+    "onnxconverter-common": "1.16.0",
+    "onnxruntime-gpu": "1.22.0",
+    "opencv-python": "4.11.0.86",
+    "opencv-python-headless": "4.11.0.86",
+    "openpi-client": "0.1.0",
+    "opt_einsum": "3.4.0",
+    "optax": "0.2.4",
+    "orbax-checkpoint": "0.11.13",
+    "orderly-set": "5.4.1",
+    "packaging": "25.0",
+    "pandas": "2.2.3",
+    "pfzy": "0.3.4",
+    "pillow": "11.2.1",
+    "platformdirs": "4.3.8",
+    "polars": "1.30.0",
+    "prompt_toolkit": "3.0.51",
+    "propcache": "0.3.1",
+    "proto-plus": "1.26.1",
+    "protobuf": "4.25.8",
+    "psutil": "7.0.0",
+    "pyarrow": "20.0.0",
+    "pyasn1": "0.6.1",
+    "pyasn1_modules": "0.4.2",
+    "pycparser": "2.22",
+    "pydantic": "2.11.5",
+    "pydantic_core": "2.33.2",
+    "pymunk": "7.0.0",
+    "pynput": "1.8.1",
+    "pyparsing": "3.2.3",
+    "python-dateutil": "2.9.0.post0",
+    "python-xlib": "0.33",
+    "pytz": "2025.2",
+    "pyyaml-include": "1.4.1",
+    "pyzmq": "26.4.0",
+    "regex": "2024.11.6",
+    "requests": "2.32.3",
+    "requests-oauthlib": "2.0.0",
+    "rerun-sdk": "0.23.1",
+    "rich": "14.0.0",
+    "rsa": "4.9.1",
+    "safetensors": "0.5.3",
+    "scipy": "1.15.3",
+    "sentencepiece": "0.2.0",
+    "sentry-sdk": "2.29.1",
+    "setproctitle": "1.3.6",
+    "setuptools": "80.9.0",
+    "shtab": "1.7.2",
+    "simplejson": "3.20.1",
+    "six": "1.17.0",
+    "smmap": "5.0.2",
+    "soupsieve": "2.7",
+    "sympy": "1.14.0",
+    "tensorrt_cu12": "10.13.3.9",
+    "tensorrt_cu12_bindings": "10.13.3.9",
+    "tensorrt_cu12_libs": "10.13.3.9",
+    "tensorstore": "0.1.74",
+    "termcolor": "3.1.0",
+    "tokenizers": "0.21.1",
+    "toml": "0.10.2",
+    "toolz": "1.0.0",
+    "torch": "2.7.1",
+    "torchao": "0.11.0",
+    "torchcodec": "0.4.0",
+    "torchprofile": "0.0.4",
+    "torchvision": "0.22.1",
+    "tqdm": "4.67.1",
+    "tqdm-loggable": "0.2",
+    "transformers": "4.53.2",
+    "treescope": "0.1.9",
+    "triton": "3.3.1",
+    "typeguard": "4.4.2",
+    "typing-inspect": "0.9.0",
+    "typing-inspection": "0.4.1",
+    "typing_extensions": "4.13.2",
+    "tyro": "0.9.22",
+    "tzdata": "2025.2",
+    "urllib3": "2.4.0",
+    "wadler_lindig": "0.1.6",
+    "wandb": "0.19.11",
+    "wcwidth": "0.2.13",
+    "websockets": "15.0.1",
+    "wrapt": "1.14.1",
+    "xxhash": "3.5.0",
+    "yarl": "1.20.0",
+    "zarr": "3.0.8",
+    "zipp": "3.22.0"
+  },
+  "torch_import_version": "2.7.1+cu126",
+  "torch_cuda": "12.6",
+  "TensorRT_import_version": "10.13.3.9",
+  "gpu": "NVIDIA GeForce RTX 4090, 535.129.03, 49140 MiB",
+  "source_files": {
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/__init__.py": {
+      "sha256": "fc81ff2a648ad20ffe9e5abad97825763e6d3413c0ce352563f14c5d2b062bcf",
+      "bytes": 962
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/backends/__init__.py": {
+      "sha256": "6bb82fe7eb7b41c603a31e2bde8d771fb17aa6b12c5d4a09b76c8f51751c38a2",
+      "bytes": 805
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/backends/fp8_per_tensor_gemm.py": {
+      "sha256": "30e09d06205ac7cbe2f22bd9a9be474f41443dde4d4fb6d20b32b1642f8ef5db",
+      "bytes": 6447
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/backends/gemm_registry.py": {
+      "sha256": "aa4443f8dd81edfa7f1b75da4982b3ed2b85cd482ad1dc9fe3c48e84beaff3f9",
+      "bytes": 5417
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/backends/nvfp4_gemm.py": {
+      "sha256": "34a2c93696360a4b4096a712cc2a7b5a5ae92ce71fb75b45cdc8f594cddccbbc",
+      "bytes": 7244
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/backends/utils.py": {
+      "sha256": "3779d7b92ce5e0d1c38264def4cf8f9e989ced484103b7a8301668de8765b6a8",
+      "bytes": 1043
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/calib/__init__.py": {
+      "sha256": "e26af0414f344d762b1c1e03ec4a985eb324acbdef070bd07a67d69de6c99aef",
+      "bytes": 948
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/calib/bias.py": {
+      "sha256": "2bf84bfa4ac9e6b6afe6ed83c286c8b33dbed7ce320d4fed2c57e9368c9a004d",
+      "bytes": 6521
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/calib/calibrator.py": {
+      "sha256": "a2743b35975b93936c59f5ae0c6d2fd57fbf4ffbb2a1823dff5622aa683d26fc",
+      "bytes": 1959
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/calib/histogram.py": {
+      "sha256": "34bbb08557c191b1a37c141a453552a9197869acabdbd95cc21218fc13e7d47b",
+      "bytes": 17189
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/calib/max.py": {
+      "sha256": "5f56a47b9486f7d400cf81c7887143388d0eaf398c73745d00e23c755b8f3b8d",
+      "bytes": 3854
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/compress.py": {
+      "sha256": "10d7bd09f263e0ac467bc8595e0a2791a0fe84a9db1c28d8fd2cbb05402ead73",
+      "bytes": 8130
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/config.py": {
+      "sha256": "df1f00638b507deeef3859e1bd6eae1f826c17a649e85fe8f83da24110f06ec5",
+      "bytes": 34077
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/conversion.py": {
+      "sha256": "bea0dbf13e4c1aff7638428af421a010be32acdf8cf03df28561975cfa2878d5",
+      "bytes": 16062
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/export_onnx.py": {
+      "sha256": "66c231528246748c077ac7f602c14b730a1b2d146dd3e9bea9c28fdb2b704a67",
+      "bytes": 23250
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/extensions.py": {
+      "sha256": "2e1ef1aeee2c27c295846ac5aed47333508d49a5cc6a4ea4c4923c4090773a4f",
+      "bytes": 3412
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/mode.py": {
+      "sha256": "3e8bf722efd831369b4f4671e586edd45bf283a19a152a156763a5780b9f9632",
+      "bytes": 15061
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/model_calib.py": {
+      "sha256": "8951fe42f51966e6ee56a81e5217c8c85b5a3d5a4527e98231850e2ccd65c9ce",
+      "bytes": 39021
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/model_quant.py": {
+      "sha256": "23cd2cb6fa7c74c06dffe17a301a51154fdf9cea5aaecf6df29d5207dcd11a2e",
+      "bytes": 20505
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/__init__.py": {
+      "sha256": "69757250c90f9d248429fe1024d41d6d43e5b583ece24d0c44df72d2e4387213",
+      "bytes": 1060
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/functional.py": {
+      "sha256": "3c1b0d4b4e6e7abb96a07caa6ac155630160a0f65b9868b5175bbdca8eb5ac14",
+      "bytes": 4085
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/modules/__init__.py": {
+      "sha256": "1f4740ea11e868fe6b993847b830cec66f84e189bd7557312a245b0fab2729f3",
+      "bytes": 721
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/modules/quant_activations.py": {
+      "sha256": "ab128f7016d88ab01ea80a6bfa2bd6a4ed3583dd559e8889c1134734ffbaa68c",
+      "bytes": 880
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/modules/quant_batchnorm.py": {
+      "sha256": "2ffc79190d37ff2322dd92207c9cd864b02596968dae95f4bec3217ad5179073",
+      "bytes": 1054
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/modules/quant_conv.py": {
+      "sha256": "2bf30579e1089d5293675495c605820da214a4e1bb7678368b4d2de286443898",
+      "bytes": 3975
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/modules/quant_instancenorm.py": {
+      "sha256": "119524f7cb4911130959ed83c0cfe89876522805a7f378822284d5e88d8d716a",
+      "bytes": 1617
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/modules/quant_linear.py": {
+      "sha256": "d88c1daf15951c56773e425f6313a19a710ff688096d1a68469c2d4e90375cb7",
+      "bytes": 8394
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/modules/quant_module.py": {
+      "sha256": "30b680888d6bbbc5296e135b99139ba5c518f4203deb6f7e38153fe47232a629",
+      "bytes": 8139
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/modules/quant_pooling.py": {
+      "sha256": "ea43c6ae27f22c16eef0b6b1740c646c9fd95b96343640e7791a4a8bbeeafd67",
+      "bytes": 3485
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/modules/quant_rnn.py": {
+      "sha256": "d4722b592f904227a482f3461824a83e004538c08210c426033ca670904640fe",
+      "bytes": 18696
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/nn/modules/tensor_quantizer.py": {
+      "sha256": "5269d7a8e186b65ee693d91dca8fe095715b0a43a4cd7a1fb42128dec77ca49b",
+      "bytes": 51541
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/__init__.py": {
+      "sha256": "8521037414cc3095d9bcc0425b570ec475161c9420ef5701d3cff2405678f352",
+      "bytes": 2245
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/accelerate.py": {
+      "sha256": "eed12e093e55c894dbd38e61c674bc7c363e5489d159469b09fd8ae49f5b46c2",
+      "bytes": 8815
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/apex.py": {
+      "sha256": "c11933350dc0dffb3ce3c50584da96f176128042bf3a7922da565358853ac82f",
+      "bytes": 1944
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/attention.py": {
+      "sha256": "7745e54c467b45b1a4a4803ce19bae7798f122fafff6032db12300dce3fa6951",
+      "bytes": 12789
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/custom.py": {
+      "sha256": "ed584ea00d2596527a5246c7aa22d569711e711b59e4370770c397f590bb7d1e",
+      "bytes": 8148
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/diffusers.py": {
+      "sha256": "b4f60c877cf82480557a4b71eb586e715f3143ecb38347de708d3210a6963f3b",
+      "bytes": 7894
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/fairscale.py": {
+      "sha256": "827493c693d375a373781e8b810f15100bb28c87d9a96ab11da0329c25326b9f",
+      "bytes": 1706
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/huggingface.py": {
+      "sha256": "891eb4f0031aff76f1dc23683234e19bc7ae515abb44e08422b2262cc326eacc",
+      "bytes": 24178
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/megatron.py": {
+      "sha256": "fd973921f4b74fdbd1f2e27fcc6a51fb742e4974fd8e795f180b82fd2404140b",
+      "bytes": 15828
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/nemo.py": {
+      "sha256": "a4bd6b36c4048dde171ffcdac2c82772c0012b299dba17dc3d561e3b4b4dd44b",
+      "bytes": 2545
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/peft.py": {
+      "sha256": "e0e206ac1597c11797234604ddb3f650a36c3b8a7b0ca4cfc260811332d0806d",
+      "bytes": 2144
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/transformer_engine.py": {
+      "sha256": "11874e1f6e721d0762aa1c0ecde7b74c011da7861029f70e26fd18b49a63a7fc",
+      "bytes": 2194
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/plugins/transformers_trainer.py": {
+      "sha256": "951eae84e6e62b46496146272f41ae4044480d852372f4f80a02f734cd3b197f",
+      "bytes": 9411
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/qtensor/__init__.py": {
+      "sha256": "bf81bfb1f5be92dba4e2a6dd50007f5dda07738d4c0cfddd221f7c56bee02ec8",
+      "bytes": 954
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/qtensor/base_qtensor.py": {
+      "sha256": "c616d00227aaa03f09c0553833328eff5f92d0be67c65f374d4ee18b91f5f9ea",
+      "bytes": 7097
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/qtensor/fp8_tensor.py": {
+      "sha256": "ec9caf56fc140720a55732f827dbdd41b9fdf8fcb961a1e37028d4d4b69b7fae",
+      "bytes": 6277
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/qtensor/int4_tensor.py": {
+      "sha256": "1ffcac71ab7dc86b020a9d41100db9a18f48cf56b547b46bbfa2378bc1c85cda",
+      "bytes": 5488
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/qtensor/int8_tensor.py": {
+      "sha256": "67cd62547d79a0a727df5a6d61f4b79ec4c4a8a9b2609894589ed3b28a110ec8",
+      "bytes": 5144
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/qtensor/mxfp4_tensor.py": {
+      "sha256": "4d13ceeb53b3100ca72fcfeb5d18f7eb96b8fa92bb49a0485deebc90180c8b0a",
+      "bytes": 5656
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/qtensor/nf4_tensor.py": {
+      "sha256": "6e15b4cc4d514e131a909b93e81ad08465aaaf7daaab69b9c862ff07c3b8dd39",
+      "bytes": 8002
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/tensor_quant.py": {
+      "sha256": "32cf479fcdbaca0f9a67b380d7cf9c5d26959b478be1228237b330ba8c5938cc",
+      "bytes": 29529
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/triton/__init__.py": {
+      "sha256": "60b89309b8bacfeb9642da0fd305346ef02270945aeac2edf5875f3fde597686",
+      "bytes": 1266
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/triton/fp4_kernel.py": {
+      "sha256": "d72d6d137c57cb3ed29c0e004128d7cff5db9c1ba64878688a92ceb771f7dad7",
+      "bytes": 4931
+    },
+    "/.venv/lib/python3.11/site-packages/modelopt/torch/quantization/utils.py": {
+      "sha256": "c62bfe8a55887b16ad87ed597d59165fd3343eedba6e543f507ab8fdbee4611b",
+      "bytes": 13362
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/gemma/__init__.py": {
+      "sha256": "c57a087de0973503849c047153742e71f1f99a7f9afc0138c29ebd624ca44f9d",
+      "bytes": 1111
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/gemma/configuration_gemma.py": {
+      "sha256": "de5d79a58150c7578c29d21910b773114e0593866386bc3c58905a08c422b5b5",
+      "bytes": 9130
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/gemma/modeling_flax_gemma.py": {
+      "sha256": "ad11a53da05723f971b4bcf8ec67f065a6eb77333c10772d3608ad957363cf84",
+      "bytes": 32439
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py": {
+      "sha256": "f475e00f32590d915ae3a35497b6a497d58a0fadd0af317e05b1392c0ef5fecc",
+      "bytes": 37254
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/gemma/modular_gemma.py": {
+      "sha256": "ff0da9072196a77691c6960ed060d6766d9c85742230352be2481fbba4603e34",
+      "bytes": 21762
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/gemma/tokenization_gemma.py": {
+      "sha256": "01c56eb88bd04bb902a12d37ad7f15902f3a4bfcb041828f506ab8a2e1577546",
+      "bytes": 14229
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/gemma/tokenization_gemma_fast.py": {
+      "sha256": "884266d1b7a34986f50e69976dbe94b9165a7865f448b1b5b82c79bfadb98532",
+      "bytes": 8097
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/paligemma/__init__.py": {
+      "sha256": "9ca9d34cb0bc5d8948eee61f4bc87e0f8bf3de016192790d78395923066567dc",
+      "bytes": 1039
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/paligemma/configuration_paligemma.py": {
+      "sha256": "fe6ccdb34deed449969260ede03641b9d4a0a0a386e55dc259d555f928e88d2f",
+      "bytes": 5458
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/paligemma/modeling_paligemma.py": {
+      "sha256": "a8190d5bff77a6aaa2ea6a42fa0f5c4f3ca052a5b98c6e314802e4c9180f6420",
+      "bytes": 28310
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/paligemma/processing_paligemma.py": {
+      "sha256": "946f14e5d09367783efb7e023b5ea8bcea55883783c3cece6553a2d24e3a1cee",
+      "bytes": 16984
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/siglip/__init__.py": {
+      "sha256": "0a736a6d2436e6d28bcf43062559a14978d5c804910eeeefe728d31d6619e8ce",
+      "bytes": 1160
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/siglip/check.py": {
+      "sha256": "7a085a8c38586085cd8570b47610b09bd5987f973a3c13fb5007fb4700ef6c1a",
+      "bytes": 136
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/siglip/configuration_siglip.py": {
+      "sha256": "ff806d2c382516a92b9c443e80c925b07365349ca278e044e3484ab20d358d12",
+      "bytes": 12189
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/siglip/image_processing_siglip.py": {
+      "sha256": "1a7ca0732a53b3a898a5c1129efd1608f2e509b93d266f1dc4fb1fb407bf8b41",
+      "bytes": 12031
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/siglip/image_processing_siglip_fast.py": {
+      "sha256": "dddc2273dce3a738316c29d00bce2552f7033929d6225119ac250922d9a2e3be",
+      "bytes": 1257
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/siglip/modeling_siglip.py": {
+      "sha256": "4f92753bdc846f444cadc34ecec1238b97071d69ca20a2ca36bd6441e0d030d9",
+      "bytes": 51467
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/siglip/processing_siglip.py": {
+      "sha256": "7ee5e0c0e74542b10f75151ad31811842687d5abe3380d2fc49c33f60495a6e3",
+      "bytes": 7343
+    },
+    "/.venv/lib/python3.11/site-packages/transformers/models/siglip/tokenization_siglip.py": {
+      "sha256": "41727545d9700ba1123b4cf7b6163eb735d8e492f4544b0c06c5a2f8e800e158",
+      "bytes": 16047
+    },
+    "/app/packages/openpi-client/src/openpi_client/__init__.py": {
+      "sha256": "41362a5ea4931c546433d4c48290c5707bf02dbbea1c3aafa9f43d1225e47003",
+      "bytes": 23
+    },
+    "/app/packages/openpi-client/src/openpi_client/action_chunk_broker.py": {
+      "sha256": "3e4ef21ed695da0258b38c4257f2123a91a43b233115f81433b33c49a97ff942",
+      "bytes": 1454
+    },
+    "/app/packages/openpi-client/src/openpi_client/base_policy.py": {
+      "sha256": "dad08485c9c55b69d270e65ea06459521fd28548fbec392d3163b7bc29623868",
+      "bytes": 283
+    },
+    "/app/packages/openpi-client/src/openpi_client/image_tools.py": {
+      "sha256": "2b806f7366bfeddb4ec7a56c8672bab3bf7cdcd2c1134513eaeeeb343dff9302",
+      "bytes": 2484
+    },
+    "/app/packages/openpi-client/src/openpi_client/image_tools_test.py": {
+      "sha256": "29d5fdfdf2bc5943febe4a94b05adc585e7fff57fbacf01b8fa67946be92fd12",
+      "bytes": 1448
+    },
+    "/app/packages/openpi-client/src/openpi_client/msgpack_numpy.py": {
+      "sha256": "f046dfc7358f5921bd3b7a5368eeac24b16f5a79567ab48a443719b219e03baf",
+      "bytes": 2001
+    },
+    "/app/packages/openpi-client/src/openpi_client/msgpack_numpy_test.py": {
+      "sha256": "3388251d6b1b966428d27a07504667862b26c6929d5bc27a516363a96f57d130",
+      "bytes": 1688
+    },
+    "/app/packages/openpi-client/src/openpi_client/runtime/agent.py": {
+      "sha256": "e40d592c076f1953772e12e22eba20022f1b8ad7113ee95b2c4056ea7b96dccf",
+      "bytes": 482
+    },
+    "/app/packages/openpi-client/src/openpi_client/runtime/agents/policy_agent.py": {
+      "sha256": "547644fc647360bd914d936dc2a99948913e4b0547354126752fe6a79ed6d5fa",
+      "bytes": 527
+    },
+    "/app/packages/openpi-client/src/openpi_client/runtime/environment.py": {
+      "sha256": "90a904edab736b420a1e1490709cdf9ba757947486fcdd0eeedbb12610034a8a",
+      "bytes": 1076
+    },
+    "/app/packages/openpi-client/src/openpi_client/runtime/runtime.py": {
+      "sha256": "c8605793c3dd53e6aed204ffa3b0f1701b09fc522771cb33503ff9cab270e33a",
+      "bytes": 3141
+    },
+    "/app/packages/openpi-client/src/openpi_client/runtime/subscriber.py": {
+      "sha256": "039f7c856bcf6bc2b748c3813e4109c9d7da079c3bc574b5eff77d07b6bdee08",
+      "bytes": 520
+    },
+    "/app/packages/openpi-client/src/openpi_client/websocket_client_policy.py": {
+      "sha256": "57007dbb0b51613b7703f5015dccd6aa8ece627f8516d5434a676814cd392c7a",
+      "bytes": 2189
+    },
+    "/app/src/openpi/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/app/src/openpi/conftest.py": {
+      "sha256": "4567c2535e280913e69750c427174d048d6135350f7321b796bf6e33e2663de0",
+      "bytes": 356
+    },
+    "/app/src/openpi/models/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/app/src/openpi/models/gemma.py": {
+      "sha256": "543fb8ef8ac04195704f4ad402dc08821657005aec88a8a413efd870f5228ec0",
+      "bytes": 17605
+    },
+    "/app/src/openpi/models/gemma_fast.py": {
+      "sha256": "20f539e6f6a910ab958639259e2e06a288a1c6d6957eadead7ad88e5fed567e3",
+      "bytes": 16080
+    },
+    "/app/src/openpi/models/lora.py": {
+      "sha256": "7e2f5edcedce56723692cafc87b2ad729a984210e7b0bb8e7fdb2af6acb3d2d0",
+      "bytes": 5490
+    },
+    "/app/src/openpi/models/lora_test.py": {
+      "sha256": "cdbabc727ccd75ac30760a71281f50db24cc86da37bbd4511a8e10953766d0e0",
+      "bytes": 3232
+    },
+    "/app/src/openpi/models/model.py": {
+      "sha256": "5fbf9b0e4bc9545e8facc17d4553abf9dd76ec0b3d80c5d6a12ec27ac85f35c4",
+      "bytes": 12602
+    },
+    "/app/src/openpi/models/model_test.py": {
+      "sha256": "9ed5fb0a1e022e097fe3754e845619b8100878dfc5a25dd65eaa2267d16dc2b3",
+      "bytes": 3060
+    },
+    "/app/src/openpi/models/pi0.py": {
+      "sha256": "19b25188bd1c7a56c84c93762776a480c103d4060d30e790234939f5063640a2",
+      "bytes": 13166
+    },
+    "/app/src/openpi/models/pi0_config.py": {
+      "sha256": "3e803fae376cb3bd1481e6b4cf3a1ee3b976de1411d62b035822af4be8584f7a",
+      "bytes": 4552
+    },
+    "/app/src/openpi/models/pi0_fast.py": {
+      "sha256": "4457d7a09463c1e5865f3e511c0d3dc0883ce657e25c810765328da0cd155c3e",
+      "bytes": 13522
+    },
+    "/app/src/openpi/models/pi0_test.py": {
+      "sha256": "1df0877da3e15fd2a887a109a8cdadda854da4957b3828f492f9c99ec8f033e3",
+      "bytes": 1677
+    },
+    "/app/src/openpi/models/siglip.py": {
+      "sha256": "289bde3dc8dfb46c07d7ed4fbdd29a4dda2cc30f5e8a1b76cc7326d5d5959eca",
+      "bytes": 12451
+    },
+    "/app/src/openpi/models/tokenizer.py": {
+      "sha256": "43b0b657ae7fd3790b566fff5587b4b1bfec5067cff0c7deabc698b739fcee36",
+      "bytes": 17888
+    },
+    "/app/src/openpi/models/tokenizer_test.py": {
+      "sha256": "e3be27fc2f5f34ade973385c2054b6dfcd9c64c862a389b6d5e36edd2cce901c",
+      "bytes": 834
+    },
+    "/app/src/openpi/models/utils/fsq_tokenizer.py": {
+      "sha256": "60c98940583b45180a8afac847e026e34d7cb9ae83fa37fdc5d7aafe186fd7eb",
+      "bytes": 16400
+    },
+    "/app/src/openpi/models/vit.py": {
+      "sha256": "8302680e32d68c8428143dcc733a840d6ed3402301de11273bd4ac8395e81591",
+      "bytes": 10573
+    },
+    "/app/src/openpi/models_pytorch/gemma_pytorch.py": {
+      "sha256": "3e9df9f98869a0399e04fb8dedb998253d16aa98bd6223bcf7d7cdad208820bb",
+      "bytes": 13760
+    },
+    "/app/src/openpi/models_pytorch/pi0_pytorch.py": {
+      "sha256": "c4136a98bcffe1b6f4603a365e2ecab670d05985c76f6989389c5e95eb900356",
+      "bytes": 19590
+    },
+    "/app/src/openpi/models_pytorch/preprocessing_pytorch.py": {
+      "sha256": "83f410774c991c4125ac361ffbd26f69ef49cc75983eea686eb84e3362606a73",
+      "bytes": 7437
+    },
+    "/app/src/openpi/models_pytorch/transformers_replace/models/gemma/configuration_gemma.py": {
+      "sha256": "de5d79a58150c7578c29d21910b773114e0593866386bc3c58905a08c422b5b5",
+      "bytes": 9130
+    },
+    "/app/src/openpi/models_pytorch/transformers_replace/models/gemma/modeling_gemma.py": {
+      "sha256": "f475e00f32590d915ae3a35497b6a497d58a0fadd0af317e05b1392c0ef5fecc",
+      "bytes": 37254
+    },
+    "/app/src/openpi/models_pytorch/transformers_replace/models/paligemma/modeling_paligemma.py": {
+      "sha256": "a8190d5bff77a6aaa2ea6a42fa0f5c4f3ca052a5b98c6e314802e4c9180f6420",
+      "bytes": 28310
+    },
+    "/app/src/openpi/models_pytorch/transformers_replace/models/siglip/check.py": {
+      "sha256": "7a085a8c38586085cd8570b47610b09bd5987f973a3c13fb5007fb4700ef6c1a",
+      "bytes": 136
+    },
+    "/app/src/openpi/models_pytorch/transformers_replace/models/siglip/modeling_siglip.py": {
+      "sha256": "4f92753bdc846f444cadc34ecec1238b97071d69ca20a2ca36bd6441e0d030d9",
+      "bytes": 51467
+    },
+    "/app/src/openpi/policies/aloha_policy.py": {
+      "sha256": "81c739eb01597865ee77df36c63dc4e8f68d8597a1a6dce3fd31b3bbc459e300",
+      "bytes": 7745
+    },
+    "/app/src/openpi/policies/droid_policy.py": {
+      "sha256": "e7ca726d2cd026d5457676843aeb6e9a514d6d0cb4de452b36f92b29487055b1",
+      "bytes": 3267
+    },
+    "/app/src/openpi/policies/libero_policy.py": {
+      "sha256": "585feb6c9ffe218505bca37f5626ecafb25cb1eccbe8c5d752588a800511eb75",
+      "bytes": 4420
+    },
+    "/app/src/openpi/policies/policy.py": {
+      "sha256": "43a9e3b340280d78cf4768fa1c6b96accd5b57d33c55d791a83bcb91254a52dd",
+      "bytes": 5479
+    },
+    "/app/src/openpi/policies/policy_config.py": {
+      "sha256": "3b2a929964fa838352f4a3b57a21f3d13b775654463ba998e366b0e421aeb77e",
+      "bytes": 4201
+    },
+    "/app/src/openpi/policies/policy_test.py": {
+      "sha256": "881dfa3f13b4a70ac733ae13cdadd762005be78b11ca1ed41f048eac21e16161",
+      "bytes": 1161
+    },
+    "/app/src/openpi/serving/websocket_policy_server.py": {
+      "sha256": "dc9bb8ce26862ef26813e38403d759d374f85522537601247b5d6e3a5184d415",
+      "bytes": 3141
+    },
+    "/app/src/openpi/shared/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/app/src/openpi/shared/array_typing.py": {
+      "sha256": "0eed5c113f831a4d10f38f8a35bd09c8b661abd522ff6bc6299c92920ef29385",
+      "bytes": 3491
+    },
+    "/app/src/openpi/shared/download.py": {
+      "sha256": "d157e5bb872ea0698492f5949fcdb9b497c65afbef5912d8b5b0f21f82fa1f8b",
+      "bytes": 9078
+    },
+    "/app/src/openpi/shared/download_test.py": {
+      "sha256": "b7b1ef51c172741f230b09f7603222e660074b83c2b4faf10211fd2844c35b3b",
+      "bytes": 1544
+    },
+    "/app/src/openpi/shared/image_tools.py": {
+      "sha256": "4f16795cdbe15b88142c8092f68c36a03bfb267e5d35cb19fbae3eccd5475866",
+      "bytes": 4791
+    },
+    "/app/src/openpi/shared/image_tools_test.py": {
+      "sha256": "9baa38774f83cb5c8622f64a375e6566340cf4abe722dc143d179bf02fcf9af5",
+      "bytes": 1455
+    },
+    "/app/src/openpi/shared/nnx_utils.py": {
+      "sha256": "61e5677ef21b8fc8bba953e6f5c72c7cc4093c747dc1959a28cb5df68d07cc4c",
+      "bytes": 2913
+    },
+    "/app/src/openpi/shared/normalize.py": {
+      "sha256": "a31af0b378efed5f9b783240d02c7685b28219c0245e98a1ee7b55aee5a57365",
+      "bytes": 5675
+    },
+    "/app/src/openpi/shared/normalize_test.py": {
+      "sha256": "8c84649eb8f64b5f537b419961cc575d5c2e43da4cf5b21d59b66c2f9950c6b4",
+      "bytes": 1564
+    },
+    "/app/src/openpi/training/checkpoints.py": {
+      "sha256": "3229a21f5e717c62464cd7737c201adad548d58f6cafc50782d8a3062aca28d0",
+      "bytes": 5922
+    },
+    "/app/src/openpi/training/config.py": {
+      "sha256": "4da3eae53266a4b706038ef1f8b63e5b6692031c79523074ab4b68bc9cacaad4",
+      "bytes": 46818
+    },
+    "/app/src/openpi/training/data_loader.py": {
+      "sha256": "055dd4496d5cf68d6e3a36fb7ebd8a431649c3e29748ea5a6ed9bfe2b93f790e",
+      "bytes": 20517
+    },
+    "/app/src/openpi/training/data_loader_test.py": {
+      "sha256": "c6846c16e5b478cac1ce426d8ea7a119fb7aa1cad952fce41072ab64b3634c86",
+      "bytes": 2571
+    },
+    "/app/src/openpi/training/droid_rlds_dataset.py": {
+      "sha256": "b5bb1d70e6a00f9abb7ce9aae1b4d16ec3c50fb9dd57165aea86fc5ac757b210",
+      "bytes": 11134
+    },
+    "/app/src/openpi/training/misc/polaris_config.py": {
+      "sha256": "febd2424465d59fe07ad3533db09e33e3e5cdf9fdf627b6ac6ce3f521074cec4",
+      "bytes": 9849
+    },
+    "/app/src/openpi/training/misc/roboarena_config.py": {
+      "sha256": "9909e6cf356fa2025af7a03ff5f4937727afbe85c59fc9e2916f27e2efb85674",
+      "bytes": 4920
+    },
+    "/app/src/openpi/training/optimizer.py": {
+      "sha256": "46c8e2aca4aa8b92901327ce3ab6cfed4be41eaf07e9bbb8232a9ccbd4a57729",
+      "bytes": 3311
+    },
+    "/app/src/openpi/training/sharding.py": {
+      "sha256": "c0d457e3173e5e06bc6d2f2a3068724c7084bb8e39af4807bd9b57d5190ea442",
+      "bytes": 4201
+    },
+    "/app/src/openpi/training/utils.py": {
+      "sha256": "21492fdd9ba7eaeb6fb98755e76892d5048e1597573582443ac023db9bad0ce6",
+      "bytes": 1255
+    },
+    "/app/src/openpi/training/weight_loaders.py": {
+      "sha256": "f4bc5f7294985686aeda1a153da55c2756410c9e1226bd682dc39175b3df731e",
+      "bytes": 3842
+    },
+    "/app/src/openpi/transforms.py": {
+      "sha256": "4b566c16bbd1b24428e748fa53669d0fa247d2aacbc6c1636fc4c1f5cfd9338c",
+      "bytes": 16212
+    },
+    "/app/src/openpi/transforms_test.py": {
+      "sha256": "c1aa69d0c48ce1f447d7b660848e20aed34410acdf14f25a696739ce6765dc8b",
+      "bytes": 4232
+    },
+    "/openpi_assets/big_vision/paligemma_tokenizer.model": {
+      "sha256": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6",
+      "bytes": 4264023
+    }
+  },
+  "same_dependencies_as_T0_T2": true,
+  "previous_environment_sha256": "801f3292540bffeb003fd875498eb9864c0ce5090d3649fd5b65a457c1219103",
+  "repository_mounted_read_only": true,
+  "tokenizer_in_image": true,
+  "source_weight_loaded_for_T3_inference": false,
+  "actual_4070_acceptance": false
+}

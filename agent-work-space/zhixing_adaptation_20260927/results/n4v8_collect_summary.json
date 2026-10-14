@@ -1,0 +1,74 @@
+{
+  "node": "N4",
+  "tag": "n4v8",
+  "suite": "libero_object",
+  "task_id": 0,
+  "task_language": "pick up the alphabet soup and place it in the basket",
+  "want": 1,
+  "attempts": [
+    {
+      "seed": 1,
+      "success": false,
+      "frames": 600,
+      "path": "raw/failure/n4v8_libero_object_t0_s1_0001.npz",
+      "lifted_mm": 48.70976226663733,
+      "success_predicate": false,
+      "geometric_in_basket": true,
+      "close_steps": 10
+    },
+    {
+      "seed": 2,
+      "success": false,
+      "frames": 521,
+      "path": "raw/failure/n4v8_libero_object_t0_s2_0002.npz",
+      "lifted_mm": 48.496046467751505,
+      "success_predicate": true,
+      "geometric_in_basket": true,
+      "close_steps": 10
+    },
+    {
+      "seed": 3,
+      "success": false,
+      "frames": 517,
+      "path": "raw/failure/n4v8_libero_object_t0_s3_0003.npz",
+      "lifted_mm": 49.01421355125655,
+      "success_predicate": true,
+      "geometric_in_basket": true,
+      "close_steps": 10
+    },
+    {
+      "seed": 4,
+      "success": false,
+      "frames": 523,
+      "path": "raw/failure/n4v8_libero_object_t0_s4_0004.npz",
+      "lifted_mm": 50.44498702850111,
+      "success_predicate": true,
+      "geometric_in_basket": true,
+      "close_steps": 10
+    },
+    {
+      "seed": 5,
+      "success": false,
+      "frames": 521,
+      "path": "raw/failure/n4v8_libero_object_t0_s5_0005.npz",
+      "lifted_mm": 49.630959247267725,
+      "success_predicate": true,
+      "geometric_in_basket": true,
+      "close_steps": 10
+    },
+    {
+      "seed": 6,
+      "success": false,
+      "frames": 529,
+      "path": "raw/failure/n4v8_libero_object_t0_s6_0006.npz",
+      "lifted_mm": 49.89570002810056,
+      "success_predicate": true,
+      "geometric_in_basket": true,
+      "close_steps": 11
+    }
+  ],
+  "n_success": 0,
+  "success_rate": 0.0,
+  "wall_seconds": 293.5,
+  "verdict": "NOT_ENOUGH"
+}

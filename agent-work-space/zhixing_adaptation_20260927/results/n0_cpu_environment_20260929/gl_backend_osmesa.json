@@ -1,0 +1,29 @@
+{
+  "backend": "osmesa",
+  "mujoco": "3.2.3",
+  "gl_context": "module",
+  "build_s": 15.13,
+  "reset_render_s": 6.7,
+  "agentview_shape": [
+    256,
+    256,
+    3
+  ],
+  "wrist_shape": [
+    256,
+    256,
+    3
+  ],
+  "agentview_mean": 138.582,
+  "wrist_mean": 133.172,
+  "images_nonblank": true,
+  "two_cameras_differ": true,
+  "steps": 60,
+  "step_render_s": 16.95,
+  "sec_per_step": 0.2825,
+  "steps_per_s": 3.54,
+  "control_hz_required": 20.0,
+  "realtime_factor": 0.177,
+  "ok": true,
+  "total_s": 40.02
+}

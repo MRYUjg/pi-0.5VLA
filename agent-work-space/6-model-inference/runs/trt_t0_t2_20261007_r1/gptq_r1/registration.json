@@ -1,0 +1,19 @@
+{
+  "algorithm": "GPTQ",
+  "source_sha256": "69ee787ec12921613feabf69b01348628b3d6327a8865cbc02ecb9be788d9258",
+  "group_size": 128,
+  "signed_range": [
+    -8,
+    7
+  ],
+  "symmetric": true,
+  "zero_point": 0,
+  "scale_dtype": "bfloat16",
+  "input_multiplier_dtype": "bfloat16",
+  "rounding": "nearest_even",
+  "packing": "even index low nibble, odd index high nibble",
+  "scope": "126 language attention/MLP Linear",
+  "activation_source": "full sample_actions with all ten steps",
+  "calibration_manifest_sha256": "e6d1191560006067080acc70aece3a955eb6e58ec6e3a530f335605be935af7a",
+  "quantized_engine_build_stage": "T3, not executed here"
+}

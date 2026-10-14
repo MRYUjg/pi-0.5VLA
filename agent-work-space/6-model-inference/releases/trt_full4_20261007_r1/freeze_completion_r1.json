@@ -1,0 +1,24 @@
+{
+  "status": "file_freeze_complete_deployment_not_accepted",
+  "initial_freeze_process_exit_code": 1,
+  "initial_failure": "Host chmod of container-root-owned new output denied after complete hash verification; contents unchanged.",
+  "permission_repair_command": [
+    "docker",
+    "run",
+    "--rm",
+    "-v",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_full4_20261007_r1:/newrun:rw",
+    "--entrypoint",
+    "/.venv/bin/python",
+    "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+    "-c",
+    "import pathlib; [p.chmod(0o444) for p in pathlib.Path(\"/newrun\").rglob(\"*\") if p.is_file()]"
+  ],
+  "permission_repair_exit_code": 0,
+  "manifest_sha256": "63b7561e7be672d83069c3c883a0142efee583f2a26088d0e4e94768ad325cfc",
+  "hash_verification_receipt": "server_verification.json",
+  "new_files_checked_read_only": 1553,
+  "writable_files": [],
+  "no_content_rewrite": true,
+  "old_dependencies_not_changed": true
+}

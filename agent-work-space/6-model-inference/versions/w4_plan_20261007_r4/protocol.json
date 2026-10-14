@@ -1,0 +1,176 @@
+{
+  "version": "w4_plan_20261007_r4",
+  "supersedes_plan": "w4_plan_20261007_r3",
+  "task_date_asia_shanghai": "2026-10-07",
+  "status": "plan_only_implementation_on_hold",
+  "user_constraints": {
+    "gpu": "RTX 4070",
+    "inference_vram_limit_gb": 8,
+    "desktop_or_laptop": null
+  },
+  "units": {
+    "GB": 1000000000,
+    "GiB": 1073741824,
+    "MiB": 1048576
+  },
+  "memory_budget_bytes": {
+    "hard_limit": 8000000000,
+    "use_minimum_of_hard_limit_and_actual_device_capacity": true,
+    "resident_weights_and_quantization_metadata": 4300000000,
+    "activations_and_kv_cache": 800000000,
+    "kernel_compile_graph_workspace": 600000000,
+    "policy_cuda_context_libraries": 400000000,
+    "io_temporary_buffers": 300000000,
+    "policy_process_peak_max": 6400000000,
+    "other_device_processes_baseline_budget": 800000000,
+    "total_device_peak_target_max": 7200000000,
+    "unallocated_headroom": 800000000,
+    "includes_loading_warmup_restart_and_continuous_inference": true
+  },
+  "model": {
+    "initial_checkpoint": "official pi05_libero",
+    "source_variant": "aligned BF16 values with original BF16/FP32 computation",
+    "target_robot": "ECO65+ZhiXing",
+    "requantize_from_w8": false
+  },
+  "calibration_algorithms": {
+    "first_candidate": "AWQ",
+    "mandatory_comparison": "GPTQ",
+    "engineering_baseline": "RTN",
+    "initial_group_size": 128,
+    "development_alternative_group_size": 64,
+    "same_source_layer_scope_calibration_and_noise_required": true,
+    "codec_symmetry_zero_point_order_and_kernel_must_be_bound": true,
+    "no_unregistered_requantization_after_algorithm_export": true,
+    "tensorRT_signed_int4_range": [
+      -8,
+      7
+    ],
+    "symmetric": true,
+    "zero_point": 0
+  },
+  "primary_precision_scope": {
+    "language_transformer": "W4",
+    "vision_transformer": "original BF16 and FP32 float",
+    "action_expert_transformer": "original float",
+    "activations": "original BF16 and FP32 stability islands",
+    "kv_cache": "original float",
+    "sensitive_embeddings_norms_action_and_time_projections": "original float"
+  },
+  "alternative_precision_scope": {
+    "language_transformer": "INT4 WoQ",
+    "vision_transformer": [
+      "INT4 WoQ Linear with original float sensitivity fallback",
+      "INT8 W8A8 only after independent activation calibration and validation"
+    ],
+    "action_expert_transformer": "original float",
+    "native_int8_weight_only_w8a16_is_assumed_available": false
+  },
+  "runtime_candidates": [
+    "TensorRT"
+  ],
+  "calibration": {
+    "device": "development RTX 4090",
+    "forward_entry": "complete pi05 sample_actions with task observations and 10 denoising steps",
+    "pilot_observations_min": 128,
+    "pilot_observations_max": 256,
+    "expanded_observations_min": 2000,
+    "expanded_observations_max": 5000,
+    "use_text_only_or_random_input_as_task_calibration": false,
+    "isolate_formal_test_scenes": true,
+    "finetuned_model_must_use_new_training_split_calibration": true
+  },
+  "execution_contract": {
+    "batch_size": 1,
+    "pending_observation_queue_max": 1,
+    "state_interface_dim": 8,
+    "discrete_state_input": false,
+    "internal_action_dim": 32,
+    "environment_action_dim": 7,
+    "action_horizon": 10,
+    "denoising_steps": 10,
+    "control_hz": 20,
+    "executed_steps_before_replan": 5,
+    "resident_models": 1,
+    "load_prepacked_weights_without_full_gpu_float_copy": true,
+    "require_real_packing": true,
+    "change_controller_or_sampling_settings_during_comparison": false
+  },
+  "proposed_quality_gates": {
+    "reload_max_abs_action_difference": 1e-06,
+    "contract_range_scaled_motion_mae_max": 0.01,
+    "contract_range_scaled_motion_p99_abs_difference_max": 0.05,
+    "confident_gripper_disagreement_max_fraction": 0.005,
+    "clipping_rate_increase_max_fraction": 0.01,
+    "physical_unit_tolerance": "register at N0 before candidate formal results",
+    "panda_development": {
+      "tasks": 10,
+      "trials_per_task": 3,
+      "min_successes": 27,
+      "max_net_loss_vs_same_backend_float": 1
+    },
+    "formal_simulation": {
+      "tasks": 10,
+      "trials_per_task": 20,
+      "min_successes": 180,
+      "max_net_loss_vs_same_source_float": 10,
+      "per_task_investigation_threshold_fraction": 0.8
+    }
+  },
+  "target_device_validation": {
+    "real_4070_required": true,
+    "allocator_limit_on_4090_is_only_screening": true,
+    "warm_requests_min": 1000,
+    "continuous_run_hours_min": 2,
+    "oom_allowed": false,
+    "nominal_replan_interval_ms": 250,
+    "provisional_full_loop_p99_ms_max": 200,
+    "latency_budget_must_be_verified_for_robot": true,
+    "reference_speed_claim_requires_same_device_measurement": true
+  },
+  "acceptance_states": {
+    "awq_adapter": "not_executed",
+    "gptq_adapter": "not_executed",
+    "w4_storage_reload": "not_executed",
+    "4070_8gb_memory": "not_executed",
+    "speed": "not_executed",
+    "panda_simulation": "not_executed",
+    "eco65_simulation": "not_executed",
+    "robot_shadow": "not_executed",
+    "robot_closed_loop": "not_executed",
+    "float_onnx_export": "not_executed",
+    "tensorrt_float_reference": "not_executed",
+    "tensorrt_int4_engine": "not_executed",
+    "gptq_to_tensorrt_format_adapter": "not_executed",
+    "4070_engine_deserialization": "not_executed"
+  },
+  "revision_kind": "TensorRT_deployment_route_revision",
+  "user_requested_no_implementation": true,
+  "deployment_framework": "TensorRT",
+  "quantization_tool": "NVIDIA Model Optimizer",
+  "production_uses_tensorrt_llm_by_default": false,
+  "tensorrt_configuration": {
+    "exact_tensorrt_version": null,
+    "exact_modelopt_version": null,
+    "version_pin_stage": "T0 after driver parser and target_device compatibility checks",
+    "explicit_quantization": true,
+    "strongly_typed": true,
+    "standard_int4_onnx_feature_opset_min": 21,
+    "actual_opset_and_parser_compatibility_must_be_probed": true,
+    "logical_engines": [
+      "vision",
+      "prefix",
+      "action_step"
+    ],
+    "resident_model_copies": 1,
+    "vision_engine_shared_between_image_slots": true,
+    "prefix_cache_read_only_during_denoising": true,
+    "full_float_gpu_copy_in_production": false,
+    "action_step_reuses_one_engine_for_ten_steps": true,
+    "time_embedding_export": "precompute_from_actual_reference_FP32_time_sequence_and_verify_final_embedding",
+    "cuda_graph_initially_enabled": false,
+    "default_global_int8_or_fp16_flags_used_as_quantization": false,
+    "4070_compatibility_must_be_validated_after_4090_build": true,
+    "builder_memory_pool_limit_is_total_vram_limit": false
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/work/versions/trt_t0_t2_20261007_r1/t0.py\", line 115, in <module>\n    main(a.out)\n  File \"/work/versions/trt_t0_t2_20261007_r1/t0.py\", line 60, in main\n    write_json(out / 'int4_probe.json', probe(out))\n                                        ^^^^^^^^^^\n  File \"/work/versions/trt_t0_t2_20261007_r1/t0.py\", line 37, in probe\n    b = build(path, out / 'int4_probe.engine')\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/work/versions/trt_t0_t2_20261007_r1/runtime.py\", line 29, in build\n    'layers': network.num_layers, 'engine_bytes': len(plan)}\n                                                  ^^^^^^^^^\nTypeError: object of type 'tensorrt_bindings.tensorrt.IHostMemory' has no len()\n"
+}

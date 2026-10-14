@@ -1,0 +1,73 @@
+{
+  "version": "trt_full4_20261007_r1",
+  "status": "quick_offline_comparison_complete_to_freeze",
+  "user_instruction": "过于复杂了，先简单验证模型全部量化的结果。",
+  "algorithms": [
+    "AWQ",
+    "GPTQ"
+  ],
+  "framework": "TensorRT 10.13.3.9",
+  "target": "current RTX4090",
+  "scope": "All graph-reachable supported Linear weights in vision, prefix, action_step; embedding/conv/norm/unsupported layers accurately listed as float.",
+  "weight_bits": 4,
+  "group": 128,
+  "symmetric": true,
+  "zero_point": 0,
+  "activation": "original floating precision",
+  "source_sha256": "69ee787ec12921613feabf69b01348628b3d6327a8865cbc02ecb9be788d9258",
+  "reuse_frozen_prefix_quantization": true,
+  "new_vision_expert_calibration_observations": 200,
+  "noise_per_observation": 1,
+  "steps": 10,
+  "all_expert_steps_in_calibration": true,
+  "vision_rows_per_real_view": 8,
+  "expert_rows_per_step": 10,
+  "fixed_controller_sampling_shapes_and_transforms": true,
+  "no_parameter_search_or_sensitivity_sweep": true,
+  "offline_pilot_observations": 128,
+  "warmup": 20,
+  "serial_benchmark_requests": 1000,
+  "closure": "offline numerical/resource validation only; no new LIBERO success-rate claim",
+  "quality_gates": {
+    "motion_mae": 0.01,
+    "motion_p99": 0.05,
+    "gripper_sign_confident_abs": 0.2,
+    "gripper_disagreement": 0.005,
+    "clipping_increase": 0.01,
+    "reload_max_abs": 1e-06
+  },
+  "memory_gates_bytes": {
+    "process": 6400000000,
+    "device": 7200000000
+  },
+  "latency_full_p99_target_ms": 50,
+  "old_failed_gates_preserved": true,
+  "two_hour_and_formal_200_not_run": true,
+  "all_new_Linear_counts": {
+    "vision": 163,
+    "action_step": 167,
+    "reused_prefix_reachable": 121
+  },
+  "group_compatibility": "Zero-pad only Linear input/weight channels to group128; external interfaces and float Linear algebra unchanged; parser previously rejected vision K4304.",
+  "scale_dtype": "Original weight dtype: BF16 or FP32; activations/outputs preserve original dtype",
+  "all_supported_Linear_includes_conditioning_and_small_projections": true,
+  "float_remainder": "Embedding, convolution, norm non-Linear parameters, biases and other non-Linear operations remain floating point.",
+  "sampling_and_runtime_optimization_performed": false,
+  "selected_performance_attempts": {
+    "trt_float": "r3",
+    "awq": "r3",
+    "gptq": "r3_shared_GPU",
+    "full_awq": "r1",
+    "full_gptq": "r1"
+  },
+  "numerical_gate_status": {
+    "full_awq": "passed_128_calibration_related_regression",
+    "full_gptq": "failed_motion_p99_and_gripper_sign"
+  },
+  "independent_reload_max_abs": {
+    "full_awq": 0.0,
+    "full_gptq": 0.0
+  },
+  "actual_20Hz_status": "not_achieved",
+  "closedloop_status": "not_tested_for_new_full_Linear_models"
+}

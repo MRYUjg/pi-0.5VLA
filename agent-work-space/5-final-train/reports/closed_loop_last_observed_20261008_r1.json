@@ -1,0 +1,34 @@
+{
+  "observed_at": "2026-10-08T02:39:49+08:00",
+  "source": "read-only live monitor before SSH connection loss",
+  "phase": "verifying_results_and_videos",
+  "full_verification_confirmed": false,
+  "remote_mp4_files_observed": 40,
+  "local_verified_mp4_files": 11,
+  "conditions": {
+    "eco65_zhixing_lora": {
+      "completed": 200,
+      "successes_observed": 0,
+      "invalid_initializations": 25,
+      "process_errors_observed": 0
+    },
+    "panda_base": {
+      "completed": 200,
+      "successes_observed": 151,
+      "invalid_initializations": 25,
+      "process_errors_observed": 0
+    },
+    "eco65_zhixing_base": {
+      "completed": 200,
+      "successes_observed": 3,
+      "invalid_initializations": 25,
+      "process_errors_observed": 0
+    },
+    "eco65_panda_base": {
+      "completed": 200,
+      "successes_observed": 132,
+      "invalid_initializations": 25,
+      "process_errors_observed": 0
+    }
+  }
+}

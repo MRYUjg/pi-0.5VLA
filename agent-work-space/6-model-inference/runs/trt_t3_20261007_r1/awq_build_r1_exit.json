@@ -1,0 +1,17 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-t3-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t3_20261007_r1/awq_build_r1_source/build_engine.py",
+    "--algorithm",
+    "AWQ",
+    "--source",
+    "/work/runs/trt_t0_t2_20261007_r1/awq_r1/prefix_int4.onnx",
+    "--out",
+    "/work/runs/trt_t3_20261007_r1/awq_build_r1"
+  ],
+  "exit_code": 0,
+  "seconds": 134.32334327697754
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "pi05-trt-t3-20261007-r1",
+    "/.venv/bin/python",
+    "/work/runs/trt_t3_20261007_r1/float_infer_r1_source/infer.py",
+    "--out",
+    "/work/runs/trt_t3_20261007_r1/float_infer_r1",
+    "--bundle",
+    "/work/runs/trt_t3_20261007_r1/bundles/float.json",
+    "--pilot",
+    "/work/runs/trt_t0_t2_20261007_r1/calibration_r1/pilot.json"
+  ],
+  "exit_code": 0,
+  "seconds": 39.34141135215759
+}

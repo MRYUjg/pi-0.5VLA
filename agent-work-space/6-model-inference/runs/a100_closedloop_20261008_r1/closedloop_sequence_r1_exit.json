@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/a100_closedloop_20261008_r1/run_closedloop.py",
+    "--variant",
+    "trt_float",
+    "awq",
+    "gptq",
+    "full_awq",
+    "full_gptq",
+    "--attempt",
+    "r1"
+  ],
+  "exit_code": 0,
+  "started_unix": 1791447061.8201063,
+  "seconds": 5080.649809837341
+}

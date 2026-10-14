@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/work/versions/trt_t0_t2_20261007_r1/t1.py\", line 106, in <module>\n    cache_checks = [metrics(a.cuda(), b) for a,b in zip(data['prefix_outputs'][1:], pref[1:])]\n    ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/work/versions/trt_t0_t2_20261007_r1/t1.py\", line 62, in main\n    onnx.save(upgraded,path)\n               ^^^^^^^^^^^^^^\nAssertionError: 121\n"
+}

@@ -1,0 +1,73 @@
+{
+  "pid": 60565,
+  "started": 1791359045.5042734,
+  "state": "stopped_by_user",
+  "stage": "conversion",
+  "stages": [],
+  "versions": [
+    "conversion_20261007_r1",
+    "lora_20261007_r1",
+    "pipeline_20261007_r1"
+  ],
+  "training_run": "spatial_lora_20261007_r1",
+  "dataset_export": "spatial_formal_r3",
+  "updated": 1791362181.357369,
+  "data_release_pass": true,
+  "counts": {
+    "0": {
+      "train": {
+        "attempted": 50,
+        "accepted": 22
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 7
+      }
+    },
+    "2": {
+      "train": {
+        "attempted": 50,
+        "accepted": 30
+      },
+      "validation": {
+        "attempted": 20,
+        "accepted": 7
+      }
+    },
+    "3": {
+      "train": {
+        "attempted": 50,
+        "accepted": 48
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 9
+      }
+    },
+    "5": {
+      "train": {
+        "attempted": 50,
+        "accepted": 47
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 10
+      }
+    },
+    "6": {
+      "train": {
+        "attempted": 50,
+        "accepted": 42
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 6
+      }
+    }
+  },
+  "supervisor_termination_requested": "SIGTERM",
+  "automatic_training": false,
+  "user_instruction": "读回验证后，不要自动启动微调训练。",
+  "observed_conversion_continues": true,
+  "supervisor_exit_code": null
+}

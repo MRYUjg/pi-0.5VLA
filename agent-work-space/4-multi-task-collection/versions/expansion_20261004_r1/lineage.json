@@ -1,0 +1,72 @@
+{
+  "parent": "agent-work-space/2-task-collection/versions/coverage_20261003_r1",
+  "files": [
+    {
+      "file": "scripts/collect.py",
+      "upstream_sha256": "1c6b4f419247b0aad7f79daad1d9e83f0ebf304ed3963fbe9dd637e97bd876ec",
+      "new_sha256": "1c6b4f419247b0aad7f79daad1d9e83f0ebf304ed3963fbe9dd637e97bd876ec",
+      "behavior": "identical; paths derived from new version directory"
+    },
+    {
+      "file": "scripts/run.py",
+      "upstream_sha256": "a5b9a625e54782c3ec0080d6b3b5dc253ce018b357f8072261dfbfef7b512946",
+      "new_sha256": "a5b9a625e54782c3ec0080d6b3b5dc253ce018b357f8072261dfbfef7b512946",
+      "behavior": "identical; paths derived from new version directory"
+    },
+    {
+      "file": "scripts/audit.py",
+      "upstream_sha256": "ea1f9fe2e6301fd3a7c114c97c5d651d7cdd6c557083c98f492849c2e0bc424a",
+      "new_sha256": "ea1f9fe2e6301fd3a7c114c97c5d651d7cdd6c557083c98f492849c2e0bc424a",
+      "behavior": "identical; paths derived from new version directory"
+    },
+    {
+      "file": "scripts/test_rejections.py",
+      "upstream_sha256": "47999b28bc2d9adb126c55eb1053ccbba4a98a84705c35f22bc42af9d7dd8fd6",
+      "new_sha256": "47999b28bc2d9adb126c55eb1053ccbba4a98a84705c35f22bc42af9d7dd8fd6",
+      "behavior": "identical; paths derived from new version directory"
+    },
+    {
+      "file": "scripts/run_coverage.py",
+      "upstream_sha256": "d43a68499d751b3e9bbc074dce7fa665cc5e0aa4bdba790a5d29b528fdf49967",
+      "new_sha256": "d43a68499d751b3e9bbc074dce7fa665cc5e0aa4bdba790a5d29b528fdf49967",
+      "behavior": "identical; paths derived from new version directory"
+    },
+    {
+      "file": "scripts/validate.py",
+      "upstream_sha256": "d921d102b40639777d586c6ad4c9e7f537bebd081316fc1ffea39d034d365628",
+      "new_sha256": "d921d102b40639777d586c6ad4c9e7f537bebd081316fc1ffea39d034d365628",
+      "behavior": "identical; paths derived from new version directory"
+    },
+    {
+      "file": "scripts/replay.py",
+      "upstream_sha256": "1ace65138f21c44cf121e6c00cb6cfbd745f89b065cad9188118f07265a43621",
+      "new_sha256": "1ace65138f21c44cf121e6c00cb6cfbd745f89b065cad9188118f07265a43621",
+      "behavior": "identical; paths derived from new version directory"
+    },
+    {
+      "file": "scripts/pipeline.py",
+      "upstream_sha256": "ebd0d50dcfa667102f8f931e323d4f6a52ba9c9d83d15fdd4a09e130d64e2803",
+      "new_sha256": "ebd0d50dcfa667102f8f931e323d4f6a52ba9c9d83d15fdd4a09e130d64e2803",
+      "behavior": "identical; paths derived from new version directory"
+    },
+    {
+      "file": "scripts/scenes.py",
+      "upstream_sha256": "1c8fbc36ffafa72bbb06b2be57b055d49e9574c1b1f2f4c45428cfafb77a240b",
+      "new_sha256": "1c8fbc36ffafa72bbb06b2be57b055d49e9574c1b1f2f4c45428cfafb77a240b",
+      "behavior": "identical; paths derived from new version directory"
+    },
+    {
+      "file": "scripts/freeze.py",
+      "upstream_sha256": "afae4f2c3936dbbcb64182d6dc09bc4a16b387744be201ff4a345e2ed2d67d75",
+      "new_sha256": "afae4f2c3936dbbcb64182d6dc09bc4a16b387744be201ff4a345e2ed2d67d75",
+      "behavior": "identical; paths derived from new version directory"
+    },
+    {
+      "file": "scripts/preflight.py",
+      "upstream_sha256": "b68e236a823f5c5efb3dc2c6d0f2deb2adc8bfebdeab165fef96a277e4c5d6f7",
+      "new_sha256": "b68e236a823f5c5efb3dc2c6d0f2deb2adc8bfebdeab165fef96a277e4c5d6f7",
+      "behavior": "identical; paths derived from new version directory"
+    }
+  ],
+  "note": "new scene manifest; no controller/teacher/audit threshold changes"
+}

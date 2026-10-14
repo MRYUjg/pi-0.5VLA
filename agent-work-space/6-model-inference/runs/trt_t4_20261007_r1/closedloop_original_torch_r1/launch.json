@@ -1,0 +1,70 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "pi05-trt-t4-closedloop-original-torch-r1",
+    "--gpus",
+    "all",
+    "--ipc",
+    "host",
+    "-p",
+    "127.0.0.1:18879:18879",
+    "-e",
+    "PYTHONPATH=/app/src:/app/packages/openpi-client/src",
+    "-e",
+    "OPENPI_DATA_HOME=/openpi_assets",
+    "-e",
+    "HF_HUB_OFFLINE=1",
+    "-e",
+    "JAX_PLATFORMS=cpu",
+    "-v",
+    "/mnt/data/vla-policy/openpi:/app:ro",
+    "-v",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference:/work:ro",
+    "-v",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/closedloop_original_torch_r1:/out",
+    "-w",
+    "/app",
+    "--entrypoint",
+    "/.venv/bin/python",
+    "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+    "/work/runs/trt_t4_20261007_r1/closedloop_original_torch_r1_source/server.py",
+    "--variant",
+    "original_torch",
+    "--out",
+    "/out/server",
+    "--port",
+    "18879"
+  ],
+  "host_pid": 67071,
+  "image": "sha256:cf96556ab8b55eb3f80770d2a684d6961c0128c8100660a8cc4c7e61ecc60369",
+  "container_id": "ca59c75a2c0e8c69302705d399279ff0b39f65ffd89e46aac992581ce9a05ab0",
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "/mnt/data/vla-policy/openpi",
+      "Destination": "/app",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference",
+      "Destination": "/work",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/runs/trt_t4_20261007_r1/closedloop_original_torch_r1",
+      "Destination": "/out",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    }
+  ]
+}

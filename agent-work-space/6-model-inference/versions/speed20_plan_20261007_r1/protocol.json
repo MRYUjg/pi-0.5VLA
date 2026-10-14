@@ -1,0 +1,144 @@
+{
+  "version": "speed20_plan_20261007_r1",
+  "date_local": "2026-10-07",
+  "timezone": "Asia/Shanghai",
+  "authorization": "先设计优化方案",
+  "status": "plan_only",
+  "implementation_started": false,
+  "inference_20Hz_accepted": false,
+  "previous_release_manifest_sha256": "b9875e01fb7820d4c1e49b289421e3daa130ebe3b309001d374198232375c1c0",
+  "objective": "Fresh observation to complete action P99 <=50ms, batch=1, sustained >=20 different observations/s, total memory budget 8GB, retain quality",
+  "target_device": "user RTX4070 under 8GB total budget; actual capacity and model to be registered",
+  "latency_scope": {
+    "primary_start": "synchronized new RGB and robot state available; before resize, encoding, transfers and preprocessing",
+    "primary_end": "complete finite-checked unnormalized actions ready to dispatch",
+    "primary_p99_ms": 50,
+    "engineering_inference_budget_ms": 40,
+    "hardware_full_age_start": "camera exposure timestamp",
+    "hardware_full_age_end": "action dispatch timestamp",
+    "hardware_full_age_p99_ms": 50,
+    "capture_scheduling_budget_ms": 10,
+    "GPU_only_or_chunk_playback_is_not_20Hz_acceptance": true
+  },
+  "memory_gates_bytes": {
+    "process_peak": 6400000000,
+    "device_peak": 7200000000,
+    "hard_budget": 8000000000,
+    "warm_growth_screen": 67108864,
+    "includes_cold_load_graph_and_render_context": true
+  },
+  "unchanged_reference_contract": {
+    "robot": "Panda",
+    "gripper": "PandaGripper",
+    "control_hz": 20,
+    "replan_every_steps": 5,
+    "action_horizon": 10,
+    "denoising_steps": 10,
+    "environment_actions_shape": [
+      10,
+      7
+    ],
+    "internal_actions_shape": [
+      1,
+      10,
+      32
+    ],
+    "success": "existing environment _check_success",
+    "controller_and_original_audit_not_modified": true
+  },
+  "nodes": [
+    {
+      "id": "S0",
+      "name": "profiling_and_measurement_registration",
+      "status": "not_implemented",
+      "required": true
+    },
+    {
+      "id": "S1",
+      "name": "fixed_buffers_serial_stream_CUDA_Graph",
+      "status": "not_implemented",
+      "required": true
+    },
+    {
+      "id": "S2",
+      "name": "masked_token_compaction_and_engine_fusion",
+      "status": "not_implemented",
+      "required": "if needed"
+    },
+    {
+      "id": "S3",
+      "name": "fewer_denoising_steps",
+      "status": "not_implemented",
+      "required": "if needed"
+    },
+    {
+      "id": "S4",
+      "name": "expert_W8A8_quantization",
+      "status": "not_implemented",
+      "required": "if needed"
+    },
+    {
+      "id": "S5",
+      "name": "candidate_combination_camera_and_simulation",
+      "status": "not_implemented",
+      "required": true
+    },
+    {
+      "id": "S6",
+      "name": "actual_target_stability_quality_acceptance",
+      "status": "not_implemented",
+      "required": true
+    },
+    {
+      "id": "D1",
+      "name": "few_step_expert_distillation",
+      "status": "not_implemented",
+      "required": "only if inference-only options fail"
+    }
+  ],
+  "sampling_candidates": {
+    "reference": 10,
+    "first_candidate": 5,
+    "additional": [
+      8,
+      4,
+      3
+    ],
+    "diagnostic_or_distilled_only": [
+      2,
+      1
+    ],
+    "complete_new_FP32_schedule_and_original_time_helper_required": true
+  },
+  "quality_gates": {
+    "motion_mae": 0.01,
+    "motion_p99": 0.05,
+    "confident_gripper_reference_abs": 0.2,
+    "max_gripper_sign_disagreement_fraction": 0.005,
+    "max_clipping_fraction_increment": 0.01,
+    "same_engine_reload_max_abs": 1e-06,
+    "development_successes": 27,
+    "development_trials": 30,
+    "max_net_loss_vs_same_environment_float": 1,
+    "formal_successes": 180,
+    "formal_trials": 200,
+    "formal_per_task_below_fraction_requires_investigation": 0.8,
+    "existing_T1_exception_not_extended": true,
+    "existing_GPTQ_failure_retained": true
+  },
+  "performance_validation": {
+    "warmup_requests": 20,
+    "serial_requests_per_comparison": 1000,
+    "independent_launch_repeats": 3,
+    "scheduled_arrival_interval_ms": 50,
+    "actual_completion_rate_min_Hz": 20,
+    "max_deadline_miss_fraction": 0.01,
+    "two_hour_seconds": 7200,
+    "two_hour_expected_arrivals": 144000,
+    "count_all_arrivals_errors_drops_and_late_results": true,
+    "no_OOM_NaN_or_crash": true,
+    "not_hard_realtime_guarantee": true,
+    "actual_target_required": true
+  },
+  "production_ready": false
+}

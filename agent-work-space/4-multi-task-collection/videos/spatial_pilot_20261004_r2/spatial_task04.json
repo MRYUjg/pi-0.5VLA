@@ -1,0 +1,43 @@
+{
+  "episode": "/app/agent-work-space/4-multi-task-collection/runs/spatial_pilot_20261004_r1/task04_s57104",
+  "video": "/app/agent-work-space/4-multi-task-collection/videos/spatial_pilot_20261004_r2/spatial_task04.mp4",
+  "label": "LIBERO Spatial task04 / ECO65 + ZhiXing",
+  "status": "TEACHER FAILED / NOT TRAINING DATA",
+  "teacher_success": false,
+  "physical_audit_pass": true,
+  "replay_pass": null,
+  "replay_source": "/app/agent-work-space/4-multi-task-collection/runs/spatial_replay_20261004_r1/task04.json",
+  "failure": {
+    "stage": "planning",
+    "type": "PathRejected",
+    "reason": "no feasible native-object grasp",
+    "traceback": "Traceback (most recent call last):\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 169, in main\n    plan=plan_grasp(env,a.case);SURFACE_MODE=plan.get('surface_fallback',False);pin,R=plan['pin'],plan['R'];print('GRASP',a.case,plan['strategy'],pin,'tilt',plan['tilt_deg'],'width',plan['material_width_m'],flush=True)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 107, in plan_grasp\n    return plan_grasp(env,case,True)\n  File \"/app/agent-work-space/4-multi-task-collection/versions/spatial_pilot_20261004_r1/vendor/real_object_teacher_r20.py\", line 108, in plan_grasp\n    S.PLAN['grasp_candidates']=candidates;raise S.PathRejected('no feasible native-object grasp')\nsafe_teacher_r8.PathRejected: no feasible native-object grasp\n"
+  },
+  "frames": 120,
+  "decoded_frames": 120,
+  "fps": 20,
+  "duration_seconds": 6.0,
+  "size": [
+    512,
+    384
+  ],
+  "video_sha256": "f9917236a61dbee1b25a82621f16710fe7caeb92e27e7af8b3950169cc8825c4",
+  "hdf5_sha256": "41a07ac50e8fb57760243a21253669d1559b1c160219c3e2d559075d5ed78bd7",
+  "metadata": {
+    "ffmpeg_version": "4.2.2-static https://johnvansickle.com/ffmpeg/ built with gcc 8 (Debian 8.3.0-6)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p",
+    "fps": 20.0,
+    "source_size": [
+      512,
+      384
+    ],
+    "size": [
+      512,
+      384
+    ],
+    "rotate": 0,
+    "duration": 6.0
+  },
+  "includes_preparation": true
+}

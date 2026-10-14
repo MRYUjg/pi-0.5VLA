@@ -1,0 +1,20 @@
+{
+  "name": "build_float_prefix_r1",
+  "command": [
+    "python3",
+    "/mnt/data/vla-policy/openpi/agent-work-space/6-model-inference/versions/a100_closedloop_20261008_r1/execute.py",
+    "--name",
+    "build_float_prefix_r1",
+    "build.py",
+    "--source",
+    "/work/runs/trt_t0_t2_20261007_r1/t1_attempt_r6/prefix.onnx",
+    "--out",
+    "/work/runs/a100_closedloop_20261008_r1/build_float_prefix_r1",
+    "--stage",
+    "prefix",
+    "--algorithm",
+    "float"
+  ],
+  "exit_code": 0,
+  "seconds": 85.8154411315918
+}

@@ -1,0 +1,465 @@
+{
+  "version": "speed20_plan_20261007_r2",
+  "date_local": "2026-10-07",
+  "timezone": "Asia/Shanghai",
+  "authorization": [
+    "只在当前4090服务器验证；专注量化模型角度；重新设计方案",
+    "量化方案还是使用AWQ、GPTQ",
+    "此前继续仅保留方案"
+  ],
+  "status": "plan_only",
+  "implementation_started": false,
+  "inference_20Hz_accepted": false,
+  "production_ready": false,
+  "supersedes_design_version": "speed20_plan_20261007_r1",
+  "current_executed_release": "trt_t4_20261007_r1",
+  "previous_plan_manifest_sha256": "4d161e96ed4eafbc97ac235280612159068a5a0bab5f7a2a538501b2becfe987",
+  "baseline_release_manifest_sha256": "b9875e01fb7820d4c1e49b289421e3daa130ebe3b309001d374198232375c1c0",
+  "target": {
+    "validation_hardware": "current server NVIDIA GeForce RTX 4090",
+    "observed_driver": "535.129.03",
+    "observed_memory_total_MiB": 49140,
+    "actual_4070_validation_required": false,
+    "actual_8GB_hardware_acceptance_claimed": false,
+    "ECO65_ZhiXing_acceptance_claimed": false,
+    "hardware_camera_or_robot_acceptance_claimed": false
+  },
+  "latency_scope": {
+    "start": "synchronized recorded RGB and robot state available before current-request resize, encoding and transfers",
+    "end": "complete finite-checked unnormalized actions returned and client-decoded ready for dispatch",
+    "batch": 1,
+    "single_resident_complete_model": true,
+    "full_request_p99_ms": 50,
+    "serial_service_capacity_min_Hz": 20,
+    "new_payload_preparation_included": true,
+    "queue_time_included": true,
+    "GPU_only_chunk_playback_parallel_throughput_not_acceptance": true,
+    "old_T4_payload_preparation_excluded_report_separately": true,
+    "cold_start_measured_separately": true,
+    "OSMesa_rendering_reported_separately_not_real_time_20Hz_accepted": true,
+    "recorded_observation_replay_not_new_camera_acquisition_proof": true
+  },
+  "memory_gates_bytes": {
+    "process_lifecycle_peak": 6400000000,
+    "device_lifecycle_peak": 7200000000,
+    "inherited_design_budget": 8000000000,
+    "warm_growth_screen": 67108864,
+    "includes_import_load_context_workspace_buffers_and_shutdown": true,
+    "offline_calibration_and_build_memory_separate": true
+  },
+  "unchanged_reference_contract": {
+    "source": "official pi05_libero same BF16-value source",
+    "source_weight_sha256": "69ee787ec12921613feabf69b01348628b3d6327a8865cbc02ecb9be788d9258",
+    "robot": "Panda",
+    "gripper": "PandaGripper",
+    "control_hz": 20,
+    "replan_every_steps": 5,
+    "vision_calls_per_request": 3,
+    "prefix_slots": 968,
+    "denoising_steps": 10,
+    "action_horizon": 10,
+    "internal_actions_shape": [
+      1,
+      10,
+      32
+    ],
+    "environment_actions_shape": [
+      10,
+      7
+    ],
+    "Euler": "original FP32",
+    "time_helper": "original FP64 intermediates with FP32 outputs",
+    "real_images_masks_RoPE_KV_and_external_dtypes_preserved": true,
+    "controller_collection_success_and_original_audit_not_modified": true
+  },
+  "quantization": {
+    "allowed_algorithms": [
+      "AWQ",
+      "GPTQ"
+    ],
+    "weight_dtype": "symmetric signed INT4",
+    "weight_signed_range": [
+      -8,
+      7
+    ],
+    "activation_precision": "original BF16/FP32 floating point; W4A16 terminology",
+    "zero_point": 0,
+    "group_size_primary": 128,
+    "group_size_conditional": 64,
+    "scale_dtype": "BF16",
+    "rounding": "nearest_even",
+    "packing": "two values per byte; even low nibble",
+    "source": "requantize only original floating source weights, never old dequantized AWQ/GPTQ weights",
+    "selection_priority": [
+      "expert Linear",
+      "vision Transformer Linear",
+      "qualified float/AWQ/GPTQ module combinations"
+    ],
+    "prefix_INT4_mandatory": false,
+    "group_64_not_assumed_faster": true,
+    "AWQ": {
+      "implementation": "NVIDIA ModelOpt 0.33.1 awq_lite on controlled Linear",
+      "alpha_step_primary": 0.1,
+      "alpha_step_conditional": 0.05,
+      "input_multiplier_preserved": true
+    },
+    "GPTQ": {
+      "implementation": "existing controlled second-order sequential Linear GPTQ adapter extended in new version",
+      "hessian_dtype": "FP32",
+      "damp_fraction_primary": 0.01,
+      "damp_fraction_conditional": [
+        0.001,
+        0.03
+      ],
+      "act_order": false,
+      "block_size": 128,
+      "static_contiguous_groups": true
+    },
+    "first_pass_float_exclusions": [
+      "embedding",
+      "normalization",
+      "softmax",
+      "mask",
+      "RoPE",
+      "residuals",
+      "time MLP",
+      "action input/output projection",
+      "AdaRMSNorm conditioning projection",
+      "vision patch convolution",
+      "vision multimodal projection",
+      "Euler",
+      "external KV interface"
+    ],
+    "TensorRT_compute_precision": "native INT4 WoQ dequantizes weights and computes in high precision; not pure INT4 arithmetic",
+    "exact_layer_scope_registered_by_reachability": true,
+    "same_codec_dataset_scope_and_noise_across_algorithms": true
+  },
+  "candidate_matrix": [
+    {
+      "id": "B0",
+      "vision": "float",
+      "prefix": "float",
+      "expert": "float",
+      "role": "reference"
+    },
+    {
+      "id": "B1",
+      "vision": "float",
+      "prefix": "frozen_AWQ",
+      "expert": "float",
+      "role": "quantized_reference"
+    },
+    {
+      "id": "B2",
+      "vision": "float",
+      "prefix": "frozen_GPTQ",
+      "expert": "float",
+      "role": "diagnostic_failed_old_gripper_gate"
+    },
+    {
+      "id": "E-A",
+      "vision": "float",
+      "prefix": "float",
+      "expert": "AWQ",
+      "algorithm": "AWQ",
+      "role": "unimplemented_candidate"
+    },
+    {
+      "id": "E-G",
+      "vision": "float",
+      "prefix": "float",
+      "expert": "GPTQ",
+      "algorithm": "GPTQ",
+      "role": "unimplemented_candidate"
+    },
+    {
+      "id": "V-A",
+      "vision": "AWQ",
+      "prefix": "float",
+      "expert": "float",
+      "algorithm": "AWQ",
+      "role": "unimplemented_candidate"
+    },
+    {
+      "id": "V-G",
+      "vision": "GPTQ",
+      "prefix": "float",
+      "expert": "float",
+      "algorithm": "GPTQ",
+      "role": "unimplemented_candidate"
+    },
+    {
+      "id": "PE-A",
+      "vision": "float",
+      "prefix": "AWQ",
+      "expert": "AWQ",
+      "algorithm": "AWQ",
+      "role": "unimplemented_candidate"
+    },
+    {
+      "id": "PE-G",
+      "vision": "float",
+      "prefix": "GPTQ",
+      "expert": "GPTQ",
+      "algorithm": "GPTQ",
+      "role": "unimplemented_candidate"
+    },
+    {
+      "id": "VE-A",
+      "vision": "AWQ",
+      "prefix": "float",
+      "expert": "AWQ",
+      "algorithm": "AWQ",
+      "role": "unimplemented_candidate"
+    },
+    {
+      "id": "VE-G",
+      "vision": "GPTQ",
+      "prefix": "float",
+      "expert": "GPTQ",
+      "algorithm": "GPTQ",
+      "role": "unimplemented_candidate"
+    },
+    {
+      "id": "PVE-A",
+      "vision": "AWQ",
+      "prefix": "AWQ",
+      "expert": "AWQ",
+      "algorithm": "AWQ",
+      "role": "unimplemented_candidate"
+    },
+    {
+      "id": "PVE-G",
+      "vision": "GPTQ",
+      "prefix": "GPTQ",
+      "expert": "GPTQ",
+      "algorithm": "GPTQ",
+      "role": "unimplemented_candidate"
+    },
+    {
+      "id": "MIX",
+      "role": "only already qualified modules; complete combination reverified"
+    }
+  ],
+  "calibration": {
+    "reuse_old_observation_files_only": true,
+    "old_prefix_four_token_inputs_insufficient_for_new_scope": true,
+    "quick_observations": 200,
+    "quick_per_task": 20,
+    "quick_noise_per_observation": 1,
+    "full_observations": 2000,
+    "full_per_task": 200,
+    "full_noise_per_observation": 4,
+    "full_trajectory_samples": 8000,
+    "expert_steps_each": 10,
+    "planned_expert_calls": 80000,
+    "old_source_initial_indices_per_task": {
+      "0": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "1": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "2": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "3": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "4": [
+        3,
+        4,
+        5
+      ],
+      "5": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "6": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "7": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "8": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "9": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "all_noise_levels_KV_intermediate_actions_task_phases_registered": true,
+    "balanced_token_row_sampling_policy_recorded": true,
+    "GPTQ_Hessian_layerwise_and_chunked": true,
+    "conditional_tuning_initial_indices": [
+      9,
+      10,
+      11
+    ],
+    "conditional_tuning_requires_all_ledger_overlap_audit": true,
+    "development_initial_indices_excluded_from_fitting": [
+      0,
+      1,
+      2
+    ],
+    "formal_initial_indices_excluded_from_fitting": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "old_128_pilot_is_calibration_subset_regression_not_independent_generalization": true
+  },
+  "build": {
+    "framework": "TensorRT 10.13.3.9",
+    "strongly_typed": true,
+    "ONNX_INT4_opset": 21,
+    "TF32": false,
+    "builder_optimization_level": 3,
+    "workspace_bytes": 2147483648,
+    "hardware_compatibility": "NONE",
+    "manual_tactic_or_custom_kernel_work": false,
+    "packed_weights_scales_AWQ_compensation_verified_together": true,
+    "fusion_DQ_float_GEMM_execution_and_source_merging_reported": true
+  },
+  "excluded_work": [
+    "FP8",
+    "INT8",
+    "W4A4",
+    "W4A8",
+    "CUDA Graph",
+    "stream or sync optimization",
+    "buffer or transfer optimization",
+    "token compaction",
+    "masked or real image caching",
+    "attention rewrite",
+    "manual tactic search",
+    "CUDA/Triton/plugin development",
+    "fewer denoising steps",
+    "pruning",
+    "smaller architecture",
+    "QAT",
+    "distillation",
+    "controller changes",
+    "4070 migration"
+  ],
+  "nodes": [
+    {
+      "id": "Q0",
+      "name": "4090_full_request_baseline_and_INT4_scope_registration",
+      "status": "not_implemented"
+    },
+    {
+      "id": "Q1",
+      "name": "vision_expert_complete_ten_step_calibration",
+      "status": "not_implemented"
+    },
+    {
+      "id": "Q2",
+      "name": "expert_AWQ_GPTQ_and_prefix_expert_candidates",
+      "status": "not_implemented"
+    },
+    {
+      "id": "Q3",
+      "name": "vision_AWQ_GPTQ_and_coverage_group_sensitive_layer_candidates",
+      "status": "not_implemented"
+    },
+    {
+      "id": "Q4",
+      "name": "qualified_module_combinations_and_Panda_development_closedloop",
+      "status": "not_implemented"
+    },
+    {
+      "id": "Q5",
+      "name": "same_4090_two_hour_and_formal_200_quality_trials",
+      "status": "not_implemented"
+    }
+  ],
+  "quality_gates": {
+    "motion_definition": "abs(candidate-reference)/2 over six motion dimensions",
+    "motion_mae": 0.01,
+    "motion_p99": 0.05,
+    "confident_gripper_reference_abs": 0.2,
+    "max_gripper_sign_disagreement_fraction": 0.005,
+    "max_clipping_fraction_increment": 0.01,
+    "same_engine_reload_max_abs": 1e-06,
+    "development_successes": 27,
+    "development_trials": 30,
+    "max_net_loss_vs_same_environment_float": 1,
+    "formal_successes": 180,
+    "formal_trials": 200,
+    "formal_float_trials": 200,
+    "formal_per_task_below_fraction_requires_investigation": 0.8,
+    "existing_T1_exception_not_extended": true,
+    "existing_GPTQ_failure_retained": true,
+    "baseline_float_26_of_30_not_accepted": true
+  },
+  "performance_validation": {
+    "warmup_requests": 20,
+    "serial_requests": 1000,
+    "independent_launch_repeats": 3,
+    "scheduled_arrival_interval_ms": 50,
+    "max_deadline_miss_fraction": 0.01,
+    "count_all_arrivals_errors_drops_and_late_results": true,
+    "all_arrivals_completed": true,
+    "no_growing_backlog": true,
+    "serial_capacity_measured_separately_from_fixed_rate_boundary": true,
+    "two_hour_seconds": 7200,
+    "two_hour_expected_arrivals": 144000,
+    "NVML_interval_ms": 20,
+    "replayed_source_observation_reuse_reported": true,
+    "no_OOM_NaN_or_crash": true
+  },
+  "failure_policy": "Preserve best results and failed gates; if allowed quantization does not reach 50ms, report not achieved and do not expand scope automatically."
+}

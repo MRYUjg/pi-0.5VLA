@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "signed_nibble_roundtrip": true,
+  "byte_order": true,
+  "gptq_identity_hessian_matches_RTN": true,
+  "synthetic_engineering_probe": true,
+  "used_for_task_calibration": false,
+  "gptq_metadata": {
+    "damp_fraction": 0.01,
+    "damping": 7.812499825377017e-05,
+    "hessian_dtype": "float32",
+    "act_order": false,
+    "group_size": 128,
+    "block_size": 128,
+    "calibration_tokens": 256
+  }
+}

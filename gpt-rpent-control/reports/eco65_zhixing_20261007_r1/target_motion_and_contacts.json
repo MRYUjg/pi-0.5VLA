@@ -1,0 +1,565 @@
+[
+  {
+    "task": 0,
+    "target": "akita_black_bowl_1",
+    "BDDL": "/mnt/data/vla-policy/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+    "native_success": false,
+    "reference": "first post-action sample, not a stable-grasp criterion",
+    "first_target_z": 0.8984040780041856,
+    "max_target_z": 0.898629708231759,
+    "rise_from_first_sample_mm": 0.22563022757338125,
+    "peak_step": 184,
+    "peak_target_xyz": [
+      -0.0678195490623902,
+      0.2014812206488712,
+      0.898629708231759
+    ],
+    "peak_tcp_xyz": [
+      0.05879233787410648,
+      0.20047365105704554,
+      0.9277774116559008
+    ],
+    "peak_target_TCP_distance_mm": 129.92757107328802,
+    "target_contact_records_at_peak": [
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g37",
+        "distance": -2.3343763578694614e-05
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g37",
+        "distance": -1.347050436927241e-05
+      }
+    ],
+    "final_target_xyz": [
+      -0.07230136214127003,
+      0.20084704830640795,
+      0.898404150188853
+    ]
+  },
+  {
+    "task": 1,
+    "target": "akita_black_bowl_1",
+    "BDDL": "/mnt/data/vla-policy/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate.bddl",
+    "native_success": false,
+    "reference": "first post-action sample, not a stable-grasp criterion",
+    "first_target_z": 0.8984040780041856,
+    "max_target_z": 0.996471360176485,
+    "rise_from_first_sample_mm": 98.06728217229931,
+    "peak_step": 87,
+    "peak_target_xyz": [
+      -0.19454219817211027,
+      0.39281131806771874,
+      0.996471360176485
+    ],
+    "peak_tcp_xyz": [
+      -0.14419423034969092,
+      0.6777670908286464,
+      0.9182522296181217
+    ],
+    "peak_target_TCP_distance_mm": 299.754804263303,
+    "target_contact_records_at_peak": [],
+    "final_target_xyz": [
+      -0.12138954096007151,
+      0.4181132740483778,
+      0.8984041501888531
+    ]
+  },
+  {
+    "task": 2,
+    "target": "akita_black_bowl_1",
+    "BDDL": "/mnt/data/vla-policy/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.bddl",
+    "native_success": false,
+    "reference": "first post-action sample, not a stable-grasp criterion",
+    "first_target_z": 0.8984040780041856,
+    "max_target_z": 0.9690125094243351,
+    "rise_from_first_sample_mm": 70.6084314201495,
+    "peak_step": 178,
+    "peak_target_xyz": [
+      0.03037496923821284,
+      0.012584010046527126,
+      0.9690125094243351
+    ],
+    "peak_tcp_xyz": [
+      0.1614312786575317,
+      0.21927615926914004,
+      0.9239834858950285
+    ],
+    "peak_target_TCP_distance_mm": 248.84737038770967,
+    "target_contact_records_at_peak": [],
+    "final_target_xyz": [
+      0.08947944203900472,
+      0.0005945039859923332,
+      0.912956311667072
+    ]
+  },
+  {
+    "task": 3,
+    "target": "akita_black_bowl_1",
+    "BDDL": "/mnt/data/vla-policy/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate.bddl",
+    "native_success": false,
+    "reference": "first post-action sample, not a stable-grasp criterion",
+    "first_target_z": 0.9171640208874401,
+    "max_target_z": 0.9177830496853343,
+    "rise_from_first_sample_mm": 0.6190287978942166,
+    "peak_step": 41,
+    "peak_target_xyz": [
+      0.06795797650360517,
+      0.023635269015677772,
+      0.9177830496853343
+    ],
+    "peak_tcp_xyz": [
+      0.1001636127497208,
+      0.06960711105062121,
+      0.9880290709991859
+    ],
+    "peak_target_TCP_distance_mm": 89.91727740834351,
+    "target_contact_records_at_peak": [
+      {
+        "geom1": "akita_black_bowl_1_g38",
+        "geom2": "cookies_1_g1",
+        "distance": -6.890439796125011e-06
+      }
+    ],
+    "final_target_xyz": [
+      0.06782513429989377,
+      0.023543174643230524,
+      0.9171640896544344
+    ]
+  },
+  {
+    "task": 4,
+    "target": "akita_black_bowl_1",
+    "BDDL": "/mnt/data/vla-policy/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate.bddl",
+    "native_success": false,
+    "reference": "first post-action sample, not a stable-grasp criterion",
+    "first_target_z": 1.0625599683749973,
+    "max_target_z": 1.1038022094438957,
+    "rise_from_first_sample_mm": 41.2422410688984,
+    "peak_step": 86,
+    "peak_target_xyz": [
+      0.09333296690143868,
+      -0.16656041491515386,
+      1.1038022094438957
+    ],
+    "peak_tcp_xyz": [
+      0.06517024198202923,
+      -0.09818168456099535,
+      1.0883970045144085
+    ],
+    "peak_target_TCP_distance_mm": 75.53879916077922,
+    "target_contact_records_at_peak": [
+      {
+        "geom1": "akita_black_bowl_1_g13",
+        "geom2": "wooden_cabinet_1_g16",
+        "distance": -7.067288576786956e-07
+      }
+    ],
+    "final_target_xyz": [
+      0.10703423988881418,
+      -0.161619526992197,
+      1.098523425154661
+    ]
+  },
+  {
+    "task": 5,
+    "target": "akita_black_bowl_1",
+    "BDDL": "/mnt/data/vla-policy/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate.bddl",
+    "native_success": false,
+    "reference": "first post-action sample, not a stable-grasp criterion",
+    "first_target_z": 0.9344010391377252,
+    "max_target_z": 0.9344017298634804,
+    "rise_from_first_sample_mm": 0.0006907257551480583,
+    "peak_step": 13,
+    "peak_target_xyz": [
+      -0.2114214696564831,
+      0.20215821354087365,
+      0.9344017298634804
+    ],
+    "peak_tcp_xyz": [
+      -0.1526640918706705,
+      0.10441266501862378,
+      1.1691158465092977
+    ],
+    "peak_target_TCP_distance_mm": 260.9546670458426,
+    "target_contact_records_at_peak": [
+      {
+        "geom1": "akita_black_bowl_1_g6",
+        "geom2": "glazed_rim_porcelain_ramekin_1_g7",
+        "distance": -1.0712163528198654e-07
+      },
+      {
+        "geom1": "akita_black_bowl_1_g10",
+        "geom2": "glazed_rim_porcelain_ramekin_1_g12",
+        "distance": -2.2098789176668718e-07
+      },
+      {
+        "geom1": "akita_black_bowl_1_g40",
+        "geom2": "glazed_rim_porcelain_ramekin_1_g16",
+        "distance": -2.3778009875379115e-07
+      }
+    ],
+    "final_target_xyz": [
+      -0.2114213359133688,
+      0.20215905779339263,
+      0.9344016629235248
+    ]
+  },
+  {
+    "task": 6,
+    "target": "akita_black_bowl_1",
+    "BDDL": "/mnt/data/vla-policy/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate.bddl",
+    "native_success": false,
+    "reference": "first post-action sample, not a stable-grasp criterion",
+    "first_target_z": 0.8984040780041856,
+    "max_target_z": 0.9411254379770304,
+    "rise_from_first_sample_mm": 42.721359972844766,
+    "peak_step": 51,
+    "peak_target_xyz": [
+      0.1621981222554709,
+      -0.08126889099740053,
+      0.9411254379770304
+    ],
+    "peak_tcp_xyz": [
+      0.16262221876884078,
+      -0.022184734205959462,
+      0.9232966103747657
+    ],
+    "peak_target_TCP_distance_mm": 61.71697120954267,
+    "target_contact_records_at_peak": [
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g28",
+        "distance": -4.442543340527094e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g29",
+        "distance": -0.0001648562834380693
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g29",
+        "distance": -0.00010971313370154628
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g30",
+        "distance": -0.00010391014987988398
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g31",
+        "distance": -0.00010391014987988398
+      }
+    ],
+    "final_target_xyz": [
+      0.15928390288871774,
+      -0.10699515647687514,
+      0.8984041501888531
+    ]
+  },
+  {
+    "task": 7,
+    "target": "akita_black_bowl_1",
+    "BDDL": "/mnt/data/vla-policy/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate.bddl",
+    "native_success": false,
+    "reference": "first post-action sample, not a stable-grasp criterion",
+    "first_target_z": 0.9289038989531191,
+    "max_target_z": 0.9289041501888531,
+    "rise_from_first_sample_mm": 0.00025123573399454813,
+    "peak_step": 16,
+    "peak_target_xyz": [
+      -0.262143706267251,
+      -0.13143925997313405,
+      0.9289041501888531
+    ],
+    "peak_tcp_xyz": [
+      -0.1832302483018739,
+      -0.08291024284633794,
+      1.1317120869132617
+    ],
+    "peak_target_TCP_distance_mm": 222.96515097601676,
+    "target_contact_records_at_peak": [
+      {
+        "geom1": "akita_black_bowl_1_g36",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -3.534573469128854e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g36",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -3.000311297701568e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g36",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.8236008070047176e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g36",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.2893386355774316e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g37",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -3.0058369568586346e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g37",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.856989512847542e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g37",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.294864294734499e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g37",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.146016850723406e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g38",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -3.7039574058684747e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g38",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -3.4863127133811824e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g38",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -3.1696952344411887e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g38",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.9520505419538964e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g39",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.894401490236975e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g39",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.695223620142544e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g39",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.360139318809689e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g39",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.160961448715258e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g40",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -3.665635197690931e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g40",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -3.40972810717534e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g40",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.9546625355667946e-06
+      },
+      {
+        "geom1": "akita_black_bowl_1_g40",
+        "geom2": "flat_stove_1_collision_burner",
+        "distance": -2.6987554450512044e-06
+      }
+    ],
+    "final_target_xyz": [
+      -0.262143706267251,
+      -0.13143925997313405,
+      0.9289041501888531
+    ]
+  },
+  {
+    "task": 8,
+    "target": "akita_black_bowl_1",
+    "BDDL": "/mnt/data/vla-policy/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate.bddl",
+    "native_success": false,
+    "reference": "first post-action sample, not a stable-grasp criterion",
+    "first_target_z": 0.8984040780041856,
+    "max_target_z": 0.898404150188853,
+    "rise_from_first_sample_mm": 7.218466735459117e-05,
+    "peak_step": 15,
+    "peak_target_xyz": [
+      0.007137055784623921,
+      0.29824631860374645,
+      0.898404150188853
+    ],
+    "peak_tcp_xyz": [
+      -0.12808409178307006,
+      0.10819208799445736,
+      1.190083346406286
+    ],
+    "peak_target_TCP_distance_mm": 373.4730550227964,
+    "target_contact_records_at_peak": [
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g36",
+        "distance": -3.5345734691555494e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g36",
+        "distance": -3.0003112977033593e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g36",
+        "distance": -2.8236008070354526e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g36",
+        "distance": -2.2893386355832626e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g37",
+        "distance": -3.005836956876347e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g37",
+        "distance": -2.856989512858316e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g37",
+        "distance": -2.29486429475625e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g37",
+        "distance": -2.146016850738219e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g38",
+        "distance": -3.703957405897167e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g38",
+        "distance": -3.4863127134120797e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g38",
+        "distance": -3.1696952344441186e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g38",
+        "distance": -2.952050541959031e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g39",
+        "distance": -2.8944014902657607e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g39",
+        "distance": -2.6952236201733476e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g39",
+        "distance": -2.360139318812712e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g39",
+        "distance": -2.160961448720299e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g40",
+        "distance": -3.665635197711139e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g40",
+        "distance": -3.4097281071836195e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g40",
+        "distance": -2.9546625355910422e-06
+      },
+      {
+        "geom1": "table_collision",
+        "geom2": "akita_black_bowl_1_g40",
+        "distance": -2.6987554450635228e-06
+      }
+    ],
+    "final_target_xyz": [
+      0.0071370557846239194,
+      0.29824631860374645,
+      0.898404150188853
+    ]
+  },
+  {
+    "task": 9,
+    "target": "akita_black_bowl_1",
+    "BDDL": "/mnt/data/vla-policy/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.bddl",
+    "native_success": false,
+    "reference": "first post-action sample, not a stable-grasp criterion",
+    "first_target_z": 1.1263999683946273,
+    "max_target_z": 1.132187319265028,
+    "rise_from_first_sample_mm": 5.78735087040072,
+    "peak_step": 45,
+    "peak_target_xyz": [
+      0.0402110159534424,
+      -0.2647640720624941,
+      1.132187319265028
+    ],
+    "peak_tcp_xyz": [
+      0.023286051408662453,
+      -0.2167367580280608,
+      1.193386149224437
+    ],
+    "peak_target_TCP_distance_mm": 79.61390649003975,
+    "target_contact_records_at_peak": [
+      {
+        "geom1": "akita_black_bowl_1_g30",
+        "geom2": "gripper0_left_fingerpad_col",
+        "distance": -5.2393499355477905e-05
+      },
+      {
+        "geom1": "akita_black_bowl_1_g31",
+        "geom2": "gripper0_left_fingerpad_col",
+        "distance": -5.2393499355477905e-05
+      },
+      {
+        "geom1": "akita_black_bowl_1_g38",
+        "geom2": "wooden_cabinet_1_g9",
+        "distance": -3.323076349180719e-05
+      }
+    ],
+    "final_target_xyz": [
+      0.04117710930262384,
+      -0.26458934990928595,
+      1.1263999683946322
+    ]
+  }
+]

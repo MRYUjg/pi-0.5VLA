@@ -1,0 +1,128 @@
+{
+  "pid": 108883,
+  "started": 1791379811.5967593,
+  "state": "completed",
+  "stage": "training_and_reload_complete",
+  "stages": [
+    {
+      "stage": "prepare",
+      "exit_code": 0,
+      "seconds": 79.12361097335815,
+      "command": [
+        "/usr/bin/python3",
+        "/mnt/data/vla-policy/openpi/agent-work-space/5-final-train/versions/lora_20261007_r1/scripts/launch.py",
+        "--run",
+        "spatial_lora_20261007_r1",
+        "--phase",
+        "prepare"
+      ]
+    },
+    {
+      "stage": "smoke",
+      "exit_code": 0,
+      "seconds": 466.76012897491455,
+      "command": [
+        "/usr/bin/python3",
+        "/mnt/data/vla-policy/openpi/agent-work-space/5-final-train/versions/lora_20261007_r1/scripts/launch.py",
+        "--run",
+        "spatial_lora_20261007_r1",
+        "--phase",
+        "smoke"
+      ]
+    },
+    {
+      "stage": "train",
+      "exit_code": 0,
+      "seconds": 7363.992965698242,
+      "command": [
+        "/usr/bin/python3",
+        "/mnt/data/vla-policy/openpi/agent-work-space/5-final-train/versions/lora_20261007_r1/scripts/launch.py",
+        "--run",
+        "spatial_lora_20261007_r1",
+        "--phase",
+        "train"
+      ]
+    },
+    {
+      "stage": "reload",
+      "exit_code": 0,
+      "seconds": 199.80250144004822,
+      "command": [
+        "/usr/bin/python3",
+        "/mnt/data/vla-policy/openpi/agent-work-space/5-final-train/versions/lora_20261007_r1/scripts/launch.py",
+        "--run",
+        "spatial_lora_20261007_r1",
+        "--phase",
+        "reload"
+      ]
+    }
+  ],
+  "dataset_export": "spatial_formal_r3",
+  "training_run": "spatial_lora_20261007_r1",
+  "training_version": "lora_20261007_r1",
+  "automatic_training": true,
+  "user_instruction": "启动对pai0.5的微调训练",
+  "execution_policy": "/mnt/data/vla-policy/openpi/agent-work-space/5-final-train/reports/execution_policy_20261007_r2.json",
+  "expected_training_steps": 10000,
+  "scope": "Authorized LoRA training and checkpoint reload; policy evaluation pending.",
+  "updated": 1791387921.3117647,
+  "data_release_pass": true,
+  "dataset_validation_pass": true,
+  "counts": {
+    "0": {
+      "train": {
+        "attempted": 50,
+        "accepted": 22
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 7
+      }
+    },
+    "2": {
+      "train": {
+        "attempted": 50,
+        "accepted": 30
+      },
+      "validation": {
+        "attempted": 20,
+        "accepted": 7
+      }
+    },
+    "3": {
+      "train": {
+        "attempted": 50,
+        "accepted": 48
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 9
+      }
+    },
+    "5": {
+      "train": {
+        "attempted": 50,
+        "accepted": 47
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 10
+      }
+    },
+    "6": {
+      "train": {
+        "attempted": 50,
+        "accepted": 42
+      },
+      "validation": {
+        "attempted": 10,
+        "accepted": 6
+      }
+    }
+  },
+  "disk_free_gib_at_start": 74.7452163696289,
+  "normalization_ready": true,
+  "resource_smoke_pass": true,
+  "training_pass": true,
+  "reload_pass": true
+}
